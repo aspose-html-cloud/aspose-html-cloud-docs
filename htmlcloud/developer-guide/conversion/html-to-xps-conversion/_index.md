@@ -252,37 +252,55 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 
 {{< tab tabNum="1" >}}
 
+{{< gist "aspose-cloud" "e21ab0a49cf89992f3164e42eb0d23df" >}}
+
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
+
+{{< gist "aspose-cloud" "c9b6970434d767784901ad3d5bd1960b" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
+{{< gist "aspose-cloud" "e5b94f81822a233a329b8e6133cfe232" >}}
+
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
+
+{{< gist "aspose-cloud" "1cbdd318e3adf3f6f8e195ae50b0c467" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
 
+{{< gist "aspose-cloud" "783a40f62f5f12247aed3b5001631132" >}}
+
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
+
+{{< gist "aspose-cloud" "58321f1f663a40884f02b23f5cef7cd5" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
 
+{{< gist "aspose-cloud" "fbd546289c068dc51d296af2a0632cec" >}}
+
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
 
+{{< gist "aspose-cloud" "f500d28be8614041837bc3ce84e18bd7" >}}
+
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}
+
+{{< gist "aspose-cloud" "fb83dec44cc8e2e5cc3ac7c7afae4551" >}}
 
 {{< /tab >}}
 
@@ -294,37 +312,55 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 
 {{< tab tabNum="1" >}}
 
+{{< gist "aspose-cloud" "30a67eecc86c7c01fe265062a14f3d2e" >}}
+
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
+
+{{< gist "aspose-cloud" "12b0d0b48495919e3c68e2fda1a30799" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
+{{< gist "aspose-cloud" "fec3c1a1e4655b706816357ff14377c5" >}}
+
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
+
+{{< gist "aspose-cloud" "3a7829169fc870e182d7ef5e17731ef9" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
 
+{{< gist "aspose-cloud" "f86dbe8b5fb0f785f6f02e84150afa93" >}}
+
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
+
+{{< gist "aspose-cloud" "7dec3dac9ee4bc83c7b7472c4785f127" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
 
+{{< gist "aspose-cloud" "f0bb55aa5796088966ee1e4d06671d1e" >}}
+
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
 
+{{< gist "aspose-cloud" "84c3d6e873dbdb1e406b8206894d6ea3" >}}
+
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}
+
+{{< gist "aspose-cloud" "9a829bfe2aeddbddeccfdd127551f8ab" >}}
 
 {{< /tab >}}
 
@@ -336,37 +372,55 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 
 {{< tab tabNum="1" >}}
 
+{{< gist "aspose-cloud" "5281de29e631830ffc9ab1e44ea9988a" >}}
+
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
+
+{{< gist "aspose-cloud" "b72a624104a5c900abea575fd6f707cb" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
+{{< gist "aspose-cloud" "080c13b6e471257c82ed7128d2c1cebf" >}}
+
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
+
+{{< gist "aspose-cloud" "ed149fb50a56700651278e767a6a3c26" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
 
+{{< gist "aspose-cloud" "61a7a8b7388be78ac29d86b0d148de93" >}}
+
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
+
+{{< gist "aspose-cloud" "306b0dd53e3ed764b7d7a6c7504a16c3" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
 
+{{< gist "aspose-cloud" "efb5d05389d64d4da1785524194b90ce" >}}
+
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
 
+{{< gist "aspose-cloud" "dd661956d19079caa0f35dc0eb9eab58" >}}
+
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}
+
+{{< gist "aspose-cloud" "94bcfd4cdc855983201dc4ab1d43cf02" >}}
 
 {{< /tab >}}
 
@@ -386,33 +440,49 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 
 {{< tab tabNum="2" >}}
 
+{{< gist "aspose-cloud" "9c1475a9b69bc19a5b040c07192db84e" >}}
+
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
+
+{{< gist "aspose-cloud" "3ad4bd68a3534303d31fa16bb2d869dd" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
 
+{{< gist "aspose-cloud" "6547378c3f9ad523fb946d8c56eeae0f" >}}
+
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
+
+{{< gist "aspose-cloud" "66395cea35f82a523d57eec45fc91ef8" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
+{{< gist "aspose-cloud" "b1d7354aae203a39de78774e37aeb204" >}}
+
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
+
+{{< gist "aspose-cloud" "14c944ce17117ce6c4c72e4247f10e05" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
 
+{{< gist "aspose-cloud" "efa05ba0fd528a8044fb4cba8ce94af9" >}}
+
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}
+
+{{< gist "aspose-cloud" "a01ad8029f3adfffc762dc775d072a3b" >}}
 
 {{< /tab >}}
 

@@ -59,6 +59,8 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 
 {{< tab tabNum="1" >}}
 
+{{< gist "aspose-cloud" "306992ad1634e92202728f8ff0c64f3b" >}}
+
 {{< /tab >}}
 
 {{< /tabs >}}
