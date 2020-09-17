@@ -7,7 +7,7 @@ weight: 30
 
 ## **Introduction**
 This article explain how to get all images from the HTML document. Aspose.HTML Cloud provide two APIs to get HTML document images:
-### **API Information**
+## **API Information**
 
 |**API**|**Type**|**Description**|**Swagger Link**|
 | :- | :- | :- | :- |
@@ -36,7 +36,7 @@ curl -v "https://api.aspose.cloud/v3.0/html/images/all?sourceUrl=https://www.you
 ## **Available SDKs**
 Using an SDK (API client) is the quickest way for a developer to speed up the development. An SDK takes care of a lot of low-level details of making requests and handling responses and lets you focus on writing code specific to your particular project. Checkout our [GitHub repository](https://github.com/aspose-html-cloud) for a complete list of Aspose.HTML SDKs along with working examples, to get you started in no time. Please check [Available SDKs](/available-sdks/) article to learn how to add an SDK to your project.
 ### **SDK Examples**
-**Case 1: Get all HTML document images packaged as a ZIP archive:**
+#### **Case 1: Get all HTML document images packaged as a ZIP archive:**
 
 {{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="Python" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Java" tabName8="Swift" tabName9="C++" >}}
 
@@ -96,7 +96,7 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 
 {{< /tabs >}}
 
-**Case 2: Get all HTML page images packaged as a ZIP archive by the source page URL:**
+#### **Case 2: Get all HTML page images packaged as a ZIP archive by the source page URL:**
 
 {{< tabs tabTotal="9" tabID="5" tabName1="C#" tabName2="Python" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Java" tabName8="Swift" tabName9="C++" >}}
 

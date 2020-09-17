@@ -9,7 +9,7 @@ weight: 10
 
 ## **Introduction**
 Aspose.HTML Cloud, easy to use REST API allows you to get SEO warnings in JSON format,, that may help in SEO fixes that can boost your rankings in no time. You can use our REST API with any language: .NET, Java, PHP, Ruby, Rails, Python, jQuery and many more.
-### **API Information**
+## **API Information**
 
 |**API**|**Type**|**Description**|**Swagger Link**|
 | :- | :- | :- | :- |

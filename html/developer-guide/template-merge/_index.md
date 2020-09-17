@@ -13,7 +13,7 @@ Aspose.HTML Cloud provides a capability to use HTML document as a template to po
 
 Examples below show how source data may appear:
 
-**Example 1: Simple XML Source Data Set**
+#### **Example 1: Simple XML Source Data Set**
 
 ```html
 
@@ -41,7 +41,7 @@ Examples below show how source data may appear:
 
 ```
 
-**Example 1.1: Simple JSON Source Data Set**
+#### **Example 1.1: Simple JSON Source Data Set**
 
 ```html
 
@@ -67,7 +67,7 @@ HTML template should contain special descriptors that define where the source da
 
 Below is a simple example of HTML template that gives some intuitive explanation how the source data will populate the template fields:
 
-**Example 2: Simple HTML Template**
+#### **Example 2: Simple HTML Template**
 
 ```html
 
@@ -111,7 +111,7 @@ Current implementation supports 2 types of template markers:
 - Repeatable section marker
 
 The list of template markers can be extended in future implementations.
-##### **Single field marker**
+#### **Single field marker**
 **Format**: {{simple\_field\_name}} or {{composed\_field\_name}}
 
 **Location**: usual place is in HTML element text content; also it can be put into some attribute value.
@@ -120,7 +120,7 @@ The list of template markers can be extended in future implementations.
 
 {{simple\_field\_name}} maps a data element that is a direct child of current data context. 
 
-**Example 3: Single Field Marker**
+##### **Example 3: Single Field Marker**
 
 ```html
 
@@ -132,7 +132,7 @@ The list of template markers can be extended in future implementations.
 
 {{composed\_field\_name}} maps a data element that is an indirect child of current data context. In other words, composed name reflects a path from the data context to the mapped element.
 
-**Example 4: Single Field Marker - Composed Name**
+##### **Example 4: Single Field Marker - Composed Name**
 
 ```html
 
@@ -141,14 +141,14 @@ The list of template markers can be extended in future implementations.
 <img src="{{Person.ImageUrl}}" />
 
 ```
-##### **Repeatable section marker**
+#### **Repeatable section marker**
 **Format**: {{#**foreach** element\_name}}.
 
 element\_name can appear like simple or composed field name (see above); it means that specified data element is a direct of indirect child of current data context respectively.
 
 **Location**: it is placed as value of special attribute **data\_merge** that can be added to some HTML elements; for example:
 
-**Example 5: Repeatable Section**
+##### **Example 5: Repeatable Section**
 
 ```html
 
@@ -168,7 +168,7 @@ Repeatable sections can be nested, i.e. HTML element marked as repeatable can co
 
 It can be explained by examples. Let the source data set contains a list of <Person> elements, with child elements. They will be mapped as ***Persons.Person***, relatively to the root element.
 
-**Example 6: Data Set with Repeated Elements**
+##### **Example 6: Data Set with Repeated Elements**
 
 ```html
 
@@ -248,7 +248,7 @@ It can be explained by examples. Let the source data set contains a list of <Per
 
 ```
 
-**Example 6.1: JSON**
+##### **Example 6.1: JSON**
 
 ```html
 
@@ -332,7 +332,7 @@ It can be explained by examples. Let the source data set contains a list of <Per
 
 One of possible templates that can be merged with data set above appears as below; here a repeatable section is DIV element:
 
-**Example 7: Template with Repeatable Section as DIV**
+##### **Example 7: Template with Repeatable Section as DIV**
 
 ```html
 
@@ -374,7 +374,7 @@ As you can see, ***Title*** element is mapped relatively to its current data c
 
 A result of merging of this template with data from Example 6 will be as follows:
 
-**Example 8: Result of the Template Merge**
+##### **Example 8: Result of the Template Merge**
 
 ```html
 
@@ -430,7 +430,7 @@ Another example of template; here a repeatable section is TABLE element.
 
 More correctly, processing of #foreach-marked TABLE differs from DIV: the whole TABLE element isn't repeated, only TR in the table body (regardless of whether TBODY tag is present explicitly or not - anyway it will be added by Aspose.HTML.Net engine):
 
-**Example 9: Template with Repeatable Section**
+##### **Example 9: Template with Repeatable Section**
 
 ```html
 

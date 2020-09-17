@@ -7,7 +7,7 @@ weight: 50
 
 ## **Introduction**
 This article explains how to convert an HTML document to MHTML language. 
-### **API Information**
+## **API Information**
 
 |**API**|**Type**|**Description**|**Swagger Link**|
 | :- | :- | :- | :- |
@@ -16,8 +16,6 @@ This article explains how to convert an HTML document to MHTML language. 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
-
-**Create Authentication Header**
 
 ```java
 

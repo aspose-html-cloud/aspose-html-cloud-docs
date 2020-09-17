@@ -7,7 +7,7 @@ weight: 20
 
 ## **Introduction**
 This article explain how to get the HTML fragments from the HTML document that match the specified XPath query. Aspose.HTML Cloud provide two APIs to get the list of HTML fragments:
-### **API Information**
+## **API Information**
 
 |**API**|**Type**|**Description**|**Swagger Link**|
 | :- | :- | :- | :- |
@@ -57,7 +57,7 @@ curl -v "https://api.aspose.cloud/v3.0/html/fragments/json?sourceUrl=https://www
 ## **Available SDKs**
 Using an SDK (API client) is the quickest way for a developer to speed up the development. An SDK takes care of a lot of low-level details of making requests and handling responses and lets you focus on writing code specific to your particular project. Checkout our [GitHub repository](https://github.com/aspose-html-cloud) for a complete list of Aspose.HTML SDKs along with working examples, to get you started in no time. Please check [Available SDKs](/available-sdks/) article to learn how to add an SDK to your project.
 ### **SDK Examples**
-**Case 1: Get list of HTML fragments matching the specified XPath query:**
+#### **Case 1: Get list of HTML fragments matching the specified XPath query:**
 
 {{< tabs tabTotal="9" tabID="5" tabName1="C#" tabName2="Python" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Java" tabName8="Swift" tabName9="C++" >}}
 
@@ -117,7 +117,7 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 
 {{< /tabs >}}
 
-**Case 2: Get list of HTML fragments matching the specified XPath query by the source page URL:**
+#### **Case 2: Get list of HTML fragments matching the specified XPath query by the source page URL:**
 
 {{< tabs tabTotal="9" tabID="6" tabName1="C#" tabName2="Python" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Java" tabName8="Swift" tabName9="C++" >}}
 

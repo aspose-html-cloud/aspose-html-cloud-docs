@@ -32,7 +32,6 @@ PM> Install-Package Aspose.Html-Cloud              
 ```java
 
 pip install -r Aspose.Html-Cloud-SDK-for-Python/requirements.txt
-
 python Aspose.Html-Cloud-SDK-for-Python/setup.py install
 
 ```
@@ -60,25 +59,15 @@ Composer:
 To install the bindings via Composer, add the following to composer.json:
 
 {
-
   "repositories": [
-
     {
-
       "type": "git",
-
       "url": "https://github.com/aspose-html-cloud/aspose-html-cloud-php.git"
-
     }
-
   ],
-
   "require": {
-
     "aspose-html-cloud/aspose-html-cloud-php": "\*@dev"
-
   }
-
 }
 
 Then run composer install

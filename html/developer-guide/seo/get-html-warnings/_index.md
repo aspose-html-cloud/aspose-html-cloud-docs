@@ -9,7 +9,7 @@ weight: 20
 
 ## **Introduction**
 Aspose.HTML Cloud, easy to use REST API allows you validate your HTML and get warnings in JSON or XML format. You can use this API with any language: .NET, Java, PHP, Ruby, Rails, Python and many more.
-### **API Information**
+## **API Information**
 
 |**API**|**Type**|**Description**|**Swagger Link**|
 | :- | :- | :- | :- |

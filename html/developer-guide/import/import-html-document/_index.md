@@ -9,7 +9,7 @@ weight: 10
 
 ## **Introduction**
 Aspose.HTML Cloud is an easy to use REST API which allows you multiple features. This article explains how you can easily create/import HTML document from a Markdown file using our this API with any language: .NET, Java, PHP, Ruby, Rails, Python and many more.
-### **API Information**
+## **API Information**
 
 |**API**|**Type**|**Description**|**Swagger Link**|
 | :- | :- | :- | :- |
@@ -17,7 +17,7 @@ Aspose.HTML Cloud is an easy to use REST API which allows you multiple features.
 |/html/{name}/import/md|PUT|Creates an HTML document from Markdown file (located on storage) and uploads resulting file to the storage|[PutImportMarkdownToHtml](https://apireference.aspose.cloud/html/#/Import/PutImportMarkdownToHtml)|
 |/html/import/md|POST|Creates an HTML document from Markdown file (in request content) and uploads resulting file to the storage.|[PostImportMarkdownToHtml](https://apireference.aspose.cloud/html/#/Import/PostImportMarkdownToHtml)|
 ### **cURL Example**
-**Case 1: Create an HTML document from Markdown file** 
+#### **Case 1: Create an HTML document from Markdown file** 
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -49,7 +49,7 @@ Returns the result. Content is an HTML file.
 
 {{< /tabs >}}
 
-**Case 2: Create an HTML document from Markdown file and upload result file to cloud storage**
+#### **Case 2: Create an HTML document from Markdown file and upload result file to cloud storage**
 
 {{< tabs tabTotal="2" tabID="5" tabName1="Request" tabName2="Response" >}}
 
@@ -81,7 +81,7 @@ Returns the result. Content is an HTML file.
 
 {{< /tabs >}}
 
-**Case 3: Create an HTML document from Markdown file (in request content)**
+#### **Case 3: Create an HTML document from Markdown file (in request content)**
 
 {{< tabs tabTotal="1" tabID="9" tabName1="Request" >}}
 
@@ -105,8 +105,8 @@ curl -X POST "https://api.aspose.cloud/v3.0/html/import/md?outPath=put\_md\_to\_
 ## **Available SDKs**
 Using an SDK (API client) is the quickest way for a developer to speed up the development. An SDK takes care of a lot of low-level details of making requests and handling responses and lets you focus on writing code specific to your particular project. Checkout our [GitHub repository](https://github.com/aspose-html-cloud) for a complete list of Aspose.HTML SDKs along with working examples, to get you started in no time. Please check [Available SDKs](/available-sdks/) article to learn how to add an SDK to your project.
 ### **SDK Examples**
-**Case 1: Create an HTML document from Markdown file and upload result file to cloud storage**
-
+#### **Case 1: Create an HTML document from Markdown file and upload result file to cloud storage**
+ 
 {{< tabs tabTotal="9" tabID="12" tabName1="C#" tabName2="Python" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Java" tabName8="Swift" tabName9="C++" >}}
 
 {{< tab tabNum="1" >}}
@@ -165,7 +165,7 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 
 {{< /tabs >}}
 
-**Case 2: Create an HTML document from Markdown file and upload result file to cloud storage**
+#### **Case 2: Create an HTML document from Markdown file and upload result file to cloud storage**
 
 {{< tabs tabTotal="9" tabID="13" tabName1="C#" tabName2="Python" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Java" tabName8="Swift" tabName9="C++" >}}
 
@@ -225,7 +225,7 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 
 {{< /tabs >}}
 
-**Case 3: Create an HTML document from Markdown file (in request content)**
+#### **Case 3: Create an HTML document from Markdown file (in request content)**
 
 {{< tabs tabTotal="9" tabID="14" tabName1="C#" tabName2="Python" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Java" tabName8="Swift" tabName9="C++" >}}
 
