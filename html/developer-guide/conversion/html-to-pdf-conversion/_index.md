@@ -9,7 +9,7 @@ weight: 10
 
 ## **Introduction**
 Aspose.HTML Cloud has provided the simplest API to convert an HTML page to the fixed-layout document format PDF. You can convert the HTML document to PDF either from the storage by its name or from the web by its URL.
-### **API Information**
+## **API Information**
 
 |**API**|**Type**|**Description**|**Swagger Link**|
 | :- | :- | :- | :- |
@@ -18,7 +18,7 @@ Aspose.HTML Cloud has provided the simplest API to convert an HTML page to the f
 |/html/convert/pdf|GET|Convert the HTML page (located in the Web) to PDF and returns resulting file in response content|[GetConvertDocumentToPdfByUrl](https://apireference.aspose.cloud/html/#!/Conversion/GetConvertDocumentToPdfByUrl)|
 |/html/convert/pdf|POST|Converts the HTML document (in request content) to PDF and uploads resulting file to storage.|[PostConvertDocumentInRequestToPdf](https://apireference.aspose.cloud/html/#!/Conversion/PostConvertDocumentInRequestToPdf)|
 ### **cURL Example**
-**Case 1: Demonstrate GET on /html/{name}/convert/pdf**
+#### **Case 1: Demonstrate GET on /html/{name}/convert/pdf**
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -52,7 +52,7 @@ PDF File
 
 {{< /tabs >}}
 
-**Case 2: Demonstrate PUT on /html/{name}/convert/pdf**
+#### **Case 2: Demonstrate PUT on /html/{name}/convert/pdf**
 
 {{< tabs tabTotal="2" tabID="5" tabName1="Request" tabName2="Response" >}}
 
@@ -89,7 +89,7 @@ curl -v "https://api.aspose.cloud/v3.0/html/testpage4\_embcss.html/convert/pdf?o
 
 {{< /tabs >}}
 
-**Case 3: Demonstrate GET on /html/convert/pdf**
+#### **Case 3: Demonstrate GET on /html/convert/pdf**
 
 {{< tabs tabTotal="2" tabID="9" tabName1="Request" tabName2="Response" >}}
 
@@ -123,7 +123,7 @@ PDF File
 
 {{< /tabs >}}
 
-**Case 4: Demonstrate POST on /html/convert/pdf**
+#### **Case 4: Demonstrate POST on /html/convert/pdf**
 
 {{< tabs tabTotal="2" tabID="13" tabName1="Request" tabName2="Response" >}}
 
@@ -162,7 +162,7 @@ curl -v "https://api.aspose.cloud/v3.0/html/convert/pdf?outPath=testpage4\_embcs
 ## **Available SDKs**
 Using an SDK (API client) is the quickest way for a developer to speed up the development. An SDK takes care of a lot of low-level details of making requests and handling responses and lets you focus on writing code specific to your particular project. Check out our [GitHub repository](https://github.com/aspose-html-cloud) for a complete list of Aspose.HTML SDKs along with working examples, to get you started in no time. Please check [Available SDKs](/available-sdks/) article to learn how to add an SDK to your project.
 ### **SDK Examples**
-**Case 1: Convert the HTML document from the storage by its name to PDF**
+#### **Case 1: Convert the HTML document from the storage by its name to PDF**
 
 {{< tabs tabTotal="9" tabID="17" tabName1="C#" tabName2="Python" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Java" tabName8="Swift" tabName9="C++" >}}
 
@@ -222,7 +222,7 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 
 {{< /tabs >}}
 
-**Case 2: Converts the HTML document from storage to PDF**
+#### **Case 2: Converts the HTML document from storage to PDF**
 
 {{< tabs tabTotal="9" tabID="18" tabName1="C#" tabName2="Python" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Java" tabName8="Swift" tabName9="C++" >}}
 
@@ -282,7 +282,7 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 
 {{< /tabs >}}
 
-**Case 3: Convert the HTML page from the web by its URL to PDF**
+#### **Case 3: Convert the HTML page from the web by its URL to PDF**
 
 {{< tabs tabTotal="9" tabID="19" tabName1="C#" tabName2="Python" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Java" tabName8="Swift" tabName9="C++" >}}
 
@@ -342,7 +342,7 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 
 {{< /tabs >}}
 
-**Case 4: Converts the HTML document to PDF and uploads resulting file to storage**
+#### **Case 4: Converts the HTML document to PDF and uploads resulting file to storage**
 
 {{< tabs tabTotal="9" tabID="20" tabName1="C#" tabName2="Python" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Java" tabName8="Swift" tabName9="C++" >}}
 
