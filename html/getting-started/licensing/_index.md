@@ -14,9 +14,9 @@ Our free plan allows you to use Cloud APIs as you would normally. It only applie
 ## **Paid Plan**
 The free plan simply becomes paid plan when you upgrade your plan for any paid account. Please follow below steps to upgrade your free plan to paid plan 
 
-1- Login to <https://cloud.aspose.com/SignIn>.
-2- Follow instructions after clicking on [Buy Now](https://dashboard.aspose.cloud/#/plan).
-3- Same App Key and App SID will be used for the paid plan.
+1. Login to <https://cloud.aspose.com/SignIn>.
+2. Fllow instructions after clicking on [Buy Now](https://dashboard.aspose.cloud/#/plan).
+3. Same App Key and App SID will be used for the paid plan.
 
 
 
