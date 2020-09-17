@@ -23,9 +23,9 @@ Our REST API provides the following capabilities:
 - Populate HTML template with external data (JSON or XML) and obtain data-merged HTML document.
 
 {{% /alert %}} 
-### **Cloud SDKs**
+## **Cloud SDKs**
 Cloud SDKs are wrappers around REST APIs in various programming languages, allowing you to process documents in language of your choice quickly and easily, gaining all benefits of strong types and IDE highlights. Please check [Aspose.Html GitHub repository](https://github.com/aspose-html-cloud/) for SDKs along with working examples, to get you started in no time. 
-### **API Explorer**
+## **API Explorer**
 The easiest way to try out our API right away in your browser! With the [Aspose.HTML for Cloud API Reference](https://apireference.aspose.cloud/html/). This is a collection of Swagger documentation for the Aspose.Html for Cloud APIs. You can get information about all the resources in the API. It also provides testing and interactivity to our API endpoint documentation.
-### **Security and Authentication**
+## **Security and Authentication**
 Aspose.Html for Cloud APIs are secured and requires authentication. Please [create your Aspose for Cloud account](https://docs.aspose.cloud/total/creating-and-managing-account) (if not already created), [Create new app and Get your App Key and App SID](https://docs.aspose.cloud/total/create-new-app-and-get-app-key-and-sid). Aspose for Cloud REST APIs can be authenticated using JWT. Please check [JWT token-based authentication](https://docs.aspose.cloud/total/json-web-token-authentication) article for more details.
