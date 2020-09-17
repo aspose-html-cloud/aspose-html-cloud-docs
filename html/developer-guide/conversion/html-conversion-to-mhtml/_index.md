@@ -27,7 +27,7 @@ curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant\_type=client\
 
 ```java
 
-curl -v "https://api.aspose.cloud/v3.0/html/convert/mhtml?sourceURL=http://help.websiteos.com/websiteos/example\_of\_a\_simple\_html\_page.htm" -X GET -H "Accept: application/json" -H "Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE1NjE4MTg0ODMsImV4cCI6MTU2MTkwNDg4MywiaXNzIjoiaHR0cHM6Ly9hcGkuYXNwb3NlLmNsb3VkIiwiYXVkIjpbImh0dHBzOi8vYXBpLmFzcG9zZS5jbG91ZC9yZXNvdXJjZXMiLCJhcGkucGxhdGZvcm0iLCJhcGkucHJvZHVjdHMiXSwiY2xpZW50X2lkIjoiNzg5NDZmYjQtM2JkNC00ZDNlLWIzMDktZjllMmZmOWFjNmY5Iiwic2NvcGUiOlsiYXBpLnBsYXRmb3JtIiwiYXBpLnByb2R1Y3RzIl19.EegmlLNbXHmmQWcCtN1WncYseZO2PA4gdSxQKMlpoFRP5xD5LLJS2J\_KvnM96JcbVcKXnTiJfUiDTiOesihpOF2f0o-xpUPmSjpxhzrmgFNUL778jj\_XW2FiOH0I0yHy9-EiOns8pWVCx4lD\_1440EzqIXXMFssO3N2r2DrbZ2Ltn2EjSNuUcoxhZEyGBahGQclL73HBqyf06esT4QOOkrhC9L9pkQALyy2RTvYh8tXbVbvYNxmKXWoiN3dVdk74kUFsLsy9bLyifplQ1RqCAL\_B8C1L4gJYJp-aOvLiJkilwuV8ZWIgd7cmBKMUMCBC0MYt57mRLAlioYGdO37tEQ" --ssl-no-revoke
+curl -v "https://api.aspose.cloud/v3.0/html/convert/mhtml?sourceURL=http://help.websiteos.com/websiteos/example\_of\_a\_simple\_html\_page.htm" -X GET -H "Accept: application/json"
 
 ```
 
