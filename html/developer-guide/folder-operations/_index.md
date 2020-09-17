@@ -45,7 +45,9 @@ curl -v "https://api.aspose.cloud/v3.0/html/storage/folder/new\_slides\_folder" 
 
 ```java
 
-{"value":[]}
+{
+  "value":[]
+}
 
 ```
 
@@ -71,7 +73,10 @@ curl -v "https://api.aspose.cloud/v3.0/html/storage/folder/new\_html\_folder" -X
 
 ```java
 
-{"uploaded":["test23.html"],"errors":[]}
+{
+  "uploaded":["test23.html"],
+  "errors":[]
+}
 
 ```
 
