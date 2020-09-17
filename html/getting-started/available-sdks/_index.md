@@ -5,14 +5,14 @@ url: /available-sdks/
 weight: 30
 ---
 
-# **Aspose.HTML Cloud SDKs**
+## **Aspose.HTML Cloud SDKs**
 Aspose.HTML for Cloud is a modern REST oriented API, that allows easy integration into existing systems.
 ### **Why use an SDK?**
 Using an SDK (API client) is the quickest way for a developer to speed up the development. An SDK takes care of a lot of low-level details of making requests and handling responses and lets you focus on writing code specific to your particular project.
 ### **SDK benefits**
 Our supported SDKs are 100% tested and out of the box running. These SDKs are open source and have an MIT license. You can use them, and even customize them for absolutely free of charge.
-# **Supported SDKs**
-{{< tabs tabTotal="10" tabID="1" tabName1=".NET" tabName2="Python" tabName3="Java" tabName4="C++" tabName5="go" tabName6="Node.JS" tabName7="Swift" tabName8="Android" tabName9="Ruby" tabName10="PHP" >}}
+## **Supported SDKs**
+{{< tabs tabTotal="10" tabID="1" tabName1=".NET" tabName2="Python" tabName3="Java" tabName4="C++" tabName5="Go" tabName6="Node.js" tabName7="Swift" tabName8="Android" tabName9="Ruby" tabName10="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -30,11 +30,7 @@ PM> Install-Package Aspose.HTML-Cloud
 
 Completes source code of Aspose.HTML SDK for .NET is freely available on the [GitHub](https://github.com/aspose-html-cloud)
 
-{{% /alert %}} {{% alert color="primary" %}} 
-
-Please see the Aspose.HTML Cloud SDK for .NET Example [here](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet/tree/master/Aspose.HTML.Cloud.SDK.Examples).
-
-{{% /alert %}} 
+{{% /alert %}}
 
 {{< /tab >}}
 
@@ -52,7 +48,7 @@ pip install -r Aspose.HTML-Cloud-SDK-for-Python/requirements.txt
 
 **Direct Method**
 
-\1. Download the latest package from [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-python), and run the following command
+1. Download the latest package from [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-python), and run the following command
 
 ```java
 
@@ -77,15 +73,10 @@ You can add the following dependency into your existing Java application
 ```java
 
 <dependency>
-
     <groupId>com.aspose</groupId>
-
     <artifactId>aspose-html-cloud</artifactId>
-
     <version>1.0.0</version>
-
     <scope>compile</scope>
-
 </dependency>
 
 ```
