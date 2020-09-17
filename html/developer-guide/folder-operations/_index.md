@@ -7,7 +7,7 @@ weight: 60
 
 ## **Introduction**
 This article explains how to use Folder Operation with Aspose.HTML Cloud
-### **API Information**
+## **API Information**
 
 |**API**|**Type**|**Description**|**Swagger Link**|
 | :- | :- | :- | :- |
@@ -19,15 +19,13 @@ This article explains how to use Folder Operation with Aspose.HTML Cloud
 ### **cURL Example**
 All of these requests require you obtain a connect token befor you proceede
 
-**Create Authentication Header**
-
 ```java
 
 curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant\_type=client\_credentials&client\_id=XXXXX&client\_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
 ```
 
-**Example for getting list of all files and folder on Cloud Storage**
+#### **Example for getting list of all files and folder on Cloud Storage**
 
 {{< tabs tabTotal="2" tabID="2" tabName1="Request" tabName2="Response" >}}
 
@@ -55,7 +53,7 @@ curl -v "https://api.aspose.cloud/v3.0/html/storage/folder/new\_slides\_folder" 
 
 {{< /tabs >}}
 
-**Example for creating a folder on Cloud Storage**
+#### **Example for creating a folder on Cloud Storage**
 
 {{< tabs tabTotal="2" tabID="5" tabName1="Request" tabName2="Response" >}}
 
@@ -84,7 +82,7 @@ curl -v "https://api.aspose.cloud/v3.0/html/storage/folder/new\_html\_folder" -X
 
 {{< /tabs >}}
 
-**Example for deleting a file from Cloud Storage**
+#### **Example for deleting a file from Cloud Storage**
 
 {{< tabs tabTotal="1" tabID="8" tabName1="Request" >}}
 
@@ -100,7 +98,7 @@ curl -v "https://api.aspose.cloud/v3.0/html/storage/folder/new\_html\_folder" -X
 
 {{< /tabs >}}
 
-**Example for copying a folder to a new location on Cloud Storage**
+#### **Example for copying a folder to a new location on Cloud Storage**
 
 {{< tabs tabTotal="1" tabID="10" tabName1="Request" >}}
 
@@ -116,7 +114,7 @@ curl -v "https://api.aspose.cloud/v3.0/html/storage/folder/copy/new\_slides\_fol
 
 {{< /tabs >}}
 
-**Example for moving a file to a new location on Cloud Storage**
+#### **Example for moving a file to a new location on Cloud Storage**
 
 {{< tabs tabTotal="1" tabID="12" tabName1="Request" >}}
 
