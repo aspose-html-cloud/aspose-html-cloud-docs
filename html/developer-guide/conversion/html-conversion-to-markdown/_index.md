@@ -7,7 +7,7 @@ weight: 40
 
 ## **Introduction**
 This article explains how to convert an HTML document to markdown language.
-### **API Information**
+## **API Information**
 
 |**API**|**Type**|**Description**|**Swagger Link**|
 | :- | :- | :- | :- |
@@ -15,7 +15,7 @@ This article explains how to convert an HTML document to markdown language.
 |/html/{name}/convert/md|PUT|Converts the HTML document (located on storage) to Markdown and uploads resulting file to storage by specified path|[PutConvertDocumentToMarkdown](https://apireference.aspose.cloud/html/#!/Conversion/PutConvertDocumentToMarkdown)|
 |/html/convert/md|POST|Converts the HTML document (in request content) to Markdown and uploads resulting file to storage by specified path|[PostConvertDocumentInRequestToMarkdown](https://apireference.aspose.cloud/html/#!/Conversion/PostConvertDocumentInRequestToMarkdown)|
 ### **cURL Example**
-**Case 1: This example demonstrates GET on /html/{name}/convert/md**
+#### **Case 1: This example demonstrates GET on /html/{name}/convert/md**
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -48,7 +48,7 @@ HTML File
 {{< /tabs >}}
 
 
-**Case 2: This example demonstrates PUT on /html/{name}/convert/md**
+#### **Case 2: This example demonstrates PUT on /html/{name}/convert/md**
 
 {{< tabs tabTotal="1" tabID="5" tabName1="Request" >}}
 
@@ -70,7 +70,7 @@ curl -v "https://api.aspose.cloud/v3.0/html/test.html/convert/md?outpath=aaaa.ht
 
 {{< /tabs >}}
 
-**Case 3: This example demonstrates POST on /html/convert/md**
+#### **Case 3: This example demonstrates POST on /html/convert/md**
 
 {{< tabs tabTotal="1" tabID="8" tabName1="Request" >}}
 
@@ -93,7 +93,7 @@ curl -v "https://api.aspose.cloud/v3.0/html/convert/md?outPath=testing\_out.html
 ## **Available SDKs**
 Using an SDK (API client) is the quickest way for a developer to speed up the development. An SDK takes care of a lot of low-level details of making requests and handling responses and lets you focus on writing code specific to your particular project. Check out our [GitHub repository](https://github.com/aspose-html-cloud) for a complete list of Aspose.HTML SDKs along with working examples, to get you started in no time. Please check [Available SDKs](/available-sdks/) article to learn how to add an SDK to your project.
 ### **SDK Examples**
-**Case 1: Converts the HTML document to Markdown and returns resulting file in response content**
+#### **Case 1: Converts the HTML document to Markdown and returns resulting file in response content**
 
 {{< tabs tabTotal="9" tabID="11" tabName1="C#" tabName2="Python" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Java" tabName8="Swift" tabName9="C++" >}}
 
@@ -153,7 +153,7 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 
 {{< /tabs >}}
 
-**Case 2: Converts the HTML document to Markdown and uploads resulting file to storage by specified path**
+#### **Case 2: Converts the HTML document to Markdown and uploads resulting file to storage by specified path**
 
 {{< tabs tabTotal="9" tabID="12" tabName1="C#" tabName2="Python" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Java" tabName8="Swift" tabName9="C++" >}}
 
@@ -213,7 +213,7 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 
 {{< /tabs >}}
 
-**Case 3: Converts the HTML document to Markdown and uploads resulting file to storage by specified path**
+#### **Case 3: Converts the HTML document to Markdown and uploads resulting file to storage by specified path**
 
 {{< tabs tabTotal="9" tabID="13" tabName1="C#" tabName2="Python" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Java" tabName8="Swift" tabName9="C++" >}}
 
