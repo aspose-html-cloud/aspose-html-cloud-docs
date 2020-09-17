@@ -14,12 +14,8 @@ weight: 10
 Aspose.HTML Cloud is a REST API for manipulating and converting the HTML documents.
 Our REST API provides the following capabilities:
 
-
-
-
-
 - Convert the source document into PDF or XPS format. The source document can be an HTML document from the cloud storage (also XHTML, MHTML, ePub, SVG, Markdown), or a Web page by its URL.
-- convert the source document into one of the image formats: JPEG, PNG, GIF, TIFF, BMP.
+- Convert the source document into one of the image formats: JPEG, PNG, GIF, TIFF, BMP.
 - Convert Markdown file into HTML.
 - Select HTML fragments using an XPath query.
 - Select HTML fragments using a CSS selector.

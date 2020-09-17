@@ -28,7 +28,7 @@ curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant\_type=client\
 
 ```java
 
-curl -v "https://api.aspose.cloud/v3.0/html/template\_3\_2.html/merge" -F "dataPath=@merge\_data\_3.xml" --X POST -H "Accept: multipart/form-data" -H "Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE1NjE4NDIzMDAsImV4cCI6MTU2MTkyODcwMCwiaXNzIjoiaHR0cHM6Ly9hcGkuYXNwb3NlLmNsb3VkIiwiYXVkIjpbImh0dHBzOi8vYXBpLmFzcG9zZS5jbG91ZC9yZXNvdXJjZXMiLCJhcGkucGxhdGZvcm0iLCJhcGkucHJvZHVjdHMiXSwiY2xpZW50X2lkIjoiNzg5NDZmYjQtM2JkNC00ZDNlLWIzMDktZjllMmZmOWFjNmY5Iiwic2NvcGUiOlsiYXBpLnBsYXRmb3JtIiwiYXBpLnByb2R1Y3RzIl19.YykZ\_TwQsmw5uOJSsthSOXIxC\_xJeMEE5a3xxflOZOtEyUYfp5EhYNE5G0rZ4qrXCMmccRT7Bbcc\_xj1rzjri2WIb1oLq6ugKmKnkrN2xUO0DAGHXYkK\_MCHcfByp\_8RrCqfLet4zdN9Li6WeWQNd0DKujlzOZ1niGkSQRf7DRC6OzesVOqLFfDl-tM\_vSmg20zgQKsIEjXr9arjKT7GSLP4Yap1nfHhAZQKbd1r8g5bppVkgGVf920RvzcSd6bbS9uoPjI5-xcgFte4-y3WwEM4JjBX2OvGLPyPwrhrjpMG78YbVSavzjrWyRkpKP6FADuS8vVZLrlZnEv\_zseiRw" --ssl-no-revoke
+curl -v "https://api.aspose.cloud/v3.0/html/template\_3\_2.html/merge" -F "dataPath=@merge\_data\_3.xml" --X POST -H "Accept: multipart/form-data"
 
 ```
 

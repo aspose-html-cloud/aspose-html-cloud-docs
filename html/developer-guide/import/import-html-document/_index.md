@@ -31,13 +31,7 @@ curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant\_type=client\
 
 ```java
 
-curl -X GET "https://api.aspose.cloud/v3.0/html/README.md/import/md" 
-
--H "accept: text/html" 
-
--H "x-aspose-client: Containerize.Swagger"
-
--H "Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE1OTE5NTQ5OTIsImV4cCI6MTU5MjA0MTM5MiwiaXNzIjoiaHR0cHM6Ly9hcGkuYXNwb3NlLmNsb3VkIiwiYXVkIjpbImh0dHBzOi8vYXBpLmFzcG9zZS5jbG91ZC9yZXNvdXJjZXMiLCJhcGkucGxhdGZvcm0iLCJhcGkucHJvZHVjdHMiLCJhcGkuc3RvcmFnZSJdLCJjbGllbnRfaWQiOiI5YWEyNjU4Yy1kMTVjLTQ0ZTgtYTA3NS0zMWQ2N2M3YmIxYWIiLCJjbGllbnRfZGVmYXVsdF9zdG9yYWdlIjoiNjVEQkVCNkUtRDBCRS00MDBCLThCMzItRTZEQjcxODE1MUUxIiwiY2xpZW50X2lkU3J2SWQiOiI3MDQ3NzkiLCJzY29wZSI6WyJhcGkucGxhdGZvcm0iLCJhcGkucHJvZHVjdHMiLCJhcGkuc3RvcmFnZSJdfQ.pJ2J3a8kmybu8r\_FXAlLhX4cRm0wF\_UUI081QT\_NbwHzp-TIH3Wj4FKr18DaaoA7KlA5ZMgXOIBsQpqUU27-jaXm5\_Dxl\_Y04nu8M4CycxClXSknpySUxMTHt6tnCPP\_\_vf7o8i9tHcr5s1S7sk3Gf\_35CL692TSHU27ybUgpQVhjUQiy18GYDpSRd6Bdi48T715APM0HKu4CncYjMLuJX3SxMwX6KXYW9sxpJQXorGER4DChzZ5-Mx7jcTAgfqZj7r8EEl-R5o-qt4NvUM5Bjc9ENiESOYmxpZkn8B4-e8\_oJwKJ-d22w69Vfqflq5h1oVeQGhn4kLAJ1JTWtbhOA"
+curl -X GET "https://api.aspose.cloud/v3.0/html/README.md/import/md" -H "accept: text/html" -H "x-aspose-client: Containerize.Swagger"
 
 ```
 
@@ -69,13 +63,7 @@ curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant\_type=client\
 
 ```java
 
-curl -X PUT "https://api.aspose.cloud/v3.0/html/README.md/import/md?outPath=HtmlDoc/put\_md\_to\_html.html&folder=HtmlDoc" 
-
--H "accept: application/json" 
-
--H "x-aspose-client: Containerize.Swagger"
-
--H "Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE1OTE5NTQ5OTIsImV4cCI6MTU5MjA0MTM5MiwiaXNzIjoiaHR0cHM6Ly9hcGkuYXNwb3NlLmNsb3VkIiwiYXVkIjpbImh0dHBzOi8vYXBpLmFzcG9zZS5jbG91ZC9yZXNvdXJjZXMiLCJhcGkucGxhdGZvcm0iLCJhcGkucHJvZHVjdHMiLCJhcGkuc3RvcmFnZSJdLCJjbGllbnRfaWQiOiI5YWEyNjU4Yy1kMTVjLTQ0ZTgtYTA3NS0zMWQ2N2M3YmIxYWIiLCJjbGllbnRfZGVmYXVsdF9zdG9yYWdlIjoiNjVEQkVCNkUtRDBCRS00MDBCLThCMzItRTZEQjcxODE1MUUxIiwiY2xpZW50X2lkU3J2SWQiOiI3MDQ3NzkiLCJzY29wZSI6WyJhcGkucGxhdGZvcm0iLCJhcGkucHJvZHVjdHMiLCJhcGkuc3RvcmFnZSJdfQ.pJ2J3a8kmybu8r\_FXAlLhX4cRm0wF\_UUI081QT\_NbwHzp-TIH3Wj4FKr18DaaoA7KlA5ZMgXOIBsQpqUU27-jaXm5\_Dxl\_Y04nu8M4CycxClXSknpySUxMTHt6tnCPP\_\_vf7o8i9tHcr5s1S7sk3Gf\_35CL692TSHU27ybUgpQVhjUQiy18GYDpSRd6Bdi48T715APM0HKu4CncYjMLuJX3SxMwX6KXYW9sxpJQXorGER4DChzZ5-Mx7jcTAgfqZj7r8EEl-R5o-qt4NvUM5Bjc9ENiESOYmxpZkn8B4-e8\_oJwKJ-d22w69Vfqflq5h1oVeQGhn4kLAJ1JTWtbhOA"
+curl -X PUT "https://api.aspose.cloud/v3.0/html/README.md/import/md?outPath=HtmlDoc/put\_md\_to\_html.html&folder=HtmlDoc" -H "accept: application/json" -H "x-aspose-client: Containerize.Swagger"
 
 ```
 
@@ -107,13 +95,7 @@ curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant\_type=client\
 
 ```java
 
-curl -X POST "https://api.aspose.cloud/v3.0/html/import/md?outPath=put\_md\_to\_html.html" 
-
--H "accept: application/json" 
-
--H "x-aspose-client: Containerize.Swagger"
-
--H "Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE1OTE5NTQ5OTIsImV4cCI6MTU5MjA0MTM5MiwiaXNzIjoiaHR0cHM6Ly9hcGkuYXNwb3NlLmNsb3VkIiwiYXVkIjpbImh0dHBzOi8vYXBpLmFzcG9zZS5jbG91ZC9yZXNvdXJjZXMiLCJhcGkucGxhdGZvcm0iLCJhcGkucHJvZHVjdHMiLCJhcGkuc3RvcmFnZSJdLCJjbGllbnRfaWQiOiI5YWEyNjU4Yy1kMTVjLTQ0ZTgtYTA3NS0zMWQ2N2M3YmIxYWIiLCJjbGllbnRfZGVmYXVsdF9zdG9yYWdlIjoiNjVEQkVCNkUtRDBCRS00MDBCLThCMzItRTZEQjcxODE1MUUxIiwiY2xpZW50X2lkU3J2SWQiOiI3MDQ3NzkiLCJzY29wZSI6WyJhcGkucGxhdGZvcm0iLCJhcGkucHJvZHVjdHMiLCJhcGkuc3RvcmFnZSJdfQ.pJ2J3a8kmybu8r\_FXAlLhX4cRm0wF\_UUI081QT\_NbwHzp-TIH3Wj4FKr18DaaoA7KlA5ZMgXOIBsQpqUU27-jaXm5\_Dxl\_Y04nu8M4CycxClXSknpySUxMTHt6tnCPP\_\_vf7o8i9tHcr5s1S7sk3Gf\_35CL692TSHU27ybUgpQVhjUQiy18GYDpSRd6Bdi48T715APM0HKu4CncYjMLuJX3SxMwX6KXYW9sxpJQXorGER4DChzZ5-Mx7jcTAgfqZj7r8EEl-R5o-qt4NvUM5Bjc9ENiESOYmxpZkn8B4-e8\_oJwKJ-d22w69Vfqflq5h1oVeQGhn4kLAJ1JTWtbhOA"
+curl -X POST "https://api.aspose.cloud/v3.0/html/import/md?outPath=put\_md\_to\_html.html" -H "accept: application/json" -H "x-aspose-client: Containerize.Swagger"
 
 ```
 
