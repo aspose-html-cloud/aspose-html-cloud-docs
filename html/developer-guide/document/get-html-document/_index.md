@@ -7,7 +7,7 @@ weight: 10
 
 ## **Introduction**
 This article explains how to get the HTML document by its name. The document is previously uploaded to the Cloud Storage and can be accessed by its name and folder name, if specified.
-### **API Information**
+## **API Information**
 
 |**API**|**Type**|**Description**|**Swagger Link**|
 | :- | :- | :- | :- |
