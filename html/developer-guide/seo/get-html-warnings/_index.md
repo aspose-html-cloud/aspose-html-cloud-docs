@@ -27,11 +27,7 @@ curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant\_type=client\
 
 ```java
 
-curl -X GET "https://api.aspose.cloud/v3.0/html/validator?url=http://help.websiteos.com/websiteos/example\_of\_a\_simple\_html\_page.htm&format=json" 
-
--H "accept: application/json" 
-
--H "x-aspose-client: Containerize.Swagger"
+curl -X GET "https://api.aspose.cloud/v3.0/html/validator?url=http://help.websiteos.com/websiteos/example\_of\_a\_simple\_html\_page.htm&format=json" -H "accept: application/json" -H "x-aspose-client: Containerize.Swagger"
 
 ```
 
