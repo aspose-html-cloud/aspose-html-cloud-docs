@@ -29,7 +29,7 @@ curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant\_type=client\
 
 ```java
 
-curl -v "https://api.aspose.cloud/v3.0/html/test.html/convert/md" -X GET -H "Accept: application/json" -H "Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE1NjE4MTg0ODMsImV4cCI6MTU2MTkwNDg4MywiaXNzIjoiaHR0cHM6Ly9hcGkuYXNwb3NlLmNsb3VkIiwiYXVkIjpbImh0dHBzOi8vYXBpLmFzcG9zZS5jbG91ZC9yZXNvdXJjZXMiLCJhcGkucGxhdGZvcm0iLCJhcGkucHJvZHVjdHMiXSwiY2xpZW50X2lkIjoiNzg5NDZmYjQtM2JkNC00ZDNlLWIzMDktZjllMmZmOWFjNmY5Iiwic2NvcGUiOlsiYXBpLnBsYXRmb3JtIiwiYXBpLnByb2R1Y3RzIl19.EegmlLNbXHmmQWcCtN1WncYseZO2PA4gdSxQKMlpoFRP5xD5LLJS2J\_KvnM96JcbVcKXnTiJfUiDTiOesihpOF2f0o-xpUPmSjpxhzrmgFNUL778jj\_XW2FiOH0I0yHy9-EiOns8pWVCx4lD\_1440EzqIXXMFssO3N2r2DrbZ2Ltn2EjSNuUcoxhZEyGBahGQclL73HBqyf06esT4QOOkrhC9L9pkQALyy2RTvYh8tXbVbvYNxmKXWoiN3dVdk74kUFsLsy9bLyifplQ1RqCAL\_B8C1L4gJYJp-aOvLiJkilwuV8ZWIgd7cmBKMUMCBC0MYt57mRLAlioYGdO37tEQ" --ssl-no-revoke
+curl -v "https://api.aspose.cloud/v3.0/html/test.html/convert/md" -X GET -H "Accept: application/json"
 
 ```
 
@@ -62,7 +62,7 @@ curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant\_type=client\
 
 ```java
 
-curl -v "https://api.aspose.cloud/v3.0/html/test.html/convert/md?outpath=aaaa.html" -X PUT -H "Accept: application/json" -H "Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE1NjE4MTg0ODMsImV4cCI6MTU2MTkwNDg4MywiaXNzIjoiaHR0cHM6Ly9hcGkuYXNwb3NlLmNsb3VkIiwiYXVkIjpbImh0dHBzOi8vYXBpLmFzcG9zZS5jbG91ZC9yZXNvdXJjZXMiLCJhcGkucGxhdGZvcm0iLCJhcGkucHJvZHVjdHMiXSwiY2xpZW50X2lkIjoiNzg5NDZmYjQtM2JkNC00ZDNlLWIzMDktZjllMmZmOWFjNmY5Iiwic2NvcGUiOlsiYXBpLnBsYXRmb3JtIiwiYXBpLnByb2R1Y3RzIl19.EegmlLNbXHmmQWcCtN1WncYseZO2PA4gdSxQKMlpoFRP5xD5LLJS2J\_KvnM96JcbVcKXnTiJfUiDTiOesihpOF2f0o-xpUPmSjpxhzrmgFNUL778jj\_XW2FiOH0I0yHy9-EiOns8pWVCx4lD\_1440EzqIXXMFssO3N2r2DrbZ2Ltn2EjSNuUcoxhZEyGBahGQclL73HBqyf06esT4QOOkrhC9L9pkQALyy2RTvYh8tXbVbvYNxmKXWoiN3dVdk74kUFsLsy9bLyifplQ1RqCAL\_B8C1L4gJYJp-aOvLiJkilwuV8ZWIgd7cmBKMUMCBC0MYt57mRLAlioYGdO37tEQ" --ssl-no-revoke -d {}
+curl -v "https://api.aspose.cloud/v3.0/html/test.html/convert/md?outpath=aaaa.html" -X PUT -H "Accept: application/json"
 
 ```
 
@@ -84,8 +84,7 @@ curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant\_type=client\
 
 ```java
 
-curl -v "https://api.aspose.cloud/v3.0/html/convert/md?outPath=testing\_out.html" -X POST -F "file=@test.html" -H "Accept: multipart/form-data"  -H "Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE1NjE4NDA0NjYsImV4cCI6MTU2MTkyNjg2NiwiaXNzIjoiaHR0cHM6Ly9hcGkuYXNwb3NlLmNsb3VkIiwiYXVkIjpbImh0dHBzOi8vYXBpLmFzcG9zZS5jbG91ZC9yZXNvdXJjZXMiLCJhcGkucGxhdGZvcm0iLCJhcGkucHJvZHVjdHMiXSwiY2xpZW50X2lkIjoiNzg5NDZmYjQtM2JkNC00ZDNlLWIzMDktZjllMmZmOWFjNmY5Iiwic2NvcGUiOlsiYXBpLnBsYXRmb3JtIiwiYXBpLnByb2R1Y3RzIl19.TEuMwohycL0X4zeRargqybw7loAyrHJtTC-IrfS2OGyMbBjfnUcA0JoRdHc1jOU36PKDga-J0rKX8885BZUnS\_Vu8lR2dLrtn7uYePU08UNcq48sybK1jzgQq-0BYOjmuhGHh\_E4ZyoEbwv-dIlQ3SsBzTM4LP6y51JsghYqbtCkd7O-KUwZT7XDeil7JxPL1e4CkYaGRpopjaVv0QWbXHyaV8-jyB-aZMA-aKG-CpZOw8VEQWoCpvABpIi60\_K9nW9COX6pYCs8P3q8aYl4Iehwo3uZQQWe0AijnpMF4-ObqAQAKlYxHlNBw2be1mDYHuKrtukRvyu6uWmEAJbCZg" --ssl-no-revoke
-
+curl -v "https://api.aspose.cloud/v3.0/html/convert/md?outPath=testing\_out.html" -X POST -F "file=@test.html" -H "Accept: multipart/form-data"
 ```
 
 {{< /tab >}}
