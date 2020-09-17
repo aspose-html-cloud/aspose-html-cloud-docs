@@ -6,11 +6,11 @@ weight: 20
 ---
 
 It is quite easy to use Aspose.Html for Cloud in your projects. All you need to do is:
-#### **1. Create a Free Account**
+## **1. Create a Free Account**
 Please go to <https://dashboard.aspose.cloud/#/> to create a free account.
-#### **2. Create New App and Get App Key and SID**
+## **2. Create New App and Get App Key and SID**
 Before you can make any requests to Aspose for Cloud APIs you need to [create an API client app](https://docs.aspose.cloud/total/create-new-app-and-get-app-key-and-sid). This will give you **App SID** and **App key (secret key)** which you can use to invoke Aspose for Cloud APIs.
-#### **3. Install the SDK of your choice**
+## **3. Install the SDK of your choice**
 Aspose Html for Cloud SDK is written in 2 different languages, all you need to get started is to add our SDK to your existing project.
 
 {{< tabs tabTotal="10" tabID="1" tabName1=".NET" tabName2="Python" tabName3="Java" tabName4="PHP" tabName5="Ruby" tabName6="Node.js" tabName7="C++" tabName8="Go" tabName9="Swift" tabName10="Android" >}}
@@ -187,7 +187,7 @@ gradlew.bat
 {{< /tab >}}
 
 {{< /tabs >}}
-#### **4. Make an API request from the SDK of your choice**
+## **4. Make an API request from the SDK of your choice**
 Use the App SID and App key (secret key) from the API App Client you created in step one and replace in the corresponding code. Below is an example of translating HTML page from English to German, French and Russian languages.
 
 {{% alert color="primary" %}} 
