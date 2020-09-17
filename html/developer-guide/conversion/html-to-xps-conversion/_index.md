@@ -7,7 +7,7 @@ weight: 20
 
 ## **Introduction**
 Aspose.HTML Cloud has provided the simplest API to convert an HTML page to the fixed-layout document format XPS. You can convert the HTML document to XPS either from the storage by its name or from the web by its URL.
-### **API Information**
+## **API Information**
 
 |**API**|**Type**|**Description**|**Swagger Link**|
 | :- | :- | :- | :- |
@@ -16,7 +16,7 @@ Aspose.HTML Cloud has provided the simplest API to convert an HTML page to the f
 |/html/convert/xps|GET|Converts the HTML page (located in the Web) to XPS and returns resulting file in response content|[GetConvertDocumentToXpsByUrl](https://apireference.aspose.cloud/html/#/Conversion/GetConvertDocumentToXpsByUrl)|
 |/html/convert/xps|POST|Converts the HTML document (in request content) to XPS and uploads resulting file to storage|[PostConvertDocumentInRequestToXps](https://apireference.aspose.cloud/html/#/Conversion/PostConvertDocumentInRequestToXps)|
 ### **cURL Example**
-**Case 1: Converts the HTML document (located on storage) to XPS and returns resulting file in response content:**
+#### **Case 1: Converts the HTML document (located on storage) to XPS and returns resulting file in response content:**
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -54,7 +54,7 @@ Converted XPS File
 
 {{< /tabs >}}
 
-**Case 2: Converts the HTML document (located on storage) to XPS and uploads resulting file to storage:**
+#### **Case 2: Converts the HTML document (located on storage) to XPS and uploads resulting file to storage:**
 
 {{< tabs tabTotal="2" tabID="4" tabName1="Request" tabName2="Response" >}}
 
@@ -95,7 +95,7 @@ curl -v "https://api.aspose.cloud/v3.0/html/testpage4\_embcss.html/convert/xps?o
 
 {{< /tabs >}}
 
-**Case 3: Converts the HTML page (located in the Web) to XPS and returns resulting file in response content:**
+#### **Case 3: Converts the HTML page (located in the Web) to XPS and returns resulting file in response content:**
 
 {{< tabs tabTotal="2" tabID="7" tabName1="Request" tabName2="Response" >}}
 
@@ -133,7 +133,7 @@ Converted XPS File
 
 {{< /tabs >}}
 
-**Case 4: Converts the HTML document (in request content) to XPS and uploads resulting file to storage:**
+#### **Case 4: Converts the HTML document (in request content) to XPS and uploads resulting file to storage:**
 
 {{< tabs tabTotal="2" tabID="10" tabName1="Request" tabName2="Response" >}}
 
@@ -176,7 +176,7 @@ curl -v "https://api.aspose.cloud/v3.0/html/convert/xps?outPath=testpage4\_embcs
 ## **Available SDKs**
 Using an SDK (API client) is the quickest way for a developer to speed up the development. An SDK takes care of a lot of low-level details of making requests and handling responses and lets you focus on writing code specific to your particular project. Check out our [GitHub repository](https://github.com/aspose-html-cloud) for a complete list of Aspose.HTML SDKs along with working examples, to get you started in no time. Please check [Available SDKs](/available-sdks/) article to learn how to add an SDK to your project.
 ### **SDK Examples**
-**Case 1: Convert the HTML document from the storage by its name to XPS** 
+#### **Case 1: Convert the HTML document from the storage by its name to XPS** 
 
 {{< tabs tabTotal="9" tabID="13" tabName1="C#" tabName2="Python" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Java" tabName8="Swift" tabName9="C++" >}}
 
@@ -236,7 +236,7 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 
 {{< /tabs >}}
 
-**Case 2: Converts the HTML document from storage to XPS**
+#### **Case 2: Converts the HTML document from storage to XPS**
 
 {{< tabs tabTotal="9" tabID="14" tabName1="C#" tabName2="Python" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Java" tabName8="Swift" tabName9="C++" >}}
 
@@ -296,7 +296,7 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 
 {{< /tabs >}}
 
-**Case 3: Convert the HTML page from the web by its URL to XPS** 
+#### **Case 3: Convert the HTML page from the web by its URL to XPS** 
 
 {{< tabs tabTotal="9" tabID="15" tabName1="C#" tabName2="Python" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Java" tabName8="Swift" tabName9="C++" >}}
 
@@ -356,9 +356,7 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 
 {{< /tabs >}}
 
-**Case 4: Converts the HTML document to XPS and uploads resulting file to storage**
-
-
+#### **Case 4: Converts the HTML document to XPS and uploads resulting file to storage**
 
 {{< tabs tabTotal="9" tabID="16" tabName1="C#" tabName2="Python" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Java" tabName8="Swift" tabName9="C++" >}}
 
