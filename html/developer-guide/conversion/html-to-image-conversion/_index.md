@@ -47,7 +47,7 @@ curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d "grant\_type=client\_
 
 ```java
 
-curl -v "https://api.aspose.cloud/v3.0/html/test.html/convert/image/jpeg" -X GET  -H "Accept: application/json" -H "Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE1NjE4MTY2NjUsImV4cCI6MTU2MTkwMzA2NSwiaXNzIjoiaHR0cHM6Ly9hcGkuYXNwb3NlLmNsb3VkIiwiYXVkIjpbImh0dHBzOi8vYXBpLmFzcG9zZS5jbG91ZC9yZXNvdXJjZXMiLCJhcGkucGxhdGZvcm0iLCJhcGkucHJvZHVjdHMiXSwiY2xpZW50X2lkIjoiNzg5NDZmYjQtM2JkNC00ZDNlLWIzMDktZjllMmZmOWFjNmY5Iiwic2NvcGUiOlsiYXBpLnBsYXRmb3JtIiwiYXBpLnByb2R1Y3RzIl19.k375TCFp31rQwQkzC81stKRrvSbQPtKLVQFWO3uiKx2LltXMSk2xth1GluNsV3wNfE3NsjvEXFSuGC\_ZMyRSrfjnW\_qlOw1erpdXrFwuqAqf6ExiMtf0cHqnlMDCao7WR\_FESHzN7hu0fGN2dfTT7ElUZ08rEFbMV3IhHZgRsRU3znVuR6Ce5lO-zbO49BPPPI2-elKhonVuftUr7d7c8hJJB8Y-jZQKHAEditUiGSP\_\_zNzKSzsZhJvqG1l6xOiiIWpe\_sM\_Lp6JlaCjEc6\_gd1Q8CpZWHuZ5mOCbL5LNjrG5bOna37JLILTGFdp6ivX6pB6CCxCdXRyv\_J7LLVbg" --ssl-no-revoke 
+curl -v "https://api.aspose.cloud/v3.0/html/test.html/convert/image/jpeg" -X GET  -H "Accept: application/json"
 
 ```
 
@@ -69,8 +69,7 @@ curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d "grant\_type=client\_
 
 ```java
 
-curl -v "https://api.aspose.cloud/v3.0/html/test.html/convert/image/jpeg?outpath=test.jpeg" -X PUT  -H "Accept: application/json" -H "Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE1NjE4MTY2NjUsImV4cCI6MTU2MTkwMzA2NSwiaXNzIjoiaHR0cHM6Ly9hcGkuYXNwb3NlLmNsb3VkIiwiYXVkIjpbImh0dHBzOi8vYXBpLmFzcG9zZS5jbG91ZC9yZXNvdXJjZXMiLCJhcGkucGxhdGZvcm0iLCJhcGkucHJvZHVjdHMiXSwiY2xpZW50X2lkIjoiNzg5NDZmYjQtM2JkNC00ZDNlLWIzMDktZjllMmZmOWFjNmY5Iiwic2NvcGUiOlsiYXBpLnBsYXRmb3JtIiwiYXBpLnByb2R1Y3RzIl19.k375TCFp31rQwQkzC81stKRrvSbQPtKLVQFWO3uiKx2LltXMSk2xth1GluNsV3wNfE3NsjvEXFSuGC\_ZMyRSrfjnW\_qlOw1erpdXrFwuqAqf6ExiMtf0cHqnlMDCao7WR\_FESHzN7hu0fGN2dfTT7ElUZ08rEFbMV3IhHZgRsRU3znVuR6Ce5lO-zbO49BPPPI2-elKhonVuftUr7d7c8hJJB8Y-jZQKHAEditUiGSP\_\_zNzKSzsZhJvqG1l6xOiiIWpe\_sM\_Lp6JlaCjEc6\_gd1Q8CpZWHuZ5mOCbL5LNjrG5bOna37JLILTGFdp6ivX6pB6CCxCdXRyv\_J7LLVbg" --ssl-no-revoke -d{}
-
+curl -v "https://api.aspose.cloud/v3.0/html/test.html/convert/image/jpeg?outpath=test.jpeg" -X PUT  -H "Accept: application/json" 
 ```
 
 {{< /tab >}}
@@ -91,7 +90,7 @@ curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d "grant\_type=client\_
 
 ```java
 
-curl -v "https://api.aspose.cloud/v3.0/html/test.html/convert/image/jpeg?sourceURL=http://help.websiteos.com/websiteos/example\_of\_a\_simple\_html\_page.htm" -X GET  -H "Accept: application/json" -H "Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE1NjE4MTY2NjUsImV4cCI6MTU2MTkwMzA2NSwiaXNzIjoiaHR0cHM6Ly9hcGkuYXNwb3NlLmNsb3VkIiwiYXVkIjpbImh0dHBzOi8vYXBpLmFzcG9zZS5jbG91ZC9yZXNvdXJjZXMiLCJhcGkucGxhdGZvcm0iLCJhcGkucHJvZHVjdHMiXSwiY2xpZW50X2lkIjoiNzg5NDZmYjQtM2JkNC00ZDNlLWIzMDktZjllMmZmOWFjNmY5Iiwic2NvcGUiOlsiYXBpLnBsYXRmb3JtIiwiYXBpLnByb2R1Y3RzIl19.k375TCFp31rQwQkzC81stKRrvSbQPtKLVQFWO3uiKx2LltXMSk2xth1GluNsV3wNfE3NsjvEXFSuGC\_ZMyRSrfjnW\_qlOw1erpdXrFwuqAqf6ExiMtf0cHqnlMDCao7WR\_FESHzN7hu0fGN2dfTT7ElUZ08rEFbMV3IhHZgRsRU3znVuR6Ce5lO-zbO49BPPPI2-elKhonVuftUr7d7c8hJJB8Y-jZQKHAEditUiGSP\_\_zNzKSzsZhJvqG1l6xOiiIWpe\_sM\_Lp6JlaCjEc6\_gd1Q8CpZWHuZ5mOCbL5LNjrG5bOna37JLILTGFdp6ivX6pB6CCxCdXRyv\_J7LLVbg" --ssl-no-revoke 
+curl -v "https://api.aspose.cloud/v3.0/html/test.html/convert/image/jpeg?sourceURL=http://help.websiteos.com/websiteos/example\_of\_a\_simple\_html\_page.htm" -X GET  -H "Accept: application/json"
 
 ```
 
@@ -113,7 +112,7 @@ curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d "grant\_type=client\_
 
 ```java
 
-curl -v "https://api.aspose.cloud/v3.0/html/convert/image/jpeg?outpath=a345.jpeg" -X POST -F "file=@test.html" -H "Accept: multipart/form-data" -H "Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE1NjE4MTg0ODMsImV4cCI6MTU2MTkwNDg4MywiaXNzIjoiaHR0cHM6Ly9hcGkuYXNwb3NlLmNsb3VkIiwiYXVkIjpbImh0dHBzOi8vYXBpLmFzcG9zZS5jbG91ZC9yZXNvdXJjZXMiLCJhcGkucGxhdGZvcm0iLCJhcGkucHJvZHVjdHMiXSwiY2xpZW50X2lkIjoiNzg5NDZmYjQtM2JkNC00ZDNlLWIzMDktZjllMmZmOWFjNmY5Iiwic2NvcGUiOlsiYXBpLnBsYXRmb3JtIiwiYXBpLnByb2R1Y3RzIl19.EegmlLNbXHmmQWcCtN1WncYseZO2PA4gdSxQKMlpoFRP5xD5LLJS2J\_KvnM96JcbVcKXnTiJfUiDTiOesihpOF2f0o-xpUPmSjpxhzrmgFNUL778jj\_XW2FiOH0I0yHy9-EiOns8pWVCx4lD\_1440EzqIXXMFssO3N2r2DrbZ2Ltn2EjSNuUcoxhZEyGBahGQclL73HBqyf06esT4QOOkrhC9L9pkQALyy2RTvYh8tXbVbvYNxmKXWoiN3dVdk74kUFsLsy9bLyifplQ1RqCAL\_B8C1L4gJYJp-aOvLiJkilwuV8ZWIgd7cmBKMUMCBC0MYt57mRLAlioYGdO37tEQ" --ssl-no-revoke
+curl -v "https://api.aspose.cloud/v3.0/html/convert/image/jpeg?outpath=a345.jpeg" -X POST -F "file=@test.html" -H "Accept: multipart/form-data"
 
 ```
 
