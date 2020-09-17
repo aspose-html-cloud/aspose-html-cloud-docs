@@ -34,17 +34,7 @@ curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d "grant\_type=client\_
 
 // cURL example for HTML to PDF Conversion
 
-curl -v "https://api.aspose.cloud/v3.0/html/testpage4\_embcss.html/convert/pdf" \
-
--X GET \
-
--H "Content-Type: application/json" \
-
--H "Accept: multipart/form-data" \
-
--H "Authorization: Bearer SpH8UPprlhncOED8QfVyI9iftyeicQ8brSWt7ANVL5NGYtTV7tT5H4hLevh80V0IIMJ\_C6yCgz-R0Qcyh4FV\_Pg4PbCcJmnQrscCx1OTOcI3t73Lsg7LUMQgJCRcrTZ5TzXcPoV2u0lRKV55qEXUl6zssHMDzPyRmRbzlf7jfkumn1LJMj6jtarSp7yu4hN8kVlvG6K8nz8L85k3QFFCbTnePkVOg2Uiy8mT7wncoa3ynMscqBgQynwL8N9DgKg0L1Ivt-8RgGLNK1GZtDOds8wDoBm4KsxTlihYq3X\_J1tB6zY\_owqnNwkhXGW7uV-oNYGN4E6gU5PaPDNEg0POwOGeohpKi8SwvyHenzGVNdV-HtaWmUdtjd8rl7qhPx8i71pu-31FMrS4yhXczc7V2LzCgIcFlyP\_9D38Z\_UiwFPq5KWb" \
-
--o testpage4\_embcss.pdf
+curl -v "https://api.aspose.cloud/v3.0/html/testpage4\_embcss.html/convert/pdf" -X GET -H "Content-Type: application/json" -H "Accept: multipart/form-data" 
 
 ```
 
@@ -78,17 +68,7 @@ curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d "grant\_type=client\_
 
 // cURL example for HTML to PDF Conversion
 
-curl -v "https://api.aspose.cloud/v3.0/html/testpage4\_embcss.html/convert/pdf?outPath=testpage4\_embcss.pdf" \
-
--X PUT \
-
--H "Content-Type: application/json" \
-
--H "Accept: multipart/form-data" \
-
--H "Content-Length: 0" \
-
--H "Authorization: Bearer v3s5JUV4ayYvfrIf2xRYG9Gw36amZQ7RGZL6l4Td9AeDC66Z3yMHzOUHpVGy6Y1AWjZXGjufluN421Oajhh-peSE8aqGsQBRkkatGeJz4I93xDq1RtKsniNHv8ifcRBxsPf89dplusvIan1dfDLcu93AgF3\_Jn25oJBCuPemv8ZMnffw0b\_UhLpKmv-koO8YY2URBOOoaDkdojNDfB0OULiCuMA5Jr-Fp\_R1Ie1\_KEUPpxMM9xOONgj314iCc9i-\_mg06RNgAxToBUCJqQP50uEvOgP7sl4TmHlxPl4pzHflTdj6NpATH7xuRye2SrLfO9lOZ6NlU5iCcqa49KYd0pbl-tC0QUfpPyc9eD2uum93q\_RuGJ5MzGGI0m4Een7vICMCWzzqSyVIjhRDVdjKE\_e4ZsGStYrmUf9ECOysQR8rBlKZ"
+curl -v "https://api.aspose.cloud/v3.0/html/testpage4\_embcss.html/convert/pdf?outPath=testpage4\_embcss.pdf" -X PUT -H "Content-Type: application/json" -H "Accept: multipart/form-data" -H "Content-Length: 0"
 
 ```
 
@@ -99,11 +79,8 @@ curl -v "https://api.aspose.cloud/v3.0/html/testpage4\_embcss.html/convert/pdf?o
 ```java
 
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
 
 ```
@@ -124,25 +101,11 @@ curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d "grant\_type=client\_
 
 ```
 
-
-
-
-
 ```java
 
 // cURL example for HTML to PDF Conversion
 
-curl -v "https://api.aspose.cloud/v3.0/html/convert/pdf?sourceUrl=https://www.le.ac.uk/oerresources/bdra/html/page\_01.htm" \
-
--X GET \
-
--H "Content-Type: application/json" \
-
--H "Accept: multipart/form-data" \
-
--H "Authorization: Bearer v3s5JUV4ayYvfrIf2xRYG9Gw36amZQ7RGZL6l4Td9AeDC66Z3yMHzOUHpVGy6Y1AWjZXGjufluN421Oajhh-peSE8aqGsQBRkkatGeJz4I93xDq1RtKsniNHv8ifcRBxsPf89dplusvIan1dfDLcu93AgF3\_Jn25oJBCuPemv8ZMnffw0b\_UhLpKmv-koO8YY2URBOOoaDkdojNDfB0OULiCuMA5Jr-Fp\_R1Ie1\_KEUPpxMM9xOONgj314iCc9i-\_mg06RNgAxToBUCJqQP50uEvOgP7sl4TmHlxPl4pzHflTdj6NpATH7xuRye2SrLfO9lOZ6NlU5iCcqa49KYd0pbl-tC0QUfpPyc9eD2uum93q\_RuGJ5MzGGI0m4Een7vICMCWzzqSyVIjhRDVdjKE\_e4ZsGStYrmUf9ECOysQR8rBlKZ" \
-
--o testpage4\_embcss.pdf
+curl -v "https://api.aspose.cloud/v3.0/html/convert/pdf?sourceUrl=https://www.le.ac.uk/oerresources/bdra/html/page\_01.htm" -X GET -H "Content-Type: application/json" -H "Accept: multipart/form-data" 
 
 ```
 
@@ -172,25 +135,11 @@ curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d "grant\_type=client\_
 
 ```
 
-
-
-
-
 ```java
 
 // cURL example for HTML to PDF Conversion
 
-curl -v "https://api.aspose.cloud/v3.0/html/convert/pdf?outPath=testpage4\_embcss.pdf&storage=MyStorage" \
-
--X PUT \
-
--T testpage4\_embcss.html \
-
--H "Content-Type: application/json" \
-
--H "Accept: multipart/form-data" \
-
--H "Authorization: Bearer SpH8UPprlhncOED8QfVyI9iftyeicQ8brSWt7ANVL5NGYtTV7tT5H4hLevh80V0IIMJ\_C6yCgz-R0Qcyh4FV\_Pg4PbCcJmnQrscCx1OTOcI3t73Lsg7LUMQgJCRcrTZ5TzXcPoV2u0lRKV55qEXUl6zssHMDzPyRmRbzlf7jfkumn1LJMj6jtarSp7yu4hN8kVlvG6K8nz8L85k3QFFCbTnePkVOg2Uiy8mT7wncoa3ynMscqBgQynwL8N9DgKg0L1Ivt-8RgGLNK1GZtDOds8wDoBm4KsxTlihYq3X\_J1tB6zY\_owqnNwkhXGW7uV-oNYGN4E6gU5PaPDNEg0POwOGeohpKi8SwvyHenzGVNdV-HtaWmUdtjd8rl7qhPx8i71pu-31FMrS4yhXczc7V2LzCgIcFlyP\_9D38Z\_UiwFPq5KWb"
+curl -v "https://api.aspose.cloud/v3.0/html/convert/pdf?outPath=testpage4\_embcss.pdf&storage=MyStorage" -X PUT -T testpage4\_embcss.html -H "Content-Type: application/json" -H "Accept: multipart/form-data"
 
 ```
 
@@ -201,11 +150,8 @@ curl -v "https://api.aspose.cloud/v3.0/html/convert/pdf?outPath=testpage4\_embcs
 ```java
 
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
 
 ```
