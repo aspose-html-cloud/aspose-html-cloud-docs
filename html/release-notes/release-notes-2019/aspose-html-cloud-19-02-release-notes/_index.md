@@ -15,7 +15,7 @@ The following section contains information related to the Aspose.HTML Cloud 19.2
 #### **Enhancements**
 Template Merge functionality extension: 
 
-- *cs\_names* option (possibility to use case independent names of template fields): now it is supported for XML input data.
+- *cs_names* option (possibility to use case independent names of template fields): now it is supported for XML input data.
 
 Usage example:
 

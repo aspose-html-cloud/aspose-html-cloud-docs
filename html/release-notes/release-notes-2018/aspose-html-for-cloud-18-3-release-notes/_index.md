@@ -13,7 +13,7 @@ The page contains release notes for Aspose.HTML for Cloud 18.4 – [API Referen
 #### ` `**Enhancements**
 - A group of REST API methods (conversion & translation PUT methods) has been considered as redundant and removed from API- see **API Changes** section below
 - Unneeded parameters have been removed from a number of API methods - see **API Changes** section below
-- GET all images of HTML document: the result ZIP archive folder structure changed - all images that are referenced by the absolute web links are placed in the archive in the *\_\_Web\_Images* folder (instead of full web path).
+- GET all images of HTML document: the result ZIP archive folder structure changed - all images that are referenced by the absolute web links are placed in the archive in the *__Web_Images* folder (instead of full web path).
 - API documentation enhancement: descriptions of API methods and parameters in the [API Reference page](https://apireference.aspose.cloud/html/) have been extended
 #### **Fixed issues**
 - HTMLAI-229: Translate - encoding issue: if the source HTML charset is not Unicode, the result document may display incorrectly some language-specific characters

@@ -28,7 +28,7 @@ Aspose.HTML Cloud has provided the simplest API to convert an HTML page to the f
 
 // Get App Key and App SID from https://dashboard.aspose.cloud/
 
-curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d 'grant\_type=client\_credentials&client\_id=XXXXX&client\_secret=XXXXX' -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
+curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d 'grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX' -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
  ```
  
@@ -36,7 +36,7 @@ curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d 'grant\_type=client\_
 
 // cURL example for HTML to XPS Conversion
 
-curl -v "https://api.aspose.cloud/v3.0/html/testpage4\_embcss.html/convert/xps" -X GET -H "Content-Type: application/json" -H "Accept: multipart/form-data"
+curl -v "https://api.aspose.cloud/v3.0/html/testpage4_embcss.html/convert/xps" -X GET -H "Content-Type: application/json" -H "Accept: multipart/form-data"
 
 ```
 
@@ -66,7 +66,7 @@ Converted XPS File
 
 // Get App Key and App SID from https://dashboard.aspose.cloud/
 
-curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d 'grant\_type=client\_credentials&client\_id=XXXXX&client\_secret=XXXXX' -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
+curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d 'grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX' -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
 ```
 
@@ -74,7 +74,7 @@ curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d 'grant\_type=client\_
 
 // cURL example for HTML to XPS Conversion
 
-curl -v "https://api.aspose.cloud/v3.0/html/testpage4\_embcss.html/convert/xps?outPath=testpage4\_embcss.xps&storage=MyStorage" -X PUT -H "Content-Length: 0" -H "Content-Type: application/json" -H "Accept: multipart/form-data" 
+curl -v "https://api.aspose.cloud/v3.0/html/testpage4_embcss.html/convert/xps?outPath=testpage4_embcss.xps&storage=MyStorage" -X PUT -H "Content-Length: 0" -H "Content-Type: application/json" -H "Accept: multipart/form-data" 
 
 ```
 
@@ -107,7 +107,7 @@ curl -v "https://api.aspose.cloud/v3.0/html/testpage4\_embcss.html/convert/xps?o
 
 // Get App Key and App SID from https://dashboard.aspose.cloud/
 
-curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d 'grant\_type=client\_credentials&client\_id=XXXXX&client\_secret=XXXXX' -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
+curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d 'grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX' -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
 ```
 
@@ -115,7 +115,7 @@ curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d 'grant\_type=client\_
 
 // cURL example for HTML to XPS Conversion
 
-curl -v "https://api.aspose.cloud/v3.0/html/convert/xps?sourceUrl=https://www.le.ac.uk/oerresources/bdra/html/page\_01.htm" -X GET -H "Content-Type: application/json" -H "Accept: multipart/form-data"
+curl -v "https://api.aspose.cloud/v3.0/html/convert/xps?sourceUrl=https://www.le.ac.uk/oerresources/bdra/html/page_01.htm" -X GET -H "Content-Type: application/json" -H "Accept: multipart/form-data"
 
 ```
 
@@ -145,7 +145,7 @@ Converted XPS File
 
 // Get App Key and App SID from https://dashboard.aspose.cloud/
 
-curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d 'grant\_type=client\_credentials&client\_id=XXXXX&client\_secret=XXXXX' -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
+curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d 'grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX' -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
 ```
 
@@ -153,7 +153,7 @@ curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d 'grant\_type=client\_
 
 // cURL example for HTML to XPS Conversion
 
-curl -v "https://api.aspose.cloud/v3.0/html/convert/xps?outPath=testpage4\_embcss.xps" -X PUT -T testpage4\_embcss.html -H "Content-Type: application/json" -H "Accept: multipart/form-data" 
+curl -v "https://api.aspose.cloud/v3.0/html/convert/xps?outPath=testpage4_embcss.xps" -X PUT -T testpage4_embcss.html -H "Content-Type: application/json" -H "Accept: multipart/form-data" 
 
 ```
 

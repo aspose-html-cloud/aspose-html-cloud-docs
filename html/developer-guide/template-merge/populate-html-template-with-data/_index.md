@@ -22,13 +22,13 @@ This article explains how to populate HTML template with JSON and XML data sourc
 
 ```java
 
-curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant\_type=client\_credentials&client\_id=XXXXX&client\_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
+curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
 ```
 
 ```java
 
-curl -v "https://api.aspose.cloud/v3.0/html/template\_3\_2.html/merge" -F "dataPath=@merge\_data\_3.xml" --X POST -H "Accept: multipart/form-data"
+curl -v "https://api.aspose.cloud/v3.0/html/template_3_2.html/merge" -F "dataPath=@merge_data_3.xml" --X POST -H "Accept: multipart/form-data"
 
 ```
 
