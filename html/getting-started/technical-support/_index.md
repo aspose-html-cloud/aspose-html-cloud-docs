@@ -5,7 +5,6 @@ url: /technical-support/
 weight: 60
 ---
 
-![todo:image\_alt\_text](/plugins/servlet/confluence/placeholder/unknown-macro)
 ## **Aspose for Cloud Technical Support**
 Aspose provides unlimited free technical support for all its products. The support is available to all users, including evaluation.
 
