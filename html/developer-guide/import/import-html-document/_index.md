@@ -25,7 +25,7 @@ Aspose.HTML Cloud is an easy to use REST API which allows you multiple features.
 
 ```java
 
-curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant\_type=client\_credentials&client\_id=XXXXX&client\_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
+curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
 ```
 
@@ -57,13 +57,13 @@ Returns the result. Content is an HTML file.
 
 ```java
 
-curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant\_type=client\_credentials&client\_id=XXXXX&client\_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
+curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
 ```
 
 ```java
 
-curl -X PUT "https://api.aspose.cloud/v3.0/html/README.md/import/md?outPath=HtmlDoc/put\_md\_to\_html.html&folder=HtmlDoc" -H "accept: application/json" -H "x-aspose-client: Containerize.Swagger"
+curl -X PUT "https://api.aspose.cloud/v3.0/html/README.md/import/md?outPath=HtmlDoc/put_md_to_html.html&folder=HtmlDoc" -H "accept: application/json" -H "x-aspose-client: Containerize.Swagger"
 
 ```
 
@@ -89,13 +89,13 @@ Returns the result. Content is an HTML file.
 
 ```java
 
-curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant\_type=client\_credentials&client\_id=XXXXX&client\_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
+curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
 ```
 
 ```java
 
-curl -X POST "https://api.aspose.cloud/v3.0/html/import/md?outPath=put\_md\_to\_html.html" -H "accept: application/json" -H "x-aspose-client: Containerize.Swagger"
+curl -X POST "https://api.aspose.cloud/v3.0/html/import/md?outPath=put_md_to_html.html" -H "accept: application/json" -H "x-aspose-client: Containerize.Swagger"
 
 ```
 

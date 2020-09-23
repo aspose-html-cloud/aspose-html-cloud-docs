@@ -78,7 +78,7 @@ Manual Installation:
 
 Download the files and include autoload.php:
 
-require\_once('/path/to/aspose-html-cloud-php/vendor/autoload.php');
+require_once('/path/to/aspose-html-cloud-php/vendor/autoload.php');
 
 
 ```
@@ -95,11 +95,11 @@ Build a gem:
 
 To build the Ruby code into a gem:
 
-gem build aspose\_html.gemspec
+gem build aspose_html.gemspec
 
 Then either install the gem locally:
 
-gem install ./aspose\_html-1.0.0.gem
+gem install ./aspose_html-1.0.0.gem
 
 ```
 
@@ -109,17 +109,17 @@ gem install ./aspose\_html-1.0.0.gem
 
 ```java
 
-,To use the library locally without publishing to a remote npm registry, first install the dependencies by changing into the directory containing package.json (and this README). Let's call this JAVASCRIPT\_CLIENT\_DIR. Then run:
+,To use the library locally without publishing to a remote npm registry, first install the dependencies by changing into the directory containing package.json (and this README). Let's call this JAVASCRIPT_CLIENT_DIR. Then run:
 
 npm install
 
-Next, link it globally in npm with the following, also from JAVASCRIPT\_CLIENT\_DIR:
+Next, link it globally in npm with the following, also from JAVASCRIPT_CLIENT_DIR:
 
 npm link
 
 Finally, switch to the directory you want to use your asposehtmlcloud from, and run:
 
-npm link /path/to/<JAVASCRIPT\_CLIENT\_DIR>
+npm link /path/to/<JAVASCRIPT_CLIENT_DIR>
 
 You should now be able to require('asposehtmlcloud') in javascript files from the directory you ran the last command above from.
 
@@ -206,25 +206,25 @@ namespace Aspose.Html.Cloud.Examples
     {
         const string appSID = "xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"; // apply user's appSID
         const string appKey = "xxxxxxxxxxxxxxxxxxxxxxxxx";           // apply user's key
-        const string SERVICE\_API\_HOST = "https://api.aspose.cloud";
-        const string SERVICE\_AUTH\_HOST = "https://api.aspose.cloud";
-        const string LOCAL\_DATA\_FOLDER = @ "d:\testdata";
-        const string STORAGE\_DATA\_FOLDER = "Html/TestData";
-        const string LOCAL\_RESULT\_FOLDER = @ "d:\testout";
+        const string SERVICE_API_HOST = "https://api.aspose.cloud";
+        const string SERVICE_AUTH_HOST = "https://api.aspose.cloud";
+        const string LOCAL_DATA_FOLDER = @ "d:\testdata";
+        const string STORAGE_DATA_FOLDER = "Html/TestData";
+        const string LOCAL_RESULT_FOLDER = @ "d:\testout";
 
         static void Main(string[] args)
                 {
             // setup HTML document name
 
-            var name = "testpage4\_embcss.html";
+            var name = "testpage4_embcss.html";
 
             // setup local document path
 
-            var srcPath = Path.Combine(LOCAL\_DATA\_FOLDER, name);
+            var srcPath = Path.Combine(LOCAL_DATA_FOLDER, name);
 
             // setup storage folder where the source document should be present
 
-            string folder = STORAGE\_DATA\_FOLDER;
+            string folder = STORAGE_DATA_FOLDER;
 
             // setup storage name (null for default storage)
 
@@ -241,9 +241,9 @@ namespace Aspose.Html.Cloud.Examples
 
             try
             {
-                var storagePath = Path.Combine(STORAGE\_DATA\_FOLDER, name).Replace('\\', '/');
+                var storagePath = Path.Combine(STORAGE_DATA_FOLDER, name).Replace('\\', '/');
                 UploadToStorage(srcPath, storagePath);
-                IConversionApi convApi = new HtmlApi(appSID, appKey, SERVICE\_API\_HOST);
+                IConversionApi convApi = new HtmlApi(appSID, appKey, SERVICE_API_HOST);
                 var response = convApi.GetConvertDocumentToPdf(
                     name, width, height, leftMargin, rightMargin, topMargin, bottomMargin, folder, storage);
                 if (response != null && response.ContentStream != null && response.Status == "OK")
@@ -252,7 +252,7 @@ namespace Aspose.Html.Cloud.Examples
                     // save result file
                     var respFileName = response.FileName;
                     Stream outStream = response.ContentStream;
-                    var outPath = Path.Combine(LOCAL\_RESULT\_FOLDER, respFileName);
+                    var outPath = Path.Combine(LOCAL_RESULT_FOLDER, respFileName);
                     using(FileStream fstr = new FileStream(outPath, FileMode.Create, FileAccess.Write))
                     {
                          outStream.Position = 0;
@@ -277,10 +277,10 @@ namespace Aspose.Html.Cloud.Examples
         {
             var name = Path.GetFileName(localPath);
             Configuration storageConf = new Configuration() {
-            ApiBaseUrl = SERVICE\_API\_HOST,
+            ApiBaseUrl = SERVICE_API_HOST,
             AppKey = appKey,
             AppSid = appSID,
-            AuthUrl = SERVICE\_AUTH\_HOST,
+            AuthUrl = SERVICE_AUTH_HOST,
             ApiVersion = "3.0"
             };
 
@@ -315,8 +315,8 @@ namespace Aspose.Html.Cloud.Examples
 
 ```java
 
-from \_\_future\_\_ import absolute\_import 
-from \_\_future\_\_ import print\_function 
+from __future__ import absolute_import 
+from __future__ import print_function 
 from pprint import pprint  
 import time  
 
@@ -325,15 +325,15 @@ import time
 import os 
 from shutil import copy2
 from asposehtmlcloud.configuration import Configuration
-from asposehtmlcloud.api\_client import ApiClient as Client
-from asposehtmlcloud.api.html\_api import HtmlApi
-from asposehtmlcloud.api.storage\_api import StorageApi
+from asposehtmlcloud.api_client import ApiClient as Client
+from asposehtmlcloud.api.html_api import HtmlApi
+from asposehtmlcloud.api.storage_api import StorageApi
 from asposehtmlcloud.rest import ApiException
 
 class Program:
 
     @classmethod
-    def set\_configuration(cls):
+    def set_configuration(cls):
         cls.config = Configuration(
             apiKey="xxxxxxxxxxxxxxxxxxxxxxxxx",
             appSid="xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
@@ -342,24 +342,24 @@ class Program:
             debug=True)
 
     @classmethod
-    def move\_file(cls, src\_file, dst\_file):
-        if os.path.isfile(src\_file):
-            copy2(src\_file, dst\_file)
-            os.remove(src\_file)
+    def move_file(cls, src_file, dst_file):
+        if os.path.isfile(src_file):
+            copy2(src_file, dst_file)
+            os.remove(src_file)
 
-    def \_\_init\_\_(self):
-        set\_configuration()
-        self.\_client = Client(Program.config)
-        self.\_html\_api = HtmlApi(self.\_client)
-        self.\_storage\_api = StorageApi(self.\_client)
+    def __init__(self):
+        set_configuration()
+        self._client = Client(Program.config)
+        self._html_api = HtmlApi(self._client)
+        self._storage_api = StorageApi(self._client)
 
-    def upload\_to\_storage(self, localPath: str, storagePath: str, storage: str = None) -> bool:
+    def upload_to_storage(self, localPath: str, storagePath: str, storage: str = None) -> bool:
 
-        api = self.\_storage\_api
-        result = api.upload\_file(storagePath, localPath)
+        api = self._storage_api
+        result = api.upload_file(storagePath, localPath)
         return len(result.uploaded) == 1 and len(result.errors) == 0
 
-    def run\_get\_convert\_html\_to\_pdf(): 
+    def run_get_convert_html_to_pdf(): 
 
         name = "testpage1.html"
         folder = "/Html/TestData"
@@ -371,13 +371,13 @@ class Program:
         localPath = "{0}\\{1}".format(localFolder, name)
         storagePath = "{0}/{1}".format(folder, name)
 
-        if self.upload\_to\_storage(localPath, storagePath, storage):
-            api = self.\_html\_api
+        if self.upload_to_storage(localPath, storagePath, storage):
+            api = self._html_api
             try:
-                res = api.get\_convert\_document\_to\_pdf(
-                    name, width=800, height=1000, left\_margin=50, right\_margin=100, top\_margin=150, bottom\_margin=200,
+                res = api.get_convert_document_to_pdf(
+                    name, width=800, height=1000, left_margin=50, right_margin=100, top_margin=150, bottom_margin=200,
                     folder=TestHelper.folder, storage="" )
-                move\_file(str(res), destFolder)
+                move_file(str(res), destFolder)
 
             except ApiException as e:
                 print("Operation failed: {0}".format(str(e)))
@@ -386,9 +386,9 @@ class Program:
             print("Error uploading file to storage: ")
             return
 
-if \_\_name\_\_ == '\_\_main\_\_':
+if __name__ == '__main__':
 
-    Program().run\_get\_convert\_html\_to\_pdf()
+    Program().run_get_convert_html_to_pdf()
 
 ```
 

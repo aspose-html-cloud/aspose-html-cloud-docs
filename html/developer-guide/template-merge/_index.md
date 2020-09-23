@@ -112,13 +112,13 @@ Current implementation supports 2 types of template markers:
 
 The list of template markers can be extended in future implementations.
 #### **Single field marker**
-**Format**: {{simple\_field\_name}} or {{composed\_field\_name}}
+**Format**: {{simple_field_name}} or {{composed_field_name}}
 
 **Location**: usual place is in HTML element text content; also it can be put into some attribute value.
 
 **Purpose**: placeholder of simple data element value.
 
-{{simple\_field\_name}} maps a data element that is a direct child of current data context. 
+{{simple_field_name}} maps a data element that is a direct child of current data context. 
 
 ##### **Example 3: Single Field Marker**
 
@@ -130,7 +130,7 @@ The list of template markers can be extended in future implementations.
 
 ```
 
-{{composed\_field\_name}} maps a data element that is an indirect child of current data context. In other words, composed name reflects a path from the data context to the mapped element.
+{{composed_field_name}} maps a data element that is an indirect child of current data context. In other words, composed name reflects a path from the data context to the mapped element.
 
 ##### **Example 4: Single Field Marker - Composed Name**
 
@@ -142,17 +142,17 @@ The list of template markers can be extended in future implementations.
 
 ```
 #### **Repeatable section marker**
-**Format**: {{#**foreach** element\_name}}.
+**Format**: {{#**foreach** element_name}}.
 
-element\_name can appear like simple or composed field name (see above); it means that specified data element is a direct of indirect child of current data context respectively.
+element_name can appear like simple or composed field name (see above); it means that specified data element is a direct of indirect child of current data context respectively.
 
-**Location**: it is placed as value of special attribute **data\_merge** that can be added to some HTML elements; for example:
+**Location**: it is placed as value of special attribute **data_merge** that can be added to some HTML elements; for example:
 
 ##### **Example 5: Repeatable Section**
 
 ```html
 
-<div data\_merge="{{#foreach Person}}">
+<div data_merge="{{#foreach Person}}">
 
 .....
 
@@ -162,7 +162,7 @@ element\_name can appear like simple or composed field name (see above); it mea
 
 In current implementation only following HTML elements can contain repeatable section marker: DIV, OL, UL, TABLE.
 
-**Purpose**: it marks HTML element as repeatable, i.e. when the marked element is processed, it will be inserted into result document as many times as many data elements specified by **element\_name** parameter are present in the current data context. Within a repeatable section, each #foreach-specified data element becomes a current data context, and the inner template elements of the marked as repeatable HTML element map child data elements of new data context.
+**Purpose**: it marks HTML element as repeatable, i.e. when the marked element is processed, it will be inserted into result document as many times as many data elements specified by **element_name** parameter are present in the current data context. Within a repeatable section, each #foreach-specified data element becomes a current data context, and the inner template elements of the marked as repeatable HTML element map child data elements of new data context.
 
 Repeatable sections can be nested, i.e. HTML element marked as repeatable can contain other repeatable element, and so on.
 
@@ -348,7 +348,7 @@ One of possible templates that can be merged with data set above appears as belo
 
 <body>
 
-     <div data\_merge="{{#foreach Persons.Person}}">
+     <div data_merge="{{#foreach Persons.Person}}">
 
           <p>Name: {{Name}} {{Surname}}</p>
 
@@ -448,7 +448,7 @@ More correctly, processing of #foreach-marked TABLE differs from DIV: the whole 
 
     <br>
 
-    <table data\_merge="{{#foreach Persons.Person}}">
+    <table data_merge="{{#foreach Persons.Person}}">
 
         <caption>TABLE 1</caption>
 

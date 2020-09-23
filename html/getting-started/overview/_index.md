@@ -7,7 +7,7 @@ weight: 10
 
 {{% alert color="primary" %}} 
 
-![todo:image\_alt\_text](overview_1)
+![todo:image_alt_text](overview_1)
 
 **Welcome to the Aspose.HTML Cloud documentation section**
 

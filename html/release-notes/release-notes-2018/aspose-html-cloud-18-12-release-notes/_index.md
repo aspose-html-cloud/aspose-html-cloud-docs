@@ -16,5 +16,5 @@ We are pleased to announce that the Aspose.HTML Cloud functionality has been ext
 - Downloading HTML page from Web by its URL with linked resources as a ZIP archive
 #### **Enhancements**
 - Template Merge API now supports some options that provide control on the template population
-  - *rm\_tabhdr*: possibility to leave header row in a TABLE template element if there are no data to fill it (by default, an empty table is omitted). 
-  - *cs\_names*: possibility to use case-insensitive names of template fields (by default names are case-sensitive). Partially implemented in this release: this option is supported only for JSON data.
+  - *rm_tabhdr*: possibility to leave header row in a TABLE template element if there are no data to fill it (by default, an empty table is omitted). 
+  - *cs_names*: possibility to use case-insensitive names of template fields (by default names are case-sensitive). Partially implemented in this release: this option is supported only for JSON data.

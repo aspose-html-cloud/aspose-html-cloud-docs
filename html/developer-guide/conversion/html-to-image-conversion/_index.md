@@ -41,7 +41,7 @@ Please examine the HTTP Response code for success verification.
 
 ```java
 
-curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d "grant\_type=client\_credentials&client\_id=XXXXX&client\_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
+curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
 ```
 
@@ -63,7 +63,7 @@ curl -v "https://api.aspose.cloud/v3.0/html/test.html/convert/image/jpeg" -X GET
 
 ```java
 
-curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d "grant\_type=client\_credentials&client\_id=XXXXX&client\_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
+curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
 ```
 
@@ -84,13 +84,13 @@ curl -v "https://api.aspose.cloud/v3.0/html/test.html/convert/image/jpeg?outpath
 
 ```java
 
-curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d "grant\_type=client\_credentials&client\_id=XXXXX&client\_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
+curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
 ```
 
 ```java
 
-curl -v "https://api.aspose.cloud/v3.0/html/test.html/convert/image/jpeg?sourceURL=http://help.websiteos.com/websiteos/example\_of\_a\_simple\_html\_page.htm" -X GET  -H "Accept: application/json"
+curl -v "https://api.aspose.cloud/v3.0/html/test.html/convert/image/jpeg?sourceURL=http://help.websiteos.com/websiteos/example_of_a_simple_html_page.htm" -X GET  -H "Accept: application/json"
 
 ```
 
@@ -106,7 +106,7 @@ curl -v "https://api.aspose.cloud/v3.0/html/test.html/convert/image/jpeg?sourceU
 
 ```java
 
-curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d "grant\_type=client\_credentials&client\_id=XXXXX&client\_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
+curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
 ```
 

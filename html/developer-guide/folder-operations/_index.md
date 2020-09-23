@@ -21,7 +21,7 @@ All of these requests require you obtain a connect token befor you proceede
 
 ```java
 
-curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant\_type=client\_credentials&client\_id=XXXXX&client\_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
+curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
 ```
 
@@ -33,7 +33,7 @@ curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant\_type=client\
 
 ```java
 
-curl -v "https://api.aspose.cloud/v3.0/html/storage/folder/new\_slides\_folder" -X GET -H "Accept: application/json"
+curl -v "https://api.aspose.cloud/v3.0/html/storage/folder/new_slides_folder" -X GET -H "Accept: application/json"
 
 ```
 
@@ -61,7 +61,7 @@ curl -v "https://api.aspose.cloud/v3.0/html/storage/folder/new\_slides\_folder" 
 
 ```java
 
-curl -v "https://api.aspose.cloud/v3.0/html/storage/folder/new\_html\_folder" -X PUT -H "Accept: application/json" 
+curl -v "https://api.aspose.cloud/v3.0/html/storage/folder/new_html_folder" -X PUT -H "Accept: application/json" 
 
 ```
 
@@ -90,7 +90,7 @@ curl -v "https://api.aspose.cloud/v3.0/html/storage/folder/new\_html\_folder" -X
 
 ```java
 
-curl -v "https://api.aspose.cloud/v3.0/html/storage/folder/new\_html\_folder" -X DELETE -H "Accept: application/json" 
+curl -v "https://api.aspose.cloud/v3.0/html/storage/folder/new_html_folder" -X DELETE -H "Accept: application/json" 
 
 ```
 
@@ -106,7 +106,7 @@ curl -v "https://api.aspose.cloud/v3.0/html/storage/folder/new\_html\_folder" -X
 
 ```java
 
-curl -v "https://api.aspose.cloud/v3.0/html/storage/folder/copy/new\_slides\_folder" -X PUT -H "Accept: application/json" 
+curl -v "https://api.aspose.cloud/v3.0/html/storage/folder/copy/new_slides_folder" -X PUT -H "Accept: application/json" 
 
 ```
 
@@ -122,7 +122,7 @@ curl -v "https://api.aspose.cloud/v3.0/html/storage/folder/copy/new\_slides\_fol
 
 ```java
 
-curl -v "https://api.aspose.cloud/v3.0/html/storage/folder/move/new\_slides\_folder" -X PUT -H "Accept: application/json" 
+curl -v "https://api.aspose.cloud/v3.0/html/storage/folder/move/new_slides_folder" -X PUT -H "Accept: application/json" 
 
 ```
 
