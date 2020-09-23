@@ -8,7 +8,7 @@ weight: 10
 ---
 
 ## **Introduction**
-This article explains how to populate HTML template with JSON and XML data source. Please go through the [Template Merge](/template-merge/) article, which provides an example-based description of template markup elements, and rules of source data to template mapping. You can use of the following two REST APIs for template merge:
+This article explains how to populate HTML template with JSON and XML data source. Please go through the [Template Merge](/html/template-merge/) article, which provides an example-based description of template markup elements, and rules of source data to template mapping. You can use of the following two REST APIs for template merge:
 ## **API Information**
 
 |**API**|**Type**|**Description**|**Swagger Link**|
@@ -46,7 +46,7 @@ HTML Document
 
 {{< /tabs >}}
 ## **Available SDKs**
-Using an SDK (API client) is the quickest way for a developer to speed up the development. An SDK takes care of a lot of low-level details of making requests and handling responses and lets you focus on writing code specific to your particular project. Checkout our [GitHub repository](https://github.com/aspose-html-cloud) for a complete list of Aspose.HTML SDKs along with working examples, to get you started in no time. Please check [Available SDKs](/available-sdks/) article to learn how to add an SDK to your project.
+Using an SDK (API client) is the quickest way for a developer to speed up the development. An SDK takes care of a lot of low-level details of making requests and handling responses and lets you focus on writing code specific to your particular project. Checkout our [GitHub repository](https://github.com/aspose-html-cloud) for a complete list of Aspose.HTML SDKs along with working examples, to get you started in no time. Please check [Available SDKs](/html/available-sdks/) article to learn how to add an SDK to your project.
 ### **SDK Examples**
 #### **Case 1: Populate HTML document template with data located as a file in the storage**
 
