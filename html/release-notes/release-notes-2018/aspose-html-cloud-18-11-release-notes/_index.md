@@ -12,7 +12,7 @@ This page contains Aspose.HTML Cloud 18.11 Release Notes
 {{% /alert %}} 
 
 
-### **New features**
+## **New features**
 We are pleased to announce that the Aspose.HTML Cloud functionality has been extended with following features that make respective Aspose.HTML.Net features available by the cloud API:
 
 - HTMLCLOUD-738: HTML conversion to Markdown
