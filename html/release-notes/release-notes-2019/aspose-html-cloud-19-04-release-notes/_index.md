@@ -5,9 +5,9 @@ url: /aspose-html-cloud-19-04-release-notes/
 weight: 30
 ---
 
-### **Aspose.HTML Cloud v.19.04 - Release Notes**
+## **Aspose.HTML Cloud v.19.04 - Release Notes**
 -----
-#### **Internal enhancements:**
+### **Internal enhancements:**
 A number of Translate API performance enhancements have been implemented:
 
 - HTMLCLOUD-947: parallel processing enhancements that brought a stable work on big real HTML pages.
