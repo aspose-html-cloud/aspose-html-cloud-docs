@@ -10,7 +10,7 @@ weight: 110
 The following page contains Aspose.HTML for Cloud release notes for version 18.2
 
 {{% /alert %}} 
-#### ` `**New features**
+## **New features**
 We are pleased to announce that the Aspose.HTML for Cloud functionality has been extended with following new features: 
 
 - **Text recognition and translation using the OCR service:**
@@ -20,8 +20,8 @@ An image that contains text can be processed by the OCR micro-service that recog
 - **ePub support** by **the conversion functionality:**
 
 ePub document can be passed to the conversion API by the same way as HTML document and converted to any of supported output formats
-#### **Enhancements**
+## **Enhancements**
 - HTML translation feature: support of English-to-Chinese, Chinese-to-English language pairs has been added
-#### **Fixed issues**
+## **Fixed issues**
 - HTMLAI-207 Swagger specification: API Reference title changed: Aspose.Html for Cloud -> Aspose.HTML for Cloud
 - HTMLAI-207 Test that failed because it called the removed API method (GetSimpleTest) has been removed too
