@@ -15,7 +15,7 @@ The page contains release notes for Aspose.HTML Cloud 18.6 – [API Reference](h
 - API documentation refinement: descriptions of existing methods and parameters have been clarified (conversion API)
 ## **v18.6 - API Changes**
 All URIs are related to <https://api.aspose.cloud/v1.1/html>
-#### **Added APIs**
+### **Added APIs**
 - PUT: Converts the HTML document (located on storage) to the specified image format and uploads resulting file to storage
 
 ```html
