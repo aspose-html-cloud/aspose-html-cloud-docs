@@ -1,0 +1,14 @@
+name: Hugo-CI
+on:
+  push:
+    branches: [develop]
+    paths-ignore: ".github/**"
+
+jobs:
+  job-one:
+    name: Deploy
+    runs-on: [self-hosted, linux, x64, html-cloud-dev4]
+    steps:
+      - name: hugo build
+        run: |
+          ls
