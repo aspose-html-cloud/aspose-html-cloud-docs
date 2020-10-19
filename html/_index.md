@@ -4,5 +4,3 @@ type: docs
 url: /
 weight: 10
 ---
-
-This is test3
