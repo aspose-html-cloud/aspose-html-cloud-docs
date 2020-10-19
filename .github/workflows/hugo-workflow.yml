@@ -11,4 +11,12 @@ jobs:
     steps:
       - name: hugo build
         run: |
-          ls
+          cd aspose-html-cloud-docs && git stash && git pull && cd -
+          cd lutsk-aspose-prototype && git stash && git pull
+          cd themes/lutsk-aspose-theme && git stash && git pull && cd -
+          sudo npm install -D --save autoprefixer
+          sudo npm install -D --save postcss-cli
+          rsync --recursive --delete --force --progress ${{ secrets.PROJECTPATH }} content/
+          rm -rf public
+          hugo --minify --baseURL https://docs.aspose.cloud/html
+          rsync --recursive --delete --force -e "ssh" --progress public/ ${{ secrets.TRANSFERPATH }}
