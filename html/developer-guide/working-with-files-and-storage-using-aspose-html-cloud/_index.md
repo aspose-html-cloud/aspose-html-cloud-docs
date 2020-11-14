@@ -86,7 +86,7 @@ curl  -v -X PUT "https://api.aspose.cloud/v3.0/html/storage/file/input.html" -H 
 
 |**API**|**Type**|**Description**|**Swagger Link**|
 | :- | :- | :- | :- |
-|~~/html/storage/file/copy/{srcPath}|~~PUT|~~Duplicate a file to a new location on Cloud Storage|~~[CopyFile](https://apireference.aspose.cloud/html/#/File/CopyFile)|
+|~~ /html/storage/file/copy/{srcPath}|~~ PUT|~~ Duplicate a file to a new location on Cloud Storage|~~ [CopyFile](https://apireference.aspose.cloud/html/#/File/CopyFile)|
 
 ### **cURL Example**
 {{< tabs tabTotal="1" tabID="8" tabName1="Request" >}}
