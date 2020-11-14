@@ -83,7 +83,7 @@ You can add the following dependency into your existing Java application
 
 {{% alert color="primary" %}} 
 
-The complete source code of Aspose.HTML Cloud SDK for JAVA is freely available on our [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-java) repository.
+The complete source code of Aspose.HTML Cloud SDK for Java is freely available on our [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-java) repository.
 
 {{% /alert %}} 
 
