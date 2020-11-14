@@ -41,7 +41,7 @@ curl  -v -X GET "https://api.aspose.cloud/v3.0/html/storage/file/sample.html" -H
 
 | **API** | **Type** | **Description** | **Swagger Link** |
 | :- | :- | :- | :- |
-|/html/storage/file/{path}|PUT|Upload a file to Cloud Storage|[UploadFile](https://apireference.aspose.cloud/html/#/File/UploadFile)|
+|` `/html/storage/file/{path}|` `PUT|` `Upload a file to Cloud Storage|` `[UploadFile](https://apireference.aspose.cloud/html/#/File/UploadFile)|
 
 ### **cURL Example**
 {{< tabs tabTotal="2" tabID="4" tabName1="Request" tabName2="Response" >}}
@@ -86,7 +86,7 @@ curl  -v -X PUT "https://api.aspose.cloud/v3.0/html/storage/file/input.html" -H 
 
 |**API**|**Type**|**Description**|**Swagger Link**|
 | :- | :- | :- | :- |
-|/html/storage/file/copy/{srcPath}|PUT|Duplicate a file to a new location on Cloud Storage|[CopyFile](https://apireference.aspose.cloud/html/#/File/CopyFile)|
+|` `/html/storage/file/copy/{srcPath}|PUT|Duplicate a file to a new location on Cloud Storage|[CopyFile](https://apireference.aspose.cloud/html/#/File/CopyFile)|
 
 ### **cURL Example**
 {{< tabs tabTotal="1" tabID="8" tabName1="Request" >}}
