@@ -9,7 +9,7 @@ weight: 10
 
 
 
-## **API changes**
+## API changes
 
 #### *Common path format conventions*
 
