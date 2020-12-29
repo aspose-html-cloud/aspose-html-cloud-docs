@@ -56,7 +56,7 @@ An example of the token request response; it contains a JWT token in the `access
 Replace <_JWT_token_> with  `access_token` field value obtained in the Step 1.
 
 ```
-curl -X POST  -v "https://api.aspose.cloud/v4.0/html/conversion?inputPath=inputFormat=pdf&storage:///myfolder/testpage.html&outputPath=storage:///myfolder/converted/testpage.pdf"      -d "{}" -H "Content-Type: application/json" -H "Authorization:Bearer <JWT_token>"
+curl -X POST  -v "https://api.aspose.cloud/v4.0/html/conversion?inputFormat=pdf&inputPath=storage:///myfolder/testpage.html&outputPath=storage:///myfolder/converted/testpage.pdf" -d "{}" -H "Content-Type: application/json" -H "Authorization:Bearer <JWT_token>"
 ```
 
 {{< /tab >}}
