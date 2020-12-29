@@ -5,13 +5,13 @@ url: /quickstart/
 weight: 20
 ---
 
-It is quite easy to use Aspose.Html for Cloud in your projects. All you need to do is:
+It is quite easy to use Aspose.HTML for Cloud in your projects. All you need to do is:
 ## **1. Create a Free Account**
 Please go to <https://dashboard.aspose.cloud/#/> to create a free account.
 ## **2. Create New App and Get App Key and SID**
-Before you can make any requests to Aspose for Cloud APIs you need to [create an API client app](https://docs.aspose.cloud/total/create-new-app-and-get-app-key-and-sid). This will give you **App SID** and **App key (secret key)** which you can use to invoke Aspose for Cloud APIs.
+Before you can make any requests to Aspose for Cloud APIs you need to [create an API client app](https://docs.aspose.cloud/total/create-new-app-and-get-app-key-and-sid/). This will give you **App SID** and **App key (secret key)** which you can use to invoke Aspose for Cloud APIs.
 ## **3. Install the SDK of your choice**
-Aspose Html for Cloud SDK is written in 2 different languages, all you need to get started is to add our SDK to your existing project.
+Aspose.HTML for Cloud SDK is written in 2 different languages, all you need to get started is to add our SDK to your existing project.
 
 {{< tabs tabTotal="10" tabID="1" tabName1=".NET" tabName2="Python" tabName3="Java" tabName4="PHP" tabName5="Ruby" tabName6="Node.js" tabName7="C++" tabName8="Go" tabName9="Swift" tabName10="Android" >}}
 
@@ -19,7 +19,7 @@ Aspose Html for Cloud SDK is written in 2 different languages, all you need to g
 
 ```java
 
-// Install Aspose.Html Cloud SDK via NuGet
+// Install Aspose.HTML Cloud SDK via NuGet
 
 PM> Install-Package Aspose.Html-Cloud              
 
@@ -109,7 +109,7 @@ gem install ./aspose_html-1.0.0.gem
 
 ```java
 
-,To use the library locally without publishing to a remote npm registry, first install the dependencies by changing into the directory containing package.json (and this README). Let's call this JAVASCRIPT_CLIENT_DIR. Then run:
+To use the library locally without publishing to a remote npm registry, first install the dependencies by changing into the directory containing package.json (and this README). Let's call this JAVASCRIPT_CLIENT_DIR. Then run:
 
 npm install
 
@@ -184,7 +184,7 @@ Use the App SID and App key (secret key) from the API App Client you created in 
 
 {{% alert color="primary" %}} 
 
-The [GitHub repository for Aspose.Html for Cloud](https://github.com/aspose-html-cloud) has a complete set of examples, demonstrating our API capabilities.
+The [GitHub repository for Aspose.HTML for Cloud](https://github.com/aspose-html-cloud) has a complete set of examples, demonstrating our API capabilities.
 
 {{% /alert %}} 
 
