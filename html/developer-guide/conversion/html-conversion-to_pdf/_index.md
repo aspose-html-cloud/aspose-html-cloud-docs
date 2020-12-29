@@ -1,42 +1,19 @@
 ---
-title: "Conversion common information"
+title: "HTML Conversion to PDF"
 type: docs
-url: /html-conversion-asynchronously/
-keywords: "html conversion, asynchronous conversion, CQRS, convert html to pdf, convert html to jpeg, python, java , .net,  c#,  android, swift ,Perl, Node.js"
-description: " Article explains HTML conversion using Aspose.HTML Cloud API. SDKs are also available in PHP, Perl, Android, Swift, C#, Java and more to help developers speed up their development."
-weight: 10
+url: /html-conversion-to_pdf/
+keywords: "html conversion, asynchronous conversion, CQRS, convert html to pdf, python, java , .net,  c#,  android, swift ,Perl, Node.js"
+description: " Article explains HTML conversion to PDF using Aspose.HTML Cloud API. SDKs are also available in PHP, Perl, Android, Swift, C#, Java and more to help developers speed up their development."
+weight: 20
 ---
 
-## **Asynchronous conversion: common information**
-
-[TOC]
-
-### **Summary**
-
-Aspose.HTML Cloud v4.0 provides the simplest API to convert an HTML page to one of the fixed-layout document formats (including PDF, XPS) or one of the raster image formats (including JPEG, BMP, PNG, GIF, TIFF) . You can convert the HTML document to any of supported formats either from the storage by its name or from the web by its URL.
-
-The main difference from API v3.0 are:
-
-- conversion is considered as potentially long time operation, so new API provides asynchronous mode of 
-- many conversion options that were available in API v3.0 have been reduced to only 3 possible API calls that makes 
 
 
+## HTML conversion to PDF
 
-### **API Information**
+### Summary
 
-All URIs are relative to https://api.aspose.cloud/v4.0/html
-
-| **API**          | **Type** | **Description**                                              | **Swagger Link**                                             |
-| :--------------- | :------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| /conversion/     | POST     | Starts an asynchronous conversion operation                  | [Convert](https://apireference.aspose.cloud/html/#/Conversion/Convert) |
-| /conversion/{id} | GET      | Gets the current status of previously started asynchronous conversion operation by its ID. | [GetConversionStatus](https://apireference.aspose.cloud/html/#/Conversion/GetConversionStatus) |
-| /conversion/{id} | DELETE   | Forces termination of the previously started asynchronous conversion operation by its ID | [CancelConversion](https://apireference.aspose.cloud/html/#/Conversion/CancelConversion) |
-
-For more details concerning the conversion API, see  [Conversion API Parameters](/html-conversion-asynchronously/html-conversion-params/)
-
-
-
-
+This article demonstrates how to convert HTML file to PDF by direct REST API calls or using SDKs.   
 
 ### **cURL Example**
 
@@ -153,43 +130,9 @@ In this case the *outputPath* parameter isn't specified for POST method, so the 
 
 
 
-#### Step 4 (optional): Cancel the previously started conversion (DELETE method)
-
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
-{{< tab tabNum="1" >}}
-
-Replace <_JWT_token_> with  `access_token` field value obtained in the Step 1.
-
-Replace  <_ID_> with `id` field value obtained in the Step 2.
-
-```
-curl -v "https://api.aspose.cloud/v4.0/html/conversion/<ID> -X DELETE -H "Content-Type: application/json" -H "Authorization:Bearer <JWT_token>"
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-```
-{ "code":200,
-	"id":"CN-119ebe92-b063-45be-bbb5-f9f9d1ad4660",
-	"status":"cancelled",
-	"links":{"self":"/v4.0/html/conversion/CN-119ebe92-b063-45be-bbb5-f9f9d1ad4660"}
-}
-```
-
-{{< /tab >}}
-
-{{< /tabs >}}
-
-
-
-## **Available SDKs**
-
-Using an SDK (API client) is the quickest way for a developer to speed up the development. An SDK takes care of a lot of low-level details of making requests and handling responses and lets you focus on writing code specific to your particular project. Check out our [GitHub repository](https://github.com/aspose-html-cloud) for a complete list of Aspose.HTML SDKs along with working examples, to get you started in no time. Please check [Available SDKs](/available-sdks/) article to learn how to add an SDK to your project.
-
 ### **SDK Examples**
+
+These examples demonstrate how to convert HTML to PDF using available SDKs.
 
 ##### Case 1. Convert the HTML document from the storage by its name to PDF and save to the storage
 
@@ -253,8 +196,6 @@ namespace Aspose.Html.Cloud.Examples
 
 {{< tabs tabTotal="1" tabID="1" tabName1="C#" >}}
 
-{{< tab tabNum="1" >}}
-
 ```
 using System;
 using System.IO;
@@ -309,7 +250,5 @@ namespace Aspose.Html.Cloud.Examples
 	}
 }
 ```
-
-{{< /tab >}}
 
 {{< /tabs >}}

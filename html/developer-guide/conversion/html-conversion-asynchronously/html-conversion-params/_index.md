@@ -9,6 +9,8 @@ weight: 10
 
 ## Conversion API parameters
 
+[TOC]
+
 ### Summary
 
 This article contains more detailed description of the conversion API provided by Aspose.HTML Cloud API v4.0.  It explains following features:
@@ -30,6 +32,10 @@ The source and result document paths must match the following conventions:
  
 
 ### Conversion API details
+
+All URIs are relative to https://api.aspose.cloud/v4.0/html
+
+#### Initialize asynchronous conversion operation
 
 - **POST:** start a long-time conversion operation. If succeeded, returns a response with operation ID.
 
@@ -56,6 +62,8 @@ The source and result document paths must match the following conventions:
 
 
 
+#### Check current status of conversion operation
+
 - **GET:** check the previously started operation state by its ID. Returns the state object; if state code is "completed", the response object will contain a list of converted file paths. The conversion results are stored in the cloud storage and will be available for download using cloud paths from the response.
 
 ```
@@ -69,6 +77,8 @@ The source and result document paths must match the following conventions:
 | id   | ID of conversion task previously started. | Path      | +        |
 
 
+
+#### Cancel a running conversion
 
 - **DELETE:** cancel the previously started operation by its ID
 
