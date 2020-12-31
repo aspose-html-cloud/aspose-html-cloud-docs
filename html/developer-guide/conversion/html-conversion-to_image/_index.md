@@ -208,7 +208,7 @@ namespace Aspose.Html.Cloud.Examples
 
 {{< /tabs >}}
 
-In the example above, the conversion HTML to JPEG occurs with the **ConversionOptions** specifying, among which there is the **Resolution** that applicable only to image formats. More details about available conversion parameters for HTML files are in the [Conversion options](/html-conversion-options/) section.
+In the example above, the conversion HTML to JPEG occurs with the **ConversionOptions** specifying, among which there is the **Resolution** that applicable only to image formats. More details about available conversion parameters for HTML files are in the [SDK Conversion Options](/conversion-options/) section.
 
 #### Case 2. Convert a Web page by its URL to PNG and save to the local file system
 

@@ -207,7 +207,7 @@ namespace Aspose.Html.Cloud.Examples
 
  In the example, we use methods of the **ConverterBuilder** class: FromStorageFile(`inputPath`), To(`ConversionOptions`) and SaveToStorage(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result. HTML to PDF conversion occurs with the default conversion options: the resulting PDF document's width and height correspond to A4, all margins have zero value, and Quality of jpeg compression is 95%.
 
-More details about available conversion parameters for HTML files are in the [Conversion options](/html-conversion-options/) section.
+More details about available conversion parameters for HTML files are in the [SDK Conversion Options](/conversion-options/) section.
 
 
 
