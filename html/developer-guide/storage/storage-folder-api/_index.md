@@ -15,13 +15,17 @@ weight: 30
 
 ### Summary
 
-This article provides detailed description of REST API operations to manipulate folders in the cloud storage.
+This article provides a detailed description of REST API operations to manipulate folders in the cloud storage using Aspose.HTML Cloud API v.4.0. SDKs.
 
-
+{{% alert color="primary" %}} 
+Install Aspose.HTML Cloud SDK for .NET via [NuGet](https://www.nuget.org/packages/Aspose.HTML-Cloud/).
+{{% /alert %}}  
 
 ### API description
 
-All URIs are relative to https://api.aspose.cloud/v4.0/html
+A call to the REST API consists of a request performed by the client, and a response returned by the service. In the request, you send a URL with information about which operation you want to call, the resource to act upon, query parameters, etc.
+
+All URIs are relative to https://api.aspose.cloud/v4.0/html.
 
 #### Get a list of folder files and subfolders
 
@@ -33,16 +37,16 @@ All URIs are relative to https://api.aspose.cloud/v4.0/html
 
 **Parameters:**
 
-| Name        | Description                                        | Passed in | Required |
-| :---------- | :------------------------------------------------- | :-------- | :------- |
-| path        | Folder path in the storage.                        | Query     | +        |
-| storageName | Storage name, or default storage if not specified. | Query     | -        |
+| Name        | Description                                       | Passed in | Required |
+| :---------- | :------------------------------------------------ | :-------- | :------- |
+| path        | Folder path in the storage.                       | Query     | +        |
+| storageName | Storage name or default storage if not specified. | Query     | -        |
 
 
 
 #### Create a folder
 
-- POST: create a folder
+- POST: create a folder.
 
 ```
 /folder?path={path}&storageName={storageName}
@@ -50,10 +54,10 @@ All URIs are relative to https://api.aspose.cloud/v4.0/html
 
 **Parameters:**
 
-| Name        | Description                                        | Passed in | Required |
-| :---------- | :------------------------------------------------- | :-------- | :------- |
-| path        | Folder path to be created.                         | Query     | +        |
-| storageName | Storage name, or default storage if not specified. | Query     | -        |
+| Name        | Description                                       | Passed in | Required |
+| :---------- | :------------------------------------------------ | :-------- | :------- |
+| path        | Folder path to be created.                        | Query     | +        |
+| storageName | Storage name or default storage if not specified. | Query     | -        |
 
 
 
@@ -70,9 +74,9 @@ All URIs are relative to https://api.aspose.cloud/v4.0/html
 | Name            | Description                                                  | Passed in | Required |
 | :-------------- | :----------------------------------------------------------- | :-------- | :------- |
 | srcPath         | Source folder path to be copied.                             | Query     | +        |
-| destPath        | Destination folder path                                      | Query     | +        |
-| srcStorageName  | Source folder storage name, or default storage if not specified. | Query     | -        |
-| destStorageName | Destination folder storage name, or default storage if not specified. | Query     | -        |
+| destPath        | Destination folder path.                                     | Query     | +        |
+| srcStorageName  | Source folder storage name or default storage if not specified. | Query     | -        |
+| destStorageName | Destination folder storage name or default storage if not specified. | Query     | -        |
 
 
 
@@ -89,9 +93,9 @@ All URIs are relative to https://api.aspose.cloud/v4.0/html
 | Name            | Description                                                  | Passed in | Required |
 | :-------------- | :----------------------------------------------------------- | :-------- | :------- |
 | srcPath         | Source folder path to be moved.                              | Query     | +        |
-| destPath        | Destination folder path                                      | Query     | +        |
-| srcStorageName  | Source folder storage name, or default storage if not specified. | Query     | -        |
-| destStorageName | Destination folder storage name, or default storage if not specified. | Query     | -        |
+| destPath        | Destination folder path.                                     | Query     | +        |
+| srcStorageName  | Source folder storage name or default storage if not specified. | Query     | -        |
+| destStorageName | Destination folder storage name or default storage if not specified. | Query     | -        |
 
 
 
@@ -105,16 +109,18 @@ All URIs are relative to https://api.aspose.cloud/v4.0/html
 
 **Parameters:**
 
-| Name        | Description                                        | Passed in | Required |
-| :---------- | :------------------------------------------------- | :-------- | :------- |
-| path        | Folder path to be deleted.                         | Query     | +        |
-| storageName | Storage name, or default storage if not specified. | Query     | -        |
+| Name        | Description                                       | Passed in | Required |
+| :---------- | :------------------------------------------------ | :-------- | :------- |
+| path        | Folder path to be deleted.                        | Query     | +        |
+| storageName | Storage name or default storage if not specified. | Query     | -        |
 
 
 
 ### SDK Examples
 
-#### Example 1: how to create a folder
+#### Example 1: How to create a folder
+
+The example below demonstrates how to create a folder in the storage.
 
 {{< tabs tabTotal="1" tabID="1" tabName1="C#" >}}
 
@@ -164,9 +170,11 @@ namespace Aspose.Html.Cloud.Examples
 
 {{< /tabs >}}
 
+The **CreateDirectory**(`folderPath`, `storageName`) method creates a directory in the specified storage; all parent directories specified in the `folderPath` will be created too if they don't exist.
 
 
-#### Example 2: how to get the folder content
+
+#### Example 2: How to get the folder content
 
 {{< tabs tabTotal="1" tabID="1" tabName1="C#" >}}
 
@@ -218,3 +226,6 @@ namespace Aspose.Html.Cloud.Examples
 
 {{< /tabs >}}
 
+Тhe **GetDirectories**(`TestDataFolder`, `storageName`) method allows you to get a list of direct children directories of the specified directory in the defined storage. The **GetFiles**(`TestDataFolder`, `storageName`) method allows you to get a list of files by specified directory path in the specified storage.
+
+Complete source code of Aspose.HTML SDK for .NET is freely available on the [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
