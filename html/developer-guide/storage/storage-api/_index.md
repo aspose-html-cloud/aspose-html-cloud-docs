@@ -15,23 +15,27 @@ Aspose.HTML Cloud provides the API to access files and folders stored in the use
 
 The provided storage API of version 4.0 is an alternative interface to the same functionality as in API v.3.0. 
 
-Storage API is divided to following groups:
+Storage API is divided into the following groups:
 
 - [Storage common info access API](/storage-props-api/)
 - [Storage folder manipulation API](/storage-folder-api/)
 - [Storage file manipulation API](/storage-file-api/)
 
- To obtain more information about each group of APIs and SDK usage examples, click the correspondent link.
+ To obtain more information about each group of APIs and SDK usage examples, click the correspondent link. 
+
+{{% alert color="primary" %}} 
+Install Aspose.HTML Cloud SDK for .NET via [NuGet](https://www.nuget.org/packages/Aspose.HTML-Cloud/).
+{{% /alert %}}  
 
 ## API Information
 
-All URIs are relative to https://api.aspose.cloud/v4.0/html
+All URIs are relative to https://api.aspose.cloud/v4.0/html.
 
 | **API**                                                      | **Type** | **Description**                                              | **Swagger Link**                                             |
 | :----------------------------------------------------------- | :------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | ***Storage***                                                |          |                                                              |                                                              |
 | /storage/exist/storage?storageName={**storageName**}         | GET      | Check if storage exists                                      | [StorageExists](https://apireference.aspose.cloud/html/#/StorageV4/StorageExists) |
-| /storage/exist?path={**path**}&storageName={*storageName*}   | GET      | Check if file or folder exists                               | [ObjectExists](https://apireference.aspose.cloud/html/#/StorageV4/ObjectExists) |
+| /storage/exist?path={**path**}&storageName={*storageName*}   | GET      | Check if a file or folder exists                             | [ObjectExists](https://apireference.aspose.cloud/html/#/StorageV4/ObjectExists) |
 | /storage/disc?storageName={**storageName**}                  | GET      | Get disc usage in the storage                                | [GetDiscUsage](https://apireference.aspose.cloud/html/#/StorageV4/GetDiscUsage) |
 | /storage/version?path={**path**}&storageName={*storageName*} | GET      | Get list of file versions                                    | [GetFileVersions](https://apireference.aspose.cloud/html/#/StorageV4/GetFileVersions) |
 |                                                              |          |                                                              |                                                              |

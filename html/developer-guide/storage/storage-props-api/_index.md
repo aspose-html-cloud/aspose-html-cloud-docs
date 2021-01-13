@@ -13,19 +13,27 @@ weight: 20
 
 [TOC]
 
+Cloud storage allows world-wide storage and retrieval of data at any time. You can use storage for various scenarios including storing data for archival or disaster recovery.
+
 ### Summary
 
-This article provides detailed description of REST API storage-wide operations.
+Aspose.HTML Cloud provides helper functions to work with files uploaded to Aspose.HTML Cloud Storage or any other Cloud Storage of your choice. If you need any help getting started with setting third party storage please refer to [Aspose Cloud UI Help Topics](https://docs.aspose.cloud/total/aspose-cloud-ui-help-topics/).
+
+This article provides a detailed description of REST API storage-wide operations using Aspose.HTML Cloud API v.4.0. SDKs. You find out how to get a user associated cloud storage info such as disc usage, an object existence, etc. 
 
 
 
 ### API description
 
-All URIs are relative to https://api.aspose.cloud/v4.0/html
+REST API is one of the most common web services available today. It can be called from any platform that supports HTTP / HTTPS and it does not depend on the software running on the server or client. 
+
+The action must be recorded by the HTTP request method that you make. The most common methods include GET, POST, PUT and DELETE. More detailed information about REST URLs' structure and specific behavior linked to the API such as Authentication, Request Queuing, and Storage you can find in the [REST API Overview](https://docs.aspose.cloud/total/getting-started/rest-api-overview/) article.
+
+All URIs are relative to https://api.aspose.cloud/v4.0/html.
 
 #### Check if a named storage exists
 
-- GET: check if a specified storage exists and is associated with application user:
+- GET: check if specified storage exists and is associated with application user.
 
 ```
 /storage/exist/storage?storageName={storageName}
@@ -52,8 +60,8 @@ All URIs are relative to https://api.aspose.cloud/v4.0/html
 | Name        | Description                                                  | Passed in | Required |
 | :---------- | :----------------------------------------------------------- | :-------- | :------- |
 | path        | Object (file or folder) path in the storage.                 | Query     | +        |
-| storageName | Storage name, or default storage if not specified.           | Query     | -        |
-| versionId   | Version ID of the specified file, or last version by default. Ignored for folders | Query     | -        |
+| storageName | Storage name or default storage if not specified.            | Query     | -        |
+| versionId   | Version ID of the specified file or last version by default. Ignored for folders. | Query     | -        |
 
 
 
@@ -67,9 +75,9 @@ All URIs are relative to https://api.aspose.cloud/v4.0/html
 
 **Parameters:**
 
-| Name        | Description  | Passed in | Required |
-| :---------- | :----------- | :-------- | :------- |
-| storageName | Storage name | Query     | +        |
+| Name        | Description   | Passed in | Required |
+| :---------- | :------------ | :-------- | :------- |
+| storageName | Storage name. | Query     | +        |
 
 
 
@@ -83,16 +91,18 @@ All URIs are relative to https://api.aspose.cloud/v4.0/html
 
 **Parameters:**
 
-| Name        | Description                                        | Passed in | Required |
-| :---------- | :------------------------------------------------- | :-------- | :------- |
-| path        | File path in the storage.                          | Query     | +        |
-| storageName | Storage name, or default storage if not specified. | Query     | -        |
+| Name        | Description                                       | Passed in | Required |
+| :---------- | :------------------------------------------------ | :-------- | :------- |
+| path        | File path in the storage.                         | Query     | +        |
+| storageName | Storage name or default storage if not specified. | Query     | -        |
 
 
 
 ### SDK Examples
 
-#### Example 1: how to check if an object exists in the storage
+#### Example 1: How to check if an object exists in the storage
+
+The following example shows how to check if an object (file or folder) specified by the path exists in the storage.
 
 {{< tabs tabTotal="1" tabID="1" tabName1="C#" >}}
 
@@ -150,7 +160,7 @@ namespace Aspose.Html.Cloud.Examples
 
 
 
-#### Example 2: how to get the storage disc usage
+#### Example 2: How to get the storage disc usage
 
 {{< tabs tabTotal="1" tabID="1" tabName1="C#" >}}
 
@@ -194,3 +204,5 @@ namespace Aspose.Html.Cloud.Examples
 {{< /tab >}}
 
 {{< /tabs >}}
+
+For complete examples and data files, please go to [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
