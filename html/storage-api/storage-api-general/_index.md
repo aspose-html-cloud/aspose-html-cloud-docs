@@ -1,15 +1,23 @@
 ---
 title: "Storage API - general information"
 type: docs
-url: /storage-api/
+url: /storage-api/storage-api-general/
 keywords: "cloud storage, cloud storage api, python, java , .net,  c#,  android, swift ,Perl, Node.js"
 description: "Article provides common information about Aspose.HTML Cloud API v.4.0 usage. SDKs are also available in PHP, Perl, Android, Swift, C#, Java and more to help developers speed up their development."
 weight: 10
 ---
 
-[TOC]
+
 
 ## Introduction
+
+Cloud file storage provides a simple way to save and retrieval information securely at any time from any location. Besides giving space, cloud storage can protect your files and data from computer failure or other events that may cause the information to be lost. Storage services enable developers to store data in the cloud, relying on the authentication and other access features that control who can get to the data. If you need any information getting started with setting third party storage please refer to [Aspose Cloud UI Help Topics](https://docs.aspose.cloud/total/aspose-cloud-ui-help-topics/).
+
+{{% alert color="primary" %}} 
+Install Aspose.HTML Cloud SDK for .NET via [NuGet](https://www.nuget.org/packages/Aspose.HTML-Cloud/).
+{{% /alert %}}  
+
+
 
 Aspose.HTML Cloud provides the API to access files and folders stored in the user associated Aspose cloud storage. 
 
@@ -17,9 +25,9 @@ The provided storage API of version 4.0 is an alternative interface to the same 
 
 Storage API is divided into the following groups:
 
-- [Storage common info access API](/storage-props-api/)
-- [Storage folder manipulation API](/storage-folder-api/)
-- [Storage file manipulation API](/storage-file-api/)
+- [Storage common info access API](/html/storage-api/storage-props-api/)
+- [Storage folder manipulation API](/html/storage-api/storage-folder-api/)
+- [Storage file manipulation API](/html/storage-api/storage-file-api/)
 
  To obtain more information about each group of APIs and SDK usage examples, click the correspondent link. 
 
@@ -27,7 +35,7 @@ Storage API is divided into the following groups:
 Install Aspose.HTML Cloud SDK for .NET via [NuGet](https://www.nuget.org/packages/Aspose.HTML-Cloud/).
 {{% /alert %}}  
 
-## API Information
+## REST API Information
 
 All URIs are relative to https://api.aspose.cloud/v4.0/html.
 

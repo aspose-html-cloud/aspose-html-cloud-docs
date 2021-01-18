@@ -2,7 +2,7 @@
 title: "Aspose.HTML Cloud 20.03 Release Notes"
 type: docs
 url: /aspose-html-cloud-20-03-release-notes/
-weight: 40
+weight: 50
 ---
 
 ## **API changes**

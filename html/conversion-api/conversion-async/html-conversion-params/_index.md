@@ -7,11 +7,8 @@ description: " Article explains how to use parameters of HTML conversion using A
 weight: 10
 ---
 
-## Conversion API parameters
 
-[TOC]
-
-### Summary
+## Summary
 
 This article contains a more detailed description of the conversion API provided by Aspose.HTML Cloud API v4.0.  It explains the following features:
 
