@@ -5,13 +5,83 @@ url: /quickstart/
 weight: 20
 ---
 
-It is quite easy to use Aspose.HTML for Cloud in your projects. All you need to do is:
+It is quite easy to use Aspose.HTML for Cloud in your projects. But before you start, you need to create an **Aspose Cloud Account** and obtain **Client Id** and **Client Secret**.
+
 ## **1. Create a Free Account**
-Please go to <https://dashboard.aspose.cloud/#/> to create a free account.
-## **2. Create New App and Get App Key and SID**
-Before you can make any requests to Aspose for Cloud APIs you need to [create an API client app](https://docs.aspose.cloud/total/create-new-app-and-get-app-key-and-sid/). This will give you **App SID** and **App key (secret key)** which you can use to invoke Aspose for Cloud APIs.
-## **3. Install the SDK of your choice**
-Aspose.HTML for Cloud SDK is written in 2 different languages, all you need to get started is to add our SDK to your existing project.
+Please go to <https://dashboard.aspose.cloud/#/> to create a free **Aspose Cloud Account**. You will be redirected to Single Sign On application to authenticate to our services.
+
+If you already have an account with our services, please specify the User Name/Email and Password and click on the Sign In button. If you don’t have an account with our services, click on the **Don’t have an account? Sign Up** button or Sign In using an existing GitHub or Google account.
+Please, provide the required information in the **Greate A New Account** form in order to setup your account. 
+
+The following figure shows the online forms for Sign In and Sing Up:
+
+![The forms "Sign In to your account" and "Create A New Account"](sign-in-up.png)
+
+You will be redirected to the Dashboard after the account is created.
+
+## **2. Manage Your Account**
+
+You can view and update your Account details. For this, you need to access your Aspose Account Settings by clicking the icon in the upper-right corner of the page. Select the **Account Settings** item from the menu bar. 
+
+![The dashboard menu](setting.png)
+
+
+
+Next, in **My Profile**, you can choose **General**, **Security**, **Billing**, etc., for editing and setting. Make your settings and click the **Save Changes** button to confirm.
+
+![The General Setting](general-setting.png)
+
+## **3. Create New App and Default Storage**
+
+Aspose appoints excellent importance to security concerns. We use the JWT token for the authentication and end-to-end HTTPS encryption to secure all client-server interactions. You should use a set of unique API **Credentials** (Client Id & Client Secret) to authenticate when calling Aspose Cloud API.
+
+1. Before you can make any requests to Aspose Cloud APIs you need to create an API client application. For this, log into the [Dashboard](https://dashboard.aspose.cloud/), access the **Applications** page and click on the **Create New Application** button. For more detailed information see the [Creating and Managing Application](https://docs.aspose.cloud/total/getting-started/dashboard/creating-and-managing-application/) article.
+
+
+
+![The Applications page](create-app.png)
+
+
+2. Next, you will be redirected to the page shown on the followed figure. You can enter an **Application Name** and Description for a new Application.
+
+
+![The Applications/Create Application page. You can specify Application Details](app-details.png)
+
+
+3. You should click on the "**+**" button next to the default storage select box field for the storage creation. Select in the drop-down menu the kind of the storage. Obey the instructions on the [Creating and Managing Storages](https://docs.aspose.cloud/total/getting-started/dashboard/how-to-configure-3rd-party-cloud-storages/) page to setup your first storage.
+   
+
+![The Applications/Create Application page. You can Select Default Storage](choose-storage.png)
+
+
+4. If you choose the **Internal Storage**, give the **Storage Name**, select the **Storage Mode** and push the **Save** button. You will be redirected to the Applications Page.
+The newly created storage will be pre-selected on the Default Storage field since it’s the single storage you have. 
+
+![The Storages/Create Internal Storage Page](internal-storage-fill.png)
+
+
+
+## **4. Get Your  Client Id and Client Secret**
+
+1. Go back to the **Applications** page. In the bottom of the page, you find the **My First App**. Click this link to view and update your security credentials. 
+
+![The Applications Page with link to Client Credentials](app.png)
+
+2. Each Application has its own **Client Id** and **Client Secret**. These security credentials allow you to authenticate Aspose.HTML API calls.
+
+
+
+![The Applications/Edit Application Page with Client Credentials](credentials.png)
+
+3. You have successfully received your security credentials. 
+
+{{% alert color="primary" %}} 
+**Note:** If you, working with Aspose Cloud, come across the terms **App SID** and **App key (secret key)**, they should be interpreted as **Client Id** and **Client Secret** respectively.
+{{% /alert %}} 
+
+
+## **5. Install the SDK of Your Choice**
+Aspose.HTML for Cloud SDK is written in 2 different languages; all you need to get started is to add our SDK to your existing project.
 
 {{< tabs tabTotal="10" tabID="1" tabName1=".NET" tabName2="Python" tabName3="Java" tabName4="PHP" tabName5="Ruby" tabName6="Node.js" tabName7="C++" tabName8="Go" tabName9="Swift" tabName10="Android" >}}
 
@@ -179,8 +249,8 @@ gradlew.bat
 
 
 
-## **4. Make an API request from the SDK of your choice**
-Use the App SID and App key (secret key) from the API App Client you created in step 1 and replace in the corresponding code. Below is an example of conversion of an HTML page to PDF.
+## **6. Make an API Request from the SDK of Your Choice**
+Use the App SID (Client Id) and App key (Client Secret) from the API App Client you created in step 4 and replace in the corresponding code. Below is an example of HTML to PDF conversion.
 
 {{% alert color="primary" %}} 
 
