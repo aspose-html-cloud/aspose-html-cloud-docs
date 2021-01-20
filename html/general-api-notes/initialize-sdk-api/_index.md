@@ -22,10 +22,10 @@ Classic way to initialize an SDK entry point object is to call HtmlApi construct
 **Example 1**. 
 
 ```c#
-var appSid = "aaaaaaaa-cccc-dddd-9999-1112222333dd";
-var appKey = "60487a72d6325241191177e37ae5214";
+var clientId = "aaaaaaaa-cccc-dddd-9999-1112222333dd";
+var clientSecret = "60487a72d6325241191177e37ae5214";
 
-using(var api = HtmlApi(appSid, appKey))
+using(var api = HtmlApi(clientId, clientSecret))
 {
     // ... your code
 }
@@ -40,11 +40,11 @@ Usually it's not necessary to specify the service URLs explicitly, this possibil
 {{% /alert %}}  
 
 ```c#
-var appSid = "aaaaaaaa-cccc-dddd-9999-1112222333dd";
-var appKey = "60487a72d6325241191177e37ae5214";
-var baseApiUrl = "https://api-qa.aspose.cloud/v4.0/html";
+var clientId = "aaaaaaaa-cccc-dddd-9999-1112222333dd";
+var clientSecret = "60487a72d6325241191177e37ae5214";
+var baseApiUrl = "https://localhost:5001/v4.0/html";  // e.g. local service instance for debugging 
 
-using(var api = HtmlApi(appSid, appKey, baseApiUrl))
+using(var api = HtmlApi(clientId, clientSecret, baseApiUrl))
 {
     // ... your code
 }
@@ -60,7 +60,7 @@ Another way to setup SDK is to call HtmlApi with a Configuration class instance.
 
 ### SDK Examples
 
-{{< tabs tabTotal="10" tabID="1" tabName1="C#/.NET" >}}
+{{< tabs tabTotal="1" tabID="2" tabName1="C#"  >}}
 
 {{< tab tabNum="1" >}}
 
@@ -69,12 +69,12 @@ Another way to setup SDK is to call HtmlApi with a Configuration class instance.
 Create default configuration instance and specify the user credentials and HTTP connection timeout.
 
 ```c#
-var appSid = "aaaaaaaa-cccc-dddd-9999-1112222333dd";
-var appKey = "60487a72d6325241191177e37ae5214";
+var clientId = "aaaaaaaa-cccc-dddd-9999-1112222333dd";
+var clientSecret = "60487a72d6325241191177e37ae5214";
 
 var conf = Configuration.NewDefault()
-    .WithAppSid(appSid)
-    .WithAppKey(appKey)
+    .WithAppSid(clientId)
+    .WithAppKey(clientSecret)
     .WithTimeout(new TimeSpan(0, 5, 0));
 
 using(var api = HtmlApi(conf))
@@ -83,7 +83,7 @@ using(var api = HtmlApi(conf))
 }
 ```
 
-**Example 2. **
+**Example 2.**
 
 Create default configuration instance and specify the authentication token obtained from some external source.
 
@@ -114,17 +114,17 @@ SDK API entry point can be created also with Configuration object initialized in
 
 ### SDK Example
 
-{{< tabs tabTotal="10" tabID="1" tabName1="C#/.NET" >}}
+{{< tabs tabTotal="10" tabID="3" tabName1="C#" >}}
 
 {{< tab tabNum="1" >}}
 
 ```c#
-var appSid = "aaaaaaaa-cccc-dddd-9999-1112222333dd";
-var appKey = "60487a72d6325241191177e37ae5214";
+var clientId = "aaaaaaaa-cccc-dddd-9999-1112222333dd";
+var clientSecret = "60487a72d6325241191177e37ae5214";
 
 using(var api = HtmlApi(confBuilder -> confBuilder
-                        .WithAppSid(appSid)
-                        .WithAppKey(appKey)))
+                        .WithAppSid(clientId)
+                        .WithAppKey(clientSecret)))
 {
     // ... your code
 }

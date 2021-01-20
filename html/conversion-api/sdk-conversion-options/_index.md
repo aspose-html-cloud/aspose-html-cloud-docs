@@ -1,12 +1,44 @@
 ---
-title: " SDK Conversion Options"
+title: "SDK Conversion Options"
 type: docs
-url: /conversion-options/
-keywords: "html conversion, asynchronous conversion, convert html to pdf, html to xps, html to image, html to markdown, html to mhtml"
+url: /sdk-conversion-options/
+keywords: "html conversion, conversion options, convert html to pdf, convert html to xps, convert html to doc, convert html to image, convert html to jpeg, convert html to markdown, convert html to mhtml"
 description: " Article explains HTML conversion to PDF using Aspose.HTML Cloud API. SDKs are also available in PHP, Perl, Android, Swift, C#, Java and more to help developers speed up their development."
 weight: 80
 ---
-##Summary
+## Summary
+
+Aspose.HTML Cloud SDK family provides a set of classes that represent the conversion options 
+
+
+
+## Namespace
+
+**Aspose.HTML.Cloud.Sdk.Conversion**
+
+
+
+## Hierarchy of classes
+
+- **ConversionOptions**
+  - FixedLayoutConversionOptions
+    - PDFConversionOptions
+    - XPSConversionOptions
+    - DOCConversionOptions
+  - ImageConversionOptions
+    - JPEGConversionOptions
+    - PNGConversionOptions
+    - BMPConversionOptions
+    - GIFConversionOptions
+    - TIFFConversionOptions
+  - MHTMLConversionOptions
+  - MarkdownConversionOptions
+
+
+
+
+
+
 
 
 ### PDFConversionOptions
@@ -31,7 +63,7 @@ Name | Type | Description  | Notes
  **BottomMargin** | **Number**| Bottom resulting document page margin in points (1/96 inch). | [optional] 
  **JpegQuality** | **Number**| Quality of jpeg compression in percent. | [optional]
 
-<a name="XPSConversionOptions"></a>
+
 ### XPSConversionOptions
 ```code
 ConversionOptions xpsOpts = new XPSConversionOptions()
@@ -51,8 +83,35 @@ Name | Type | Description  | Notes
  **TopMargin** | **Number**| Top resulting document page margin in points (1/96 inch). | [optional] 
  **BottomMargin** | **Number**| Bottom resulting document page margin in points (1/96 inch). | [optional] 
 
-<a name="JPEGConversionOptions"></a>
+
+
+### DOCConversionOptions
+
+```code
+ConversionOptions docOpts = new DOCConversionOptions()
+    .SetHeight(800)
+    .SetWidth(1000)
+    .SetLeftMargin(10)
+    .SetRightMargin(10)
+    .SetBottomMargin(10)
+    .SetTopMargin(10);
+```
+
+| Name             | Type       | Description                                                  | Notes      |
+| ---------------- | ---------- | ------------------------------------------------------------ | ---------- |
+| **Width**        | **Number** | Resulting document page width in points (1/96 inch).         | [optional] |
+| **Height**       | **Number** | Resulting document page height in points (1/96 inch).        | [optional] |
+| **LeftMargin**   | **Number** | Left resulting document page margin in points (1/96 inch).   | [optional] |
+| **RightMargin**  | **Number** | Right resulting document page margin in points (1/96 inch).  | [optional] |
+| **TopMargin**    | **Number** | Top resulting document page margin in points (1/96 inch).    | [optional] |
+| **BottomMargin** | **Number** | Bottom resulting document page margin in points (1/96 inch). | [optional] |
+
+
+
+
+
 ### JPEGConversionOptions
+
 ```code
 ConversionOptions jpgOpts = new JPEGConversionOptions()
     .SetHeight(800)
@@ -74,7 +133,7 @@ Name | Type | Description  | Notes
  **BottomMargin** | **Number**| Bottom resulting document page margin in points (1/96 inch). | [optional]
  **Resolution** | **Number**| Resolution of the resulting image. The default is 96 dpi. | [optional]
 
-<a name="PNGConversionOptions"></a> 
+
 ### PNGConversionOptions
 ```code
 ConversionOptions pngOpts = new PNGConversionOptions()
@@ -97,7 +156,7 @@ Name | Type | Description  | Notes
  **BottomMargin** | **Number**| Bottom resulting document page margin in points (1/96 inch). | [optional]
  **Resolution** | **Number**| Resolution of the resulting image. The default is 96 dpi. | [optional]
 
-<a name="BMPConversionOptions"></a>
+
 ### BMPConversionOptions
 ```code
 ConversionOptions bmpOpts = new BMPConversionOptions()
@@ -120,7 +179,7 @@ Name | Type | Description  | Notes
  **BottomMargin** | **Number**| Bottom resulting document page margin in points (1/96 inch). | [optional]
  **Resolution** | **Number**| Resolution of the resulting image. The default is 96 dpi. | [optional]
 
-<a name="GIFConversionOptions"></a>
+
 ### GIFConversionOptions
 ```code
 ConversionOptions gifOpts = new GIFConversionOptions()
@@ -143,7 +202,7 @@ Name | Type | Description  | Notes
  **BottomMargin** | **Number**| Bottom resulting document page margin in points (1/96 inch). | [optional]
  **Resolution** | **Number**| Resolution of the resulting image. The default is 96 dpi. | [optional]
 
-<a name="TIFFConversionOptions"></a>
+
 ### TIFFConversionOptions
 ```code
 ConversionOptions tiffOpts = new TIFFConversionOptions()
@@ -166,7 +225,7 @@ Name | Type | Description  | Notes
  **BottomMargin** | **Number**| Bottom resulting document page margin in points (1/96 inch). | [optional]
  **Resolution** | **Number**| Resolution of the resulting image. The default is 96 dpi. | [optional]
 
-<a name="MarkdownConversionOptions"></a>
+
 ### MarkdownConversionOptions
 ```code
 ConversionOptions mdOpts = new MarkdownConversionOptions()
@@ -176,7 +235,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **UseGit** | **Boolean**| Use [Git Markdown flavor](https://github.github.com/gfm/) to save. | [optional] [default to false]
 
-<a name="MHTMLConversionOptions"></a>
+
 ### MHTMLConversionOptions
 ```code
 ConversionOptions mhtmlOpts = new MHTMLConversionOptions();
