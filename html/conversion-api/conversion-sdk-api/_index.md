@@ -31,14 +31,14 @@ A widespread use case for Aspose.HTML Cloud SDK functions is file processing and
 
 #### ConvertAsync
 
-> ```
-> AsyncResult<Conversion.Conversion> ConvertAsync(
->          ConversionSource source,
->          ConversionOptions options,
->          string outputFilePath = null,
->          NameCollisionOption nameCollisionOption = NameCollisionOption.FailIfExists,
->          IObserver<Conversion.Conversion> observer = null)
-> ```
+ ```
+ AsyncResult<Conversion.Conversion> ConvertAsync(
+          ConversionSource source,
+          ConversionOptions options,
+          string outputFilePath = null,
+          NameCollisionOption nameCollisionOption = NameCollisionOption.FailIfExists,
+          IObserver<Conversion.Conversion> observer = null)
+ ```
 
 Starts asynchronously a long-time conversion operation of a source file (or files) specified by *source* parameter and returns an **AsyncResult** object that allows watching for the current asynchronous operation status. 
 
@@ -46,14 +46,14 @@ Starts asynchronously a long-time conversion operation of a source file (or file
 
 #### ConvertAsync
 
-> ```
-> AsyncResult<Conversion.Conversion> ConvertAsync(
->          List<RemoteFile> files,
->          ConversionOptions options,
->          string outputFilePath = null,
->          NameCollisionOption nameCollisionOption = NameCollisionOption.FailIfExists,
->          IObserver<Conversion.Conversion> observer = null)
-> ```
+```c#
+AsyncResult<Conversion.Conversion> ConvertAsync(
+      List<RemoteFile> files,
+      ConversionOptions options,
+      string outputFilePath = null,
+      NameCollisionOption nameCollisionOption = NameCollisionOption.FailIfExists,
+      IObserver<Conversion.Conversion> observer = null)
+```
 
 Overloaded method.  Starts asynchronously a long-time conversion operation of a list of storage files.
 
@@ -61,9 +61,9 @@ Overloaded method.  Starts asynchronously a long-time conversion operation of a 
 
 #### GetConversion
 
-> ```
-> AsyncResult<Conversion.Conversion> GetConversion(string id)
-> ```
+```c#
+AsyncResult<Conversion.Conversion> GetConversion(string id)
+```
 
 Gets a current status of long-time conversion operation started previously by the *ConvertAsync* method.
 
@@ -71,9 +71,9 @@ Gets a current status of long-time conversion operation started previously by th
 
 #### DeleteTask
 
-> ```
-> bool DeleteTask(string id)
-> ```
+```c#
+bool DeleteTask(string id)
+```
 
 Cancels a long-time conversion operation started previously by the *ConvertAsync* method.
 
@@ -81,14 +81,14 @@ Cancels a long-time conversion operation started previously by the *ConvertAsync
 
 #### Convert
 
-> ```
-> Conversion.Conversion Convert(
->       ConversionSource source,
->       ConversionOptions options,
->       string outputFilePath = null,
->       NameCollisionOption nameCollisionOption = NameCollisionOption.FailIfExists,
->       IObserver<Conversion.Conversion> observer = null)
-> ```
+```c#
+Conversion.Conversion Convert(
+   ConversionSource source,
+   ConversionOptions options,
+   string outputFilePath = null,
+   NameCollisionOption nameCollisionOption = NameCollisionOption.FailIfExists,
+   IObserver<Conversion.Conversion> observer = null)
+```
 
 Converts synchronously a file (or files) specified by  *source* parameter. This method is a synchronous mode of the *ConvertAsync*. Returns the Conversion.Conversion object with a list of conversion results.
 
@@ -96,13 +96,13 @@ Converts synchronously a file (or files) specified by  *source* parameter. This 
 
 #### Convert
 
-> ```
-> Conversion.Conversion Convert(
->          List<RemoteFile> files, 
->          ConversionOptions options, string outputFilePath = null,
->          NameCollisionOption nameCollisionOption = NameCollisionOption.FailIfExists,
->          IObserver<Conversion.Conversion> observer = null)
-> ```
+```c#
+Conversion.Conversion Convert(
+      List<RemoteFile> files, 
+      ConversionOptions options, string outputFilePath = null,
+      NameCollisionOption nameCollisionOption = NameCollisionOption.FailIfExists,
+      IObserver<Conversion.Conversion> observer = null)
+```
 
 Overloaded method. Converts synchronously a list of storage files. This method is a synchronous mode of the *ConvertAsync* (overloaded).
 
@@ -110,14 +110,14 @@ The specialized versions of the conversion methods are described below.
 
 #### ConvertWebSiteAsync
 
-> ```
-> AsyncResult<Conversion.Conversion> ConvertWebSiteAsync(
->          string address, 
->          ConversionOptions options,
->          string outputFilePath = null, 
->          NameCollisionOption nameCollisionOption = NameCollisionOption.FailIfExists,
->          IObserver<Conversion.Conversion> observer = null)
-> ```
+```c#
+AsyncResult<Conversion.Conversion> ConvertWebSiteAsync(
+      string address, 
+      ConversionOptions options,
+      string outputFilePath = null, 
+      NameCollisionOption nameCollisionOption = NameCollisionOption.FailIfExists,
+      IObserver<Conversion.Conversion> observer = null)
+```
 
 Starts asynchronously a long-time conversion operation of a web page specified by its URL (*address* parameter). This method is an analog of the *ConvertAsync* specialized for web pages.
 
@@ -125,14 +125,14 @@ Starts asynchronously a long-time conversion operation of a web page specified b
 
 #### ConvertWebSite
 
-> ```
-> Conversion.Conversion ConvertWebSite(
->          string address,
->          ConversionOptions options,
->          string outputFilePath = null,
->          NameCollisionOption nameCollisionOption = NameCollisionOption.FailIfExists,
->          IObserver<Conversion.Conversion> observer = null)
-> ```
+```c#
+Conversion.Conversion ConvertWebSite(
+      string address,
+      ConversionOptions options,
+      string outputFilePath = null,
+      NameCollisionOption nameCollisionOption = NameCollisionOption.FailIfExists,
+      IObserver<Conversion.Conversion> observer = null)
+```
 
 Synchronous mode of the *ConvertWebSiteAsync* method. Converts a web page specified by its URL.
 
@@ -140,14 +140,14 @@ Synchronous mode of the *ConvertWebSiteAsync* method. Converts a web page specif
 
 #### ConvertWebSite
 
-> ```
-> Conversion.Conversion ConvertWebSite(
->          List<string> address, 
->          ConversionOptions options,
->          string outputFilePath = null, 
->          NameCollisionOption nameCollisionOption = NameCollisionOption.FailIfExists,
->          IObserver<Conversion.Conversion> observer = null)
-> ```
+```c#
+Conversion.Conversion ConvertWebSite(
+      List<string> address, 
+      ConversionOptions options,
+      string outputFilePath = null, 
+      NameCollisionOption nameCollisionOption = NameCollisionOption.FailIfExists,
+      IObserver<Conversion.Conversion> observer = null)
+```
 
 Overloaded method. Synchronous mode of the *ConvertWebSiteAsync* method. Converts several web pages specified the list of their URLs.
 
@@ -155,14 +155,14 @@ Overloaded method. Synchronous mode of the *ConvertWebSiteAsync* method. Convert
 
 #### ConvertLocalFileAsync
 
-> ```
-> AsyncResult<Conversion.Conversion> ConvertLocalFileAsync(
->          string filePath,
->          ConversionOptions options,
->          string outputFilePath = null,
->          NameCollisionOption nameCollisionOption = NameCollisionOption.FailIfExists,
->          IObserver<Conversion.Conversion> observer = null)
-> ```
+```c#
+AsyncResult<Conversion.Conversion> ConvertLocalFileAsync(
+      string filePath,
+      ConversionOptions options,
+      string outputFilePath = null,
+      NameCollisionOption nameCollisionOption = NameCollisionOption.FailIfExists,
+      IObserver<Conversion.Conversion> observer = null)
+```
 
 Starts asynchronously a long-time conversion operation of a file specified by its local file system path.
 
@@ -170,14 +170,14 @@ Starts asynchronously a long-time conversion operation of a file specified by it
 
 #### ConvertLocalFileAsync
 
-> ```
-> AsyncResult<Conversion.Conversion> ConvertLocalFileAsync(
->          List<string> filePaths, 
->          ConversionOptions options,
->          string outputFilePath = null, 
->          NameCollisionOption nameCollisionOption = NameCollisionOption.FailIfExists,
->          IObserver<Conversion.Conversion> observer = null)
-> ```
+```c#
+AsyncResult<Conversion.Conversion> ConvertLocalFileAsync(
+      List<string> filePaths, 
+      ConversionOptions options,
+      string outputFilePath = null, 
+      NameCollisionOption nameCollisionOption = NameCollisionOption.FailIfExists,
+      IObserver<Conversion.Conversion> observer = null)
+```
 
 Overloaded method.  Starts asynchronously a long-time conversion operation of several files specified by a list of their local file system paths.
 
@@ -185,14 +185,14 @@ Overloaded method.  Starts asynchronously a long-time conversion operation of se
 
 #### ConvertLocalFile
 
-> ```
-> Conversion.Conversion ConvertLocalFile(
->          string filePath,
->          ConversionOptions options,
->          string outputFilePath = null,
->          NameCollisionOption nameCollisionOption = NameCollisionOption.FailIfExists,
->          IObserver<Conversion.Conversion> observer = null)
-> ```
+```c#
+Conversion.Conversion ConvertLocalFile(
+      string filePath,
+      ConversionOptions options,
+      string outputFilePath = null,
+      NameCollisionOption nameCollisionOption = NameCollisionOption.FailIfExists,
+      IObserver<Conversion.Conversion> observer = null)
+```
 
 Synchronous mode of the *ConvertLocalFileAsync* method. Converts a file specified by its local file system path.
 
@@ -200,14 +200,14 @@ Synchronous mode of the *ConvertLocalFileAsync* method. Converts a file specifie
 
 #### ConvertLocalFile
 
-> ```
-> Conversion.Conversion ConvertLocalFile(
->          List<string> filePath, 
->          ConversionOptions options,
->          string outputFilePath = null, 
->          NameCollisionOption nameCollisionOption = NameCollisionOption.FailIfExists,
->          IObserver<Conversion.Conversion> observer = null)
-> ```
+```c#
+Conversion.Conversion ConvertLocalFile(
+      List<string> filePath, 
+      ConversionOptions options,
+      string outputFilePath = null, 
+      NameCollisionOption nameCollisionOption = NameCollisionOption.FailIfExists,
+      IObserver<Conversion.Conversion> observer = null)
+```
 
 Overloaded method. Synchronous mode of the *ConvertLocalFileAsync* method. Converts several files specified by a list of their local file system paths.
 
@@ -215,13 +215,13 @@ Overloaded method. Synchronous mode of the *ConvertLocalFileAsync* method. Conve
 
 #### ConvertLocalDirectory
 
-> ```
-> Conversion.Conversion ConvertLocalDirectory(
->          List<string> paths,
->          ConversionOptions options,
->          string outputFilePath = null,
->          NameCollisionOption nameCollisionOption = NameCollisionOption.FailIfExists,
->          IObserver<Conversion.Conversion> observer = null)
-> ```
+```
+Conversion.Conversion ConvertLocalDirectory(
+      List<string> paths,
+      ConversionOptions options,
+      string outputFilePath = null,
+      NameCollisionOption nameCollisionOption = NameCollisionOption.FailIfExists,
+      IObserver<Conversion.Conversion> observer = null)
+```
 
 Converts synchronously files in a list of local directories.
