@@ -1,5 +1,5 @@
 ---
-title: "Storage API: cloud storage info"
+title: "Cloud storage info operations"
 type: docs
 url: /storage-props-api/
 keywords: "cloud storage, cloud storage api, python, java , .net,  c#,  android, swift, Perl, Node.js"
@@ -9,13 +9,9 @@ weight: 20
 
 
 
-## Storage API: general storage info
-
-[TOC]
+### Summary
 
 Cloud storage allows world-wide storage and retrieval of data at any time. You can use storage for various scenarios including storing data for archival or disaster recovery.
-
-### Summary
 
 Aspose.HTML Cloud provides helper functions to work with files uploaded to Aspose.HTML Cloud Storage or any other Cloud Storage of your choice. If you need any help getting started with setting third party storage please refer to [Aspose Cloud UI Help Topics](https://docs.aspose.cloud/total/aspose-cloud-ui-help-topics/).
 
@@ -162,7 +158,7 @@ namespace Aspose.Html.Cloud.Examples
 
 #### Example 2: How to get the storage disc usage
 
-{{< tabs tabTotal="1" tabID="1" tabName1="C#" >}}
+{{< tabs tabTotal="1" tabID="2" tabName1="C#" >}}
 
 {{< tab tabNum="1" >}}
 

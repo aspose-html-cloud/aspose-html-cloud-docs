@@ -7,9 +7,6 @@ description: "Article explains HTML conversion to image formats using Aspose.HTM
 weight: 40
 ---
 
-## HTML to image conversion
-[TOC]
-
 ### Summary
 
 Aspose.HTML Cloud SDK for .NET produces a few quick and easy ways to convert HTML files to various image formats: by direct REST API calls or using SDKs. There are multiple image formats accessible for converting HTML documents with Aspose.HTML Cloud APIs - [JPEG](https://docs.fileformat.com/image/jpeg/), [PNG](https://docs.fileformat.com/image/png/), [BMP](https://docs.fileformat.com/image/bmp/), [GIF](https://docs.fileformat.com/image/gif/), and [TIFF](https://docs.fileformat.com/image/tiff/).
@@ -50,7 +47,7 @@ The following example is the response of the token request. It contains a JWT to
 
 #### Step 2: Initialize an asynchronous conversion process using the POST method
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="2" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -84,7 +81,7 @@ curl -X POST  -v "https://api.aspose.cloud/v4.0/html/conversion?inputFormat=jpeg
 
 #### Step 3: Check the previously started conversion process status using the GET method
 
-{{< tabs tabTotal="3" tabID="1" tabName1="Request" tabName2="Response - running" tabName3="Response - completed" >}}
+{{< tabs tabTotal="3" tabID="3" tabName1="Request" tabName2="Response - running" tabName3="Response - completed" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -144,7 +141,7 @@ The following code examples demonstrate how to convert HTML to images programmat
 
  An example below shows how to convert HTML to JPEG using available SDKs. We consider the case when the source HTML document is in the storage, and you want to convert it to JPEG format and save to the storage. 
 
-{{< tabs tabTotal="1" tabID="1" tabName1="C#" >}}
+{{< tabs tabTotal="1" tabID="4" tabName1="C#" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -214,7 +211,7 @@ In the example above, the conversion HTML to JPEG occurs with the **ConversionOp
 
 Aspose.HTML Cloud SDK allows you to get HTML page from the web by its URL and convert it to the specified image format for saving to the local file system. The example below demonstrates how to convert HTML to PNG without conversion parameters specifying.
 
-{{< tabs tabTotal="1" tabID="1" tabName1="C#" >}}
+{{< tabs tabTotal="1" tabID="5" tabName1="C#" >}}
 
 {{< tab tabNum="1" >}}
 ```
@@ -272,7 +269,7 @@ In the example, HTML to PNG conversion takes place with the default conversion o
 
 In the following example,  HTML to TIFF conversion occurs with the conversion options setting. The set resolution value (300 dpi) indicates higher image quality than using the default value (96 dpi).
 
-{{< tabs tabTotal="1" tabID="1" tabName1="C#" >}}
+{{< tabs tabTotal="1" tabID="6" tabName1="C#" >}}
 
 {{< tab tabNum="1" >}}
 ```
@@ -339,7 +336,7 @@ namespace Aspose.Html.Cloud.Examples
 
 Let’s consider a common SDK usage scenario when the source document is in the storage, and you want to convert it to some other format and save to the  local file system. In our example, it is HTML to BMP conversion.
 
-{{< tabs tabTotal="1" tabID="1" tabName1="C#" >}}
+{{< tabs tabTotal="1" tabID="7" tabName1="C#" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -409,7 +406,7 @@ namespace Aspose.Html.Cloud.Examples
 
 In the following example, we consider the case when the source HTML document is in the storage, and you want to convert it to GIF format and save to the storage. 
 
-{{< tabs tabTotal="1" tabID="1" tabName1="C#" >}}
+{{< tabs tabTotal="1" tabID="8" tabName1="C#" >}}
 
 {{< tab tabNum="1" >}}
 

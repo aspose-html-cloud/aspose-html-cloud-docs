@@ -9,9 +9,6 @@ weight: 20
 
 
 
-## HTML to PDF conversion
-[TOC]
-
 ### Summary
 
 Aspose.HTML Cloud v4.0 provides the simplest API to convert HTML documents to [PDF](https://docs.fileformat.com/pdf/) format with high quality, easy and fast. HTML to PDF conversion is often required to establish limited access to documents editing or copying; to produce official documentation or send some information, for example, by email.
@@ -58,7 +55,7 @@ The following example is the response of the token request. It contains a JWT to
 
 The `curl -X POST` command specifies a request method (POST) to use when communicating with the HTTP server. The POST method is usually used in requests for adding data; in this case, an empty parameter list is passed `-d "{}"`.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="2" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -92,7 +89,7 @@ curl -X POST  -v "https://api.aspose.cloud/v4.0/html/conversion?inputFormat=pdf&
 
 The GET method allows checking the previously started operation state by its ID and returns the state object.
 
-{{< tabs tabTotal="3" tabID="1" tabName1="Request" tabName2="Response - running" tabName3="Response - completed" >}}
+{{< tabs tabTotal="3" tabID="3" tabName1="Request" tabName2="Response - running" tabName3="Response - completed" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -149,7 +146,7 @@ These examples demonstrate how to convert HTML to PDF using available SDKs.
 
 The conversion process is following - a source document is loaded from the cloud storage, and after conversion is completed, the result is saved to this storage.  
 
-{{< tabs tabTotal="1" tabID="1" tabName1="C#" >}}
+{{< tabs tabTotal="1" tabID="4" tabName1="C#" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -215,7 +212,7 @@ More details about available conversion parameters for HTML files are in the [SD
 
 Aspose.HTML Cloud SDK allows you to get HTML page from the web by its URL, convert it to another format and save into the local file system. The example below demonstrates how to convert HTML to PDF with the conversion parameters specifying.
 
-{{< tabs tabTotal="1" tabID="1" tabName1="C#" >}}
+{{< tabs tabTotal="1" tabID="5" tabName1="C#" >}}
 
 ```
 using System;

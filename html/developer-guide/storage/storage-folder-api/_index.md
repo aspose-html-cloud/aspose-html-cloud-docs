@@ -1,17 +1,11 @@
 ---
-title: "Storage API: folder operations"
+title: "Folder operations"
 type: docs
 url: /storage-folder-api/
 keywords: "cloud storage, cloud storage api, cloud storage folder, get folder content, create folder, delete folder, copy folder, move folder, python, java , .net,  c#,  android, swift ,Perl, Node.js"
 description: "Article explains how to manipulate folders in the cloud storage using Aspose.HTML Cloud API v.4.0. SDKs are also available in PHP, Perl, Android, Swift, C#, Java and more to help developers speed up their development."
 weight: 30
 ---
-
-
-
-## Storage API: folder operations
-
-[TOC]
 
 ### Summary
 
@@ -176,7 +170,7 @@ The **CreateDirectory**(`folderPath`, `storageName`) method creates a directory 
 
 #### Example 2: How to get the folder content
 
-{{< tabs tabTotal="1" tabID="1" tabName1="C#" >}}
+{{< tabs tabTotal="1" tabID="2" tabName1="C#" >}}
 
 {{< tab tabNum="1" >}}
 

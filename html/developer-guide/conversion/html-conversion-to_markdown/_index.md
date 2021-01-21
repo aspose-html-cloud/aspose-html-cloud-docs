@@ -7,12 +7,11 @@ description: "Article explains HTML conversion to Markdown using Aspose.HTML Clo
 weight: 60
 ---
 
-## HTML to Markdown conversion
-[TOC]
 
-Markdown is a generally well-accepted markup language that often used as a format for documentation and readme files. It is popular with technical writers for its simplicity of use and lightweight learning and broad support. You can access and edit Markdown files or create new content from any devices in any text editor. Working in Markdown is safe and secure because a text editor never crash. Using Aspose.HTML Cloud library you can convert HTML to Markdown format in your C# and other .NET programming languages.
 
 ### Summary
+
+Markdown is a generally well-accepted markup language that often used as a format for documentation and readme files. It is popular with technical writers for its simplicity of use and lightweight learning and broad support. You can access and edit Markdown files or create new content from any devices in any text editor. Working in Markdown is safe and secure because a text editor never crash. Using Aspose.HTML Cloud library you can convert HTML to Markdown format in your C# and other .NET programming languages.
 
 Aspose.HTML Cloud v4.0 provides the simplest API to convert HTML documents to [Markdown](https://docs.fileformat.com/word-processing/md/) format with high quality, easy and fast. This article demonstrates how to convert HTML file to Markdown by direct REST API calls or using SDKs.   
 
@@ -54,7 +53,7 @@ The following example is the response of the token request. It contains a JWT to
 
 The `curl -X POST` command specifies a request method (POST) to use when communicating with the HTTP server. The POST method is usually used in requests for adding data; in this case, an empty parameter list is passed `-d "{}"`.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="2" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -88,7 +87,7 @@ curl -X POST  -v "https://api.aspose.cloud/v4.0/html/conversion?inputFormat=md&i
 
 The GET method allows checking the previously started operation state by its ID and returns the state object.
 
-{{< tabs tabTotal="3" tabID="1" tabName1="Request" tabName2="Response - running" tabName3="Response - completed" >}}
+{{< tabs tabTotal="3" tabID="3" tabName1="Request" tabName2="Response - running" tabName3="Response - completed" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -143,7 +142,7 @@ These examples demonstrate how to convert HTML to Markdown using available SDKs.
 
 ##### Case 1. Convert an HTML document from the storage by its name to Markdown and save to the storage
 
-{{< tabs tabTotal="1" tabID="1" tabName1="C#" >}}
+{{< tabs tabTotal="1" tabID="4" tabName1="C#" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -207,7 +206,7 @@ namespace Aspose.Html.Cloud.Examples
 
 Aspose.HTML Cloud SDK allows you to get HTML page from the web by its URL, convert it to another format and save into the local file system. The example below demonstrates how to convert HTML to Markdown. 
 
-{{< tabs tabTotal="1" tabID="1" tabName1="C#" >}}
+{{< tabs tabTotal="1" tabID="5" tabName1="C#" >}}
 
 ```
 using System;

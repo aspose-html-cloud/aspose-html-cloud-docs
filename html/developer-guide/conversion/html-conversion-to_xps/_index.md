@@ -7,10 +7,6 @@ description: " Article explains HTML conversion to XPS using Aspose.HTML Cloud A
 weight: 30
 ---
 
-## HTML to XPS conversion
-
-[TOC]
-
 ### **Summary**
 
 Converting between formats is required for various reasons: to work in a familiar, convenient format or to take advantage of different formats for specific tasks. 
@@ -54,7 +50,7 @@ The following example is the response of the token request. It contains a JWT to
 
 The `curl -X POST` command specifies a request method (POST) to use when communicating with the HTTP server. The POST method is usually used in requests for adding data; in this case, an empty parameter list is passed `-d "{}"`.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="2" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -88,7 +84,7 @@ curl -X POST  -v "https://api.aspose.cloud/v4.0/html/conversion?inputFormat=xps&
 
 The GET method allows checking the previously started operation state by its ID and returns the state object.
 
-{{< tabs tabTotal="3" tabID="1" tabName1="Request" tabName2="Response - running" tabName3="Response - completed" >}}
+{{< tabs tabTotal="3" tabID="3" tabName1="Request" tabName2="Response - running" tabName3="Response - completed" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -145,7 +141,7 @@ These examples demonstrate how to convert HTML to XPS using available SDKs.
 
 In the following example, we consider the case when the source HTML document is in the storage, and you want to convert it to XPS format and save to the storage. 
 
-{{< tabs tabTotal="1" tabID="1" tabName1="C#" >}}
+{{< tabs tabTotal="1" tabID="4" tabName1="C#" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -211,7 +207,7 @@ Aspose.HTML Cloud SDK allows you to get HTML page from the web by its URL, conve
 
 This example demonstrates how to convert HTML to XPS using available SDKs. 
 
-{{< tabs tabTotal="1" tabID="1" tabName1="C#" >}}
+{{< tabs tabTotal="1" tabID="5" tabName1="C#" >}}
 
 {{< tab tabNum="1" >}}
 

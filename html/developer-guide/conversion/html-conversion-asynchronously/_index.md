@@ -7,10 +7,6 @@ description: " Article explains HTML conversion using Aspose.HTML Cloud API. SDK
 weight: 10
 ---
 
-## **Asynchronous conversion: common information**
-
-[TOC]
-
 ### **Summary**
 
 Aspose.HTML Cloud v4.0 provides the simplest API to convert an [HTML](https://docs.fileformat.com/web/html/) page to one of the fixed-layout document formats (including  [PDF](https://docs.fileformat.com/pdf/) and [XPS](https://docs.fileformat.com/page-description-language/xps/)) or one of the raster image formats (including [JPEG](https://docs.fileformat.com/image/jpeg/), [PNG](https://docs.fileformat.com/image/png/), [TIFF](https://docs.fileformat.com/image/tiff/),  [BMP](https://docs.fileformat.com/image/bmp/), and  [GIF](https://docs.fileformat.com/image/gif/)). You can convert the HTML document to any of supported formats either from the storage by its name or from the web by its URL.
@@ -22,7 +18,7 @@ The main difference from API v3.0 are:
 
 
 
-### **API Information**
+### **Conversion API Information**
 
 All URIs are relative to https://api.aspose.cloud/v4.0/html.
 
@@ -76,7 +72,7 @@ The following example is the response of the token request. It contains a JWT to
 
 The `curl -X POST` command specifies a request method (POST) to use when communicating with the HTTP server. The POST method is usually used in requests for adding data; in this case, an empty parameter list is passed `-d "{}"`.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="2" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -110,7 +106,7 @@ curl -X POST  -v "https://api.aspose.cloud/v4.0/html/conversion?inputPath=inputF
 
 The GET method allows checking the previously started operation state by its ID and returns the state object.
 
-{{< tabs tabTotal="3" tabID="1" tabName1="Request" tabName2="Response - running" tabName3="Response - completed" >}}
+{{< tabs tabTotal="3" tabID="3" tabName1="Request" tabName2="Response - running" tabName3="Response - completed" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -163,7 +159,7 @@ In this case, the *outputPath* parameter isn't specified for the POST method, so
 
 The DELETE method cancels the previously started operation by its ID.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="4" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -203,7 +199,7 @@ A widespread use case for Aspose.HTML Cloud SDK functions is file processing and
 
 ##### Case 1. Convert an HTML document from the storage by its name to PDF and save to the storage
 
-{{< tabs tabTotal="1" tabID="1" tabName1="C#" >}}
+{{< tabs tabTotal="1" tabID="5" tabName1="C#" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -265,7 +261,7 @@ The conversion process is following - a source document is loaded from the cloud
 
 Aspose.HTML Cloud SDK allows you to get HTML page from the web by its URL and convert it to the specified format for saving to the local file system.
 
-{{< tabs tabTotal="1" tabID="1" tabName1="C#" >}}
+{{< tabs tabTotal="1" tabID="6" tabName1="C#" >}}
 
 {{< tab tabNum="1" >}}
 

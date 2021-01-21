@@ -1,5 +1,5 @@
 ---
-title: "Storage API: file operations"
+title: "File operations"
 type: docs
 url: /storage-file-api/
 keywords: "cloud storage, cloud storage api, cloud storage file, upload file, download file, delete file, copy file, move file, python, java , .net,  c#,  android, swift ,Perl, Node.js"
@@ -7,9 +7,11 @@ description: "Article explains how to manipulate files in the cloud storage usin
 weight: 40
 ---
 
-## Storage API: file operations
+### Summary
 
-[TOC]
+Aspose.HTML Cloud allows you to work with documents saved on the cloud storage. The Aspose.HTML Cloud API is a REST-based API for wide usability on the web across platforms. 
+
+This article provides a detailed description of REST API operations to manipulate files in the cloud storage, i.e. upload, download, copy, move or delete files. If storage supports file versioning, the is an option to operate with a specified file version.
 
 Cloud file storage provides a simple way to save and retrieval information securely at any time from any location. Besides giving space, cloud storage can protect your files and data from computer failure or other events that may cause the information to be lost. Storage services enable developers to store data in the cloud, relying on the authentication and other access features that control who can get to the data. If you need any information getting started with setting third party storage please refer to [Aspose Cloud UI Help Topics](https://docs.aspose.cloud/total/aspose-cloud-ui-help-topics/).
 
@@ -17,11 +19,7 @@ Cloud file storage provides a simple way to save and retrieval information secur
 Install Aspose.HTML Cloud SDK for .NET via [NuGet](https://www.nuget.org/packages/Aspose.HTML-Cloud/).
 {{% /alert %}}  
 
-### Summary
 
-Aspose.HTML Cloud allows you to work with documents saved on the cloud storage. The Aspose.HTML Cloud API is a REST-based API for wide usability on the web across platforms. 
-
-This article provides a detailed description of REST API operations to manipulate files in the cloud storage, i.e. upload, download, copy, move or delete files. If storage supports file versioning, the is an option to operate with a specified file version.
 
 ### API description
 
@@ -190,7 +188,7 @@ namespace Aspose.Html.Cloud.Examples
 
 The example below shows how to download a file from storage to the local file system.
 
-{{< tabs tabTotal="1" tabID="1" tabName1="C#" >}}
+{{< tabs tabTotal="1" tabID="2" tabName1="C#" >}}
 
 {{< tab tabNum="1" >}}
 

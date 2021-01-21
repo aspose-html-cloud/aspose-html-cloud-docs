@@ -14,6 +14,7 @@ weight: 40
 |[MD](https://docs.fileformat.com/word-processing/md/)|Markdown Format|{{< emoticons/tick >}}|{{< emoticons/tick >}}|Save option is only available for an **HTML** document saving|
 |[PDF](https://docs.fileformat.com/view/pdf/)|Saves a document in PDF format| |{{< emoticons/tick >}}| |
 |[XPS](https://docs.fileformat.com/page-description-language/xps/)|Saves a document in XPS (XML Paper Specification) format| |{{< emoticons/tick >}}| |
+|[DOCX](https://docs.fileformat.com/word-processing/docx/)|Saves a document in DOCX format| |{{< emoticons/tick >}}| |
 |[TIFF](https://docs.fileformat.com/image/tiff/)|Renders a page or pages of a document and saves them into a single or multi-page TIFF file| |{{< emoticons/tick >}}| |
 |[JPEG](https://docs.fileformat.com/image/jpeg/)|Renders a page of a document and saves it as a JPEG file| |{{< emoticons/tick >}}| |
 |[PNG](https://docs.fileformat.com/image/png/)|Renders a page of a document and saves it as a PNG file| |{{< emoticons/tick >}}| |
