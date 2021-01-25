@@ -1,7 +1,7 @@
 ---
 title: "Convert HTML to PNG"
 type: docs
-url: /conversion-sdk-api/convert-html-to-tiff/
+url: /conversion-sdk-api/convert-html-to-png/
 keywords: "format conversion, html conversion, epub conversion, mhtml conversion, asynchronous conversion, conversion SDK, convert html to image , convert html to png, python, java , .net,  c#,  android, swift ,Perl, Node.js"
 description: "Article explains a usage of Aspose.HTML Cloud client SDKs by a set of examples. SDKs are wrappers upon REST API to help developers speed up their development. SDKs are available in PHP, Perl, Android, Swift, C#, Java and more."
 weight: 80
@@ -33,17 +33,18 @@ var name = "testpage1.html";
 var srcFilePath = $"{STORAGE_SRCFOLDER}/{name}";
 var destFolder = $"{STORAGE_DSTFOLDER}/Png";
 
-var api = new HtmlApi(clientID, clientSecret); // initialize SDK API
-
-ConverterBuilder convHtmlPng = new ConverterBuilder()
-    .FromStorageFile(srcFilePath)
-    .To(new PNGConversionOptions())
-    .SaveToStorage(destFolder);
-
-ConversionResult result = api.Convert(convHtmlPng);
-if(result.Status == "success" && result.Files.Length > 0)
+using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 {
-    // download file(s) by path result.Files
+    ConverterBuilder convHtmlPng = new ConverterBuilder()
+        .FromStorageFile(srcFilePath)
+        .To(new PNGConversionOptions())
+        .SaveToStorage(destFolder);
+
+    ConversionResult result = api.Convert(convHtmlPng);
+    if(result.Status == "success" && result.Files.Length > 0)
+    {
+        // download file(s) by path result.Files
+    }
 }
 ```
 
@@ -133,25 +134,26 @@ var name = "testpage1.html";
 var srcFilePath = $"{LOCAL_TESTDATA}\{name}";
 var destFolder = $"{STORAGE_DSTFOLDER}/Png";
 
-var api = new HtmlApi(clientId, clientSecret);
-
-ConversionOptions pngOpts = new PNGConversionOptions()
-    .SetHeight(800)
-    .SetWidth(1000)
-    .SetLeftMargin(10)
-    .SetRightMargin(10)
-    .SetBottomMargin(10)
-    .SetTopMargin(10);
-
-ConverterBuilder convHtmlPng = new ConverterBuilder()
-    .FromLocalFile(srcFilePath)
-    .To(pngOpts)
-    .SaveToStorage(destFolder);
-
-ConversionResult result = api.Convert(convHtmlPng);
-if(result.Status == "success" && result.Files.Length > 0)
+using(var api = new HtmlApi(clientId, clientSecret))
 {
-    // download file(s) by path result.Files
+    ConversionOptions pngOpts = new PNGConversionOptions()
+        .SetHeight(800)
+        .SetWidth(1000)
+        .SetLeftMargin(10)
+        .SetRightMargin(10)
+        .SetBottomMargin(10)
+        .SetTopMargin(10);
+
+    ConverterBuilder convHtmlPng = new ConverterBuilder()
+        .FromLocalFile(srcFilePath)
+        .To(pngOpts)
+        .SaveToStorage(destFolder);
+
+    ConversionResult result = api.Convert(convHtmlPng);
+    if(result.Status == "success" && result.Files.Length > 0)
+    {
+        // download file(s) by path result.Files
+    }
 }
 ```
 
@@ -241,17 +243,18 @@ const string LOCAL_TESTRESULT = "d:\TestResult";
 var sourceUrl = "https://stallman.org/articles/anonymous-payments-thru-phones.html";
 var destFolder =  Path.Combine(LOCAL_TESTRESULT, "Png");
 
-var api = new HtmlApi(clientID, clientSecret); // initialize SDK API
-
-ConverterBuilder convHtmlPng = new ConverterBuilder()
-    .FromUrl(sourceUrl)
-    .To(new PNGConversionOptions())
-    .SaveToLocal(destFolder);
-
-ConversionResult result = api.Convert(convHtmlPng);
-if(result.Status == "success" && result.Files.Length > 0)
+using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 {
-    // check if file exists locally
+    ConverterBuilder convHtmlPng = new ConverterBuilder()
+        .FromUrl(sourceUrl)
+        .To(new PNGConversionOptions())
+        .SaveToLocal(destFolder);
+
+    ConversionResult result = api.Convert(convHtmlPng);
+    if(result.Status == "success" && result.Files.Length > 0)
+    {
+        // check if file exists locally
+    }
 }
 ```
 

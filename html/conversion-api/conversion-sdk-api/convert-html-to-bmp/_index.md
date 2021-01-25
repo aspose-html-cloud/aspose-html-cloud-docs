@@ -33,17 +33,18 @@ var name = "testpage1.html";
 var srcFilePath = $"{STORAGE_SRCFOLDER}/{name}";
 var destFolder = $"{STORAGE_DSTFOLDER}/Bmp";
 
-var api = new HtmlApi(clientID, clientSecret); // initialize SDK API
-
-ConverterBuilder convHtmlBmp = new ConverterBuilder()
-    .FromStorageFile(srcFilePath)
-    .To(new BMPConversionOptions())
-    .SaveToStorage(destFolder);
-
-ConversionResult result = api.Convert(convHtmlBmp);
-if(result.Status == "success" && result.Files.Length > 0)
+using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 {
-    // download file(s) by path result.Files
+    ConverterBuilder convHtmlBmp = new ConverterBuilder()
+        .FromStorageFile(srcFilePath)
+        .To(new BMPConversionOptions())
+        .SaveToStorage(destFolder);
+
+    ConversionResult result = api.Convert(convHtmlBmp);
+    if(result.Status == "success" && result.Files.Length > 0)
+    {
+        // download file(s) by path result.Files
+    }
 }
 ```
 
@@ -133,25 +134,26 @@ var name = "testpage1.html";
 var srcFilePath = $"{LOCAL_TESTDATA}\{name}";
 var destFolder = $"{STORAGE_DSTFOLDER}/Bmp";
 
-var api = new HtmlApi(clientId, clientSecret);
-
-ConversionOptions bmpOpts = new BMPConversionOptions()
-    .SetHeight(800)
-    .SetWidth(1000)
-    .SetLeftMargin(10)
-    .SetRightMargin(10)
-    .SetBottomMargin(10)
-    .SetTopMargin(10);
-
-ConverterBuilder convHtmlBmp = new ConverterBuilder()
-    .FromLocalFile(srcFilePath)
-    .To(bmpOpts)
-    .SaveToStorage(destFolder);
-
-ConversionResult result = api.Convert(convHtmlBmp);
-if(result.Status == "success" && result.Files.Length > 0)
+using(var api = new HtmlApi(clientId, clientSecret))
 {
-    // download file(s) by path result.Files
+    ConversionOptions bmpOpts = new BMPConversionOptions()
+        .SetHeight(800)
+        .SetWidth(1000)
+        .SetLeftMargin(10)
+        .SetRightMargin(10)
+        .SetBottomMargin(10)
+        .SetTopMargin(10);
+
+    ConverterBuilder convHtmlBmp = new ConverterBuilder()
+        .FromLocalFile(srcFilePath)
+        .To(bmpOpts)
+        .SaveToStorage(destFolder);
+
+    ConversionResult result = api.Convert(convHtmlBmp);
+    if(result.Status == "success" && result.Files.Length > 0)
+    {
+        // download file(s) by path result.Files
+    }
 }
 ```
 
@@ -241,17 +243,18 @@ const string LOCAL_TESTRESULT = "d:\TestResult";
 var sourceUrl = "https://stallman.org/articles/anonymous-payments-thru-phones.html";
 var destFolder =  Path.Combine(LOCAL_TESTRESULT, "Bmp");
 
-var api = new HtmlApi(clientID, clientSecret); // initialize SDK API
-
-ConverterBuilder convHtmlBmp = new ConverterBuilder()
-    .FromUrl(sourceUrl)
-    .To(new BMPConversionOptions())
-    .SaveToLocal(destFolder);
-
-ConversionResult result = api.Convert(convHtmlBmp);
-if(result.Status == "success" && result.Files.Length > 0)
+using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 {
-    // check if file exists locally
+    ConverterBuilder convHtmlBmp = new ConverterBuilder()
+        .FromUrl(sourceUrl)
+        .To(new BMPConversionOptions())
+        .SaveToLocal(destFolder);
+
+    ConversionResult result = api.Convert(convHtmlBmp);
+    if(result.Status == "success" && result.Files.Length > 0)
+    {
+        // check if file exists locally
+    }
 }
 ```
 

@@ -33,18 +33,20 @@ var name = "testpage1.html";
 var srcFilePath = $"{STORAGE_SRCFOLDER}/{name}";
 var destFolder = $"{STORAGE_DSTFOLDER}/Jpeg";
 
-var api = new HtmlApi(clientID, clientSecret); // initialize SDK API
-
-ConverterBuilder convHtmlJpeg = new ConverterBuilder()
-    .FromStorageFile(srcFilePath)
-    .To(new JPEGConversionOptions())
-    .SaveToStorage(destFolder);
-
-ConversionResult result = api.Convert(convHtmlJpeg);
-if(result.Status == "success" && result.Files.Length > 0)
+using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 {
-    // download file(s) by path result.Files
+    ConverterBuilder convHtmlJpeg = new ConverterBuilder()
+        .FromStorageFile(srcFilePath)
+        .To(new JPEGConversionOptions())
+        .SaveToStorage(destFolder);
+
+    ConversionResult result = api.Convert(convHtmlJpeg);
+    if(result.Status == "success" && result.Files.Length > 0)
+    {
+        // download file(s) by path result.Files
+    }   
 }
+
 ```
 
 {{< /tab >}}
@@ -133,25 +135,26 @@ var name = "testpage1.html";
 var srcFilePath = $"{LOCAL_TESTDATA}\{name}";
 var destFolder = $"{STORAGE_DSTFOLDER}/Jpeg";
 
-var api = new HtmlApi(clientId, clientSecret);
-
-ConversionOptions jpegOpts = new JPEGConversionOptions()
-    .SetHeight(800)
-    .SetWidth(1000)
-    .SetLeftMargin(10)
-    .SetRightMargin(10)
-    .SetBottomMargin(10)
-    .SetTopMargin(10);
-
-ConverterBuilder convHtmlJpeg = new ConverterBuilder()
-    .FromLocalFile(srcFilePath)
-    .To(jpegOpts)
-    .SaveToStorage(destFolder);
-
-ConversionResult result = api.Convert(convHtmlJpeg);
-if(result.Status == "success" && result.Files.Length > 0)
+using(var api = new HtmlApi(clientId, clientSecret))
 {
-    // download file(s) by path result.Files
+    ConversionOptions jpegOpts = new JPEGConversionOptions()
+        .SetHeight(800)
+        .SetWidth(1000)
+        .SetLeftMargin(10)
+        .SetRightMargin(10)
+        .SetBottomMargin(10)
+        .SetTopMargin(10);
+
+    ConverterBuilder convHtmlJpeg = new ConverterBuilder()
+        .FromLocalFile(srcFilePath)
+        .To(jpegOpts)
+        .SaveToStorage(destFolder);
+
+    ConversionResult result = api.Convert(convHtmlJpeg);
+    if(result.Status == "success" && result.Files.Length > 0)
+    {
+        // download file(s) by path result.Files
+    }
 }
 ```
 
@@ -241,17 +244,18 @@ const string LOCAL_TESTRESULT = "d:\TestResult";
 var sourceUrl = "https://stallman.org/articles/anonymous-payments-thru-phones.html";
 var destFolder =  Path.Combine(LOCAL_TESTRESULT, "Jpeg");
 
-var api = new HtmlApi(clientID, clientSecret); // initialize SDK API
-
-ConverterBuilder convHtmlJpeg = new ConverterBuilder()
-    .FromUrl(sourceUrl)
-    .To(new JPEGConversionOptions())
-    .SaveToLocal(destFolder);
-
-ConversionResult result = api.Convert(convHtmlJpeg);
-if(result.Status == "success" && result.Files.Length > 0)
+using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 {
-    // check if file exists locally
+    ConverterBuilder convHtmlJpeg = new ConverterBuilder()
+        .FromUrl(sourceUrl)
+        .To(new JPEGConversionOptions())
+        .SaveToLocal(destFolder);
+
+    ConversionResult result = api.Convert(convHtmlJpeg);
+    if(result.Status == "success" && result.Files.Length > 0)
+    {
+        // check if file exists locally
+    }
 }
 ```
 
