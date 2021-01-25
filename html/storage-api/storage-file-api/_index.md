@@ -188,27 +188,80 @@ Overloaded method. Starts asynchronous download of a storage file into the byte 
 
 ### SDK examples
 
-#### Example 1: How to upload a file
+#### Example 1: How to check if a file exists in the storage
 
+{{< tabs tabTotal="1" tabID="1" tabName1="C#" >}}
 
+{{< tab tabNum="1" >}}
+
+```c#
+string folder = "/HtmlTestData";
+string name = "testpage1.html";
+string name_ = "fake.html";
+
+// here the ConfigurationBuilder is used to initialize the SDK API object
+using(var api = new HtmlApi(cb => cb
+                      .WithClientId(clientId)
+                      .WithClientSecret(clientSecret)))
+{
+    StorageProvider storageApi = api.Storage;  // Storage API entry point
+
+    string storagePath = $"{folder}/{name}";     
+
+    bool exist = storageApi.FileExists(storagePath);        // true
+
+    storagePath = $"{folder}/{name_}";
+    storageApi.FileExists(storagePath);                // false
+}
+			
+```
+
+{{</ tab >}}
+
+{{</ tabs >}}
+
+#### Example 2: How to upload a file
+
+{{< tabs tabTotal="1" tabID="2" tabName1="C#" >}}
+
+{{< tab tabNum="1" >}}
 
 The following example demonstrates how to upload a file by its local file system path to the specified storage.
 
 ```c#
-HtmlApi api = new HtmlApi(clientId, clientSecret);  
-StorageProvider storageApi = api.Storage;  // Storage API entry point
-
 var storageName = "";       // default storage
 var dataDir = "c:\\work\\testdata";
 var name = "testpage1.html";
 var remotefolder = "/HtmlTestData/Upload";
 var localPath = Path.Combine(dataDir, name);
 
+// here the ConfigurationBuilder is used to initialize the SDK API object
+using(var api = new HtmlApi(cb => cb
+                      .WithClientId(clientId)
+                      .WithClientSecret(clientSecret)))
+{
+    var storageApi = api.Storage;  // Storage API entry point
+    var storagePath = "storage://{storageName}{remotefolder}/{name}";
+
+    // upload file
+    var file = storageApi.UploadFile(localPath, storagePath);
+	// check if a storage file exists
+    bool exists = storageApi.FileExists(storagePath);
+}
+
 ```
 
-#### Example 2: How to download a file
+{{</ tab >}}
+
+{{</ tabs >}}
+
+#### Example 3: How to download a file
 
 The example below shows how to download a file from storage to the local file system.
+
+{{< tabs tabTotal="1" tabID="3" tabName1="C#" >}}
+
+{{< tab tabNum="1" >}}
 
 ```c#
 var storageName = "";       // default storage
@@ -217,19 +270,27 @@ var name = "testpage1.html";
 var localPath = "c:\\work\\download";
 
 // here the ConfigurationBuilder is used to initialize the SDK API object
-var api = new HtmlApi(cb => cb
+using(var api = new HtmlApi(cb => cb
                       .WithClientId(clientId)
-                      .WithClientSecret(clientSecret));  
-var storageApi = api.Storage;  // Storage API entry point
-
-var storagePath = $"{folder}/{name}";
-
-storageApi.Download(storagePath, Path.Combine(localPath, name), storageName)
-if(File.Exists(Path.Combine(localPath, name)))
+                      .WithClientSecret(clientSecret)))
 {
-    // ... check if file has been downloaded
+    var storageApi = api.Storage;  // Storage API entry point
+    var storagePath = $"storage://{storageName}{folder}/{name}";
+
+    storageApi.DownloadFile(storagePath, Path.Combine(localPath, name), storageName)
+    if(File.Exists(Path.Combine(localPath, name)))
+    {
+        // ... check if file has been downloaded
+    }
 }
+
 ```
+
+{{</ tab >}}
+
+{{</ tabs >}}
+
+
 
 
 

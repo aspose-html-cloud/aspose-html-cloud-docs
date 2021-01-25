@@ -1,5 +1,5 @@
 ---
-title: "Cloud storage info operations"
+title: "Storage info"
 type: docs
 url: /storage-api/storage-props-api/
 keywords: "cloud storage, cloud storage api, python, java , .net,  c#,  android, swift, Perl, Node.js"
@@ -53,23 +53,14 @@ Gets storage info by specified storage name, including total and used disc space
 {{< tab tabNum="1" >}}
 
 ```c#
-string folder = "/HtmlTestData";
-string name = "testpage1.html";
-string name_ = "fake.html";
-
 // here the ConfigurationBuilder is used to initialize the SDK API object
-var api = new HtmlApi(cb => cb
+using(var api = new HtmlApi(cb => cb
                       .WithClientId(clientId)
-                      .WithClientSecret(clientSecret));
-StorageProvider storageApi = api.Storage;  // Storage API entry point
-
-string storagePath = $"{folder}/{name}";     
-
-bool exist = storageApi.DirectoryExists(folder);   // true
-exist = storageApi.FileExists(storagePath);        // true
-
-storagePath = $"{folder}/{name_}";
-storageApi.FileExists(storagePath);                // false
+                      .WithClientSecret(clientSecret)))
+{
+    StorageProvider storageApi = api.Storage;  // Storage API entry point
+    bool exist = storageApi.Exists("My Storage");   
+}
 			
 ```
 
@@ -79,16 +70,18 @@ storageApi.FileExists(storagePath);                // false
 
 #### Example 2: How to get the storage disc usage
 
-{{< tabs tabTotal="1" tabID="1" tabName1="C#" >}}
+{{< tabs tabTotal="1" tabID="2" tabName1="C#" >}}
 
 {{< tab tabNum="1" >}}
 
 ```c#
-var api = new HtmlApi(cb => cb
+using(var api = new HtmlApi(cb => cb
                       .WithClientId(clientId)
-                      .WithClientSecret(clientSecret));
-StorageProvider storageApi = api.Storage;  // Storage API entry point
-Storage storageInfo = storageApi.GetStorage("My Storage");
+                      .WithClientSecret(clientSecret)))
+{
+    StorageProvider storageApi = api.Storage;  // Storage API entry point
+    Storage storageInfo = storageApi.GetStorage("My Storage");
+}
 
 ```
 

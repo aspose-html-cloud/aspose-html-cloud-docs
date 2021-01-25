@@ -91,14 +91,6 @@ Authentication by user credentials is a standard way of Aspose.HTML Cloud SDK fa
 
 For example, an application calls the authentication service itself and uses an obtained token to call SDK methods without providing user credentials.
 
-#### Step 1. Get JWT token
-
-Call the authentication service with user credentials (for example by cURL as is shown above, or doing HTTP request from your code). Also a token  
-
-#### Step 2. Call SDK with obtained token
-
-Use externally obtained token creating SDK API entry point object.
-
 {{< tabs tabTotal="1" tabID="3" tabName1="C#"  >}}
 
 {{< tab tabNum="1" >}}
@@ -106,10 +98,12 @@ Use externally obtained token creating SDK API entry point object.
 ```c#
 var token = "......"; // JWT token obtained before
 
-var api = new HtmlApi(Configuration
+using(var api = new HtmlApi(Configuration
                       .NewDefault()
-                      .WithExternalAuthentication(token));
-// ....
+                      .WithExternalAuthentication(token)))
+{
+	// .... your code
+}
 ```
 
 {{< /tab >}}

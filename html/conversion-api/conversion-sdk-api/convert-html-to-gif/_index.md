@@ -1,7 +1,7 @@
 ---
 title: "Convert HTML to GIF"
 type: docs
-url: /conversion-sdk-api/convert-html-to-jpeg/
+url: /conversion-sdk-api/convert-html-to-gif/
 keywords: "format conversion, html conversion, epub conversion, mhtml conversion, asynchronous conversion, conversion SDK, convert html to image , convert html to gif, python, java , .net,  c#,  android, swift ,Perl, Node.js"
 description: "Article explains a usage of Aspose.HTML Cloud client SDKs by a set of examples. SDKs are wrappers upon REST API to help developers speed up their development. SDKs are available in PHP, Perl, Android, Swift, C#, Java and more."
 weight: 60
@@ -33,17 +33,18 @@ var name = "testpage1.html";
 var srcFilePath = $"{STORAGE_SRCFOLDER}/{name}";
 var destFolder = $"{STORAGE_DSTFOLDER}/Gif";
 
-var api = new HtmlApi(clientID, clientSecret); // initialize SDK API
-
-ConverterBuilder convHtmlGif = new ConverterBuilder()
-    .FromStorageFile(srcFilePath)
-    .To(new GIFConversionOptions())
-    .SaveToStorage(destFolder);
-
-ConversionResult result = api.Convert(convHtmlGif);
-if(result.Status == "success" && result.Files.Length > 0)
+using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 {
-    // download file(s) by path result.Files
+    ConverterBuilder convHtmlGif = new ConverterBuilder()
+        .FromStorageFile(srcFilePath)
+        .To(new GIFConversionOptions())
+        .SaveToStorage(destFolder);
+
+    ConversionResult result = api.Convert(convHtmlGif);
+    if(result.Status == "success" && result.Files.Length > 0)
+    {
+        // download file(s) by path result.Files
+    }
 }
 ```
 
@@ -133,25 +134,26 @@ var name = "testpage1.html";
 var srcFilePath = $"{LOCAL_TESTDATA}\{name}";
 var destFolder = $"{STORAGE_DSTFOLDER}/Gif";
 
-var api = new HtmlApi(clientId, clientSecret);
-
-ConversionOptions gifOpts = new GIFConversionOptions()
-    .SetHeight(800)
-    .SetWidth(1000)
-    .SetLeftMargin(10)
-    .SetRightMargin(10)
-    .SetBottomMargin(10)
-    .SetTopMargin(10);
-
-ConverterBuilder convHtmlGif = new ConverterBuilder()
-    .FromLocalFile(srcFilePath)
-    .To(gifOpts)
-    .SaveToStorage(destFolder);
-
-ConversionResult result = api.Convert(convHtmlGif);
-if(result.Status == "success" && result.Files.Length > 0)
+using(var api = new HtmlApi(clientId, clientSecret)) // initialize SDK API
 {
-    // download file(s) by path result.Files
+    ConversionOptions gifOpts = new GIFConversionOptions()
+        .SetHeight(800)
+        .SetWidth(1000)
+        .SetLeftMargin(10)
+        .SetRightMargin(10)
+        .SetBottomMargin(10)
+        .SetTopMargin(10);
+
+    ConverterBuilder convHtmlGif = new ConverterBuilder()
+        .FromLocalFile(srcFilePath)
+        .To(gifOpts)
+        .SaveToStorage(destFolder);
+
+    ConversionResult result = api.Convert(convHtmlGif);
+    if(result.Status == "success" && result.Files.Length > 0)
+    {
+        // download file(s) by path result.Files
+    }
 }
 ```
 
@@ -241,17 +243,18 @@ const string LOCAL_TESTRESULT = "d:\TestResult";
 var sourceUrl = "https://stallman.org/articles/anonymous-payments-thru-phones.html";
 var destFolder =  Path.Combine(LOCAL_TESTRESULT, "Gif");
 
-var api = new HtmlApi(clientID, clientSecret); // initialize SDK API
-
-ConverterBuilder convHtmlGif = new ConverterBuilder()
-    .FromUrl(sourceUrl)
-    .To(new GIFConversionOptions())
-    .SaveToLocal(destFolder);
-
-ConversionResult result = api.Convert(convHtmlGif);
-if(result.Status == "success" && result.Files.Length > 0)
+using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 {
-    // check if file exists locally
+    ConverterBuilder convHtmlGif = new ConverterBuilder()
+        .FromUrl(sourceUrl)
+        .To(new GIFConversionOptions())
+        .SaveToLocal(destFolder);
+
+    ConversionResult result = api.Convert(convHtmlGif);
+    if(result.Status == "success" && result.Files.Length > 0)
+    {
+        // check if file exists locally
+    }
 }
 ```
 

@@ -140,43 +140,82 @@ Moves a directory - overloaded method.
 
 ### SDK Examples
 
-#### Example 1: How to create a folder
+#### Example 1: How to check if a folder exists in the storage
+
+The example below demonstrates how to check if a folder exists in the storage.
+
+{{< tabs tabTotal="1" tabID="1" tabName1="C#" >}}
+
+{{< tab tabNum="1" >}}
+
+```c#
+string folder = "/HtmlTestData";
+
+// here the ConfigurationBuilder is used to initialize the SDK API object
+using(var api = new HtmlApi(cb => cb
+                      .WithClientId(clientId)
+                      .WithClientSecret(clientSecret)))
+{
+    StorageProvider storageApi = api.Storage;  // Storage API entry point
+    bool exist = storageApi.DirectoryExists(folder);   // true
+}
+			
+```
+
+{{</ tab >}}
+
+{{</ tabs >}}
+
+#### Example 2: How to create a folder
 
 The example below demonstrates how to create a folder in the storage.
+
+{{< tabs tabTotal="1" tabID="2" tabName1="C#" >}}
+
+{{< tab tabNum="1" >}}
 
 ```c#
 string storageName = ""; // default storage
 string folderPath = "/newFolder";
 
-var api = new HtmlApi(clientId, clientSecret);  
-var storageApi = api.Storage;  // Storage API entry point 
-
-RemoteDirectory remoteDir = storageApi.CreateDirectory(folderPath, storageName);
+using(var api = new HtmlApi(clientId, clientSecret))
+{
+    var storageApi = api.Storage;  // Storage API entry point 
+    RemoteDirectory remoteDir = storageApi.CreateDirectory(folderPath, storageName);
+}
 
 ```
 
+{{</ tab >}}
 
+{{</ tabs >}}
 
-#### Example 2: How to get the folder content
+#### Example 3: How to get the folder content
 
-The example below demonstrates how to get a list of direct child directories
+The example below demonstrates how to get a list of direct child folders and a list of files in the specified folder.
+
+{{< tabs tabTotal="1" tabID="3" tabName1="C#" >}}
+
+{{< tab tabNum="1" >}}
 
 ```c#
 const string TestDataFolder = "/HtmlTestData";
 string storageName = ""; // default storage
 
-var api = new HtmlApi(clientId, clientSecret);  
-var storageApi = api.Storage;  // Storage API entry point 
+using(var api = new HtmlApi(clientId, clientSecret))
+{
+    var storageApi = api.Storage;  // Storage API entry point 
 
-var dirsList = storageApi.GetDirectories(TestDataFolder, storageName);
-var filesList = storageApi.GetFiles(TestDataFolder, storageName);
+    var dirsList = storageApi.GetDirectories(TestDataFolder, storageName);
+    var filesList = storageApi.GetFiles(TestDataFolder, storageName);
+}
 ```
 
-#### Example 3:  ???
+{{</ tab >}}
 
-```c#
+{{</ tabs >}}
 
-```
+
 
 
 
