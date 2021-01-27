@@ -8,23 +8,30 @@ weight: 70
 
 ---
 
-## Summary
+## **Summary**
 
-Article explains in a set of code examples how to convert HTML document to [TIFF](https://docs.fileformat.com/image/tiff/) using Aspose.HTML Cloud client SDKs.
+Aspose.HTML Cloud SDK for .NET produces a few quick and easy ways to convert HTML files to various image formats: by direct REST API calls or using SDKs. There are multiple image formats accessible for converting HTML documents with Aspose.HTML Cloud APIs - [JPEG](https://docs.fileformat.com/image/jpeg/), [PNG](https://docs.fileformat.com/image/png/), [BMP](https://docs.fileformat.com/image/bmp/), [GIF](https://docs.fileformat.com/image/gif/), and [TIFF](https://docs.fileformat.com/image/tiff/).
 
+This article explains in a set of code examples how to convert an [HTML](https://docs.fileformat.com/web/html/) document to [TIFF](https://docs.fileformat.com/image/tiff/) using Aspose.HTML Cloud client SDKs.
 
+{{% alert color="primary" %}} 
+Learn how to convert an HTML file to other formats using direct REST API calls from the [Conversion REST API](/html/conversion-rest-api/) article.
 
-## Examples
+{{% /alert %}} 
 
-### Case 1. Storage to storage
+## **SDK Examples of HTML to TIFF Conversion**
 
-Convert an HTML file from the cloud storage to [TIFF](https://docs.fileformat.com/image/tiff/) and save the result to the cloud storage. 
+Aspose.HTML Cloud SDK allows you to fetch an HTML document from storage location by its name, from a URL or a local file on your drive, convert it to a specified format and save it to the storage or a local drive. The following code examples demonstrate how to convert HTML to TIFF programmatically for different cases.
 
-The conversion process is following - a source document is loaded from the *default* cloud storage, and after conversion is completed, the result is saved to this storage.  The default TIFFConversionOptions are applied to the conversion. In the example, we use methods of the **ConverterBuilder** class: FromStorageFile(`inputPath`), To(`ConversionOptions`) and SaveToStorage(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result.
+### **Example 1.** Convert HTML from the storage to TIFF and save the result to the storage
 
-{{< tabs tabTotal="10" tabID="1" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName8="Java/Android" >}}
+The conversion process is following - a source document is loaded from the *default* cloud storage, and after conversion is completed, the result is saved to this storage.  The default TIFFConversionOptions are applied to the conversion. In the example, we use methods of the **ConverterBuilder** class: **FromStorageFile**(`inputPath`), **To**(`ConversionOptions`) and **SaveToStorage**(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result. The **Convert**(`ConverterBuilder builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
+
+{{< tabs tabTotal="10" tabID="1" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" >}}
 
 {{< tab tabNum="1" >}}
+
+The following example demonstrates how to convert **HTML to TIFF C#** language applying. HTML is taken from the cloud storage, converted to TIFF and saved to the storage.  You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
 ```c#
 const string STORAGE_SRCFOLDER = "storage:///Html/TestData";
@@ -53,6 +60,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 
 {{< tab tabNum="2" >}}
 
+The following example demonstrates how to convert **HTML to TIFF java** language applying. HTML is taken from the cloud storage, converted to TIFF and saved to the storage. You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
+
 ```java
 
 ```
@@ -60,6 +69,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
+
+The following example demonstrates how to convert **HTML to TIFF C++** language applying. HTML is taken from the cloud storage, converted to TIFF and saved to the storage. 
 
 ```c++
 
@@ -69,6 +80,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 
 {{< tab tabNum="4" >}}
 
+The following example demonstrates how to convert **HTML to TIFF Python** language applying. HTML is taken from the cloud storage, converted to TIFF and saved to the storage.  You can download the Python SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-python).
+
 ```python
 
 ```
@@ -76,6 +89,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
+
+The following example demonstrates how to convert **HTML to TIFF PHP** language applying. HTML is taken from the cloud storage, converted to TIFF and saved to the storage.  You can download the PHP SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-php).
 
 ```php
 
@@ -85,6 +100,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 
 {{< tab tabNum="6" >}}
 
+The following example demonstrates how to convert **HTML to TIFF Ruby** language applying. HTML is taken from the cloud storage, converted to TIFF and saved to the storage.  You can download the Ruby SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby).
+
 ```ruby
 
 ```
@@ -92,6 +109,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
+
+The following example demonstrates how to convert **HTML to TIFF Node.js** language applying. HTML is taken from the cloud storage, converted to TIFF and saved to the storage. 
 
 ```javascript
 
@@ -101,6 +120,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 
 {{< tab tabNum="8" >}}
 
+The following example demonstrates how to convert **HTML to TIFF Swift** language applying. HTML is taken from the cloud storage, converted to TIFF and saved to the storage.  You can download the Swift SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-swift).
+
 ```swift
 
 ```
@@ -108,6 +129,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}
+
+The following example describes how to convert **HTML to TIFF Java/Android** applying. HTML is taken from the cloud storage, converted to TIFF and saved to the storage. You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
 
 ```java
 
@@ -117,15 +140,24 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 
 {{< /tabs >}}
 
+{{% alert color="primary" %}} 
+HTML to TIFF conversion occurs with the **default conversion options**: the resulting TIFF document’s width and height correspond to A4, all margins have zero value, and the resolution value is 96 dpi.
+
+{{% /alert %}} 
 
 
-### Case 2. Local to storage, explicit TIFF options
 
-Convert an HTML file from the local file system to [TIFF](https://docs.fileformat.com/image/tiff/)  with explicitly specified options and save the result to the cloud storage.
+### **Example 2.** Convert HTML from the local file system to TIFF with explicitly specified options and save to the storage
 
-{{< tabs tabTotal="10" tabID="2" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName8="Java/Android" >}}
+The example below demonstrates how to convert an HTML file from the local file system to TIFF with explicitly specified options and save the result to the cloud storage.
+
+ For conversion, we use methods of the **ConverterBuilder** class: **FromLocalFile**(`inputPath`), **To**(`ConversionOptions`) and **SaveToStorage**(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result.
+
+{{< tabs tabTotal="10" tabID="2" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" >}}
 
 {{< tab tabNum="1" >}}
+
+The following example  illustrates how to convert **HTML to TIFF C#** language applying. HTML is taken from the local file system, converted to TIFF and saved to the storage. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
 ```c#
 const string LOCAL_TESTDATA = "d:\TestData";
@@ -143,7 +175,8 @@ using(var api = new HtmlApi(clientId, clientSecret))
         .SetLeftMargin(10)
         .SetRightMargin(10)
         .SetBottomMargin(10)
-        .SetTopMargin(10);
+        .SetTopMargin(10)
+        .SetResolution(300);
 
     ConverterBuilder convHtmlTiff = new ConverterBuilder()
         .FromLocalFile(srcFilePath)
@@ -162,6 +195,8 @@ using(var api = new HtmlApi(clientId, clientSecret))
 
 {{< tab tabNum="2" >}}
 
+The following example illustrates how to convert **HTML to TIFF java** language applying. HTML is taken from the local file system, converted to TIFF and saved to the storage. You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
+
 ```java
 
 ```
@@ -169,6 +204,8 @@ using(var api = new HtmlApi(clientId, clientSecret))
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
+
+The following example illustrates how to convert **HTML to TIFF C++** language applying. HTML is taken from the local file system, converted to TIFF and saved to the storage.
 
 ```c++
 
@@ -178,6 +215,8 @@ using(var api = new HtmlApi(clientId, clientSecret))
 
 {{< tab tabNum="4" >}}
 
+The following example demonstrates how to convert **HTML to TIFF Python** language applying. HTML is taken from the local file system, converted to TIFF and saved to the storage.  You can download the Python SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-python).
+
 ```python
 
 ```
@@ -185,6 +224,8 @@ using(var api = new HtmlApi(clientId, clientSecret))
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
+
+The following example demonstrates how to convert **HTML to TIFF PHP** language applying. HTML is taken from the local file system, converted to TIFF and saved to the storage.  You can download the PHP SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-php).
 
 ```php
 
@@ -194,6 +235,8 @@ using(var api = new HtmlApi(clientId, clientSecret))
 
 {{< tab tabNum="6" >}}
 
+The following example demonstrates how to convert **HTML to TIFF Ruby** language applying. HTML is taken from the local file system, converted to TIFF and saved to the storage.  You can download the Ruby SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby).
+
 ```ruby
 
 ```
@@ -201,6 +244,8 @@ using(var api = new HtmlApi(clientId, clientSecret))
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
+
+The following example demonstrates how to convert **HTML to TIFF Node.js** language applying. HTML is taken from the local file system, converted to TIFF and saved to the storage.
 
 ```javascript
 
@@ -210,6 +255,8 @@ using(var api = new HtmlApi(clientId, clientSecret))
 
 {{< tab tabNum="8" >}}
 
+The following example demonstrates how to convert **HTML to TIFF Swift** language applying. HTML is taken from the local file system, converted to TIFF and saved to the storage.  You can download the Swift SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-swift).
+
 ```swift
 
 ```
@@ -217,6 +264,8 @@ using(var api = new HtmlApi(clientId, clientSecret))
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}
+
+The following example demonstrates how to convert **HTML to TIFF Java/Android** applying. HTML is taken from the local file system, converted to TIFF and saved to the storage. You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
 
 ```java
 
@@ -226,17 +275,22 @@ using(var api = new HtmlApi(clientId, clientSecret))
 
 {{< /tabs >}}
 
+In the example above, the conversion HTML to TIFF occurs with the **ConversionOptions** specifying, among which there is the **Resolution** that applicable only to image formats. The set resolution value (300 dpi) indicates higher image quality than using the default value (96 dpi).
 
+{{% alert color="primary" %}} 
+More details about available conversion parameters for HTML files are in the [SDK Conversion Options](/html/sdk-conversion-options/) section.
 
+{{% /alert %}} 
 
+### **Example 3.**  Convert a Web page to TIFF and save the result to the local file system
 
-### Case 3. Web page to local, default TIFF options
+Aspose.HTML Cloud SDK allows you to get HTML page from the web by its URL, convert it to  [TIFF](https://docs.fileformat.com/image/tiff/)   format and save into the local file system. The example below demonstrates how to convert HTML to TIFF with the default conversion parameters.
 
-Convert a Web page by its URL to [TIFF](https://docs.fileformat.com/image/tiff/)  with default TIFF options and save the result to the local file system.
-
-{{< tabs tabTotal="10" tabID="3" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName8="Java/Android" >}}
+{{< tabs tabTotal="10" tabID="3" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" >}}
 
 {{< tab tabNum="1" >}}
+
+The following example demonstrates how to convert **HTML to TIFF C#** language applying. HTML is taken from the Web, converted to TIFF and saved to the local file system. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
 ```c#
 const string LOCAL_TESTRESULT = "d:\TestResult";
@@ -263,6 +317,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 
 {{< tab tabNum="2" >}}
 
+The following example demonstrates how to convert **HTML to TIFF java** language applying. HTML is taken from the Web, converted to TIFF and saved to the local file system. You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
+
 ```java
 
 ```
@@ -270,6 +326,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
+
+The following example demonstrates how to convert **HTML to TIFF C++** language applying. HTML is taken from the Web, converted to TIFF and saved to the local file system.
 
 ```c++
 
@@ -279,6 +337,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 
 {{< tab tabNum="4" >}}
 
+The following example demonstrates how to convert **HTML to TIFF Python** language applying. HTML is taken from the Web, converted to TIFF and saved to the local file system. You can download the Python SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-python).
+
 ```python
 
 ```
@@ -286,6 +346,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
+
+The following example demonstrates how to convert **HTML to TIFF PHP** language applying. HTML is taken from the Web, converted to TIFF and saved to the local file system.  You can download the PHP SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-php).
 
 ```php
 
@@ -295,6 +357,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 
 {{< tab tabNum="6" >}}
 
+The following example demonstrates how to convert **HTML to TIFF Ruby** language applying. HTML is taken from the Web, converted to TIFF and saved to the local file system.  You can download the Ruby SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby).
+
 ```ruby
 
 ```
@@ -302,6 +366,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
+
+The following example demonstrates how to convert **HTML to TIFF Node.js** language applying. HTML is taken from the Web, converted to TIFF and saved to the local file system.
 
 ```javascript
 
@@ -311,6 +377,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 
 {{< tab tabNum="8" >}}
 
+The following example demonstrates how to convert **HTML to TIFF Swift** language applying. HTML is taken from the Web, converted to TIFF and saved to the local file system.  You can download the Swift SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-swift).
+
 ```swift
 
 ```
@@ -318,6 +386,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}
+
+The following example demonstrates how to convert **HTML to TIFF Java/Android** applying. HTML is taken from the Web, converted to TIFF and saved to the local file system.  You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
 
 ```java
 
@@ -327,3 +397,12 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 
 {{< /tabs >}}
 
+In the example, we use methods of the **ConverterBuilder** class: **FromUrl**(`urlAddress`), **To**(`ConversionOptions`) and **SaveToLocal**(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result.
+
+
+HTML to TIFF conversion occurs with the **default conversion options**: the resulting TIFF document’s width and height correspond to A4, all margins have zero value, and the resolution value is 96 dpi.
+
+{{% alert color="primary" %}} 
+You can download Aspose.HTML Cloud SDKs of your required platform from [GitHub](https://github.com/aspose-html-cloud/). 
+
+{{% /alert %}} 
