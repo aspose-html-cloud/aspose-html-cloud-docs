@@ -1,308 +1,33 @@
 ---
-title: "File operations"
+title: "File REST API operations"
 type: docs
-url: /storage-api/storage-file-api/
+url: /storage-api/working-with-files-in-the-storage/file-rest-api/
 keywords: "cloud storage, cloud storage api, cloud storage file, upload file, download file, delete file, copy file, move file, python, java , .net,  c#,  android, swift ,Perl, Node.js"
 description: "Article explains how to manipulate files in the cloud storage using Aspose.HTML Cloud API v.4.0. SDKs are also available in PHP, Perl, Android, Swift, C#, Java and more to help developers speed up their development."
-weight: 40
+weight: 20
 ---
 
-## Summary
+## **Summary**
 
 Aspose.HTML Cloud allows you to work with documents saved on the cloud storage. The Aspose.HTML Cloud API is a REST-based API for wide usability on the web across platforms. 
 
-This article provides a detailed description of REST API operations to manipulate files in the cloud storage, i.e. upload, download, copy, move or delete files. If storage supports file versioning, the is an option to operate with a specified file version.
+This article provides a detailed description of REST API operations to manipulate files in the cloud storage, i.e. upload, download, copy, move or delete files. If storage supports file versioning, it is an option to operate with a specified file version.
 
-## Cloud SDK family
 
-{{% alert color="primary" %}} 
-Install Aspose.HTML Cloud SDK for .NET via [NuGet](https://www.nuget.org/packages/Aspose.HTML-Cloud/).
 
-Complete source code of Aspose.HTML SDK for .NET is freely available on the [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
+## **REST API description**
 
-{{% /alert %}}  
+Aspose.HTML  RESTful API uses HTTP requests to access and manage data. The data can be handled by invoking GET, PUT, POST and DELETE methods, which refers to the reading, updating, creating and deleting operations concerning resources.
 
-### File SDK methods
+A call to the REST API consists of a request performed by the client, and a response returned by the service. In the request, you send a URL with information about which operation you want to call, the resource to act upon, query parameters, etc. More detailed information about REST URLs’ structure and specific behavior linked to the API such as Authentication, Request Queuing, and Storage you can find in the [REST API Overview](https://docs.aspose.cloud/total/getting-started/rest-api-overview/) article.
 
-#### FileExists
-
-```c#
-bool FileExists(string fileUri, string storageName = null)
-```
-
-Checks if a file specified by the path exists in the specified or default storage.
-
-```c#
-bool FileExists(RemoteFile file)
-```
-
-Overloaded method. Checks if a file specified by the Path property of RemoteFile object exists.
-
-#### GetFiles
-
-```c#
-IReadOnlyList<RemoteFile> GetFiles(string directoryUri, string storageName = null)
-```
-
-Gets a list of files by specified directory path in the specified or default storage.
-
-```c#
-IReadOnlyList<RemoteFile> GetFiles(RemoteDirectory directory)
-```
-
-Overloaded method. Gets a list of files in the directory specified by RemoteDirectory object.
-
-#### GetFileInfo
-
-```c#
-RemoteFile GetFileInfo(string fileUri, string storageName = null)
-```
-
-Gets the file info by its path in the specified or default storage. 
-
-```c#
-RemoteFile GetFileInfo(RemoteDirectory directory, string fileName)
-```
-
-Overloaded method. Gets the file info by its name in the directory specified by RemoteDirectory object.
-
-#### UploadFile
-
-```c#
-RemoteFile UploadFile(string file, 
-                      string remoteFileUri, 
-                      string storageName = null, 
-                      NameCollisionOption option = NameCollisionOption.FailIfExists)
-```
-
-Uploads a file synchronously by its local file system path to the specified storage.
-
-#### UploadFileAsync
-
-```c#
-AsyncResult<RemoteFile> UploadFileAsync(string file, 
-                                        string remoteFileUri, 
-                                        string storageName = null,
-                                        NameCollisionOption option = NameCollisionOption.FailIfExists,
-                                        IProgress<object> progressCallback = null)
-```
-
-Starts asynchronous upload of a file by its local file system path to the specified storage.
-
-#### UploadData
-
-```c#
-RemoteFile UploadData(byte[] data, 
-                      string fileUri, 
-                      string storageName = null, 
-                      NameCollisionOption option = NameCollisionOption.FailIfExists)
-```
-
-Uploads a byte array as a file into storage synchronously.
-
-#### UploadDataAsync
-
-```c#
-public AsyncResult<RemoteFile> UploadDataAsync(byte[] data, 
-                                               string fileUri, 
-                                               string storageName = null,
-                                               NameCollisionOption option = NameCollisionOption.FailIfExists,
-                                               Progress<VoidResult> progressCallback = null)
-```
-
-Starts asynchronous upload of a byte array as a file into storage.
-
-#### DownloadFile
-
-```c#
-void DownloadFile(string fileUri, string localFilePath, string storageName = null, string versionId = null)
-```
-
-Downloads a storage file synchronously by its storage path and saves by a local file system path.
-
-```c#
-DownloadFile(RemoteFile file, string localFilePath, string versionId = null)
-```
-
-Overloaded method. Downloads a storage file synchronously by its storage path from RemoteFile object and saves by a local file system path.
-
-#### DownloadFileAsync
-
-```c#
-AsyncResult DownloadFileAsync(string fileUri, 
-                              string localFilePath, 
-                              string storageName = null, 
-                              string versionId = null, 
-                              IProgress<object> progressCallback = null)
-```
-
-Starts asynchronous download of a storage file into a local file.
-
-```c#
-AsyncResult DownloadFileAsync(RemoteFile file, 
-                              tring localFilePath, 
-                              string versionId = null, 
-                              IProgress<object> progressCallback = null)
-```
-
-Overloaded method. Starts asynchronous download of a storage file into a local file.
-
-#### DownloadData
-
-```c#
-byte[] DownloadData(string fileUri, string storageName = null, string versionId = null)
-```
-
-Downloads a storage file into a byte array synchronously by its storage path and saves by a local file system path.
-
-```c#
-byte[] DownloadData(RemoteFile file, string versionId = null)
-```
-
-Overloaded method. Downloads a storage file into a byte array synchronously by RemoteFile object.
-
-#### DownloadDataAsync
-
-```c#
-AsyncResult<byte[]> DownloadDataAsync(string fileUri, 
-            string storageName = null, 
-            string versionId = null,
-            IProgress<ProgressData> progressCallback = null )
-```
-
-Starts asynchronous download of a storage file into a byte array.
-
-```c#
-AsyncResult<byte[]> DownloadDataAsync(RemoteFile file, 
-                                      string versionId = null, 
-                                      IProgress < ProgressData > progressCallback = null)
-```
-
-Overloaded method. Starts asynchronous download of a storage file into the byte array.
-
-
-
-
-
-
-
-### SDK examples
-
-#### Example 1: How to check if a file exists in the storage
-
-{{< tabs tabTotal="1" tabID="1" tabName1="C#" >}}
-
-{{< tab tabNum="1" >}}
-
-```c#
-string folder = "/HtmlTestData";
-string name = "testpage1.html";
-string name_ = "fake.html";
-
-// here the ConfigurationBuilder is used to initialize the SDK API object
-using(var api = new HtmlApi(cb => cb
-                      .WithClientId(clientId)
-                      .WithClientSecret(clientSecret)))
-{
-    StorageProvider storageApi = api.Storage;  // Storage API entry point
-
-    string storagePath = $"{folder}/{name}";     
-
-    bool exist = storageApi.FileExists(storagePath);        // true
-
-    storagePath = $"{folder}/{name_}";
-    storageApi.FileExists(storagePath);                // false
-}
-			
-```
-
-{{</ tab >}}
-
-{{</ tabs >}}
-
-#### Example 2: How to upload a file
-
-{{< tabs tabTotal="1" tabID="2" tabName1="C#" >}}
-
-{{< tab tabNum="1" >}}
-
-The following example demonstrates how to upload a file by its local file system path to the specified storage.
-
-```c#
-var storageName = "";       // default storage
-var dataDir = "c:\\work\\testdata";
-var name = "testpage1.html";
-var remotefolder = "/HtmlTestData/Upload";
-var localPath = Path.Combine(dataDir, name);
-
-// here the ConfigurationBuilder is used to initialize the SDK API object
-using(var api = new HtmlApi(cb => cb
-                      .WithClientId(clientId)
-                      .WithClientSecret(clientSecret)))
-{
-    var storageApi = api.Storage;  // Storage API entry point
-    var storagePath = "storage://{storageName}{remotefolder}/{name}";
-
-    // upload file
-    var file = storageApi.UploadFile(localPath, storagePath);
-	// check if a storage file exists
-    bool exists = storageApi.FileExists(storagePath);
-}
-
-```
-
-{{</ tab >}}
-
-{{</ tabs >}}
-
-#### Example 3: How to download a file
-
-The example below shows how to download a file from storage to the local file system.
-
-{{< tabs tabTotal="1" tabID="3" tabName1="C#" >}}
-
-{{< tab tabNum="1" >}}
-
-```c#
-var storageName = "";       // default storage
-var folder = "/HtmlTestData";
-var name = "testpage1.html";
-var localPath = "c:\\work\\download";
-
-// here the ConfigurationBuilder is used to initialize the SDK API object
-using(var api = new HtmlApi(cb => cb
-                      .WithClientId(clientId)
-                      .WithClientSecret(clientSecret)))
-{
-    var storageApi = api.Storage;  // Storage API entry point
-    var storagePath = $"storage://{storageName}{folder}/{name}";
-
-    storageApi.DownloadFile(storagePath, Path.Combine(localPath, name), storageName)
-    if(File.Exists(Path.Combine(localPath, name)))
-    {
-        // ... check if file has been downloaded
-    }
-}
-
-```
-
-{{</ tab >}}
-
-{{</ tabs >}}
-
-
-
-
-
-## REST API
-
-### REST API description
+### **How to download a file**
 
 All URIs are relative to https://api.aspose.cloud/v4.0/html.
 
-#### Download a file
+ cURL is an excellent choice for when you need to download a file to your local system. It is generally available and lets you quickly download data from a remote system. 
 
-- GET: download a file. The response object contains the raw data of the file. 
+- **GET**: download a file. The response object contains the raw data of the file. 
 
 ```
 /file?path={path}&storageName={storageName}&versionId={versionId}
@@ -316,7 +41,13 @@ All URIs are relative to https://api.aspose.cloud/v4.0/html.
 | storageName | Storage name or default storage if not specified. | Query     | -        |
 | versionId   | File version ID or the last version by default.   | Query     | -        |
 
-##### cURL example
+Using the RESTful API, an object storage protocol stores a file and its associated metadata as a single object and assigns it an ID number.
+
+**cURL example**
+
+If you want to download data to your computer, you can save them into a local file using the `--output` flag. 
+
+Use the **cURL GET request**; write the URL; specify the `--output` options; put your JWT token value into Authorization HTTP header as it’s shown in the example below.
 
 ```bash
 curl -X GET \
@@ -328,9 +59,16 @@ curl -X GET \
 
 
 
-#### Upload a file
+{{% alert color="primary" %}} 
+If you have questions about how to get a JWT token, please see the [Authentication](/html/general-api-notes/authentication/) article.
 
-- POST: upload a file. If the file exists, a new version of the file will be added on the same location.
+{{% /alert %}} 
+
+### **How to upload a file**
+
+All URIs are relative to https://api.aspose.cloud/v4.0/html.
+
+- **POST**: upload a file. If the file exists, a new version of the file will be added on the same location.
 
 ```
 /file?path={path}&storageName={storageName}
@@ -344,7 +82,11 @@ curl -X GET \
 | storageName | Storage name or default storage if not specified.            | Query     | -        |
 | -           | File content to upload; it must be passed in the HTTP request body.<br /> Requires an HTTP header Content-Type=application/multipart-data. | Body      | +        |
 
-##### cURL example
+**cURL example**
+
+POST is the HTTP method that sends data to a receiver. You send such data with cURL's `-d` or `--data` option. Use `--data-binary` if you want the cURL to read and use the given file in binary. 
+
+Use the **cURL POST request**; write the URL; specify the `--data-binary` options; put your JWT token value into Authorization HTTP header as it’s shown in the example below.
 
 ```bash
 curl -X POST \
@@ -355,9 +97,11 @@ curl -X POST \
 
 
 
-#### Copy a file
+### **How to copy a file**
 
-- PUT: copy the specified file to another path (if *versionId* is specified, this version will be copied).
+All URIs are relative to https://api.aspose.cloud/v4.0/html.
+
+- **PUT**: copy the specified file to another path (if *versionId* is specified, this version will be copied).
 
 ```
 /file/copy?srcpath={srcPath}&destpath={destPath}&srcstoragename={srcStorageName}&srcstoragename={destStorageName}&versionId={versionId}
@@ -373,7 +117,9 @@ curl -X POST \
 | destStorageName | Destination file storage name or default storage if not specified. | Query     | -        |
 | versionId       | File version ID or the last version by default.              | Query     | -        |
 
-##### cURL example
+**cURL example**
+
+Use the **cURL PUT request**; write the URL; put your JWT token value into Authorization HTTP header as it’s shown in the example below.
 
 ```bash
 curl -X PUT \
@@ -383,9 +129,11 @@ curl -X PUT \
 
 
 
-#### Move a file
+### **How to move a file**
 
-- PUT: move the specified file to another path (if *versionId* is specified, this version will be copied to a new location and deleted).
+All URIs are relative to https://api.aspose.cloud/v4.0/html.
+
+- **PUT**: move the specified file to another path (if *versionId* is specified, this version will be copied to a new location and deleted).
 
 ```
 /file/move?srcpath={srcPath}&destpath={destPath}&srcstoragename={srcStorageName}&srcstoragename={destStorageName}&versionId={versionId}
@@ -401,7 +149,9 @@ curl -X PUT \
 | destStorageName | Destination file storage name or default storage if not specified. | Query     | -        |
 | versionId       | File version ID or the last version by default.              | Query     | -        |
 
-##### cURL example
+**cURL example**
+
+Use the **cURL PUT request**; write the URL; put your JWT token value into Authorization HTTP header as it’s shown in the example below.
 
 ```bash
 curl -X PUT \
@@ -411,9 +161,11 @@ curl -X PUT \
 
 
 
-#### Delete a file
+### **How to delete a file**
 
-- DELETE: delete a file. Only last version will be deleted by default; if *versionId* is specified, only this version will be deleted. 
+All URIs are relative to https://api.aspose.cloud/v4.0/html.
+
+- **DELETE**: delete a file. Only last version will be deleted by default; if *versionId* is specified, only this version will be deleted. 
 
 ```
 /file?path={path}&storageName={storageName}&versionId={versionId}
@@ -427,13 +179,20 @@ curl -X PUT \
 | storageName | Storage name or default storage if not specified. | Query     | -        |
 | versionId   | File version ID or the last version by default.   | Query     | -        |
 
-##### cURL example
+**cURL example**
+
+Use the **cURL DELETE request**; write the URL; put your JWT token value into Authorization HTTP header as it’s shown in the example below.
 
 ```bash
 curl -X DELETE \
 	-v "https://api.aspose.cloud/v4.0/html/file?path=/Html/TestData/filetodelete.txt&storageName=MyStorage" \
 	-H "Authorization:Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE2MDkxNzQ2MjIsImV4cCI6MTYwOTI2MTAyMiwiaXNzIjoiaHR0cHM6Ly9hcGkuYXNwb3NlLmNsb3VkIiwiYXVkIjpbImh0dHBzOi8vYXBpLmFzcG9zZS5jbG91ZC9yZXNvdXJjZXMiLCJhcGkuYmlsbGluZyIsImFwaS5pZGVudGl0eSIsImFwaS5wcm9kdWN0cyIsImFwaS5zdG9yYWdlIl0sImNsaWVudF9pZCI6IjZjZTliNmQwLTUxMzUtNDU0Ny1iYWZiLTE3NmU0NGM4ZDYzMCIsImNsaWVudF9kZWZhdWx0X3N0b3JhZ2UiOiJhODg1MmY0Yi1jMjBmLTQ1YmUtYTg3Yi02ODlhNTQ5MGM4YWUiLCJjbGllbnRfaWRlbnRpdHlfdXNlcl9pZCI6Ijc0MzQyMSIsInNjb3BlIjpbImFwaS5iaWxsaW5nIiwiYXBpLmlkZW50aXR5IiwiYXBpLnByb2R1Y3RzIiwiYXBpLnN0b3JhZ2UiXX0.fxKq8jU-veiyumnEm3tEdlcGFcQjHZKa7jCI8q0N_7JK7p7HyvuG0RwS7YRq7bRuN261D6woQGj0vk1BCavnzqvRfYqJvVwOK3EJIenF0zOAizAlhh9KueFS4-UFHFJ128AQxslQ-NRcXImNKr8_oPGzmmMxbCD6dc_lQYFtuJkX5Q6HL7fU2sICJT_XVqhiEDdYj7BBYruBZkMbq-M-OV9qPQH6txxYKU1Nn5D7g98p_S_F_bCEe_fRAg_chcj4FTe4ElBbRv4kYPDstwFee5YGPKxfyXG0Og_bhZPKNpKG72Inms93W7feXctF3Lz5wIKuia5604tvkgaj5pbRKQ"
 ```
+
+{{% alert color="primary" %}} 
+You can get information about all the API resources from the [Aspose.HTML for Cloud API Reference](https://apireference.aspose.cloud/html/).
+
+{{% /alert %}} 
 
 
 

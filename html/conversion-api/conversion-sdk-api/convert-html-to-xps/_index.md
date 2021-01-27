@@ -7,23 +7,27 @@ description: "Article explains a usage of Aspose.HTML Cloud client SDKs to conve
 weight: 20
 ---
 
-## Summary
+## **Summary**
 
-Article explains in a set of code examples how to convert HTML document to [XPS](https://docs.fileformat.com/page-description-language/xps/) using Aspose.HTML Cloud client SDKs.
+Converting between formats is required for various reasons: to work in a familiar, convenient format or to take advantage of different formats for specific tasks. [XPS](https://docs.fileformat.com/page-description-language/xps/) is a document storage and viewing format developed by Microsoft. An XPS file is a ZIP archive using the Open Packaging Conventions containing the files that make up the document. It has a set of advantages that support security features, such as digital signatures to provide greater document security and more.
+
+This article explains in a set of code examples how to convert [HTML](https://docs.fileformat.com/web/html/) to [XPS](https://docs.fileformat.com/page-description-language/xps/) using Aspose.HTML Cloud client SDKs.
 
 
 
-## Examples
+## **SDK Examples of HTML to XPS Conversion**
 
-### Case 1. Storage to storage
+Aspose.HTML Cloud SDK allows you to fetch an HTML document from storage location by its name, from a URL or a local file on your drive, convert it to a specified format and save it to the storage or a local drive. The following code examples demonstrate how to convert HTML to XPS for different cases using available SDKs.
 
-Convert an HTML file from the cloud storage to [XPS](https://docs.fileformat.com/page-description-language/xps/) and save the result to the cloud storage. 
+### **Example 1.**  Convert an HTML file from the storage to XPS and save the result to the storage
 
-The conversion process is following - a source document is loaded from the *default* cloud storage, and after conversion is completed, the result is saved to this storage.  The default XPSConversionOptions are applied to the conversion. In the example, we use methods of the **ConverterBuilder** class: FromStorageFile(`inputPath`), To(`ConversionOptions`) and SaveToStorage(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result.
+The conversion process is following - a source document is loaded from the *default* cloud storage, and after conversion is completed, the result is saved to this storage.  The default XPSConversionOptions are applied to the conversion. In the example, we use methods of the **ConverterBuilder** class: **FromStorageFile**(`inputPath`), **To**(`ConversionOptions`) and **SaveToStorage**(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result.
 
 {{< tabs tabTotal="10" tabID="1" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" >}}
 
 {{< tab tabNum="1" >}}
+
+The following example demonstrates how to convert **HTML to XPS C#** language applying. HTML is taken from the storage, converted to XPS and saved to the storage.  You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
 ```c#
 const string STORAGE_SRCFOLDER = "storage:///Html/TestData";
@@ -52,6 +56,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 
 {{< tab tabNum="2" >}}
 
+The following example demonstrates how to convert **HTML to XPS java** language applying. HTML is taken from the storage, converted to XPS and saved to the storage. You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
+
 ```java
 
 ```
@@ -59,6 +65,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
+
+The following example demonstrates how to convert **HTML to XPS C++** language applying. HTML is taken from the storage, converted to XPS and saved to the storage.
 
 ```c++
 
@@ -68,6 +76,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 
 {{< tab tabNum="4" >}}
 
+The following example demonstrates how to convert **HTML to XPS Python** language applying. HTML is taken from the storage, converted to XPS and saved to the storage. You can download the Python SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-python).
+
 ```python
 
 ```
@@ -75,6 +85,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
+
+The following example demonstrates how to convert **HTML to XPS PHP** language applying. HTML is taken from the storage, converted to XPS and saved to the storage. You can download the PHP SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-php).
 
 ```php
 
@@ -84,6 +96,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 
 {{< tab tabNum="6" >}}
 
+The following example demonstrates how to convert **HTML to XPS Ruby** language applying. HTML is taken from the storage, converted to XPS and saved to the storage. You can download the Ruby SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby).
+
 ```ruby
 
 ```
@@ -91,6 +105,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
+
+The following example demonstrates how to convert **HTML to XPS Node.js** language applying. HTML is taken from the storage, converted to XPS and saved to the storage.
 
 ```javascript
 
@@ -100,6 +116,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 
 {{< tab tabNum="8" >}}
 
+The following example demonstrates how to convert **HTML to XPS Swift** language applying. HTML is taken from storage, converted to XPS and saved to the storage. You can download the Swift SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-swift).
+
 ```swift
 
 ```
@@ -107,6 +125,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}
+
+The following example demonstrates how to convert **HTML to XPS Java/Android** applying. HTML is taken from storage, converted to XPS and saved to the storage. You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
 
 ```java
 
@@ -116,15 +136,22 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 
 {{< /tabs >}}
 
+{{% alert color="primary" %}} 
+HTML to XPS conversion occurs with the **default conversion options**: the resulting XPS document’s width and height correspond to A4 and all margins have zero value.
 
+{{% /alert %}} 
 
-### Case 2. Local to storage, explicit XPS options
+### **Example 2.** Convert HTML from the local file system to XPS with explicitly specified options and save the result to the storage
 
-Convert an HTML file from the local file system to [XPS](https://docs.fileformat.com/page-description-language/xps/) with explicitly specified options and save the result to the cloud storage.
+The example below demonstrates how to convert an HTML file from the local file system to XPS with explicitly specified options and save the result to the cloud storage.
+
+ For conversion, we use methods of the **ConverterBuilder** class: **FromLocalFile**(`inputPath`), **To**(`ConversionOptions`) and **SaveToStorage**(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result. The **Convert**(`ConverterBuilder builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
 
 {{< tabs tabTotal="10" tabID="2" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" >}}
 
 {{< tab tabNum="1" >}}
+
+The following example demonstrates how to convert **HTML to XPS C#** language applying. HTML is taken from the local file system, converted to XPS and saved to the storage.  You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
 ```c#
 const string LOCAL_TESTDATA = "d:\TestData";
@@ -161,6 +188,8 @@ using(var api = new HtmlApi(clientId, clientSecret))
 
 {{< tab tabNum="2" >}}
 
+The following example demonstrates how to convert **HTML to XPS java** language applying. HTML is taken from the local file system, converted to XPS and saved to the storage. You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
+
 ```java
 
 ```
@@ -168,6 +197,8 @@ using(var api = new HtmlApi(clientId, clientSecret))
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
+
+The following example demonstrates how to convert **HTML to XPS C++** language applying. HTML is taken from the local file system, converted to XPS and saved to the storage.
 
 ```c++
 
@@ -177,6 +208,8 @@ using(var api = new HtmlApi(clientId, clientSecret))
 
 {{< tab tabNum="4" >}}
 
+The following example demonstrates how to convert **HTML to XPS Python** language applying. HTML is taken from the local file system, converted to XPS and saved to the storage. You can download the Python SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-python).
+
 ```python
 
 ```
@@ -184,6 +217,8 @@ using(var api = new HtmlApi(clientId, clientSecret))
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
+
+The following example demonstrates how to convert **HTML to XPS PHP** language applying. HTML is taken from the local file system, converted to XPS and saved to the storage. You can download the PHP SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-php).
 
 ```php
 
@@ -193,6 +228,8 @@ using(var api = new HtmlApi(clientId, clientSecret))
 
 {{< tab tabNum="6" >}}
 
+The following example demonstrates how to convert **HTML to XPS Ruby** language applying. HTML is taken from the local file system, converted to XPS and saved to the storage. You can download the Ruby SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby).
+
 ```ruby
 
 ```
@@ -200,6 +237,8 @@ using(var api = new HtmlApi(clientId, clientSecret))
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
+
+The following example demonstrates how to convert **HTML to XPS Node.js** language applying. HTML is taken from the local file system, converted to XPS and saved to the storage.
 
 ```javascript
 
@@ -209,6 +248,8 @@ using(var api = new HtmlApi(clientId, clientSecret))
 
 {{< tab tabNum="8" >}}
 
+The following example demonstrates how to convert **HTML to XPS Swift** language applying. HTML is taken from storage, converted to XPS and saved to the storage. You can download the Swift SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-swift).
+
 ```swift
 
 ```
@@ -216,6 +257,8 @@ using(var api = new HtmlApi(clientId, clientSecret))
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}
+
+The following example demonstrates how to convert **HTML to XPS Java/Android** applying. HTML is taken from the local file system, converted to XPS and saved to the storage. You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
 
 ```java
 
@@ -225,15 +268,20 @@ using(var api = new HtmlApi(clientId, clientSecret))
 
 {{< /tabs >}}
 
+{{% alert color="primary" %}} 
+More details about available conversion parameters for HTML files are in the [SDK Conversion Options](/html/sdk-conversion-options/) section.
 
+{{% /alert %}} 
 
-### Case 3. Web page to local, default XPS options
+### **Example 3.** Convert a Web page by its URL to XPS and save the result to the local file system
 
-Convert a Web page by its URL to [XPS](https://docs.fileformat.com/page-description-language/xps/) with default  XPS options and save the result to the local file system.
+Aspose.HTML Cloud SDK allows you to get HTML page from the web by its URL, convert it to  [XPS](https://docs.fileformat.com/page-description-language/xps/) format and save into the local file system. The example below demonstrates how to convert HTML to XPS with the default conversion parameters.
 
 {{< tabs tabTotal="10" tabID="3" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" >}}
 
 {{< tab tabNum="1" >}}
+
+The following example demonstrates how to convert **HTML to XPS C#** language applying. HTML is taken from the Web, converted to XPS and saved to the local file system. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
 ```c#
 const string LOCAL_TESTRESULT = "d:\TestResult";
@@ -260,6 +308,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 
 {{< tab tabNum="2" >}}
 
+The following example demonstrates how to convert **HTML to XPS java** language applying. HTML is taken from the Web, converted to XPS and saved to the local file system. You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
+
 ```java
 
 ```
@@ -267,6 +317,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
+
+The following example demonstrates how to convert **HTML to XPS C++** language applying. HTML is taken from the Web, converted to XPS and saved to the local file system.
 
 ```c++
 
@@ -276,6 +328,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 
 {{< tab tabNum="4" >}}
 
+The following example demonstrates how to convert **HTML to XPS Python** language applying. HTML is taken from the Web, converted to XPS and saved to the local file system. You can download the Python SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-python).
+
 ```python
 
 ```
@@ -283,6 +337,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
+
+The following example demonstrates how to convert **HTML to XPS PHP** language applying. HTML is taken from the Web, converted to XPS and saved to the local file system. You can download the PHP SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-php).
 
 ```php
 
@@ -292,6 +348,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 
 {{< tab tabNum="6" >}}
 
+The following example demonstrates how to convert **HTML to XPS Ruby** language applying. HTML is taken from the Web, converted to XPS and saved to the local file system. You can download the Ruby SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby).
+
 ```ruby
 
 ```
@@ -299,6 +357,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
+
+The following example demonstrates how to convert **HTML to XPS Node.js** language applying. HTML is taken from the Web, converted to XPS and saved to the local file system.
 
 ```javascript
 
@@ -308,6 +368,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 
 {{< tab tabNum="8" >}}
 
+The following example demonstrates how to convert **HTML to XPS Swift** language applying.HTML is taken from the Web, converted to XPS and saved to the local file system. You can download the Swift SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-swift).
+
 ```swift
 
 ```
@@ -315,6 +377,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}
+
+The following example demonstrates how to convert **HTML to XPS Java/Android** applying. HTML is taken from the Web, converted to XPS and saved to the local file system. You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
 
 ```java
 
@@ -324,3 +388,13 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 
 {{< /tabs >}}
 
+
+
+In the example, we use methods of the **ConverterBuilder** class: **FromUrl**(`urlAddress`), **To**(`ConversionOptions`) and **SaveToLocal**(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result.
+
+HTML to XPS conversion occurs with the **default conversion options**: the resulting XPS document’s width and height correspond to A4, all margins have zero value.
+
+{{% alert color="primary" %}} 
+You can download Aspose.HTML Cloud SDKs of your required platform from [GitHub](https://github.com/aspose-html-cloud/). 
+
+{{% /alert %}} 

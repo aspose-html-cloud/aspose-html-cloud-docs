@@ -6,19 +6,21 @@ keywords: "html conversion, conversion options, convert html to pdf, convert htm
 description: " Article explains HTML conversion to PDF using Aspose.HTML Cloud API. SDKs are also available in PHP, Perl, Android, Swift, C#, Java and more to help developers speed up their development."
 weight: 80
 ---
-## Summary
+## **Summary**
 
-Aspose.HTML Cloud SDK family provides a set of classes that represent the conversion options 
+Aspose.HTML Cloud v4.0 presents the simplest API to convert an [HTML](https://docs.fileformat.com/web/html/) page to one of the fixed-layout document formats including [PDF](https://docs.fileformat.com/pdf/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DOC/DOCX](https://docs.fileformat.com/word-processing/docx/); to [MD](https://docs.fileformat.com/word-processing/md/) and [MHTML](https://docs.fileformat.com/web/mhtml/) formats; to one of the raster image formats such as [JPEG](https://docs.fileformat.com/image/jpeg/), [PNG](https://docs.fileformat.com/image/png/), [TIFF](https://docs.fileformat.com/image/tiff/), [BMP](https://docs.fileformat.com/image/bmp/), and [GIF](https://docs.fileformat.com/image/gif/).
+
+Aspose.HTML Cloud SDK family provides a set of classes that represent the conversion options. Conversion options allow you to customize the conversion process. You can specify the file page size, margins, compression level, etc. 
 
 
 
-## Namespace
+## **Namespace**
 
 **Aspose.HTML.Cloud.Sdk.Conversion**
 
 
 
-## Hierarchy of classes
+## **Hierarchy of classes**
 
 - **ConversionOptions**
   - FixedLayoutConversionOptions
@@ -37,11 +39,7 @@ Aspose.HTML Cloud SDK family provides a set of classes that represent the conver
 
 
 
-
-
-
-
-### PDFConversionOptions
+### **PDFConversionOptions**
 ```code
 ConversionOptions pdfOpts = new PDFConversionOptions()
     .SetHeight(800)
@@ -63,8 +61,10 @@ Name | Type | Description  | Notes
  **BottomMargin** | **Number**| Bottom resulting document page margin in points (1/96 inch). | [optional] 
  **JpegQuality** | **Number**| Quality of jpeg compression in percent. | [optional]
 
+How to apply conversion options for HTML to PDF conversion is in SDK examples of the [Convert HTML to PDF](/html/conversion-sdk-api/convert-html-to-pdf/) article.
 
-### XPSConversionOptions
+### **XPSConversionOptions**
+
 ```code
 ConversionOptions xpsOpts = new XPSConversionOptions()
     .SetHeight(800)
@@ -83,9 +83,9 @@ Name | Type | Description  | Notes
  **TopMargin** | **Number**| Top resulting document page margin in points (1/96 inch). | [optional] 
  **BottomMargin** | **Number**| Bottom resulting document page margin in points (1/96 inch). | [optional] 
 
+How to apply conversion options for HTML to XPS conversion is in SDK examples of the [Convert HTML to XPS](/html/conversion-sdk-api/convert-html-to-xps/) article.
 
-
-### DOCConversionOptions
+### **DOCConversionOptions**
 
 ```code
 ConversionOptions docOpts = new DOCConversionOptions()
@@ -106,11 +106,9 @@ ConversionOptions docOpts = new DOCConversionOptions()
 | **TopMargin**    | **Number** | Top resulting document page margin in points (1/96 inch).    | [optional] |
 | **BottomMargin** | **Number** | Bottom resulting document page margin in points (1/96 inch). | [optional] |
 
+How to apply conversion options for HTML to DOCX/DOC conversion is in SDK examples of the [Convert HTML to DOCX](/html/conversion-sdk-api/convert-html-to-docx/) article.
 
-
-
-
-### JPEGConversionOptions
+### **JPEGConversionOptions**
 
 ```code
 ConversionOptions jpgOpts = new JPEGConversionOptions()
@@ -133,8 +131,10 @@ Name | Type | Description  | Notes
  **BottomMargin** | **Number**| Bottom resulting document page margin in points (1/96 inch). | [optional]
  **Resolution** | **Number**| Resolution of the resulting image. The default is 96 dpi. | [optional]
 
+How to apply conversion options for HTML to JPEG conversion is in SDK examples of the [Convert HTML to JPEG](/html/conversion-sdk-api/convert-html-to-jpeg/) article.
 
-### PNGConversionOptions
+### **PNGConversionOptions**
+
 ```code
 ConversionOptions pngOpts = new PNGConversionOptions()
     .SetHeight(800)
@@ -156,8 +156,10 @@ Name | Type | Description  | Notes
  **BottomMargin** | **Number**| Bottom resulting document page margin in points (1/96 inch). | [optional]
  **Resolution** | **Number**| Resolution of the resulting image. The default is 96 dpi. | [optional]
 
+How to apply conversion options for HTML to PNG conversion is in SDK examples of the [Convert HTML to PNG](/html/conversion-sdk-api/convert-html-to-png/) article.
 
-### BMPConversionOptions
+### **BMPConversionOptions**
+
 ```code
 ConversionOptions bmpOpts = new BMPConversionOptions()
     .SetHeight(800)
@@ -179,8 +181,10 @@ Name | Type | Description  | Notes
  **BottomMargin** | **Number**| Bottom resulting document page margin in points (1/96 inch). | [optional]
  **Resolution** | **Number**| Resolution of the resulting image. The default is 96 dpi. | [optional]
 
+How to apply conversion options for HTML to BMP conversion is in SDK examples of the [Convert HTML to BMP](/html/conversion-sdk-api/convert-html-to-bmp/) article.
 
-### GIFConversionOptions
+### **GIFConversionOptions**
+
 ```code
 ConversionOptions gifOpts = new GIFConversionOptions()
     .SetHeight(800)
@@ -202,8 +206,10 @@ Name | Type | Description  | Notes
  **BottomMargin** | **Number**| Bottom resulting document page margin in points (1/96 inch). | [optional]
  **Resolution** | **Number**| Resolution of the resulting image. The default is 96 dpi. | [optional]
 
+How to apply conversion options for HTML to GIF conversion is in SDK examples of the [Convert HTML to GIF](/html/conversion-sdk-api/convert-html-to-gif/) article.
 
-### TIFFConversionOptions
+### **TIFFConversionOptions**
+
 ```code
 ConversionOptions tiffOpts = new TIFFConversionOptions()
     .SetHeight(800)
@@ -225,8 +231,10 @@ Name | Type | Description  | Notes
  **BottomMargin** | **Number**| Bottom resulting document page margin in points (1/96 inch). | [optional]
  **Resolution** | **Number**| Resolution of the resulting image. The default is 96 dpi. | [optional]
 
+How to apply conversion options for HTML to TIFF conversion is in SDK examples of the [Convert HTML to TIFF](/html/conversion-sdk-api/convert-html-to-tiff/) article.
 
-### MarkdownConversionOptions
+### **MarkdownConversionOptions**
+
 ```code
 ConversionOptions mdOpts = new MarkdownConversionOptions()
     .SetUseGit(true);
@@ -235,8 +243,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **UseGit** | **Boolean**| Use [Git Markdown flavor](https://github.github.com/gfm/) to save. | [optional] [default to false]
 
+### **MHTMLConversionOptions**
 
-### MHTMLConversionOptions
 ```code
 ConversionOptions mhtmlOpts = new MHTMLConversionOptions();
 ```

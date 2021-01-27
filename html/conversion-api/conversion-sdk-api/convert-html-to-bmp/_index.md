@@ -7,23 +7,31 @@ description: "Article explains a usage of Aspose.HTML Cloud client SDKs by a set
 weight: 50
 ---
 
-## Summary
+## **Summary**
 
-Article explains in a set of code examples how to convert HTML document to [BMP](https://docs.fileformat.com/image/bmp/) using Aspose.HTML Cloud client SDKs.
+The article explains in a set of code examples how to convert an [HTML](https://docs.fileformat.com/web/html/) document to [BMP](https://docs.fileformat.com/image/bmp/) using Aspose.HTML Cloud client SDKs. We will consider various scenarios of HTML to BMP conversion: from storage to storage, from local file system to storage and from the Web to local file system.
 
+{{% alert color="primary" %}} 
 
+Learn how to convert an HTML file to other formats using direct REST API calls from the [Conversion REST API](/html/conversion-rest-api/) article.
 
-## Examples
+{{% /alert %}} 
 
-### Case 1. Storage to storage
+## **SDK Examples of HTML to BMP Conversion**
 
-Convert an HTML file from the cloud storage to [BMP](https://docs.fileformat.com/image/bmp/) and save the result to the cloud storage. 
+Aspose.HTML Cloud SDK allows you to fetch an HTML document from storage location by its name, from a URL or a local file on your drive, convert it to a specified format and save it to the storage or a local drive. The following code examples demonstrate how to convert HTML to BMP for different cases using available SDKs.
 
-The conversion process is following - a source document is loaded from the *default* cloud storage, and after conversion is completed, the result is saved to this storage.  The default BMPConversionOptions are applied to the conversion. In the example, we use methods of the **ConverterBuilder** class: FromStorageFile(`inputPath`), To(`ConversionOptions`) and SaveToStorage(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result.
+### **Example 1.**  Convert  HTML from the cloud storage to BMP and save the result to the storage
 
-{{< tabs tabTotal="10" tabID="1" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName8="Java/Android" >}}
+Let’s consider a common SDK usage scenario when the source document is in the cloud storage, and you want to convert it to some other format and save to the storage. In our example, it is HTML to [BMP](https://docs.fileformat.com/image/bmp/) conversion.
+
+The conversion process is following - a source document is loaded from the *default* cloud storage, and after conversion is completed, the result is saved to this storage.  The default BMPConversionOptions are applied to the conversion. In the example, we use methods of the **ConverterBuilder** class: **FromStorageFile**(`inputPath`), **To**(`ConversionOptions`) and **SaveToStorage**(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result.
+
+{{< tabs tabTotal="10" tabID="1" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" >}}
 
 {{< tab tabNum="1" >}}
+
+The following example demonstrates how to convert **HTML to BMP C#** language applying. HTML is taken from the cloud storage, converted to BMP and saved to the storage.  You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
 ```c#
 const string STORAGE_SRCFOLDER = "storage:///Html/TestData";
@@ -52,6 +60,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 
 {{< tab tabNum="2" >}}
 
+The following example demonstrates how to convert **HTML to BMP java** language applying. HTML is taken from the cloud storage, converted to BMP and saved to the storage.  You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
+
 ```java
 
 ```
@@ -59,6 +69,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
+
+The following example demonstrates how to convert **HTML to BMP C++** language applying. HTML is taken from the cloud storage, converted to BMP and saved to the storage. 
 
 ```c++
 
@@ -68,6 +80,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 
 {{< tab tabNum="4" >}}
 
+The following example demonstrates how to convert **HTML to BMP Python** language applying. HTML is taken from the cloud storage, converted to BMP and saved to the storage. You can download the Python SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-python).
+
 ```python
 
 ```
@@ -75,6 +89,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
+
+The following example demonstrates how to convert **HTML to BMP PHP** language applying. HTML is taken from the cloud storage, converted to BMP and saved to the storage. You can download the PHP SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-php)
 
 ```php
 
@@ -84,6 +100,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 
 {{< tab tabNum="6" >}}
 
+The following example demonstrates how to convert **HTML to BMP Ruby** language applying. HTML is taken from the cloud storage, converted to BMP and saved to the storage. You can download the Ruby SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby).
+
 ```ruby
 
 ```
@@ -91,6 +109,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
+
+The following example demonstrates how to convert **HTML to BMP Node.js** language applying. HTML is taken from the cloud storage, converted to BMP and saved to the storage.
 
 ```javascript
 
@@ -100,6 +120,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 
 {{< tab tabNum="8" >}}
 
+The following example demonstrates how to convert **HTML to BMP Swift** language applying. HTML is taken from the cloud storage, converted to BMP and saved to the storage. You can download the Swift SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-swift).
+
 ```swift
 
 ```
@@ -107,6 +129,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}
+
+The following example demonstrates how to convert **HTML to BMP Java/Android** applying. HTML is taken from the cloud storage, converted to BMP and saved to the storage. You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
 
 ```java
 
@@ -116,15 +140,24 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 
 {{< /tabs >}}
 
+{{% alert color="primary" %}} 
+HTML to BMP conversion occurs with the **default conversion options**: the resulting BMP document’s width and height correspond to A4, all margins have zero value, and the resolution value is 96 dpi.
+
+{{% /alert %}} 
 
 
-### Case 2. Local to storage, explicit BMP options
 
-Convert an HTML file from the local file system to [BMP ](https://docs.fileformat.com/image/bmp/)with explicitly specified options and save the result to the cloud storage.
+### **Example 2.** Convert HTML from the local file system to BMP with explicitly specified options and save to the storage
 
-{{< tabs tabTotal="10" tabID="2" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName8="Java/Android" >}}
+Let’s consider a common SDK usage scenario when the source document is in the local file system, and you want to convert it to some other format and save to the cloud storage. In our example, it is HTML to BMP conversion with explicitly specified options.
+
+For conversion, we use methods of the **ConverterBuilder** class: **FromLocalFile**(`inputPath`), **To**(`ConversionOptions`) and **SaveToStorage**(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result. The **Convert**(`ConverterBuilder builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
+
+{{< tabs tabTotal="10" tabID="2" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" >}}
 
 {{< tab tabNum="1" >}}
+
+The following example demonstrates how to convert **HTML to BMP C#** language applying. HTML is taken from the local file system, converted to BMP and saved to the storage. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
 ```c#
 const string LOCAL_TESTDATA = "d:\TestData";
@@ -161,6 +194,8 @@ using(var api = new HtmlApi(clientId, clientSecret))
 
 {{< tab tabNum="2" >}}
 
+The following example demonstrates how to convert **HTML to BMP java** language applying. HTML is taken from the local file system, converted to BMP and saved to the storage. You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
+
 ```java
 
 ```
@@ -168,6 +203,8 @@ using(var api = new HtmlApi(clientId, clientSecret))
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
+
+The following example demonstrates how to convert **HTML to BMP C++** language applying. HTML is taken from the local file system, converted to BMP and saved to the storage.
 
 ```c++
 
@@ -177,6 +214,8 @@ using(var api = new HtmlApi(clientId, clientSecret))
 
 {{< tab tabNum="4" >}}
 
+The following example demonstrates how to convert **HTML to BMP Python** language applying. HTML is taken from the local file system, converted to BMP and saved to the storage.  You can download the Python SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-python).
+
 ```python
 
 ```
@@ -184,6 +223,8 @@ using(var api = new HtmlApi(clientId, clientSecret))
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
+
+The following example demonstrates how to convert **HTML to BMP PHP** language applying. HTML is taken from the local file system, converted to BMP and saved to the storage.  You can download the PHP SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-php)
 
 ```php
 
@@ -193,6 +234,8 @@ using(var api = new HtmlApi(clientId, clientSecret))
 
 {{< tab tabNum="6" >}}
 
+The following example demonstrates how to convert **HTML to BMP Ruby** language applying. HTML is taken from the local file system, converted to BMP and saved to the storage.  You can download the Ruby SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby).
+
 ```ruby
 
 ```
@@ -200,6 +243,8 @@ using(var api = new HtmlApi(clientId, clientSecret))
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
+
+The following example demonstrates how to convert **HTML to BMP Node.js** language applying. HTML is taken from the local file system, converted to BMP and saved to the storage.
 
 ```javascript
 
@@ -209,6 +254,8 @@ using(var api = new HtmlApi(clientId, clientSecret))
 
 {{< tab tabNum="8" >}}
 
+The following example demonstrates how to convert **HTML to BMP Swift** language applying. HTML is taken from the local file system, converted to BMP and saved to the storage.  You can download the Swift SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-swift).
+
 ```swift
 
 ```
@@ -216,6 +263,8 @@ using(var api = new HtmlApi(clientId, clientSecret))
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}
+
+The following example demonstrates how to convert **HTML to BMP Java/Android** applying. HTML is taken from the local file system, converted to BMP and saved to the storage. You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
 
 ```java
 
@@ -225,17 +274,20 @@ using(var api = new HtmlApi(clientId, clientSecret))
 
 {{< /tabs >}}
 
+{{% alert color="primary" %}} 
+More details about available conversion parameters for HTML files are in the [SDK Conversion Options](/html/sdk-conversion-options/) section.
 
+{{% /alert %}} 
 
+### **Example 3.**  Convert a Web page to BMP and save the result to the local file system
 
+Aspose.HTML Cloud SDK allows you to get HTML page from the web by its URL, convert it to  [BMP](https://docs.fileformat.com/image/bmp/)  format and save into the local file system. The example below demonstrates how to convert HTML to BMP with the default conversion parameters.
 
-### Case 3. Web page to local, default BMP options
-
-Convert a Web page by its URL to [BMP](https://docs.fileformat.com/image/bmp/) with default BMP options and save the result to the local file system.
-
-{{< tabs tabTotal="10" tabID="3" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName8="Java/Android" >}}
+{{< tabs tabTotal="10" tabID="3" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" >}}
 
 {{< tab tabNum="1" >}}
+
+The following example demonstrates how to convert **HTML to BMP C#** language applying. HTML is taken from the Web, converted to BMP and saved to the local file system. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
 ```c#
 const string LOCAL_TESTRESULT = "d:\TestResult";
@@ -262,6 +314,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 
 {{< tab tabNum="2" >}}
 
+The following example demonstrates how to convert **HTML to BMP java** language applying. HTML is taken from the Web, converted to BMP and saved to the local file system. You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
+
 ```java
 
 ```
@@ -269,6 +323,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
+
+The following example demonstrates how to convert **HTML to BMP C++** language applying. HTML is taken from the Web, converted to BMP and saved to the local file system.
 
 ```c++
 
@@ -278,6 +334,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 
 {{< tab tabNum="4" >}}
 
+The following example demonstrates how to convert **HTML to BMP Python** language applying. HTML is taken from the Web, converted to BMP and saved to the local file system. You can download the Python SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-python).
+
 ```python
 
 ```
@@ -285,6 +343,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
+
+The following example demonstrates how to convert **HTML to BMP PHP** language applying. HTML is taken from the Web, converted to BMP and saved to the local file system. You can download the PHP SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-php)
 
 ```php
 
@@ -294,6 +354,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 
 {{< tab tabNum="6" >}}
 
+The following example demonstrates how to convert **HTML to BMP Ruby** language applying. HTML is taken from the Web, converted to BMP and saved to the local file system. You can download the Ruby SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby).
+
 ```ruby
 
 ```
@@ -301,6 +363,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
+
+The following example demonstrates how to convert **HTML to BMP Node.js** language applying. HTML is taken from the Web, converted to BMP and saved to the local file system.
 
 ```javascript
 
@@ -310,6 +374,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 
 {{< tab tabNum="8" >}}
 
+The following example demonstrates how to convert **HTML to BMP Swift** language applying. HTML is taken from the Web, converted to BMP and saved to the local file system. You can download the Swift SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-swift).
+
 ```swift
 
 ```
@@ -317,6 +383,8 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}
+
+The following example demonstrates how to convert **HTML to BMP Java/Android** applying. HTML is taken from the Web, converted to BMP and saved to the local file system. You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
 
 ```java
 
@@ -326,3 +394,12 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 
 {{< /tabs >}}
 
+In the example, we use methods of the **ConverterBuilder** class: **FromUrl**(`urlAddress`), **To**(`ConversionOptions`) and **SaveToLocal**(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result. The **Convert**(`ConverterBuilder builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
+
+
+HTML to BMP conversion occurs with the **default conversion options**: the resulting BMP document’s width and height correspond to A4, all margins have zero value, and the resolution value is 96 dpi.
+
+{{% alert color="primary" %}} 
+You can download Aspose.HTML Cloud SDKs of your required platform from [GitHub](https://github.com/aspose-html-cloud/). 
+
+{{% /alert %}} 

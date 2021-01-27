@@ -1,233 +1,36 @@
 ---
-title: "Folder operations"
+title: "Folder REST API operations"
 type: docs
-url: /storage-api/storage-folder-api/
+url: /storage-api/working-with-folders-in-the-storage/folder-rest-api/
 keywords: "cloud storage, cloud storage api, cloud storage folder, get folder content, create folder, delete folder, copy folder, move folder, python, java , .net,  c#,  android, swift ,Perl, Node.js"
 description: "Article explains how to manipulate folders in the cloud storage using Aspose.HTML Cloud API v.4.0. SDKs are also available in PHP, Perl, Android, Swift, C#, Java and more to help developers speed up their development."
-weight: 30
+weight: 20
 ---
 
-## Summary
 
-Aspose.HTML Cloud allows you to work with documents saved on the cloud storage. The Aspose.HTML Cloud API is a REST-based API for wide usability on the web across platforms. 
+Aspose.HTML Cloud allows you to work with objects saved on the cloud storage that has a clear and simple interface to manage folders and files.
 
-This article provides a detailed description of operations to manipulate folders (directories) in the cloud storage using Aspose.HTML Cloud API v.4.0. SDKs.
+This article provides a detailed description of operations to manipulate folders (directories) in the cloud storage using the REST API requests.
 
-## Cloud SDK family
+## **REST API**
+
+A call to the REST API consists of a request performed by the client, and a response returned by the service. In the request, you send a URL with information about which operation you want to call, the resource to act upon, query parameters, etc. The most common methods include GET, POST, PUT and DELETE. GET retrieves resources. POST submits new data to the server. PUT updates existing data. DELETE removes data.
+
+You can call REST API from any platform that supports HTTP / HTTPS and it does not depend on the software running on the server or client. To create a correctly constructed HTTP request, you should build URI relative to https://api.aspose.cloud/v4.0/html.
 
 {{% alert color="primary" %}} 
-Install Aspose.HTML Cloud SDK for .NET via [NuGet](https://www.nuget.org/packages/Aspose.HTML-Cloud/).
+More detailed information about REST URLs’ structure and specific behavior linked to the API such as Authentication, Request Queuing, and Storage you can find in the [REST API Overview](https://docs.aspose.cloud/total/getting-started/rest-api-overview/) article.
+{{% /alert %}} 
 
-Complete source code of Aspose.HTML SDK for .NET is freely available on the [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
-{{% /alert %}}  
 
-### Folder SDK methods
+### **Get a list of folder files and subfolders**
 
-#### DirectoryExists
+You can use cURL command-line tool to access Aspose.HTML web services quickly and easily. Let's review an example of the GET method applying: we use the **GET method** to obtain a list of folder files and subfolders. Requests using GET should only retrieve data. GET is one of the most common HTTP methods.
 
-```c#
-bool DirectoryExists(string directoryUri, string storageName = null)
-```
+For a correct request constructing you should build a URL with information about the path to a specified folder in the storage and the storage name. All URIs are relative to https://api.aspose.cloud/v4.0/html.
 
-Checks if a directory specified by the path exists in the specified or default storage.
-
-```c#
-bool DirectoryExists(RemoteDirectory dir)
-```
-
-Overloaded method. Checks if a directory specified by RemoteDirectory descriptor object exists.
-
-#### GetDirectories
-
-```c#
-IReadOnlyList<RemoteDirectory> GetDirectories(string rootDirectoryUri, string storageName = null)
-```
-
-Gets a list of directories that are direct children of the specified directory in the specified or default storage.
-
-#### GetDirectory
-
-```c#
-RemoteDirectory GetDirectory(string directoryUri, string storageName = null)
-```
-
-Gets a specified directory info, or null, if the directory doesn't exist.
-
-#### CreateDirectory
-
-```c#
-RemoteDirectory CreateDirectory(string directoryUri, 
-                                string storageName = null, 
-                                NameCollisionOption option = NameCollisionOption.FailIfExists)
-```
-
-Creates a directory in the specified or default storage; all parent directories specified in the directoryUri path will be created too if they don't exist.
-
-#### DeleteDirectory
-
-```c#
-bool DeleteDirectory(string directoryUri, string storageName = null, bool recursive = false)
-```
-
-Deletes a directory by the specified path from the specified or default storage.
-
-```c#
-bool DeleteDirectory(RemoteDirectory directory, bool recursive = false)
-```
-
-Overloaded method. Deletes a directory by the path specified by RemoteDirectory object.
-
-#### CopyDirectory
-
-```c#
-RemoteDirectory CopyDirectory(string srcDirectoryUri, 
-                              string destDirectoryUri, 
-                              string srcStorageName = null, 
-                              string destStorageName = null, 
-                              NameCollisionOption option = NameCollisionOption.FailIfExists)
-```
-
-Copies a directory.
-
-```c#
-RemoteDirectory CopyDirectory(RemoteDirectory srcDirectory, 
-                              string destDirectoryUri, 
-                              string destStorageName = null, 
-                              NameCollisionOption option = NameCollisionOption.FailIfExists)
-```
-
-Copies a directory - overloaded method.
-
-```c#
-RemoteDirectory CopyDirectory(RemoteDirectory srcDirectory, 
-                              RemoteDirectory destDirectory, 
-                              NameCollisionOption option = NameCollisionOption.FailIfExists)
-```
-
-Copies a directory - overloaded method.
-
-#### MoveDirectory
-
-```c#
-RemoteDirectory MoveDirectory(string srcDirectoryUri, 
-                              string destDirectoryUri, 
-                              string srcStorageName = null, 
-                              string destStorageName = null, 
-                              NameCollisionOption option = NameCollisionOption.FailIfExists)
-```
-
-Moves a directory.
-
-```c#
-RemoteDirectory MoveDirectory(RemoteDirectory srcDirectory, 
-                              string destDirectoryUri, 
-                              string destStorageName = null, 
-                              NameCollisionOption option = NameCollisionOption.FailIfExists)
-```
-
-Moves a directory - overloaded method.
-
-```c#
-RemoteDirectory MoveDirectory(RemoteDirectory srcDirectory, 
-                              RemoteDirectory destDirectory, 
-                              NameCollisionOption option = NameCollisionOption.FailIfExists)
-```
-
-Moves a directory - overloaded method.
-
-
-
-### SDK Examples
-
-#### Example 1: How to check if a folder exists in the storage
-
-The example below demonstrates how to check if a folder exists in the storage.
-
-{{< tabs tabTotal="1" tabID="1" tabName1="C#" >}}
-
-{{< tab tabNum="1" >}}
-
-```c#
-string folder = "/HtmlTestData";
-
-// here the ConfigurationBuilder is used to initialize the SDK API object
-using(var api = new HtmlApi(cb => cb
-                      .WithClientId(clientId)
-                      .WithClientSecret(clientSecret)))
-{
-    StorageProvider storageApi = api.Storage;  // Storage API entry point
-    bool exist = storageApi.DirectoryExists(folder);   // true
-}
-			
-```
-
-{{</ tab >}}
-
-{{</ tabs >}}
-
-#### Example 2: How to create a folder
-
-The example below demonstrates how to create a folder in the storage.
-
-{{< tabs tabTotal="1" tabID="2" tabName1="C#" >}}
-
-{{< tab tabNum="1" >}}
-
-```c#
-string storageName = ""; // default storage
-string folderPath = "/newFolder";
-
-using(var api = new HtmlApi(clientId, clientSecret))
-{
-    var storageApi = api.Storage;  // Storage API entry point 
-    RemoteDirectory remoteDir = storageApi.CreateDirectory(folderPath, storageName);
-}
-
-```
-
-{{</ tab >}}
-
-{{</ tabs >}}
-
-#### Example 3: How to get the folder content
-
-The example below demonstrates how to get a list of direct child folders and a list of files in the specified folder.
-
-{{< tabs tabTotal="1" tabID="3" tabName1="C#" >}}
-
-{{< tab tabNum="1" >}}
-
-```c#
-const string TestDataFolder = "/HtmlTestData";
-string storageName = ""; // default storage
-
-using(var api = new HtmlApi(clientId, clientSecret))
-{
-    var storageApi = api.Storage;  // Storage API entry point 
-
-    var dirsList = storageApi.GetDirectories(TestDataFolder, storageName);
-    var filesList = storageApi.GetFiles(TestDataFolder, storageName);
-}
-```
-
-{{</ tab >}}
-
-{{</ tabs >}}
-
-
-
-
-
-## REST API
-
-A call to the REST API consists of a request performed by the client, and a response returned by the service. In the request, you send a URL with information about which operation you want to call, the resource to act upon, query parameters, etc.
-
-All URIs are relative to https://api.aspose.cloud/v4.0/html.
-
-### Get a list of folder files and subfolders
-
-- GET: return a list of files and folders in the specified folder (or in the root folder by default) of the storage. 
+- **cURL GET request**: return a list of files and folders in the specified folder (or in the root folder by default) of the storage. 
 
 ```
 /folder?path={path}&storageName={storageName}
@@ -240,7 +43,9 @@ All URIs are relative to https://api.aspose.cloud/v4.0/html.
 | path        | Folder path in the storage.                       | Query     | +        |
 | storageName | Storage name or default storage if not specified. | Query     | -        |
 
-##### cURL example
+**cURL example**
+
+Use the **cURL GET request**; write the URL; put your JWT token value into Authorization HTTP header as it’s shown in the example below.
 
 ```bash
 curl -X GET \
@@ -248,11 +53,15 @@ curl -X GET \
 	-H "Authorization:Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE2MDkxNzQ2MjIsImV4cCI6MTYwOTI2MTAyMiwiaXNzIjoiaHR0cHM6Ly9hcGkuYXNwb3NlLmNsb3VkIiwiYXVkIjpbImh0dHBzOi8vYXBpLmFzcG9zZS5jbG91ZC9yZXNvdXJjZXMiLCJhcGkuYmlsbGluZyIsImFwaS5pZGVudGl0eSIsImFwaS5wcm9kdWN0cyIsImFwaS5zdG9yYWdlIl0sImNsaWVudF9pZCI6IjZjZTliNmQwLTUxMzUtNDU0Ny1iYWZiLTE3NmU0NGM4ZDYzMCIsImNsaWVudF9kZWZhdWx0X3N0b3JhZ2UiOiJhODg1MmY0Yi1jMjBmLTQ1YmUtYTg3Yi02ODlhNTQ5MGM4YWUiLCJjbGllbnRfaWRlbnRpdHlfdXNlcl9pZCI6Ijc0MzQyMSIsInNjb3BlIjpbImFwaS5iaWxsaW5nIiwiYXBpLmlkZW50aXR5IiwiYXBpLnByb2R1Y3RzIiwiYXBpLnN0b3JhZ2UiXX0.fxKq8jU-veiyumnEm3tEdlcGFcQjHZKa7jCI8q0N_7JK7p7HyvuG0RwS7YRq7bRuN261D6woQGj0vk1BCavnzqvRfYqJvVwOK3EJIenF0zOAizAlhh9KueFS4-UFHFJ128AQxslQ-NRcXImNKr8_oPGzmmMxbCD6dc_lQYFtuJkX5Q6HL7fU2sICJT_XVqhiEDdYj7BBYruBZkMbq-M-OV9qPQH6txxYKU1Nn5D7g98p_S_F_bCEe_fRAg_chcj4FTe4ElBbRv4kYPDstwFee5YGPKxfyXG0Og_bhZPKNpKG72Inms93W7feXctF3Lz5wIKuia5604tvkgaj5pbRKQ"
 ```
 
+Detailed information about getting access token for Aspose Cloud API requests authentication, you find out in the [Authenticating API Requests](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) article.
 
+### **Create a folder**
 
-#### Create a folder
+Aspose Cloud.HTML API requests are produced by sending HTTP requests to the following address, where, as a part of the URL route, the version of HTML product is indicated: https://api.aspose.cloud/v4.0/html.
 
-- POST: create a folder.
+The **POST method** is used to send data to a server to create or update a resource. It is one of the most common HTTP methods, but it often causes a change in state or side effects on the server. Let's examine a case of folder making using a cURL POST request:
+
+- **cURL POST request**: create a folder.
 
 ```
 /folder?path={path}&storageName={storageName}
@@ -265,7 +74,9 @@ curl -X GET \
 | path        | Folder path to be created.                        | Query     | +        |
 | storageName | Storage name or default storage if not specified. | Query     | -        |
 
-##### cURL example
+**cURL example**
+
+Use the **cURL POST request**; write the URL; put " Content-Length: 0" into HTTP header (there is no payload to read); put your JWT token value into Authorization HTTP header as it’s shown in the example below.
 
 ```bash
 curl -X POST \
@@ -276,9 +87,13 @@ curl -X POST \
 
 
 
-#### Copy a folder
+### **Copy a folder**
 
-- PUT: copy the specified folder with files and subfolders to the new path.
+All URIs are relative to https://api.aspose.cloud/v4.0/html.
+
+The **PUT method** is used to send data to a server to create or update a resource. It replaces all current representations of the resource with the request payload.
+
+- **PUT**: copy the specified folder with files and subfolders to the new path.
 
 ```
 /folder/copy?srcpath={srcPath}&destpath={destPath}&srcstoragename={srcStorageName}&srcstoragename={destStorageName}
@@ -293,7 +108,9 @@ curl -X POST \
 | srcStorageName  | Source folder storage name or default storage if not specified. | Query     | -        |
 | destStorageName | Destination folder storage name or default storage if not specified. | Query     | -        |
 
-##### cURL example
+**cURL example**
+
+Use the **cURL PUT request**; write the URL; put your JWT token value into Authorization HTTP header as shown in the example below.
 
 ```bash
 curl -X PUT \
@@ -301,11 +118,16 @@ curl -X PUT \
 	-H "Authorization:Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE2MDkxNzQ2MjIsImV4cCI6MTYwOTI2MTAyMiwiaXNzIjoiaHR0cHM6Ly9hcGkuYXNwb3NlLmNsb3VkIiwiYXVkIjpbImh0dHBzOi8vYXBpLmFzcG9zZS5jbG91ZC9yZXNvdXJjZXMiLCJhcGkuYmlsbGluZyIsImFwaS5pZGVudGl0eSIsImFwaS5wcm9kdWN0cyIsImFwaS5zdG9yYWdlIl0sImNsaWVudF9pZCI6IjZjZTliNmQwLTUxMzUtNDU0Ny1iYWZiLTE3NmU0NGM4ZDYzMCIsImNsaWVudF9kZWZhdWx0X3N0b3JhZ2UiOiJhODg1MmY0Yi1jMjBmLTQ1YmUtYTg3Yi02ODlhNTQ5MGM4YWUiLCJjbGllbnRfaWRlbnRpdHlfdXNlcl9pZCI6Ijc0MzQyMSIsInNjb3BlIjpbImFwaS5iaWxsaW5nIiwiYXBpLmlkZW50aXR5IiwiYXBpLnByb2R1Y3RzIiwiYXBpLnN0b3JhZ2UiXX0.fxKq8jU-veiyumnEm3tEdlcGFcQjHZKa7jCI8q0N_7JK7p7HyvuG0RwS7YRq7bRuN261D6woQGj0vk1BCavnzqvRfYqJvVwOK3EJIenF0zOAizAlhh9KueFS4-UFHFJ128AQxslQ-NRcXImNKr8_oPGzmmMxbCD6dc_lQYFtuJkX5Q6HL7fU2sICJT_XVqhiEDdYj7BBYruBZkMbq-M-OV9qPQH6txxYKU1Nn5D7g98p_S_F_bCEe_fRAg_chcj4FTe4ElBbRv4kYPDstwFee5YGPKxfyXG0Og_bhZPKNpKG72Inms93W7feXctF3Lz5wIKuia5604tvkgaj5pbRKQ"
 ```
 
+{{% alert color="primary" %}} 
+If you have questions about how to get a JWT token, please see the [Authentication](/html/general-api-notes/authentication/) article.
 
+{{% /alert %}}
 
-#### Move a folder
+### **Move a folder**
 
-- PUT: move the specified folder with files and subfolders to the new path.
+All URIs are relative to https://api.aspose.cloud/v4.0/html.
+
+- **PUT**: move the specified folder with files and subfolders to the new path.
 
 ```
 /folder/move?srcpath={srcPath}&destpath={destPath}&srcstoragename={srcStorageName}&srcstoragename={destStorageName}
@@ -320,7 +142,9 @@ curl -X PUT \
 | srcStorageName  | Source folder storage name or default storage if not specified. | Query     | -        |
 | destStorageName | Destination folder storage name or default storage if not specified. | Query     | -        |
 
-##### cURL example
+**cURL example**
+
+Use the **cURL PUT request**; write the URL; put your JWT token value into Authorization HTTP header as it’s shown in the example below.
 
 ```bash
 curl -X PUT \
@@ -330,9 +154,11 @@ curl -X PUT \
 
 
 
-#### Delete a folder
+### **Delete a folder**
 
-- DELETE: delete the specified folder.
+All URIs are relative to https://api.aspose.cloud/v4.0/html.
+
+- **DELETE**: delete the specified folder.
 
 ```
 /folder?path={path}&storageName={storageName}
@@ -345,11 +171,18 @@ curl -X PUT \
 | path        | Folder path to be deleted.                        | Query     | +        |
 | storageName | Storage name or default storage if not specified. | Query     | -        |
 
-##### cURL example
+**cURL example**
+
+Use the **cURL DELETE request**; write the URL; put your JWT token value into Authorization HTTP header as it’s shown in the example below.
 
 ```bash
 curl -X DELETE \
 	-v "https://api.aspose.cloud/v4.0/html/folder?path=/Html/FolderToDelete/" \
 	-H "Authorization:Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE2MDkxNzQ2MjIsImV4cCI6MTYwOTI2MTAyMiwiaXNzIjoiaHR0cHM6Ly9hcGkuYXNwb3NlLmNsb3VkIiwiYXVkIjpbImh0dHBzOi8vYXBpLmFzcG9zZS5jbG91ZC9yZXNvdXJjZXMiLCJhcGkuYmlsbGluZyIsImFwaS5pZGVudGl0eSIsImFwaS5wcm9kdWN0cyIsImFwaS5zdG9yYWdlIl0sImNsaWVudF9pZCI6IjZjZTliNmQwLTUxMzUtNDU0Ny1iYWZiLTE3NmU0NGM4ZDYzMCIsImNsaWVudF9kZWZhdWx0X3N0b3JhZ2UiOiJhODg1MmY0Yi1jMjBmLTQ1YmUtYTg3Yi02ODlhNTQ5MGM4YWUiLCJjbGllbnRfaWRlbnRpdHlfdXNlcl9pZCI6Ijc0MzQyMSIsInNjb3BlIjpbImFwaS5iaWxsaW5nIiwiYXBpLmlkZW50aXR5IiwiYXBpLnByb2R1Y3RzIiwiYXBpLnN0b3JhZ2UiXX0.fxKq8jU-veiyumnEm3tEdlcGFcQjHZKa7jCI8q0N_7JK7p7HyvuG0RwS7YRq7bRuN261D6woQGj0vk1BCavnzqvRfYqJvVwOK3EJIenF0zOAizAlhh9KueFS4-UFHFJ128AQxslQ-NRcXImNKr8_oPGzmmMxbCD6dc_lQYFtuJkX5Q6HL7fU2sICJT_XVqhiEDdYj7BBYruBZkMbq-M-OV9qPQH6txxYKU1Nn5D7g98p_S_F_bCEe_fRAg_chcj4FTe4ElBbRv4kYPDstwFee5YGPKxfyXG0Og_bhZPKNpKG72Inms93W7feXctF3Lz5wIKuia5604tvkgaj5pbRKQ"
 ```
+
+{{% alert color="primary" %}} 
+You can get information about all the API resources from the [Aspose.HTML for Cloud API Reference](https://apireference.aspose.cloud/html/).
+
+{{% /alert %}} 
 
