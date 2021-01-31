@@ -19,6 +19,7 @@ A widespread use case for Aspose.HTML Cloud SDK functions is file processing and
  - [HTML to XPS](/html/conversion-sdk-api/convert-html-to-xps/)
  - [HTML to DOCX](/html/conversion-sdk-api/convert-html-to-docx/) 
  - [HTML to MHTML](/html/conversion-sdk-api/convert-html-to-mhtml/)
+ - [HTML to Markdown](/html/conversion-sdk-api/convert-html-to-markdown/)
  - [HTML to JPEG](/html/conversion-sdk-api/convert-html-to-jpeg/) 
  - [HTML to PNG](/html/conversion-sdk-api/convert-html-to-png/) 
  - [HTML to TIFF](/html/conversion-sdk-api/convert-html-to-tiff/) 

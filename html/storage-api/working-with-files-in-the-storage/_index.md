@@ -2,8 +2,8 @@
 title: "Working with Folders in the Storage"
 type: docs
 url: /storage-api/working-with-folders-in-the-storage/
-keywords: "cloud storage, cloud storage api, cloud storage folder, get folder content, create folder, delete folder, copy folder, move folder, python, java , .net,  c#,  android, swift ,Perl, Node.js"
-description: "Article explains how to manipulate folders in the cloud storage using Aspose.HTML Cloud API v.4.0. SDKs are also available in PHP, Perl, Android, Swift, C#, Java and more to help developers speed up their development."
+keywords: "cloud storage, cloud storage api, REST API, cloud storage folder, get folder content, create folder, delete folder, copy folder, move folder, python, java, .net,  c#,  android, swift, Perl, Node.js"
+description: "The article explains how to manipulate folders in the cloud storage using Aspose.HTML Cloud API v.4.0. SDKs are also available in PHP, Perl, Android, Swift, C#, Java and more to help developers speed up their development."
 weight: 30
 ---
 
