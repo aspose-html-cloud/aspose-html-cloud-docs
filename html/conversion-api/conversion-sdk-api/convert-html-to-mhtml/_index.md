@@ -334,7 +334,7 @@ The code snippet below explains how to convert **HTML to MHTML PHP** language ap
 
 {{< tab tabNum="6" >}}
 
-The code snippet below explains how to convert **HTML to PDF Ruby** language applying. HTML is taken from the Web, converted to PDF and saved to the local file system.  You can download the Ruby SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby).
+The code snippet below explains how to convert **HTML to MHTML Ruby** language applying. HTML is taken from the Web, converted to MHTML and saved to the local file system.  You can download the Ruby SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby).
 
 ```ruby
 
