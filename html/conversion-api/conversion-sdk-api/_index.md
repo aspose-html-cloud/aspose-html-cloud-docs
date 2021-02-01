@@ -7,29 +7,35 @@ description: "Article provides general description of conversion features of Asp
 weight: 40
 ---
 
-## Summary
+## **Summary**
 
-Using an SDK (API client) is the quickest way for a developer to speed up the development. An SDK takes care of a lot of low-level details of making requests and handling responses and lets you focus on writing code specific to your particular project. Check out our [GitHub repository](https://github.com/aspose-html-cloud) for a complete list of Aspose.HTML SDKs along with working examples, to get you started in no time. Please check [Available SDKs](/html/available-sdks/) article to learn how to add an SDK to your project.
+Using an SDK (API client) is the quickest way for a developer to speed up the development. An SDK takes care of a lot of low-level details of making requests and handling responses and lets you focus on writing code specific to your particular project. Check out our [GitHub repository](https://github.com/aspose-html-cloud) for a complete list of Aspose.HTML SDKs along with working examples, to get you started in no time. Please check the [Available SDKs](/html/available-sdks/) article to learn how to add an SDK to your project.
 
-
-
-## SDK conversion examples
+## **SDK conversion examples**
 
 A widespread use case for Aspose.HTML Cloud SDK functions is file processing and converting. To view code examples that illustrate various cases of client SDKs usage for the format conversions, follow the links:
 
-- [HTML to PDF](/html/conversion-sdk-api/convert-html-to-pdf/)
-- [HTML to XPS](/html/conversion-sdk-api/convert-html-to-xps/)
-- [HTML to DOCX](/html/conversion-sdk-api/convert-html-to-docx/)
-- [HTML to JPEG](/html/conversion-sdk-api/convert-html-to-jpeg/)
-- [HTML to MHTML](/html/conversion-sdk-api/convert-html-to-mhtml/)
+ - [HTML to PDF](/html/conversion-sdk-api/convert-html-to-pdf/) 
+ - [HTML to XPS](/html/conversion-sdk-api/convert-html-to-xps/)
+ - [HTML to DOCX](/html/conversion-sdk-api/convert-html-to-docx/) 
+ - [HTML to MHTML](/html/conversion-sdk-api/convert-html-to-mhtml/)
+ - [HTML to Markdown](/html/conversion-sdk-api/convert-html-to-markdown/)
+ - [HTML to JPEG](/html/conversion-sdk-api/convert-html-to-jpeg/) 
+ - [HTML to PNG](/html/conversion-sdk-api/convert-html-to-png/) 
+ - [HTML to TIFF](/html/conversion-sdk-api/convert-html-to-tiff/) 
+ - [HTML to BMP](/html/conversion-sdk-api/convert-html-to-bmp/) 
+ - [HTML to GIF](/html/conversion-sdk-api/convert-html-to-gif/) 
+
+{{% alert color="primary" %}} 
+Please see the [Conversion REST API](/html/conversion-rest-api/) article to learn how to convert an [HTML](https://docs.fileformat.com/web/html/) file to other formats using direct REST API calls.
+
+{{% /alert %}} 
+
+## **Conversion methods**
 
 
 
-## Conversion methods
-
-
-
-#### ConvertAsync
+### ConvertAsync
 
  ```
  AsyncResult<Conversion.Conversion> ConvertAsync(
@@ -44,7 +50,7 @@ Starts asynchronously a long-time conversion operation of a source file (or file
 
 
 
-#### ConvertAsync
+### ConvertAsync
 
 ```c#
 AsyncResult<Conversion.Conversion> ConvertAsync(
@@ -59,7 +65,7 @@ Overloaded method.  Starts asynchronously a long-time conversion operation of a 
 
 
 
-#### GetConversion
+### GetConversion
 
 ```c#
 AsyncResult<Conversion.Conversion> GetConversion(string id)
@@ -69,7 +75,7 @@ Gets a current status of long-time conversion operation started previously by th
 
 
 
-#### DeleteTask
+### DeleteTask
 
 ```c#
 bool DeleteTask(string id)
@@ -79,7 +85,7 @@ Cancels a long-time conversion operation started previously by the *ConvertAsync
 
 
 
-#### Convert
+### Convert
 
 ```c#
 Conversion.Conversion Convert(
@@ -94,7 +100,7 @@ Converts synchronously a file (or files) specified by  *source* parameter. This 
 
 
 
-#### Convert
+### Convert
 
 ```c#
 Conversion.Conversion Convert(
@@ -108,7 +114,7 @@ Overloaded method. Converts synchronously a list of storage files. This method i
 
 The specialized versions of the conversion methods are described below.
 
-#### ConvertWebSiteAsync
+### ConvertWebSiteAsync
 
 ```c#
 AsyncResult<Conversion.Conversion> ConvertWebSiteAsync(
@@ -123,7 +129,7 @@ Starts asynchronously a long-time conversion operation of a web page specified b
 
 
 
-#### ConvertWebSite
+### ConvertWebSite
 
 ```c#
 Conversion.Conversion ConvertWebSite(
@@ -138,7 +144,7 @@ Synchronous mode of the *ConvertWebSiteAsync* method. Converts a web page specif
 
 
 
-#### ConvertWebSite
+### ConvertWebSite
 
 ```c#
 Conversion.Conversion ConvertWebSite(
@@ -153,7 +159,7 @@ Overloaded method. Synchronous mode of the *ConvertWebSiteAsync* method. Convert
 
 
 
-#### ConvertLocalFileAsync
+### ConvertLocalFileAsync
 
 ```c#
 AsyncResult<Conversion.Conversion> ConvertLocalFileAsync(
@@ -168,7 +174,7 @@ Starts asynchronously a long-time conversion operation of a file specified by it
 
 
 
-#### ConvertLocalFileAsync
+### ConvertLocalFileAsync
 
 ```c#
 AsyncResult<Conversion.Conversion> ConvertLocalFileAsync(
@@ -183,7 +189,7 @@ Overloaded method.  Starts asynchronously a long-time conversion operation of se
 
 
 
-#### ConvertLocalFile
+### ConvertLocalFile
 
 ```c#
 Conversion.Conversion ConvertLocalFile(
@@ -198,7 +204,7 @@ Synchronous mode of the *ConvertLocalFileAsync* method. Converts a file specifie
 
 
 
-#### ConvertLocalFile
+### ConvertLocalFile
 
 ```c#
 Conversion.Conversion ConvertLocalFile(
@@ -213,7 +219,7 @@ Overloaded method. Synchronous mode of the *ConvertLocalFileAsync* method. Conve
 
 
 
-#### ConvertLocalDirectory
+### ConvertLocalDirectory
 
 ```
 Conversion.Conversion ConvertLocalDirectory(
