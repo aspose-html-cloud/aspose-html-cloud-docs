@@ -1,0 +1,26 @@
+backend:
+  name: git-gateway
+  branch: edit_netlify_apiv4
+
+media_folder: static/images
+public_folder: /images
+publish_mode: editorial_workflow
+enableIdentityWidget: false
+show_preview_links: true
+
+collections:
+
+  - name: html
+    label: HTML
+    label_singular: "Page"
+    folder: content/html
+    create: true
+    media_folder: ''
+    public_folder: ''
+    nested:
+      depth: 100
+      summary: "{{title}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+    meta: { path: { widget: string, label: "Path", index_file: "_index" } }
