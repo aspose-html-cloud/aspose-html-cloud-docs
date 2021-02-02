@@ -11,7 +11,7 @@ weight: 40
 
 JPEG is one of the most commonly used image formats. Its uniqueness is the controlled loss of quality during compression. Therefore, it is widely used to store and send graphic content (photos, scanned copies, digitized images) over the Internet.
 
-This article explains in a set of code examples how to convert an [HTML](https://docs.fileformat.com/web/html/) document to [JPEG](https://docs.fileformat.com/image/jpeg/) using Aspose.HTML Cloud client SDKs.
+This article explains in a set of code examples how to convert an {{%HTML%}} document to {{%JPEG%}} using Aspose.HTML Cloud client SDKs.
 
 ## **SDK Examples of HTML to JPEG Conversion**
 
@@ -144,7 +144,7 @@ HTML to JPEG conversion occurs with the **default conversion options**: the resu
 
 ### **Example 2.** Convert HTML from the local file system to JPEG with explicitly specified options and save to the storage
 
-The example below shows how to convert an HTML file from the local file system to  [JPEG](https://docs.fileformat.com/image/jpeg/) with explicitly specified options and save the result to the cloud storage.
+The example below shows how to convert an HTML file from the local file system to  {{%JPEG%}} with explicitly specified options and save the result to the cloud storage.
 
 For conversion, we use methods of the **ConverterBuilder** class: **FromLocalFile**(`inputPath`), **To**(`ConversionOptions`) and **SaveToStorage**(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result.  The **Convert**(`ConverterBuilder builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
 

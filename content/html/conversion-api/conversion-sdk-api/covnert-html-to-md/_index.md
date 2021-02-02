@@ -9,7 +9,7 @@ weight: 110
 
 ## **Summary**
 
-Aspose.HTML Cloud v4.0 provides the simplest API to convert [HTML](https://docs.fileformat.com/web/html/) documents to [Markdown](https://docs.fileformat.com/word-processing/md/) format with high quality, easy and fast. This article contains a set of code examples that explain how to convert HTML to Markdown using available SDKs.
+Aspose.HTML Cloud v4.0 provides the simplest API to convert {{%HTML%}} documents to {{%Markdown%}} format with high quality, easy and fast. This article contains a set of code examples that explain how to convert HTML to Markdown using available SDKs.
 
 {{% alert color="primary" %}} 
 

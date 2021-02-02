@@ -9,9 +9,9 @@ weight: 20
 
 ## **Summary**
 
-Converting between formats is required for various reasons: to work in a familiar, convenient format or to take advantage of different formats for specific tasks. [XPS](https://docs.fileformat.com/page-description-language/xps/) is a document storage and viewing format developed by Microsoft. An XPS file is a ZIP archive using the Open Packaging Conventions containing the files that make up the document. It has a set of advantages that support security features, such as digital signatures to provide greater document security and more.
+Converting between formats is required for various reasons: to work in a familiar, convenient format or to take advantage of different formats for specific tasks. {{%XPS%}} is a document storage and viewing format developed by Microsoft. An XPS file is a ZIP archive using the Open Packaging Conventions containing the files that make up the document. It has a set of advantages that support security features, such as digital signatures to provide greater document security and more.
 
-This article explains in a set of code examples how to convert [HTML](https://docs.fileformat.com/web/html/) to [XPS](https://docs.fileformat.com/page-description-language/xps/) using Aspose.HTML Cloud client SDKs.
+This article explains in a set of code examples how to convert {{%HTML%}} to {{%XPS%}} using Aspose.HTML Cloud client SDKs.
 
 
 
@@ -275,7 +275,7 @@ More details about available conversion parameters for HTML files are in the [SD
 
 ### **Example 3.** Convert a Web page by its URL to XPS and save the result to the local file system
 
-Aspose.HTML Cloud SDK allows you to get HTML page from the web by its URL, convert it to  [XPS](https://docs.fileformat.com/page-description-language/xps/) format and save into the local file system. The example below demonstrates how to convert HTML to XPS with the default conversion parameters.
+Aspose.HTML Cloud SDK allows you to get HTML page from the web by its URL, convert it to  {{%XPS%}} format and save into the local file system. The example below demonstrates how to convert HTML to XPS with the default conversion parameters.
 
 {{< tabs tabTotal="10" tabID="3" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" >}}
 

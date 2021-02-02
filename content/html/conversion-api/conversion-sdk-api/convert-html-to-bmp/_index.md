@@ -9,7 +9,7 @@ weight: 50
 
 ## **Summary**
 
-The article explains in a set of code examples how to convert an [HTML](https://docs.fileformat.com/web/html/) document to [BMP](https://docs.fileformat.com/image/bmp/) using Aspose.HTML Cloud client SDKs. We will consider various scenarios of HTML to BMP conversion: from storage to storage, from local file system to storage and from the Web to local file system.
+The article explains in a set of code examples how to convert an {{%HTML%}} document to {{%BMP%}} using Aspose.HTML Cloud client SDKs. We will consider various scenarios of HTML to BMP conversion: from storage to storage, from local file system to storage and from the Web to local file system.
 
 {{% alert color="primary" %}} 
 
@@ -23,7 +23,7 @@ Aspose.HTML Cloud SDK allows you to fetch an HTML document from storage location
 
 ### **Example 1.**  Convert  HTML from the cloud storage to BMP and save the result to the storage
 
-Let’s consider a common SDK usage scenario when the source document is in the cloud storage, and you want to convert it to some other format and save to the storage. In our example, it is HTML to [BMP](https://docs.fileformat.com/image/bmp/) conversion.
+Let’s consider a common SDK usage scenario when the source document is in the cloud storage, and you want to convert it to some other format and save to the storage. In our example, it is HTML to {{%BMP%}} conversion.
 
 The conversion process is following - a source document is loaded from the *default* cloud storage, and after conversion is completed, the result is saved to this storage.  The default BMPConversionOptions are applied to the conversion. In the example, we use methods of the **ConverterBuilder** class: **FromStorageFile**(`inputPath`), **To**(`ConversionOptions`) and **SaveToStorage**(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result.
 
@@ -281,7 +281,7 @@ More details about available conversion parameters for HTML files are in the [SD
 
 ### **Example 3.**  Convert a Web page to BMP and save the result to the local file system
 
-Aspose.HTML Cloud SDK allows you to get HTML page from the web by its URL, convert it to  [BMP](https://docs.fileformat.com/image/bmp/)  format and save into the local file system. The example below demonstrates how to convert HTML to BMP with the default conversion parameters.
+Aspose.HTML Cloud SDK allows you to get HTML page from the web by its URL, convert it to  {{%BMP%}}  format and save into the local file system. The example below demonstrates how to convert HTML to BMP with the default conversion parameters.
 
 {{< tabs tabTotal="10" tabID="3" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" >}}
 

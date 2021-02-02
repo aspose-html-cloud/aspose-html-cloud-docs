@@ -27,7 +27,7 @@ A widespread use case for Aspose.HTML Cloud SDK functions is file processing and
  - [HTML to GIF](/html/conversion-sdk-api/convert-html-to-gif/) 
 
 {{% alert color="primary" %}} 
-Please see the [Conversion REST API](/html/conversion-rest-api/) article to learn how to convert an [HTML](https://docs.fileformat.com/web/html/) file to other formats using direct REST API calls.
+Please see the [Conversion REST API](/html/conversion-rest-api/) article to learn how to convert an {{%HTML%}} file to other formats using direct REST API calls.
 
 {{% /alert %}} 
 

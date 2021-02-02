@@ -9,7 +9,7 @@ weight: 60
 
 ## **Summary**
 
-GIF is a popular image format that supports animated images and frequently used in web publishing. The following  article explains in a set of code examples how to convert an [HTML](https://docs.fileformat.com/web/html/) document to [GIF](https://docs.fileformat.com/image/gif/) using Aspose.HTML Cloud client SDKs.
+GIF is a popular image format that supports animated images and frequently used in web publishing. The following  article explains in a set of code examples how to convert an {{%HTML%}} document to {{%GIF%}} using Aspose.HTML Cloud client SDKs.
 
 {{% alert color="primary" %}} 
 
@@ -279,7 +279,7 @@ More details about available conversion parameters for HTML files are in the [SD
 
 ### **Example 3.**  Convert a Web page to GIF and save the result to the local file system
 
-Aspose.HTML Cloud SDK allows you to get HTML page from the web by its URL, convert it to [GIF](https://docs.fileformat.com/image/gif/) format and save the result into the local file system. The example below demonstrates how to convert HTML to GIF with the default conversion parameters.
+Aspose.HTML Cloud SDK allows you to get HTML page from the web by its URL, convert it to {{%GIF%}} format and save the result into the local file system. The example below demonstrates how to convert HTML to GIF with the default conversion parameters.
 
 {{< tabs tabTotal="10" tabID="3" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" >}}
 
