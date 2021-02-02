@@ -10,9 +10,9 @@ weight: 70
 
 ## **Summary**
 
-Aspose.HTML Cloud SDK for .NET produces a few quick and easy ways to convert HTML files to various image formats: by direct REST API calls or using SDKs. There are multiple image formats accessible for converting HTML documents with Aspose.HTML Cloud APIs - [JPEG](https://docs.fileformat.com/image/jpeg/), [PNG](https://docs.fileformat.com/image/png/), [BMP](https://docs.fileformat.com/image/bmp/), [GIF](https://docs.fileformat.com/image/gif/), and [TIFF](https://docs.fileformat.com/image/tiff/).
+Aspose.HTML Cloud SDK for .NET produces a few quick and easy ways to convert HTML files to various image formats: by direct REST API calls or using SDKs. There are multiple image formats accessible for converting HTML documents with Aspose.HTML Cloud APIs - {{%JPEG%}}, {{%PNG%}}, {{%BMP%}}, {{%GIF%}}, and {{%TIFF%}}.
 
-This article explains in a set of code examples how to convert an [HTML](https://docs.fileformat.com/web/html/) document to [TIFF](https://docs.fileformat.com/image/tiff/) using Aspose.HTML Cloud client SDKs.
+This article explains in a set of code examples how to convert an {{%HTML%}} document to {{%TIFF%}} using Aspose.HTML Cloud client SDKs.
 
 {{% alert color="primary" %}} 
 Learn how to convert an HTML file to other formats using direct REST API calls from the [Conversion REST API](/html/conversion-rest-api/) article.
@@ -284,7 +284,7 @@ More details about available conversion parameters for HTML files are in the [SD
 
 ### **Example 3.**  Convert a Web page to TIFF and save the result to the local file system
 
-Aspose.HTML Cloud SDK allows you to get HTML page from the web by its URL, convert it to  [TIFF](https://docs.fileformat.com/image/tiff/)   format and save into the local file system. The example below demonstrates how to convert HTML to TIFF with the default conversion parameters.
+Aspose.HTML Cloud SDK allows you to get HTML page from the web by its URL, convert it to  {{%TIFF%}}   format and save into the local file system. The example below demonstrates how to convert HTML to TIFF with the default conversion parameters.
 
 {{< tabs tabTotal="10" tabID="3" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" >}}
 

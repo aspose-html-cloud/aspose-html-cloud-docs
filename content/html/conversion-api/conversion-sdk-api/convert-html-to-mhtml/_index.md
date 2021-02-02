@@ -9,7 +9,7 @@ weight: 100
 
 ## **Summary**
 
-Aspose.HTML Cloud v4.0 provides the simplest API to convert [HTML](https://docs.fileformat.com/web/html/) documents to [MHTML](https://docs.fileformat.com/web/mhtml/) format with high quality, easy and fast. This article contains a set of code examples that explain how to convert HTML to MHTML using available SDKs.
+Aspose.HTML Cloud v4.0 provides the simplest API to convert {{%HTML%}} documents to {{%MHTML%}} format with high quality, easy and fast. This article contains a set of code examples that explain how to convert HTML to MHTML using available SDKs.
 
 {{% alert color="primary" %}} 
 

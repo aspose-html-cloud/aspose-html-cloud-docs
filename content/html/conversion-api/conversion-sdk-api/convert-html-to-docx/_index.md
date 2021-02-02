@@ -7,11 +7,11 @@ description: "Article explains a usage of Aspose.HTML Cloud client SDKs by a set
 weight: 30
 ---
 
-The document  formats [DOCX](https://docs.fileformat.com/word-processing/docx/) and [DOC](https://docs.fileformat.com/word-processing/doc/) can contain a wide range of data, including text, tables, raster and vector graphics, video, sounds and diagrams. These formats are very popular because of the variety of options they offer users to write any type of documents.  DOCX/DOC documents support a wide range of formatting features. Sometimes, they are not always the best choice for distributing as they can be easily modified without the author's approval.
+The document  formats {{%DOCX%}} and {{%DOC%}} can contain a wide range of data, including text, tables, raster and vector graphics, video, sounds and diagrams. These formats are very popular because of the variety of options they offer users to write any type of documents.  DOCX/DOC documents support a wide range of formatting features. Sometimes, they are not always the best choice for distributing as they can be easily modified without the author's approval.
 
 ## **Summary**
 
-Aspose.HTML Cloud produces quick and easy way to convert [HTML](https://docs.fileformat.com/web/html/) to [DOCX/DOC](https://docs.fileformat.com/word-processing/docx/) using Aspose.HTML Cloud client SDKs. This article explains in a set of code examples how to convert an HTML file to DOC/DOCX using available SDKs.
+Aspose.HTML Cloud produces quick and easy way to convert {{%HTML%}} to {{%DOC%}}{{%DOCX%}} using Aspose.HTML Cloud client SDKs. This article explains in a set of code examples how to convert an HTML file to DOC/DOCX using available SDKs.
 
 {{% alert color="primary" %}} 
 

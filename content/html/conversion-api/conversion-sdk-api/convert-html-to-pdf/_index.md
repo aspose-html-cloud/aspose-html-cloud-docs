@@ -9,7 +9,7 @@ weight: 10
 
 ## **Summary**
 
-Aspose.HTML Cloud v4.0 provides the simplest API to convert [HTML](https://docs.fileformat.com/web/html/) documents to [PDF](https://docs.fileformat.com/pdf/) format with high quality, easy and fast. HTML to PDF conversion is often required to establish limited access to documents editing or copying; to produce official documentation or send some information, for example, by email.
+Aspose.HTML Cloud v4.0 provides the simplest API to convert {{%HTML%}} documents to {{%PDF%}} format with high quality, easy and fast. HTML to PDF conversion is often required to establish limited access to documents editing or copying; to produce official documentation or send some information, for example, by email.
 
 The article explains in a set of code examples how to convert an HTML document to PDF using Aspose.HTML Cloud client SDKs. We will consider various scenarios of HTML to PDF conversion: from storage to storage, from a local file system to the storage and from the Web to a local file system.
 

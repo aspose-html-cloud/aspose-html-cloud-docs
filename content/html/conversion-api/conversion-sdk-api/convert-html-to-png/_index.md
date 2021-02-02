@@ -9,7 +9,7 @@ weight: 80
 
 ## Summary
 
-A widespread use case for Aspose.HTML Cloud SDKs functions is file processing and converting. This article explains in a set of code examples how to convert an [HTML](https://docs.fileformat.com/web/html/) document to [PNG](https://docs.fileformat.com/image/png/)  using Cloud client SDKs. PNG image format widely takes to transmit pictures over the network, display photos and graphics on web-pages and reserve in cloud storages. We will consider various scenarios of HTML to PNG conversion: from storage to storage, from a local file system to the storage and from the Web to the local file system. 
+A widespread use case for Aspose.HTML Cloud SDKs functions is file processing and converting. This article explains in a set of code examples how to convert an {{%HTML%}} document to {{%PNG%}}  using Cloud client SDKs. PNG image format widely takes to transmit pictures over the network, display photos and graphics on web-pages and reserve in cloud storages. We will consider various scenarios of HTML to PNG conversion: from storage to storage, from a local file system to the storage and from the Web to the local file system. 
 
 {{% alert color="primary" %}} 
 
@@ -147,7 +147,7 @@ HTML to PNG conversion occurs with the **default conversion options**: the resul
 
 ### **Example 2.** Convert HTML from the local file system to PNG with explicitly specified options and save to the storage
 
-The example below demonstrates how to convert an HTML file from the local file system to [PNG](https://docs.fileformat.com/image/png/) with explicitly specified options and save the result to the cloud storage.
+The example below demonstrates how to convert an HTML file from the local file system to {{%PNG%}} with explicitly specified options and save the result to the cloud storage.
 
  For conversion, we use methods of the **ConverterBuilder** class: **FromLocalFile**(`inputPath`), **To**(`ConversionOptions`) and **SaveToStorage**(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result.
 
@@ -282,7 +282,7 @@ More details about available conversion parameters for HTML files are in the [SD
 
 ### **Example 3.**  Convert a Web page to PNG and save the result to the local file system
 
-Aspose.HTML Cloud SDK allows you to get HTML page from the web by its URL, convert it to [PNG](https://docs.fileformat.com/image/png/) format and save the result into the local file system. The example below demonstrates how to convert HTML to PNG with the default conversion parameters.
+Aspose.HTML Cloud SDK allows you to get HTML page from the web by its URL, convert it to {{%PNG%}} format and save the result into the local file system. The example below demonstrates how to convert HTML to PNG with the default conversion parameters.
 
 {{< tabs tabTotal="10" tabID="3" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" >}}
 
