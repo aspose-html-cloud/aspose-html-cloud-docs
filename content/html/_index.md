@@ -24,12 +24,12 @@ The main highlights of Aspose.HTML Cloud REST API v4.0  are the [conversion feat
 
 The REST API supports a set of converting between formats. You can take a source document from the cloud storage or a local file system. The following conversions are available:
 
- - Convert {{%HTML%}} to different formats including {{%PDF%}}, {{%XPS%}}, {{%DOC%}}{{%DOCX%}}, {{%JPEG%}}, {{%PNG%}}, {{%TIFF%}}, {{%BMP%}}, {{%GIF%}}, {{%Markdown%}}, and {{%MHTML%}}. 
- - Convert {{%XHTML%}} to different formats including {{%PDF%}}, {{%XPS%}}, {{%DOC%}}{{%DOCX%}}, {{%JPEG%}}, {{%PNG%}}, {{%TIFF%}}, {{%BMP%}}, {{%GIF%}}, {{%Markdown%}}, and {{%MHTML%}}.
- - Convert {{%EPUB%}} to different formats including {{%PDF%}}, {{%XPS%}}, {{%DOC%}}{{%DOCX%}}, {{%JPEG%}}, {{%PNG%}}, {{%TIFF%}}, {{%BMP%}}, and {{%GIF%}}.
- - Convert {{%MHTML%}} to different formats including {{%PDF%}}, {{%XPS%}}, {{%DOC%}}{{%DOCX%}}, {{%JPEG%}}, {{%PNG%}}, {{%TIFF%}}, {{%BMP%}}, {{%GIF%}}, and {{%HTML%}}.
+ - Convert {{%HTML%}} to different formats including {{%PDF%}}, {{%XPS%}}, {{%DOC%}}, {{%DOCX%}}, {{%JPEG%}}, {{%PNG%}}, {{%TIFF%}}, {{%BMP%}}, {{%GIF%}}, {{%Markdown%}}, and {{%MHTML%}}. 
+ - Convert {{%XHTML%}} to different formats including {{%PDF%}}, {{%XPS%}}, {{%DOC%}}, {{%DOCX%}}, {{%JPEG%}}, {{%PNG%}}, {{%TIFF%}}, {{%BMP%}}, {{%GIF%}}, {{%Markdown%}}, and {{%MHTML%}}.
+ - Convert {{%EPUB%}} to different formats including {{%PDF%}}, {{%XPS%}}, {{%DOC%}}, {{%DOCX%}}, {{%JPEG%}}, {{%PNG%}}, {{%TIFF%}}, {{%BMP%}}, and {{%GIF%}}.
+ - Convert {{%MHTML%}} to different formats including {{%PDF%}}, {{%XPS%}}, {{%DOC%}}, {{%DOCX%}}, {{%JPEG%}}, {{%PNG%}}, {{%TIFF%}}, {{%BMP%}}, {{%GIF%}}, and {{%HTML%}}.
 
- - Convert {{%Markdown%}} to different formats including {{%PDF%}}, {{%XPS%}}, {{%DOC%}}{{%DOCX%}}, {{%JPEG%}}, {{%PNG%}}, {{%TIFF%}}, {{%BMP%}}, and {{%GIF%}}.
+ - Convert {{%Markdown%}} to different formats including {{%PDF%}}, {{%XPS%}}, {{%DOC%}}, {{%DOCX%}}, {{%JPEG%}}, {{%PNG%}}, {{%TIFF%}}, {{%BMP%}}, and {{%GIF%}}.
 
 {{% alert color="primary" %}}
 

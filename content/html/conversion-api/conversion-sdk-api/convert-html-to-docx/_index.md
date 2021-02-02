@@ -11,7 +11,7 @@ The document  formats {{%DOCX%}} and {{%DOC%}} can contain a wide range of data,
 
 ## **Summary**
 
-Aspose.HTML Cloud produces quick and easy way to convert {{%HTML%}} to {{%DOC%}}{{%DOCX%}} using Aspose.HTML Cloud client SDKs. This article explains in a set of code examples how to convert an HTML file to DOC/DOCX using available SDKs.
+Aspose.HTML Cloud produces quick and easy way to convert {{%HTML%}} to {{%DOC%}}, {{%DOCX%}} using Aspose.HTML Cloud client SDKs. This article explains in a set of code examples how to convert an HTML file to DOC/DOCX using available SDKs.
 
 {{% alert color="primary" %}} 
 
