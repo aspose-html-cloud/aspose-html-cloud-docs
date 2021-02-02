@@ -7,7 +7,7 @@ weight: 30
 
 ## **Summary**
 
-Aspose.HTML Cloud v4.0 provides the simplest API to convert an {{%HTML%}} page to one of the fixed-layout document formats including  {{%PDF%}}, {{%XPS%}} and {{%DOC%}}{{%DOCX%}}; to raster image formats including {{%JPEG%}}, {{%PNG%}}, {{%TIFF%}},  {{%BMP%}}, and  {{%GIF%}};  to {{%MD%}} and {{%MHTML%}} formats. You can convert the HTML document to any supported formats either from the storage by its name or from the web by its URL.
+Aspose.HTML Cloud v4.0 provides the simplest API to convert an {{%HTML%}} page to one of the fixed-layout document formats including  {{%PDF%}}, {{%XPS%}} and {{%DOC%}}, {{%DOCX%}}; to raster image formats including {{%JPEG%}}, {{%PNG%}}, {{%TIFF%}},  {{%BMP%}}, and  {{%GIF%}};  to {{%MD%}} and {{%MHTML%}} formats. You can convert the HTML document to any supported formats either from the storage by its name or from the web by its URL.
 
 The main differences from API v3.0 are:
 
