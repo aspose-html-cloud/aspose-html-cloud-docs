@@ -4,7 +4,7 @@ backend:
 
 media_folder: static/images
 public_folder: /images
-publish_mode: editorial_workflow
+#publish_mode: editorial_workflow
 enableIdentityWidget: false
 show_preview_links: true
 
