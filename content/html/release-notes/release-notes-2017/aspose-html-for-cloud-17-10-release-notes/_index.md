@@ -4,7 +4,7 @@ type: docs
 url: /aspose-html-for-cloud-17-10-release-notes/
 weight: 10
 ---
-## **Aspose.HTML for Cloud 17.10 - Release Notes+++**
+## **Aspose.HTML for Cloud 17.10 - Release Notes**
 
 - - -
 
