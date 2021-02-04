@@ -1,9 +1,14 @@
 ---
-title: "Getting Storage Information"
+title: Getting Storage Information
 type: docs
 url: /storage-api/getting-storage-information/
-keywords: "cloud storage, cloud storage api, python, java , .net,  c#,  android, swift, Perl, Node.js"
-description: "Article explains how to get a user associated cloud storage info such as disc usage, an object existence etc. using Aspose.HTML Cloud API v.4.0. SDKs are also available in PHP, Perl, Android, Swift, C#, Java and more to help developers speed up their development."
+keywords: cloud storage, cloud storage api, SDK example, cURL example, cURL GET
+  request, REST API, Credentials, Client ID, Client Secret, Python, Java,
+  .NET,  C#,  Android, Swift, Perl, Node.js
+description: The article explains how to get a user associated cloud storage
+  info such as disc usage, an object existence etc. using Aspose.HTML Cloud API
+  v.4.0. SDKs are also available in PHP, Perl, Android, Swift, C#, Java and more
+  to help developers speed up their development.
 weight: 20
 ---
 
@@ -117,7 +122,7 @@ REST API is one of the most common web services available today. It can be calle
 Aspose Cloud.HTML API requests are produced by sending HTTP requests to the following address, where, as a part of the URL route, the version of HTML product is indicated: https://api.aspose.cloud/v4.0/html.
 
 {{% alert color="primary" %}} 
-If you have questions about how to get a JWT token, please see the [Authentication](/html/general-api-notes/authentication/) article.
+If you have questions about how to get a JWT token, please see the [Authentication](/html/getting-started/authentication/) article.
 
 {{% /alert %}}  
 
