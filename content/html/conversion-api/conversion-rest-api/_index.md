@@ -13,34 +13,29 @@ description: The article provides a general description of Aspose.HTML Cloud
   their development.
 weight: 50
 ---
-
 ## **Summary**
 
 This article demonstrates how to convert HTML file to other formats by direct REST API calls. Here you find a more detailed description of the conversion REST API provided by Aspose.HTML Cloud v4.0. The article explains the following features:
 
-- a list of conversion REST API methods;
-- a cURL example that explains how to use conversion API asynchronously;
-- a reference to the conversion API parameters and the path format conventions of source and destination paths.
-
-
+* a list of conversion REST API methods;
+* a cURL example that explains how to use conversion API asynchronously;
+* a reference to the conversion API parameters and the path format conventions of source and destination paths.
 
 ## **REST API method list**
 
-The Aspose.HTML Cloud API is a REST-based API for wide usability on the web across platforms. The REST API uses existing HTTP methods, such as GET  POST and DELETE.
+The Aspose.HTML Cloud API is a REST-based API for wide usability on the web across platforms. The REST API uses existing HTTP methods, such as GET, POST and DELETE.
 
 All URIs are relative to https://api.aspose.cloud/v4.0/html.
 
-| **API**          | **Type** | **Description**                                              | **Swagger Link**                                             |
-| :--------------- | :------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| /conversion/     | POST     | Starts an asynchronous conversion operation.                 | [Convert](https://apireference.aspose.cloud/html/#/Conversion/Convert) |
+| **API**          | **Type** | **Description**                                                                            | **Swagger Link**                                                                               |
+| ---------------- | -------- | ------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------- |
+| /conversion/     | POST     | Starts an asynchronous conversion operation.                                               | [Convert](https://apireference.aspose.cloud/html/#/Conversion/Convert)                         |
 | /conversion/{id} | GET      | Gets the current status of previously started asynchronous conversion operation by its ID. | [GetConversionStatus](https://apireference.aspose.cloud/html/#/Conversion/GetConversionStatus) |
-| /conversion/{id} | DELETE   | Forces termination of the previously started asynchronous conversion operation by its ID. | [CancelConversion](https://apireference.aspose.cloud/html/#/Conversion/CancelConversion) |
+| /conversion/{id} | DELETE   | Forces termination of the previously started asynchronous conversion operation by its ID.  | [CancelConversion](https://apireference.aspose.cloud/html/#/Conversion/CancelConversion)       |
 
 {{% alert color="primary" %}} 
 For more details concerning the conversion API, see  [Conversion API Parameters](/html/conversion-rest-api/conversion-params/).
 {{% /alert %}}  
-
-
 
 ### **Asynchronous conversion cURL example**
 
@@ -48,7 +43,7 @@ A cURL is a  powerful tool to receive or send data from or to a server, using a 
 
 This example demonstrates how to convert an HTML file located in the default cloud storage to PDF with default parameters using the cURL utility (in the console, or using the system shell script - .bat file or PowerShell script in Windows, bash script in Linux etc.).
 
-#### **Step 1: Get a JWT token for the user authentication**  
+#### **Step 1: Get a JWT token for the user authentication**
 
 Get a JWT token from the authentication service using user credentials (see [Authentication](/html/general-api-notes/authentication/) for details). The response  `access_token` field contains the token that should be used by API calls as it's shown below. 
 
@@ -87,8 +82,6 @@ curl -X POST -v \
 {{< /tab >}}
 
 {{< /tabs >}}
-
-
 
 #### **Step 3: Check the previously started conversion process status using the GET method**
 
@@ -139,8 +132,6 @@ If the asynchronous process has been completed, the **GET method** response cont
 
 {{< /tabs >}}
 
-
-
 #### **Step 4 (optional): Cancel the previously started conversion using the DELETE method**
 
 The **DELETE method** cancels the previously started operation by its ID.
@@ -173,8 +164,4 @@ curl -v "https://api.aspose.cloud/v4.0/html/conversion/<ID> -X DELETE -H "Conten
 
 {{< /tabs >}}
 
-
-
 You can get information about all the API resources from the [Aspose.HTML for Cloud API Reference](https://apireference.aspose.cloud/html/).
-
-
