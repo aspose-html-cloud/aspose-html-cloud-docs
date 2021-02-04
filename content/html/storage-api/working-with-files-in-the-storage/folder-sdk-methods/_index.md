@@ -1,9 +1,14 @@
 ---
-title: "Folder SDK methods"
+title: Folder SDK methods
 type: docs
 url: /storage-api/working-with-folders-in-the-storage/folder-sdk-methods
-keywords: "cloud storage, cloud storage api, cloud storage folder, get folder content, create folder, delete folder, copy folder, move folder, python, java , .net,  c#,  android, swift ,Perl, Node.js"
-description: "Article explains how to manipulate folders in the cloud storage using Aspose.HTML Cloud API v.4.0. SDKs are also available in PHP, Perl, Android, Swift, C#, Java and more to help developers speed up their development."
+keywords: cloud storage, cloud storage api, cloud storage folder, get folder
+  content, create folder, delete folder, copy folder, move folder, python, java
+  , .net,  c#,  android, swift ,Perl, Node.js
+description: Article explains how to manipulate folders in the cloud storage
+  using Aspose.HTML Cloud API v.4.0. SDKs are also available in PHP, Perl,
+  Android, Swift, C#, Java and more to help developers speed up their
+  development.
 weight: 10
 ---
 
@@ -137,7 +142,7 @@ Moves a directory - overloaded method.
 Aspose.HTML Cloud  SDKs don't require you to receive tokens as they become obsolete. You need only pass your **Client Id** and **Client Secret** as the parameters to initialize an SDK entry point object.
 
 {{% alert color="primary" %}} 
-Please check the [QuickStart](/html/quickstart/) article to learn how to obtain the **Client Id** and **Client Secret** .
+Please check the [Create an Account and Get Credentials](/html/create-an-account-and-get-credentials/) article to learn how to obtain the **Client Id** and **Client Secret** .
 {{% /alert %}} 
 
 ### **Example 1: How to check if a folder exists in the storage**
