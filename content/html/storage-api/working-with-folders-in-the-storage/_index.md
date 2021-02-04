@@ -1,9 +1,13 @@
 ---
-title: "Working with Files in the Storage"
+title: Working with Files in the Storage
 type: docs
 url: /storage-api/working-with-files-in-the-storage/
-keywords: "cloud storage, cloud storage api, cloud storage file, upload file, download file, delete file, copy file, move file, python, java , .net,  c#,  android, swift ,Perl, Node.js"
-description: "Article explains how to manipulate files in the cloud storage using Aspose.HTML Cloud API v.4.0. SDKs are also available in PHP, Perl, Android, Swift, C#, Java and more to help developers speed up their development."
+keywords: cloud storage, cloud storage api, cloud storage file, upload file,
+  download file, delete file, copy file, move file, python, java ,
+  .net,  c#,  android, swift ,Perl, Node.js
+description: Article explains how to manipulate files in the cloud storage using
+  Aspose.HTML Cloud API v.4.0. SDKs are also available in PHP, Perl, Android,
+  Swift, C#, Java and more to help developers speed up their development.
 weight: 40
 ---
 
@@ -11,7 +15,7 @@ weight: 40
 
 Aspose.HTML Cloud allows you to work with documents saved on the cloud storage and use the storage for various scenarios. The most common use cases are cloud backup, disaster recovery and archiving infrequently accessed data. Having your files in the cloud storage will also give you the ability to share it with friends or co-workers.
 
- Storage services enable developers to store data in the cloud, relying on the authentication and other access features that control who can get to the data.  If you need any information getting started with Aspose.HTML Cloud, please refer to the [Quickstart](/html/quickstart/) article.
+ Storage services enable developers to store data in the cloud, relying on the authentication and other access features that control who can get to the data.  If you need any information getting started with Aspose.HTML Cloud, please refer to the [Create an Account and Get Credentials](/html/create-an-account-and-get-credentials/) article.
 
  This article provides a detailed description of REST API operations to manipulate files in the cloud storage, i.e. upload, download, copy, move or delete files. If storage supports file versioning, it is an option to operate with a specified file version.
 
