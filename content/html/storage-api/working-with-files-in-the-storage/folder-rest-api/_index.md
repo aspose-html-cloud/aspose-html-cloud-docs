@@ -124,7 +124,7 @@ curl -X PUT \
 ```
 
 {{% alert color="primary" %}} 
-If you have questions about how to get a JWT token, please see the [Authentication](/html/general-api-notes/authentication/) article.
+If you have questions about how to get a JWT token, please see the [Authentication](/html/getting-started/authentication/) article.
 
 {{% /alert %}}
 
