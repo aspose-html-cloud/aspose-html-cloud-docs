@@ -27,6 +27,7 @@ collections:
       summary: "{{title}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Keywords", name: "keywords", widget: "string"}
       - {label: "Weight", name: "weight", widget: "number", value_type: "int", default: 10, step: 10, min: 1, max: 1000 }
       - {label: "Type", name: "type", widget: "select", default: "docs", options: ["docs"], allow_add: false}
       - {label: "Body", name: "body", widget: "markdown"}
