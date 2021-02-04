@@ -1,9 +1,14 @@
 ---
-title: "Folder REST API operations"
+title: Folder REST API operations
 type: docs
 url: /storage-api/working-with-folders-in-the-storage/folder-rest-api/
-keywords: "cloud storage, cloud storage api, cloud storage folder, get folder content, create folder, delete folder, copy folder, move folder, python, java , .net,  c#,  android, swift ,Perl, Node.js"
-description: "Article explains how to manipulate folders in the cloud storage using Aspose.HTML Cloud API v.4.0. SDKs are also available in PHP, Perl, Android, Swift, C#, Java and more to help developers speed up their development."
+keywords: cloud storage, REST API, cloud storage api, cURL example, cloud
+  storage folder, get folder content, create folder, delete folder, copy folder,
+  move folder, Python, Java, .NET, C#, Android, Swift, Perl, Node.js
+description: The article explains how to manipulate folders in the cloud storage
+  using Aspose.HTML Cloud API v.4.0. SDKs are also available in PHP, Perl,
+  Android, Swift, C#, Java and more to help developers speed up their
+  development.
 weight: 20
 ---
 
@@ -119,7 +124,7 @@ curl -X PUT \
 ```
 
 {{% alert color="primary" %}} 
-If you have questions about how to get a JWT token, please see the [Authentication](/html/general-api-notes/authentication/) article.
+If you have questions about how to get a JWT token, please see the [Authentication](/html/getting-started/authentication/) article.
 
 {{% /alert %}}
 
