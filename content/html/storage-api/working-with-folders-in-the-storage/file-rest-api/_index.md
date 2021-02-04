@@ -2,7 +2,8 @@
 title: File REST API operations
 type: docs
 url: /storage-api/working-with-files-in-the-storage/file-rest-api/
-keywords: cloud storage, cloud storage api, cloud storage file, upload file,
+keywords: cloud storage, cloud storage api, REST API, cURL example, cURL GET
+  request, cURL POST request, cURL PUT request, cloud storage file, upload file,
   download file, delete file, copy file, move file, Python, Java,
   .NET,  C#,  Android, Swift, Perl, Node.js
 description: The article explains how to manipulate files in the cloud storage
