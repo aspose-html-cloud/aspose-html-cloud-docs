@@ -1,9 +1,15 @@
 ---
-title: "File REST API operations"
+title: File REST API operations
 type: docs
 url: /storage-api/working-with-files-in-the-storage/file-rest-api/
-keywords: "cloud storage, cloud storage api, cloud storage file, upload file, download file, delete file, copy file, move file, python, java , .net,  c#,  android, swift ,Perl, Node.js"
-description: "Article explains how to manipulate files in the cloud storage using Aspose.HTML Cloud API v.4.0. SDKs are also available in PHP, Perl, Android, Swift, C#, Java and more to help developers speed up their development."
+keywords: cloud storage, cloud storage api, REST API, cURL example, cURL GET
+  request, cURL POST request, cURL PUT request, cloud storage file, upload file,
+  download file, delete file, copy file, move file, Python, Java,
+  .NET,  C#,  Android, Swift, Perl, Node.js
+description: The article explains how to manipulate files in the cloud storage
+  using Aspose.HTML Cloud API v.4.0. SDKs are also available in PHP, Perl,
+  Android, Swift, C#, Java and more to help developers speed up their
+  development.
 weight: 20
 ---
 
@@ -60,7 +66,7 @@ curl -X GET \
 
 
 {{% alert color="primary" %}} 
-If you have questions about how to get a JWT token, please see the [Authentication](/html/general-api-notes/authentication/) article.
+If you have questions about how to get a JWT token, please see the [Authentication](/html/getting-started/authentication/) article.
 
 {{% /alert %}} 
 
