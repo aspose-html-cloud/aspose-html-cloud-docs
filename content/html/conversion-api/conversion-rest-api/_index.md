@@ -2,14 +2,14 @@
 title: "Conversion REST API"
 type: docs
 url: /conversion-rest-api/
-keywords: "format conversion, conversion REST API, html conversion, epub conversion, mhtml conversion, asynchronous conversion, conversion SDK, convert html to pdf, convert html to xps, convert html to doc, convert html to jpeg, convert html to png, convert html to tiff, python, java , .net,  c#, android, swift ,Perl, Node.js"
+keywords: "format conversion, conversion REST API, html conversion, epub conversion, mhtml conversion, asynchronous conversion, conversion SDK, convert html to pdf, convert html to xps, convert html to doc, convert html to jpeg, convert html to png, convert html to tiff, Python, Java, .NET,  C#, Android, Swift, Perl, Node.js"
 description: "The article provides a general description of Aspose.HTML Cloud REST API conversion features. Also SDKs are available in C#, Java, C++, Python, PHP, Ruby, Swift, Java/Android and more to help developers speed up their development."
 weight: 50
 ---
 
 ## **Summary**
 
-This article demonstrates how to convert HTML file to other formats by direct REST API calls. Here you find a more detailed description of the conversion REST API provided by Aspose.HTML Cloud v4.0. The article explains the following features:
+This article demonstrates how to convert an HTML file to other formats by direct REST API calls. Here you find a more detailed description of the conversion REST API provided by Aspose.HTML Cloud v4.0. The article explains the following features:
 
 - a list of conversion REST API methods;
 - a cURL example that explains how to use conversion API asynchronously;
@@ -19,7 +19,7 @@ This article demonstrates how to convert HTML file to other formats by direct RE
 
 ## **REST API method list**
 
-The Aspose.HTML Cloud API is a REST-based API for wide usability on the web across platforms. The REST API uses existing HTTP methods, such as GET  POST and DELETE.
+The Aspose.HTML Cloud API is a REST-based API for wide usability on the web across platforms. The REST API uses existing HTTP methods, such as GET, POST and DELETE.
 
 All URIs are relative to https://api.aspose.cloud/v4.0/html.
 
@@ -43,7 +43,7 @@ This example demonstrates how to convert an HTML file located in the default clo
 
 #### **Step 1: Get a JWT token for the user authentication**  
 
-Get a JWT token from the authentication service using user credentials (see [Authentication](/html/general-api-notes/authentication/) for details). The response  `access_token` field contains the token that should be used by API calls as it's shown below. 
+Get a JWT token from the authentication service using user credentials (see [Authentication](/html/getting-started/authentication/) for details). The response `access_token` field contains the token that should be used by API calls as it's shown below. 
 
 #### **Step 2: Initialize an asynchronous conversion process using the POST method**
 
@@ -80,7 +80,6 @@ curl -X POST -v \
 {{< /tab >}}
 
 {{< /tabs >}}
-
 
 
 #### **Step 3: Check the previously started conversion process status using the GET method**
