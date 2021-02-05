@@ -21,8 +21,8 @@ collections:
     create: true
     media_folder: ''
     public_folder: ''
-#    preview_path: "html/{{slug}}"
-    preview_path: "html/{{dirname}}/{{filename}}.html"
+    preview_path: "html/{{slug}}"
+#    preview_path: "html/{{dirname}}/{{filename}}.html"
     nested:
       depth: 100
       summary: "{{title}}"
