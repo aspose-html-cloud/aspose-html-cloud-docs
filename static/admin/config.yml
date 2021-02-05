@@ -21,7 +21,7 @@ collections:
     create: true
     media_folder: ''
     public_folder: ''
-#    preview_path: "html/{{slug}}"
+    preview_path: "html/{{slug}}"
     nested:
       depth: 100
       summary: "{{title}}"
