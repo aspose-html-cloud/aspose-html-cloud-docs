@@ -7,7 +7,7 @@ description: "Article explains how to manipulate folders in the cloud storage us
 weight: 30
 ---
 
-### Summary
+## Summary
 
 This article provides a detailed description of REST API operations to manipulate folders in the cloud storage using Aspose.HTML Cloud API v.4.0. SDKs.
 
@@ -15,13 +15,13 @@ This article provides a detailed description of REST API operations to manipulat
 Install Aspose.HTML Cloud SDK for .NET via [NuGet](https://www.nuget.org/packages/Aspose.HTML-Cloud/).
 {{% /alert %}}  
 
-### API description
+## API description
 
 A call to the REST API consists of a request performed by the client, and a response returned by the service. In the request, you send a URL with information about which operation you want to call, the resource to act upon, query parameters, etc.
 
 All URIs are relative to https://api.aspose.cloud/v4.0/html.
 
-#### Get a list of folder files and subfolders
+### Get a list of folder files and subfolders
 
 - GET: return a list of files and folders in the specified folder (or in the root folder by default) of the storage. 
 
@@ -38,7 +38,7 @@ All URIs are relative to https://api.aspose.cloud/v4.0/html.
 
 
 
-#### Create a folder
+### Create a folder
 
 - POST: create a folder.
 
@@ -55,7 +55,7 @@ All URIs are relative to https://api.aspose.cloud/v4.0/html.
 
 
 
-#### Copy a folder
+### Copy a folder
 
 - PUT: copy the specified folder with files and subfolders to the new path.
 
@@ -74,7 +74,7 @@ All URIs are relative to https://api.aspose.cloud/v4.0/html.
 
 
 
-#### Move a folder
+### Move a folder
 
 - PUT: move the specified folder with files and subfolders to the new path.
 
@@ -93,7 +93,7 @@ All URIs are relative to https://api.aspose.cloud/v4.0/html.
 
 
 
-#### Delete a folder
+### Delete a folder
 
 - DELETE: delete the specified folder.
 
@@ -110,9 +110,9 @@ All URIs are relative to https://api.aspose.cloud/v4.0/html.
 
 
 
-### SDK Examples
+## SDK Examples
 
-#### Example 1: How to create a folder
+### Example 1: How to create a folder
 
 The example below demonstrates how to create a folder in the storage.
 
@@ -168,7 +168,7 @@ The **CreateDirectory**(`folderPath`, `storageName`) method creates a directory 
 
 
 
-#### Example 2: How to get the folder content
+### Example 2: How to get the folder content
 
 {{< tabs tabTotal="1" tabID="2" tabName1="C#" >}}
 

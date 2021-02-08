@@ -199,7 +199,7 @@ namespace Aspose.Html.Cloud.Examples
 
  In the example, we use methods of the **ConverterBuilder** class: FromStorageFile(`inputPath`), To(`ConversionOptions`) and SaveToStorage(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result. HTML to XPS conversion occurs with the default conversion options: the resulting XPS document's width and height correspond to A4, all margins have zero value.
 
-More details about available conversion parameters for HTML files are in the [SDK Conversion Options](/conversion-options/) section.
+More details about available conversion parameters for HTML files are in the [SDK Conversion Options](/html/conversion-options/) section.
 
 ##### Case 2. Convert a Web page by its URL to XPS and save to the local file system
 

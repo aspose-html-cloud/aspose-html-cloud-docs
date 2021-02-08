@@ -7,7 +7,7 @@ description: "Article explains how to manipulate files in the cloud storage usin
 weight: 40
 ---
 
-### Summary
+## Summary
 
 Aspose.HTML Cloud allows you to work with documents saved on the cloud storage. The Aspose.HTML Cloud API is a REST-based API for wide usability on the web across platforms. 
 
@@ -21,11 +21,11 @@ Install Aspose.HTML Cloud SDK for .NET via [NuGet](https://www.nuget.org/package
 
 
 
-### API description
+## API description
 
 All URIs are relative to https://api.aspose.cloud/v4.0/html.
 
-#### Download a file
+### Download a file
 
 - GET: download a file. The response object contains the raw data of the file. 
 
@@ -42,8 +42,7 @@ All URIs are relative to https://api.aspose.cloud/v4.0/html.
 | versionId   | File version ID or the last version by default.   | Query     | -        |
 
 
-
-#### Upload a file
+### Upload a file
 
 - POST: upload a file. If the file exists, a new version of the file will be added on the same location.
 
@@ -61,7 +60,7 @@ All URIs are relative to https://api.aspose.cloud/v4.0/html.
 
 
 
-#### Copy a file
+### Copy a file
 
 - PUT: copy the specified file to another path (if *versionId* is specified, this version will be copied).
 
@@ -81,7 +80,7 @@ All URIs are relative to https://api.aspose.cloud/v4.0/html.
 
 
 
-#### Move a file
+### Move a file
 
 - PUT: move the specified file to another path (if *versionId* is specified, this version will be copied to a new location and deleted).
 
@@ -101,7 +100,7 @@ All URIs are relative to https://api.aspose.cloud/v4.0/html.
 
 
 
-#### Delete a file
+### Delete a file
 
 - DELETE: delete a file. Only last version will be deleted by default; if *versionId* is specified, only this version will be deleted. 
 
@@ -119,9 +118,9 @@ All URIs are relative to https://api.aspose.cloud/v4.0/html.
 
 
 
-### SDK Examples
+## SDK Examples
 
-#### Example 1: How to upload a file
+### Example 1: How to upload a file
 
 The following example demonstrates how to upload a file by its local file system path to the specified storage.
 
@@ -184,7 +183,7 @@ namespace Aspose.Html.Cloud.Examples
 
 
 
-#### Example 2: How to download a file
+### Example 2: How to download a file
 
 The example below shows how to download a file from storage to the local file system.
 

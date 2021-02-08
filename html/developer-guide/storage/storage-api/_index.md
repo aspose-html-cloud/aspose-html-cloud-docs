@@ -17,9 +17,9 @@ The provided storage API of version 4.0 is an alternative interface to the same 
 
 Storage API is divided into the following groups:
 
-- [Storage common info access API](/storage-props-api/)
-- [Storage folder manipulation API](/storage-folder-api/)
-- [Storage file manipulation API](/storage-file-api/)
+- [Storage common info access API](/html/storage-props-api/)
+- [Storage folder manipulation API](/html/storage-folder-api/)
+- [Storage file manipulation API](/html/storage-file-api/)
 
  To obtain more information about each group of APIs and SDK usage examples, click the correspondent link. 
 
@@ -57,4 +57,4 @@ All URIs are relative to https://api.aspose.cloud/v4.0/html.
 
 ## Available SDKs
 
-Using an SDK (API client) is the quickest way for a developer to speed up the development. An SDK takes care of a lot of low-level details of making requests and handling responses and lets you focus on writing code specific to your particular project. Check out our [GitHub repository](https://github.com/aspose-html-cloud) for a complete list of Aspose.HTML SDKs along with working examples, to get you started in no time. Please check [Available SDKs](/available-sdks/) article to learn how to add an SDK to your project.
+Using an SDK (API client) is the quickest way for a developer to speed up the development. An SDK takes care of a lot of low-level details of making requests and handling responses and lets you focus on writing code specific to your particular project. Check out our [GitHub repository](https://github.com/aspose-html-cloud) for a complete list of Aspose.HTML SDKs along with working examples, to get you started in no time. Please check [Available SDKs](/html/available-sdks/) article to learn how to add an SDK to your project.
