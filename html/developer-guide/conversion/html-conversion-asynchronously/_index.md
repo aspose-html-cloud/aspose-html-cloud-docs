@@ -28,7 +28,7 @@ All URIs are relative to https://api.aspose.cloud/v4.0/html.
 | /conversion/{id} | GET      | Gets the current status of previously started asynchronous conversion operation by its ID. | [GetConversionStatus](https://apireference.aspose.cloud/html/#/Conversion/GetConversionStatus) |
 | /conversion/{id} | DELETE   | Forces termination of the previously started asynchronous conversion operation by its ID. | [CancelConversion](https://apireference.aspose.cloud/html/#/Conversion/CancelConversion) |
 
-For more details concerning the conversion API, see  [Conversion API Parameters](/html-conversion-asynchronously/html-conversion-params/).
+For more details concerning the conversion API, see  [Conversion API Parameters](/html/html-conversion-asynchronously/html-conversion-params/).
 
 
 
@@ -191,7 +191,7 @@ curl -v "https://api.aspose.cloud/v4.0/html/conversion/<ID> -X DELETE -H "Conten
 
 ## **Available SDKs**
 
-Using an SDK (API client) is the quickest way for a developer to speed up the development. An SDK takes care of a lot of low-level details of making requests and handling responses and lets you focus on writing code specific to your particular project. Check out our [GitHub repository](https://github.com/aspose-html-cloud) for a complete list of Aspose.HTML SDKs along with working examples, to get you started in no time. Please check [Available SDKs](/available-sdks/) article to learn how to add an SDK to your project.
+Using an SDK (API client) is the quickest way for a developer to speed up the development. An SDK takes care of a lot of low-level details of making requests and handling responses and lets you focus on writing code specific to your particular project. Check out our [GitHub repository](https://github.com/aspose-html-cloud) for a complete list of Aspose.HTML SDKs along with working examples, to get you started in no time. Please check [Available SDKs](/html/available-sdks/) article to learn how to add an SDK to your project.
 
 ### **SDK Examples**
 

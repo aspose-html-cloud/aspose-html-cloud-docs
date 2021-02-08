@@ -9,7 +9,7 @@ weight: 20
 
 
 
-### Summary
+## Summary
 
 Cloud storage allows world-wide storage and retrieval of data at any time. You can use storage for various scenarios including storing data for archival or disaster recovery.
 
@@ -19,7 +19,7 @@ This article provides a detailed description of REST API storage-wide operations
 
 
 
-### API description
+## API description
 
 REST API is one of the most common web services available today. It can be called from any platform that supports HTTP / HTTPS and it does not depend on the software running on the server or client. 
 
@@ -27,7 +27,7 @@ The action must be recorded by the HTTP request method that you make. The most c
 
 All URIs are relative to https://api.aspose.cloud/v4.0/html.
 
-#### Check if a named storage exists
+### Check if a named storage exists
 
 - GET: check if specified storage exists and is associated with application user.
 
@@ -43,7 +43,7 @@ All URIs are relative to https://api.aspose.cloud/v4.0/html.
 
 
 
-#### Check if an object exists in the storage
+### Check if an object exists in the storage
 
 - GET: check if specified file or folder exists in the specified or default storage.
 
@@ -61,7 +61,7 @@ All URIs are relative to https://api.aspose.cloud/v4.0/html.
 
 
 
-#### Get a storage disc usage
+### Get a storage disc usage
 
 - GET: return a total and used disc space in bytes of the specified storage. 
 
@@ -77,7 +77,7 @@ All URIs are relative to https://api.aspose.cloud/v4.0/html.
 
 
 
-#### Get a list of file versions
+### Get a list of file versions
 
 - GET: return a list of versions of specified file, if versioning is supported by the specified or default storage.
 
@@ -94,9 +94,9 @@ All URIs are relative to https://api.aspose.cloud/v4.0/html.
 
 
 
-### SDK Examples
+## SDK Examples
 
-#### Example 1: How to check if an object exists in the storage
+### Example 1: How to check if an object exists in the storage
 
 The following example shows how to check if an object (file or folder) specified by the path exists in the storage.
 
@@ -156,7 +156,7 @@ namespace Aspose.Html.Cloud.Examples
 
 
 
-#### Example 2: How to get the storage disc usage
+### Example 2: How to get the storage disc usage
 
 {{< tabs tabTotal="1" tabID="2" tabName1="C#" >}}
 

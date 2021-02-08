@@ -14,10 +14,10 @@ weight: 10
 Aspose.HTML Cloud is a REST API for manipulating and converting HTML documents.
 Our REST API provides the following capabilities:
 
-- Converting a source document into  [PDF](https://docs.fileformat.com/pdf/) or [XPS](https://docs.fileformat.com/page-description-language/xps/) format. The source document can be an HTML document from the cloud storage (also [XHTML](https://docs.fileformat.com/web/xhtml/), [MHTML](https://docs.fileformat.com/web/mhtml/), [EPUB](https://docs.fileformat.com/ebook/epub/), [Markdown](https://docs.fileformat.com/word-processing/md/)), or a Web page by its URL.
+- Converting a source document into  [PDF](https://docs.fileformat.com/pdf/) or [XPS](https://docs.fileformat.com/page-description-language/xps/) format. The source document can be an [HTML](https://docs.fileformat.com/web/html/) document from the cloud storage (also [XHTML](https://docs.fileformat.com/web/xhtml/), [MHTML](https://docs.fileformat.com/web/mhtml/), [EPUB](https://docs.fileformat.com/ebook/epub/), [Markdown](https://docs.fileformat.com/word-processing/md/)), or a Web page by its URL.
 - Converting a source document into one of the image formats: [JPEG](https://docs.fileformat.com/image/jpeg/),  [PNG](https://docs.fileformat.com/image/png/), [TIFF](https://docs.fileformat.com/image/tiff/),  [BMP](https://docs.fileformat.com/image/bmp/), [GIF](https://docs.fileformat.com/image/gif/).
 - Converting a Markdown file into [HTML](https://docs.fileformat.com/web/html/).
-- Convert MHTML to HTML.
+- Convert [MHTML](https://docs.fileformat.com/web/mhtml/) to [HTML](https://docs.fileformat.com/web/html/).
 
 
 
@@ -30,7 +30,7 @@ Also, our REST API provides capabilities to manipulate files that are stored in 
 - Copy, move and delete files and folders in the cloud storage.
 - Check if named storage exists and is accessible to the user and get the storage total and used disc space.
 
-For more details about the storage API features, see the [Storage](https://docs.aspose.cloud/html/geveloper-guide/storage/) section.
+For more details about the storage API features, see the [Storage](https://docs.aspose.cloud/html/storage/) section.
 
 {{% /alert %}} 
 
