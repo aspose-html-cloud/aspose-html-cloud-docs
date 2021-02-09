@@ -2,8 +2,8 @@
 title: "Convert HTML to PDF"
 type: docs
 url: /conversion-sdk-api/convert-html-to-pdf/
-keywords: "format conversion, html conversion, asynchronous conversion, conversion SDK, convert html to pdf, python, ruby, php, java, .net,  c#,  android, swift, Node.js"
-description: "Article explains a usage of Aspose.HTML Cloud client SDKs to convert HTML to PDF by a set of examples. SDKs are available in PHP, Python, Ruby, Android, Swift, C#, Java, C++, Node.js and more."
+keywords: "format conversion, html conversion, asynchronous conversion, conversion SDK, convert html to pdf, Python, PHP, Perl, Android, Swift, C#, Java, Node.js"
+description: "The article explains the usage of Aspose.HTML Cloud client SDKs for HTML to PDF conversion by a set of examples. SDKs are wrappers upon REST API to help developers speed up their development. SDKs are available in PHP, Perl, Android, Swift, C#, Java and more."
 weight: 10
 ---
 
