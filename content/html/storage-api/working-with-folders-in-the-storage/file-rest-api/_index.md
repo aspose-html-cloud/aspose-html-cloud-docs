@@ -2,14 +2,9 @@
 title: File REST API operations
 type: docs
 url: /storage-api/working-with-files-in-the-storage/file-rest-api/
-keywords: cloud storage, cloud storage api, REST API, cURL example, cURL GET
-  request, cURL POST request, cURL PUT request, cloud storage file, upload file,
-  download file, delete file, copy file, move file, Python, Java,
-  .NET,  C#,  Android, Swift, Perl, Node.js
-description: The article explains how to manipulate files in the cloud storage
-  using Aspose.HTML Cloud API v.4.0. SDKs are also available in PHP, Perl,
-  Android, Swift, C#, Java and more to help developers speed up their
-  development.
+keywords: "cloud storage, cloud storage api, REST API, cURL example, cURL GET request, cURL POST request, cURL PUT request, cloud storage file, upload file, download file, delete file, copy file, move file, Python, Java, .NET, C#, Android, Swift, Perl, Node.js"
+description: "The article explains how to manipulate files in the cloud storage using Aspose.HTML Cloud API v.4.0. SDKs are also available in PHP, Perl, Android, Swift, C#, Java and more to help developers speed up their
+  development."
 weight: 20
 ---
 
@@ -23,7 +18,7 @@ This article provides a detailed description of REST API operations to manipulat
 
 ## **REST API description**
 
-Aspose.HTML  RESTful API uses HTTP requests to access and manage data. The data can be handled by invoking GET, PUT, POST and DELETE methods, which refers to the reading, updating, creating and deleting operations concerning resources.
+Aspose.HTML RESTful API uses HTTP requests to access and manage data. The data can be handled by invoking GET, PUT, POST and DELETE methods, which refers to the reading, updating, creating and deleting operations concerning resources.
 
 A call to the REST API consists of a request performed by the client, and a response returned by the service. In the request, you send a URL with information about which operation you want to call, the resource to act upon, query parameters, etc. More detailed information about REST URLs’ structure and specific behavior linked to the API such as Authentication, Request Queuing, and Storage you can find in the [REST API Overview](https://docs.aspose.cloud/total/getting-started/rest-api-overview/) article.
 
