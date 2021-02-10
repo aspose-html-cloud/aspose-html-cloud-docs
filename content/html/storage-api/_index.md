@@ -2,8 +2,8 @@
 title: "Storage API"
 type: docs
 url: /storage-api/
-keywords: "cloud storage, cloud storage api, python, java , .net,  c#,  android, swift ,Perl, Node.js"
-description: "Article provides common information about Aspose.HTML Cloud API v.4.0 usage. SDKs are also available in PHP, Perl, Android, Swift, C#, Java and more to help developers speed up their development."
+keywords: "cloud storage, cloud storage api, REST API, SDK, Python, PHP, Perl, Android, Swift, C#, Java, Node.js"
+description: "The article provides common information about Aspose.HTML Cloud API v.4.0 usage. SDKs are also available in PHP, Perl, Android, Swift, C#, Java and more to help developers speed up their development."
 weight: 100
 ---
 
