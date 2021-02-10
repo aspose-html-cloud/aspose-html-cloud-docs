@@ -13,7 +13,7 @@ description: The article provides a general description of Aspose.HTML Cloud
   their development.
 weight: 50
 ---
-## **Summary**
+## **Summary ++**
 
 This article demonstrates how to convert HTML file to other formats by direct REST API calls. Here you find a more detailed description of the conversion REST API provided by Aspose.HTML Cloud v4.0. The article explains the following features:
 
