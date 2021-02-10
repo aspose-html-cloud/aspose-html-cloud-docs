@@ -1,12 +1,12 @@
 backend:
-  name: git-gateway
-#  repo: tpavel-aspose/sample-html-docs-300
+  name: github
+  repo: aspose-html-cloud/aspose-html-cloud-docs
   branch: develop_apiv4
   squash_merges: true
 #  use_graphql: true
 
-#site_url: https://aspose-documentation-html.netlify.app
-#display_url: https://docs.aspose.com
+#site_url: https://aspose-html-cloud-docs.netlify.app
+display_url: https://docs.aspose.cloud/
 media_folder: static/images
 public_folder: /images
 publish_mode: editorial_workflow
