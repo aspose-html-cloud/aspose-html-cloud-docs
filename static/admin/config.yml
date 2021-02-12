@@ -28,15 +28,11 @@ collections:
       summary: "{{title}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - label: "Ext props"
-        name: "ext"
-        widget: "object"
-        collapsed: true
-        fields:
-          - {label: "Keywords", name: "keywords", widget: "string", required: false}
-          - {label: "Description", name: "description", widget: "string", required: false}
-          - {label: "Weight", name: "weight", widget: "number", value_type: "int", default: 10, step: 10, min: 1, max: 1000, required: false }
-          - {label: "Type", name: "type", widget: "select", default: "docs", options: ["docs"], allow_add: false, required: false}
+      - {label: "Keywords", name: "keywords", widget: "string", required: false}
+      - {label: "Description", name: "description", widget: "string", required: false}
+      - {label: "Weight", name: "weight", widget: "number", value_type: "int", default: 10, step: 10, min: 1, max: 1000, required: false }
+      #      - {label: "Type", name: "type", widget: "select", default: "docs", options: ["docs"], allow_add: false, required: false}
+      - {label: "Type", name: "type", widget: "hidden", default: "docs"}
       - {label: "Body", name: "body", widget: "markdown", required: false}
     meta: { path: { widget: string, label: "Path", index_file: "_index" } }
     summary: "[{{weight}}] - {{title}}"
