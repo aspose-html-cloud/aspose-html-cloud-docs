@@ -12,6 +12,8 @@ public_folder: /images
 publish_mode: editorial_workflow
 enableIdentityWidget: false
 show_preview_links: true
+slug:
+  clean_accents: false
 
 collections:
   - name: html
