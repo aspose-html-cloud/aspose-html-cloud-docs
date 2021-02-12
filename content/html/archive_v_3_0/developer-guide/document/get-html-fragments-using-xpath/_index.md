@@ -1,7 +1,6 @@
 ---
 title: "Get HTML fragments using XPath"
 type: docs
-url: /archive_v_3_0/get-html-fragments-using-xpath/
 weight: 20
 ---
 

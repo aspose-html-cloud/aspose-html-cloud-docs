@@ -1,7 +1,6 @@
 ---
 title: "EPUB converter"
 type: docs
-url: /conversion-sdk-api/epub-converter/
 keywords: "format conversion, epub conversion, convert epub, asynchronous conversion, conversion SDK, convert epub to pdf, convert epub to xps, convert epub to docx, convert epub to image, SDK example, Python, PHP, Perl, Android, Swift, C#, Java, Node.js"
 description: "This section provides information on a description of conversion features of Aspose.HTML Cloud SDK API and the list of supported EPUB files conversion scenarios using various SDKs. The SDKs are wrappers upon REST API to help developers speed up their development. SDKs are available in PHP, Perl, Android, Swift, C#, Java and more."
 weight: 50

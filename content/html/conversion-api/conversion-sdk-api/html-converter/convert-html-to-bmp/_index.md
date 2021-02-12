@@ -1,7 +1,6 @@
 ---
 title: "Convert HTML to BMP"
 type: docs
-url: /conversion-sdk-api/convert-html-to-bmp/
 keywords: "format conversion, html conversion, asynchronous conversion, conversion SDK, convert html to image, convert html to bmp, Python, PHP, Perl, Android, Swift, C#, Java, Node.js"
 description: "The article explains the usage of Aspose.HTML Cloud client SDKs for HTML to BMP conversion by a set of examples. SDKs are wrappers upon REST API to help developers speed up their development. SDKs are available in PHP, Perl, Android, Swift, C#, Java and more."
 weight: 50

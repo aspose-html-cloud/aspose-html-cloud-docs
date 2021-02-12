@@ -1,7 +1,6 @@
 ---
 title: "Conversion REST API"
 type: docs
-url: /conversion-rest-api/
 keywords: "format conversion, conversion REST API, html conversion, epub conversion, mhtml conversion, asynchronous conversion, conversion SDK, convert html to pdf, convert html to xps, convert html to doc, convert html to jpeg, convert html to png, convert html to tiff, Python, Java, .NET,  C#, Android, Swift, Perl, Node.js"
 description: "The article provides a general description of Aspose.HTML Cloud REST API conversion features. Also SDKs are available in C#, Java, C++, Python, PHP, Ruby, Swift, Java/Android and more to help developers speed up their development."
 weight: 50

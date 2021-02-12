@@ -1,7 +1,6 @@
 ---
 title: "Overview"
 type: docs
-url: /overview/
 keywords: "Cloud SDKs, REST API, Cloud APIs, cloud account, Authentication"
 description: "This article introduces you about Aspose.HTML Cloud APIs security and authentication. You learn about actual and deprecated REST API version, Cloud SDKs wrappers and API Explorer."
 weight: 10

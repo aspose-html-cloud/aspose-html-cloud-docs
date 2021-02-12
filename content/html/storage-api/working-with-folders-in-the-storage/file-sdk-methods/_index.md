@@ -1,7 +1,6 @@
 ---
 title: "File SDK methods"
 type: docs
-url: /storage-api/working-with-files-in-the-storage/file-sdk-methods/
 keywords: "cloud storage, cloud storage api, cloud storage file, upload file, download file, delete file, copy file, move file, SDKs, SDK example, Python, PHP, Perl, Android, Swift, C#, Java, Node.js"
 description: "Article explains how to manipulate files in the cloud storage using Aspose.HTML Cloud API v.4.0. SDKs are also available in PHP, Perl, Android, Swift, C#, Java and more to help developers speed up their development."
 weight: 10

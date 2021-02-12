@@ -1,7 +1,6 @@
 ---
 title: "Get HTML Document"
 type: docs
-url: /archive_v_3_0/get-html-document/
 weight: 10
 ---
 

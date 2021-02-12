@@ -1,7 +1,6 @@
 ---
 title: "Markdown converter"
 type: docs
-url: /conversion-sdk-api/markdown-converter/
 keywords: "format conversion, convert markdown, markdown conversion, asynchronous conversion, conversion SDK, convert markdown to pdf, convert markdown to xps, convert markdown to doc, convert markdown to image, Python, PHP, Perl, Android, Swift, C#, Java, Node.js"
 description: "The articles in this section provide information on a description of conversion features of Aspose.HTML Cloud SDK API and the list of supported Markdown files conversion scenarios using various SDKs. The SDKs are wrappers upon REST API to help developers speed up their development. SDKs are available in PHP, Perl, Android, Swift, C#, Java and more."
 weight: 40

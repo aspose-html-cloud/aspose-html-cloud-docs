@@ -1,7 +1,6 @@
 ---
 title: "Convert EPUB to TIFF"
 type: docs
-url: /conversion-sdk-api/convert-epub-to-tiff/
 keywords: "EPUB to TIFF, EPUB conversion, EPUB file, asynchronous conversion, conversion SDK, convert EPUB to TIFF, Python, Ruby, PHP, Java, .Net,  C#,  Android, Swift, Node.js"
 description: "Article explains a usage of Aspose.HTML Cloud client SDKs to convert EPUB to TIFF by a set of examples. SDKs are available in PHP, Python, Ruby, Android, Swift, C#, Java, C++, Node.js and more."
 weight: 30

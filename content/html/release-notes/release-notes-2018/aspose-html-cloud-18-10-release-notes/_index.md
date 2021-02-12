@@ -1,7 +1,6 @@
 ---
 title: "Aspose.HTML Cloud 18.10 Release Notes"
 type: docs
-url: /aspose-html-cloud-18-10-release-notes/
 weight: 30
 ---
 
