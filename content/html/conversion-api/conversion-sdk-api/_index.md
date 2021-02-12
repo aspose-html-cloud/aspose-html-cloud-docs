@@ -3,7 +3,7 @@ title: "Conversion SDK API"
 type: docs
 url: /conversion-sdk-api/
 keywords: "format conversion, html conversion, epub conversion, mhtml conversion, asynchronous conversion, conversion SDK, convert html to pdf, convert html to xps, convert html to doc, convert html to jpeg, convert html to png, convert html to tiff, Python, PHP, Perl, Android, Swift, C#, Java, Node.js"
-description: "The article provides a general description of conversion features of Aspose.HTML Cloud SDK API. SDKs are wrappers upon REST API to help developers speed up their development. SDKs are available in PHP, Perl, Android, Swift, C#, Java and more."
+description: "In this documentation chapter, you find out in details on how to convert documents from different source formats HTML, XHTML, MHTML, EPUB,  and Markdown to a variety of the most popular formats, such as PDF, XPS, DOCX, DOC, PNG, JPG, BMP, TIFF, GIFF, and others using Aspose.HTML Cloud SDKs. SDKs are wrappers upon REST API to help developers speed up their development. SDKs are available in Python, PHP, Perl, Android, Swift, C#, Java and more."
 weight: 40
 ---
 
@@ -13,18 +13,19 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 
 ## **SDK conversion examples**
 
-A widespread use case for Aspose.HTML Cloud SDK functions is file processing and converting. To view code examples that illustrate various cases of client SDKs usage for the format conversions, follow the links:
+A widespread use case for Aspose.HTML Cloud SDK functions is file processing and converting. The following conversion scenarios are supported:
+
+ - [HTML converter](/html/conversion-sdk-api/html-converter/) 
+ - [MHTML converter](/html/conversion-sdk-api/mhtml-converter/) 
+ - [XHTML converter](/html/conversion-sdk-api/xhtml-converter/) 
+ - [Markdown converter](/html/conversion-sdk-api/markdown-converter/) 
+ - [EPUB converter](/html/conversion-sdk-api/epub-converter/) 
+
+To view code examples that illustrate various cases of client SDKs usage for the format conversions, follow the most-popular links:
 
  - [HTML to PDF](/html/conversion-sdk-api/convert-html-to-pdf/) 
- - [HTML to XPS](/html/conversion-sdk-api/convert-html-to-xps/)
- - [HTML to DOCX](/html/conversion-sdk-api/convert-html-to-docx/) 
- - [HTML to MHTML](/html/conversion-sdk-api/convert-html-to-mhtml/)
- - [HTML to Markdown](/html/conversion-sdk-api/convert-html-to-markdown/)
- - [HTML to JPEG](/html/conversion-sdk-api/convert-html-to-jpeg/) 
- - [HTML to PNG](/html/conversion-sdk-api/convert-html-to-png/) 
- - [HTML to TIFF](/html/conversion-sdk-api/convert-html-to-tiff/) 
- - [HTML to BMP](/html/conversion-sdk-api/convert-html-to-bmp/) 
- - [HTML to GIF](/html/conversion-sdk-api/convert-html-to-gif/) 
+ - [MHTML to PDF](/html/conversion-sdk-api/convert-mhtml-to-pdf/)
+ - [HTML to JPG](/html/conversion-sdk-api/convert-html-to-jpg/) 
 
 {{% alert color="primary" %}} 
 Please see the [Conversion REST API](/html/conversion-rest-api/) article to learn how to convert an {{%HTML%}} file to other formats using direct REST API calls.
