@@ -1,7 +1,6 @@
 ---
 title: Available SDKs
 type: docs
-url: /available-sdks/
 keywords: SDK, Cloud SDKs, REST API, SDK Example, HTML to JPEG, java SDK, Python
   SDK, python, java , .net,  c#,  android, swift, Perl, Node.js
 description: This article introduce you  with Aspose.HTML Cloud v4.0 abilities
