@@ -1,19 +1,25 @@
 ---
-title: "Available SDKs"
+title: Available SDKs
 type: docs
 url: /available-sdks/
-keywords: "SDK, Cloud SDKs, REST API, SDK Example, HTML to JPEG, java SDK, Python SDK, python, java , .net,  c#,  android, swift, Perl, Node.js"
-description: "This article introduce you  with Aspose.HTML Cloud v4.0 abilities to use its functionality by the set of wrappers implemented as SDKs on the various programming languages such as, C#, Java, Python, Ruby, PHP, Node.js, Swift, Android and Go."
+keywords: SDK, Cloud SDKs, REST API, SDK Example, HTML to JPEG, java SDK, Python
+  SDK, python, java , .net,  c#,  android, swift, Perl, Node.js
+description: This article introduce you  with Aspose.HTML Cloud v4.0 abilities
+  to use its functionality by the set of wrappers implemented as SDKs on the
+  various programming languages such as, C#, Java, Python, Ruby, PHP, Node.js,
+  Swift, Android and Go.
 weight: 30
 ---
-
 ## **Aspose.HTML Cloud SDKs**
-Aspose.HTML for Cloud is a modern REST oriented API that allows easy integration into existing systems. SDKs serve an essential purpose: they enable the creation of new software and apps; they help the developers increase the websites with more operationalities and make development more straightforward. SDKs are specifically designed to facilitate programmers the Aspose.HTML RESTFul APIs using. 
+
+Aspose.HTML for Cloud is a modern REST oriented API that allows easy integration into existing systems. SDKs serve an essential purpose: they enable the creation of new software and apps; they help the developers increase the websites with more operationalities and make development more straightforward. SDKs are specifically designed to facilitate programmers the Aspose.HTML RESTFul  APIs using. 
 
 ### **Why use an SDK?**
+
 Using an SDK (API client) is the quickest way for a developer to speed up the development. An SDK takes care of a lot of low-level details of making requests and handling responses and lets you focus on writing code specific to your particular project.
 
 ### **SDK benefits**
+
 Our supported SDKs are 100% tested and out of the box running. These SDKs are open source and have an MIT license. You can use them, and even customize them for absolutely free of charge. 
 
 The SDKs are simple to understand and use by outside developers, contain comprehensive documentation that explains the working of codes and work well with other SDKs.
@@ -31,9 +37,7 @@ Aspose.HTML Cloud provides the ability to use its functionality by the set of wr
 Install Aspose.HTML Cloud SDK for .NET via [NuGet](https://www.nuget.org/packages/Aspose.HTML-Cloud).
 
 ```java
-
 PM> Install-Package Aspose.HTML-Cloud
-
 ```
 
 {{% alert color="primary" %}} 
@@ -51,9 +55,7 @@ The complete source code of Aspose.HTML Cloud SDK for .NET is freely available 
 Aspose.HTML Cloud SDK for Python can be installed using [PyPi](https://pypi.org/project/asposehtmlcloud/) package manager.
 
 ```java
-
 pip install -r Aspose.HTML-Cloud-SDK-for-Python/requirements.txt 
-
 ```
 
 **Direct Method**
@@ -61,9 +63,7 @@ pip install -r Aspose.HTML-Cloud-SDK-for-Python/requirements.txt
 1. Download the latest package from [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-python), and run the following command:
 
 ```java
-
 python Aspose.HTML-Cloud-SDK-for-Python/setup.py install 
-
 ```
 
 {{% alert color="primary" %}} 
@@ -81,14 +81,12 @@ The complete source code of Aspose.HTML Cloud SDK for Python is freely available
 You can add the following dependency into your existing Java application:
 
 ```java
-
 <dependency>
     <groupId>com.aspose</groupId>
     <artifactId>aspose-html-cloud</artifactId>
     <version>1.0.0</version>
     <scope>compile</scope>
 </dependency>
-
 ```
 
 {{% alert color="primary" %}} 
@@ -177,7 +175,7 @@ As an example, let’s use the Aspose.HTML Cloud SDK to convert HTML to JPEG.
 
 Consider a case when you get an HTML page from the web by its URL, convert it to JPEG format and save the result to the storage. The default JPEGConversionOptions are applied to the conversion. 
 
-The **HtmlApi** (` clientId`, `clientSecret`) method Initializes a class instance with user Credentials. In the example, we use methods of the **ConverterBuilder** class: **FromUrl**(`urlAddress`), **To**(`ConversionOptions`) and **SaveToStorage**(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result. The **Convert**(`ConverterBuilder builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
+The **HtmlApi** (`clientId`, `clientSecret`) method Initializes a class instance with user Credentials. In the example, we use methods of the **ConverterBuilder** class: **FromUrl**(`urlAddress`), **To**(`ConversionOptions`) and **SaveToStorage**(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result. The **Convert**(`ConverterBuilder builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
 
 ```c#
 const string STORAGE_DSTFOLDER = "storage:///Html/TestResult";
@@ -204,4 +202,4 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 
 To obtain information about converting between formats, please read the [Conversion API](http://localhost:1313/html/conversion-api/) section.
 
-{{% /alert %}} 
+{{% /alert %}}
