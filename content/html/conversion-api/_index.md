@@ -1,7 +1,6 @@
 ---
 title: "Conversion API"
 type: docs
-url: /conversion-api/
 keywords: "format conversion, html conversion, epub conversion, mhtml conversion, REST API, conversion SDK, convert html to pdf, convert html to xps, convert html to doc, convert html to jpeg, convert html to png, convert html to tiff, Python, PHP, Perl, Android, Swift, C#, Java, Node.js"
 description: "In this documentation chapter, you find out in details on how to convert an HTML file to the most popular formats calling directly the REST API by HTTP requests or using a set of SDKs. SDKs are wrappers upon REST API to help developers speed up their development. SDKs are available in PHP, Perl, Android, Swift, C#, Java and more."
 weight: 30

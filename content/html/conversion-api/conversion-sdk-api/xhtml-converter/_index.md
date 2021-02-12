@@ -1,7 +1,6 @@
 ---
 title: "XHTML converter"
 type: docs
-url: /conversion-sdk-api/xhtml-converter/
 keywords: "XHTML to PDF, XHTML to PDF conversion, xhtml conversion, convert XHTML, XHTML to XPS, XHTML to DOCX, XHTML to Image, asynchronous conversion, conversion SDK, convert XHTML to MHTML, Python, Ruby, Android, Swift, C#, Java, PHP, C++, Node.js"
 description: "The articles in this section provide information on a description of conversion features of Aspose.HTML Cloud SDK API and the list of supported XHTML files conversion scenarios using various SDKs. The SDKs are wrappers upon REST API to help developers speed up their development. SDKs are available in PHP, Perl, Android, Swift, C#, Java and more."
 weight: 30

@@ -1,7 +1,6 @@
 ---
 title: "QuickStart"
 type: docs
-url: /archive_v_3_0/quickstart/
 weight: 20
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: "HTML to XPS Conversion"
 type: docs
-url: /html-to-xps-conversion/
 weight: 20
 ---
 
@@ -25,19 +24,20 @@ Aspose.HTML Cloud has provided the simplest API to convert an HTML page to the f
 ```java
 
 // First get Access Token
-// Get Client ID and Client Secret from https://dashboard.aspose.cloud/
 
-curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
+// Get App Key and App SID from https://dashboard.aspose.cloud/
 
-```
+curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d 'grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX' -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
+ ```
+ 
  ```java
 
 // cURL example for HTML to XPS Conversion
 
-curl -v "https://api.aspose.cloud/v3.0/html/testpage4_embcss.html/convert/xps" -X GET -H "Content-Type: application/json" -H "Accept: multipart/form-data" -H "Authorization: Bearer [access token]"
+curl -v "https://api.aspose.cloud/v3.0/html/testpage4_embcss.html/convert/xps" -X GET -H "Content-Type: application/json" -H "Accept: multipart/form-data"
 
- ```
+```
 
 {{< /tab >}}
 
@@ -62,9 +62,10 @@ Converted XPS File
 ```java
 
 // First get Access Token
-// Get Client ID and Client Secret from https://dashboard.aspose.cloud/
 
-curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
+// Get App Key and App SID from https://dashboard.aspose.cloud/
+
+curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d 'grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX' -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
 ```
 
@@ -72,7 +73,7 @@ curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_c
 
 // cURL example for HTML to XPS Conversion
 
-curl -v "https://api.aspose.cloud/v3.0/html/testpage4_embcss.html/convert/xps?outPath=testpage4_embcss.xps&storage=MyStorage" -X PUT -H "Content-Length: 0" -H "Content-Type: application/json" -H "Accept: multipart/form-data" -H "Authorization: Bearer [access token]"
+curl -v "https://api.aspose.cloud/v3.0/html/testpage4_embcss.html/convert/xps?outPath=testpage4_embcss.xps&storage=MyStorage" -X PUT -H "Content-Length: 0" -H "Content-Type: application/json" -H "Accept: multipart/form-data" 
 
 ```
 
@@ -102,9 +103,10 @@ curl -v "https://api.aspose.cloud/v3.0/html/testpage4_embcss.html/convert/xps?ou
 ```java
 
 // First get Access Token
-// Get Client ID and Client Secret from https://dashboard.aspose.cloud/
 
-curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
+// Get App Key and App SID from https://dashboard.aspose.cloud/
+
+curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d 'grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX' -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
 ```
 
@@ -112,7 +114,7 @@ curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_c
 
 // cURL example for HTML to XPS Conversion
 
-curl -v "https://api.aspose.cloud/v3.0/html/convert/xps?sourceUrl=https://www.le.ac.uk/oerresources/bdra/html/page_01.htm" -X GET -H "Content-Type: application/json" -H "Accept: multipart/form-data" -H "Authorization: Bearer [access token]"
+curl -v "https://api.aspose.cloud/v3.0/html/convert/xps?sourceUrl=https://www.le.ac.uk/oerresources/bdra/html/page_01.htm" -X GET -H "Content-Type: application/json" -H "Accept: multipart/form-data"
 
 ```
 
@@ -139,9 +141,10 @@ Converted XPS File
 ```java
 
 // First get Access Token
-// Get Client ID and Client Secret from https://dashboard.aspose.cloud/
 
-curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
+// Get App Key and App SID from https://dashboard.aspose.cloud/
+
+curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d 'grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX' -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
 ```
 
@@ -149,7 +152,7 @@ curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_c
 
 // cURL example for HTML to XPS Conversion
 
-curl -v "https://api.aspose.cloud/v3.0/html/convert/xps?outPath=testpage4_embcss.xps" -X PUT -T testpage4_embcss.html -H "Content-Type: application/json" -H "Accept: multipart/form-data" -H "Authorization: Bearer [access token]"
+curl -v "https://api.aspose.cloud/v3.0/html/convert/xps?outPath=testpage4_embcss.xps" -X PUT -T testpage4_embcss.html -H "Content-Type: application/json" -H "Accept: multipart/form-data" 
 
 ```
 
@@ -170,7 +173,7 @@ curl -v "https://api.aspose.cloud/v3.0/html/convert/xps?outPath=testpage4_embcss
 
 {{< /tabs >}}
 ## **Available SDKs**
-Using an SDK (API client) is the quickest way for a developer to speed up the development. An SDK takes care of a lot of low-level details of making requests and handling responses and lets you focus on writing code specific to your particular project. Check out our [GitHub repository](https://github.com/aspose-html-cloud) for a complete list of Aspose.HTML SDKs along with working examples, to get you started in no time. Please check [Available SDKs](/html/available-sdks/) article to learn how to add an SDK to your project.
+Using an SDK (API client) is the quickest way for a developer to speed up the development. An SDK takes care of a lot of low-level details of making requests and handling responses and lets you focus on writing code specific to your particular project. Check out our [GitHub repository](https://github.com/aspose-html-cloud) for a complete list of Aspose.HTML SDKs along with working examples, to get you started in no time. Please check [Available SDKs](/html/archive_v_3_0/available-sdks/) article to learn how to add an SDK to your project.
 ### **SDK Examples**
 #### **Case 1: Convert the HTML document from the storage by its name to XPS** 
 

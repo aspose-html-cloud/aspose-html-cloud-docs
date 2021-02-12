@@ -1,7 +1,6 @@
 ---
 title: "Get Images from HTML document"
 type: docs
-url: /get-images-from-html-document/
 weight: 30
 ---
 
@@ -19,16 +18,14 @@ This article explain how to get all images from the HTML document. Aspose.HTML C
 {{< tab tabNum="1" >}}
 
 ```java
-// First get Access Token
-// Get Client ID and Client Secret from https://dashboard.aspose.cloud/
 
-curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
+curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
 ```
 
 ```java
 
-curl -v "https://api.aspose.cloud/v3.0/html/images/all?sourceUrl=https://www.yourhtmlsource.com/myfirstsite/basicimages.html" -X GET -H "Content-Type:application/json" -H "Accept:application/json" -H "Authorization: Bearer [access token]"
+curl -v "https://api.aspose.cloud/v3.0/html/images/all?sourceUrl=https://www.yourhtmlsource.com/myfirstsite/basicimages.html" -X GET -H "Content-Type:application/json" -H "Accept:application/json"
 
 ```
 

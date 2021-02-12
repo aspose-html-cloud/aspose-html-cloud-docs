@@ -1,7 +1,6 @@
 ---
 title: "Get HTML fragments using CSS Selector"
 type: docs
-url: /get-html-fragments-using-css-selector/
 weight: 40
 ---
 
@@ -19,16 +18,14 @@ This article explain how to get the HTML fragments from the HTML document that m
 {{< tab tabNum="1" >}}
 
 ```java
-// First get Access Token
-// Get Client ID and Client Secret from https://dashboard.aspose.cloud/
 
-curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
+curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
 ```
 
 ```java
 
-curl -v "https://api.aspose.cloud/v3.0/html/fragments/css/json?sourceUrl=https://www.le.ac.uk/oerresources/bdra/html/page_09.htm&selector=table" -X GET -H "Content-Type:application/json" -H "Accept:application/json" -H "Authorization: Bearer [access token]"
+curl -v "https://api.aspose.cloud/v3.0/html/fragments/css/json?sourceUrl=https://www.le.ac.uk/oerresources/bdra/html/page_09.htm&selector=table" -X GET -H "Content-Type:application/json" -H "Accept:application/json"
 
 ```
 
@@ -172,6 +169,7 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 {{< /tab >}}
 
 {{< /tabs >}}
+
 
 
 

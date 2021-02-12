@@ -1,7 +1,6 @@
 ---
 title: "Evaluate Aspose.HTML"
 type: docs
-url: /archive_v_3_0/evaluate-aspose-html/
 weight: 50
 ---
 

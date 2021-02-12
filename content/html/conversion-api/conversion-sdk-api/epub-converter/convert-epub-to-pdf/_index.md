@@ -1,7 +1,6 @@
 ---
 title: "Convert EPUB to PDF"
 type: docs
-url: /conversion-sdk-api/convert-epub-to-pdf/
 keywords: "EPUB to PDF, EPUB conversion, convert EPUB, EPUB file, asynchronous conversion, conversion SDK, convert EPUB to PDF, PDF format, Python, Ruby, PHP, Java, .Net,  C#,  Android, Swift, Node.js"
 description: "Article explains a usage of Aspose.HTML Cloud client SDKs to convert EPUB to PDF by a set of examples. SDKs are available in PHP, Python, Ruby, Android, Swift, C#, Java, C++, Node.js and more."
 weight: 10

@@ -1,7 +1,6 @@
 ---
 title: "Convert EPUB to GIF"
 type: docs
-url: /conversion-sdk-api/convert-epub-to-gif/
 keywords: "EPUB to GIF, EPUB conversion, EPUB file, asynchronous conversion, conversion SDK, convert EPUB to GIF, Python, Ruby, PHP, Java, .Net,  C#,  Android, Swift, Node.js"
 description: "The article explains the usage of Aspose.HTML Cloud client SDKs to convert EPUB to GIF by a set of examples. SDKs are available in PHP, Python, Ruby, Android, Swift, C#, Java, C++, Node.js and more."
 weight: 30

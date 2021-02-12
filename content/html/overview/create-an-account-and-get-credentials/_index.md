@@ -1,7 +1,6 @@
 ---
 title: "Create an Account and Get Credentials"
 type: docs
-url: /create-an-account-and-get-credentials/
 keywords: "authentication, create, account, free account, credentials, client id, client secret, access token, jwt token, rest api, jwt authentication, create application"
 description: "This article explains how to create a free account, get user credentials and apply it for REST API calls; you find out details about installing SDKs and making an API request from the SDK of your choice."
 weight: 20

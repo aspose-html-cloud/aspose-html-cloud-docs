@@ -1,7 +1,6 @@
 ---
 title: "MHTML converter"
 type: docs
-url: /conversion-sdk-api/mhtml-converter/
 keywords: "format conversion, mhtml conversion, convert mhtml, asynchronous conversion, conversion SDK, convert mhtml to pdf, convert mhtml to xps, convert mhtml to docx, convert mhtml to image, SDK example, Python, PHP, Perl, Android, Swift, C#, Java, Node.js"
 description: "The articles in this section provide information on a description of conversion features of Aspose.HTML Cloud SDK API and the list of supported  MHTML files conversion scenarios using various SDKs. The SDKs are wrappers upon REST API to help developers speed up their development. SDKs are available in PHP, Perl, Android, Swift, C#, Java and more."
 weight: 20

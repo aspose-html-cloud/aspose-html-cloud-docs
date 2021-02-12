@@ -1,7 +1,6 @@
 ---
 title: "Supported File Formats"
 type: docs
-url: /supported-file-formats/
 weight: 40
 ---
 

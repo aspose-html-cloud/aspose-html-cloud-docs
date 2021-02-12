@@ -1,7 +1,6 @@
 ---
 title: "Working with Files and Storage using Aspose.HTML Cloud"
 type: docs
-url: /working-with-files-and-storage-using-aspose-html-cloud/
 weight: 70
 ---
 
@@ -21,8 +20,6 @@ Aspose.HTML Cloud provides helper functions to work with files uploaded to Aspo
 {{< tab tabNum="1" >}}
 
 ```java
-// First get Access Token
-// Get Client ID and Client Secret from https://dashboard.aspose.cloud/
 
 curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
@@ -30,7 +27,7 @@ curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_c
 
 ```java
 
-curl  -v -X GET "https://api.aspose.cloud/v3.0/html/storage/file/sample.html" -H "Content-Type: application/json"  -H "Authorization: Bearer [access token]"
+curl  -v -X GET "https://api.aspose.cloud/v3.0/html/storage/file/sample.html" -H "Content-Type: application/json"
 
 ```
 
@@ -51,16 +48,14 @@ curl  -v -X GET "https://api.aspose.cloud/v3.0/html/storage/file/sample.html" -H
 {{< tab tabNum="1" >}}
 
 ```java
-// First get Access Token
-// Get Client ID and Client Secret from https://dashboard.aspose.cloud/
 
-curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
+curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_credentials&client_id=XXXXXX&client_secret=XXXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
 ```
 
 ```java
 
-curl  -v -X PUT "https://api.aspose.cloud/v3.0/html/storage/file/input.html" -H "Content-Type:application/octet-stream"  -H "Authorization: Bearer [access token]"
+curl  -v -X PUT "https://api.aspose.cloud/v3.0/html/storage/file/input.html" -H "Content-Type:application/octet-stream" 
 
 ```
 
@@ -98,8 +93,6 @@ curl  -v -X PUT "https://api.aspose.cloud/v3.0/html/storage/file/input.html" -H 
 {{< tab tabNum="1" >}}
 
 ```java
-// First get Access Token
-// Get Client ID and Client Secret from https://dashboard.aspose.cloud/
 
 curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
@@ -107,7 +100,7 @@ curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_c
 
 ```java
 
-curl -v -X PUT "https://api.aspose.cloud/v3.0/html/storage/file/copy/input.html" -H "Content-Type:application/json"  -H "Authorization: Bearer [access token]" 
+curl -v -X PUT "https://api.aspose.cloud/v3.0/html/storage/file/copy/input.html" -H "Content-Type:application/json" 
 
 ```
 
@@ -129,16 +122,14 @@ curl -v -X PUT "https://api.aspose.cloud/v3.0/html/storage/file/copy/input.html"
 
 
 ```java
-// First get Access Token
-// Get Client ID and Client Secret from https://dashboard.aspose.cloud/
 
-curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
+curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
 ```
 
 ```java
 
-curl -v -X PUT "https://api.aspose.cloud/v3.0/html/storage/file/move/input.html" -H "Content-Type:application/json"  -H "Authorization: Bearer [access token]"
+curl -v -X PUT "https://api.aspose.cloud/v3.0/html/storage/file/move/input.html" -H "Content-Type:application/json"
 
 ```
 
@@ -160,8 +151,6 @@ curl -v -X PUT "https://api.aspose.cloud/v3.0/html/storage/file/move/input.html"
 
 
 ```java
-// First get Access Token
-// Get Client ID and Client Secret from https://dashboard.aspose.cloud/
 
 curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
@@ -169,7 +158,7 @@ curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_c
 
 ```java
 
-curl -v -X DELETE "https://api.aspose.cloud/v3.0/html/storage/file/sample.html" -H "Content-Type:application/json"  -H "Authorization: Bearer [access token]"
+curl -v -X DELETE "https://api.aspose.cloud/v3.0/html/storage/file/sample.html" -H "Content-Type:application/json" 
 ```
 
 {{< /tab >}}
