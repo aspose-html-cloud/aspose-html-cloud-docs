@@ -32,10 +32,10 @@ collections:
     label: HTML
     label_singular: "Page"
     folder: content/html
+    preview_path: "html/{{slug}}"
     create: true
     media_folder: ''
     public_folder: ''
-    preview_path: "html/{{slug}}"
     nested:
       depth: 100
       summary: "{{title}}"
