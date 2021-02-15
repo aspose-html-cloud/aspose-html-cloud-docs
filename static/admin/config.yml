@@ -1,16 +1,11 @@
 backend:
   name: git-gateway
-#  repo: tpavel-aspose/sample-html-docs-300
   branch: edit_apiv4
   squash_merges: true
-#  use_graphql: true
 
-#site_url: https://aspose-documentation-html.netlify.app
-#display_url: https://docs.aspose.com
 media_folder: static/images
 public_folder: /images
 publish_mode: editorial_workflow
-enableIdentityWidget: false
 show_preview_links: true
 slug:
   clean_accents: false
@@ -20,11 +15,10 @@ collections:
     label: HTML
     label_singular: "Page"
     folder: content/html
+    preview_path: "html/{{slug}}"
     create: true
     media_folder: ''
     public_folder: ''
-    preview_path: "html/{{slug}}"
-#    preview_path: "html/{{dirname}}/{{filename}}.html"
     nested:
       depth: 100
       summary: "{{title}}"
@@ -33,9 +27,8 @@ collections:
       - {label: "Keywords", name: "keywords", widget: "string", required: false}
       - {label: "Description", name: "description", widget: "string", required: false}
       - {label: "Weight", name: "weight", widget: "number", value_type: "int", default: 10, step: 10, min: 1, max: 1000, required: false }
-      #      - {label: "Type", name: "type", widget: "select", default: "docs", options: ["docs"], allow_add: false, required: false}
       - {label: "Type", name: "type", widget: "hidden", default: "docs"}
       - {label: "Body", name: "body", widget: "markdown", required: false}
     meta: { path: { widget: string, label: "Path", index_file: "_index" } }
-    summary: "[{{weight}}] - {{title}}"
-#    summary: "{{commit_date}} {{commit_author}} [{{weight}}]  : {{title}} "
+    summary: "{{weight}} - {{title}}"
+    sortable_fields: ["weight",'title', "commit_author", "commit_date"]
