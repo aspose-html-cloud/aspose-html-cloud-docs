@@ -1,54 +1,41 @@
+##################################################
+# Configuration for edit in local file system
+# For launch editor need to run:
+#    npx netlify-cms-proxy-server
+#    hugo server
+# See: editor-local.sh, .env files
+#
+# Open url http://localhost:1313/editor-local
+#
+##################################################
+
 backend:
   name: git-gateway
-#  repo: aspose-html-cloud/aspose-html-cloud-docs
   branch: edit_apiv4
   squash_merges: true
 
-# when using the default proxy server port
-#local_backend: true
 
 local_backend:
-  # when using a custom proxy server port
+  # url of netlify-cms-proxy-server. port setting in .env file
   url: http://localhost:8082/api/v1
-  # when accessing the local site from a host other than 'localhost' or '127.0.0.1'
   allowed_hosts: ['192.168.0.1']
-#  use_graphql: true
 
-#site_url: https://aspose-html-cloud-docs.netlify.app
-display_url: https://docs.aspose.cloud/
 media_folder: static/images
 public_folder: /images
 publish_mode: editorial_workflow
-enableIdentityWidget: false
 show_preview_links: true
 slug:
   clean_accents: false
-
-
-#i18n:
-#  # Required and can be one of multiple_folders, multiple_files or single_file
-#  # multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
-#  # multiple_files - persists files in `<folder>/<slug>.<locale>.<extension>`
-#  # single_file - persists a single file in `<folder>/<slug>.<extension>`
-#  structure: multiple_folders
-#
-#  # Required - a list of locales to show in the editor UI
-#  locales: [en, de, fr]
-#
-#  # Optional, defaults to the first item in locales.
-#  # The locale to be used for fields validation and as a baseline for the entry.
-#  default_locale: en
 
 collections:
   - name: html
     label: HTML
     label_singular: "Page"
     folder: content/html
+    preview_path: "html/{{slug}}"
     create: true
     media_folder: ''
     public_folder: ''
-    preview_path: "html/{{slug}}"
-#    preview_path: "html/{{dirname}}/{{filename}}.html"
     nested:
       depth: 100
       summary: "{{title}}"
@@ -57,9 +44,8 @@ collections:
       - {label: "Keywords", name: "keywords", widget: "string", required: false}
       - {label: "Description", name: "description", widget: "string", required: false}
       - {label: "Weight", name: "weight", widget: "number", value_type: "int", default: 10, step: 10, min: 1, max: 1000, required: false }
-#      - {label: "Type", name: "type", widget: "select", default: "docs", options: ["docs"], allow_add: false, required: false}
       - {label: "Type", name: "type", widget: "hidden", default: "docs"}
       - {label: "Body", name: "body", widget: "markdown", required: false}
     meta: { path: { widget: string, label: "Path", index_file: "_index" } }
-    summary: "[{{weight}}] - {{title}}"
-#    summary: "{{commit_date}} {{commit_author}} [{{weight}}]  : {{title}} "
+    summary: "{{weight}} - {{title}}"
+    sortable_fields: ["weight",'title', "commit_author", "commit_date"]
