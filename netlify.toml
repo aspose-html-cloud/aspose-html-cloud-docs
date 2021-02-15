@@ -11,3 +11,8 @@ HUGO_ENABLEGITINFO = "true"
 HUGO_VERSION = "0.80.0"
 HUGO_ENV = "deploy-preview"
 HUGO_ENABLEGITINFO = "true"
+
+[context.branch-deploy.environment]
+HUGO_VERSION = "0.80.0"
+HUGO_ENV = "deploy-preview"
+HUGO_ENABLEGITINFO = "true"
