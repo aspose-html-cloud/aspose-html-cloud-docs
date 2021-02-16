@@ -2,10 +2,14 @@
 publish = "public"
 #command = "hugo --gc"
 
+[context.production]
+HUGO_VERSION = "v0.80.0"
+HUGO_ENABLEGITINFO = "true"
+
 [context.production.environment]
 HUGO_VERSION = "v0.80.0"
 HUGO_ENV = "production"
-HUGO_ENABLEGITINFO = "true"
+
 
 #[context.deploy-preview.environment]
 #HUGO_VERSION = "0.80.0"
