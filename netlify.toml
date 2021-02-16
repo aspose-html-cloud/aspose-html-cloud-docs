@@ -2,7 +2,7 @@
 publish = "public"
 #command = "hugo --gc"
 
-[context.production]
+[context]
 HUGO_VERSION = "v0.80.0"
 HUGO_ENABLEGITINFO = "true"
 
