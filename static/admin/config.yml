@@ -15,7 +15,7 @@ collections:
     label: HTML
     label_singular: "Page"
     folder: content/html
-#    slug: "{{path}}"
+    slug: "{{url}}"
     preview_path: "html/{{slug}}"
     create: true
     media_folder: ''
