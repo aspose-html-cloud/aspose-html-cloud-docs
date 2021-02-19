@@ -4,8 +4,8 @@ backend:
   squash_merges: true
 
 
-site_url: https://edit-apiv4--aspose-html-cloud-docs
-display_url: https://edit-apiv4--aspose-html-cloud-docs
+site_url: https://edit-apiv4--aspose-html-cloud-docs.netlify.app/
+display_url: https://edit-apiv4--aspose-html-cloud-docs.netlify.app/
 media_folder: static/images
 public_folder: /images
 publish_mode: editorial_workflow
