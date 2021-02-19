@@ -1,24 +1,26 @@
 ---
-title: "Convert HTML to DOCX"
-type: docs
-keywords: "format conversion, html conversion, asynchronous conversion, conversion SDK, convert html to doc, convert html to docx, Python, PHP, Perl, Android, Swift, C#, Java, Node.js"
-description: "The article explains the usage of Aspose.HTML Cloud client SDKs for HTML to DOCX/DOC conversion by a set of examples. SDKs are wrappers upon REST API to help developers speed up their development. SDKs are available in PHP, Perl, Android, Swift, C#, Java and more."
+title: Convert HTML to DOCX
+keywords: format conversion, html conversion, asynchronous conversion,
+  conversion SDK, convert html to doc, convert html to docx, Python, PHP, Perl,
+  Android, Swift, C#, Java, Node.js
+description: The article explains the usage of Aspose.HTML Cloud client SDKs for
+  HTML to DOCX/DOC conversion by a set of examples. SDKs are wrappers upon REST
+  API to help developers speed up their development. SDKs are available in PHP,
+  Perl, Android, Swift, C#, Java and more.
 weight: 30
+type: docs
 ---
-
 The document  formats {{%DOCX%}} and {{%DOC%}} can contain a wide range of data, including text, tables, raster and vector graphics, video, sounds and diagrams. These formats are very popular because of the variety of options they offer users to write any type of documents.  DOCX/DOC documents support a wide range of formatting features. Sometimes, they are not always the best choice for distributing as they can be easily modified without the author's approval.
 
-## **Summary**
+## **Summary** 
 
 Aspose.HTML Cloud produces quick and easy way to convert {{%HTML%}} to {{%DOC%}}, {{%DOCX%}} using Aspose.HTML Cloud client SDKs. This article explains in a set of code examples how to convert an HTML file to DOC/DOCX using available SDKs.
 
 {{% alert color="primary" %}} 
 
-The article [Conversion REST API]() describes how to convert an HTML file to other formats using direct REST API call.
+The article [Conversion REST API](<>) describes how to convert an HTML file to other formats using direct REST API call.
 
 {{% /alert %}} 
-
-
 
 ## **SDK Examples of HTML to DOCX/DOC Conversion**
 
@@ -148,8 +150,6 @@ HTML to DOCX conversion occurs with the **default conversion options**: the resu
 
 {{% /alert %}} 
 
-
-
 ### **Example 2.** Convert HTML from the local file system to DOCX/DOC  with explicitly specified options and save the result to the storage
 
 The example below demonstrates how to convert an HTML file from the local file system to DOCX/DOC format with explicitly specified options and save in the cloud storage.
@@ -276,8 +276,6 @@ The following example demonstrates how to convert **HTML to DOCX Java/Android** 
 {{< /tab >}}
 
 {{< /tabs >}}
-
-
 
 {{% alert color="primary" %}} 
 More details about available conversion parameters for HTML files are in the [SDK Conversion Options](/html/sdk-conversion-options/) section.
@@ -406,5 +404,4 @@ HTML to DOCX/DOC conversion occurs with the **default conversion options**: the 
 {{% alert color="primary" %}} 
 You can download Aspose.HTML Cloud SDKs of your required platform from [GitHub](https://github.com/aspose-html-cloud/). 
 
-{{% /alert %}} 
-
+{{% /alert %}}
