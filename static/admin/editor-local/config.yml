@@ -11,9 +11,7 @@
 
 backend:
   name: git-gateway
-  branch: edit_apiv4
   squash_merges: true
-
 
 local_backend:
   # url of netlify-cms-proxy-server. port setting in .env file
