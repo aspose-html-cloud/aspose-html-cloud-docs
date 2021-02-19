@@ -1,19 +1,25 @@
 ---
-title: "Conversion API"
-type: docs
-keywords: "format conversion, html conversion, epub conversion, mhtml conversion, REST API, conversion SDK, convert html to pdf, convert html to xps, convert html to doc, convert html to jpeg, convert html to png, convert html to tiff, Python, PHP, Perl, Android, Swift, C#, Java, Node.js"
-description: "In this documentation chapter, you find out in details on how to convert an HTML file to the most popular formats calling directly the REST API by HTTP requests or using a set of SDKs. SDKs are wrappers upon REST API to help developers speed up their development. SDKs are available in PHP, Perl, Android, Swift, C#, Java and more."
+title: Conversion API
+keywords: format conversion, html conversion, epub conversion, mhtml conversion,
+  REST API, conversion SDK, convert html to pdf, convert html to xps, convert
+  html to doc, convert html to jpeg, convert html to png, convert html to tiff,
+  Python, PHP, Perl, Android, Swift, C#, Java, Node.js
+description: In this documentation chapter, you find out in details on how to
+  convert an HTML file to the most popular formats calling directly the REST API
+  by HTTP requests or using a set of SDKs. SDKs are wrappers upon REST API to
+  help developers speed up their development. SDKs are available in PHP, Perl,
+  Android, Swift, C#, Java and more.
 weight: 30
+type: docs
 ---
-
-## **Summary**
+## **Summary +++**
 
 Aspose.HTML Cloud v4.0 provides the simplest API to convert an {{%HTML%}} page to one of the fixed-layout document formats including  {{%PDF%}}, {{%XPS%}} and {{%DOC%}}, {{%DOCX%}}; to raster image formats including {{%JPEG%}}, {{%PNG%}}, {{%TIFF%}},  {{%BMP%}}, and  {{%GIF%}};  to {{%MD%}} and {{%MHTML%}} formats. You can convert the HTML document to any supported formats either from the storage by its name or from the web by its URL.
 
 The main differences from API v3.0 are:
 
-- conversion is considered as potentially long time operation, so new API provides an asynchronous mode of conversion;
-- many conversion options that were available in API v3.0 have been reduced to only three possible REST API calls that makes development more straightforward.
+* conversion is considered as potentially long time operation, so new API provides an asynchronous mode of conversion;
+* many conversion options that were available in API v3.0 have been reduced to only three possible REST API calls that makes development more straightforward.
 
 To help developers speed up their development, a family of SDKs is available, including C#, Java, C++, Python, PHP, Ruby, Swift, Java/Android, etc.
 
@@ -24,8 +30,6 @@ Aspose.HTML Cloud API you can call directly from your browser by accessing the [
 
 {{% /alert %}} 
 
-
-
 ## **SDK vs. REST API**
 
 The application developer can use Aspose.HTML Cloud v4.0 conversion functionality calling directly the REST API by HTTP requests or using a set of SDKs.
@@ -35,8 +39,5 @@ The application developer can use Aspose.HTML Cloud v4.0 conversion functionalit
 
 For more details about REST API and SDK features, usage examples, follow the links:
 
-- [Conversion SDK API information](/html/conversion-sdk-api/)
-- [Conversion REST API information](/html/conversion-rest-api/)
-
-
-
+* [Conversion SDK API information](/html/conversion-sdk-api/)
+* [Conversion REST API information](/html/conversion-rest-api/)
