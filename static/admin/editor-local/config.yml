@@ -11,15 +11,15 @@
 
 backend:
   name: git-gateway
-  branch: develop_apiv4
   squash_merges: true
-
 
 local_backend:
   # url of netlify-cms-proxy-server. port setting in .env file
   url: http://localhost:8082/api/v1
   allowed_hosts: ['192.168.0.1']
 
+site_url: http://localhost:1313/
+display_url: http://localhost:1313/
 media_folder: static/images
 public_folder: /images
 publish_mode: editorial_workflow
@@ -28,11 +28,12 @@ slug:
   clean_accents: false
 
 collections:
-  - name: html
-    label: HTML
+  - name: content
+    label: Сontent
     label_singular: "Page"
-    folder: content/html
-    preview_path: "html/{{slug}}"
+    folder: content
+    slug: "{{slug}}"
+    preview_path: "{{dirname}}"
     create: true
     media_folder: ''
     public_folder: ''
