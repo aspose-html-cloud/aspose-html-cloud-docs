@@ -3,6 +3,9 @@ backend:
   branch: edit_apiv4
   squash_merges: true
 
+
+site_url: https://edit-apiv4--aspose-html-cloud-docs
+display_url: https://edit-apiv4--aspose-html-cloud-docs
 media_folder: static/images
 public_folder: /images
 publish_mode: editorial_workflow
@@ -11,14 +14,12 @@ slug:
   clean_accents: false
 
 collections:
-  - name: html
-    label: HTML
+  - name: content
+    label: Сontent
     label_singular: "Page"
-    folder: content/html
-#    slug: "{{slug}}"
-    slug: "{{year}}/{{month}}/{{title}}"
-    preview_path: "html/{{slug}}"
-#    preview_path: blog/{{year}}/{{month}}/{{title}}
+    folder: content
+    slug: "{{slug}}"
+    preview_path: "{{dirname}}"
     create: true
     media_folder: ''
     public_folder: ''
