@@ -10,7 +10,6 @@ description: The article explains the usage of Aspose.HTML Cloud client SDKs for
 weight: 110
 type: docs
 ---
-
 ## **Summary**
 
 Aspose.HTML Cloud v4.0 provides the simplest API to convert {{%HTML%}} documents to {{%Markdown%}} format with high quality, easy and fast. This article contains a set of code examples that explain how to convert HTML to Markdown using available SDKs.
@@ -23,7 +22,7 @@ Learn how to convert an HTML file to other formats using direct REST API calls f
 
 ## **SDK Examples of HTML to Markdown Conversion**
 
-Aspose.HTML Cloud SDK allows you to fetch an HTML document from storage location by its name, from a URL or a local file on your drive, convert it to specified format and save the result to the storage or a local drive. The following code examples demonstrate how to convert HTML to Markdown programmatically for different cases.
+Aspose.HTML Cloud SDK allows you to fetch an HTML document from a storage location by its name, from a URL or a local file on your drive, convert it to the specified format and save the result to the storage or a local drive. The following code examples demonstrate how to convert HTML to Markdown programmatically for different cases.
 
 ### **Example 1.** Convert HTML from the storage to Markdown and save the result to the storage
 
@@ -141,8 +140,6 @@ The following example demonstrates how to convert **HTML to Markdown Java/Androi
 {{< /tab >}}
 
 {{< /tabs >}}
-
-
 
 ### **Example 2.** Convert HTML from the local file system to Markdown and save the result to the storage
 
@@ -338,7 +335,7 @@ The code snippet below explains how to convert **HTML to Markdown PHP** language
 
 {{< tab tabNum="6" >}}
 
-The code snippet below explains how to convert **HTML to Markdown Ruby** language applying. HTML is taken from the Web, converted to Markdown and saved to the local file system.  You can download the Ruby SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby).
+The code snippet below explains how to convert **HTML to Markdown Ruby** language applying. HTML is taken from the Web, converted to Markdown and saved to the local file system. You can download the Ruby SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby).
 
 ```ruby
 
@@ -368,7 +365,7 @@ The code snippet below explains how to convert **HTML to Markdown Swift** langua
 
 {{< tab tabNum="9" >}}
 
-The code snippet below explains how to convert **HTML to Markdown Java/Android** applying. HTML is taken from the Web, converted to Markdown and saved to the local file system.  You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
+The code snippet below explains how to convert **HTML to Markdown Java/Android** applying. HTML is taken from the Web, converted to Markdown and saved to the local file system. You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
 
 ```java
 
@@ -383,5 +380,4 @@ In the example, we use methods of the **ConverterBuilder** class: **FromUrl**(`u
 {{% alert color="primary" %}} 
 You can download Aspose.HTML Cloud SDKs of your required platform from [GitHub](https://github.com/aspose-html-cloud/). 
 
-{{% /alert %}} 
-
+{{% /alert %}}
