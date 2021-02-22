@@ -12,7 +12,7 @@ GIF is a popular image format that supports animated images and frequently used 
 
 {{% alert color="primary" %}} 
 
-The article [Conversion REST API](/html/conversion-rest-api/) describes in detail how to convert an HTML file to other formats using direct REST API call.
+The article [Conversion REST API](/html/conversion-api/conversion-rest-api/) describes in detail how to convert an HTML file to other formats using direct REST API call.
 
 {{% /alert %}} 
 

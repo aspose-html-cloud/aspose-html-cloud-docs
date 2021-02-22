@@ -91,8 +91,6 @@ To create a correctly constructed HTTP request, you should build URI relative to
 
 {{% alert color="primary" %}} 
 
-Complete cURL examples that explain how to use conversion API asynchronously you can find in the [Conversion REST API](/html/conversion-rest-api/) article.
-
-Aspose.HTML Cloud API you can call directly from your browser by accessing the [API Reference](https://apireference.aspose.cloud/html/).
+Complete cURL examples that explain how to use conversion API asynchronously you can find in the [Conversion REST API](/html/conversion-api/conversion-rest-api/) article.
 
 {{% /alert %}} 

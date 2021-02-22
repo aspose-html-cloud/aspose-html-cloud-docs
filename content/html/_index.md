@@ -7,19 +7,9 @@ description: "Aspose.HTML Cloud provides two main points: the conversion between
   formats feature and the cloud storage access functionality. This article
   introduces you with Aspose.HTML Cloud v4.0 abilities to provide access to
   files and folders stored in the cloud storage;  presents a set of available
-  conversions including HTML, XHTML, and MHTML, EPUB and Markdown converters."
-weight: 10
-type: docs
+  conversions including HTML, XHTML, and MHTML, EPUB and Markdown converters."a
+s SDKs on the various programming languages.
 ---
-
-{{% alert color="primary" %}} 
-
-
-![HTML logo](overview_1)
-
-**Welcome to the Aspose.HTML Cloud documentation section**
-
-Aspose.HTML Cloud is a REST API designed explicitly for document generation, manipulation and conversion in the cloud. The REST API is platform-independent and integrates with other cloud services. It provides access to files and folders that are stored in the user associated Aspose cloud storage or any additional cloud storage of your choice. Aspose.HTML Cloud provides the ability to use its functionality both by the REST API directly or by the set of wrappers implemented as SDKs on the various programming languages.
 
 The main highlights of Aspose.HTML Cloud REST API v4.0  are the [conversion feature](/html/conversion-api/) and the [cloud storage access](/html/storage-api/) functionality.
 

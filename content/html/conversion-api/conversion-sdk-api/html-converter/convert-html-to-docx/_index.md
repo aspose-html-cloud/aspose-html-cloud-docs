@@ -14,7 +14,7 @@ Aspose.HTML Cloud produces quick and easy way to convert {{%HTML%}} to {{%DOC%}}
 
 {{% alert color="primary" %}} 
 
-The article [Conversion REST API]() describes how to convert an HTML file to other formats using direct REST API call.
+The article [Conversion REST API](/html/conversion-api/conversion-rest-api/) describes how to convert an HTML file to other formats using direct REST API call.
 
 {{% /alert %}} 
 

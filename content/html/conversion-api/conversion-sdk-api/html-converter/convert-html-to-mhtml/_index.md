@@ -12,7 +12,7 @@ Aspose.HTML Cloud v4.0 provides the simplest API to convert {{%HTML%}} documents
 
 {{% alert color="primary" %}} 
 
-Learn how to convert an HTML file to other formats using direct REST API calls from the [Conversion REST API](/html/conversion-rest-api/) article.
+Learn how to convert an HTML file to other formats using direct REST API calls from the [Conversion REST API](/html/conversion-api/conversion-rest-api/) article.
 
 {{% /alert %}} 
 
