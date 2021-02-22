@@ -1,9 +1,13 @@
 ---
-title: "Available SDKs"
-type: docs
-keywords: "SDK, Cloud SDKs, REST API, SDK Example, HTML to JPEG, java SDK, Python SDK, python, java , .net,  c#,  android, swift, Perl, Node.js"
-description: "This article introduce you  with Aspose.HTML Cloud v4.0 abilities to use its functionality by the set of wrappers implemented as SDKs on the various programming languages such as, C#, Java, Python, Ruby, PHP, Node.js, Swift, Android and Go."
+title: Available SDKs
+keywords: SDK, Cloud SDKs, REST API, SDK Example, HTML to JPEG, java SDK, Python
+  SDK, python, java , .net,  c#,  android, swift, Perl, Node.js
+description: This article introduce you  with Aspose.HTML Cloud v4.0 abilities
+  to use its functionality by the set of wrappers implemented as SDKs on the
+  various programming languages such as, C#, Java, Python, Ruby, PHP, Node.js,
+  Swift, Android and Go.
 weight: 30
+type: docs
 ---
 
 ## **Aspose.HTML Cloud SDKs**
@@ -176,31 +180,32 @@ As an example, let’s use the Aspose.HTML Cloud SDK to convert HTML to JPEG.
 
 Consider a case when you get an HTML page from the web by its URL, convert it to JPEG format and save the result to the storage. The default JPEGConversionOptions are applied to the conversion. 
 
-The **HtmlApi** (` clientId`, `clientSecret`) method Initializes a class instance with user Credentials. In the example, we use methods of the **ConverterBuilder** class: **FromUrl**(`urlAddress`), **To**(`ConversionOptions`) and **SaveToStorage**(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result. The **Convert**(`ConverterBuilder builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
+The **HtmlApi** (` ClientId`, `ClientSecret`) method Initializes a class instance with user Credentials. In the example, we use methods of the **ConverterBuilder** class: **FromUrl**(`urlAddress`), **To**(`ConversionOptions`) and **SaveToStorage**(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result. The **Convert**(`ConverterBuilder builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
 
 ```c#
-const string STORAGE_DSTFOLDER = "storage:///Html/TestResult";
-
-var sourceUrl = "https://stallman.org/articles/anonymous-payments-thru-phones.html";
-var destFolder = $"{STORAGE_DSTFOLDER}/Jpeg";
-
-using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
-{
-    ConverterBuilder convHtmlJpeg = new ConverterBuilder()
-        .FromUrl(sourceUrl)
+// Create a ConverterBuilder instance - builder; specify "From", "To", and "SaveTo" builder methods with parameters of conversion
+ConverterBuilder builder = new ConverterBuilder()
+        .FromLocalFile(@"Input\html_file.html")
         .To(new JPEGConversionOptions())
-        .SaveToStorage(destFolder);
+        .SaveToLocalDirectory(@"Output\Html");
 
-    ConversionResult result = api.Convert(convHtmlJpeg);
-    if(result.Status == "success" && result.Files.Length > 0)
+// Initialize SDK API in the builder style
+using (var api = new HtmlApi(cb => cb
+     .WithClientId(ClientId)              // from user Сredentials
+     .WithClientSecret(ClientSecret)))
+{
+    // Convert HTML to JPEG
+    ConversionResult result = api.Convert(builder);
+
+    if(result.Status == "success" && result.Files != null && result.Files.Length > 0)
     {
-        // check if file exists locally
+        // Download file(s) by path result.Files 
     }
 }
 ```
 
 {{% alert color="primary" %}} 
 
-To obtain information about converting between formats, please read the [Conversion API](http://localhost:1313/html/conversion-api/) section.
+To obtain information about converting between formats, please read the [Conversion API](html/conversion-api/) section.
 
 {{% /alert %}} 
