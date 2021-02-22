@@ -47,19 +47,19 @@ Convert an HTML document fast and easy with our intuitive API just with a few li
 ```c#
 // Create a ConverterBuilder instance 
 ConverterBuilder builder = new ConverterBuilder()
-        .FromLocalFile(@"Input\html_file.html")
-        .To(new PDFConversionOptions())
-        .SaveToStorageDirectory("/TestResult/Html");
+    .FromLocalFile(@"Input\html_file.html")
+    .To(new PDFConversionOptions())
+    .SaveToStorageDirectory("/TestResult/Html");
 
 
 
 // Initialize SDK API in the builder style
 using (var api = new HtmlApi(cb => cb
-     .WithClientId(ClientId)              // from user Сredentials
-     .WithClientSecret(ClientSecret)))
+    .WithClientId(ClientId)              // from user Сredentials
+    .WithClientSecret(ClientSecret)))
 {
     // Convert HTML to PDF
-	ConversionResult result = api.Convert(builder);
+    ConversionResult result = api.Convert(builder);
 
     if(result.Status == "success" && result.Files != null && result.Files.Length > 0)
     {
