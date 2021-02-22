@@ -1,16 +1,34 @@
 ---
-title: "Initialize SDK API"
-type: docs
-keywords: "SDK examples, credentials, client id, client secret, access token, JWT token, REST API, JWT authentication, initialize API, entry point"
-description: "This article covers examples that explain what methods you can use to create an SDK API entry point. In SDK examples the Client Id and Client Secret are used for authentication; the SDK automatically gets API access token."
+title: Initialize SDK API
+keywords: SDK examples, credentials, client id, client secret, access token, JWT
+  token, REST API, JWT authentication, initialize API, entry point
+description: This article covers examples that explain what methods you can use
+  to create an SDK API entry point. In SDK examples the Client Id and Client
+  Secret are used for authentication; the SDK automatically gets API access
+  token.
 weight: 20
+type: docs
 ---
-
 ## **Summary**
-
-An **HtmlApi** class is a common SDK facade of all HTML functionality that provides wrapper methods of Aspose.HTML Cloud REST API. Before starting to call the Aspose.HTML Cloud SDK functionality, you must create an **HtmlApi** class instance. This object is a main SDK entry point, it accepts user data needed for authentication and some optional parameters. 
-
 This article covers examples that explain what methods you can use to create an SDK API entry point.
+
+### **HtmlApi class**
+
+An **HtmlApi** class is a common SDK facade of all HTML functionality that provides wrapper methods of Aspose.HTML Cloud REST API. Before starting to call the Aspose.HTML Cloud SDK functionality, you must create an **HtmlApi** class instance. This object is a main SDK entry point, it accepts user data needed for authentication and some optional parameters.
+
+The HtmlApi class provides:
+ - a group of constructors provides various ways of API setup concerning user credentials, API services (if they are different from the default) and some other parameters, such as HTTP connection timeout.
+ - a group of synchronous and asynchronous conversion methods that work with various data sources, such as local files, files in the cloud storage, web pages. The supported source file types are: HTML (including HTML pages with local resources in ZIP archive), MHTML, ePub, Markdown. The supported output formats the source files can be converted to are: PDF, XPS, JPEG, BMP, PNG, GIF, TIFF.
+ - an entry point of the cloud storage access API.
+
+### **ConfigurationBuilder class**
+
+A ConfigurationBuilder class is a builder class that is used to set up Configuration objects.
+ConfigurationBuilder is used for:
+ - initializing an HtmlApi object with default Configuration;
+ - configuring an HtmlApi object with a Configuration object when parameters are explicitly set in a constructor;
+ - creating an HtmlApi object with the ConfigurationBuilder;
+ - configuring an HtmlApi object with an externally obtained authentication token.
 
 {{% alert color="primary" %}} 
 Install Aspose.HTML Cloud SDK for .NET via [NuGet](https://www.nuget.org/packages/Aspose.HTML-Cloud/). Complete source code of Aspose.HTML SDK for .NET is freely available on the [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
@@ -23,7 +41,7 @@ Classic way to initialize an SDK entry point object is to call **HtmlApi()** con
 
 ### **SDK Examples**
 
-The **HtmlApi** (` clientId`, `clientSecret`) method Initializes a class instance with user Credentials and default API server URL. We need to pass into the **HtmlApi()** constructor two required parameters: **Client Id** and **Client Secret**.
+The **HtmlApi** (`clientId`, `clientSecret`) method Initializes a class instance with user Credentials and default API server URL. We need to pass into the **HtmlApi()** constructor two required parameters: **Client Id** and **Client Secret**.
 
 {{< tabs tabTotal="10" tabID="1" tabName1="C#/.NET" >}}
 
@@ -32,16 +50,14 @@ The **HtmlApi** (` clientId`, `clientSecret`) method Initializes a class instanc
 **Example 1**
 
 ```c#
-var clientId = "aaaaaaaa-cccc-dddd-9999-1112222333dd";
-var clientSecret = "60487a72d6325241191177e37ae5214";
+var ClientId = "aaaaaaaa-cccc-dddd-9999-1112222333dd";
+var ClientSecret = "60487a72d6325241191177e37ae5214";
 
-using(var api = HtmlApi(clientId, clientSecret))
+using(var api = HtmlApi(ClientId, ClientSecret))
 {
     // ... your code
 }
 ```
-
-
 
 **Example 2**  
 
@@ -52,11 +68,11 @@ Usually, it is unnecessary to explicitly specify the service URLs; this possibil
 {{% /alert %}}  
 
 ```c#
-var clientId = "aaaaaaaa-cccc-dddd-9999-1112222333dd";
-var clientSecret = "60487a72d6325241191177e37ae5214";
+var ClientId = "aaaaaaaa-cccc-dddd-9999-1112222333dd";
+var ClientSecret = "60487a72d6325241191177e37ae5214";
 var baseApiUrl = "https://localhost:5001/v4.0/html";  // e.g. local service instance for debugging 
 
-using(var api = HtmlApi(clientId, clientSecret, baseApiUrl))
+using(var api = HtmlApi(ClientId, ClientSecret, baseApiUrl))
 {
     // ... your code
 }
@@ -83,12 +99,12 @@ This method looks more flexible, it provides more options, and it is more conven
 Create default Configuration instance and specify the user Credentials and HTTP connection timeout.
 
 ```c#
-var clientId = "aaaaaaaa-cccc-dddd-9999-1112222333dd";
-var clientSecret = "60487a72d6325241191177e37ae5214";
+var ClientId = "aaaaaaaa-cccc-dddd-9999-1112222333dd";
+var ClientSecret = "60487a72d6325241191177e37ae5214";
 
 var conf = Configuration.NewDefault()
-    .WithClientId(clientId)
-    .WithClientSecret(clientSecret)
+    .WithClientId(ClientId)
+    .WithClientSecret(ClientSecret)
     .WithTimeout(new TimeSpan(0, 5, 0));
 
 using(var api = HtmlApi(conf))
@@ -96,8 +112,6 @@ using(var api = HtmlApi(conf))
     // ... your code
 }
 ```
-
-
 
 **Example 2**
 
@@ -135,12 +149,12 @@ SDK API entry point can also be created with **Configuration** object initialize
 {{< tab tabNum="1" >}}
 
 ```c#
-var clientId = "aaaaaaaa-cccc-dddd-9999-1112222333dd";
-var clientSecret = "60487a72d6325241191177e37ae5214";
+var ClientId = "aaaaaaaa-cccc-dddd-9999-1112222333dd";
+var ClientSecret = "60487a72d6325241191177e37ae5214";
 
 using(var api = HtmlApi(confBuilder -> confBuilder
-                        .WithClientId(clientId)
-                        .WithClientSecret(clientSecret)))
+                        .WithClientId(ClientId)
+                        .WithClientSecret(ClientSecret)))
 {
     // ... your code
 }
@@ -154,7 +168,7 @@ using(var api = HtmlApi(confBuilder -> confBuilder
 
 For more details about getting Credentials and Authentication, follow the links:
 
- - [Create an Account and Get Credentials](/html/create-an-account-and-get-credentials/)
- - [Authentication](/html/getting-started/authentication/) 
+* [Create an Account and Get Credentials](/html/create-an-account-and-get-credentials/)
+* [Authentication](/html/getting-started/authentication/) 
 
-{{% /alert %}} 
+{{% /alert %}}
