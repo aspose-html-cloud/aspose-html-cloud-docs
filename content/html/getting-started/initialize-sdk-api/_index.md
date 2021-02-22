@@ -21,12 +21,12 @@ The HtmlApi class provides:
  - a group of synchronous and asynchronous conversion methods that work with various data sources, such as local files, files in the cloud storage, web pages. The supported source file types are: HTML (including HTML pages with local resources in ZIP archive), MHTML, ePub, Markdown. The supported output formats the source files can be converted to are: PDF, XPS, JPEG, BMP, PNG, GIF, TIFF.
  - an entry point of the cloud storage access API.
 
-### **ConversionBuilder class**
+### **ConfigurationBuilder class**
 
 A ConfigurationBuilder class is a builder class that is used to set up Configuration objects.
 ConfigurationBuilder is used for:
  - initializing an HtmlApi object with default Configuration;
- - configuring an HtmlApi object with a **Configuration **object when parameters are explicitly set in a constructor;
+ - configuring an HtmlApi object with a Configuration object when parameters are explicitly set in a constructor;
  - creating an HtmlApi object with the ConfigurationBuilder;
  - configuring an HtmlApi object with an externally obtained authentication token.
 
