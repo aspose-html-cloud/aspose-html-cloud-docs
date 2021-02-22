@@ -14,7 +14,7 @@ This article covers examples that explain what methods you can use to create an 
 
 ### **HtmlApi class**
 
-An **HtmlApi** class is a common SDK facade of all HTML functionality that provides wrapper methods of Aspose.HTML Cloud REST API. Before starting to call the Aspose.HTML Cloud SDK functionality, you must create an **HtmlApi** class instance. This object is a main SDK entry point, it accepts user data needed for authentication and some optional parameters.
+An **HtmlApi** class is a common SDK facade of all HTML functionality that provides wrapper methods of Aspose.HTML Cloud REST API. Before starting to call the Aspose.HTML Cloud SDK functionality, you must create an HtmlApi class instance. This object is a main SDK entry point, it accepts user data needed for authentication and some optional parameters.
 
 The HtmlApi class provides:
  - a group of constructors provides various ways of API setup concerning user credentials, API services (if they are different from the default) and some other parameters, such as HTTP connection timeout.
@@ -37,11 +37,11 @@ Install Aspose.HTML Cloud SDK for .NET via [NuGet](https://www.nuget.org/package
 
 ## **Initialize with Constructor Parameters**
 
-Classic way to initialize an SDK entry point object is to call **HtmlApi()** constructor with [user Credentials](/html/create-an-account-and-get-credentials/) parameters.
+Classic way to initialize an SDK entry point object is to call **HtmlApi()** constructor with [user Credentials](/html/overview/create-an-account-and-get-credentials/) parameters.
 
 ### **SDK Examples**
 
-The **HtmlApi** (`clientId`, `clientSecret`) method Initializes a class instance with user Credentials and default API server URL. We need to pass into the **HtmlApi()** constructor two required parameters: **Client Id** and **Client Secret**.
+The **HtmlApi** (`ClientId`, `ClientSecret`) method Initializes a class instance with user Credentials and default API server URL. We need to pass into the **HtmlApi()** constructor two required parameters: **Client Id** and **Client Secret**.
 
 {{< tabs tabTotal="10" tabID="1" tabName1="C#/.NET" >}}
 
@@ -168,7 +168,7 @@ using(var api = HtmlApi(confBuilder -> confBuilder
 
 For more details about getting Credentials and Authentication, follow the links:
 
-* [Create an Account and Get Credentials](/html/create-an-account-and-get-credentials/)
+* [Create an Account and Get Credentials](/html/overview/create-an-account-and-get-credentials/)
 * [Authentication](/html/getting-started/authentication/) 
 
 {{% /alert %}}
