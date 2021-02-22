@@ -1,5 +1,6 @@
 ---
-title: "Release Notes"
-type: docs
+title: Release Notes
 weight: 200
+type: docs
 ---
++++
