@@ -255,6 +255,8 @@ The following example demonstrates how to convert **HTML to Markdown Java/Androi
 
 {{< /tabs >}}
 
+
+
 ### **Example 3.** Convert a Web page to Markdown and save the result to the local file system
 
 In the following example, we consider the case when the source HTML document is got from the Web by its URL, converted to Markdown format and saved to the local file system. 
