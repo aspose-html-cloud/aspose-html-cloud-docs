@@ -1,9 +1,13 @@
 ---
-title: "Create an Account and Get Credentials"
-type: docs
-keywords: "authentication, create, account, free account, credentials, client id, client secret, access token, jwt token, rest api, jwt authentication, create application"
-description: "This article explains how to create a free account, get user credentials and apply it for REST API calls; you find out details about installing SDKs and making an API request from the SDK of your choice."
+title: Create an Account and Get Credentials
+keywords: authentication, create, account, free account, credentials, client id,
+  client secret, access token, jwt token, rest api, jwt authentication, create
+  application
+description: This article explains how to create a free account, get user
+  credentials and apply it for REST API calls; you find out details about
+  installing SDKs and making an API request from the SDK of your choice.
 weight: 20
+type: docs
 ---
 
 It is quite easy to use Aspose.HTML for Cloud in your projects. But before you start, you need to create an **Aspose Cloud Account** and obtain **Client Id** and **Client Secret**.
@@ -49,7 +53,7 @@ Aspose appoints excellent importance to security concerns. We use the JWT token 
 ![The Applications/Create Application page. You can specify Application Details](app-details.png)
 
 
-3. You should click on the "**+**" button next to the default storage select box field for the storage creation. Select in the drop-down menu the kind of the storage. Obey the instructions on the [Creating and Managing Storages](https://docs.aspose.cloud/total/getting-started/dashboard/how-to-configure-3rd-party-cloud-storages/) page to setup your first storage.
+3. You should click on the "**+**" button next to the default storage select box field for the storage creation. Select in the drop-down menu the kind of storage. Obey the instructions on the [Creating and Managing Storages](https://docs.aspose.cloud/total/getting-started/dashboard/how-to-configure-3rd-party-cloud-storages/) page to set up your first storage.
    
 
 ![The Applications/Create Application page. You can Select Default Storage](choose-storage.png)
@@ -64,7 +68,7 @@ The newly created storage will be pre-selected on the Default Storage field sinc
 
 ## **4. Get Your  Client Id and Client Secret**
 
-1. Go back to the **Applications** page. In the bottom of the page, you find the **My First App**. Click this link to view and update your security credentials. 
+1. Go back to the **Applications** page. At the bottom of the page, you find the **My First App**. Click this link to view and update your security credentials. 
 
 ![The Applications Page with link to Client Credentials](app.png)
 
@@ -237,7 +241,7 @@ Clone the GitHub repository and import the project into your workspace
 
 ```java
 
-Building the API client library requires Gradle Build Tool to be installed.
+Building the API client library requires the Gradle Build Tool to be installed.
 To build the API client library, simply execute:
 
 gradlew.bat
@@ -253,34 +257,33 @@ gradlew.bat
 ## **6. Make an API Request from the SDK of Your Choice**
 Apply the **Client Id** and **Client Secret**, you created in step 4, for HTML to PDF conversion using Aspose.HTML Cloud SDK.
 
-Below is an example of **HTML to PDF conversion**. HTML is got from the Web, converted to PDF and saved to the local file system.  
+Below is an example of **HTML to PDF** conversion. HTML is got from a local file system, converted to PDF and saved to the local file system.  
 
-The **HtmlApi** (` clientId`, `clientSecret`) method Initializes a class instance with user Credentials and default API server URL. You need to pass into the **HtmlApi()** constructor two required parameters: Client Id and Client Secret.
+The **HtmlApi** (` ClientId`, `ClientSecret`) method Initializes a class instance with user Credentials and default API server URL. You need to pass into the **HtmlApi()** constructor two required parameters: Client Id and Client Secret.
 
 {{< tabs tabTotal="1" tabID="12" tabName1="C#"  >}}
 
 {{< tab tabNum="1" >}}
 
 ```c#
-var clientId = "aaaaaaaa-cccc-dddd-9999-1112222333dd";
-var clientSecret = "60487a72d6325241191177e37ae5214";
 
-const string LOCAL_TESTRESULT = "d:\TestResult";
-
-var sourceUrl = "https://stallman.org/articles/anonymous-payments-thru-phones.html";
-var destFolder =  Path.Combine(LOCAL_TESTRESULT, "Pdf");
-
-using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
-{
-    ConverterBuilder convHtmlPdf = new ConverterBuilder()
-        .FromUrl(sourceUrl)
+// Create a ConverterBuilder instance - builder; specify "From", "To", and "SaveTo" builder methods with Input/Output paths and parameters of conversion
+ConverterBuilder builder = new ConverterBuilder()
+        .FromLocalFile(@"Input\html_file.html")
         .To(new PDFConversionOptions())
-        .SaveToLocal(destFolder);
+        .SaveToLocalDirectory(@"Output\Html");
 
-    ConversionResult result = api.Convert(convHtmlPdf);
-    if(result.Status == "success" && result.Files.Length > 0)
+// Initialize SDK API in the builder style
+using (var api = new HtmlApi(cb => cb
+     .WithClientId(ClientId)              // from user Сredentials
+     .WithClientSecret(ClientSecret)))
+{
+    // Convert HTML to PDF
+	ConversionResult result = api.Convert(builder);
+
+    if(result.Status == "success" && result.Files != null && result.Files.Length > 0)
     {
-        // check if the file exists locally
+        // Check if the file exists locally. Download file(s) by path result.Files 
     }
 }
 ```
@@ -291,9 +294,9 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 
 In the example, we use methods of the **ConverterBuilder** class: **FromUrl**(`urlAddress`), **To**(`ConversionOptions`) and **SaveToLocal**(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result. The **Convert**(`ConverterBuilder builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
 
-HTML to PDF conversion occurs with the **default conversion options**: the resulting PDF document’s width and height correspond to A4, all margins have zero value, and Quality of jpeg compression is 95%.
+HTML to PDF conversion occurs with the **default conversion options**: the resulting PDF document’s width and height correspond to A4, all margins have zero value, and the Quality of jpeg compression is 95%.
 
-Please see the [Conversion SDK API](/html/conversion-sdk-api/) article to learn how to convert an HTML file to other formats using Aspose.HTML Cloud SDKs.
+Please see the [Conversion SDK API](/html/conversion-api/conversion-sdk-api/) article to learn how to convert an HTML file to other formats using Aspose.HTML Cloud SDKs.
 
 {{% alert color="primary" %}} 
 
