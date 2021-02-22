@@ -178,14 +178,14 @@ The complete source code and examples to get started using the Aspose.HTML Cloud
 
 As an example, let’s use the Aspose.HTML Cloud SDK to convert HTML to JPEG.
 
-Consider a case when you get an HTML page from the web by its URL, convert it to JPEG format and save the result to the storage. The default JPEGConversionOptions are applied to the conversion. 
+Consider a case when you get an HTML file from the storage, convert it to JPEG format and save the result to the local directory. The default JPEGConversionOptions are applied to the conversion. 
 
-The **HtmlApi** (` ClientId`, `ClientSecret`) method Initializes a class instance with user Credentials. In the example, we use methods of the **ConverterBuilder** class: **FromUrl**(`urlAddress`), **To**(`ConversionOptions`) and **SaveToStorage**(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result. The **Convert**(`ConverterBuilder builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
+The **HtmlApi** (` ClientId`, `ClientSecret`) method initializes a class instance with user Credentials. In the example, we use methods of the **ConverterBuilder** class: **FromStorageFile**(`filePath`), **To**(`ConversionOptions`) and **SaveToLocalDirectory**(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result. The **Convert**(`ConverterBuilder builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
 
 ```c#
 // Create a ConverterBuilder instance - builder; specify "From", "To", and "SaveTo" builder methods with parameters of conversion
 ConverterBuilder builder = new ConverterBuilder()
-        .FromLocalFile(@"Input\html_file.html")
+        .FromStorageFile("/html_file.html")
         .To(new JPEGConversionOptions())
         .SaveToLocalDirectory(@"Output\Html");
 
