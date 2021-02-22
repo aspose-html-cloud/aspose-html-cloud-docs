@@ -1,9 +1,11 @@
 ---
-title: "Overview"
-type: docs
-keywords: "Cloud SDKs, REST API, Cloud APIs, cloud account, Authentication"
-description: "This article introduces you about Aspose.HTML Cloud APIs security and authentication. You learn about actual and deprecated REST API version, Cloud SDKs wrappers and API Explorer."
+title: Overview
+keywords: Cloud SDKs, REST API, Cloud APIs, cloud account, Authentication
+description: This article introduces you about Aspose.HTML Cloud APIs security
+  and authentication. You learn about actual and deprecated REST API version,
+  Cloud SDKs wrappers and API Explorer.
 weight: 10
+type: docs
 ---
 
 
@@ -24,8 +26,8 @@ Aspose.HTML for Cloud APIs are secured and requires authentication. Please [crea
 
 To find more about Aspose.HTML Cloud Account creating, licensing, quick starting, see also:
 
- - [Create an Account and Get Credentials](/html/create-an-account-and-get-credentials/)
- - [Licensing](/html/licensing/)
+ - [Create an Account and Get Credentials](/html/overview/create-an-account-and-get-credentials/)
+ - [Licensing](/html/overview/licensing/)
  - [Getting Started](/html/getting-started/)
 
 
