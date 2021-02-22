@@ -1,9 +1,14 @@
 ---
-title: "Convert HTML to Markdown"
-type: docs
-keywords: "format conversion, html conversion, markdown conversion, asynchronous conversion, conversion SDK, convert html to markdown, Python, PHP, Perl, Android, Swift, C#, Java, Node.js"
-description: "The article explains the usage of Aspose.HTML Cloud client SDKs for HTML to Markdown conversion by a set of examples. SDKs are wrappers upon REST API to help developers speed up their development. SDKs are available in PHP, Perl, Android, Swift, C#, Java and more."
+title: Convert HTML to Markdown
+keywords: format conversion, html conversion, markdown conversion, asynchronous
+  conversion, conversion SDK, convert html to markdown, Python, PHP, Perl,
+  Android, Swift, C#, Java, Node.js
+description: The article explains the usage of Aspose.HTML Cloud client SDKs for
+  HTML to Markdown conversion by a set of examples. SDKs are wrappers upon REST
+  API to help developers speed up their development. SDKs are available in PHP,
+  Perl, Android, Swift, C#, Java and more.
 weight: 110
+type: docs
 ---
 
 ## **Summary**
@@ -12,7 +17,7 @@ Aspose.HTML Cloud v4.0 provides the simplest API to convert {{%HTML%}} documents
 
 {{% alert color="primary" %}} 
 
-Learn how to convert an HTML file to other formats using direct REST API calls from the [Conversion REST API](/html/conversion-rest-api/) article.
+Learn how to convert an HTML file to other formats using direct REST API calls from the [Conversion REST API](/html/conversion-api/conversion-rest-api/) article.
 
 {{% /alert %}} 
 
