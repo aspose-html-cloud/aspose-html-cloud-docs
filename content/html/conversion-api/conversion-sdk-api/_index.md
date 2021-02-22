@@ -8,26 +8,26 @@ weight: 40
 
 ## **Summary**
 
-Using an SDK (API client) is the quickest way for a developer to speed up the development. An SDK takes care of a lot of low-level details of making requests and handling responses and lets you focus on writing code specific to your particular project. Check out our [GitHub repository](https://github.com/aspose-html-cloud) for a complete list of Aspose.HTML SDKs along with working examples, to get you started in no time. Please check the [Available SDKs](/html/available-sdks/) article to learn how to add an SDK to your project.
+Using an SDK (API client) is the quickest way for a developer to speed up the development. An SDK takes care of a lot of low-level details of making requests and handling responses and lets you focus on writing code specific to your particular project. Check out our [GitHub repository](https://github.com/aspose-html-cloud) for a complete list of Aspose.HTML SDKs along with working examples, to get you started in no time. Please check the [Available SDKs](/html/overview/available-sdks/) article to learn how to add an SDK to your project.
 
 ## **SDK conversion examples**
 
 A widespread use case for Aspose.HTML Cloud SDK functions is file processing and converting. The following conversion scenarios are supported:
 
- - [HTML converter](/html/conversion-sdk-api/html-converter/) 
- - [MHTML converter](/html/conversion-sdk-api/mhtml-converter/) 
+ - [HTML converter](/html/conversion-api/conversion-sdk-api/html-converter/) 
+ - [MHTML converter](/html/conversion-api/conversion-sdk-api/mhtml-converter/) 
  - [XHTML converter](/html/conversion-sdk-api/xhtml-converter/) 
  - [Markdown converter](/html/conversion-sdk-api/markdown-converter/) 
  - [EPUB converter](/html/conversion-sdk-api/epub-converter/) 
 
 To view code examples that illustrate various cases of client SDKs usage for the format conversions, follow the most-popular links:
 
- - [HTML to PDF](/html/conversion-sdk-api/convert-html-to-pdf/) 
+ - [HTML to PDF](/html/conversion-api/conversion-sdk-api/html-converter/convert-html-to-pdf/) 
  - [MHTML to PDF](/html/conversion-sdk-api/convert-mhtml-to-pdf/)
- - [HTML to JPG](/html/conversion-sdk-api/convert-html-to-jpg/) 
+ - [HTML to JPG](/html/conversion-api/conversion-sdk-api/html-converter/convert-html-to-jpg/) 
 
 {{% alert color="primary" %}} 
-Please see the [Conversion REST API](/html/conversion-rest-api/) article to learn how to convert an {{%HTML%}} file to other formats using direct REST API calls.
+Please see the [Conversion REST API](/html/conversion-api/conversion-rest-api/) article to learn how to convert an {{%HTML%}} file to other formats using direct REST API calls.
 
 {{% /alert %}} 
 

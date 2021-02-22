@@ -14,7 +14,7 @@ Aspose.HTML Cloud SDK for .NET produces a few quick and easy ways to convert HTM
 This article explains in a set of code examples how to convert an {{%HTML%}} document to {{%TIFF%}} using Aspose.HTML Cloud client SDKs.
 
 {{% alert color="primary" %}} 
-Learn how to convert an HTML file to other formats using direct REST API calls from the [Conversion REST API](/html/conversion-rest-api/) article.
+Learn how to convert an HTML file to other formats using direct REST API calls from the [Conversion REST API](/html/conversion-api/conversion-rest-api/) article.
 
 {{% /alert %}} 
 

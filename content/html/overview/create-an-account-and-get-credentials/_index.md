@@ -259,7 +259,7 @@ Apply the **Client Id** and **Client Secret**, you created in step 4, for HTML t
 
 Below is an example of **HTML to PDF** conversion. HTML is got from a local file system, converted to PDF and saved to the local file system.  
 
-The **HtmlApi** (` ClientId`, `ClientSecret`) method Initializes a class instance with user Credentials and default API server URL. You need to pass into the **HtmlApi()** constructor two required parameters: Client Id and Client Secret.
+The **HtmlApi** (` ClientId`, `ClientSecret`) method Initializes a class instance with user Credentials. You need to pass into the **HtmlApi()** constructor two required parameters: Client Id and Client Secret.
 
 {{< tabs tabTotal="1" tabID="12" tabName1="C#"  >}}
 
@@ -274,8 +274,6 @@ using(var api = new HtmlApi(ClientID, ClientSecret))
         .FromLocalFile(@"Input\html_file.html")
         .To(new PDFConversionOptions())
         .SaveToLocalDirectory(@"Output\Html");
-
-
 
     // Convert HTML to PDF
     ConversionResult result = api.Convert(builder);
@@ -292,7 +290,7 @@ using(var api = new HtmlApi(ClientID, ClientSecret))
 
 {{< /tabs >}}
 
-In the example, we use methods of the **ConverterBuilder** class: **FromUrl**(`urlAddress`), **To**(`ConversionOptions`) and **SaveToLocal**(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result. The **Convert**(`ConverterBuilder builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
+In the example, we use methods of the **ConverterBuilder** class: **FromLocalFile**(`inputPath`), **To**(`ConversionOptions`) and **SaveToLocalDirectory**(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result. The **Convert**(`builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
 
 HTML to PDF conversion occurs with the **default conversion options**: the resulting PDF document’s width and height correspond to A4, all margins have zero value, and the Quality of jpeg compression is 95%.
 

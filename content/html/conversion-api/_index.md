@@ -35,8 +35,8 @@ The application developer can use Aspose.HTML Cloud v4.0 conversion functionalit
 
 For more details about REST API and SDK features, usage examples, follow the links:
 
-- [Conversion SDK API information](/html/conversion-sdk-api/)
-- [Conversion REST API information](/html/conversion-rest-api/)
+- [Conversion SDK API information](/html/conversion-api/conversion-sdk-api/)
+- [Conversion REST API information](/html/conversion-api/conversion-rest-api/)
 
 
 
