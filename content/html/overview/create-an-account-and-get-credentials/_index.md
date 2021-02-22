@@ -266,26 +266,26 @@ The **HtmlApi** (` ClientId`, `ClientSecret`) method Initializes a class instanc
 {{< tab tabNum="1" >}}
 
 ```c#
-
-// Create a ConverterBuilder instance - builder; specify "From", "To", and "SaveTo" builder methods with Input/Output paths and parameters of conversion
-ConverterBuilder builder = new ConverterBuilder()
+// Initialize SDK API
+using(var api = new HtmlApi(ClientID, ClientSecret)) 
+{
+    // Create a ConverterBuilder instance - builder; specify "From", "To", and "SaveTo" builder methods with parameters of conversion
+    ConverterBuilder builder = new ConverterBuilder()
         .FromLocalFile(@"Input\html_file.html")
         .To(new PDFConversionOptions())
         .SaveToLocalDirectory(@"Output\Html");
 
-// Initialize SDK API in the builder style
-using (var api = new HtmlApi(cb => cb
-     .WithClientId(ClientId)              // from user Сredentials
-     .WithClientSecret(ClientSecret)))
-{
+
+
     // Convert HTML to PDF
-	ConversionResult result = api.Convert(builder);
+    ConversionResult result = api.Convert(builder);
 
     if(result.Status == "success" && result.Files != null && result.Files.Length > 0)
     {
         // Check if the file exists locally. Download file(s) by path result.Files 
     }
 }
+
 ```
 
 {{< /tab >}}
