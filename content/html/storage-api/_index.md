@@ -1,9 +1,12 @@
 ---
-title: "Storage API"
-type: docs
-keywords: "cloud storage, cloud storage api, REST API, SDK, Python, PHP, Perl, Android, Swift, C#, Java, Node.js"
-description: "The article provides common information about Aspose.HTML Cloud API v.4.0 usage. SDKs are also available in PHP, Perl, Android, Swift, C#, Java and more to help developers speed up their development."
+title: Storage API
+keywords: cloud storage, cloud storage api, REST API, SDK, Python, PHP, Perl,
+  Android, Swift, C#, Java, Node.js
+description: The article provides common information about Aspose.HTML Cloud API
+  v.4.0 usage. SDKs are also available in PHP, Perl, Android, Swift, C#, Java
+  and more to help developers speed up their development.
 weight: 100
+type: docs
 ---
 
 ## **Introduction**
@@ -62,11 +65,11 @@ To create a correctly constructed HTTP request, you should build URI relative to
 
 Using an SDK (API client) is the quickest way for a developer to speed up the development. An SDK takes care of a lot of low-level details of making requests and handling responses and lets you focus on writing code specific to your particular project. 
 
-Check out our [GitHub repository](https://github.com/aspose-html-cloud) for a complete list of Aspose.HTML SDKs along with working examples, to get you started in no time. SDKs tools include libraries, documentation, code samples, and guides that developers can apply and integrate into their own apps. 
+Check out our [GitHub repository](https://github.com/aspose-html-cloud) for a complete list of Aspose.HTML SDKs along with working examples to get you started in no time. SDKs tools include libraries, documentation, code samples, and guides that developers can apply and integrate into their own apps. 
 
 Aspose Cloud HTML SDKs are platform-independent and developed on REST-based APIs. You can use SDKs on any platform and integrate them with other cloud services to give you the flexibility you need when processing documents. You can perform a wide range of file processing operations including creation, manipulation, conversion and rendering of HTML file in the cloud in various programming languages: .NET, Java, PHP, Android, Python, Ruby, Node.js, Swift, and more. SDKs also support HTML conversion to fixed layout document formats such as  {{%PDF%}}, {{%XPS%}}, {{%DOC%}}, {{%DOCX%}}; to raster image formats including {{%JPEG%}}, {{%PNG%}}, {{%TIFF%}},  {{%BMP%}},  {{%GIF%}}  and  to {{%MD%}},  {{%MHTML%}} formats.
 
 {{% alert color="primary" %}} 
-Please check [Available SDKs](/html/available-sdks/) article to learn how to add an SDK to your project.
+Please check the [Available SDKs](/html/overview/available-sdks/) article to learn how to add an SDK to your project.
 
 {{% /alert %}}  
