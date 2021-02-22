@@ -106,7 +106,7 @@ The complete source code of Aspose.HTML Cloud SDK for Java is freely available o
 
 {{% alert color="primary" %}} 
 
-The complete source code and examples to get started using the Aspose.HTML Cloud SDK for C++ is freely available on our [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-cpp) repository.
+The complete source code and examples to get started using the Aspose.HTML Cloud SDK for C++ are freely available on our [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-cpp) repository.
 
 {{% /alert %}} 
 
@@ -116,7 +116,7 @@ The complete source code and examples to get started using the Aspose.HTML Clou
 
 {{% alert color="primary" %}} 
 
-The complete source code and examples to get started using the Aspose.HTML Cloud SDK for Go is available on our [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-go) repository.
+The complete source code and examples to get started using the Aspose.HTML Cloud SDK for Go are available on our [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-go) repository.
 
 {{% /alert %}} 
 
@@ -126,7 +126,7 @@ The complete source code and examples to get started using the Aspose.HTML Clou
 
 {{% alert color="primary" %}} 
 
-The complete source code and examples to get started using the Aspose.HTML Cloud SDK for Node.JS is available on our [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-nodejs) repository.
+The complete source code and examples to get started using the Aspose.HTML Cloud SDK for Node.JS are available on our [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-nodejs) repository.
 
 {{% /alert %}} 
 
@@ -136,7 +136,7 @@ The complete source code and examples to get started using the Aspose.HTML Cloud
 
 {{% alert color="primary" %}} 
 
-The complete source code and examples to get started using the Aspose.HTML Cloud SDK for Swift is available on our [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-swift) repository.
+The complete source code and examples to get started using the Aspose.HTML Cloud SDK for Swift are available on our [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-swift) repository.
 
 {{% /alert %}} 
 
@@ -146,7 +146,7 @@ The complete source code and examples to get started using the Aspose.HTML Cloud
 
 {{% alert color="primary" %}} 
 
-The complete source code and examples to get started using the Aspose.HTML Cloud SDK for Android is available on our [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-android) repository.
+The complete source code and examples to get started using the Aspose.HTML Cloud SDK for Android are available on our [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-android) repository.
 
 {{% /alert %}} 
 
@@ -156,7 +156,7 @@ The complete source code and examples to get started using the Aspose.HTML Cloud
 
 {{% alert color="primary" %}} 
 
-The complete source code and examples to get started using the Aspose.HTML Cloud SDK for Ruby is available on our [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby) repository.
+The complete source code and examples to get started using the Aspose.HTML Cloud SDK for Ruby are available on our [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby) repository.
 
 {{% /alert %}} 
 
@@ -166,7 +166,7 @@ The complete source code and examples to get started using the Aspose.HTML Cloud
 
 {{% alert color="primary" %}} 
 
-The complete source code and examples to get started using the Aspose.HTML Cloud SDK for PHP is available on our [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-php) repository.
+The complete source code and examples to get started using the Aspose.HTML Cloud SDK for PHP are available on our [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-php) repository.
 
 {{% /alert %}} 
 
