@@ -26,7 +26,7 @@ Aspose.HTML Cloud SDK allows you to fetch an HTML document from a storage locati
 
 ### **Example 1.** Convert HTML from the storage to Markdown and save the result to the storage
 
-The conversion process is following - a source document is loaded from the *default* cloud storage, and after conversion is completed, the result is saved to this storage.  The default MarkdownConversionOptions are applied to the conversion. In the example, we use methods of the **ConverterBuilder** class: **FromStorageFile**(`inputPath`), **To**(`ConversionOptions`) and **SaveToStorage**(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result.
+The conversion process is following - a source document is loaded from the *default* cloud storage, and after conversion is completed, the result is saved to this storage.  The default MarkdownConversionOptions are applied to the conversion. In the example, we use methods of the **ConverterBuilder** class: **FromStorageFile**(`inputPath`), **To**(`ConversionOptions`) and **SaveToStorageDirectory**(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result.
 
 {{< tabs tabTotal="10" tabID="1" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" >}}
 
@@ -35,26 +35,23 @@ The conversion process is following - a source document is loaded from the *defa
 The following example demonstrates how to convert **HTML to Markdown C#** language applying. HTML is taken from the cloud storage, converted to Markdown and saved to the storage. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
 ```c#
-const string STORAGE_SRCFOLDER = "storage:///Html/TestData";
-const string STORAGE_DSTFOLDER = "storage:///Html/TestResult";
+ConverterBuilder builder = new ConverterBuilder()
+    .FromStorageFile("/html_file.html")
+    .To(new MarkdownConversionOptions())
+    .SaveToStorageDirectory("/TestResult/Html");
 
-var name = "testpage1.html";
-var srcFilePath = $"{STORAGE_SRCFOLDER}/{name}";
-var destFolder = $"{STORAGE_DSTFOLDER}/MD";
-
-using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
+// Initialize SDK API in the builder style
+using (var api = new HtmlApi(cb => cb
+    .WithClientId(ClientId)
+    .WithClientSecret(ClientSecret)))
 {
-    ConverterBuilder convHtmlMd = new ConverterBuilder()
-        .FromStorageFile(srcFilePath)
-        .To(new MarkdownConversionOptions())
-        .SaveToStorage(destFolder);
-
-    ConversionResult result = api.Convert(convHtmlMd);
+    // Convert HTML to Markdown
+    ConversionResult result = api.Convert(builder);
     if(result.Status == "success" && result.Files.Length > 0)
     {
         // download file(s) by path result.Files
-    }
-}
+    }               
+}   
 ```
 
 {{< /tab >}}
@@ -145,7 +142,7 @@ The following example demonstrates how to convert **HTML to Markdown Java/Androi
 
 The example below shows how to convert an HTML file from the local file system to Markdown and save the result to the cloud storage.
 
-For conversion, we use methods of the **ConverterBuilder** class: **FromLocalFile**(`inputPath`), **To**(`ConversionOptions`) and **SaveToStorage**(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result. The **Convert**(`ConverterBuilder builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
+For conversion, we use methods of the **ConverterBuilder** class: **FromLocalFile**(`inputPath`), **To**(`ConversionOptions`) and **SaveToStorageDirectory**(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result. The **Convert**(`builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
 
 {{< tabs tabTotal="10" tabID="2" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" >}}
 
@@ -154,26 +151,24 @@ For conversion, we use methods of the **ConverterBuilder** class: **FromLocalFil
 The following example demonstrates how to convert **HTML to Markdown C#** language applying. HTML is taken from the local file system, converted to Markdown and saved to the storage. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
 ```c#
-const string LOCAL_TESTDATA = "d:\TestData";
-const string STORAGE_DSTFOLDER = "storage:///Html/TestResult";
+// Create a ConverterBuilder instance, specify "From", "To", and "SaveTo" builder methods with parameters of conversion
+ConverterBuilder builder = new ConverterBuilder()
+    .FromLocalFile(@"Input\html_file.html")
+    .To(new MarkdownConversionOptions())
+    .SaveToStorageDirectory("/TestResult/Html");
 
-var name = "testpage1.html";
-var srcFilePath = $"{LOCAL_TESTDATA}\{name}";
-var destFolder = $"{STORAGE_DSTFOLDER}/MD";
-
-using(var api = new HtmlApi(clientId, clientSecret))
-{    
-    ConverterBuilder convHtmlMD = new ConverterBuilder()
-                .FromLocalFile(sourceFile)
-                .To(new MarkdownConversionOptions())
-                .SaveToStorage(destFolder);
-
-    ConversionResult result = api.Convert(convHtmlMD);
+// Initialize SDK API in the builder style
+using (var api = new HtmlApi(cb => cb
+    .WithClientId(ClientId)
+    .WithClientSecret(ClientSecret)))
+{
+    // Convert HTML to Markdown
+    ConversionResult result = api.Convert(builder);
     if(result.Status == "success" && result.Files.Length > 0)
     {
         // download file(s) by path result.Files
-    }
-}
+    }               
+}  
 ```
 
 {{< /tab >}}
@@ -262,7 +257,7 @@ The following example demonstrates how to convert **HTML to Markdown Java/Androi
 
 ### **Example 3.** Convert a Web page to Markdown and save the result to the local file system
 
-In the following example, we consider the case when the source HTML document is got from the web by its URL, converted to Markdown format and saved to the local file system. 
+In the following example, we consider the case when the source HTML document is got from the Web by its URL, converted to Markdown format and saved to the local file system. 
 
 {{< tabs tabTotal="10" tabID="2" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" >}}
 
@@ -271,24 +266,24 @@ In the following example, we consider the case when the source HTML document is 
 The code snippet below explains how to convert **HTML to Markdown C#** language applying. HTML is taken from the Web, converted to Markdown and saved to the local file system.  You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
 ```c#
-const string LOCAL_TESTRESULT = "d:\TestResult";
+// Create a ConverterBuilder instance, specify "From", "To", and "SaveTo" builder methods with parameters of conversion
+ConverterBuilder builder = new ConverterBuilder()
+    .FromUrl("https://stallman.org/articles/anonymous-payments-thru-phones.html")
+    .To(new MarkdownConversionOptions())
+    .SaveToLocalDirectory(@"Output\Url");
 
-var sourceUrl = "https://stallman.org/articles/anonymous-payments-thru-phones.html";
-var destFolder =  Path.Combine(LOCAL_TESTRESULT, "MD_UrlToLocal");
-
-using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
+// Initialize SDK API in the builder style
+using (var api = new HtmlApi(cb => cb
+    .WithClientId(ClientId)
+    .WithClientSecret(ClientSecret)))
 {
-    ConverterBuilder convHtmlMD = new ConverterBuilder()
-        .FromUrl(sourceUrl)
-        .To(new MarkdownConversionOptions())
-        .SaveToLocal(destFolder);
-
-    ConversionResult result = api.Convert(convHtmlMD);
+    // Convert HTML to Markdown
+    ConversionResult result = api.Convert(builder);
     if(result.Status == "success" && result.Files.Length > 0)
     {
-        // check if file exists locally
-    }
-}
+        // download file(s) by path result.Files
+    }               
+}  
 ```
 
 {{< /tab >}}
@@ -375,9 +370,11 @@ The code snippet below explains how to convert **HTML to Markdown Java/Android**
 
 {{< /tabs >}}
 
-In the example, we use methods of the **ConverterBuilder** class: **FromUrl**(`urlAddress`), **To**(`ConversionOptions`) and **SaveToLocal**(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result. The **Convert**(`ConverterBuilder builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
+In the example, we use methods of the **ConverterBuilder** class: **FromUrl**(`urlAddress`), **To**(`ConversionOptions`) and **SaveToLocalDirectory**(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result. The **Convert**(`builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
 
 {{% alert color="primary" %}} 
-You can download Aspose.HTML Cloud SDKs of your required platform from [GitHub](https://github.com/aspose-html-cloud/). 
+Please check the [Available SDKs](/html/overview/available-sdks/) article to learn how to add an SDK to your project.
+
+To obtain more information about converting between formats, please read the [Conversion SDK API](/html/conversion-api/conversion-sdk-api/) section.
 
 {{% /alert %}}
