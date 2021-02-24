@@ -1,5 +1,6 @@
 ---
 title: Aspose.HTML Cloud
+type: docs
 keywords: SDKs, REST API, Cloud REST API, cloud storage, Convert HTML, Convert
   XHTML, Convert MHTML, Convert EPUB, Convert Markdown, HTML to PDF, SDK
   examples
@@ -7,10 +8,9 @@ description: "Aspose.HTML Cloud provides two main points: the conversion between
   formats feature and the cloud storage access functionality. This article
   introduces you with Aspose.HTML Cloud v4.0 abilities to provide access to
   files and folders stored in the cloud storage;  presents a set of available
-  conversions including HTML, XHTML, and MHTML, EPUB and Markdown converters."a
-s SDKs on the various programming languages.
+  conversions including HTML, XHTML, and MHTML, EPUB and Markdown converters."
 ---
-
+{{% alert color="primary" %}}
 The main highlights of Aspose.HTML Cloud REST API v4.0  are the [conversion feature](/html/conversion-api/) and the [cloud storage access](/html/storage-api/) functionality.
 
 {{% /alert %}} 
@@ -40,8 +40,6 @@ ConverterBuilder builder = new ConverterBuilder()
     .FromLocalFile(@"Input\html_file.html")
     .To(new PDFConversionOptions())
     .SaveToStorageDirectory("/TestResult/Html");
-
-
 
 // Initialize SDK API in the builder style
 using (var api = new HtmlApi(cb => cb
