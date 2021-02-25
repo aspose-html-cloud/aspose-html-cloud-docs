@@ -16,15 +16,15 @@ A widespread use case for Aspose.HTML Cloud SDK functions is file processing and
 
  - [HTML converter](/html/conversion-api/conversion-sdk-api/html-converter/) 
  - [MHTML converter](/html/conversion-api/conversion-sdk-api/mhtml-converter/) 
- - [XHTML converter](/html/conversion-sdk-api/xhtml-converter/) 
- - [Markdown converter](/html/conversion-sdk-api/markdown-converter/) 
- - [EPUB converter](/html/conversion-sdk-api/epub-converter/) 
+ - [XHTML converter](/html/conversion-api/conversion-sdk-api/xhtml-converter/) 
+ - [Markdown converter](/html/conversion-api/conversion-sdk-api/markdown-converter/) 
+ - [EPUB converter](/html/conversion-api/conversion-sdk-api/epub-converter/) 
 
 To view code examples that illustrate various cases of client SDKs usage for the format conversions, follow the most-popular links:
 
  - [HTML to PDF](/html/conversion-api/conversion-sdk-api/html-converter/convert-html-to-pdf/) 
- - [MHTML to PDF](/html/conversion-sdk-api/convert-mhtml-to-pdf/)
- - [HTML to JPG](/html/conversion-api/conversion-sdk-api/html-converter/convert-html-to-jpg/) 
+ - [MHTML to PDF](/html/conversion-api/conversion-sdk-api/mhtml-converter/convert-mhtml-to-pdf/)
+ - [HTML to JPG](/html/conversion-api/conversion-sdk-api/html-converter/convert-html-to-jpeg/) 
 
 {{% alert color="primary" %}} 
 Please see the [Conversion REST API](/html/conversion-api/conversion-rest-api/) article to learn how to convert an {{%HTML%}} file to other formats using direct REST API calls.

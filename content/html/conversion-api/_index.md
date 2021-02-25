@@ -25,7 +25,6 @@ Aspose.HTML Cloud API you can call directly from your browser by accessing the [
 {{% /alert %}} 
 
 
-
 ## **SDK vs. REST API**
 
 The application developer can use Aspose.HTML Cloud v4.0 conversion functionality calling directly the REST API by HTTP requests or using a set of SDKs.

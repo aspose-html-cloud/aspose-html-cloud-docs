@@ -1,7 +1,7 @@
 ---
 title: Convert HTML to Markdown
-keywords: format conversion, html conversion, markdown conversion, asynchronous
-  conversion, conversion SDK, convert html to markdown, Python, PHP, Perl,
+keywords: html to markdown, html to md, convert html to md, html to markdown conversion, format conversion, html conversion, markdown conversion, asynchronous
+  conversion, conversion SDK, convert html to markdown, SDK examples, Python, PHP, Perl,
   Android, Swift, C#, Java, Node.js
 description: The article explains the usage of Aspose.HTML Cloud client SDKs for
   HTML to Markdown conversion by a set of examples. SDKs are wrappers upon REST
@@ -142,7 +142,7 @@ The following example demonstrates how to convert **HTML to Markdown Java/Androi
 
 The example below shows how to convert an HTML file from the local file system to Markdown and save the result to the cloud storage.
 
-For conversion, we use methods of the **ConverterBuilder** class: **FromLocalFile**(`inputPath`), **To**(`ConversionOptions`) and **SaveToStorageDirectory**(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result. The **Convert**(`builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
+For conversion, we use methods of the **ConverterBuilder** class: **FromLocalFile**(`inputPath`), **To**(`ConversionOptions`) and **SaveToStorageDirectory**(`outputDirectory`) that specify input data, the output format, and the target directory for a conversion result. The **Convert**(`builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
 
 {{< tabs tabTotal="10" tabID="2" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" >}}
 
@@ -255,6 +255,7 @@ The following example demonstrates how to convert **HTML to Markdown Java/Androi
 
 {{< /tabs >}}
 
+
 ### **Example 3.** Convert a Web page to Markdown and save the result to the local file system
 
 In the following example, we consider the case when the source HTML document is got from the Web by its URL, converted to Markdown format and saved to the local file system. 
@@ -263,10 +264,10 @@ In the following example, we consider the case when the source HTML document is 
 
 {{< tab tabNum="1" >}}
 
-The code snippet below explains how to convert **HTML to Markdown C#** language applying. HTML is taken from the Web, converted to Markdown and saved to the local file system.  You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
+The code snippet below explains how to convert **HTML to Markdown C#** language applying. HTML is taken from the Web, converted to Markdown and saved to the local file system. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
 ```c#
-// Create a ConverterBuilder instance, specify "From", "To", and "SaveTo" builder methods with parameters of conversion
+// Create a ConverterBuilder instance and specify builder methods with parameters of conversion
 ConverterBuilder builder = new ConverterBuilder()
     .FromUrl("https://stallman.org/articles/anonymous-payments-thru-phones.html")
     .To(new MarkdownConversionOptions())
@@ -370,7 +371,7 @@ The code snippet below explains how to convert **HTML to Markdown Java/Android**
 
 {{< /tabs >}}
 
-In the example, we use methods of the **ConverterBuilder** class: **FromUrl**(`urlAddress`), **To**(`ConversionOptions`) and **SaveToLocalDirectory**(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result. The **Convert**(`builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
+In the example, we use methods of the **ConverterBuilder** class: **FromUrl**(`urlAddress`), **To**(`ConversionOptions`) and **SaveToLocalDirectory**(`outputDirectory`) that specify input data, the output format, and the target directory for a conversion result. The **Convert**(`builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
 
 {{% alert color="primary" %}} 
 Please check the [Available SDKs](/html/overview/available-sdks/) article to learn how to add an SDK to your project.
