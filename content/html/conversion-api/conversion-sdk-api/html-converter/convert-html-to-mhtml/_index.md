@@ -1,8 +1,8 @@
 ---
 title: "Convert HTML to MHTML"
 type: docs
-keywords: "format conversion, html conversion, epub conversion, mhtml conversion, asynchronous conversion, conversion SDK, convert html to mhtml, Python, PHP, Perl, Android, Swift, C#, Java, Node.js"
-description: "The article explains the usage of Aspose.HTML Cloud client SDKs for HTML to MHTML conversion by a set of examples. SDKs are wrappers upon REST API to help developers speed up their development. SDKs are available in PHP, Perl, Android, Swift, C#, Java and more."
+keywords: "format conversion, html conversion, epub conversion, mhtml conversion, asynchronous conversion, conversion SDK, convert html to mhtml, html to mhtml, html to mhtml conversion, SDK example, Python, PHP, Perl, Android, Swift, C#, Java, Node.js"
+description: "The article explains the usage of Aspose.HTML Cloud client SDKs for HTML to MHTML conversion by a set of SDK examples. SDKs are wrappers upon REST API to help developers speed up their development. SDKs are available in PHP, Perl, Android, Swift, C#, Java and more."
 weight: 100
 ---
 
@@ -22,7 +22,7 @@ Aspose.HTML Cloud SDK allows you to fetch an HTML document from storage location
 
 ### **Example 1.** Convert HTML from the storage to MHTML and save the result to the storage
 
-The conversion process is following - a source document is loaded from the *default* cloud storage, and after conversion is completed, the result is saved to this storage.  The default MHTMLConversionOptions are applied to the conversion. In the example, we use methods of the **ConverterBuilder** class: **FromStorageFile**(`inputPath`), **To**(`ConversionOptions`) and **SaveToStorage**(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result.
+The conversion process is following - a source document is loaded from the *default* cloud storage, and after conversion is completed, the result is saved to this storage. The default MHTMLConversionOptions are applied to the conversion. In the example, we use methods of the **ConverterBuilder** class: **FromStorageFile**(`inputPath`), **To**(`ConversionOptions`) and **SaveToStorageDirectory**(`outputDirectory`) that specify input data, the output format, and the target directory for a conversion result. The **Convert**(`builder`) overloaded method starts a conversion synchronously using ConverterBuilder class conversion parameters.
 
 {{< tabs tabTotal="10" tabID="1" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" >}}
 
@@ -31,24 +31,23 @@ The conversion process is following - a source document is loaded from the *defa
 The following example demonstrates how to convert **HTML to MHTML C#** language applying. HTML is taken from the cloud storage, converted to MHTML and saved to storage. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
 ```c#
-const string STORAGE_SRCFOLDER = "storage:///Html/TestData";
-const string STORAGE_DSTFOLDER = "storage:///Html/TestResult";
+// Create a ConverterBuilder instance and specify builder methods with parameters of conversion
+ConverterBuilder builder = new ConverterBuilder()                   
+    .FromStorageFile("/html_file.html")
+    .To(new MHTMLConversionOptions())
+    .SaveToStorageDirectory("/TestResult/Html");
 
-var name = "testpage1.html";
-var srcFilePath = $"{STORAGE_SRCFOLDER}/{name}";
-var destFolder = $"{STORAGE_DSTFOLDER}/MHTML";
-
-using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
+// Initialize SDK API using the configuration builder          
+using (var api = new HtmlApi(cb => cb
+    .WithClientId(ClientId)            // from user Сredentials            
+    .WithClientSecret(ClientSecret)))
 {
-    ConverterBuilder convHtmlMhtml = new ConverterBuilder()
-        .FromStorageFile(srcFilePath)
-        .To(new MHTMLConversionOptions())
-        .SaveToStorage(destFolder);
+    // Convert HTML to MHTML            
+    ConversionResult result = api.Convert(builder);
 
-    ConversionResult result = api.Convert(convHtmlMhtml);
     if(result.Status == "success" && result.Files.Length > 0)
     {
-        // download file(s) by path result.Files
+        // Download file(s) by path result.Files 
     }
 }
 ```
@@ -143,7 +142,7 @@ The following example demonstrates how to convert **HTML to MHTML Java/Android**
 
 The example below shows how to convert an HTML file from the local file system to MHTML and save the result to the cloud storage.
 
-For conversion, we use methods of the **ConverterBuilder** class: **FromLocalFile**(`inputPath`), **To**(`ConversionOptions`) and **SaveToStorage**(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result. The **Convert**(`ConverterBuilder builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
+For conversion, we use methods of the **ConverterBuilder** class: **FromLocalFile**(`inputPath`), **To**(`ConversionOptions`) and **SaveToStorageDirectory**(`outputDirectory`) that specify input data, the output format, and the target directory for a conversion result. The **Convert**(`builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
 
 {{< tabs tabTotal="10" tabID="2" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" >}}
 
@@ -152,24 +151,23 @@ For conversion, we use methods of the **ConverterBuilder** class: **FromLocalFil
 The following example demonstrates how to convert **HTML to MHTML C#** language applying. HTML is taken from the local file system, converted to MHTML and saved to the storage. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
 ```c#
-const string LOCAL_TESTDATA = "d:\TestData";
-const string STORAGE_DSTFOLDER = "storage:///Html/TestResult";
+// Create a ConverterBuilder instance and specify builder methods with parameters of conversion
+ConverterBuilder builder = new ConverterBuilder()                   
+    .FromLocalFile(@"Input\html_file.html")
+    .To(new MHTMLConversionOptions())
+    .SaveToStorageDirectory("/TestResult/Html");
 
-var name = "testpage1.html";
-var srcFilePath = $"{LOCAL_TESTDATA}\{name}";
-var destFolder = $"{STORAGE_DSTFOLDER}/MHTML";
+// Initialize SDK API using the configuration builder          
+using (var api = new HtmlApi(cb => cb
+    .WithClientId(ClientId)            // from user Сredentials            
+    .WithClientSecret(ClientSecret)))
+{
+    // Convert HTML to MHTML            
+    ConversionResult result = api.Convert(builder);
 
-using(var api = new HtmlApi(clientId, clientSecret))
-{    
-    ConverterBuilder convHtmlMHTML = new ConverterBuilder()
-                .FromLocalFile(sourceFile)
-                .To(new MHTMLConversionOptions())
-                .SaveToStorage(destFolder);
-
-    ConversionResult result = api.Convert(convHtmlMHTML);
     if(result.Status == "success" && result.Files.Length > 0)
     {
-        // download file(s) by path result.Files
+        // Download file(s) by path result.Files 
     }
 }
 ```
@@ -248,7 +246,7 @@ The following example demonstrates how to convert **HTML to MHTML Swift** langua
 
 {{< tab tabNum="9" >}}
 
-The following example demonstrates how to convert **HTML to MHTML Java/Android** applying. HTML is taken from the local file system, converted to MHTML and saved to the storage.  You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
+The following example demonstrates how to convert **HTML to MHTML Java/Android** applying. HTML is taken from the local file system, converted to MHTML and saved to the storage. You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
 
 ```java
 
@@ -260,33 +258,34 @@ The following example demonstrates how to convert **HTML to MHTML Java/Android**
 
 ### **Example 3.** Convert a Web page to MHTML and save the result to the local file system
 
-In the following example, we consider the case when the source HTML document is got from the web by its URL, converted to MHTML format and saved to the local file system. 
+In the following SDK example, we consider the case when the source HTML document is got from the web by its URL, converted to MHTML format and saved to the local file system. 
 
 {{< tabs tabTotal="10" tabID="2" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" >}}
 
 {{< tab tabNum="1" >}}
 
-The code snippet below explains how to convert **HTML to MHTML C#** language applying. HTML is taken from the Web, converted to MHTML and saved to the local file system.  You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
+The code snippet below explains how to convert **HTML to MHTML C#** language applying. HTML is taken from the Web, converted to MHTML and saved to the local file system. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
 ```c#
-const string LOCAL_TESTRESULT = "d:\TestResult";
+// Create a ConverterBuilder instance and specify builder methods with parameters of conversion
+ConverterBuilder builder = new ConverterBuilder()
+    .FromUrl("https://stallman.org/articles/anonymous-payments-thru-phones.html")
+    .To(new MHTMLConversionOptions())
+    .SaveToLocalDirectory(@"Output\Url");
 
-var sourceUrl = "https://stallman.org/articles/anonymous-payments-thru-phones.html";
-var destFolder =  Path.Combine(LOCAL_TESTRESULT, "MHTML");
-
-using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
+// Initialize SDK API in the builder style           
+using (var api = new HtmlApi(cb => cb
+    .WithClientId(ClientId)           // from user Сredentials            
+    .WithClientSecret(ClientSecret)))
 {
-    ConverterBuilder convHtmlMhtml = new ConverterBuilder()
-        .FromUrl(sourceUrl)
-        .To(new MHTMLConversionOptions())
-        .SaveToLocal(destFolder);
+    // Convert HTML to MHTML            
+    ConversionResult result = api.Convert(builder);
 
-    ConversionResult result = api.Convert(convHtmlMhtml);
     if(result.Status == "success" && result.Files.Length > 0)
     {
-        // check if file exists locally
+        // Download file(s) by path result.Files 
     }
-}
+}	
 ```
 
 {{< /tab >}}
@@ -333,7 +332,7 @@ The code snippet below explains how to convert **HTML to MHTML PHP** language ap
 
 {{< tab tabNum="6" >}}
 
-The code snippet below explains how to convert **HTML to MHTML Ruby** language applying. HTML is taken from the Web, converted to MHTML and saved to the local file system.  You can download the Ruby SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby).
+The code snippet below explains how to convert **HTML to MHTML Ruby** language applying. HTML is taken from the Web, converted to MHTML and saved to the local file system. You can download the Ruby SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby).
 
 ```ruby
 
@@ -363,7 +362,7 @@ The code snippet below explains how to convert **HTML to MHTML Swift** language 
 
 {{< tab tabNum="9" >}}
 
-The code snippet below explains how to convert **HTML to MHTML Java/Android** applying. HTML is taken from the Web, converted to MHTML and saved to the local file system.  You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
+The code snippet below explains how to convert **HTML to MHTML Java/Android** applying. HTML is taken from the Web, converted to MHTML and saved to the local file system. You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
 
 ```java
 
@@ -373,10 +372,10 @@ The code snippet below explains how to convert **HTML to MHTML Java/Android** ap
 
 {{< /tabs >}}
 
-In the example, we use methods of the **ConverterBuilder** class: **FromUrl**(`urlAddress`), **To**(`ConversionOptions`) and **SaveToLocal**(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result. The **Convert**(`ConverterBuilder builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
+In the example, we use methods of the **ConverterBuilder** class: **FromUrl**(`url`), **To**(`ConversionOptions`) and **SaveToLocalDirectory**(`outputDirectory`) that specify input data, the output format, and the target directory for a conversion result. The **Convert**(`builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
 
 {{% alert color="primary" %}} 
-You can download Aspose.HTML Cloud SDKs of your required platform from [GitHub](https://github.com/aspose-html-cloud/). 
+For more details concerning the conversion options, see the [SDK Conversion Options](/html/conversion-api/sdk-conversion-options/) article. 
 
 {{% /alert %}} 
 

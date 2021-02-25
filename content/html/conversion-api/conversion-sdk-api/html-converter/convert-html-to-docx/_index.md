@@ -1,8 +1,8 @@
 ---
 title: "Convert HTML to DOCX"
 type: docs
-keywords: "format conversion, html conversion, asynchronous conversion, conversion SDK, convert html to doc, convert html to docx, Python, PHP, Perl, Android, Swift, C#, Java, Node.js"
-description: "The article explains the usage of Aspose.HTML Cloud client SDKs for HTML to DOCX/DOC conversion by a set of examples. SDKs are wrappers upon REST API to help developers speed up their development. SDKs are available in PHP, Perl, Android, Swift, C#, Java and more."
+keywords: "format conversion, html conversion, asynchronous conversion, conversion SDK, convert html to doc, convert html to docx, html to doc, html to doc conversion, html to docx, SDK example, Python, PHP, Perl, Android, Swift, C#, Java, Node.js"
+description: "The article explains the usage of Aspose.HTML Cloud client SDKs for HTML to DOCX/DOC conversion by a set of SDK examples. SDKs are wrappers upon REST API to help developers speed up their development. SDKs are available in PHP, Perl, Android, Swift, C#, Java and more."
 weight: 30
 ---
 
@@ -28,33 +28,32 @@ Aspose.HTML Cloud SDK allows you to fetch an HTML document from storage location
 
 Let’s consider a common SDK usage scenario when the source document is in the cloud storage, and you want to convert it to some other format and save to the storage. In our example, it is HTML to DOCX/DOC conversion.
 
-The conversion process is following - a source document is loaded from the *default* cloud storage, and after conversion is completed, the result is saved to this storage.  The default DOCConversionOptions are applied to the conversion. In the example, we use methods of the **ConverterBuilder** class: **FromStorageFile**(`inputPath`), **To**(`ConversionOptions`) and **SaveToStorage**(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result. The **Convert**(`ConverterBuilder builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
+The conversion process is following - a source document is loaded from the *default* cloud storage, and after conversion is completed, the result is saved to this storage. The default DOCConversionOptions are applied to the conversion. In the example, we use methods of the **ConverterBuilder** class: **FromStorageFile**(`inputPath`), **To**(`ConversionOptions`) and **SaveToStorageDirectory**(`outputDirectory`) that specify input data, the output format, and the target directory for a conversion result. The **Convert**(`builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
 
 {{< tabs tabTotal="10" tabID="1" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" >}}
 
 {{< tab tabNum="1" >}}
 
-The following example demonstrates how to convert **HTML to DOCX C#** language applying. HTML is taken from the cloud storage, converted to DOCX and saved to the storage.  You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
+The following example demonstrates how to convert **HTML to DOC C#** language applying. HTML is taken from the cloud storage, converted to DOC and saved to the storage.  You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
 ```c#
-const string STORAGE_SRCFOLDER = "storage:///Html/TestData";
-const string STORAGE_DSTFOLDER = "storage:///Html/TestResult";
+// Create a ConverterBuilder instance and specify builder methods with parameters of conversion
+ConverterBuilder builder = new ConverterBuilder()                   
+    .FromStorageFile("/html_file.html")
+    .To(new DOCConversionOptions())
+    .SaveToStorageDirectory("/TestResult/Html");
 
-var name = "testpage1.html";
-var srcFilePath = $"{STORAGE_SRCFOLDER}/{name}";
-var destFolder = $"{STORAGE_DSTFOLDER}/Doc";
-
-using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
+// Initialize SDK API using the configuration builder          
+using (var api = new HtmlApi(cb => cb
+    .WithClientId(ClientId)            // from user Сredentials            
+    .WithClientSecret(ClientSecret)))
 {
-    ConverterBuilder convHtmlDoc = new ConverterBuilder()
-        .FromStorageFile(srcFilePath)
-        .To(new DOCConversionOptions())
-        .SaveToStorage(destFolder);
+    // Convert HTML to DOC            
+    ConversionResult result = api.Convert(builder);
 
-    ConversionResult result = api.Convert(convHtmlDoc);
     if(result.Status == "success" && result.Files.Length > 0)
     {
-        // download file(s) by path result.Files
+        // Download file(s) by path result.Files 
     }
 }
 ```
@@ -150,45 +149,45 @@ HTML to DOCX conversion occurs with the **default conversion options**: the resu
 
 
 
-### **Example 2.** Convert HTML from the local file system to DOCX/DOC  with explicitly specified options and save the result to the storage
+### **Example 2.** Convert HTML from the local file system to DOCX/DOC with explicitly specified options and save the result to the local file system
 
-The example below demonstrates how to convert an HTML file from the local file system to DOCX/DOC format with explicitly specified options and save in the cloud storage.
+The example below demonstrates how to convert an HTML file from the local file system to DOCX/DOC format with explicitly specified options and save in the local file system.
 
- For conversion, we use methods of the **ConverterBuilder** class: **FromLocalFile**(`inputPath`), **To**(`ConversionOptions`) and **SaveToStorage**(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result.
+ For conversion, we use methods of the **ConverterBuilder** class: **FromLocalFile**(`inputPath`), **To**(`ConversionOptions`) and **SaveToLocalDirectory**(`outputDirectory`) that specify input data, the output format, and the target directory for a conversion result.
 
 {{< tabs tabTotal="10" tabID="2" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" >}}
 
 {{< tab tabNum="1" >}}
 
-The following example demonstrates how to convert **HTML to DOCX C#** language applying. HTML is taken from the local file system, converted to DOCX and saved to the storage. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
+The following SDK example demonstrates how to convert **HTML to DOC C#** language applying. HTML is taken from the local file system, converted to DOC and saved to the local file system. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
 ```c#
-const string LOCAL_TESTDATA = "d:\TestData";
-const string STORAGE_DSTFOLDER = "storage:///Html/TestResult";
-
-var name = "testpage1.html";
-var srcFilePath = $"{LOCAL_TESTDATA}\{name}";
-var destFolder = $"{STORAGE_DSTFOLDER}/Doc";
-
-using(var api = new HtmlApi(clientId, clientSecret))
-{
-    ConversionOptions docOpts = new DOCConversionOptions()
+// Create an instance of ConversionOptions class and specify options for HTML to DOC conversion		
+ConversionOptions docOpts = new DOCConversionOptions()
         .SetHeight(800)
         .SetWidth(1000)
         .SetLeftMargin(10)
         .SetRightMargin(10)
         .SetBottomMargin(10)
-        .SetTopMargin(10);
+        .SetTopMargin(10)
+        
+// Create a ConverterBuilder instance - builder and specify builder methods
+ConverterBuilder builder = new ConverterBuilder()
+    .FromLocalFile(@"Input\html_file.html")
+    .To(docOpts)
+    .SaveToStorageDirectory("/TestResult/Html/WithParams");
 
-    ConverterBuilder convHtmlDoc = new ConverterBuilder()
-        .FromLocalFile(srcFilePath)
-        .To(docOpts)
-        .SaveToStorage(destFolder);
+// Initialize SDK API using the configuration builder
+using (var api = new HtmlApi(cb => cb
+     .WithClientId(ClientId)              // from user Сredentials
+     .WithClientSecret(ClientSecret)))
+{
+    // Convert HTML to DOC
+	ConversionResult result = api.Convert(builder);
 
-    ConversionResult result = api.Convert(convHtmlDoc);
     if(result.Status == "success" && result.Files.Length > 0)
     {
-        // download file(s) by path result.Files
+        // Download file(s) by path result.Files 
     }
 }
 ```
@@ -197,7 +196,7 @@ using(var api = new HtmlApi(clientId, clientSecret))
 
 {{< tab tabNum="2" >}}
 
-The following example demonstrates how to convert **HTML to DOCX java** language applying. HTML is taken from the local file system, converted to DOCX and saved to the storage. You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
+The following example demonstrates how to convert **HTML to DOC java** language applying. HTML is taken from the local file system, converted to DOC and saved to the local file system. You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
 
 ```java
 
@@ -207,7 +206,7 @@ The following example demonstrates how to convert **HTML to DOCX java** language
 
 {{< tab tabNum="3" >}}
 
-The following example demonstrates how to convert **HTML to DOCX C++** language applying. HTML is taken from the local file system, converted to DOCX and saved to the storage.
+The following example demonstrates how to convert **HTML to DOC C++** language applying. HTML is taken from the local file system, converted to DOC and saved to the local file system.
 
 ```c++
 
@@ -217,7 +216,7 @@ The following example demonstrates how to convert **HTML to DOCX C++** language 
 
 {{< tab tabNum="4" >}}
 
-The following example demonstrates how to convert **HTML to DOCX Python** language applying. HTML is taken from the local file system, converted to DOCX and saved to the storage. You can download the Python SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-python).
+The following example demonstrates how to convert **HTML to DOC Python** language applying. HTML is taken from the local file system, converted to DOC and saved to the local file system. You can download the Python SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-python).
 
 ```python
 
@@ -227,7 +226,7 @@ The following example demonstrates how to convert **HTML to DOCX Python** langua
 
 {{< tab tabNum="5" >}}
 
-The following example demonstrates how to convert **HTML to DOCX PHP** language applying. HTML is taken from the local file system, converted to DOCX and saved to the storage. You can download the PHP SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-php)
+The following example demonstrates how to convert **HTML to DOC PHP** language applying. HTML is taken from the local file system, converted to DOC and saved to the local file system. You can download the PHP SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-php)
 
 ```php
 
@@ -237,7 +236,7 @@ The following example demonstrates how to convert **HTML to DOCX PHP** language 
 
 {{< tab tabNum="6" >}}
 
-The following example demonstrates how to convert **HTML to DOCX Ruby** language applying. HTML is taken from the local file system, converted to DOCX and saved to the storage. You can download the Ruby SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby).
+The following example demonstrates how to convert **HTML to DOC Ruby** language applying. HTML is taken from the local file system, converted to DOC and saved to the local file system. You can download the Ruby SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby).
 
 ```ruby
 
@@ -247,7 +246,7 @@ The following example demonstrates how to convert **HTML to DOCX Ruby** language
 
 {{< tab tabNum="7" >}}
 
-The following example demonstrates how to convert **HTML to DOCX Node.js** language applying. HTML is taken from the local file system, converted to DOCX and saved to the storage.
+The following example demonstrates how to convert **HTML to DOC Node.js** language applying. HTML is taken from the local file system, converted to DOC and saved to the local file system.
 
 ```javascript
 
@@ -257,7 +256,7 @@ The following example demonstrates how to convert **HTML to DOCX Node.js** langu
 
 {{< tab tabNum="8" >}}
 
-The following example demonstrates how to convert **HTML to DOCX Swift** language applying. HTML is taken from the local file system, converted to DOCX and saved to the storage. You can download the Swift SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-swift).
+The following example demonstrates how to convert **HTML to DOC Swift** language applying. HTML is taken from the local file system, converted to DOC and saved to the local file system. You can download the Swift SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-swift).
 
 ```swift
 
@@ -267,7 +266,7 @@ The following example demonstrates how to convert **HTML to DOCX Swift** languag
 
 {{< tab tabNum="9" >}}
 
-The following example demonstrates how to convert **HTML to DOCX Java/Android** applying. HTML is taken from the local file system, converted to DOCX and saved to the storage. You can download the Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
+The following example demonstrates how to convert **HTML to DOC Java/Android** applying. HTML is taken from the local file system, converted to DOC and saved to the local file system. You can download the Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
 
 ```java
 
@@ -276,41 +275,39 @@ The following example demonstrates how to convert **HTML to DOCX Java/Android** 
 {{< /tab >}}
 
 {{< /tabs >}}
-
-
 
 {{% alert color="primary" %}} 
 More details about available conversion parameters for HTML files are in the [SDK Conversion Options](/html/sdk-conversion-options/) section.
 
 {{% /alert %}} 
 
-### **Example 3.** Convert a Web page to DOCX/DOC and save the result to the local file system
+### **Example 3.** Convert HTML from the cloud storage to DOCX/DOC and save the result to the local file system
 
-The following example shows how to convert a Web page by its URL to DOCX/DOC with default DOC options and save the result to the local file system.
 
 {{< tabs tabTotal="10" tabID="3" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" >}}
 
 {{< tab tabNum="1" >}}
 
-The following example demonstrates how to convert **HTML to DOCX C#** language applying. HTML is taken from the Web, converted to DOCX and saved to the local file system.  You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
+The following example demonstrates how to convert **HTML to DOC C#** language applying. HTML is taken from the cloud storage, converted to DOC and saved to the local file system. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
 ```c#
-const string LOCAL_TESTRESULT = "d:\TestResult";
+// Create a ConverterBuilder instance and specify builder methods with parameters of conversion
+ConverterBuilder builder = new ConverterBuilder()                   
+    .FromStorageFile("/html_file.html")
+    .To(new DOCConversionOptions())
+    .SaveToLocalDirectory(@"Output\Html");
 
-var sourceUrl = "https://stallman.org/articles/anonymous-payments-thru-phones.html";
-var destFolder =  Path.Combine(LOCAL_TESTRESULT, "Doc");
-
-using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
+// Initialize SDK API using the configuration builder          
+using (var api = new HtmlApi(cb => cb
+    .WithClientId(ClientId)            // from user Сredentials            
+    .WithClientSecret(ClientSecret)))
 {
-    ConverterBuilder convHtmlDoc = new ConverterBuilder()
-        .FromUrl(sourceUrl)
-        .To(new DOCConversionOptions())
-        .SaveToLocal(destFolder);
+    // Convert HTML to DOC            
+    ConversionResult result = api.Convert(builder);
 
-    ConversionResult result = api.Convert(convHtmlDoc);
     if(result.Status == "success" && result.Files.Length > 0)
     {
-        // check if file exists locally
+        // Download file(s) by path result.Files 
     }
 }
 ```
@@ -319,7 +316,7 @@ using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
 
 {{< tab tabNum="2" >}}
 
-The following example demonstrates how to convert **HTML to DOCX java** language applying. HTML is taken from the Web, converted to DOCX and saved to the local file system.  You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
+The following example demonstrates how to convert **HTML to DOC java** language applying. HTML is taken from the cloud storage, converted to DOC and saved to the local file system. You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
 
 ```java
 
@@ -329,7 +326,7 @@ The following example demonstrates how to convert **HTML to DOCX java** language
 
 {{< tab tabNum="3" >}}
 
-The following example demonstrates how to convert **HTML to DOCX C++** language applying. HTML is taken from the Web, converted to DOCX and saved to the local file system. 
+The following example demonstrates how to convert **HTML to DOC C++** language applying. HTML is taken from the cloud storage, converted to DOC and saved to the local file system. 
 
 ```c++
 
@@ -339,7 +336,7 @@ The following example demonstrates how to convert **HTML to DOCX C++** language 
 
 {{< tab tabNum="4" >}}
 
-The following example demonstrates how to convert **HTML to DOCX Python** language applying. HTML is taken from the Web, converted to DOCX and saved to the local file system.  You can download the Python SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-python).
+The following example demonstrates how to convert **HTML to DOC Python** language applying. HTML is taken from the cloud storage, converted to DOC and saved to the local file system. You can download the Python SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-python).
 
 ```python
 
@@ -349,7 +346,7 @@ The following example demonstrates how to convert **HTML to DOCX Python** langua
 
 {{< tab tabNum="5" >}}
 
-The following example demonstrates how to convert **HTML to DOCX PHP** language applying. HTML is taken from the Web, converted to DOCX and saved to the local file system.  You can download the PHP SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-php).
+The following example demonstrates how to convert **HTML to DOC PHP** language applying. HTML is taken from the cloud storage, converted to DOC and saved to the local file system. You can download the PHP SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-php).
 
 ```php
 
@@ -359,7 +356,7 @@ The following example demonstrates how to convert **HTML to DOCX PHP** language 
 
 {{< tab tabNum="6" >}}
 
-The following example demonstrates how to convert **HTML to DOCX Ruby** language applying. HTML is taken from the Web, converted to DOCX and saved to the local file system.  You can download the Ruby SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby).
+The following example demonstrates how to convert **HTML to DOC Ruby** language applying. HTML is taken from the cloud storage, converted to DOC and saved to the local file system. You can download the Ruby SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby).
 
 ```ruby
 
@@ -369,7 +366,7 @@ The following example demonstrates how to convert **HTML to DOCX Ruby** language
 
 {{< tab tabNum="7" >}}
 
-The following example demonstrates how to convert **HTML to DOCX Node.js** language applying. HTML is taken from the Web, converted to DOCX and saved to the local file system. 
+The following example demonstrates how to convert **HTML to DOC Node.js** language applying. HTML is taken from the cloud storage, converted to DOC and saved to the local file system.
 
 ```javascript
 
@@ -379,7 +376,7 @@ The following example demonstrates how to convert **HTML to DOCX Node.js** langu
 
 {{< tab tabNum="8" >}}
 
-The following example demonstrates how to convert **HTML to DOCX Swift** language applying. HTML is taken from the Web, converted to DOCX and saved to the local file system.  You can download the Swift SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-swift).
+The following example demonstrates how to convert **HTML to DOC Swift** language applying. HTML is taken from the cloud storage, converted to DOC and saved to the local file system. You can download the Swift SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-swift).
 
 ```swift
 
@@ -389,7 +386,7 @@ The following example demonstrates how to convert **HTML to DOCX Swift** languag
 
 {{< tab tabNum="9" >}}
 
-The following example demonstrates how to convert **HTML to DOCX  Java/Android** applying. HTML is taken from the Web, converted to DOCX and saved to the local file system.  You can download the Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
+The following example demonstrates how to convert **HTML to DOC  Java/Android** applying. HTML is taken from the cloud storage, converted to DOC and saved to the local file system. You can download the Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
 
 ```java
 
@@ -399,7 +396,7 @@ The following example demonstrates how to convert **HTML to DOCX  Java/Android**
 
 {{< /tabs >}}
 
-In the example, we use methods of the **ConverterBuilder** class: **FromUrl**(`urlAddress`), **To**(`ConversionOptions`) and **SaveToLocal**(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result.
+In the example, we use methods of the **ConverterBuilder** class: **FromStorageFile**(`inputPath`), **To**(`ConversionOptions`) and **SaveToLocalDirectory**(`outputDirectory`) that specify input data, the output format, and the target directory for a conversion result.
 
 HTML to DOCX/DOC conversion occurs with the **default conversion options**: the resulting DOCX/DOC document’s width and height correspond to A4, all margins have zero value.
 

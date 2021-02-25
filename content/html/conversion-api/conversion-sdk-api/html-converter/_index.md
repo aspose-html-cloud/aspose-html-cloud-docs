@@ -18,18 +18,18 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 
 A widespread use case for Aspose.HTML Cloud SDK functions is file processing and converting. To view code examples that illustrate various cases of client SDKs usage for the format conversions, follow the links:
 
- - [HTML to PDF](/html/conversion-sdk-api/convert-html-to-pdf/) 
- - [HTML to XPS](/html/conversion-sdk-api/convert-html-to-xps/)
- - [HTML to DOCX](/html/conversion-sdk-api/convert-html-to-docx/) 
- - [HTML to MHTML](/html/conversion-sdk-api/convert-html-to-mhtml/)
- - [HTML to Markdown](/html/conversion-sdk-api/convert-html-to-markdown/)
- - [HTML to JPEG](/html/conversion-sdk-api/convert-html-to-jpeg/) 
- - [HTML to PNG](/html/conversion-sdk-api/convert-html-to-png/) 
- - [HTML to TIFF](/html/conversion-sdk-api/convert-html-to-tiff/) 
- - [HTML to BMP](/html/conversion-sdk-api/convert-html-to-bmp/) 
- - [HTML to GIF](/html/conversion-sdk-api/convert-html-to-gif/) 
+ - [HTML to PDF](/html/conversion-api/conversion-sdk-api/html-converter/convert-html-to-pdf/) 
+ - [HTML to XPS](/html/conversion-api/conversion-sdk-api/html-converter/convert-html-to-xps/)
+ - [HTML to DOCX](/html/conversion-api/conversion-sdk-api/html-converter/convert-html-to-docx/) 
+ - [HTML to MHTML](/html/conversion-api/conversion-sdk-api/html-converter/convert-html-to-mhtml/)
+ - [HTML to Markdown](/html/conversion-api/conversion-sdk-api/html-converter/covnert-html-to-md/)
+ - [HTML to JPEG](/html/conversion-api/conversion-sdk-api/html-converter/convert-html-to-jpeg/) 
+ - [HTML to PNG](/html/conversion-api/conversion-sdk-api/html-converter/convert-html-to-png/) 
+ - [HTML to TIFF](/html/conversion-api/conversion-sdk-api/html-converter/convert-html-to-tiff/) 
+ - [HTML to BMP](/html/conversion-api/conversion-sdk-api/html-converter/convert-html-to-bmp/) 
+ - [HTML to GIF](/html/conversion-api/conversion-sdk-api/html-converter/convert-html-to-gif/) 
 
 {{% alert color="primary" %}} 
-Please see the [Conversion REST API](/htm/conversion-api/conversion-rest-api/) article to learn how to convert an {{%HTML%}} file to other formats using direct REST API calls.
+Please see the [Conversion REST API](/html/conversion-api/conversion-rest-api/) article to learn how to convert an {{%HTML%}} file to other formats using direct REST API calls.
 
 {{% /alert %}} 

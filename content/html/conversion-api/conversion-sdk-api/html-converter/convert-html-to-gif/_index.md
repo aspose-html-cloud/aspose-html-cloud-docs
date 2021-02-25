@@ -1,7 +1,7 @@
 ---
 title: "Convert HTML to GIF"
 type: docs
-keywords: "format conversion, html conversion, conversion SDK, convert html to image, convert html to gif, Python, PHP, Perl, Android, Swift, C#, Java, Node.js"
+keywords: "format conversion, html conversion, conversion SDK, convert html to image, convert html to gif, html to gif, html to gif conversion, SDK example, Python, PHP, Perl, Android, Swift, C#, Java, Node.js"
 description: "The article explains the usage of Aspose.HTML Cloud client SDKs for HTML to GIF conversion by a set of examples. SDKs are wrappers upon REST API to help developers speed up their development. SDKs are available in PHP, Perl, Android, Swift, C#, Java and more."
 weight: 60
 ---
@@ -22,7 +22,7 @@ Aspose.HTML Cloud SDK allows you to fetch an HTML document from storage location
 
 ### **Example 1.** Convert HTML from the storage to GIF and save the result to the storage
 
-The conversion process is following - a source document is loaded from the *default* cloud storage, and after conversion is completed, the result is saved to this storage.  The default GIFConversionOptions are applied to the conversion. In the example, we use methods of the **ConverterBuilder** class: **FromStorageFile**(`inputPath`), **To**(`ConversionOptions`) and **SaveToStorage**(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result. The **Convert**(`ConverterBuilder builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
+The conversion process is following - a source document is loaded from the *default* cloud storage, and after conversion is completed, the result is saved to this storage. The default GIFConversionOptions are applied to the conversion. In the example, we use methods of the **ConverterBuilder** class: **FromStorageFile**(`inputPath`), **To**(`ConversionOptions`) and **SaveToStorageDirectory**(`outputDirectory`) that specify input data, the output format, and the target directory for a conversion result. The **Convert**(` builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
 
 {{< tabs tabTotal="10" tabID="1" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" >}}
 
@@ -31,24 +31,23 @@ The conversion process is following - a source document is loaded from the *defa
 The following example demonstrates how to convert **HTML to GIF C#** language applying. HTML is taken from the cloud storage, converted to GIF and saved to the storage.  You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
 ```c#
-const string STORAGE_SRCFOLDER = "storage:///Html/TestData";
-const string STORAGE_DSTFOLDER = "storage:///Html/TestResult";
+// Create a ConverterBuilder instance and specify builder methods with parameters of conversion
+ConverterBuilder builder = new ConverterBuilder()                   
+    .FromStorageFile("/html_file.html")
+    .To(new GIFConversionOptions())
+    .SaveToStorageDirectory("/TestResult/Html");
 
-var name = "testpage1.html";
-var srcFilePath = $"{STORAGE_SRCFOLDER}/{name}";
-var destFolder = $"{STORAGE_DSTFOLDER}/Gif";
-
-using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
+// Initialize SDK API using the configuration builder          
+using (var api = new HtmlApi(cb => cb
+    .WithClientId(ClientId)            // from user Сredentials            
+    .WithClientSecret(ClientSecret)))
 {
-    ConverterBuilder convHtmlGif = new ConverterBuilder()
-        .FromStorageFile(srcFilePath)
-        .To(new GIFConversionOptions())
-        .SaveToStorage(destFolder);
+    // Convert HTML to GIF            
+    ConversionResult result = api.Convert(builder);
 
-    ConversionResult result = api.Convert(convHtmlGif);
     if(result.Status == "success" && result.Files.Length > 0)
     {
-        // download file(s) by path result.Files
+        // Download file(s) by path result.Files 
     }
 }
 ```
@@ -148,41 +147,42 @@ HTML to GIF conversion occurs with the **default conversion options**: the resul
 
 The example below demonstrates how to convert an HTML file from the local file system to GIF with explicitly specified options and save the result to the cloud storage.
 
- For conversion, we use methods of the **ConverterBuilder** class: **FromLocalFile**(`inputPath`), **To**(`ConversionOptions`) and **SaveToStorage**(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result. The **Convert**(`ConverterBuilder builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
+ For conversion, we use methods of the **ConverterBuilder** class: **FromLocalFile**(`inputPath`), **To**(`ConversionOptions`) and **SaveToStorage**(`outputDirectory`) that specify input data, the output format, and the target directory for a conversion result. The **Convert**(`ConverterBuilder builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
 
 {{< tabs tabTotal="10" tabID="2" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" >}}
 
 {{< tab tabNum="1" >}}
 
-The following example shows how to convert **HTML to GIF C#** language applying. HTML is got from the local file system, converted to GIF and saved to the storage. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
+The following SDK example shows how to convert **HTML to GIF C#** language applying. HTML is got from the local file system, converted to GIF and saved to the storage. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
 ```c#
-const string LOCAL_TESTDATA = "d:\TestData";
-const string STORAGE_DSTFOLDER = "storage:///Html/TestResult";
-
-var name = "testpage1.html";
-var srcFilePath = $"{LOCAL_TESTDATA}\{name}";
-var destFolder = $"{STORAGE_DSTFOLDER}/Gif";
-
-using(var api = new HtmlApi(clientId, clientSecret)) // initialize SDK API
-{
-    ConversionOptions gifOpts = new GIFConversionOptions()
+// Create an instance of ConversionOptions class and specify options for HTML to GIF conversion		
+ConversionOptions gifOpts = new GIFConversionOptions()
         .SetHeight(800)
         .SetWidth(1000)
         .SetLeftMargin(10)
         .SetRightMargin(10)
         .SetBottomMargin(10)
-        .SetTopMargin(10);
+        .SetTopMargin(10)
+        .SetResolution(300);
 
-    ConverterBuilder convHtmlGif = new ConverterBuilder()
-        .FromLocalFile(srcFilePath)
-        .To(gifOpts)
-        .SaveToStorage(destFolder);
+// Create a ConverterBuilder instance - builder and specify builder methods
+ConverterBuilder builder = new ConverterBuilder()
+    .FromLocalFile(@"Input\html_file.html")
+    .To(gifOpts)
+    .SaveToStorageDirectory("/TestResult/Html/WithParams");
 
-    ConversionResult result = api.Convert(convHtmlGif);
-    if(result.Status == "success" && result.Files.Length > 0)
+// Initialize SDK API using the configuration builder
+using (var api = new HtmlApi(cb => cb
+     .WithClientId(ClientId)              // from user Сredentials
+     .WithClientSecret(ClientSecret)))
+{
+    // Convert HTML to GIF
+	ConversionResult result = api.Convert(builder);
+
+    if(result.Status == "success" && result.Files != null && result.Files.Length > 0)
     {
-        // download file(s) by path result.Files
+        // Download file(s) by path result.Files 
     }
 }
 ```
@@ -278,7 +278,7 @@ More details about available conversion parameters for HTML files are in the [SD
 
 ### **Example 3.**  Convert a Web page to GIF and save the result to the local file system
 
-Aspose.HTML Cloud SDK allows you to get HTML page from the web by its URL, convert it to {{%GIF%}} format and save the result into the local file system. The example below demonstrates how to convert HTML to GIF with the default conversion parameters.
+Aspose.HTML Cloud SDK allows you to get an HTML page from the web by its URL, convert it to {{%GIF%}} format and save the result into the local file system. The example below demonstrates how to convert HTML to GIF with the default conversion parameters.
 
 {{< tabs tabTotal="10" tabID="3" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" >}}
 
@@ -287,22 +287,23 @@ Aspose.HTML Cloud SDK allows you to get HTML page from the web by its URL, conve
 The following example demonstrates how to convert **HTML to GIF C#** language applying. HTML is got from the Web, converted to GIF and saved to the local file system. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
 ```c#
-const string LOCAL_TESTRESULT = "d:\TestResult";
+// Create a ConverterBuilder instance and specify builder methods with parameters of conversion
+ConverterBuilder builder = new ConverterBuilder()
+    .FromUrl("https://stallman.org/articles/anonymous-payments-thru-phones.html")
+    .To(new GIFConversionOptions())
+    .SaveToLocalDirectory(@"Output\Url");
 
-var sourceUrl = "https://stallman.org/articles/anonymous-payments-thru-phones.html";
-var destFolder =  Path.Combine(LOCAL_TESTRESULT, "Gif");
-
-using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
+// Initialize SDK API in the builder style           
+using (var api = new HtmlApi(cb => cb
+    .WithClientId(ClientId)            // from user Сredentials            
+    .WithClientSecret(ClientSecret)))
 {
-    ConverterBuilder convHtmlGif = new ConverterBuilder()
-        .FromUrl(sourceUrl)
-        .To(new GIFConversionOptions())
-        .SaveToLocal(destFolder);
+    // Convert HTML to GIF            
+    ConversionResult result = api.Convert(builder);
 
-    ConversionResult result = api.Convert(convHtmlGif);
     if(result.Status == "success" && result.Files.Length > 0)
     {
-        // check if file exists locally
+        // Download file(s) by path result.Files 
     }
 }
 ```
@@ -391,8 +392,7 @@ The following example demonstrates how to convert **HTML to GIF Java/Android** a
 
 {{< /tabs >}}
 
-In the example, we use methods of the **ConverterBuilder** class: **FromUrl**(`urlAddress`), **To**(`ConversionOptions`) and **SaveToLocal**(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result.
-
+In the example, we use methods of the **ConverterBuilder** class: **FromUrl**(`url`), **To**(`ConversionOptions`) and **SaveToLocalDirectory**(`outputDirectory`) that specify input data, the output format, and the target directory for a conversion result.
 
 HTML to GIF conversion occurs with the **default conversion options**: the resulting GIF document’s width and height correspond to A4, all margins have zero value, and the resolution value is 96 dpi.
 

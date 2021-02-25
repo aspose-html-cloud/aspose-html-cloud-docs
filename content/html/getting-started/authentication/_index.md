@@ -73,7 +73,7 @@ In user authentication, when the **Credentials** were successfully used, the **J
 
 JSON Web Token (JWT) is an open standard ([RFC 7519](https://tools.ietf.org/html/rfc7519)) that defines a compact and autonomous way for securely transmitting information between a client and server. It is a JSON object represented as a sequence of base64url encoded values.  JWT token contains three blocks, separated by periods: header, payload, and signature. Accordingly, it looks like the following: **header.payload.signature.**
 
-It would help if you kept in mind that the time of the token is finite. By default, the access token lifetime is one day for Aspose.HTML Cloud. Please check the [Authenticating API Requests](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) article for more details about JWT token-based authentication. 
+It would help if you kept in mind that the time of the token is finite. By default, the access token lifetime is one day for Aspose.HTML Cloud. Please check the [Authenticating API Requests](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) article for more details about the JWT token-based authentication. 
 
 
 
