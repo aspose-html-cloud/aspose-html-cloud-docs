@@ -1,7 +1,7 @@
 # output redirects rules
 [REDIR]
 mediatype = "text/nginx.redir"
-baseName = "_redirects"
+baseName = "_redirects.txt"
 isPlainText = true
 notAlternative = true
 #[HEADERS]
