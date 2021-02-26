@@ -1,7 +1,7 @@
 ---
 title: "Get HTML fragments using CSS Selector"
 type: docs
-url: /archive_v_3_0/get-html-fragments-using-css-selector/
+aliases: /archive_v_3_0/get-html-fragments-using-css-selector/
 weight: 40
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Get SEO Warnings"
 type: docs
-url: /archive_v_3_0/get-seo-warnings/
+aliases: /archive_v_3_0/get-seo-warnings/
 keywords: "SEO Warnings, HTML, Aspose.HTML, Python, Perl, Android, Java, .NET,C#, Swift, Go"
 description: "Improve your site ranking by getting SEO warnings in JSON format using Aspose.HTML Cloud, a REST API that can be use in any language like .NET, Java, Python, Perl, Ruby, PHP and many more."
 weight: 10

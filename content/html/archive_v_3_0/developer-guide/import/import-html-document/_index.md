@@ -1,7 +1,7 @@
 ---
 title: "Import HTML Document"
 type: docs
-url: /archive_v_3_0/import-html-document/
+aliases: /archive_v_3_0/import-html-document/
 keywords: "Markdown to HTML, Aspose.HTML Cloud, Python, Java, Android, Perl, Swift, Ruby"
 description: "Aspose.HTML Cloud REST API provides an easiest and most accurate way of Markdown to HTML conversion."
 weight: 10

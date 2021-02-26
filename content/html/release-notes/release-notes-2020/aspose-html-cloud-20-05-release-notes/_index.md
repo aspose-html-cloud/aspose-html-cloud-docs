@@ -1,7 +1,7 @@
 ---
 title: "Aspose.HTML Cloud 20.05 Release Notes"
 type: docs
-url: /aspose-html-cloud-20-05-release-notes/
+aliases: /aspose-html-cloud-20-05-release-notes/
 keywords: "release notes, http header, .net"
 description: "Aspose.HTML Cloud 20.05 release provides ability to to set up default HTTP request headers"
 weight: 40

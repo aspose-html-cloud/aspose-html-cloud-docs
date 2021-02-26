@@ -1,7 +1,7 @@
 ---
 title: Getting Storage Information
 type: docs
-url: /storage-api/getting-storage-information/
+aliases: /storage-api/getting-storage-information/
 keywords: "cloud storage, cloud storage api, SDK example, cURL example, cURL GET request, REST API, Credentials, Client ID, Client Secret, Python, Java, .NET,  C#,  Android, Swift, Perl, Node.js"
 description: "The article explains how to get a user associated cloud storage info such as disc usage, an object existence etc. using Aspose.HTML Cloud API v.4.0. SDKs are also available in PHP, Perl, Android, Swift, C#, Java and more to help developers speed up their development."
 weight: 20

@@ -1,7 +1,7 @@
 ---
 title: HTML converter
 type: docs
-url: /conversion-rest-api/html-converter/
+aliases: /conversion-rest-api/html-converter/
 keywords: "html converter, html conversion, asynchronous conversion, conversion SDK, convert HTML to PDF, Python, PHP, Perl, Android, Swift, C#, Java, Node.js"
 description: "SDKs are wrappers upon REST API to help developers speed up their development. SDKs are available in Python, PHP, Perl, Android, Swift, C#, Java and more."
 weight: 10

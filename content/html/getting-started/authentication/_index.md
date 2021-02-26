@@ -1,7 +1,7 @@
 ---
 title: "Authentication"
 type: docs
-url: /getting-started/authentication/
+aliases: /getting-started/authentication/
 keywords: "authentication, credentials, client id, client secret, access token, JWT token, REST API, JWT authentication"
 description: "This article explains how to obtain an authentication token and apply it for REST API calls; you find out in details about how to use user's Credentials for JWT token gets."
 weight: 30

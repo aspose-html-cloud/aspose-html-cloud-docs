@@ -1,7 +1,7 @@
 ---
 title: "Conversion SDK API"
 type: docs
-url: /conversion-sdk-api/
+aliases: /conversion-sdk-api/
 keywords: "format conversion, html conversion, epub conversion, mhtml conversion, asynchronous conversion, conversion SDK, convert html to pdf, convert html to xps, convert html to doc, convert html to jpeg, convert html to png, convert html to tiff, Python, PHP, Perl, Android, Swift, C#, Java, Node.js"
 description: "The article provides a general description of conversion features of Aspose.HTML Cloud SDK API. SDKs are wrappers upon REST API to help developers speed up their development. SDKs are available in PHP, Perl, Android, Swift, C#, Java and more."
 weight: 40

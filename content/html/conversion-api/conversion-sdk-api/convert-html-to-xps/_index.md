@@ -1,7 +1,7 @@
 ---
 title: "Convert HTML to XPS"
 type: docs
-url: /conversion-sdk-api/convert-html-to-xps/
+aliases: /conversion-sdk-api/convert-html-to-xps/
 keywords: "format conversion, html conversion, asynchronous conversion, conversion SDK, convert html to xps, Python, PHP, Perl, Android, Swift, C#, Java, Node.js"
 description: "The article explains the usage of Aspose.HTML Cloud client SDKs for HTML to XPS conversion by a set of examples. SDKs are wrappers upon REST API to help developers speed up their development. SDKs are available in PHP, Perl, Android, Swift, C#, Java and more."
 weight: 20

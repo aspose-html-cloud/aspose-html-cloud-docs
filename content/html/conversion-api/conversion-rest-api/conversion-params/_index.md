@@ -1,7 +1,7 @@
 ---
 title: "Conversion API Parameters"
 type: docs
-url: /conversion-rest-api/conversion-params/
+aliases: /conversion-rest-api/conversion-params/
 keywords: "html conversion, asynchronous conversion, convert html to pdf, convert html to jpeg, conversion parameters, HTTP request, API"
 description: " The article explains how to apply parameters of HTML conversion using Aspose.HTML Cloud API. "
 weight: 10

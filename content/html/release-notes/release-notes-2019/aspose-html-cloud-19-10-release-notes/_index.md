@@ -1,7 +1,7 @@
 ---
 title: "Aspose.HTML Cloud 19.10 Release Notes"
 type: docs
-url: /aspose-html-cloud-19-10-release-notes/
+aliases: /aspose-html-cloud-19-10-release-notes/
 weight: 20
 ---
 

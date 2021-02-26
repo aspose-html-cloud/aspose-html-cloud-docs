@@ -1,7 +1,7 @@
 ---
 title: "Initialize SDK API"
 type: docs
-url: /getting-started/initialize-sdk-api/
+aliases: /getting-started/initialize-sdk-api/
 keywords: "SDK examples, credentials, client id, client secret, access token, JWT token, REST API, JWT authentication, initialize API, entry point"
 description: "This article covers examples that explain what methods you can use to create an SDK API entry point. In SDK examples the Client Id and Client Secret are used for authentication; the SDK automatically gets API access token."
 weight: 20

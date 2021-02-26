@@ -1,7 +1,7 @@
 ---
 title: "Template Merge"
 type: docs
-url: /archive_v_3_0/template-merge/
+aliases: /archive_v_3_0/template-merge/
 weight: 30
 ---
 

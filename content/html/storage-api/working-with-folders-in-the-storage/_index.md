@@ -1,7 +1,7 @@
 ---
 title: Working with Files in the Storage
 type: docs
-url: /storage-api/working-with-files-in-the-storage/
+aliases: /storage-api/working-with-files-in-the-storage/
 keywords: "cloud storage, cloud storage api, cloud storage file, upload file, download file, delete file, copy file, move file, REST API, SDK, Python, PHP, Perl, Android, Swift, C#, Java, Node.js"
 description: "The article explains how to manipulate files in the cloud storage using Aspose.HTML Cloud API v.4.0. SDKs are also available in PHP, Perl, Android, Swift, C#, Java and more to help developers speed up their
   development."

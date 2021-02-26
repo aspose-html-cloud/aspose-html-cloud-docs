@@ -1,7 +1,7 @@
 ---
 title: "v.20.11 Api Changes"
 type: docs
-url: /aspose-html-cloud-20-11-release-notes/20-11-api-changes/
+aliases: /aspose-html-cloud-20-11-release-notes/20-11-api-changes/
 keywords: "release notes, .net, conversion, cloud storage, cqrs, asynchronous conversion"
 description: "Aspose.HTML Cloud 20.11 release - Api Changes"
 weight: 10

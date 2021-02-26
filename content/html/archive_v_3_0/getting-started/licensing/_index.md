@@ -1,7 +1,7 @@
 ---
 title: "Licensing"
 type: docs
-url: /archive_v_3_0/licensing/
+aliases: /archive_v_3_0/licensing/
 weight: 80
 ---
 

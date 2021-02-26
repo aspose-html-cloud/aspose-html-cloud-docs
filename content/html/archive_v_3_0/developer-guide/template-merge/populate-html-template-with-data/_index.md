@@ -1,7 +1,7 @@
 ---
 title: "Populate HTML Template with Data"
 type: docs
-url: /archive_v_3_0/populate-html-template-with-data/
+aliases: /archive_v_3_0/populate-html-template-with-data/
 keywords: "Populate HTML Template, JSON , XML, Data, Python, Java, Perl, C#, Android, Swift, Ruby, Go "
 description: "Aspose.HTML Cloud API can be used to populate HTML template with JSON and XML data. By merging template you can produce highly effective HTML document."
 weight: 10
