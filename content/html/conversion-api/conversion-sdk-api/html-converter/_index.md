@@ -1,6 +1,7 @@
 ---
 title: HTML converter
 type: docs
+aliases: /conversion-rest-api/html-converter/
 keywords: "html converter, html conversion, asynchronous conversion, conversion SDK, convert HTML to PDF, convert HTML to XPS, convert HTML to DOCX, convert HTML to JPEG, convert HTML to PNG, convert HTML to MHTML, convert HTML to Markdown, Python, PHP, Perl, Android, Swift, C#, Java, Node.js"
 description: "In this documentation chapter, you find out in details on how to convert an HTML file to the most popular formats, such as PDF, XPS, DOCX, DOC, PNG, JPG, BMP, TIFF, GIFF, MHTML, and Markdown using Aspose.HTML Cloud SDKs. SDKs are wrappers upon REST API to help developers speed up their development. SDKs are available in Python, PHP, Perl, Android, Swift, C#, Java and more."
 weight: 10

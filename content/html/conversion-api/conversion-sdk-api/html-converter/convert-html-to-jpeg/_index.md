@@ -1,6 +1,7 @@
 ---
 title: "Convert HTML to JPEG"
 type: docs
+aliases: /conversion-sdk-api/convert-html-to-jpeg/
 keywords: "format conversion, html conversion, asynchronous conversion, conversion SDK, convert html to image, convert html to jpeg, html to jpg, html to jpeg conversion, html to jpeg, SDK example, Python, PHP, Perl, Android, Swift, C#, Java, Node.js"
 description: "The article explains the usage of Aspose.HTML Cloud client SDKs for HTML to JPEG conversion by a set of examples. SDKs are wrappers upon REST API to help developers speed up their development. SDKs are available in PHP, Perl, Android, Swift, C#, Java and more."
 weight: 40

@@ -1,6 +1,7 @@
 ---
 title: "Get Images from HTML document"
 type: docs
+aliases: /archive_v_3_0/get-images-from-html-document/
 weight: 30
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: Licensing
-weight: 80
 type: docs
+aliases: /licensing/
+weight: 80
 ---
 
 ## **Create Account**

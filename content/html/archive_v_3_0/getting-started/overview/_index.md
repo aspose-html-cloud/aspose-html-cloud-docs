@@ -1,6 +1,7 @@
 ---
 title: "Overview"
 type: docs
+aliases: /archive_v_3_0/overview/
 weight: 10
 ---
 

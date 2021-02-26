@@ -1,6 +1,7 @@
 ---
 title: "Aspose.HTML Cloud 20.11 Release Notes"
 type: docs
+aliases: /aspose-html-cloud-20-11-release-notes/
 keywords: "release notes, .net, conversion, cloud storage, cqrs, asynchronous conversion"
 description: "Aspose.HTML Cloud 20.11 release"
 weight: 20

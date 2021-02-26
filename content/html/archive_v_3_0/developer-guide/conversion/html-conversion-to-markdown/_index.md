@@ -1,6 +1,7 @@
 ---
 title: "HTML conversion to Markdown"
 type: docs
+aliases: /archive_v_3_0/html-conversion-to-markdown/
 weight: 40
 ---
 
