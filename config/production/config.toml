@@ -1,4 +1,4 @@
-# Config for staging
+# Config for production
 
 # This is turned off in development as it is relatively slow. 
 # This is needed to get accurate lastMod and Git commit info
