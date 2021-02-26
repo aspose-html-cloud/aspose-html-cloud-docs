@@ -1,6 +1,7 @@
 ---
 title: "Folder Operations"
 type: docs
+aliases: /archive_v_3_0/folder-operations/
 weight: 60
 ---
 

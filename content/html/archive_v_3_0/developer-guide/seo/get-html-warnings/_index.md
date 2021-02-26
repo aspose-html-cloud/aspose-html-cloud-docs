@@ -1,6 +1,7 @@
 ---
 title: "Get HTML Warnings"
 type: docs
+aliases: /archive_v_3_0/get-html-warnings/
 keywords: "HTML Warnings, Validate HTML, HTML, Aspose.HTML, Python, Perl, Android, Java, .NET,C#, Swift, Go"
 description: "Use Aspose.HTML Cloud and get HTML warnings in the form of JSON or XML format. Fixing the HTML warnings helps in loading fast which plays a key role in improving site ranking."
 weight: 20

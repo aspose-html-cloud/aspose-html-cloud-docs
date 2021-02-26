@@ -1,5 +1,7 @@
 ---
 title: Convert HTML to Markdown
+type: docs
+aliases: /conversion-sdk-api/html-converter/convert-html-to-markdown/
 keywords: html to markdown, html to md, convert html to md, html to markdown conversion, format conversion, html conversion, markdown conversion, asynchronous
   conversion, conversion SDK, convert html to markdown, SDK examples, Python, PHP, Perl,
   Android, Swift, C#, Java, Node.js
@@ -8,7 +10,6 @@ description: The article explains the usage of Aspose.HTML Cloud client SDKs for
   API to help developers speed up their development. SDKs are available in PHP,
   Perl, Android, Swift, C#, Java and more.
 weight: 110
-type: docs
 ---
 ## **Summary**
 

@@ -1,6 +1,7 @@
 ---
 title: Aspose.HTML Cloud
 type: docs
+aliases: /
 keywords: SDKs, REST API, Cloud REST API, cloud storage, Convert HTML, Convert
   XHTML, Convert MHTML, Convert EPUB, Convert Markdown, HTML to PDF, SDK
   examples

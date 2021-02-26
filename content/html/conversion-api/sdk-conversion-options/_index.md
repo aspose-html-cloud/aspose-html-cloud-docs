@@ -1,6 +1,7 @@
 ---
 title: "SDK Conversion Options"
 type: docs
+aliases: /sdk-conversion-options/
 keywords: "html conversion, conversion options, convert html to pdf, convert html to xps, convert html to doc, convert html to image, convert html to jpeg, convert html to markdown, convert html to mhtml"
 description: " Article explains HTML conversion to PDF using Aspose.HTML Cloud API. SDKs are also available in PHP, Perl, Android, Swift, C#, Java and more to help developers speed up their development."
 weight: 80

@@ -1,5 +1,7 @@
 ---
 title: Getting Started
+type: docs
+aliases: /getting-started/
 keywords: SDK, REST API, REST API call, authentication, initialize API, API URL
 description: "Aspose.HTML Cloud provides two main points:  the conversion
   feature and the cloud storage access functionality. This article introduce
@@ -7,7 +9,6 @@ description: "Aspose.HTML Cloud provides two main points:  the conversion
   the REST API directly or by the set of wrappers implemented as SDKs on the
   various programming languages."
 weight: 20
-type: docs
 ---
 
 {{% alert color="primary" %}} 

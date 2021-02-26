@@ -1,6 +1,7 @@
 ---
 title: "Evaluate Aspose.HTML"
 type: docs
+aliases: /evaluate-aspose-html/
 weight: 50
 ---
 

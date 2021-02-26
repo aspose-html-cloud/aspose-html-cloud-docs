@@ -1,6 +1,7 @@
 ---
 title: "Supported File Formats"
 type: docs
+aliases: /supported-file-formats/
 weight: 40
 ---
 Aspose.HTML Cloud main features can be parted into two areas: conversion between formats and the cloud storage operations.

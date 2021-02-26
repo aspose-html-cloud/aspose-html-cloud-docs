@@ -1,6 +1,7 @@
 ---
 title: "HTML to XPS Conversion"
 type: docs
+aliases: /archive_v_3_0/html-to-xps-conversion/
 weight: 20
 ---
 
