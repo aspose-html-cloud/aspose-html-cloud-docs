@@ -1,17 +1,17 @@
 ---
-title: "Licensing"
-type: docs
+title: Licensing
 weight: 80
+type: docs
 ---
 
 ## **Create Account**
 For details on how to create a new account please check [Create a new Account](https://docs.aspose.cloud/total/creating-and-managing-account/).
 ## **Apply Client Id and Client Secret**
-For details on how to get and apply Client Id and Client Secret please see [Create an Account and Get Credentials](/html/create-an-account-and-get-credentials/)  and [Authentication](/html/getting-started/authentication/) articles.
+For details on how to get and apply Client Id and Client Secret please see [Create an Account and Get Credentials](/html/overview/create-an-account-and-get-credentials/)  and [Authentication](/html/getting-started/authentication/) articles.
 ## **Free Plan**
 Our free plan allows you to use Cloud APIs as you would normally. It only applies the limitation to the data that can be processed with the APIs.  For details on the free plan please check [Cloud APIs FAQs](https://purchase.aspose.cloud/policies). For pricing please check [Cloud APIs Pricing](https://purchase.aspose.cloud/pricing).
 ## **Paid Plan**
-The free plan simply becomes paid plan when you upgrade your plan for any paid account. Please follow below steps to upgrade your free plan to paid plan.
+The free plan simply becomes paid plan when you upgrade your plan for any paid account. Please follow the below steps to upgrade your free plan to paid plan.
 
 1. Login to <https://cloud.aspose.com/SignIn>.
 2. Follow instructions after clicking on [Buy Now](https://dashboard.aspose.cloud/#/plan).

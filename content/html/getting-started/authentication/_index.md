@@ -1,9 +1,12 @@
 ---
-title: "Authentication"
-type: docs
-keywords: "authentication, credentials, client id, client secret, access token, JWT token, REST API, JWT authentication"
-description: "This article explains how to obtain an authentication token and apply it for REST API calls; you find out in details about how to use user's Credentials for JWT token gets."
+title: Authentication
+keywords: authentication, credentials, client id, client secret, access token,
+  JWT token, REST API, JWT authentication
+description: This article explains how to obtain an authentication token and
+  apply it for REST API calls; you find out in details about how to use user's
+  Credentials for JWT token gets.
 weight: 30
+type: docs
 ---
 
 ## **Summary**
@@ -25,7 +28,7 @@ If you don't already have the Credentials, to get the **Client Secret** and **Cl
 3. Get the Credentials (Client id and Client secret ) for your Application.
 4. Now, you are ready to call Aspose REST APIs.
 
-More detailed information about the Credentials obtaining you find in [Create an Account and Get Credentials](/html/create-an-account-and-get-credentials/) and [Dashboard](https://docs.aspose.cloud/total/getting-started/dashboard/) articles.  
+More detailed information about the Credentials obtaining you find in [Create an Account and Get Credentials](/html/overview/create-an-account-and-get-credentials/) and [Dashboard](https://docs.aspose.cloud/total/getting-started/dashboard/) articles.  
 
 ### **REST API**
 
@@ -51,7 +54,7 @@ curl -X POST -v "https://api.aspose.cloud/connect/token" --data "client_id=xxxxx
 
 {{< tab tabNum="2" >}}
 
-The following example is the response of the token request. It contains a JWT token in the `access_token` field; this token should be used in subsequent API calls as a value of *Authorization* HTTP header (see steps below).  
+The following example is the response to the token request. It contains a JWT token in the `access_token` field; this token should be used in subsequent API calls as a value of *Authorization* HTTP header (see steps below).  
 
 ```json
 { "access_token":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE2MTA5NzU3NzUsImV4cCI6MTYxMDk3OTM3NSwiaXNzIjoiaHR0cHM6Ly9hcGkuYXNwb3NlLmNsb3VkIiwiYXVkIjpbImh0dHBzOi8vYXBpLmFzcG9zZS5jbG91ZC9yZXNvdXJjZXMiLCJhcGkuYmlsbGluZyIsImFwaS5pZGVudGl0eSIsImFwaS5wcm9kdWN0cyIsImFwaS5zdG9yYWdlIl0sImNsaWVudF9pZCI6ImI0NzRlNGNjLTRhNTQtNGM0Zi1iYTE1LTkzZWQ1YWNhOTJlNCIsImNsaWVudF9kZWZhdWx0X3N0b3JhZ2UiOiJhOTI4MDllNi1jN2FkLTQyODUtODE5ZS03NmRiZTA1OTQ3NGUiLCJjbGllbnRfaWRlbnRpdHlfdXNlcl9pZCI6Ijg0NjIxNSIsInNjb3BlIjpbImFwaS5iaWxsaW5nIiwiYXBpLmlkZW50aXR5IiwiYXBpLnByb2R1Y3RzIiwiYXBpLnN0b3JhZ2UiXX0.XBF6H5LowDdobghyJtqj275UGDeXsPwPcVFDQe-ywgvH5E2F5MUkmb8os8eLPMbJODTXkr5j74wqGHzxjRC8rpBUTc6qca_sqTLTDZkaV3275zZg0VMMC1EG1nm2GacXLIiO5SRv2FS2zGGFXnf9WIqqemt0OvIBMPReBYGJ6S48xSU9PksVNulDiwH_BrRBQ7cT2XiJEeBrgr-NqGkZeDukLs8TKd0lz4bHWSJLg5AbXjCoHO2kMkKevTNhVMkPN6Vfkma-aipK7OQwTCrWrvsYdPZeUHE-jwyKCkV5-Q-_AHdONUOBfpxfpZkYNVw7yKNXusdK9z8WGTfSryK1Bw",
@@ -66,11 +69,11 @@ The following example is the response of the token request. It contains a JWT to
 
 
 
-In user authentication, when the **Credentials** were successfully using, the **JWT token** is returned. Since tokens are Client Credentials, great care must be taken to prevent security issues.
+In user authentication, when the **Credentials** were successfully used, the **JWT token** is returned. Since tokens are Client Credentials, great care must be taken to prevent security issues.
 
-JSON Web Token (JWT) is an open standard ([RFC 7519](https://tools.ietf.org/html/rfc7519)) defines a compact and autonomous way for securely transmitting information between a client and server. It is a JSON object represented as a sequence of base64url encoded values.  JWT token contains three blocks, separated by periods: header, payload, and signature. Accordingly, it looks like the following: **header.payload.signature.**
+JSON Web Token (JWT) is an open standard ([RFC 7519](https://tools.ietf.org/html/rfc7519)) that defines a compact and autonomous way for securely transmitting information between a client and server. It is a JSON object represented as a sequence of base64url encoded values.  JWT token contains three blocks, separated by periods: header, payload, and signature. Accordingly, it looks like the following: **header.payload.signature.**
 
-It would help if you kept in mind that the time of the token is finite. By default, the access token lifetime is one day for Aspose.HTML Cloud. Please check the [Authenticating API Requests](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) article for more details about JWT token-based authentication. 
+It would help if you kept in mind that the time of the token is finite. By default, the access token lifetime is one day for Aspose.HTML Cloud. Please check the [Authenticating API Requests](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) article for more details about the JWT token-based authentication. 
 
 
 
@@ -82,7 +85,7 @@ Consider some requests with JWT token usage:
  - curl request to return a list of files and folders in the specified folder of the storage;
  - REST API call to check if an object exists in the storage.
 
-Put `access_token` field value obtained in Step 1 into Authorization HTTP header as it's shown in examples below.
+Put the `access_token` field value obtained in Step 1 into the Authorization HTTP header as it's shown in the examples below.
 
 ```bash
 curl -X GET \
@@ -118,7 +121,7 @@ Using SDK, you don't need to know the authentication service URL. All routine wo
 
 ## **Use of Externally Obtained JWT Token**
 
-Authentication by user credentials is a standard way of Aspose.HTML Cloud SDK family. But also the SDKs provide possibility to authenticate using a token that has been obtained from some external source. 
+Authentication by user credentials is a standard way of Aspose.HTML Cloud SDK family. But also the SDKs provide a possibility to authenticate using a token that has been obtained from some external source. 
 
 For example, an application calls the authentication service itself and uses an obtained token to call SDK methods without providing user credentials. Use externally obtained token creating SDK API entry point object.
 
@@ -143,7 +146,7 @@ using(var api = new HtmlApi(Configuration
 {{< /tabs >}}
 
 {{% alert color="primary" %}} 
-**NOTE**: Authentication with externally obtained token is available only using **Configuration** or **ConfigurationBuilder**. 
+**NOTE**: Authentication with an externally obtained token is available only using **Configuration** or **ConfigurationBuilder**. 
 
 {{% /alert %}} 
 

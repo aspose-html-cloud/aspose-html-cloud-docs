@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
  **BottomMargin** | **Number**| Bottom resulting document page margin in points (1/96 inch). | [optional] 
  **JpegQuality** | **Number**| Quality of jpeg compression in percent. | [optional]
 
-How to apply conversion options for HTML to PDF conversion is in SDK examples of the [Convert HTML to PDF](/html/conversion-sdk-api/convert-html-to-pdf/) article.
+How to apply conversion options for HTML to PDF conversion is in SDK examples of the [Convert HTML to PDF](/html/conversion-api/conversion-sdk-api/html-converter/convert-html-to-pdf/) article.
 
 ### **XPSConversionOptions**
 
@@ -82,7 +82,7 @@ Name | Type | Description  | Notes
  **TopMargin** | **Number**| Top resulting document page margin in points (1/96 inch). | [optional] 
  **BottomMargin** | **Number**| Bottom resulting document page margin in points (1/96 inch). | [optional] 
 
-How to apply conversion options for HTML to XPS conversion is in SDK examples of the [Convert HTML to XPS](/html/conversion-sdk-api/convert-html-to-xps/) article.
+How to apply conversion options for HTML to XPS conversion is in SDK examples of the [Convert HTML to XPS](/html/conversion-api/conversion-sdk-api/html-converter/convert-html-to-xps/) article.
 
 ### **DOCConversionOptions**
 
@@ -105,7 +105,7 @@ ConversionOptions docOpts = new DOCConversionOptions()
 | **TopMargin**    | **Number** | Top resulting document page margin in points (1/96 inch).    | [optional] |
 | **BottomMargin** | **Number** | Bottom resulting document page margin in points (1/96 inch). | [optional] |
 
-How to apply conversion options for HTML to DOCX/DOC conversion is in SDK examples of the [Convert HTML to DOCX](/html/conversion-sdk-api/convert-html-to-docx/) article.
+How to apply conversion options for HTML to DOCX/DOC conversion is in SDK examples of the [Convert HTML to DOCX](/html/conversion-api/conversion-sdk-api/html-converter/convert-html-to-docx/) article.
 
 ### **JPEGConversionOptions**
 
@@ -130,7 +130,7 @@ Name | Type | Description  | Notes
  **BottomMargin** | **Number**| Bottom resulting document page margin in points (1/96 inch). | [optional]
  **Resolution** | **Number**| Resolution of the resulting image. The default is 96 dpi. | [optional]
 
-How to apply conversion options for HTML to JPEG conversion is in SDK examples of the [Convert HTML to JPEG](/html/conversion-sdk-api/convert-html-to-jpeg/) article.
+How to apply conversion options for HTML to JPEG conversion is in SDK examples of the [Convert HTML to JPEG](/html/conversion-api/conversion-sdk-api/html-converter/convert-html-to-jpeg/) article.
 
 ### **PNGConversionOptions**
 
@@ -155,7 +155,7 @@ Name | Type | Description  | Notes
  **BottomMargin** | **Number**| Bottom resulting document page margin in points (1/96 inch). | [optional]
  **Resolution** | **Number**| Resolution of the resulting image. The default is 96 dpi. | [optional]
 
-How to apply conversion options for HTML to PNG conversion is in SDK examples of the [Convert HTML to PNG](/html/conversion-sdk-api/convert-html-to-png/) article.
+How to apply conversion options for HTML to PNG conversion is in SDK examples of the [Convert HTML to PNG](/html/conversion-api/conversion-sdk-api/html-converter/convert-html-to-png/) article.
 
 ### **BMPConversionOptions**
 
@@ -180,7 +180,7 @@ Name | Type | Description  | Notes
  **BottomMargin** | **Number**| Bottom resulting document page margin in points (1/96 inch). | [optional]
  **Resolution** | **Number**| Resolution of the resulting image. The default is 96 dpi. | [optional]
 
-How to apply conversion options for HTML to BMP conversion is in SDK examples of the [Convert HTML to BMP](/html/conversion-sdk-api/convert-html-to-bmp/) article.
+How to apply conversion options for HTML to BMP conversion is in SDK examples of the [Convert HTML to BMP](/html/conversion-api/conversion-sdk-api/html-converter/convert-html-to-bmp/) article.
 
 ### **GIFConversionOptions**
 
@@ -205,7 +205,7 @@ Name | Type | Description  | Notes
  **BottomMargin** | **Number**| Bottom resulting document page margin in points (1/96 inch). | [optional]
  **Resolution** | **Number**| Resolution of the resulting image. The default is 96 dpi. | [optional]
 
-How to apply conversion options for HTML to GIF conversion is in SDK examples of the [Convert HTML to GIF](/html/conversion-sdk-api/convert-html-to-gif/) article.
+How to apply conversion options for HTML to GIF conversion is in SDK examples of the [Convert HTML to GIF](/html/conversion-api/conversion-sdk-api/html-converter/convert-html-to-gif/) article.
 
 ### **TIFFConversionOptions**
 
@@ -230,7 +230,7 @@ Name | Type | Description  | Notes
  **BottomMargin** | **Number**| Bottom resulting document page margin in points (1/96 inch). | [optional]
  **Resolution** | **Number**| Resolution of the resulting image. The default is 96 dpi. | [optional]
 
-How to apply conversion options for HTML to TIFF conversion is in SDK examples of the [Convert HTML to TIFF](/html/conversion-sdk-api/convert-html-to-tiff/) article.
+How to apply conversion options for HTML to TIFF conversion is in SDK examples of the [Convert HTML to TIFF](/html/conversion-api/conversion-sdk-api/html-converter/convert-html-to-tiff/) article.
 
 ### **MarkdownConversionOptions**
 

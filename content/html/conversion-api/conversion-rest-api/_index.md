@@ -29,7 +29,7 @@ All URIs are relative to https://api.aspose.cloud/v4.0/html.
 | /conversion/{id} | DELETE   | Forces termination of the previously started asynchronous conversion operation by its ID. | [CancelConversion](https://apireference.aspose.cloud/html/#/Conversion/CancelConversion) |
 
 {{% alert color="primary" %}} 
-For more details concerning the conversion API, see  [Conversion API Parameters](/html/conversion-rest-api/conversion-params/).
+For more details concerning the conversion API, see  [Conversion API Parameters](/html/conversion-api/conversion-rest-api/conversion-params/).
 {{% /alert %}}  
 
 

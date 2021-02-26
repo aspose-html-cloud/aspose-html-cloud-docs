@@ -11,7 +11,7 @@ weight: 30
 Aspose.HTML Cloud v4.0 provides the straightforward API for documents' conversion between formats with high quality, easy and fast. This article demonstrates how to convert an {{%XHTML%}} file to {{%PDF%}}, {{%XPS%}}, {{%DOCX%}}, {{%DOC%}}, {{%PNG%}}, {{%JPG%}}, {{%BMP%}}, {{%TIFF%}}, {{%GIF%}}, {{%MHTML%}}, and {{%Markdown%}} using SDKs.
 
 {{% alert color="primary" %}} 
-Check out our [GitHub repository](https://github.com/aspose-html-cloud) for a complete list of Aspose.HTML SDKs along with working examples, to get you started in no time. Please check the [Available SDKs](/html/available-sdks/) article to learn how to add an SDK to your project.
+Check out our [GitHub repository](https://github.com/aspose-html-cloud) for a complete list of Aspose.HTML SDKs along with working examples, to get you started in no time. Please check the [Available SDKs](/html/overview/available-sdks/) article to learn how to add an SDK to your project.
 {{% /alert %}} 
 
 ## **SDK conversion examples**
@@ -26,7 +26,7 @@ A widespread use case for Aspose.HTML Cloud SDK functions is file processing and
  - [XHTML to Markdown](/html/conversion-sdk-api/xhtml-to-markdown/) 
 
 {{% alert color="primary" %}} 
-Please see the [Conversion REST API](/html/conversion-rest-api/) article to learn how to convert an [HTML](https://docs.fileformat.com/web/html/) file to other formats using direct REST API calls.
+Please see the [Conversion REST API](/html/conversion-api/conversion-rest-api/) article to learn how to convert an [HTML](https://docs.fileformat.com/web/html/) file to other formats using direct REST API calls.
 
 {{% /alert %}} 
 
