@@ -1,13 +1,17 @@
 ---
-title: "Initialize SDK API"
+title: Initialize SDK API
 type: docs
 aliases: /getting-started/initialize-sdk-api/
-keywords: "SDK examples, credentials, client id, client secret, access token, JWT token, REST API, JWT authentication, initialize API, entry point"
-description: "This article covers examples that explain what methods you can use to create an SDK API entry point. In SDK examples the Client Id and Client Secret are used for authentication; the SDK automatically gets API access token."
+keywords: SDK examples, credentials, client id, client secret, access token, JWT
+  token, REST API, JWT authentication, initialize API, entry point
+description: This article covers examples that explain what methods you can use
+  to create an SDK API entry point. In SDK examples the Client Id and Client
+  Secret are used for authentication; the SDK automatically gets API access
+  token.
 weight: 20
 ---
 
-## **Summary**
+## **Summary** 
 
 An **HtmlApi** class is a common SDK facade of all HTML functionality that provides wrapper methods of Aspose.HTML Cloud REST API. Before starting to call the Aspose.HTML Cloud SDK functionality, you must create an **HtmlApi** class instance. This object is a main SDK entry point, it accepts user data needed for authentication and some optional parameters. 
 
