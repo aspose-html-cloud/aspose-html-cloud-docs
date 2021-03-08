@@ -273,7 +273,7 @@ The following example describes how to convert **HTML to JPEG Java/Android** app
 In the example above, the conversion HTML to JPEG occurs with the **ConversionOptions** specifying, among which there is the **Resolution** that applicable only to image formats. The set resolution value (300 dpi) indicates higher image quality than using the default value (96 dpi).
 
 {{% alert color="primary" %}} 
-More details about available conversion parameters for HTML files are in the [SDK Conversion Options](/html/sdk-conversion-options/) section.
+More details about available conversion parameters for HTML files are in the [SDK Conversion Options](/html/conversion-api/sdk-conversion-options/) section.
 
 {{% /alert %}} 
 
@@ -429,7 +429,3 @@ using (var api = new HtmlApi(cb => cb
 }
 ```
 
-{{% alert color="primary" %}} 
-For more details concerning the conversion options, see the [SDK Conversion Options](/html/conversion-api/sdk-conversion-options/) article. 
-
-{{% /alert %}} 

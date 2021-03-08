@@ -277,7 +277,7 @@ The following example demonstrates how to convert **HTML to DOC Java/Android** a
 {{< /tabs >}}
 
 {{% alert color="primary" %}} 
-More details about available conversion parameters for HTML files are in the [SDK Conversion Options](/html/sdk-conversion-options/) section.
+More details about available conversion parameters for HTML files are in the [SDK Conversion Options](/html/conversion-api/sdk-conversion-options/) section.
 
 {{% /alert %}} 
 

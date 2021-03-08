@@ -145,6 +145,7 @@ The example below shows how to convert an HTML file from the local file system t
 
 For conversion, we use methods of the **ConverterBuilder** class: **FromLocalFile**(`inputPath`), **To**(`ConversionOptions`) and **SaveToStorageDirectory**(`outputDirectory`) that specify input data, the output format, and the target directory for a conversion result. The **Convert**(`builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
 
+
 {{< tabs tabTotal="10" tabID="2" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" >}}
 
 {{< tab tabNum="1" >}}
@@ -256,6 +257,7 @@ The following example demonstrates how to convert **HTML to MHTML Java/Android**
 {{< /tab >}}
 
 {{< /tabs >}}
+
 
 ### **Example 3.** Convert a Web page to MHTML and save the result to the local file system
 
@@ -375,8 +377,4 @@ The code snippet below explains how to convert **HTML to MHTML Java/Android** ap
 
 In the example, we use methods of the **ConverterBuilder** class: **FromUrl**(`url`), **To**(`ConversionOptions`) and **SaveToLocalDirectory**(`outputDirectory`) that specify input data, the output format, and the target directory for a conversion result. The **Convert**(`builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
 
-{{% alert color="primary" %}} 
-For more details concerning the conversion options, see the [SDK Conversion Options](/html/conversion-api/sdk-conversion-options/) article. 
-
-{{% /alert %}} 
 

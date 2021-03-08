@@ -20,14 +20,17 @@ Check out our [GitHub repository](https://github.com/aspose-html-cloud) for a co
 
 A widespread use case for Aspose.HTML Cloud SDK functions is file processing and converting. To view code examples that illustrate various cases of client SDKs usage for the format conversions, follow the links:
 
- - [EPUB to PDF](/html/conversion-sdk-api/epub-to-pdf/) 
- - [EPUB to XPS](/html/conversion-sdk-api/epub-to-xps/)
- - [EPUB to DOCX/DOC](/html/conversion-sdk-api/epub-to-docx/) 
- - [EPUB to Image](/html/conversion-sdk-api/epub-to-image/) 
- - [EPUB to HTML](/html/conversion-sdk-api/epub-to-html/) 
+ - [EPUB to PDF](/html/conversion-api/conversion-sdk-api/epub-converter/convert-epub-to-pdf/) 
+ - [EPUB to XPS](/html/conversion-api/conversion-sdk-api/epub-converter/convert-epub-to-xps/)
+ - [EPUB to DOCX/DOC](/html/conversion-api/conversion-sdk-api/epub-converter/convert-epub-to-docx/) 
+ - [EPUB to JPEG](/html/conversion-api/conversion-sdk-api/epub-converter/convert-epub-to-jpeg/) 
+ - [EPUB to PNG](/html/conversion-api/conversion-sdk-api/epub-converter/convert-epub-to-png/)
+ - [EPUB to BMP](/html/conversion-api/conversion-sdk-api/epub-converter/convert-epub-to-bmp/)
+ - [EPUB to TIFF](/html/conversion-api/conversion-sdk-api/epub-converter/convert-epub-to-tiff/)
+ - [EPUB to GIF](/html/conversion-api/conversion-sdk-api/epub-converter/convert-epub-to-gif/)
 
 {{% alert color="primary" %}} 
-Please see the [Conversion REST API](/html/conversion-rest-api/) article to learn how to convert a file to other formats using direct REST API calls.
+Please see the [Conversion REST API](/html/conversion-api/conversion-rest-api/) article to learn how to convert a file to other formats using direct REST API calls.
 
 {{% /alert %}} 
 

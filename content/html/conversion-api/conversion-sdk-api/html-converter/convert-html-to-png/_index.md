@@ -7,7 +7,7 @@ description: "The article explains the usage of Aspose.HTML Cloud client SDKs fo
 weight: 80
 ---
 
-## Summary
+## **Summary**
 
 A widespread use case for Aspose.HTML Cloud SDKs functions is file processing and converting. This article explains in a set of code examples how to convert an {{%HTML%}} document to {{%PNG%}}  using Cloud client SDKs. PNG image format widely takes to transmit pictures over the network, display photos and graphics on web-pages and reserve in cloud storages. We will consider various scenarios of HTML to PNG conversion: from storage to storage, from a local file system to the storage and from the Web to the local file system. 
 
@@ -276,7 +276,7 @@ The following example describes how to convert **HTML to PNG Java/Android** appl
 In the example above, the conversion HTML to PNG occurs with the **ConversionOptions** specifying, among which there is the **Resolution** that applicable only to image formats. The set resolution value (300 dpi) indicates higher image quality than using the default value (96 dpi). The source "html_file.html" file is taken from the "Input" folder of the local file system, and the converted file saved in the storage folder "WithParams".
 
 {{% alert color="primary" %}} 
-More details about available conversion parameters for HTML files are in the [SDK Conversion Options](/html/sdk-conversion-options/) section.
+More details about available conversion parameters for HTML files are in the [SDK Conversion Options](/html/conversion-api/sdk-conversion-options/) section.
 
 {{% /alert %}} 
 
