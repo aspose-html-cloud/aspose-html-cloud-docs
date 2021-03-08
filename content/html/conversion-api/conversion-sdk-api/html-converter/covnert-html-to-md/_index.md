@@ -261,9 +261,6 @@ The following example demonstrates how to convert **HTML to Markdown Java/Androi
 
 In the following example, we consider the case when the source HTML document is got from the Web by its URL, converted to Markdown format and saved to the local file system. 
 
-{{< tabs tabTotal="10" tabID="2" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" >}}
-
-{{< tab tabNum="1" >}}
 
 The code snippet below explains how to convert **HTML to Markdown C#** language applying. HTML is taken from the Web, converted to Markdown and saved to the local file system. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
@@ -287,90 +284,6 @@ using (var api = new HtmlApi(cb => cb
     }               
 }  
 ```
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-The code snippet below explains how to convert **HTML to Markdown java** language applying. HTML is taken from the Web, converted to Markdown and saved to the local file system. You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
-
-```java
-
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="3" >}}
-
-The code snippet below explains how to convert **HTML to Markdown C++** language applying. HTML is taken from the Web, converted to Markdown and saved to the local file system. 
-
-```c++
-
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="4" >}}
-
-The code snippet below explains how to convert **HTML to Markdown Python** language applying. HTML is taken from the Web, converted to Markdown and saved to the local file system. You can download the Python SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-python).
-
-```python
-
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-
-The code snippet below explains how to convert **HTML to Markdown PHP** language applying. HTML is taken from the Web, converted to Markdown and saved to the local file system. You can download the PHP SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-php).
-
-```php
-
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-
-The code snippet below explains how to convert **HTML to Markdown Ruby** language applying. HTML is taken from the Web, converted to Markdown and saved to the local file system. You can download the Ruby SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby).
-
-```ruby
-
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="7" >}}
-
-The code snippet below explains how to convert **HTML to Markdown Node.js** language applying. HTML is taken from the Web, converted to Markdown and saved to the local file system. 
-
-```javascript
-
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="8" >}}
-
-The code snippet below explains how to convert **HTML to Markdown Swift** language applying. HTML is taken from the Web, converted to Markdown and saved to the local file system. You can download the Swift SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-swift).
-
-```swift
-
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="9" >}}
-
-The code snippet below explains how to convert **HTML to Markdown Java/Android** applying. HTML is taken from the Web, converted to Markdown and saved to the local file system. You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
-
-```java
-
-```
-
-{{< /tab >}}
-
-{{< /tabs >}}
 
 In the example, we use methods of the **ConverterBuilder** class: **FromUrl**(`urlAddress`), **To**(`ConversionOptions`) and **SaveToLocalDirectory**(`outputDirectory`) that specify input data, the output format, and the target directory for a conversion result. The **Convert**(`builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
 

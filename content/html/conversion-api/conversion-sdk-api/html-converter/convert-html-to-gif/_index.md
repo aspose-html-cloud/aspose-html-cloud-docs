@@ -273,7 +273,7 @@ The following example demonstrates how to convert **HTML to GIF Java/Android** a
 {{< /tabs >}}
 
 {{% alert color="primary" %}} 
-More details about available conversion parameters for HTML files are in the [SDK Conversion Options](/html/sdk-conversion-options/) section.
+More details about available conversion parameters for HTML files are in the [SDK Conversion Options](/html/conversion-api/sdk-conversion-options/) section.
 
 {{% /alert %}} 
 
@@ -397,7 +397,3 @@ In the example, we use methods of the **ConverterBuilder** class: **FromUrl**(`u
 
 HTML to GIF conversion occurs with the **default conversion options**: the resulting GIF document’s width and height correspond to A4, all margins have zero value, and the resolution value is 96 dpi.
 
-{{% alert color="primary" %}} 
-You can download Aspose.HTML Cloud SDKs of your required platform from [GitHub](https://github.com/aspose-html-cloud/). 
-
-{{% /alert %}} 

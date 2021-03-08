@@ -268,7 +268,7 @@ The following example demonstrates how to convert **HTML to XPS Java/Android** a
 In the example above, the source "html_file.html" file is taken from the "Input" folder of the local file system and the converted file saved in the storage folder "WithParams".
 
 {{% alert color="primary" %}} 
-More details about available conversion parameters for HTML files are in the [SDK Conversion Options](/html/sdk-conversion-options/) section.
+More details about available conversion parameters for HTML files are in the [SDK Conversion Options](//html/conversion-api/sdk-conversion-options/) section.
 
 {{% /alert %}} 
 
