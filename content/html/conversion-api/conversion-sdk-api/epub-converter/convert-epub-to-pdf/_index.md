@@ -28,7 +28,7 @@ A widespread use case for Aspose.HTML Cloud SDK functions is file processing and
 
 ### **Example 1.**  Convert an EPUB file from the storage to PDF and save the result to the storage
 
-The conversion process is following - a source document is loaded from the *default* cloud storage, and after conversion is completed, the result is saved to this storage. The default PDFConversionOptions are applied to the conversion. In the example, we use methods of the **ConverterBuilder** class: **FromStorageFile**(`inputPath`), **To**(`ConversionOptions`) and **SaveToLocal**(`outputDirectory`) that specify input data, the output format, and the target directory for a conversion result.
+The conversion process is following - a source document is loaded from the *default* cloud storage, and after conversion is completed, the result is saved to this storage. The default PDFConversionOptions are applied to the conversion. In the example, we use methods of the **ConverterBuilder** class: **FromStorageFile**(`filePath`), **To**(`ConversionOptions`) and **SaveToStorageDirectory**(`outputDirectory`) that specify input data, the output format, and the target directory for a conversion result.
 
 {{< tabs tabTotal="10" tabID="1" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" >}}
 
@@ -37,26 +37,25 @@ The conversion process is following - a source document is loaded from the *defa
 The following example demonstrates how to convert **EPUB to PDF C#** language applying. EPUB is taken from the cloud storage, converted to PDF and saved to the storage. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
 ```c#
-const string StorageSrcFolder = "storage:///Html/TestData";
-const string StorageDstFolder = "storage:///Html/TestResult";
-
-var name = "example.epub";
-var srcFilePath = $"{StorageSrcFolder}/{name}";
-var destFolder = $"{StorageDstFolder}/Pdf";
-
-using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
-{
-    ConverterBuilder bilder = new ConverterBuilder()
-        .FromStorageFile(srcFilePath)
+// Create a ConverterBuilder instance - builder and specify builder methods	
+    ConverterBuilder builder = new ConverterBuilder()
+        .FromStorageFile("/example.epub")
         .To(new PDFConversionOptions())
-        .SaveToStorage(destFolder);
+        .SaveToStorageDirectory("/TestResult/Epub");
 
-    ConversionResult result = api.Convert(bilder);
-    if(result.Status == "success" && result.Files.Length > 0)
+    // Initialize SDK API in the builder style
+	using (var api = new HtmlApi(cb => cb
+         .WithClientId(ClientId)
+         .WithClientSecret(ClientSecret)))
     {
-        // download file(s) by path result.Files
+        // Convert EPUB to PDF
+	    ConversionResult result = api.Convert(builder);
+
+        if(result.Status == "success" && result.Files.Length > 0)
+        {
+            // Download file(s) by path result.Files 
+        }        
     }
-}
 ```
 
 {{< /tab >}}
@@ -154,7 +153,7 @@ EPUB to PDF conversion occurs with the **default conversion options**: the resul
 
 The example below demonstrates how to convert an EPUB file from the local file system to PDF format with explicitly specified options and save the result to the cloud storage.
 
- For conversion, we use methods of the **ConverterBuilder** class: **FromLocalFile**(`inputPath`), **To**(`ConversionOptions`) and **SaveToStorage**(`outputDirectory`) that specify input data, the output format, and the target directory for a conversion result. The **Convert**(`ConverterBuilder builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
+ For conversion, we use methods of the **ConverterBuilder** class: **FromLocalFile**(`filePath`), **To**(`ConversionOptions`) and **SaveToStorageDirectory**(`outputDirectory`) that specify input data, the output format, and the target directory for a conversion result. The **Convert**(` builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
 
 {{< tabs tabTotal="10" tabID="2" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" >}}
 
@@ -163,35 +162,35 @@ The example below demonstrates how to convert an EPUB file from the local file s
 The following example demonstrates how to convert **EPUB to PDF C#** language applying. EPUB is taken from the local file system, converted to PDF and saved to the storage. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
 ```c#
-const string LocalTestData = "d:\TestData";
-const string StorageDstFolder = "storage:///Html/TestResult";
+// Create an instance of ConversionOptions class and specify options for EPUB to PDF conversion	
+	ConversionOptions pdfOpts = new PDFConversionOptions()
+         .SetHeight(800)
+         .SetWidth(1000)
+         .SetLeftMargin(10)
+         .SetRightMargin(10)
+         .SetBottomMargin(10)
+         .SetTopMargin(10)
+         .SetQuality(95);
 
-var name = "example.epub";
-var srcFilePath = $"{LocalTestData}\{name}";
-var destFolder = $"{StorageDstFolder}/Pdf";
+     // Create a ConverterBuilder instance - builder and specify builder methods
+	 ConverterBuilder builder = new ConverterBuilder()
+         .FromLocalFile(@"Input\example.epub")
+         .To(pdfOpts)
+         .SaveToStorageDirectory("/TestResult/Epub/WithParams");
 
-using(var api = new HtmlApi(clientId, clientSecret))
-{
-    ConversionOptions pdfOpts = new PDFConversionOptions()
-        .SetHeight(800)
-        .SetWidth(1000)
-        .SetLeftMargin(10)
-        .SetRightMargin(10)
-        .SetBottomMargin(10)
-        .SetTopMargin(10)
-        .SetQuality(95);
-
-    ConverterBuilder bilder = new ConverterBuilder()
-        .FromLocalFile(srcFilePath)
-        .To(pdfOpts)
-        .SaveToStorage(destFolder);
-
-    ConversionResult result = api.Convert(bilder);
-    if(result.Status == "success" && result.Files.Length > 0)
+    // Initialize SDK API using the configuration builder
+    using (var api = new HtmlApi(cb => cb
+         .WithClientId(ClientId)              // from user secrets
+         .WithClientSecret(ClientSecret)))
     {
-        // download file(s) by path result.Files
+        // Convert EPUB to PDF
+	    ConversionResult result = api.Convert(builder);
+
+        if(result.Status == "success" && result.Files.Length > 0)
+        {
+            // Download file(s) by path result.Files 
+        }        
     }
-}
 ```
 
 {{< /tab >}}
@@ -294,22 +293,25 @@ Aspose.HTML Cloud SDK allows you to get EPUB from the storage, convert it to ano
 The following example shows how to convert **EPUB to PDF C#** language applying. The EPUB file is taken from the storage, converted to PDF and saved to the local file system. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
 ```c#
-var srcFilePath = "/TestData/example.epub";
-var destFolder =  @"d:\TestResult\example.pdf";
-
-using(var api = new HtmlApi(clientID, clientSecret)) // initialize SDK API
-{
-    ConverterBuilder bilder = new ConverterBuilder()
-        .FromStorageFile(srcFilePath)
+// Create a ConverterBuilder instance - builder and specify builder methods
+	ConverterBuilder builder = new ConverterBuilder()
+        .FromStorageFile("/example.epub")
         .To(new PDFConversionOptions())
-        .SaveToLocal(destFolder);
+        .SaveToLocalDirectory(@"Output\Epub");
 
-    ConversionResult result = api.Convert(bilder);
-    if(result.Status == "success" && result.Files.Length > 0)
+    // Initialize SDK API using the configuration builder
+	using (var api = new HtmlApi(cb => cb
+         .WithClientId(ClientId)              
+         .WithClientSecret(ClientSecret)))
     {
-        // check if the file exists locally
+        // Convert EPUB to PDF
+	    ConversionResult result = api.Convert(builder);
+
+        if(result.Status == "success" && result.Files.Length > 0)
+        {
+            // Download file(s) by path result.Files 
+        }        
     }
-}
 ```
 
 {{< /tab >}}
@@ -396,12 +398,12 @@ The following example shows how to convert **EPUB to PDF Java/Android** applying
 
 {{< /tabs >}}
 
-In the example, we use methods of the **ConverterBuilder** class: **FromStorageFile**(`srcFilePath`), **To**(`ConversionOptions`) and **SaveToLocalDirectory**(`outputDirectory`) that specify input data, the output format, and the target directory for a conversion result.
+In the example, we use methods of the **ConverterBuilder** class: **FromStorageFile**(`filePath`), **To**(`ConversionOptions`) and **SaveToLocalDirectory**(`outputDirectory`) that specify input data, the output format, and the target directory for a conversion result.
 
 EPUB to PDF conversion occurs with the **default conversion options**: the resulting PDF document’s width and height correspond to A4, all margins have zero value, and Quality of jpeg compression is 95%.
 
 {{% alert color="primary" %}} 
-You can download Aspose.HTML Cloud SDKs of your required platform from [GitHub](https://github.com/aspose-html-cloud/). 
+Please see the [Conversion REST API](/html/conversion-api/conversion-rest-api/) article to learn how to convert an HTML file to other formats using direct REST API calls.
 
 {{% /alert %}} 
 
