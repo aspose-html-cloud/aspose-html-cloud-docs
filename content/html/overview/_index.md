@@ -17,7 +17,7 @@ The actual version of Aspose.HTML Cloud REST API is v.4.0. Old-style REST API v.
 Documentation pages of API v.3.0 are available [here](https://docs.aspose.cloud/html/archive_v_3_0).
 
 ## **Cloud SDKs**
-Cloud SDKs are wrappers around REST APIs in various programming languages, allowing you to process documents in the language of your choice quickly and easily, gaining all benefits of strong types and IDE highlights. Please check [Aspose.HTML GitHub repository](https://github.com/aspose-html-cloud/) for SDKs with working examples, to get you started in no time. 
+Cloud SDKs are wrappers around REST APIs in various programming languages, allowing you to process documents in the language of your choice quickly and easily, gaining all benefits of strong types and IDE highlights. Please check [Aspose.HTML GitHub repository](https://github.com/aspose-html-cloud/) for SDKs with working examples to get you started in no time. 
 
 ## **API Explorer**
 The easiest way is to try out our API right away in your browser with the [Aspose.HTML for Cloud API Reference](https://apireference.aspose.cloud/html/).  It is a collection of Swagger documentation for the Aspose.HTML for Cloud APIs,  through which you can get information about all the resources in the API. It also provides testing and interactivity to our API endpoint documentation.

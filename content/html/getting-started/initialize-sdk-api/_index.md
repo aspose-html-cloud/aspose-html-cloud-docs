@@ -2,8 +2,8 @@
 title: Initialize SDK API
 type: docs
 aliases: /getting-started/initialize-sdk-api/
-keywords: SDK examples, credentials, client id, client secret, access token, JWT
-  token, REST API, JWT authentication, initialize API, entry point
+keywords: SDK examples, SDK, credentials, client id, client secret, access token, JWT
+  token, REST API, JWT authentication, initialize API, entry point, HTML
 description: This article covers examples that explain what methods you can use
   to create an SDK API entry point. In SDK examples the Client Id and Client
   Secret are used for authentication; the SDK automatically gets API access
@@ -15,11 +15,11 @@ This article covers examples that explain what methods you can use to create an 
 
 ### **HtmlApi class**
 
-An **HtmlApi** class is a common SDK facade of all HTML functionality that provides wrapper methods of Aspose.HTML Cloud REST API. Before starting to call the Aspose.HTML Cloud SDK functionality, you must create an HtmlApi class instance. This object is a main SDK entry point, it accepts user data needed for authentication and some optional parameters.
+An **HtmlApi** class is a common SDK facade of all HTML functionality that provides wrapper methods of Aspose.HTML Cloud REST API. Before starting to call the Aspose.HTML Cloud SDK functionality, you must create an HtmlApi class instance. This object is a main SDK entry point; it accepts user data needed for authentication and some optional parameters.
 
 The HtmlApi class provides:
- - a group of constructors provides various ways of API setup concerning user credentials, API services (if they are different from the default) and some other parameters, such as HTTP connection timeout.
- - a group of synchronous and asynchronous conversion methods that work with various data sources, such as local files, files in the cloud storage, web pages. The supported source file types are: HTML (including HTML pages with local resources in ZIP archive), MHTML, ePub, Markdown. The supported output formats the source files can be converted to are: PDF, XPS, JPEG, BMP, PNG, GIF, TIFF.
+ - a group of constructors provides various ways of API setup concerning user credentials, API services (if they are different from the default) and some other parameters, such as HTTP connection timeout;
+ - a group of synchronous and asynchronous conversion methods that work with various data sources, such as local files, files in the cloud storage, web pages. The supported source file types are: HTML (including HTML pages with local resources in ZIP archive), MHTML, ePub, Markdown. The supported output formats the source files can be converted to are: PDF, XPS, JPEG, BMP, PNG, GIF, TIFF;
  - an entry point of the cloud storage access API.
 
 ### **ConfigurationBuilder class**
@@ -32,17 +32,17 @@ ConfigurationBuilder is used for:
  - configuring an HtmlApi object with an externally obtained authentication token.
 
 {{% alert color="primary" %}} 
-Install Aspose.HTML Cloud SDK for .NET via [NuGet](https://www.nuget.org/packages/Aspose.HTML-Cloud/). Complete source code of Aspose.HTML SDK for .NET is freely available on the [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
+Install Aspose.HTML Cloud SDK for .NET via [NuGet](https://www.nuget.org/packages/Aspose.HTML-Cloud/). Complete source code of Aspose.HTML SDK for .NET is freely available on the [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet) repository.
 
 {{% /alert %}}
 
 ## **Initialize with Constructor Parameters**
 
-Classic way to initialize an SDK entry point object is to call **HtmlApi()** constructor with [user Credentials](/html/overview/create-an-account-and-get-credentials/) parameters.
+A classic way to initialize an SDK entry point object is to call **HtmlApi()** constructor with [user Credentials](/html/overview/create-an-account-and-get-credentials/) parameters.
 
 ### **SDK Examples**
 
-The **HtmlApi** (`ClientId`, `ClientSecret`) method Initializes a class instance with user Credentials and default API server URL. We need to pass into the **HtmlApi()** constructor two required parameters: **Client Id** and **Client Secret**.
+The **HtmlApi** (`ClientId`, `ClientSecret`) method initializes a class instance with user Credentials and default API server URL. We need to pass into the **HtmlApi()** constructor two required parameters: **Client Id** and **Client Secret**.
 
 {{< tabs tabTotal="10" tabID="1" tabName1="C#/.NET" >}}
 
@@ -85,7 +85,7 @@ using(var api = HtmlApi(ClientId, ClientSecret, baseApiUrl))
 
 ## **Initialize with Configuration Object**
 
-Another way to setup SDK is to call the HtmlApi with **Configuration** class instance. The Configuration class initializes API facade objects with needed settings, such as Credentials, timeout, etc.
+Another way to setup SDK is to call the HtmlApi with **Configuration** class instance. The Configuration class initializes API facade objects with needed settings such as Credentials, timeout, etc.
 
 This method looks more flexible, it provides more options, and it is more convenient to extend the SDK configuration with new options during future development. 
 
@@ -119,7 +119,7 @@ using(var api = HtmlApi(conf))
 Create default **Configuration** class instance and specify the authentication token obtained from some external source.
 
 {{% alert color="primary" %}} 
-NOTE: Authentication with externally obtained token is available only using **Configuration** or **ConfigurationBuilder**. 
+NOTE: Authentication with an externally obtained token is available only using **Configuration** or **ConfigurationBuilder**. 
 
 {{% /alert %}}  
 

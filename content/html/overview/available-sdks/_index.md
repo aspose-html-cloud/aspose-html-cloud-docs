@@ -4,7 +4,7 @@ type: docs
 aliases: /available-sdks/
 keywords: SDK, Cloud SDKs, REST API, SDK Example, HTML to JPEG, java SDK, Python
   SDK, python, java , .net,  c#,  android, swift, Perl, Node.js
-description: This article introduce you  with Aspose.HTML Cloud v4.0 abilities
+description: This article introduces you  with Aspose.HTML Cloud v4.0 abilities
   to use its functionality by the set of wrappers implemented as SDKs on the
   various programming languages such as, C#, Java, Python, Ruby, PHP, Node.js,
   Swift, Android and Go.
@@ -20,11 +20,11 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 ### **SDK benefits**
 Our supported SDKs are 100% tested and out of the box running. These SDKs are open source and have an MIT license. You can use them, and even customize them for absolutely free of charge. 
 
-The SDKs are simple to understand and use by outside developers, contain comprehensive documentation that explains the working of codes and work well with other SDKs.
+The SDKs are simple to understand and use by outside developers, contain a comprehensive documentation that explains the working of codes and work well with other SDKs.
 
 ## **Supported SDKs**
 
-Aspose.HTML Cloud provides the ability to use its functionality by the set of wrappers implemented as SDKs on the various programming languages such as, C#, Java, Python, Ruby, PHP, Node.js, Swift, Android and Go.
+Aspose.HTML Cloud provides the ability to use its functionality by the set of wrappers implemented as SDKs on the various programming languages such as C#, Java, Python, Ruby, PHP, Node.js, Swift, Android, and Go.
 
 {{< tabs tabTotal="10" tabID="1" tabName1=".NET" tabName2="Python" tabName3="Java" tabName4="C++" tabName5="Go" tabName6="Node.js" tabName7="Swift" tabName8="Android" tabName9="Ruby" tabName10="PHP" >}}
 
@@ -42,7 +42,7 @@ PM> Install-Package Aspose.HTML-Cloud
 
 {{% alert color="primary" %}} 
 
-The complete source code of Aspose.HTML Cloud SDK for .NET is freely available on the [GitHub](https://github.com/aspose-html-cloud).
+The complete source code of Aspose.HTML Cloud SDK for .NET is freely available on the [GitHub](https://github.com/aspose-html-cloud) repository.
 
 {{% /alert %}}
 
@@ -181,10 +181,10 @@ As an example, let’s use the Aspose.HTML Cloud SDK to convert HTML to JPEG.
 
 Consider a case when you get an HTML file from the storage, convert it to JPEG format and save the result to the local directory. The default JPEGConversionOptions are applied to the conversion. 
 
-The **HtmlApi** (` ClientId`, `ClientSecret`) method initializes a class instance with user Credentials. In the example, we use methods of the **ConverterBuilder** class: **FromStorageFile**(`filePath`), **To**(`ConversionOptions`) and **SaveToLocalDirectory**(`outputDirectory`) that specify input data, the output format and the target directory for a conversion result. The **Convert**(`ConverterBuilder builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
+The **HtmlApi** (` ClientId`, `ClientSecret`) method initializes a class instance with user Credentials. In the example, we use methods of the **ConverterBuilder** class: **FromStorageFile**(`filePath`), **To**(`ConversionOptions`) and **SaveToLocalDirectory**(`outputDirectory`) that specify input data, the output format, and the target directory for a conversion result. The **Convert**(`builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
 
 ```c#
-// Create a ConverterBuilder instance - builder; specify "From", "To", and "SaveTo" builder methods with parameters of conversion
+// Create a ConverterBuilder instance - builder and specify builder's methods 
 ConverterBuilder builder = new ConverterBuilder()
         .FromStorageFile("/html_file.html")
         .To(new JPEGConversionOptions())
@@ -207,6 +207,6 @@ using (var api = new HtmlApi(cb => cb
 
 {{% alert color="primary" %}} 
 
-To obtain information about converting between formats, please read the [Conversion API](html/conversion-api/) section.
+To obtain information about converting between formats, please read the [Conversion API](/html/conversion-api/) section.
 
 {{% /alert %}} 

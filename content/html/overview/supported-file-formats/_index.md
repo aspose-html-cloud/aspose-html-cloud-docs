@@ -5,7 +5,7 @@ aliases: /supported-file-formats/
 weight: 40
 ---
 Aspose.HTML Cloud main features can be parted into two areas: conversion between formats and the cloud storage operations.
-As a source document for converting Aspose.HTML Cloud supports HTML, XHTML, MHTML, EPUB and Markdown files, and you can save the result to PDF, XPS, DOC, DOCX, JPEG, PNG, BMP, TIFF, GIF, and other formats.
+As a source document for converting Aspose.HTML Cloud supports HTML, XHTML, MHTML, EPUB, and Markdown files. You can save the result to PDF, XPS, DOC, DOCX, JPEG, PNG, BMP, TIFF, GIF and other formats.
 
 |**Format**|**Description**|**Load**|**Save**|**Remarks**|
 | :- | :- | :- | :- | :- |
