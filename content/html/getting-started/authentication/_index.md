@@ -2,11 +2,11 @@
 title: Authentication
 type: docs
 aliases: /getting-started/authentication/
-keywords: authentication, credentials, client id, client secret, access token,
-  JWT token, REST API, JWT authentication
+keywords: authentication, credentials, user credentials, client id, client secret, access token,
+  JWT token, REST API, JWT authentication, curl, curl request
 description: This article explains how to obtain an authentication token and
   apply it for REST API calls; you find out in details about how to use user's
-  Credentials for JWT token gets.
+  Credentials for a JWT token gets.
 weight: 30
 
 ---
@@ -36,7 +36,7 @@ More detailed information about the Credentials obtaining you find in [Create an
 
 The Credentials (**Client Id** and **Client Secret**) are used when applications request a **JWT token** to access their resources.
 
-Let's consider an example of how to obtain a JWT token using cURL request:
+Let's consider an example of how to obtain a JWT token using a cURL request:
 
 #### **Step 1. Get a JWT token**
 
@@ -87,7 +87,7 @@ Consider some requests with JWT token usage:
  - curl request to return a list of files and folders in the specified folder of the storage;
  - REST API call to check if an object exists in the storage.
 
-Put the `access_token` field value obtained in Step 1 into the Authorization HTTP header as it's shown in the examples below.
+Put the `access_token` field value obtained in Step 1 into the Authorization HTTP header, as shown in the examples below.
 
 ```bash
 curl -X GET \
@@ -125,7 +125,7 @@ Using SDK, you don't need to know the authentication service URL. All routine wo
 
 Authentication by user credentials is a standard way of Aspose.HTML Cloud SDK family. But also the SDKs provide a possibility to authenticate using a token that has been obtained from some external source. 
 
-For example, an application calls the authentication service itself and uses an obtained token to call SDK methods without providing user credentials. Use externally obtained token creating SDK API entry point object.
+For example, an application calls the authentication service itself and uses an obtained token to call SDK methods without providing user credentials. Use externally obtained token, creating SDK API entry point object.
 
 
 {{< tabs tabTotal="1" tabID="3" tabName1="C#"  >}}
