@@ -11,18 +11,18 @@ weight: 20
 Aspose.HTML Cloud v4.0 provides the straightforward API for documents' conversion between formats with high quality, easy and fast. This article demonstrates how to convert an {{%MHTML%}} file to {{%PDF%}}, {{%XPS%}}, {{%DOCX%}}, {{%DOC%}}, {{%PNG%}}, {{%JPEG%}}, {{%BMP%}}, {{%TIFF%}}, {{%GIF%}}, and {{%HTML%}} using SDKs.
 
 {{% alert color="primary" %}} 
-Check out our [GitHub repository](https://github.com/aspose-html-cloud) for a complete list of Aspose.HTML SDKs along with working examples, to get you started in no time. Please check the [Available SDKs](/html/overview/available-sdks/) article to learn how to add an SDK to your project.
+Check out our [GitHub repository](https://github.com/aspose-html-cloud) for a complete list of Aspose.HTML SDKs along with working examples to get you started in no time. Please check the [Available SDKs](/html/overview/available-sdks/) article to learn how to add an SDK to your project.
 {{% /alert %}} 
 
 ## **SDK conversion examples**
 
 A widespread use case for Aspose.HTML Cloud SDK functions is file processing and converting. To view code examples that illustrate various cases of client SDKs usage for the format conversions, follow the links:
 
- - [MHTML  to PDF](/html/conversion-sdk-api/mhtml-to-pdf/) 
- - [MHTML to XPS](/html/conversion-sdk-api/mhtml-to-xps/)
- - [MHTML to DOCX/DOC](/html/conversion-sdk-api/mhtml-to-docx/) 
- - [MHTML to Image](/html/conversion-sdk-api/mhtml-to-image/) 
- - [MHTML to HTML](/html/conversion-sdk-api/mhtml-to-html/) 
+ - [MHTML  to PDF](/html/conversion-api/conversion-sdk-api/mhtml-converter/convert-mhtml-to-pdf/) 
+ - [MHTML to XPS](/html/conversion-api/conversion-sdk-api/mhtml-converter/convert-mhtml-to-xps/)
+ - [MHTML to DOCX/DOC](/html/conversion-api/conversion-sdk-api/mhtml-converter/convert-mhtml-to-docx/) 
+ - [MHTML to Image](/html/conversion-api/conversion-sdk-api/mhtml-converter/convert-mhtml-to-image/) 
+ - [MHTML to HTML](/html/conversion-api/conversion-sdk-api/mhtml-converter/convert-mhtml-to-html/) 
 
 {{% alert color="primary" %}} 
 Please see the [Conversion REST API](/html/conversion-api/conversion-rest-api/) article to learn how to convert a file to other formats using direct REST API calls.

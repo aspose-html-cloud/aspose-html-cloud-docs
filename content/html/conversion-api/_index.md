@@ -14,7 +14,7 @@ Aspose.HTML Cloud v4.0 provides the simplest API to convert an {{%HTML%}} page t
 The main differences from API v3.0 are:
 
 - conversion is considered as potentially long time operation, so new API provides an asynchronous mode of conversion;
-- many conversion options that were available in API v3.0 have been reduced to only three possible REST API calls that makes development more straightforward.
+- many conversion options that were available in API v3.0 have been reduced to only three possible REST API calls; this makes development more straightforward.
 
 To help developers speed up their development, a family of SDKs is available, including C#, Java, C++, Python, PHP, Ruby, Swift, Java/Android, etc.
 
