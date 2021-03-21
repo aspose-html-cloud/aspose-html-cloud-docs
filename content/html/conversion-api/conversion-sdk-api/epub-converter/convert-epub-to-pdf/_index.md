@@ -24,7 +24,7 @@ All the above SDKs are hosted on [GitHub](https://github.com/aspose-words-cloud/
 
 ## **SDK Examples of EPUB to PDF Conversion**
 
-A widespread use case for Aspose.HTML Cloud SDK functions is file processing and converting.  Cloud SDK allows you to fetch an EPUB document from storage location by its name or a local file on your drive, convert it to a specified format and save it to the storage or a local drive. The following code examples demonstrate how to convert EPUB to PDF for different cases using available SDKs.
+A widespread use case for Aspose.HTML Cloud SDK functions is file processing and converting. Cloud SDK allows you to fetch an EPUB document from a storage location by its name or a local file on your drive, convert it to a specified format and save it to the storage or a local drive. The following code examples demonstrate how to convert EPUB to PDF for different cases using available SDKs.
 
 ### **Example 1.**  Convert an EPUB file from the storage to PDF and save the result to the storage
 
@@ -37,7 +37,7 @@ The conversion process is following - a source document is loaded from the *defa
 The following example demonstrates how to convert **EPUB to PDF C#** language applying. EPUB is taken from the cloud storage, converted to PDF and saved to the storage. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
 ```c#
-// Create a ConverterBuilder instance - builder and specify builder methods	
+// Create a ConverterBuilder instance - builder and specify builder's methods	
     ConverterBuilder builder = new ConverterBuilder()
         .FromStorageFile("/example.epub")
         .To(new PDFConversionOptions())
@@ -149,7 +149,7 @@ EPUB to PDF conversion occurs with the **default conversion options**: the resul
 
 
 
-### **Example 2.** Convert EPUB from the local file system to PDF with explicitly specified options and save to the storage
+### **Example 2.** Convert EPUB from the local file system to PDF with explicitly specified options and save it to the storage
 
 The example below demonstrates how to convert an EPUB file from the local file system to PDF format with explicitly specified options and save the result to the cloud storage.
 
@@ -172,7 +172,7 @@ The following example demonstrates how to convert **EPUB to PDF C#** language ap
          .SetTopMargin(10)
          .SetQuality(95);
 
-     // Create a ConverterBuilder instance - builder and specify builder methods
+     // Create a ConverterBuilder instance - builder and specify builder's methods
 	 ConverterBuilder builder = new ConverterBuilder()
          .FromLocalFile(@"Input\example.epub")
          .To(pdfOpts)
@@ -284,7 +284,7 @@ More details about available conversion parameters for EPUB files are in the [SD
 
 ### **Example 3.** Convert an EPUB file from the storage to PDF and save the result to the local file system
 
-Aspose.HTML Cloud SDK allows you to get EPUB from the storage, convert it to another format and save into the local file system. The example below demonstrates how to convert EPUB to PDF with the default conversion parameters.
+Aspose.HTML Cloud SDK allows you to get EPUB from the storage, convert it to another format and save it into the local file system. The example below demonstrates how to convert EPUB to PDF with the default conversion parameters.
 
 {{< tabs tabTotal="10" tabID="3" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" >}}
 
@@ -293,7 +293,7 @@ Aspose.HTML Cloud SDK allows you to get EPUB from the storage, convert it to ano
 The following example shows how to convert **EPUB to PDF C#** language applying. The EPUB file is taken from the storage, converted to PDF and saved to the local file system. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
 ```c#
-// Create a ConverterBuilder instance - builder and specify builder methods
+// Create a ConverterBuilder instance - builder and specify builder's methods
 	ConverterBuilder builder = new ConverterBuilder()
         .FromStorageFile("/example.epub")
         .To(new PDFConversionOptions())

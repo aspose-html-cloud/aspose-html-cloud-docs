@@ -16,7 +16,7 @@ The article explains in a set of code examples how to convert an EPUB document t
 
 ## **SDK Examples of EPUB to DOCX Conversion**
 
-A widespread use case for Aspose.HTML Cloud SDK functions is file processing and converting.  Cloud SDK allows you to fetch an EPUB document from storage location by its name or a local file on your drive, convert it to a specified format and save it to the storage or a local drive. The following code examples demonstrate how to convert EPUB to DOCX for different cases using available SDKs.
+A widespread use case for Aspose.HTML Cloud SDK functions is file processing and converting.  Cloud SDK allows you to fetch an EPUB document from a storage location by its name or a local file on your drive, convert it to a specified format and save it to the storage or a local drive. The following code examples demonstrate how to convert EPUB to DOCX for different cases using available SDKs.
 
 ### **Example 1.**  Convert an EPUB file from the storage to DOCX and save the result to the storage
 
@@ -25,7 +25,7 @@ The conversion process is following - a source document is loaded from the *defa
 The following example demonstrates how to convert **EPUB to DOCX C#** language applying. EPUB is taken from the cloud storage, converted to DOCX and saved to the storage. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
 ```c#
-    // Create a ConverterBuilder instance - builder and specify builder methods	
+    // Create a ConverterBuilder instance - builder 	
     ConverterBuilder builder = new ConverterBuilder()
         .FromStorageFile("/example.epub")
         .To(new DOCConversionOptions())
@@ -55,13 +55,13 @@ EPUB to DOCX conversion occurs with the **default conversion options**: the resu
 
 
 
-### **Example 2.** Convert EPUB from the local file system to DOCX with explicitly specified options and save to the storage
+### **Example 2.** Convert EPUB from the local file system to DOCX with explicitly specified options and save it to the storage
 
-The example below demonstrates how to convert an HTML file from the local file system to DOCX with explicitly specified options and save the result to the cloud storage.
+The example below demonstrates how to convert an EPUB file from the local file system to DOCX with explicitly specified options and save the result to cloud storage.
 
  For conversion, we use methods of the **ConverterBuilder** class: **FromLocalFile**(`filePath`), **To**(`ConversionOptions`) and **SaveToStorageDirectory**(`outputDirectory`) that specify input data, the output format, and the target directory for a conversion result. The **Convert**(`builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
 
-The following SDK example demonstrates how to convert **HTML to DOCX C#** language applying. HTML is taken from the local file system, converted to DOCX and saved to the storage. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
+The following SDK example demonstrates how to convert **EPUB to DOCX C#** language applying. EPUB is taken from the local file system, converted to DOCX and saved to the storage. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
 ```c#
     // Create an instance of ConversionOptions class and specify options for EPUB to DOCX conversion	
@@ -73,7 +73,7 @@ The following SDK example demonstrates how to convert **HTML to DOCX C#** langua
          .SetBottomMargin(10)
          .SetTopMargin(10);
          
-     // Create a ConverterBuilder instance - builder and specify builder methods
+     // Create a ConverterBuilder instance - builder 
      ConverterBuilder builder = new ConverterBuilder()
          .FromLocalFile(@"Input\example.epub")
          .To(docOpts)
@@ -101,12 +101,12 @@ More details about available conversion parameters for EPUB files are in the [SD
 
 ### **Example 3.** Convert an EPUB file from the storage to DOCX and save the result to the local file system
 
-Aspose.HTML Cloud SDK allows you to get EPUB from the storage, convert it to another format and save into the local file system. The example below demonstrates how to convert EPUB to DOCX with the default conversion parameters.
+Aspose.HTML Cloud SDK allows you to get EPUB from the storage, convert it to another format and save it into the local file system. The example below demonstrates how to convert EPUB to DOCX with the default conversion parameters.
 
 The following example shows how to convert **EPUB to DOCX C#** language applying. The EPUB file is taken from the storage, converted to DOCX and saved to the local file system. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
 ```c#
-    // Create a ConverterBuilder instance - builder and specify builder methods
+    // Create a ConverterBuilder instance - builder 
 	ConverterBuilder builder = new ConverterBuilder()
         .FromStorageFile("/example.epub")
         .To(new DOCConversionOptions())
@@ -133,3 +133,6 @@ In the example, we use methods of the **ConverterBuilder** class: **FromStorageF
 Please see the [Conversion REST API](/html/conversion-api/conversion-rest-api/) article to learn how to convert an EPUB file to other formats using direct REST API calls.
 
 {{% /alert %}} 
+
+
+
