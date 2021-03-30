@@ -12,7 +12,7 @@ weight: 100
 
 ## **Introduction**
 
-Cloud file storage provides a simple way to save and retrieval information securely at any time from any location. Besides giving space, cloud storage can protect your files and data from computer failure or other events that may cause the information to be lost. Storage services enable developers to store data in the cloud, relying on the authentication and other access features that control who can get to the data. If you need any information getting started with setting third party storage please refer to [Aspose Cloud UI Help Topics](https://docs.aspose.cloud/total/aspose-cloud-ui-help-topics/).
+Cloud file storage provides a simple way to save and retrieve information securely at any time from any location. Besides giving space, cloud storage can protect your files and data from computer failure or other events that may cause the information to be lost. Storage services enable developers to store data in the cloud, relying on authentication and other access features that control who can get to the data. If you need any information getting started with setting third party storage, please refer to [Aspose Cloud UI Help Topics](https://docs.aspose.cloud/total/aspose-cloud-ui-help-topics/).
 
 {{% alert color="primary" %}} 
 Install Aspose.HTML Cloud SDK for .NET via [NuGet](https://www.nuget.org/packages/Aspose.HTML-Cloud/).
@@ -34,7 +34,7 @@ Storage API is divided into the following groups:
 
 ## **REST API Information**
 
-The Aspose.HTML Cloud API is a REST-based API for wide usability on the web across platforms.  The REST API uses existing HTTP methods, such as: **GET** - to retrieve a resource; **PUT** - to change the state of or update a resource, which can be an object, file or block; **POST** - to create that resource, and **DELETE** - to remove it.
+The Aspose.HTML Cloud API is a REST-based API for wide usability on the web across platforms.  The REST API uses existing HTTP methods, such as: **GET** - to retrieve a resource; **PUT** - to change the state of or update a resource, which can be an object, file or block; **POST** - to create that resource; and **DELETE** - to remove it.
 
 To create a correctly constructed HTTP request, you should build URI relative to https://api.aspose.cloud/v4.0/html.
 
@@ -68,7 +68,7 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 
 Check out our [GitHub repository](https://github.com/aspose-html-cloud) for a complete list of Aspose.HTML SDKs along with working examples to get you started in no time. SDKs tools include libraries, documentation, code samples, and guides that developers can apply and integrate into their own apps. 
 
-Aspose Cloud HTML SDKs are platform-independent and developed on REST-based APIs. You can use SDKs on any platform and integrate them with other cloud services to give you the flexibility you need when processing documents. You can perform a wide range of file processing operations including creation, manipulation, conversion and rendering of HTML file in the cloud in various programming languages: .NET, Java, PHP, Android, Python, Ruby, Node.js, Swift, and more. SDKs also support HTML conversion to fixed layout document formats such as  {{%PDF%}}, {{%XPS%}}, {{%DOC%}}, {{%DOCX%}}; to raster image formats including {{%JPEG%}}, {{%PNG%}}, {{%TIFF%}},  {{%BMP%}},  {{%GIF%}}  and  to {{%MD%}},  {{%MHTML%}} formats.
+Aspose Cloud HTML SDKs are platform-independent and developed on REST-based APIs. You can use SDKs on any platform and integrate them with other cloud services to give you the flexibility you need when processing documents. You can perform a wide range of file processing operations, including creation, manipulation, conversion and rendering of HTML file in the cloud in various programming languages: .NET, Java, PHP, Android, Python, Ruby, Node.js, Swift, and more. SDKs also support HTML conversion to fixed layout document formats such as  {{%PDF%}}, {{%XPS%}}, {{%DOC%}}, {{%DOCX%}}; to raster image formats including {{%JPEG%}}, {{%PNG%}}, {{%TIFF%}},  {{%BMP%}},  {{%GIF%}}  and  to {{%MD%}},  {{%MHTML%}} formats.
 
 {{% alert color="primary" %}} 
 Please check the [Available SDKs](/html/overview/available-sdks/) article to learn how to add an SDK to your project.

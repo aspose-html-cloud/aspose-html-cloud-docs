@@ -2,7 +2,7 @@
 title: Folder REST API operations
 type: docs
 aliases: /storage-api/working-with-folders-in-the-storage/folder-rest-api/
-keywords: "cloud storage, REST API, cloud storage api, cURL example, cloud storage folder, get folder content, create folder, delete folder, copy folder, move folder, Python, Java, .NET, C#, Android, Swift, Perl, Node.js"
+keywords: "cloud storage, REST API, cloud storage api, cURL, cURL example, cloud storage folder, get folder content, create folder, delete folder, copy folder, move folder, Python, Java, .NET, C#, Android, Swift, Perl, Node.js"
 description: "The article explains how to manipulate folders in the cloud storage using Aspose.HTML Cloud API v.4.0. SDKs are also available in PHP, Perl, Android, Swift, C#, Java and more to help developers speed up their
   development."
 weight: 20
@@ -17,7 +17,7 @@ This article provides a detailed description of operations to manipulate folders
 
 A call to the REST API consists of a request performed by the client, and a response returned by the service. In the request, you send a URL with information about which operation you want to call, the resource to act upon, query parameters, etc. The most common methods include GET, POST, PUT and DELETE. GET retrieves resources. POST submits new data to the server. PUT updates existing data. DELETE removes data.
 
-You can call REST API from any platform that supports HTTP / HTTPS and it does not depend on the software running on the server or client. To create a correctly constructed HTTP request, you should build URI relative to https://api.aspose.cloud/v4.0/html.
+You can call REST API from any platform that supports HTTP / HTTPS, and it does not depend on the software running on the server or client. To create a correctly constructed HTTP request, you should build URI relative to https://api.aspose.cloud/v4.0/html.
 
 {{% alert color="primary" %}} 
 More detailed information about REST URLs’ structure and specific behavior linked to the API such as Authentication, Request Queuing, and Storage you can find in the [REST API Overview](https://docs.aspose.cloud/total/getting-started/rest-api-overview/) article.
@@ -27,9 +27,9 @@ More detailed information about REST URLs’ structure and specific behavior lin
 
 ### **Get a list of folder files and subfolders**
 
-You can use cURL command-line tool to access Aspose.HTML web services quickly and easily. Let's review an example of the GET method applying: we use the **GET method** to obtain a list of folder files and subfolders. Requests using GET should only retrieve data. GET is one of the most common HTTP methods.
+You can use the cURL command-line tool to access Aspose.HTML web services quickly and easily. Let's review an example of the GET method applying: we use the **GET method** to obtain a list of folder files and subfolders. Requests using GET should only retrieve data. GET is one of the most common HTTP methods.
 
-For a correct request constructing you should build a URL with information about the path to a specified folder in the storage and the storage name. All URIs are relative to https://api.aspose.cloud/v4.0/html.
+For a correct request construction, you should build a URL with information about the path to a specified folder in the storage and the storage name. All URIs are relative to https://api.aspose.cloud/v4.0/html.
 
 - **cURL GET request**: return a list of files and folders in the specified folder (or in the root folder by default) of the storage. 
 
