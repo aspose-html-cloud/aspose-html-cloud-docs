@@ -10,7 +10,7 @@ weight: 10
 This article provides a detailed description of operations to manipulate folders (directories) in the cloud storage using Aspose.HTML Cloud API v.4.0. SDKs.
 
 {{% alert color="primary" %}} 
-Install Aspose.HTML Cloud SDK for .NET via [NuGet](https://www.nuget.org/packages/Aspose.HTML-Cloud/). Complete source code of Aspose.HTML SDK for .NET is freely available on the [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
+Install Aspose.HTML Cloud SDK for .NET via [NuGet](https://www.nuget.org/packages/Aspose.HTML-Cloud/). Complete source code of Aspose.HTML SDK for .NET is freely available on the [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet) repository.
 
 {{% /alert %}}  
 
@@ -137,7 +137,7 @@ Moves a directory - overloaded method.
 Aspose.HTML Cloud  SDKs don't require you to receive tokens as they become obsolete. You need only pass your **Client Id** and **Client Secret** as the parameters to initialize an SDK entry point object.
 
 {{% alert color="primary" %}} 
-Please check the [QuickStart](/html/quickstart/) article to learn how to obtain the **Client Id** and **Client Secret** .
+Please check the [Create an Account and Get Credentials](/html/overview/create-an-account-and-get-credentials/) article to learn how to obtain the **Client Id** and **Client Secret** .
 {{% /alert %}} 
 
 ### **Example 1: How to check if a folder exists in the storage**
@@ -166,7 +166,7 @@ using(var api = new HtmlApi(cb => cb
 
 {{</ tabs >}}
 
-In the example, the SDK API object is initialized using the ConfigurationBuilder. The **DirectoryExists**(`directoryUri`, `storageName = null`) method checks if a directory specified by the path exists in the specified or default storage. 
+In the example, the SDK API object is initialized using the ConfigurationBuilder class. The **DirectoryExists**(`directoryUri`, `storageName = null`) method checks if a directory specified by the path exists in the specified or default storage. 
 
 
 ### **Example 2: How to create a folder**
@@ -220,7 +220,7 @@ using(var api = new HtmlApi(clientId, clientSecret))
 
 {{</ tabs >}}
 
-The **HtmlApi** (` clientId`, `clientSecret`) method initializes a class instance with user Credentials and default API server URL. The **GetDirectories**(`TestDataFolder`, `storageName`) method takes as parameters root directory URI, storage name and retrieves a list of directories that are direct children of the specified directory in the specified storage. The **GetFiles**(`TestDataFolder`, `storageName`) method takes as parameters directory URI, storage name and retrieves a list of files by specified directory path in the specified storage.
+The **HtmlApi** (` clientId`, `clientSecret`) method initializes a class instance with user Credentials and default API server URL. The **GetDirectories**(`TestDataFolder`, `storageName`) method takes as parameters root directory URI, storage name, and retrieves a list of directories that are direct children of the specified directory in the specified storage. The **GetFiles**(`TestDataFolder`, `storageName`) method takes as parameters directory URI, storage name and retrieves a list of files by specified directory path in the specified storage.
 
 {{% alert color="primary" %}} 
 The [GitHub repository for Aspose.HTML for Cloud](https://github.com/aspose-html-cloud) has a complete set of examples, demonstrating our API capabilities.

@@ -16,7 +16,7 @@ This article provides a detailed description of SDK methods to manipulate files 
 ## **Cloud SDK family**
 
 {{% alert color="primary" %}} 
-Install Aspose.HTML Cloud SDK for .NET via [NuGet](https://www.nuget.org/packages/Aspose.HTML-Cloud/). Complete source code of Aspose.HTML SDK for .NET is freely available on the [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
+Install Aspose.HTML Cloud SDK for .NET via [NuGet](https://www.nuget.org/packages/Aspose.HTML-Cloud/). Complete source code of Aspose.HTML SDK for .NET is freely available on the [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet) repository.
 
 {{% /alert %}}  
 
@@ -87,7 +87,7 @@ AsyncResult<RemoteFile> UploadFileAsync(string file,
                                         IProgress<object> progressCallback = null)
 ```
 
-Starts asynchronous upload of a file by its local file system path to the specified storage.
+Starts an asynchronous upload of a file by its local file system path to the specified storage.
 
 ### **UploadData**
 
@@ -110,7 +110,7 @@ public AsyncResult<RemoteFile> UploadDataAsync(byte[] data,
                                                Progress<VoidResult> progressCallback = null)
 ```
 
-Starts asynchronous upload of a byte array as a file into storage.
+Starts an asynchronous upload of a byte array as a file into storage.
 
 ### **DownloadFile**
 
@@ -136,7 +136,7 @@ AsyncResult DownloadFileAsync(string fileUri,
                               IProgress<object> progressCallback = null)
 ```
 
-Starts asynchronous download of a storage file into a local file.
+Starts an asynchronous download of a storage file into a local file.
 
 ```c#
 AsyncResult DownloadFileAsync(RemoteFile file, 
@@ -145,7 +145,7 @@ AsyncResult DownloadFileAsync(RemoteFile file,
                               IProgress<object> progressCallback = null)
 ```
 
-Overloaded method. Starts asynchronous download of a storage file into a local file.
+Overloaded method. Starts an asynchronous download of a storage file into a local file.
 
 ### **DownloadData**
 
@@ -170,7 +170,7 @@ AsyncResult<byte[]> DownloadDataAsync(string fileUri,
             IProgress<ProgressData> progressCallback = null )
 ```
 
-Starts asynchronous download of a storage file into a byte array.
+Starts an asynchronous download of a storage file into a byte array.
 
 ```c#
 AsyncResult<byte[]> DownloadDataAsync(RemoteFile file, 
@@ -178,7 +178,7 @@ AsyncResult<byte[]> DownloadDataAsync(RemoteFile file,
                                       IProgress < ProgressData > progressCallback = null)
 ```
 
-Overloaded method. Starts asynchronous download of a storage file into the byte array.
+Overloaded method. Starts an asynchronous download of a storage file into the byte array.
 
 
 
@@ -186,7 +186,7 @@ Overloaded method. Starts asynchronous download of a storage file into the byte 
 
 ### **Example 1: How to check if a file exists in the storage**
 
-The following example demonstrates how to to check if a file exists in the storage.
+The following example demonstrates how to check if a file exists in the storage.
 
 {{< tabs tabTotal="1" tabID="1" tabName1="C#" >}}
 
@@ -296,10 +296,10 @@ using(var api = new HtmlApi(cb => cb
 
 {{</ tabs >}}
 
-In the example, the SDK API instance has been created with Configuration object initialized in the builder style. The **DownloadFile**(` fileUri`, `localFilePath`, `storageName`) method  downloads a storage file synchronously by its storage path and saves by a local file system path.
+In the example above, the SDK API instance has been created with Configuration object initialized in the builder style. The **DownloadFile**(` fileUri`, `localFilePath`, `storageName`) method  downloads a storage file synchronously by its storage path and saves it by a local file system path.
 
 {{% alert color="primary" %}} 
-Please check [Available SDKs](/html/available-sdks/) article to learn how to add an SDK to your project.
+Please check the [Available SDKs](/html/overview/available-sdks/) article to learn how to add an SDK to your project.
 
 The [GitHub repository](https://github.com/aspose-html-cloud) has a complete list of Aspose.HTML SDKs with working examples for a quick start.
 

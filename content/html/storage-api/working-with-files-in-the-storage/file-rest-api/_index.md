@@ -2,7 +2,7 @@
 title: File REST API operations
 type: docs
 aliases: /storage-api/working-with-files-in-the-storage/file-rest-api/
-keywords: "cloud storage, cloud storage api, REST API, cURL example, cURL GET request, cURL POST request, cURL PUT request, cloud storage file, upload file, download file, delete file, copy file, move file, Python, Java, .NET, C#, Android, Swift, Perl, Node.js"
+keywords: "cloud storage, cloud storage api, REST API, RESTful API, cURL, cURL example, cURL GET request, cURL POST request, cURL PUT request, cloud storage file, upload file, download file, delete file, copy file, move file, Python, Java, .NET, C#, Android, Swift, Perl, Node.js"
 description: "The article explains how to manipulate files in the cloud storage using Aspose.HTML Cloud API v.4.0. SDKs are also available in PHP, Perl, Android, Swift, C#, Java and more to help developers speed up their
   development."
 weight: 20
@@ -26,7 +26,7 @@ A call to the REST API consists of a request performed by the client, and a resp
 
 All URIs are relative to https://api.aspose.cloud/v4.0/html.
 
- cURL is an excellent choice for when you need to download a file to your local system. It is generally available and lets you quickly download data from a remote system. 
+ cURL is an excellent choice when you need to download a file to your local system. It is generally available and lets you quickly download data from a remote system. 
 
 - **GET**: download a file. The response object contains the raw data of the file. 
 
@@ -42,13 +42,13 @@ All URIs are relative to https://api.aspose.cloud/v4.0/html.
 | storageName | Storage name or default storage if not specified. | Query     | -        |
 | versionId   | File version ID or the last version by default.   | Query     | -        |
 
-Using the RESTful API, an object storage protocol stores a file and its associated metadata as a single object and assigns it an ID number.
+Using the RESTful API, an object storage protocol stores a file with its associated metadata as a single object and assigns it an ID number.
 
 **cURL example**
 
 If you want to download data to your computer, you can save them into a local file using the `--output` flag. 
 
-Use the **cURL GET request**; write the URL; specify the `--output` options; put your JWT token value into Authorization HTTP header as it’s shown in the example below.
+Use the **cURL GET request**, write the URL, specify the `--output` options; put your JWT token value into the Authorization HTTP header as  shown in the example below.
 
 ```bash
 curl -X GET \
@@ -87,7 +87,7 @@ All URIs are relative to https://api.aspose.cloud/v4.0/html.
 
 POST is the HTTP method that sends data to a receiver. You send such data with cURL's `-d` or `--data` option. Use `--data-binary` if you want the cURL to read and use the given file in binary. 
 
-Use the **cURL POST request**; write the URL; specify the `--data-binary` options; put your JWT token value into Authorization HTTP header as it’s shown in the example below.
+Use the **cURL POST request**, write the URL, specify the `--data-binary` options; put your JWT token value into the Authorization HTTP header as it’s shown in the example below.
 
 ```bash
 curl -X POST \
@@ -120,7 +120,7 @@ All URIs are relative to https://api.aspose.cloud/v4.0/html.
 
 **cURL example**
 
-Use the **cURL PUT request**; write the URL; put your JWT token value into Authorization HTTP header as it’s shown in the example below.
+Use the **cURL PUT request**, write the URL, put your JWT token value into the Authorization HTTP header as shown in the example below.
 
 ```bash
 curl -X PUT \
@@ -152,7 +152,7 @@ All URIs are relative to https://api.aspose.cloud/v4.0/html.
 
 **cURL example**
 
-Use the **cURL PUT request**; write the URL; put your JWT token value into Authorization HTTP header as it’s shown in the example below.
+Use the **cURL PUT request**, write the URL, put your JWT token value into the Authorization HTTP header as shown in the example below.
 
 ```bash
 curl -X PUT \
@@ -182,7 +182,7 @@ All URIs are relative to https://api.aspose.cloud/v4.0/html.
 
 **cURL example**
 
-Use the **cURL DELETE request**; write the URL; put your JWT token value into Authorization HTTP header as it’s shown in the example below.
+Use the **cURL DELETE request**, write the URL, put your JWT token value into the Authorization HTTP header as it’s shown in the example below.
 
 ```bash
 curl -X DELETE \

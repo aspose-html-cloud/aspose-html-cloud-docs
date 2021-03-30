@@ -2,16 +2,16 @@
 title: Getting Storage Information
 type: docs
 aliases: /storage-api/getting-storage-information/
-keywords: "cloud storage, cloud storage api, SDK example, cURL example, cURL GET request, REST API, Credentials, Client ID, Client Secret, Python, Java, .NET,  C#,  Android, Swift, Perl, Node.js"
+keywords: "cloud storage, cloud storage api, SDK example, SDK, cURL, cURL example, cURL GET request, REST API, Credentials, Client ID, Client Secret, Python, Java, .NET,  C#,  Android, Swift, Perl, Node.js"
 description: "The article explains how to get a user associated cloud storage info such as disc usage, an object existence etc. using Aspose.HTML Cloud API v.4.0. SDKs are also available in PHP, Perl, Android, Swift, C#, Java and more to help developers speed up their development."
 weight: 20
 ---
 
 ## **Summary**
 
-Cloud storage allows keeping and retrieving data worldwide at any time. You can use storage for various scenarios including storing data for archival or disaster recovery.
+Cloud storage allows keeping and retrieving data worldwide at any time. You can use storage for various scenarios, including storing data for archival or disaster recovery.
 
-Aspose.HTML Cloud provides a set of functions to work with objects uploaded to Aspose.HTML Cloud Storage or any other Cloud Storage of your choice. If you need any help getting started with setting third party storage please refer to [Aspose Cloud UI Help Topics](https://docs.aspose.cloud/total/aspose-cloud-ui-help-topics/). 
+Aspose.HTML Cloud provides a set of functions to work with objects uploaded to Aspose.HTML Cloud Storage or any other Cloud Storage of your choice. If you need any help to get started with setting third party storage, please refer to [Aspose Cloud UI Help Topics](https://docs.aspose.cloud/total/aspose-cloud-ui-help-topics/). 
 
 This section provides a detailed description of SDK methods and REST API storage-wide operations using Aspose.HTML Cloud API v.4.0. You find out how to get a user associated cloud storage info such as disc usage, an object existence, etc.
 
@@ -22,7 +22,7 @@ This section provides a detailed description of SDK methods and REST API storage
  Aspose.HTML Cloud SDKs allows you to incorporate Aspose.HTML Cloud services in your applications quickly and easily. SDKs are available in C #, PHP, Perl, Android, Swift, Java, and other languages to help developers speed up development. 
 
 {{% alert color="primary" %}} 
-Install Aspose.HTML Cloud SDK for .NET via [NuGet](https://www.nuget.org/packages/Aspose.HTML-Cloud/). Complete source code of Aspose.HTML SDK for .NET is freely available on the [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
+Install Aspose.HTML Cloud SDK for .NET via [NuGet](https://www.nuget.org/packages/Aspose.HTML-Cloud/). Complete source code of Aspose.HTML SDK for .NET is freely available on [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
 {{% /alert %}}  
 
@@ -52,9 +52,6 @@ Gets storage info by specified storage name, including total and used disc space
 
 #### **Example 1: How to check if the storage exists**
 
-{{< tabs tabTotal="1" tabID="1" tabName1="C#" >}}
-
-{{< tab tabNum="1" >}}
 
 ```c#
 // here the ConfigurationBuilder is used to initialize the SDK API object
@@ -68,9 +65,6 @@ using(var api = new HtmlApi(cb => cb
 			
 ```
 
-{{</ tab >}}
-
-{{</ tabs >}}
 
 
 Aspose.HTML Cloud for .NET API provides the **StorageProvider** class that is a common SDK facade of cloud storage access. 
@@ -85,6 +79,7 @@ The **Exists**(`storageName`) method checks if specified cloud storage exists or
 {{< tab tabNum="1" >}}
 
 ```c#
+// here the ConfigurationBuilder is used to initialize the SDK API object
 using(var api = new HtmlApi(cb => cb
                       .WithClientId(clientId)
                       .WithClientSecret(clientSecret)))
@@ -99,7 +94,7 @@ using(var api = new HtmlApi(cb => cb
 
 {{< /tabs >}}
 
-In the example, the SDK API entry point has been created with Configuration object initialized in the builder style. The **GetStorage**(`storageName`) method gets storage information, including total and used disc space.
+In the example, the SDK API entry point has been created with the Configuration object initialized in the builder style. The **GetStorage**(`storageName`) method gets storage information, including total and used disc space.
 
 
 {{% alert color="primary" %}} 
@@ -110,7 +105,7 @@ The [GitHub repository for Aspose.HTML for Cloud](https://github.com/aspose-html
 
 ## **REST API**
 
-REST API is one of the most common web services available today. It can be called from any platform that supports HTTP / HTTPS and it does not depend on the software running on the server or client. The action must be recorded by the HTTP request method that you make. The most common methods include GET, POST, PUT and DELETE. More detailed information about REST URLs' structure and specific behavior linked to the API such as Authentication, Request Queuing, and Storage you can find in the [REST API Overview](https://docs.aspose.cloud/total/getting-started/rest-api-overview/) article.
+REST API is one of the most common web services available today. It can be called from any platform that supports HTTP / HTTPS, and it does not depend on the software running on the server or client. The action must be recorded by the HTTP request method that you make. The most common methods include GET, POST, PUT and DELETE. More detailed information about REST URLs' structure and specific behavior linked to the API such as Authentication, Request Queuing, and Storage you can find in the [REST API Overview](https://docs.aspose.cloud/total/getting-started/rest-api-overview/) article.
 
 ### **REST API methods**
 
@@ -127,7 +122,7 @@ HTTP **GET method** is commonly used to retrieve resources. Let's examine a few 
 
 To create a correctly constructed HTTP request, you should build URI relative to https://api.aspose.cloud/v4.0/html.
 
-- **GET**: check if specified storage exists and is associated with application user.
+- **GET**: check if specified storage exists and is associated with the application user.
 
 ```
 /storage/exist/storage?storageName={storageName}
@@ -228,7 +223,7 @@ All URIs are relative to https://api.aspose.cloud/v4.0/html.
 
 **cURL example**
 
-Use the **cURL GET request**; write the URL; put your JWT token value into Authorization HTTP header as it’s shown in the example below.
+Use the **cURL GET request**; write the URL; put your JWT token value into the Authorization HTTP header as it’s shown in the example below.
 
 ```bash
 curl -X GET \
