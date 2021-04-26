@@ -1,11 +1,16 @@
 ---
-title: "Convert HTML to TIFF"
+title: Convert HTML to TIFF
 type: docs
 aliases: /conversion-sdk-api/convert-html-to-tiff/
-keywords: "html to tiff, html to tiff conversion, format conversion, html conversion, asynchronous conversion, conversion SDK, SDK example, convert html to image, convert html to tiff, Python, PHP, Perl, Android, Swift, C#, Java, Node.js"
-description: "The article explains the usage of Aspose.HTML Cloud client SDKs for HTML to TIFF conversion by a set of examples. SDKs are wrappers upon REST API to help developers speed up their development. SDKs are available in PHP, Perl, Android, Swift, C#, Java and more."
+keywords: html to tiff, html to tiff conversion, format conversion, html
+  conversion, asynchronous conversion, conversion SDK, SDK example, convert html
+  to image, convert html to tiff, Python, PHP, Perl, Android, Swift, C#, Java,
+  Node.js
+description: The article explains the usage of Aspose.HTML Cloud client SDKs for
+  HTML to TIFF conversion by a set of examples. SDKs are wrappers upon REST API
+  to help developers speed up their development. SDKs are available in PHP,
+  Perl, Android, Swift, C#, Java and more.
 weight: 70
-
 ---
 
 ## **Summary**
@@ -21,7 +26,7 @@ Learn how to convert an HTML file to other formats using direct REST API calls f
 
 ## **SDK Examples of HTML to TIFF Conversion**
 
-Aspose.HTML Cloud SDK allows you to fetch an HTML document from storage location by its name, from a URL or a local file on your drive, convert it to a specified format and save it to the storage or a local drive. The following code examples demonstrate how to convert HTML to TIFF programmatically for different cases.
+Aspose.HTML Cloud SDK allows you to fetch an HTML document from a storage location by its name, from a URL or a local file on your drive, convert it to a specified format and save it to the storage or a local drive. The following code examples demonstrate how to convert HTML to TIFF programmatically for different cases.
 
 ### **Example 1.** Convert HTML from the storage to TIFF and save the result to the storage
 
@@ -147,7 +152,7 @@ HTML to TIFF conversion occurs with the **default conversion options**: the resu
 
 ### **Example 2.** Convert HTML from the local file system to TIFF with explicitly specified options and save to the storage
 
-The example below demonstrates how to convert an HTML file from the local file system to TIFF with explicitly specified options and save the result to the cloud storage.
+The example below demonstrates how to convert an HTML file from the local file system to TIFF with explicitly specified options and save the result to cloud storage.
 
  For conversion, we use methods of the **ConverterBuilder** class: **FromLocalFile**(`inputPath`), **To**(`ConversionOptions`) and **SaveToStorageDirectory**(`outputDirectory`) that specify input data, the output format, and the target directory for a conversion result.
 
@@ -155,7 +160,7 @@ The example below demonstrates how to convert an HTML file from the local file s
 
 {{< tab tabNum="1" >}}
 
-The following SDK example  illustrates how to convert **HTML to TIFF C#** language applying. HTML is taken from the local file system, converted to TIFF and saved to the storage. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
+The following SDK example illustrates how to convert **HTML to TIFF C#** language applying. HTML is taken from the local file system, converted to TIFF and saved to the storage. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
 ```c#
 // Create an instance of ConversionOptions class and specify options for HTML to TIFF conversion		
@@ -276,13 +281,13 @@ The following example demonstrates how to convert **HTML to TIFF Java/Android** 
 In the example above, the conversion HTML to TIFF occurs with the **ConversionOptions** specifying, among which there is the **Resolution** that applicable only to image formats. The set resolution value (300 dpi) indicates higher image quality than using the default value (96 dpi).
 
 {{% alert color="primary" %}} 
-More details about available conversion parameters for HTML files are in the [SDK Conversion Options](/html/sdk-conversion-options/) section.
+More details about available conversion parameters for HTML files are in the [SDK Conversion Options](/html/conversion-api/sdk-conversion-options/) section.
 
 {{% /alert %}} 
 
 ### **Example 3.**  Convert a Web page to TIFF and save the result to the local file system
 
-Aspose.HTML Cloud SDK allows you to get an HTML page from the web by its URL, convert it to  {{%TIFF%}}   format and save into the local file system. The example below demonstrates how to convert HTML to TIFF with the default conversion parameters.
+Aspose.HTML Cloud SDK allows you to get an HTML page from the web by its URL, convert it to  {{%TIFF%}}   format and save it into the local file system. The example below demonstrates how to convert HTML to TIFF with the default conversion parameters.
 
 {{< tabs tabTotal="10" tabID="3" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" >}}
 
