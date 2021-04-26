@@ -1,12 +1,17 @@
 ---
-title: "Convert HTML to MHTML"
+title: Convert HTML to MHTML
 type: docs
 aliases: /conversion-sdk-api/convert-html-to-mhtml/
-keywords: "format conversion, html conversion, epub conversion, mhtml conversion, asynchronous conversion, conversion SDK, convert html to mhtml, html to mhtml, html to mhtml conversion, SDK example, Python, PHP, Perl, Android, Swift, C#, Java, Node.js"
-description: "The article explains the usage of Aspose.HTML Cloud client SDKs for HTML to MHTML conversion by a set of SDK examples. SDKs are wrappers upon REST API to help developers speed up their development. SDKs are available in PHP, Perl, Android, Swift, C#, Java and more."
+keywords: format conversion, html conversion, epub conversion, mhtml conversion,
+  asynchronous conversion, conversion SDK, convert html to mhtml, html to mhtml,
+  html to mhtml conversion, SDK example, Python, PHP, Perl, Android, Swift, C#,
+  Java, Node.js
+description: The article explains the usage of Aspose.HTML Cloud client SDKs for
+  HTML to MHTML conversion by a set of SDK examples. SDKs are wrappers upon REST
+  API to help developers speed up their development. SDKs are available in PHP,
+  Perl, Android, Swift, C#, Java and more.
 weight: 100
 ---
-
 ## **Summary**
 
 Aspose.HTML Cloud v4.0 provides the simplest API to convert {{%HTML%}} documents to {{%MHTML%}} format with high quality, easy and fast. This article contains a set of code examples that explain how to convert HTML to MHTML using available SDKs.
@@ -19,7 +24,7 @@ Learn how to convert an HTML file to other formats using direct REST API calls f
 
 ## **SDK Examples of HTML to MHTML Conversion**
 
-Aspose.HTML Cloud SDK allows you to fetch an HTML document from storage location by its name, from a URL or a local file on your drive, convert it to specified format and save it to the storage or a local drive. The following code examples demonstrate how to convert HTML to MHTML programmatically for different cases.
+Aspose.HTML Cloud SDK allows you to fetch an HTML document from a storage location by its name, from a URL or a local file on your drive, convert it to the specified format and save it to the storage or a local drive. The following code examples demonstrate how to convert HTML to MHTML programmatically for different cases.
 
 ### **Example 1.** Convert HTML from the storage to MHTML and save the result to the storage
 
@@ -127,7 +132,7 @@ The following example demonstrates how to convert **HTML to MHTML Swift** langua
 
 {{< tab tabNum="9" >}}
 
-The following example demonstrates how to convert **HTML to MHTML Java/Android** applying. HTML is taken from storage, converted to MHTML and saved to storage. You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
+The following example demonstrates how to convert **HTML to MHTML Java/Android** language applying. HTML is taken from storage, converted to MHTML and saved to storage. You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
 
 ```java
 
@@ -137,18 +142,11 @@ The following example demonstrates how to convert **HTML to MHTML Java/Android**
 
 {{< /tabs >}}
 
-
-
 ### **Example 2.** Convert HTML from the local file system to MHTML and save the result to the storage
 
-The example below shows how to convert an HTML file from the local file system to MHTML and save the result to the cloud storage.
+The example below shows how to convert an HTML file from the local file system to MHTML and save the result to cloud storage.
 
 For conversion, we use methods of the **ConverterBuilder** class: **FromLocalFile**(`inputPath`), **To**(`ConversionOptions`) and **SaveToStorageDirectory**(`outputDirectory`) that specify input data, the output format, and the target directory for a conversion result. The **Convert**(`builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
-
-
-{{< tabs tabTotal="10" tabID="2" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" >}}
-
-{{< tab tabNum="1" >}}
 
 The following example demonstrates how to convert **HTML to MHTML C#** language applying. HTML is taken from the local file system, converted to MHTML and saved to the storage. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
@@ -174,89 +172,8 @@ using (var api = new HtmlApi(cb => cb
 }
 ```
 
-{{< /tab >}}
 
-{{< tab tabNum="2" >}}
 
-The following example demonstrates how to convert **HTML to MHTML java** language applying. HTML is taken from the local file system, converted to MHTML and saved to the storage.  You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
-
-```java
-
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="3" >}}
-
-The following example demonstrates how to convert **HTML to MHTML C++** language applying. HTML is taken from the local file system, converted to MHTML and saved to the storage. 
-
-```c++
-
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="4" >}}
-
-The following example demonstrates how to convert **HTML to MHTML Python** language applying. HTML is taken from the local file system, converted to MHTML and saved to the storage.  You can download the Python SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-python).
-
-```python
-
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-
-The following example demonstrates how to convert **HTML to MHTML PHP** language applying. HTML is taken from the local file system, converted to MHTML and saved to the storage.  You can download the PHP SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-php).
-
-```php
-
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-
-The following example demonstrates how to convert **HTML to MHTML Ruby** language applying. HTML is taken from the local file system, converted to MHTML and saved to the storage.  You can download the Ruby SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby).
-
-```ruby
-
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="7" >}}
-
-The following example demonstrates how to convert **HTML to MHTML Node.js** language applying. HTML is taken from the local file system, converted to MHTML and saved to the storage. 
-
-```javascript
-
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="8" >}}
-
-The following example demonstrates how to convert **HTML to MHTML Swift** language applying. HTML is taken from the local file system, converted to MHTML and saved to the storage.  You can download the Swift SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-swift).
-
-```swift
-
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="9" >}}
-
-The following example demonstrates how to convert **HTML to MHTML Java/Android** applying. HTML is taken from the local file system, converted to MHTML and saved to the storage. You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
-
-```java
-
-```
-
-{{< /tab >}}
-
-{{< /tabs >}}
 
 
 ### **Example 3.** Convert a Web page to MHTML and save the result to the local file system
@@ -376,5 +293,3 @@ The code snippet below explains how to convert **HTML to MHTML Java/Android** ap
 {{< /tabs >}}
 
 In the example, we use methods of the **ConverterBuilder** class: **FromUrl**(`url`), **To**(`ConversionOptions`) and **SaveToLocalDirectory**(`outputDirectory`) that specify input data, the output format, and the target directory for a conversion result. The **Convert**(`builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
-
-
