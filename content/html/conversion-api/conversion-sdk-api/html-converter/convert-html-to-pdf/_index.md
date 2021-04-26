@@ -1,20 +1,24 @@
 ---
-title: "Convert HTML to PDF"
-type: docs
-keywords: "html conversion, asynchronous conversion, conversion SDK, html to pdf, html to pdf conversion, convert html to pdf, Zip, Zip archive, SDK example, Python, PHP, Perl, Android, Swift, C#, Java, Node.js"
-description: "The article explains the usage of Aspose.HTML Cloud client SDKs for HTML to PDF conversion by a set of examples. SDKs are wrappers upon REST API to help developers speed up their development. SDKs are available in PHP, Perl, Android, Swift, C#, Java and more."
+title: Convert HTML to PDF
+keywords: html conversion, asynchronous conversion, conversion SDK, html to pdf,
+  html to pdf conversion, convert html to pdf, Zip, Zip archive, SDK example,
+  Python, PHP, Perl, Android, Swift, C#, Java, Node.js
+description: The article explains the usage of Aspose.HTML Cloud client SDKs for
+  HTML to PDF conversion by a set of examples. SDKs are wrappers upon REST API
+  to help developers speed up their development. SDKs are available in PHP,
+  Perl, Android, Swift, C#, Java and more.
 weight: 10
+type: docs
 ---
-
 ## **Summary**
 
-Aspose.HTML Cloud v4.0 provides the simplest API to convert {{%HTML%}} documents to {{%PDF%}} format with high quality, easy and fast. HTML to PDF conversion is often required to establish limited access to documents editing or copying; to produce an official documentation or send some information, for example, by email.
+Aspose.HTML Cloud v4.0 provides the simplest API to convert {{%HTML%}} documents to {{%PDF%}} format with high quality, easy and fast. HTML to PDF conversion is often required to establish limited access to documents editing or copying; to produce official documentation or send some information, for example, by email.
 
 The article explains in a set of SDK examples how to convert an HTML document to PDF using Aspose.HTML Cloud client SDKs. We will consider various scenarios of HTML to PDF conversion: from storage to storage, from a local file system to the storage and from the Web to a local file system.
 
 ## **SDK Examples of HTML to PDF Conversion**
 
-A widespread use case for Aspose.HTML Cloud SDK functions is file processing and converting.  Aspose.HTML Cloud SDK allows you to fetch an HTML document from storage location by its name, from a URL or a local file on your drive, convert it to a specified format and save it to the storage or a local drive. The following code examples demonstrate how to convert HTML to PDF for different cases using available SDKs.
+A widespread use case for Aspose.HTML Cloud SDK functions is file processing and converting.  Aspose.HTML Cloud SDK allows you to fetch an HTML document from a storage location by its name, from a URL or a local file on your drive, convert it to a specified format and save it to the storage or a local drive. The following code examples demonstrate how to convert HTML to PDF for different cases using available SDKs.
 
 ### **Example 1.**  Convert an HTML file from the storage to PDF and save the result to the storage
 
@@ -135,11 +139,9 @@ The following example demonstrates how to convert **HTML to PDF Java/Android** a
 In the example above, the source "html_file.html" file is taken in the default storage by its `inputPath` and the converted file saved in the "Html" storage folder.
 
 {{% alert color="primary" %}} 
-HTML to PDF conversion occurs with the **default conversion options**: the resulting PDF document’s width and height correspond to A4, all margins have zero value, and Quality of jpeg compression is 95%.
+HTML to PDF conversion occurs with the **default conversion options**: the resulting PDF document’s width and height correspond to A4, all margins have zero value, and the Quality of jpeg compression is 95%.
 
 {{% /alert %}} 
-
-
 
 ### **Example 2.** Convert HTML from the local file system to PDF with explicitly specified options and save to the storage
 
@@ -393,13 +395,11 @@ The following example shows how to convert **HTML to PDF Java/Android** applying
 
 In the example, we use methods of the **ConverterBuilder** class: **FromUrl**(`url`), **To**(`ConversionOptions`) and **SaveToLocalDirectory**(`outputDirectory`) that specify input data, the output format, and the target directory for a conversion result.
 
-HTML to PDF conversion occurs with the **default conversion options**: the resulting PDF document’s width and height correspond to A4, all margins have zero value, and Quality of jpeg compression is 95%.
-
-
+HTML to PDF conversion occurs with the **default conversion options**: the resulting PDF document’s width and height correspond to A4, all margins have zero value, and the Quality of jpeg compression is 95%.
 
 ### **Example 4.** Convert HTML to PDF from the local Directory and save the result to the local file system
 
-Aspose.HTML Cloud SDK allows you to get an HTML file in the local directory, convert directory to another format and save the result into the local file system. The example below demonstrates how to convert HTML to PDF with the default conversion parameters. The source "index.html" has linked files in the directory. A **ConvertLocalDirectory()** method converts synchronously a directory located in the local file system and specified by `directoryPath` parameter. This method takes as the parameters also the `startPoint`, `options` and `outputPath` that specify a file name in the directory to be converted, output format, and a path where the conversion result will be saved.
+Aspose.HTML Cloud SDK allows you to get an HTML file in the local directory, convert the directory to another format and save the result into the local file system. The example below demonstrates how to convert HTML to PDF with the default conversion parameters. The source "index.html" has linked files in the directory. A **ConvertLocalDirectory()** method converts synchronously a directory located in the local file system and specified by `directoryPath` parameter. This method takes as the parameters also the `startPoint`, `options` and `outputPath` that specify a file name in the directory to be converted, output format, and a path where the conversion result will be saved.
 
 ```c#
 // Initialize SDK API in the builder style   
@@ -449,5 +449,4 @@ using (var api = new HtmlApi(cb => cb
 {{% alert color="primary" %}} 
 Please see the [Conversion REST API](/html/conversion-api/conversion-rest-api/) article to learn how to convert an HTML file to other formats using direct REST API calls.
 
-{{% /alert %}} 
-
+{{% /alert %}}
