@@ -1,11 +1,13 @@
 ---
-title: "Convert MHTML to PDF"
+title: Convert MHTML to PDF
+keywords: MHTML to PDF, MHTML conversion, MHTML file, asynchronous conversion,
+  conversion SDK, convert MHTML to PDF, SDK, SDK examples, Python, Ruby, PHP,
+  Java, .Net, C#, Android, Swift, Node.js
+description: The article explains the usage of Aspose.HTML Cloud client SDKs to
+  convert MHTML to PDF by a set of examples. SDKs are available in PHP, Python,
+  Ruby, Android, Swift, C#, Java, C++, Node.js and more.
+weight: 10
 type: docs
-
-keywords: "MHTML to PDF, MHTML conversion, MHTML file, asynchronous conversion, conversion SDK, convert MHTML to PDF, SDK, SDK examples, Python, Ruby, PHP, Java, .Net, C#, Android, Swift, Node.js"
-description: "The article explains the usage of Aspose.HTML Cloud client SDKs to convert MHTML to PDF by a set of examples. SDKs are available in PHP, Python, Ruby, Android, Swift, C#, Java, C++, Node.js and more."
-weight: 30
-
 ---
 
 ## **Summary**
@@ -49,7 +51,7 @@ The following example demonstrates how to convert **MHTML to PDF C#** language a
 In the example above, the source "example.mht" file is taken in the local file system by its `filePath` and the converted file saved in the "Mhtml" local folder.
 
 {{% alert color="primary" %}}
-MHTML to PDF conversion occurs with the default conversion options: the resulting PDF document’s width and height correspond to A4, all margins have zero value, and Quality of jpeg compression is 95%.
+MHTML to PDF conversion occurs with the default conversion options: the resulting PDF document’s width and height correspond to A4, all margins have zero value, and the Quality of jpeg compression is 95%.
 
 {{% /alert %}} 
 
@@ -57,7 +59,7 @@ MHTML to PDF conversion occurs with the default conversion options: the resultin
 
 ### **Example 2.** Convert MHTML to PDF using ConvertLocalFile() method
 
-The example below demonstrates how to convert MHTML to PDF with the default conversion options using **ConvertLocalFile()** method of the **Conversion** class. The **ConvertLocalFile()** method converts synchronously a file located in the local file system and specified  by the `filePath` . This method takes as the parameters also the `options` and `outputPath` that specify an output format and a path where the conversion result will be saved. The source “example.mht”  file is in the local  "Input" directory, and the conversion result will be held in the "ConvertLocal" folder on the local drive.
+The example below demonstrates how to convert MHTML to PDF with the default conversion options using **ConvertLocalFile()** method of the **Conversion** class. The **ConvertLocalFile()** method converts synchronously a file located in the local file system and specified by the `filePath`. This method takes as the parameters also the `options` and `outputPath` that specify an output format and a path where the conversion result will be saved. The source “example.mht”  file is in the local  "Input" directory, and the conversion result will be held in the "ConvertLocal" folder on the local drive.
 
 The following SDK example demonstrates how to convert **MHTML to PDF C#** language applying. MHTML is taken from the local file system, converted to PDF and saved to the local drive. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
