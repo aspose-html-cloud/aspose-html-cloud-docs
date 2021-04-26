@@ -1,11 +1,13 @@
 ---
-title: "Convert MHTML to DOCX"
-type: docs
-
-keywords: "MHTML to DOCX, MHTML to DOC, MHTML conversion, MHTML file, asynchronous conversion, conversion SDK, convert MHTML to DOCX, SDK, SDK examples, Python, Ruby, PHP, Java, .Net, C#, Android, Swift, Node.js"
-description: "The article explains the usage of Aspose.HTML Cloud client SDKs to convert MHTML to DOCX by a set of examples. SDKs are available in PHP, Python, Ruby, Android, Swift, C#, Java, C++, Node.js and more."
+title: Convert MHTML to DOCX
+keywords: MHTML to DOCX, MHTML to DOC, MHTML conversion, MHTML file,
+  asynchronous conversion, conversion SDK, convert MHTML to DOCX, SDK, SDK
+  examples, Python, Ruby, PHP, Java, .Net, C#, Android, Swift, Node.js
+description: The article explains the usage of Aspose.HTML Cloud client SDKs to
+  convert MHTML to DOCX by a set of examples. SDKs are available in PHP, Python,
+  Ruby, Android, Swift, C#, Java, C++, Node.js and more.
 weight: 30
-
+type: docs
 ---
 
 ## **Summary**
@@ -57,7 +59,7 @@ MHTML to DOCX conversion occurs with the **default conversion options**: the res
 
 ### **Example 2.** Convert MHTML to DOCX using ConvertLocalFile() method
 
-The example below demonstrates how to convert  MHTML to DOCX with the default conversion options using **ConvertLocalFile()** method of the **Conversion** class.  The **ConvertLocalFile()** method converts synchronously a file located in the local file system and specified  by the `filePath` . This method takes as the parameters also the `options` and `outputPath` that specify an output format and a path where the conversion result will be saved. The source “example.mht”  file is in the local  "Input" directory, and the conversion result will be held in the "ConvertLocal" folder on the local drive.
+The example below demonstrates how to convert  MHTML to DOCX with the default conversion options using **ConvertLocalFile()** method of the **Conversion** class.  The **ConvertLocalFile()** method converts synchronously a file located in the local file system and specified by the `filePath`. This method takes as the parameters also the `options` and `outputPath` that specify an output format and a path where the conversion result will be saved. The source “example.mht”  file is in the local  "Input" directory, and the conversion result will be held in the "ConvertLocal" folder on the local drive.
 
 The following SDK example demonstrates how to convert **MHTML to DOCX C#** language applying. MHTML is taken from the local file system, converted to DOCX and saved to the local drive. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
