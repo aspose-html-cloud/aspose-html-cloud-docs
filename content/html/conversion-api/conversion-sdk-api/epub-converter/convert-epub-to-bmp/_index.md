@@ -4,7 +4,7 @@ type: docs
 
 keywords: "EPUB to BMP, EPUB conversion, EPUB file, asynchronous conversion, conversion SDK, convert EPUB to BMP, SDKs, SDK examples, Python, Ruby, PHP, Java, .Net, C#, Android, Swift, Node.js"
 description: "The article explains the usage of Aspose.HTML Cloud client SDKs to convert EPUB to BMP by a set of examples. SDKs are available in PHP, Python, Ruby, Android, Swift, C#, Java, C++, Node.js and more."
-weight: 30
+weight: 70
 ---
 
 ## **Summary**

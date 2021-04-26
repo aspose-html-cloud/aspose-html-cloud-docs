@@ -18,7 +18,7 @@ The article explains in a set of SDK examples how to convert an HTML document to
 
 ## **SDK Examples of HTML to PDF Conversion**
 
-A widespread use case for Aspose.HTML Cloud SDK functions is file processing and converting.  Aspose.HTML Cloud SDK allows you to fetch an HTML document from a storage location by its name, from a URL or a local file on your drive, convert it to a specified format and save it to the storage or a local drive. The following code examples demonstrate how to convert HTML to PDF for different cases using available SDKs.
+A widespread use case for Aspose.HTML Cloud SDK functions is file processing and converting. Aspose.HTML Cloud SDK allows you to fetch an HTML document from a storage location by its name, from a URL or a local file on your drive, convert it to a specified format and save it to the storage or a local drive. The following code examples demonstrate how to convert HTML to PDF for different cases using available SDKs.
 
 ### **Example 1.**  Convert an HTML file from the storage to PDF and save the result to the storage
 
