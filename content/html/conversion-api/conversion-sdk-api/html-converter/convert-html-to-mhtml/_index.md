@@ -172,10 +172,6 @@ using (var api = new HtmlApi(cb => cb
 }
 ```
 
-
-
-
-
 ### **Example 3.** Convert a Web page to MHTML and save the result to the local file system
 
 In the following SDK example, we consider the case when the source HTML document is got from the web by its URL, converted to MHTML format and saved to the local file system. 
@@ -282,7 +278,7 @@ The code snippet below explains how to convert **HTML to MHTML Swift** language 
 
 {{< tab tabNum="9" >}}
 
-The code snippet below explains how to convert **HTML to MHTML Java/Android** applying. HTML is taken from the Web, converted to MHTML and saved to the local file system. You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
+The code snippet below explains how to convert **HTML to MHTML Java/Android** language applying. HTML is taken from the Web, converted to MHTML and saved to the local file system. You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
 
 ```java
 
