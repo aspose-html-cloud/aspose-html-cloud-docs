@@ -1,9 +1,16 @@
 ---
-title: "EPUB converter"
-type: docs
-keywords: "format conversion, epub conversion, convert epub, asynchronous conversion, conversion SDK, convert epub to pdf, convert epub to xps, convert epub to docx, convert epub to image, SDK example, Python, PHP, Perl, Android, Swift, C#, Java, Node.js"
-description: "This section provides information on a description of conversion features of Aspose.HTML Cloud SDK API and the list of supported EPUB files conversion scenarios using various SDKs. The SDKs are wrappers upon REST API to help developers speed up their development. SDKs are available in PHP, Perl, Android, Swift, C#, Java and more."
+title: EPUB converter
+keywords: format conversion, epub conversion, convert epub, asynchronous
+  conversion, conversion SDK, convert epub to pdf, convert epub to xps, convert
+  epub to docx, convert epub to image, SDK example, Python, PHP, Perl, Android,
+  Swift, C#, Java, Node.js
+description: This section provides information on a description of conversion
+  features of Aspose.HTML Cloud SDK API and the list of supported EPUB files
+  conversion scenarios using various SDKs. The SDKs are wrappers upon REST API
+  to help developers speed up their development. SDKs are available in PHP,
+  Perl, Android, Swift, C#, Java and more.
 weight: 50
+type: docs
 ---
 
 ## **Summary**
@@ -13,7 +20,7 @@ The {{%EPUB%}} file type is an eBook standard or interchange format for digital 
 Aspose.HTML Cloud v4.0 provides the straightforward API for documents' conversion between formats with high quality, easy and fast. This article demonstrates how to convert an EPUB file to {{%PDF%}}, {{%XPS%}}, {{%DOCX%}}, {{%DOC%}}, {{%PNG%}}, {{%JPEG%}}, {{%BMP%}}, {{%TIFF%}},  and {{%GIF%}}, using SDKs.
 
 {{% alert color="primary" %}} 
-Check out our [GitHub repository](https://github.com/aspose-html-cloud) for a complete list of Aspose.HTML SDKs along with working examples to get you started in no time. Please check the [Available SDKs](/html/available-sdks/) article to learn how to add an SDK to your project.
+Check out our [GitHub repository](https://github.com/aspose-html-cloud) for a complete list of Aspose.HTML SDKs along with working examples to get you started in no time. Please check the [Available SDKs](/html/overview/available-sdks/) article to learn how to add an SDK to your project.
 {{% /alert %}} 
 
 ## **SDK conversion examples**
