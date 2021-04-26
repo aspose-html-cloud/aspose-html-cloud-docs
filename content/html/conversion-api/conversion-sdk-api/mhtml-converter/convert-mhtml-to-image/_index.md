@@ -1,11 +1,14 @@
 ---
-title: "Convert MHTML to Image"
+title: Convert MHTML to Image
+keywords: MHTML to JPEG, MHTML to BMP, MHTML to PNG, MHTML to TIFF, MHTML to
+  GIF, MHTML conversion, MHTML file, asynchronous conversion, conversion SDK,
+  convert MHTML to JPEG, convert MHTML to PNG, convert MHTML to GIF, SDK, SDK
+  examples, Python, Ruby, PHP, Java, .Net, C#, Android, Swift, Node.js
+description: The article explains the usage of Aspose.HTML Cloud client SDKs to
+  convert MHTML to XPS by a set of examples. SDKs are available in PHP, Python,
+  Ruby, Android, Swift, C#, Java, C++, Node.js and more.
+weight: 40
 type: docs
-
-keywords: "MHTML to JPEG, MHTML to BMP, MHTML to PNG, MHTML to TIFF, MHTML to GIF, MHTML conversion, MHTML file, asynchronous conversion, conversion SDK, convert MHTML to JPEG, convert MHTML to PNG, convert MHTML to GIF, SDK, SDK examples, Python, Ruby, PHP, Java, .Net, C#, Android, Swift, Node.js"
-description: "The article explains the usage of Aspose.HTML Cloud client SDKs to convert MHTML to XPS by a set of examples. SDKs are available in PHP, Python, Ruby, Android, Swift, C#, Java, C++, Node.js and more."
-weight: 30
-
 ---
 
 ## **Summary**
