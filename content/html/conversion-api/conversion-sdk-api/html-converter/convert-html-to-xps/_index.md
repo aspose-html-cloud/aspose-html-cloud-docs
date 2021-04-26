@@ -1,9 +1,14 @@
 ---
-title: "Convert HTML to XPS"
+title: Convert HTML to XPS
 type: docs
 aliases: /conversion-sdk-api/convert-html-to-xps/
-keywords: "html to xps, convert html to xps, html to xps conversion, format conversion, html conversion, asynchronous conversion, conversion SDK, SDK example, Python, PHP, Perl, Android, Swift, C#, Java, Node.js"
-description: "The article explains the usage of Aspose.HTML Cloud client SDKs for HTML to XPS conversion by a set of examples. SDKs are wrappers upon REST API to help developers speed up their development. SDKs are available in PHP, Perl, Android, Swift, C#, Java and more."
+keywords: html to xps, convert html to xps, html to xps conversion, format
+  conversion, html conversion, asynchronous conversion, conversion SDK, SDK
+  example, Python, PHP, Perl, Android, Swift, C#, Java, Node.js
+description: The article explains the usage of Aspose.HTML Cloud client SDKs for
+  HTML to XPS conversion by a set of examples. SDKs are wrappers upon REST API
+  to help developers speed up their development. SDKs are available in PHP,
+  Perl, Android, Swift, C#, Java and more.
 weight: 20
 ---
 
@@ -16,7 +21,7 @@ This article explains in a set of code examples how to convert {{%HTML%}} to {{%
 
 ## **SDK Examples of HTML to XPS Conversion**
 
-Aspose.HTML Cloud SDK allows you to fetch an HTML document from storage location by its name, from a URL or a local file on your drive, convert it to a specified format and save it to the storage or a local drive. The following code examples demonstrate how to convert HTML to XPS for different cases using available SDKs.
+Aspose.HTML Cloud SDK allows you to fetch an HTML document from a storage location by its name, from a URL or a local file on your drive, convert it to a specified format and save it to the storage or a local drive. The following code examples demonstrate how to convert HTML to XPS for different cases using available SDKs.
 
 ### **Example 1.**  Convert an HTML file from the storage to XPS and save the result to the storage
 
@@ -141,7 +146,7 @@ HTML to XPS conversion occurs with the **default conversion options**: the resul
 
 ### **Example 2.** Convert HTML from the local file system to XPS with explicitly specified options and save the result to the storage
 
-The example below demonstrates how to convert an HTML file from the local file system to XPS with explicitly specified options and save the result to the cloud storage.
+The example below demonstrates how to convert an HTML file from the local file system to XPS with explicitly specified options and save the result to cloud storage.
 
  For conversion, we use methods of the **ConverterBuilder** class: **FromLocalFile**(`inputPath`), **To**(`ConversionOptions`) and **SaveToStorageDirectory**(`outputDirectory`) that specify input data, the output format, and the target directory for a conversion result. The **Convert**(`builder`) overloaded method applies the builder style setup of the conversion parameters using ConverterBuilder class.
 
@@ -268,13 +273,13 @@ The following example demonstrates how to convert **HTML to XPS Java/Android** a
 In the example above, the source "html_file.html" file is taken from the "Input" folder of the local file system and the converted file saved in the storage folder "WithParams".
 
 {{% alert color="primary" %}} 
-More details about available conversion parameters for HTML files are in the [SDK Conversion Options](//html/conversion-api/sdk-conversion-options/) section.
+More details about available conversion parameters for HTML files are in the [SDK Conversion Options](/html/conversion-api/sdk-conversion-options/) section.
 
 {{% /alert %}} 
 
 ### **Example 3.** Convert a Web page by its URL to XPS and save the result to the local file system
 
-Aspose.HTML Cloud SDK allows you to get an HTML page from the web by its URL, convert it to  {{%XPS%}} format and save into the local file system. The example below demonstrates how to convert HTML to XPS with the default conversion parameters.
+Aspose.HTML Cloud SDK allows you to get an HTML page from the web by its URL, convert it to  {{%XPS%}} format and save it into the local file system. The example below demonstrates how to convert HTML to XPS with the default conversion parameters.
 
 {{< tabs tabTotal="10" tabID="3" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" >}}
 
