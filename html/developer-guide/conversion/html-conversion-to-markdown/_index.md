@@ -22,6 +22,8 @@ This article explains how to convert an HTML document to markdown language.
 {{< tab tabNum="1" >}}
 
 ```java
+// First get Access Token
+// Get Client ID and Client Secret from https://dashboard.aspose.cloud/
 
 curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
@@ -29,7 +31,7 @@ curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_c
 
 ```java
 
-curl -v "https://api.aspose.cloud/v3.0/html/test.html/convert/md" -X GET -H "Accept: application/json"
+curl -v "https://api.aspose.cloud/v3.0/html/test.html/convert/md" -X GET -H "Accept: application/json" -H "Authorization: Bearer [access token]"
 
 ```
 
@@ -55,6 +57,8 @@ HTML File
 {{< tab tabNum="1" >}}
 
 ```java
+// First get Access Token
+// Get Client ID and Client Secret from https://dashboard.aspose.cloud/
 
 curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
@@ -62,7 +66,7 @@ curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_c
 
 ```java
 
-curl -v "https://api.aspose.cloud/v3.0/html/test.html/convert/md?outpath=aaaa.html" -X PUT -H "Accept: application/json"
+curl -v "https://api.aspose.cloud/v3.0/html/test.html/convert/md?outpath=aaaa.html" -X PUT -H "Accept: application/json" -H "Authorization: Bearer [access token]"
 
 ```
 
@@ -77,6 +81,8 @@ curl -v "https://api.aspose.cloud/v3.0/html/test.html/convert/md?outpath=aaaa.ht
 {{< tab tabNum="1" >}}
 
 ```java
+// First get Access Token
+// Get Client ID and Client Secret from https://dashboard.aspose.cloud/
 
 curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
@@ -84,7 +90,7 @@ curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_c
 
 ```java
 
-curl -v "https://api.aspose.cloud/v3.0/html/convert/md?outPath=testing_out.html" -X POST -F "file=@test.html" -H "Accept: multipart/form-data"
+curl -v "https://api.aspose.cloud/v3.0/html/convert/md?outPath=testing_out.html" -X POST -F "file=@test.html" -H "Accept: multipart/form-data" -H "Authorization: Bearer [access token]"
 ```
 
 {{< /tab >}}

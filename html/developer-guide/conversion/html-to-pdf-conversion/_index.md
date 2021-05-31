@@ -2,7 +2,7 @@
 title: "HTML to PDF Conversion"
 type: docs
 url: /html-to-pdf-conversion/
-keywords: "python html to pdf conversion, java , .net,  c#,  android, swift ,Perl, Node.js"
+keywords: "html to pdf conversion, java , .net,  c#,  android, swift ,Perl, Node.js"
 description: " Article explains html to pdf conversion using Aspose.HTML Cloud API. SDKs are also available in PHP, Perl, Android, Swift, C#, Java and more to help developers speed up their development."
 weight: 10
 ---
@@ -24,17 +24,19 @@ Aspose.HTML Cloud has provided the simplest API to convert an HTML page to the f
 
 {{< tab tabNum="1" >}}
 
-```java
+```csharp
+// First get Access Token
+// Get Client ID and Client Secret from https://dashboard.aspose.cloud/
 
-curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
+curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json" 
 
 ```
 
-```java
+```csharp
 
 // cURL example for HTML to PDF Conversion
 
-curl -v "https://api.aspose.cloud/v3.0/html/testpage4_embcss.html/convert/pdf" -X GET -H "Content-Type: application/json" -H "Accept: multipart/form-data" 
+curl -v "https://api.aspose.cloud/v3.0/html/testpage4_embcss.html/convert/pdf" -X GET -H "Content-Type: application/json" -H "Accept: multipart/form-data" -H "Authorization: Bearer [access token]" --output d:\out\converted.pdf
 
 ```
 
@@ -59,8 +61,10 @@ PDF File
 {{< tab tabNum="1" >}}
 
 ```java
+// First get Access Token
+// Get Client ID and Client Secret from https://dashboard.aspose.cloud/
 
-curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
+curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
 ```
 
@@ -68,7 +72,7 @@ curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d "grant_type=client_cr
 
 // cURL example for HTML to PDF Conversion
 
-curl -v "https://api.aspose.cloud/v3.0/html/testpage4_embcss.html/convert/pdf?outPath=testpage4_embcss.pdf" -X PUT -H "Content-Type: application/json" -H "Accept: multipart/form-data" -H "Content-Length: 0"
+curl -v "https://api.aspose.cloud/v3.0/html/testpage4_embcss.html/convert/pdf?outPath=testpage4_embcss.pdf" -X PUT -H "Content-Type: application/json" -H "Accept: multipart/form-data" -H "Content-Length: 0" -H "Authorization: Bearer [access token]"
 
 ```
 
@@ -96,8 +100,10 @@ curl -v "https://api.aspose.cloud/v3.0/html/testpage4_embcss.html/convert/pdf?ou
 {{< tab tabNum="1" >}}
 
 ```java
+// First get Access Token
+// Get Client ID and Client Secret from https://dashboard.aspose.cloud/
 
-curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
+curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
 ```
 
@@ -105,7 +111,7 @@ curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d "grant_type=client_cr
 
 // cURL example for HTML to PDF Conversion
 
-curl -v "https://api.aspose.cloud/v3.0/html/convert/pdf?sourceUrl=https://www.le.ac.uk/oerresources/bdra/html/page_01.htm" -X GET -H "Content-Type: application/json" -H "Accept: multipart/form-data" 
+curl -v "https://api.aspose.cloud/v3.0/html/convert/pdf?sourceUrl=https://www.le.ac.uk/oerresources/bdra/html/page_01.htm" -X GET -H "Content-Type: application/json" -H "Accept: multipart/form-data" -H "Authorization: Bearer [access token]"
 
 ```
 
@@ -130,8 +136,10 @@ PDF File
 {{< tab tabNum="1" >}}
 
 ```java
+// First get Access Token
+// Get Client ID and Client Secret from https://dashboard.aspose.cloud/
 
-curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
+curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
 ```
 
@@ -139,7 +147,7 @@ curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d "grant_type=client_cr
 
 // cURL example for HTML to PDF Conversion
 
-curl -v "https://api.aspose.cloud/v3.0/html/convert/pdf?outPath=testpage4_embcss.pdf&storage=MyStorage" -X PUT -T testpage4_embcss.html -H "Content-Type: application/json" -H "Accept: multipart/form-data"
+curl -v "https://api.aspose.cloud/v3.0/html/convert/pdf?outPath=testpage4_embcss.pdf&storage=MyStorage" -X PUT -T testpage4_embcss.html -H "Content-Type: application/json" -H "Accept: multipart/form-data" -H "Authorization: Bearer [access token]"
 
 ```
 

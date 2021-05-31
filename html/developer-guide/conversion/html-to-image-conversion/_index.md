@@ -40,14 +40,16 @@ Please examine the HTTP Response code for success verification.
 {{< tab tabNum="1" >}}
 
 ```java
+// First get Access Token
+// Get Client ID and Client Secret from https://dashboard.aspose.cloud/
 
-curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
+curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
 ```
 
 ```java
 
-curl -v "https://api.aspose.cloud/v3.0/html/test.html/convert/image/jpeg" -X GET  -H "Accept: application/json"
+curl -v "https://api.aspose.cloud/v3.0/html/test.html/convert/image/jpeg" -X GET  -H "Accept: application/json" -H "Authorization: Bearer [access token]"
 
 ```
 
@@ -62,14 +64,16 @@ curl -v "https://api.aspose.cloud/v3.0/html/test.html/convert/image/jpeg" -X GET
 {{< tab tabNum="1" >}}
 
 ```java
+// First get Access Token
+// Get Client ID and Client Secret from https://dashboard.aspose.cloud/
 
-curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
+curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
 ```
 
 ```java
 
-curl -v "https://api.aspose.cloud/v3.0/html/test.html/convert/image/jpeg?outpath=test.jpeg" -X PUT  -H "Accept: application/json" 
+curl -v "https://api.aspose.cloud/v3.0/html/test.html/convert/image/jpeg?outpath=test.jpeg" -X PUT  -H "Accept: application/json" -H "Authorization: Bearer [access token]"
 ```
 
 {{< /tab >}}
@@ -83,14 +87,16 @@ curl -v "https://api.aspose.cloud/v3.0/html/test.html/convert/image/jpeg?outpath
 {{< tab tabNum="1" >}}
 
 ```java
+// First get Access Token
+// Get Client ID and Client Secret from https://dashboard.aspose.cloud/
 
-curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
+curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
 ```
 
 ```java
 
-curl -v "https://api.aspose.cloud/v3.0/html/test.html/convert/image/jpeg?sourceURL=http://help.websiteos.com/websiteos/example_of_a_simple_html_page.htm" -X GET  -H "Accept: application/json"
+curl -v "https://api.aspose.cloud/v3.0/html/test.html/convert/image/jpeg?sourceURL=http://help.websiteos.com/websiteos/example_of_a_simple_html_page.htm" -X GET  -H "Accept: application/json" -H "Authorization: Bearer [access token]"
 
 ```
 
@@ -105,14 +111,16 @@ curl -v "https://api.aspose.cloud/v3.0/html/test.html/convert/image/jpeg?sourceU
 {{< tab tabNum="1" >}}
 
 ```java
+// First get Access Token
+// Get Client ID and Client Secret from https://dashboard.aspose.cloud/
 
-curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
+curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
 ```
 
 ```java
 
-curl -v "https://api.aspose.cloud/v3.0/html/convert/image/jpeg?outpath=a345.jpeg" -X POST -F "file=@test.html" -H "Accept: multipart/form-data"
+curl -v "https://api.aspose.cloud/v3.0/html/convert/image/jpeg?outpath=a345.jpeg" -X POST -F "file=@test.html" -H "Accept: multipart/form-data"  -H "Authorization: Bearer [access token]"
 
 ```
 

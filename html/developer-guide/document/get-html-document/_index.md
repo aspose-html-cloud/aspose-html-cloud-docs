@@ -24,6 +24,8 @@ The example below downloads the html page and all associated content into a zip 
 {{< tab tabNum="1" >}}
 
 ```java
+// First get Access Token
+// Get Client ID and Client Secret from https://dashboard.aspose.cloud/
 
 curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
@@ -31,7 +33,7 @@ curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_c
 
 ```java
 
-curl -v "https://api.aspose.cloud/v3.0/html/download?sourceUrl=http://help.websiteos.com/websiteos/example_of_a_simple_html_page.htm" -X GET -H "Content-Type:application/json" -H "Accept:multipart/form-data"
+curl -v "https://api.aspose.cloud/v3.0/html/download?sourceUrl=http://help.websiteos.com/websiteos/example_of_a_simple_html_page.htm" -X GET -H "Content-Type:application/json" -H "Accept:multipart/form-data" -H "Authorization: Bearer [access token]"
 
 ```
 
@@ -98,7 +100,6 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 {{< /tab >}}
 
 {{< /tabs >}}
-
 
 
 

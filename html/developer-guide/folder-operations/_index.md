@@ -20,6 +20,8 @@ This article explains how to use Folder Operation with Aspose.HTML Cloud
 All of these requests require you obtain a connect token befor you proceede
 
 ```java
+// First get Access Token
+// Get Client ID and Client Secret from https://dashboard.aspose.cloud/
 
 curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
@@ -33,7 +35,7 @@ curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_c
 
 ```java
 
-curl -v "https://api.aspose.cloud/v3.0/html/storage/folder/new_slides_folder" -X GET -H "Accept: application/json"
+curl -v "https://api.aspose.cloud/v3.0/html/storage/folder/new_slides_folder" -X GET -H "Accept: application/json"  -H "Authorization: Bearer [access token]"
 
 ```
 
@@ -61,7 +63,7 @@ curl -v "https://api.aspose.cloud/v3.0/html/storage/folder/new_slides_folder" -X
 
 ```java
 
-curl -v "https://api.aspose.cloud/v3.0/html/storage/folder/new_html_folder" -X PUT -H "Accept: application/json" 
+curl -v "https://api.aspose.cloud/v3.0/html/storage/folder/new_html_folder" -X PUT -H "Accept: application/json"  -H "Authorization: Bearer [access token]"
 
 ```
 
@@ -90,7 +92,7 @@ curl -v "https://api.aspose.cloud/v3.0/html/storage/folder/new_html_folder" -X P
 
 ```java
 
-curl -v "https://api.aspose.cloud/v3.0/html/storage/folder/new_html_folder" -X DELETE -H "Accept: application/json" 
+curl -v "https://api.aspose.cloud/v3.0/html/storage/folder/new_html_folder" -X DELETE -H "Accept: application/json"  -H "Authorization: Bearer [access token]"
 
 ```
 
@@ -106,7 +108,7 @@ curl -v "https://api.aspose.cloud/v3.0/html/storage/folder/new_html_folder" -X D
 
 ```java
 
-curl -v "https://api.aspose.cloud/v3.0/html/storage/folder/copy/new_slides_folder" -X PUT -H "Accept: application/json" 
+curl -v "https://api.aspose.cloud/v3.0/html/storage/folder/copy/new_slides_folder" -X PUT -H "Accept: application/json"  -H "Authorization: Bearer [access token]"
 
 ```
 
@@ -122,8 +124,7 @@ curl -v "https://api.aspose.cloud/v3.0/html/storage/folder/copy/new_slides_folde
 
 ```java
 
-curl -v "https://api.aspose.cloud/v3.0/html/storage/folder/move/new_slides_folder" -X PUT -H "Accept: application/json" 
-
+curl -v "https://api.aspose.cloud/v3.0/html/storage/folder/move/new_slides_folder" -X PUT -H "Accept: application/json" -H "Authorization: Bearer [access token]"
 ```
 
 {{< /tab >}}
