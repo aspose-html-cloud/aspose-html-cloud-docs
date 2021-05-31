@@ -1,7 +1,7 @@
 ---
 title: "Get HTML Warnings"
 type: docs
-url: /archive_v_3_0/get-html-warnings/
+url: /get-html-warnings/
 keywords: "HTML Warnings, Validate HTML, HTML, Aspose.HTML, Python, Perl, Android, Java, .NET,C#, Swift, Go"
 description: "Use Aspose.HTML Cloud and get HTML warnings in the form of JSON or XML format. Fixing the HTML warnings helps in loading fast which plays a key role in improving site ranking."
 weight: 20
@@ -20,6 +20,8 @@ Aspose.HTML Cloud, easy to use REST API allows you validate your HTML and get wa
 {{< tab tabNum="1" >}}
 
 ```java
+// First get Access Token
+// Get Client ID and Client Secret from https://dashboard.aspose.cloud/
 
 curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
@@ -27,7 +29,7 @@ curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_c
 
 ```java
 
-curl -X GET "https://api.aspose.cloud/v3.0/html/validator?url=http://help.websiteos.com/websiteos/example_of_a_simple_html_page.htm&format=json" -H "accept: application/json" -H "x-aspose-client: Containerize.Swagger"
+curl -X GET "https://api.aspose.cloud/v3.0/html/validator?url=http://help.websiteos.com/websiteos/example_of_a_simple_html_page.htm&format=json" -H "accept: application/json" -H "x-aspose-client: Containerize.Swagger"  -H "Authorization: Bearer [access token]"
 
 ```
 
@@ -47,4 +49,4 @@ Returns the result
 
 {{< /tabs >}}
 ## **Available SDKs**
-Using an SDK (API client) is the quickest way for a developer to speed up the development. An SDK takes care of a lot of low-level details of making requests and handling responses and lets you focus on writing code specific to your particular project. Checkout our [GitHub repository](https://github.com/aspose-html-cloud) for a complete list of Aspose.HTML SDKs along with working examples, to get you started in no time. Please check [Available SDKs](/html/archive_v_3_0/available-sdks/) article to learn how to add an SDK to your project.
+Using an SDK (API client) is the quickest way for a developer to speed up the development. An SDK takes care of a lot of low-level details of making requests and handling responses and lets you focus on writing code specific to your particular project. Checkout our [GitHub repository](https://github.com/aspose-html-cloud) for a complete list of Aspose.HTML SDKs along with working examples, to get you started in no time. Please check [Available SDKs](/html/available-sdks/) article to learn how to add an SDK to your project.
