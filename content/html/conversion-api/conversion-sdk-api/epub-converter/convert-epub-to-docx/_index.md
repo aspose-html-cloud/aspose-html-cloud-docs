@@ -1,16 +1,16 @@
 ---
-title: "Convert EPUB to DOCX"
+title: Convert EPUB to DOCX
 type: docs
 
-keywords: "EPUB to DOCX, EPUB conversion, EPUB file, asynchronous conversion, conversion SDK, convert EPUB to DOCX, SDK, SDK examples, Python, Ruby, PHP, Java, .Net, C#, Android, Swift, Node.js"
-description: "The article explains the usage of Aspose.HTML Cloud client SDKs to convert EPUB to DOCX by a set of examples. SDKs are available in PHP, Python, Ruby, Android, Swift, C#, Java, C++, Node.js and more."
+keywords: EPUB to DOCX, convert EPUB, EPUB file, asynchronous conversion, conversion SDK, convert EPUB to DOCX, SDK, SDK examples, Python, Ruby, PHP, Java, .Net, C#, Android, Swift, Node.js"
+description: The article explains the usage of Aspose.HTML Cloud client SDKs to convert EPUB to DOCX by a set of examples. SDKs are available in PHP, Python, Ruby, Android, Swift, C#, Java, C++, Node.js and more. 
 weight: 30
 
 ---
 
 ## **Summary**
 
-Aspose.HTML Cloud v4.0 provides the simplest API to convert  {{%EPUB%}} documents to {{%DOCX%}} format with high quality, easy and fast. 
+Aspose.HTML Cloud v4.0 provides the simplest API to convert  {{%EPUB%}} documents to {{%DOCX%}} format with high quality, easy and fast. EPUB is an open XML-based format for digital books and publications, which can be viewed and read on smartphones, tablets and computers. Microsoft Word files including DOCX and DOC are also famous because of various features. You can convert EPUB files to DOCX or DOC files, with great fidelity. 
 
 The article explains in a set of code examples how to convert an EPUB document to DOCX/DOC using Aspose.HTML Cloud client SDKs. We will consider various scenarios of EPUB to DOCX conversion: from storage to storage, from a local file system to the storage and from the storage to a local file system.
 
