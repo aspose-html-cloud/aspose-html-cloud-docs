@@ -2,7 +2,7 @@ copyright = "The Aspose Authors"
 privacy_policy = "https://policies.google.com/privacy"
 topbar_search_active = false
 logo_rel_link = ""
-
+basePath = "/html"
 # Title of 404 page
 title_404_page = "404 - Page Not Found | Aspose Documentation"
 
@@ -112,3 +112,5 @@ url = "https://company.aspose.com/contact"
 aspose_id = "GTM-NJMHSH"
 cloud_id = "GTM-TSXP9CZ"
 conholdate_id = "GTM-N4D44QW"
+products_app_id = "UA-3109235-5"
+codeporting_id = "GTM-P7KM8KW"
