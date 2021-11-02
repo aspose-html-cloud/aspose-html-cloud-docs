@@ -1,7 +1,6 @@
 ---
 title: Aspose.HTML Cloud
 type: docs
-aliases: /
 keywords: SDKs, REST API, Cloud REST API, cloud storage, Convert HTML, Convert
   XHTML, Convert MHTML, Convert EPUB, Convert Markdown, HTML to PDF, SDK
   examples
@@ -10,9 +9,15 @@ description: "Aspose.HTML Cloud provides two main points: the conversion between
   introduces you with Aspose.HTML Cloud v4.0 abilities to provide access to
   files and folders stored in the cloud storage;  presents a set of available
   conversions including HTML, XHTML, and MHTML, EPUB and Markdown converters."
+is_root: true
 ---
 {{% alert color="primary" %}}
 ![HTML logo](overview_1)
+
+aliases:
+- /java/
+- ///htmljava/
+- /display/htmljava/Home
 
 **Welcome to the Aspose.HTML Cloud documentation section**
 

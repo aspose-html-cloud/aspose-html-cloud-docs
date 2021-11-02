@@ -1,10 +1,10 @@
 ---
 title: SDK Conversion Options
 type: docs
-aliases: /sdk-conversion-options/
-keywords: convert html, conversion options, convert html to pdf, convert html to xps, convert html to doc, convert html to image, convert html to jpeg, convert html to markdown, convert html to mhtml
-description: Aspose.HTML Cloud SDK family allows converting HTML, MHTML, XHTML, EPUB and Markdown files to a variety of popular formats using default or custom conversion options. This article describes a set of classes that represent conversion options: PDFConversionOptions, XPSConversionOptions, DOCConversionOptions, ImageConversionOptions, and MarkdownConversionOptions.
 weight: 80
+aliases:
+- /sdk-conversion-options/
+
 ---
 ## **Summary**
 
