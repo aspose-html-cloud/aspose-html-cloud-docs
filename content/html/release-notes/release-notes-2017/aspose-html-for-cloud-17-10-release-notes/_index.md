@@ -1,7 +1,7 @@
 ---
 title: "Aspose.HTML for Cloud 17.10 Release Notes"
 type: docs
-aliases: /aspose-html-for-cloud-17-10-release-notes/
+url: /aspose-html-for-cloud-17-10-release-notes/
 weight: 10
 ---
 

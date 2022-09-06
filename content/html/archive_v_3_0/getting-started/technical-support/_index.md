@@ -1,7 +1,7 @@
 ---
 title: "Technical Support"
 type: docs
-aliases: /archive_v_3_0/technical-support/
+url: /archive_v_3_0/technical-support/
 weight: 60
 ---
 

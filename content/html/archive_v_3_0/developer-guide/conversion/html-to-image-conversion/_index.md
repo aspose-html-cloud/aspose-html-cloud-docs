@@ -1,10 +1,10 @@
 ---
 title: "HTML to Image Conversion"
 type: docs
-aliases: /archive_v_3_0/html-to-image-conversion/
+url: /html-to-image-conversion/
 keywords: "convert html to image, REST API, SDKs, java, android, Perl, swift, go, ruby"
 description: "This article explains how to convert HTML to Image using Aspose.HTML Cloud REST API. HTML can be converted into JPEG, PNG BMP and TIFF image formats."
-weight: 30
+weight: 40
 ---
 
 ## **Introduction**
@@ -40,14 +40,16 @@ Please examine the HTTP Response code for success verification.
 {{< tab tabNum="1" >}}
 
 ```java
+// First get Access Token
+// Get Client ID and Client Secret from https://dashboard.aspose.cloud/
 
-curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
+curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
 ```
 
 ```java
 
-curl -v "https://api.aspose.cloud/v3.0/html/test.html/convert/image/jpeg" -X GET  -H "Accept: application/json"
+curl -v "https://api.aspose.cloud/v3.0/html/test.html/convert/image/jpeg" -X GET  -H "Accept: application/json" -H "Authorization: Bearer [access token]"
 
 ```
 
@@ -62,14 +64,16 @@ curl -v "https://api.aspose.cloud/v3.0/html/test.html/convert/image/jpeg" -X GET
 {{< tab tabNum="1" >}}
 
 ```java
+// First get Access Token
+// Get Client ID and Client Secret from https://dashboard.aspose.cloud/
 
-curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
+curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
 ```
 
 ```java
 
-curl -v "https://api.aspose.cloud/v3.0/html/test.html/convert/image/jpeg?outpath=test.jpeg" -X PUT  -H "Accept: application/json" 
+curl -v "https://api.aspose.cloud/v3.0/html/test.html/convert/image/jpeg?outpath=test.jpeg" -X PUT  -H "Accept: application/json" -H "Authorization: Bearer [access token]"
 ```
 
 {{< /tab >}}
@@ -83,14 +87,16 @@ curl -v "https://api.aspose.cloud/v3.0/html/test.html/convert/image/jpeg?outpath
 {{< tab tabNum="1" >}}
 
 ```java
+// First get Access Token
+// Get Client ID and Client Secret from https://dashboard.aspose.cloud/
 
-curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
+curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
 ```
 
 ```java
 
-curl -v "https://api.aspose.cloud/v3.0/html/test.html/convert/image/jpeg?sourceURL=http://help.websiteos.com/websiteos/example_of_a_simple_html_page.htm" -X GET  -H "Accept: application/json"
+curl -v "https://api.aspose.cloud/v3.0/html/test.html/convert/image/jpeg?sourceURL=http://help.websiteos.com/websiteos/example_of_a_simple_html_page.htm" -X GET  -H "Accept: application/json" -H "Authorization: Bearer [access token]"
 
 ```
 
@@ -105,14 +111,16 @@ curl -v "https://api.aspose.cloud/v3.0/html/test.html/convert/image/jpeg?sourceU
 {{< tab tabNum="1" >}}
 
 ```java
+// First get Access Token
+// Get Client ID and Client Secret from https://dashboard.aspose.cloud/
 
-curl -v "https://api.aspose.cloud/oauth2/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
+curl -v "https://api.aspose.cloud/connect/token" -X POST -d "grant_type=client_credentials&client_id=XXXXX&client_secret=XXXXX" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json"
 
 ```
 
 ```java
 
-curl -v "https://api.aspose.cloud/v3.0/html/convert/image/jpeg?outpath=a345.jpeg" -X POST -F "file=@test.html" -H "Accept: multipart/form-data"
+curl -v "https://api.aspose.cloud/v3.0/html/convert/image/jpeg?outpath=a345.jpeg" -X POST -F "file=@test.html" -H "Accept: multipart/form-data"  -H "Authorization: Bearer [access token]"
 
 ```
 
@@ -120,7 +128,7 @@ curl -v "https://api.aspose.cloud/v3.0/html/convert/image/jpeg?outpath=a345.jpeg
 
 {{< /tabs >}}
 ## **Available SDKs**
-Using an SDK (API client) is the quickest way for a developer to speed up the development. An SDK takes care of a lot of low-level details of making requests and handling responses and lets you focus on writing code specific to your particular project. Check out our [GitHub repository](https://github.com/aspose-html-cloud) for a complete list of Aspose.HTML SDKs along with working examples, to get you started in no time. Please check [Available SDKs](/html/archive_v_3_0/available-sdks/) article to learn how to add an SDK to your project.
+Using an SDK (API client) is the quickest way for a developer to speed up the development. An SDK takes care of a lot of low-level details of making requests and handling responses and lets you focus on writing code specific to your particular project. Check out our [GitHub repository](https://github.com/aspose-html-cloud) for a complete list of Aspose.HTML SDKs along with working examples, to get you started in no time. Please check [Available SDKs](/html/available-sdks/) article to learn how to add an SDK to your project.
 ### **SDK Examples**
 #### **Case 1: Convert the HTML document from the storage by its name to the specified image format**
 

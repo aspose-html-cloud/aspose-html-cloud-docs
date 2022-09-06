@@ -1,6 +1,6 @@
 ---
 title: "Release Notes"
 type: docs
-aliases: /release-notes/
+url: /release-notes/
 weight: 200
 ---
