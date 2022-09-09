@@ -1,5 +1,18 @@
-This repository contains Aspose.HTML Cloud documentation.
+## 1. Install packages
+`npm i`
 
-------------
 
-[Home](https://www.aspose.com/) | [Product Page](https://products.aspose.com/html/) | [Docs](https://docs.aspose.com/html/) | [Demos](https://products.aspose.app/html/family) | [API Reference](https://apireference.aspose.com/html) | [Blog](https://blog.aspose.com/category/html/) | [Search](https://search.aspose.com/) | [Free Support](https://forum.aspose.com/c/html) |  [Temporary License](https://purchase.aspose.com/temporary-license)
+## 2. Update Submodules
+`git submodule update --init -- "themes/lutsk-aspose-theme"`
+
+
+## 3. Start Hugo
+Run: `.\node_modules\hugo-extended\vendor\hugo.exe server -c 'content\html' --baseURL https://docs.aspose.cloud/html`
+
+Or run powershell script in the root: `run.ps1`
+
+
+## 4. Navigate in browser
+The app is now up and running here: `http://localhost:1313/html`
+
+
