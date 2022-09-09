@@ -16,5 +16,10 @@
   "devDependencies": {
     "autoprefixer": "^9.8.0",
     "postcss-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "go": "^3.0.1",
+    "hugo-extended": "^0.102.3",
+    "sass": "^1.54.8"
   }
 }
