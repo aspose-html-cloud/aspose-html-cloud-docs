@@ -2,3 +2,6 @@
 [submodule "themes/lutsk-aspose-theme"]
 	path = themes/lutsk-aspose-theme
 	url = git@git.saltov.dynabic.com:zap/lutsk-aspose-theme.git
+[submodule "lutsk-aspose-theme"]
+	path = lutsk-aspose-theme
+	url = https://git.saltov.dynabic.com/zap/lutsk-aspose-theme.git
