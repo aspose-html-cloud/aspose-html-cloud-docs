@@ -19,6 +19,7 @@ aliases:
 - ///htmljava/
 - /display/htmljava/Home
 
+
 **Welcome to the Aspose.HTML Cloud documentation section**
 
 Aspose.HTML Cloud is a REST API designed explicitly for document generation, manipulation and conversion in the cloud. The REST API is platform-independent and integrates with other cloud services. It provides access to files and folders that are stored in the user associated Aspose cloud storage or any additional cloud storage of your choice. Aspose.HTML Cloud provides the ability to use its functionality both by the REST API directly or by the set of wrappers implemented as SDKs on the various programming languages.
@@ -39,6 +40,17 @@ The REST API supports a set of converting between formats. You can take a source
 To obtain information about converting between formats, please read the [Conversion API](/html/conversion-api/) section.
 
 {{% /alert %}} 
+
+
+
+{{% cloud/html/sdk-examples %}}
+
+**SDK examples**
+ - Insert URL to the text field.
+ - Choice format.
+ - Press "Convert" button.
+
+{{% /cloud/html/sdk-examples %}}
 
 **SDK example of HTML to PDF conversion**
 
@@ -65,6 +77,7 @@ using (var api = new HtmlApi(cb => cb
     }
 }
 ```
+
 
 Also, our REST API provides capabilities to manipulate files that are stored in the cloud storage associated with user applications, such as:
 
