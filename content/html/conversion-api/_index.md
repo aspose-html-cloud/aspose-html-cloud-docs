@@ -33,10 +33,5 @@ The application developer can use Aspose.HTML Cloud v4.0 conversion functionalit
 1. SDK is a preferable choice for faster development; the SDKs provide a convenient set of methods for the most typical cases and hide many routine operations from a developer.
 2. REST API is a low-level interface to work directly with the Aspose.HTML Cloud product service by HTTP requests. It provides full control over the HTTP operation results, but it requires more routine work to prepare HTTP requests and handle responses. 
 
-For more details about REST API and SDK features, usage examples, follow the links:
-
-- [Conversion SDK API information](/html/conversion-api/conversion-sdk-api/)
-- [Conversion REST API information](/html/conversion-api/conversion-rest-api/)
-
 
 

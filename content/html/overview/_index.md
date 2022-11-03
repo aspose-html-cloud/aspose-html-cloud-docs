@@ -19,9 +19,6 @@ Documentation pages of API v.3.0 are available [here](https://docs.aspose.cloud/
 ## **Cloud SDKs**
 Cloud SDKs are wrappers around REST APIs in various programming languages, allowing you to process documents in the language of your choice quickly and easily, gaining all benefits of strong types and IDE highlights. Please check [Aspose.HTML GitHub repository](https://github.com/aspose-html-cloud/) for SDKs with working examples to get you started in no time. 
 
-## **API Explorer**
-The easiest way is to try out our API right away in your browser with the [Aspose.HTML for Cloud API Reference](https://apireference.aspose.cloud/html/).  It is a collection of Swagger documentation for the Aspose.HTML for Cloud APIs,  through which you can get information about all the resources in the API. It also provides testing and interactivity to our API endpoint documentation.
-
 ## **Security and Authentication**
 Aspose.HTML for Cloud APIs are secured and requires authentication. Please [create your Aspose for Cloud Account](https://docs.aspose.cloud/total/creating-and-managing-account/) (if not already created), create a new application and get your[ Client Id and Client Secret](https://docs.aspose.cloud/total/create-new-app-and-get-app-key-and-sid/). Aspose for Cloud REST APIs can be authenticated using JWT. Please check the [JWT token-based authentication](https://docs.aspose.cloud/total/json-web-token-authentication/) article for more details.
 

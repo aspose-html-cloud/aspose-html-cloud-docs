@@ -1,0 +1,33 @@
+{{ $basePath := "" -}}
+{{ if .Site.Params.basePath -}}
+{{ $basePath = .Site.Params.basePath -}}
+{{ if eq $basePath "/" -}}
+    {{ $basePath = "" -}}
+{{- end -}}
+{{- end -}}
+###########################################
+# Nginx redirects.
+# Build at
+#
+# Format this file:
+#
+# {basePath/}from_url   to_url;
+#
+# For setup parameter basePath of url
+# need set in config/_default/params.toml file.
+# If this params is missing
+# then it calculated as empty string.
+#
+# Acutual values:
+#   Parameter basePath = '{{ .Site.Params.basePath }}' from configuration
+#   Calculated basePath = '{{ $basePath }}'
+###########################################
+
+{{ range $p := .Site.Pages -}}
+{{   range  .Aliases -}}
+{{      $fromUrl := (printf "%v%v" $basePath  .) -}}
+{{     if ne $fromUrl  $p.RelPermalink -}}
+{{       $fromUrl | replaceRE "/.*/display" "/display" |replaceRE "^.*///" "/"  |  printf "%-60s" }}	{{ $p.RelPermalink   -}};
+{{     end -}}
+{{   end -}}
+{{ end -}}
