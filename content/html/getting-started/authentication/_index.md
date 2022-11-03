@@ -121,36 +121,6 @@ Using SDK, you don't need to know the authentication service URL. All routine wo
 
 {{% /alert %}}  
 
-## **Use of Externally Obtained JWT Token**
-
-Authentication by user credentials is a standard way of Aspose.HTML Cloud SDK family. But also the SDKs provide a possibility to authenticate using a token that has been obtained from some external source. 
-
-For example, an application calls the authentication service itself and uses an obtained token to call SDK methods without providing user credentials. Use externally obtained token, creating SDK API entry point object.
-
-
-{{< tabs tabTotal="1" tabID="3" tabName1="C#"  >}}
-
-{{< tab tabNum="1" >}}
-
-```c#
-var token = "......"; // JWT token obtained before
-
-using(var api = new HtmlApi(Configuration
-                      .NewDefault()
-                      .WithExternalAuthentication(token)))
-{
-	// .... your code
-}
-```
-
-{{< /tab >}}
-
-{{< /tabs >}}
-
-{{% alert color="primary" %}} 
-**NOTE**: Authentication with an externally obtained token is available only using **Configuration** or **ConfigurationBuilder**. 
-
-{{% /alert %}} 
 
 
 
