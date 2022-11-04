@@ -1,15 +1,13 @@
 ---
-title: Convert HTML to XPS
+title: Convert HTML to XPS - Cloud SDKs
+linktitle: Convert HTML to XPS
 type: docs
 aliases: /conversion-sdk-api/convert-html-to-xps/
-keywords: html to xps, convert html to xps, html to xps conversion, format
-  conversion, html conversion, asynchronous conversion, conversion SDK, SDK
-  example, Python, PHP, Perl, Android, Swift, C#, Java, Node.js
-description: The article explains the usage of Aspose.HTML Cloud client SDKs for
-  HTML to XPS conversion by a set of examples. SDKs are wrappers upon REST API
-  to help developers speed up their development. SDKs are available in PHP,
-  Perl, Android, Swift, C#, Java and more.
+keywords: html to xps, convert html to xps, html to xps conversion, html conversion, SDK example, Python, PHP, Perl, Android, Swift, C#, Java, Node.js, curl
+description: Learn how to use Cloud SDKs and REST API to convert HTML to XPS. SDKs are available in C#, Java, Perl, Python, Android, Swift and more.
 weight: 20
+url: /convert-html-to-xps/
+lastmod: 2022-11-03
 ---
 
 ## **Summary**
@@ -23,7 +21,7 @@ This article explains in a set of code examples how to convert {{%HTML%}} to {{%
 
 Aspose.HTML Cloud allows you to fetch an HTML document from a storage location by its name, from a URL or a local file on your drive, convert it to a specified format and save it to the storage or a local drive. The following code examples demonstrate how to convert HTML to XPS for different cases using available SDKs and REST API.
 
-## **Example 1.**  Convert a local HTML file to XPS and save the result to local path
+### **Example 1.**  Convert a local HTML file to XPS and save the result to local path
 
 {{< tabs tabTotal="10" tabID="1" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" tabName10="CURL" >}}
 
@@ -32,7 +30,7 @@ Aspose.HTML Cloud allows you to fetch an HTML document from a storage location b
 The following example demonstrates the simplest way to convert **HTML to XPS C#** language applying. Local HTML converted to XPS and saved to the local path. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
 ```c#
-// Initialize 
+// Initialize SDK API
 var api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET").ConvertApi;
 
 // Convert from HTML file to XPS file
@@ -123,11 +121,10 @@ The following example demonstrates how to convert **HTML to XPS Java/Android** a
 
 {{< tab tabNum="10" >}}
 
-The following example demonstrates how to convert **HTML to XPS** REST API applying. Local HTML converted to XPS and saved to the local path.
-3 steps:
-- Upload local file to storage using [Storage API](https://docs.aspose.cloud/html/storage-api/working-with-files-in-the-storage)
-- Call REST API to execute conversion (in the example bellow)
-- Download conversion result back from storage using [Storage API](https://docs.aspose.cloud/html/storage-api/working-with-files-in-the-storage)
+The following example demonstrates how to convert **HTML to XPS** REST API applying. Local HTML converted to XPS and saved to the local path. Follow a few required steps:
+- Upload local file to storage using [Storage API](https://docs.aspose.cloud/html/storage-api/working-with-files-in-the-storage).
+- Call REST API to execute conversion (in the example below).
+- Download conversion result back from storage using [Storage API](https://docs.aspose.cloud/html/storage-api/working-with-files-in-the-storage).
 ```bash
 curl -X POST -v \
 	"https://api.aspose.cloud/v4.0/html/conversion/html-xps" \
@@ -154,14 +151,14 @@ The example below demonstrates how to convert an HTML file from the local file s
 
 {{< tab tabNum="1" >}}
 
-The following SDK example demonstrates how to convert **HTML to XPS C#** language applying. HTML is taken from the local file system, converted to XPS and saved to the storage. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
+The following SDK example demonstrates how to convert **HTML to XPS C#** language applying. HTML is taken from the local file system, converted to XPS and saved to the local drive. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
 ```c#
-// Initialize 
+// Initialize SDK API
 var api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET").ConvertApi;
 
 // Initialize options
-var options = new ImageConversionOptions()
+var options = new XPSConversionOptions()
                 .SetHeight(800)
                 .SetWidth(1000)
                 .SetLeftMargin(10)
@@ -177,7 +174,7 @@ var result = await api.ConvertAsync("test.html", "test.xps", options);
 
 {{< tab tabNum="2" >}}
 
-The following example demonstrates how to convert **HTML to XPS java** language applying. HTML is taken from the local file system, converted to XPS and saved to the storage. You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
+The following example demonstrates how to convert **HTML to XPS java** language applying. Local HTML is converted to XPS and saved to the local drive. You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
 
 ```java
 
@@ -187,7 +184,7 @@ The following example demonstrates how to convert **HTML to XPS java** language 
 
 {{< tab tabNum="3" >}}
 
-The following example demonstrates how to convert **HTML to XPS C++** language applying. HTML is taken from the local file system, converted to XPS and saved to the storage. 
+The following example demonstrates how to convert **HTML to XPS C++** language applying. Local HTML converted to XPS and saved on the local drive. 
 
 ```c++
 
@@ -197,7 +194,7 @@ The following example demonstrates how to convert **HTML to XPS C++** language a
 
 {{< tab tabNum="4" >}}
 
-The following example demonstrates how to convert **HTML to XPS Python** language applying. HTML is taken from the local file system, converted to XPS and saved to the storage. You can download the Python SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-python).
+The following example demonstrates how to convert **HTML to XPS Python** language applying. Local HTML converted to XPS and saved on the local drive. You can download the Python SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-python).
 
 ```python
 
@@ -207,7 +204,7 @@ The following example demonstrates how to convert **HTML to XPS Python** languag
 
 {{< tab tabNum="5" >}}
 
-The following example demonstrates how to convert **HTML to XPS PHP** language applying. HTML is taken from the local file system, converted to XPS and saved to the storage. You can download the PHP SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-php)
+The following example demonstrates how to convert **HTML to XPS PHP** language applying. HTML is taken from the local file system, converted to XPS and saved to the local path. You can download the PHP SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-php)
 
 ```php
 
@@ -217,7 +214,7 @@ The following example demonstrates how to convert **HTML to XPS PHP** language a
 
 {{< tab tabNum="6" >}}
 
-The following example demonstrates how to convert **HTML to XPS Ruby** language applying. HTML is taken from the local file system, converted to XPS and saved to the storage. You can download the Ruby SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby).
+The following example demonstrates how to convert **HTML to XPS Ruby** language applying. Local HTML converted to XPS and saved on the local drive. You can download the Ruby SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby).
 
 ```ruby
 
@@ -227,7 +224,7 @@ The following example demonstrates how to convert **HTML to XPS Ruby** language 
 
 {{< tab tabNum="7" >}}
 
-The following example demonstrates how to convert **HTML to XPS Node.js** language applying. HTML is taken from the local file system, converted to XPS and saved to the storage. 
+The following example demonstrates how to convert **HTML to XPS Node.js** language applying. Local HTML converted to XPS and saved on the local drive.
 
 ```javascript
 
@@ -237,7 +234,7 @@ The following example demonstrates how to convert **HTML to XPS Node.js** langua
 
 {{< tab tabNum="8" >}}
 
-The following example demonstrates how to convert **HTML to XPS Swift** language applying. HTML is taken from the local file system, converted to XPS and saved to the storage. You can download the Swift SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-swift).
+The following example demonstrates how to convert **HTML to XPS Swift** language applying. Local HTML converted to XPS and saved on the local drive. You can download the Swift SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-swift).
 
 ```swift
 
@@ -247,7 +244,7 @@ The following example demonstrates how to convert **HTML to XPS Swift** language
 
 {{< tab tabNum="9" >}}
 
-The following example demonstrates how to convert **HTML to XPS Java/Android** applying. XPS is taken from the local file system, converted to XPS and saved to the storage. You can download the Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
+The following example demonstrates how to convert **HTML to XPS Java/Android** applying. Local HTML converted to XPS and saved on the local drive. You can download the Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
 
 ```java
 
@@ -257,11 +254,10 @@ The following example demonstrates how to convert **HTML to XPS Java/Android** a
 
 {{< tab tabNum="10" >}}
 
-The following example demonstrates how to convert **HTML to XPS** using REST API. Local HTML converted to XPS and saved to the local file system.
-3 steps:
-- Upload local file to storage using [Storage API](https://docs.aspose.cloud/html/storage-api/working-with-files-in-the-storage)
-- Call REST API to execute conversion (in the example bellow)
-- Download conversion result back from storage using [Storage API](https://docs.aspose.cloud/html/storage-api/working-with-files-in-the-storage)
+The following example demonstrates how to convert **HTML to XPS** using REST API. Local HTML converted to XPS and saved to the local file system. Follow a few required steps:
+- Upload local file to storage using [Storage API](https://docs.aspose.cloud/html/storage-api/working-with-files-in-the-storage).
+- Call REST API to execute conversion (in the example below).
+- Download conversion result back from storage using [Storage API](https://docs.aspose.cloud/html/storage-api/working-with-files-in-the-storage).
 ```bash
 curl -X POST -v \
 	"https://api.aspose.cloud/v4.0/html/conversion/html-xps" \
@@ -287,13 +283,13 @@ Aspose.HTML Cloud allows you to get an HTML page from the web by its URL, conver
 
 {{< tab tabNum="1" >}}
 
-The following example shows how to convert **HTML to XPS C#** language applying. HTML is got from the Web, converted to XPS and saved to the local file system. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
+The following example shows how to convert **HTML to XPS C#** language applying. HTML is taken from the Web, converted to XPS and saved to the local file system. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
 ```c#
-// Initialize 
+// Initialize SDK API
 var api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET").ConvertApi;
 
-// Convert
+// Convert HTML to XPS
 var result = await api.ConvertUrlAsync("https://example.com", "test.xps");
 ```
 
@@ -382,9 +378,9 @@ The following example shows how to convert **HTML to XPS Java/Android** applying
 {{< tab tabNum="10" >}}
 
 The following example demonstrates how to convert **HTML to XPS** using REST API. HTML is taken from the Web, converted to XPS and saved to the local file system.
-2 steps:
-- Call REST API to execute conversion (in the example bellow)
-- Download conversion result back from storage using [Storage API](https://docs.aspose.cloud/html/storage-api/working-with-files-in-the-storage)
+Follow a few required steps:
+- Call REST API to execute conversion (in the example below).
+- Download conversion result back from storage using [Storage API](https://docs.aspose.cloud/html/storage-api/working-with-files-in-the-storage).
 ```bash
 curl -X POST -v \
 	"https://api.aspose.cloud/v4.0/html/conversion/html-xps" \
@@ -410,10 +406,10 @@ Aspose.HTML Cloud allows you to get an HTML file from your cloud storage and sav
 The following example shows how to convert **HTML to XPS C#** language applying. HTML file is located in a cloud storage, converted to XPS and saved back to the cloud storage. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
 ```c#
-// Initialize 
+// Initialize SDK API
 var api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET").ConvertApi;
 
-// Convert
+// Convert HTML to XPS
 var builder = new ConverterBuilder()
                 .FromStorageFile("/test.html")
                 .ToStorageFile("/test.xps");
@@ -425,7 +421,7 @@ var result = await api.ConvertAsync(builder);
 
 {{< tab tabNum="2" >}}
 
-The following example shows how to convert **HTML to XPS java** language applying. HTML is taken from the Web, converted to XPS and saved to the local file system. You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
+The following example shows how to convert **HTML to XPS java** language applying. HTML file is located in a cloud storage, converted to XPS and saved back to the cloud storage. You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
 
 ```java
 
@@ -435,7 +431,7 @@ The following example shows how to convert **HTML to XPS java** language applyin
 
 {{< tab tabNum="3" >}}
 
-The following example demonstrates how to convert **HTML to XPS C++** language applying. HTML is taken from the Web, converted to XPS and saved to the local file system. 
+The following example demonstrates how to convert **HTML to XPS C++** language applying. HTML file is located in a cloud storage, converted to XPS and saved back to the cloud storage. 
 
 ```c++
 
@@ -445,7 +441,7 @@ The following example demonstrates how to convert **HTML to XPS C++** language a
 
 {{< tab tabNum="4" >}}
 
-The following example shows how to convert **HTML to XPS Python** language applying. HTML is taken from the Web, converted to XPS and saved to the local file system. You can download the Python SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-python).
+The following example shows how to convert **HTML to XPS Python** language applying. HTML file is located in a cloud storage, converted to XPS and saved back to the cloud storage. You can download the Python SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-python).
 
 ```python
 
@@ -455,7 +451,7 @@ The following example shows how to convert **HTML to XPS Python** language apply
 
 {{< tab tabNum="5" >}}
 
-The following example demonstrates how to convert **HTML to XPS PHP** language applying. HTML is taken from the Web, converted to XPS and saved to the local file system. You can download the PHP SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-php).
+The following example demonstrates how to convert **HTML to XPS PHP** language applying. HTML file is located in a cloud storage, converted to XPS and saved back to the cloud storage. You can download the PHP SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-php).
 
 ```php
 
@@ -465,7 +461,7 @@ The following example demonstrates how to convert **HTML to XPS PHP** language a
 
 {{< tab tabNum="6" >}}
 
-The following example shows how to convert **HTML to XPS Ruby** language applying. HTML is taken from the Web, converted to XPS and saved to the local file system. You can download the Ruby SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby).
+The following example shows how to convert **HTML to XPS Ruby** language applying. HTML file is located in a cloud storage, converted to XPS and saved back to the cloud storage. You can download the Ruby SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby).
 
 ```ruby
 
@@ -475,7 +471,7 @@ The following example shows how to convert **HTML to XPS Ruby** language applyin
 
 {{< tab tabNum="7" >}}
 
-The following example shows how to convert **HTML to XPS Node.js** language applying. HTML is taken from the Web, converted to XPS and saved to the local file system. 
+The following example shows how to convert **HTML to XPS Node.js** language applying. HTML file is located in a cloud storage, converted to XPS and saved back to the cloud storage. 
 
 ```javascript
 
@@ -485,7 +481,7 @@ The following example shows how to convert **HTML to XPS Node.js** language appl
 
 {{< tab tabNum="8" >}}
 
-The following example shows how to convert **HTML to XPS Swift** language applying. HTML is taken from the Web, converted to XPS and saved to the local file system. You can download the Swift SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-swift).
+The following example shows how to convert **HTML to XPS Swift** language applying. HTML file is located in a cloud storage, converted to XPS and saved back to the cloud storage. You can download the Swift SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-swift).
 
 ```swift
 
@@ -495,7 +491,7 @@ The following example shows how to convert **HTML to XPS Swift** language applyi
 
 {{< tab tabNum="9" >}}
 
-The following example shows how to convert **HTML to XPS Java/Android** applying. HTML is taken from the Web, converted to XPS and saved to the local file system. You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
+The following example shows how to convert **HTML to XPS Java/Android** applying. HTML file is located in a cloud storage, converted to XPS and saved back to the cloud storage. You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
 
 ```java
 
