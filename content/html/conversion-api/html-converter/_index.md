@@ -1,10 +1,10 @@
 ---
-title: HTML converter - Convert HTML with Cloud APIs
-linktitle: HTML converter
+title: HTML Converter - Convert EPUB with Cloud SDKs and REST API
+linktitle: HTML Converter
 type: docs
 aliases: /conversion-rest-api/html-converter/
 keywords: html converter, convert html, convert html files, html files, html conversion, cloud sdk, rest api, rest api call
-description: Convert HTML files to popular formats such as PDF, XPS, DOCX, PNG, JPG, BMP, TIFF, GIF, MHTML, and Markdown using Aspose.HTML Cloud SDKs.
+description: Convert HTML files to popular formats such as PDF, XPS, DOCX, PNG, JPG, GIF, MHTML, and Markdown using Aspose.HTML Cloud SDKs and REST API.
 weight: 10
 url: /conversion-api/html-converter/
 lastmod: 2022-11-03

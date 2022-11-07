@@ -261,7 +261,7 @@ Aspose.HTML Cloud allows you to get an HTML file from your cloud storage and sav
 
 {{< tab tabNum="1" >}}
 
-The following example shows how to convert **HTML to MHTML C#** language applying. HTML file is located in a cloud storage, converted to MHTML and saved back to the cloud storage. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
+The following example shows how to convert **HTML to MHTML C#** language applying. HTML file is located in cloud storage, converted to MHTML and saved back to the cloud storage. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
 ```c#
 // Initialize SDK API
@@ -289,7 +289,7 @@ The following example shows how to convert **HTML to MHTML java** language apply
 
 {{< tab tabNum="3" >}}
 
-The following example demonstrates how to convert **HTML to MHTML C++** language applying. HTML file is in the cloud storage, converted to MHTML and saved back to the cloud storage. 
+The following example demonstrates how to convert **HTML to MHTML C++** language applying. HTML file is in cloud storage, converted to MHTML and saved back to the cloud storage. 
 
 ```c++
 
@@ -299,7 +299,7 @@ The following example demonstrates how to convert **HTML to MHTML C++** language
 
 {{< tab tabNum="4" >}}
 
-The following example shows how to convert **HTML to MHTML Python** language applying. HTML file is in the cloud storage, converted to MHTML and saved back to the cloud storage. You can download the Python SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-python).
+The following example shows how to convert **HTML to MHTML Python** language applying. HTML file is in cloud storage, converted to MHTML and saved back to the cloud storage. You can download the Python SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-python).
 
 ```python
 
@@ -309,7 +309,7 @@ The following example shows how to convert **HTML to MHTML Python** language app
 
 {{< tab tabNum="5" >}}
 
-The following example demonstrates how to convert **HTML to MHTML PHP** language applying. HTML file is in the cloud storage, converted to MHTML and saved back to the cloud storage. You can download the PHP SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-php).
+The following example demonstrates how to convert **HTML to MHTML PHP** language applying. HTML file is in cloud storage, converted to MHTML and saved back to the cloud storage. You can download the PHP SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-php).
 
 ```php
 
@@ -319,7 +319,7 @@ The following example demonstrates how to convert **HTML to MHTML PHP** language
 
 {{< tab tabNum="6" >}}
 
-The following example shows how to convert **HTML to MHTML Ruby** language applying. HTML file is in the cloud storage, converted to MHTML and saved back to the cloud storage. You can download the Ruby SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby).
+The following example shows how to convert **HTML to MHTML Ruby** language applying. HTML file is in cloud storage, converted to MHTML and saved back to the cloud storage. You can download the Ruby SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby).
 
 ```ruby
 
@@ -329,7 +329,7 @@ The following example shows how to convert **HTML to MHTML Ruby** language apply
 
 {{< tab tabNum="7" >}}
 
-The following example shows how to convert **HTML to MHTML Node.js** language applying. HTML file is in the cloud storage, converted to MHTML and saved back to the cloud storage. 
+The following example shows how to convert **HTML to MHTML Node.js** language applying. HTML file is in cloud storage, converted to MHTML and saved back to the cloud storage. 
 
 ```javascript
 
@@ -339,7 +339,7 @@ The following example shows how to convert **HTML to MHTML Node.js** language ap
 
 {{< tab tabNum="8" >}}
 
-The following example shows how to convert **HTML to MHTML Swift** language applying. HTML file is in the cloud storage, converted to MHTML and saved back to the cloud storage. You can download the Swift SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-swift).
+The following example shows how to convert **HTML to MHTML Swift** language applying. HTML file is in cloud storage, converted to MHTML and saved back to the cloud storage. You can download the Swift SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-swift).
 
 ```swift
 
@@ -349,7 +349,7 @@ The following example shows how to convert **HTML to MHTML Swift** language appl
 
 {{< tab tabNum="9" >}}
 
-The following example shows how to convert **HTML to MHTML Java/Android** applying. HTML file is in the cloud storage, converted to MHTML and saved back to the cloud storage. You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
+The following example shows how to convert **HTML to MHTML Java/Android** applying. HTML file is in cloud storage, converted to MHTML and saved back to cloud storage. You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
 
 ```java
 
@@ -359,7 +359,7 @@ The following example shows how to convert **HTML to MHTML Java/Android** applyi
 
 {{< tab tabNum="10" >}}
 
-The following example demonstrates how to convert **HTML to MHTML** using REST API. HTML file is located in a cloud storage, converted to MHTML and saved back to the cloud storage.
+The following example demonstrates how to convert **HTML to MHTML** using REST API. HTML file is located in cloud storage, converted to MHTML and saved back to cloud storage.
 ```bash
 curl -X POST -v \
 	"https://api.aspose.cloud/v4.0/html/conversion/html-mhtml" \

@@ -262,7 +262,7 @@ Aspose.HTML Cloud allows you to get an HTML file from your cloud storage and sav
 
 {{< tab tabNum="1" >}}
 
-The following example shows how to convert **HTML to Markdown C#** language applying. HTML file is located in a cloud storage, converted to Markdown and saved back to the cloud storage. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
+The following example shows how to convert **HTML to Markdown C#** language applying. HTML file is located in cloud storage, converted to Markdown and saved back to the cloud storage. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
 ```c#
 // Initialize SDK API
@@ -280,7 +280,7 @@ var result = await api.ConvertAsync(builder);
 
 {{< tab tabNum="2" >}}
 
-The following example shows how to convert **HTML to Markdown java** language applying. HTML file is in a cloud storage, converted to Markdown and saved back to the cloud storage. You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
+The following example shows how to convert **HTML to Markdown java** language applying. HTML file is in cloud storage, converted to Markdown and saved back to the cloud storage. You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
 
 ```java
 
@@ -290,7 +290,7 @@ The following example shows how to convert **HTML to Markdown java** language ap
 
 {{< tab tabNum="3" >}}
 
-The following example demonstrates how to convert **HTML to Markdown C++** language applying. HTML file is located in a cloud storage, converted to Markdown and saved back to the cloud storage.
+The following example demonstrates how to convert **HTML to Markdown C++** language applying. HTML file is located in cloud storage, converted to Markdown and saved back to the cloud storage.
 
 ```c++
 
@@ -300,7 +300,7 @@ The following example demonstrates how to convert **HTML to Markdown C++** langu
 
 {{< tab tabNum="4" >}}
 
-The following example shows how to convert **HTML to Markdown Python** language applying. HTML file is located in a cloud storage, converted to Markdown and saved back to the cloud storage. You can download the Python SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-python).
+The following example shows how to convert **HTML to Markdown Python** language applying. HTML file is located in cloud storage, converted to Markdown and saved back to  cloud storage. You can download the Python SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-python).
 
 ```python
 
@@ -310,7 +310,7 @@ The following example shows how to convert **HTML to Markdown Python** language 
 
 {{< tab tabNum="5" >}}
 
-The following example demonstrates how to convert **HTML to Markdown PHP** language applying. HTML file is located in a cloud storage, converted to Markdown and saved back to the cloud storage. You can download the PHP SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-php).
+The following example demonstrates how to convert **HTML to Markdown PHP** language applying. HTML file is located in cloud storage, converted to Markdown and saved back to cloud storage. You can download the PHP SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-php).
 
 ```php
 
@@ -320,7 +320,7 @@ The following example demonstrates how to convert **HTML to Markdown PHP** langu
 
 {{< tab tabNum="6" >}}
 
-The following example shows how to convert **HTML to Markdown Ruby** language applying. HTML file is located in the cloud storage, converted to Markdown and saved back to the cloud storage. You can download the Ruby SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby).
+The following example shows how to convert **HTML to Markdown Ruby** language applying. HTML file is located in cloud storage, converted to Markdown and saved back to cloud storage. You can download the Ruby SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby).
 
 ```ruby
 
@@ -330,7 +330,7 @@ The following example shows how to convert **HTML to Markdown Ruby** language ap
 
 {{< tab tabNum="7" >}}
 
-The following example shows how to convert **HTML to Markdown Node.js** language applying. HTML file is located in the cloud storage, converted to Markdown and saved back to the cloud storage.
+The following example shows how to convert **HTML to Markdown Node.js** language applying. HTML file is located in cloud storage, converted to Markdown and saved back to cloud storage.
 
 ```javascript
 
@@ -340,7 +340,7 @@ The following example shows how to convert **HTML to Markdown Node.js** language
 
 {{< tab tabNum="8" >}}
 
-The following example shows how to convert **HTML to Markdown Swift** language applying. HTML file is in the cloud storage, converted to Markdown and saved back to the cloud storage. You can download the Swift SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-swift).
+The following example shows how to convert **HTML to Markdown Swift** language applying. HTML file is in cloud storage, converted to Markdown and saved back to cloud storage. You can download the Swift SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-swift).
 
 ```swift
 
@@ -350,7 +350,7 @@ The following example shows how to convert **HTML to Markdown Swift** language a
 
 {{< tab tabNum="9" >}}
 
-The following example shows how to convert **HTML to Markdown Java/Android** applying. HTML file is located in a cloud storage, converted to Markdown and saved back to the cloud storage. You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
+The following example shows how to convert **HTML to Markdown Java/Android** applying. HTML file is located in cloud storage, converted to Markdown and saved back to cloud storage. You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
 
 ```java
 
@@ -360,7 +360,7 @@ The following example shows how to convert **HTML to Markdown Java/Android** app
 
 {{< tab tabNum="10" >}}
 
-The following example demonstrates how to convert **HTML to Markdown** using REST API. HTML file is located in the cloud storage, converted to Markdown and saved back to the cloud storage.
+The following example demonstrates how to convert **HTML to Markdown** using REST API. HTML file is located in cloud storage, converted to Markdown and saved back to the cloud storage.
 ```bash
 curl -X POST -v \
 	"https://api.aspose.cloud/v4.0/html/conversion/html-md" \

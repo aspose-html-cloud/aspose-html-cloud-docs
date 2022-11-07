@@ -14,7 +14,7 @@ lastmod: 2022-11-03
 
 A widespread use case for Aspose.HTML Cloud functions is file processing and converting. This article explains in a set of code examples how to convert {{%HTML%}} to Image file formats such as JPG, PNG, GIF, TIFF, and BMP. We will consider various scenarios of HTML to Image conversion: from storage to storage, from a local file system to a local drive, and from the Web to the local file system.
 
-This article explains in a set of code examples how to convert an HTML document to {{%JPEG%}}, {{%PNG%}}, {{%GIF%}}, {{%TIFF%}} or {{%BMP%}} formats using Aspose.HTML Cloud SDKs.
+This article explains in a set of code examples how to convert an HTML document to {{%JPEG%}}, {{%PNG%}}, {{%GIF%}}, {{%TIFF%}} or {{%BMP%}} formats using Aspose.HTML Cloud SDKs and REST API calls.
 
 ## **Examples of HTML to Image Conversion**
 
@@ -72,7 +72,7 @@ The following example demonstrates how to convert **HTML to JPEG Python** langua
 
 {{< tab tabNum="5" >}}
 
-The following example demonstrates how to convert **HTML to JPEG JPEG** language applying. Local HTML converted to JPEG and saved to the local path. You can download the PHP SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-php)
+The following example demonstrates how to convert **HTML to JPEG PHP** language applying. Local HTML converted to JPEG and saved to the local path. You can download the PHP SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-php)
 
 ```php
 

@@ -1,7 +1,7 @@
 ---
 title: Convert HTML to PDF - Cloud SDKs
 linktitle: Convert HTML to PDF
-keywords: convert html to pdf, cloud sdks, html to pdf, html to pdf conversion, sdk example, sdk api, python, php, perl, android, swift, c#, java, node.js, curl
+keywords: convert html to pdf, cloud sdks, html to pdf, html to pdf conversion, sdk example, sdk api, python, php, ruby, perl, android, swift, c#, java, node.js, curl
 description: Learn how to use Cloud SDKs and REST API to convert HTML to PDF. SDKs are available in PHP, Perl, Python, C#, Java, Android, Swift and more
 weight: 10
 type: docs
@@ -13,7 +13,7 @@ lastmod: 2022-11-03
 
 Aspose.HTML Cloud v4.0 provides the simplest API to convert {{%HTML%}} documents to {{%PDF%}} format with high quality, easy and fast. HTML files are frequently used to create, edit, or communicate a lot of information.  HTML to PDF conversion is often required to establish limited access to documents editing or copying, to produce official documentation, or send some information, for example, by email.
 
-The article explains in a set of Aspose.HTML Cloud SDKs and REST API examples how to convert HTML to PDF. We will consider various scenarios of HTML to PDF conversion: from storage to storage, from a local file system to the storage and from the Web to a local file system.
+The article explains in a set of Aspose.HTML Cloud SDKs and REST API examples how to convert HTML to PDF. We will consider various scenarios of HTML to PDF conversion: from storage to storage, local file to the local file system and from the Web to a local file system.
 
 ## **Examples of HTML to PDF Conversion**
 
@@ -400,7 +400,7 @@ Aspose.HTML Cloud allows you to get an HTML file from your cloud storage and sav
 
 {{< tab tabNum="1" >}}
 
-The following example shows how to convert **HTML to PDF C#** language applying. An HTML file is located in cloud storage, converted to PDF and saved back to the cloud storage. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
+The following example shows how to convert **HTML to PDF C#** language applying. An HTML file is located in cloud storage, converted to PDF and saved back to cloud storage. You can download the C# SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
 
 ```c#
 // Initialize SDK API 
@@ -418,7 +418,7 @@ var result = await api.ConvertAsync(builder);
 
 {{< tab tabNum="2" >}}
 
-The following example shows how to convert **HTML to PDF java** language applying. The HTML file is in the cloud storage, converted to PDF and saved back to the cloud storage. You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
+The following example shows how to convert **HTML to PDF java** language applying. The HTML file is in cloud storage, converted to PDF and saved back to cloud storage. You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
 
 ```java
 
@@ -428,7 +428,7 @@ The following example shows how to convert **HTML to PDF java** language applyin
 
 {{< tab tabNum="3" >}}
 
-The following example demonstrates how to convert **HTML to PDF C++** language applying. The HTML file is in the cloud storage, converted to PDF and saved back to the cloud storage. 
+The following example demonstrates how to convert **HTML to PDF C++** language applying. The HTML file is in cloud storage, converted to PDF and saved back to cloud storage. 
 
 ```c++
 
@@ -438,7 +438,7 @@ The following example demonstrates how to convert **HTML to PDF C++** language a
 
 {{< tab tabNum="4" >}}
 
-The following example shows how to convert **HTML to PDF Python** language applying. The HTML file is in the cloud storage, converted to PDF and saved back to the cloud storage. You can download the Python SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-python).
+The following example shows how to convert **HTML to PDF Python** language applying. The HTML file is in cloud storage, converted to PDF and saved back to cloud storage. You can download the Python SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-python).
 
 ```python
 
@@ -448,7 +448,7 @@ The following example shows how to convert **HTML to PDF Python** language apply
 
 {{< tab tabNum="5" >}}
 
-The following example demonstrates how to convert **HTML to PDF PHP** language applying. The HTML file is in the cloud storage, converted to PDF and saved back to the cloud storage. You can download the PHP SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-php).
+The following example demonstrates how to convert **HTML to PDF PHP** language applying. The HTML file is in cloud storage, converted to PDF and saved back to cloud storage. You can download the PHP SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-php).
 
 ```php
 
@@ -458,7 +458,7 @@ The following example demonstrates how to convert **HTML to PDF PHP** language a
 
 {{< tab tabNum="6" >}}
 
-The following example shows how to convert **HTML to PDF Ruby** language applying. The HTML file is in the cloud storage, converted to PDF and saved back to the cloud storage. You can download the Ruby SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby).
+The following example shows how to convert **HTML to PDF Ruby** language applying. The HTML file is in cloud storage, converted to PDF and saved back to cloud storage. You can download the Ruby SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby).
 
 ```ruby
 
@@ -468,7 +468,7 @@ The following example shows how to convert **HTML to PDF Ruby** language applyin
 
 {{< tab tabNum="7" >}}
 
-The following example shows how to convert **HTML to PDF Node.js** language applying. The HTML file is in the cloud storage, converted to PDF and saved back to the cloud storage. 
+The following example shows how to convert **HTML to PDF Node.js** language applying. The HTML file is in cloud storage, converted to PDF and saved back to cloud storage. 
 
 ```javascript
 
@@ -478,7 +478,7 @@ The following example shows how to convert **HTML to PDF Node.js** language appl
 
 {{< tab tabNum="8" >}}
 
-The following example shows how to convert **HTML to PDF Swift** language applying. The HTML file is in the cloud storage, converted to PDF and saved back to the cloud storage. You can download the Swift SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-swift).
+The following example shows how to convert **HTML to PDF Swift** language applying. The HTML file is in cloud storage, converted to PDF and saved back to cloud storage. You can download the Swift SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-swift).
 
 ```swift
 
@@ -488,7 +488,7 @@ The following example shows how to convert **HTML to PDF Swift** language applyi
 
 {{< tab tabNum="9" >}}
 
-The following example shows how to convert **HTML to PDF Java/Android** applying. The HTML file is in the cloud storage, converted to PDF and saved back to the cloud storage. You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
+The following example shows how to convert **HTML to PDF Java/Android** applying. The HTML file is in cloud storage, converted to PDF and saved back to cloud storage. You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
 
 ```java
 
@@ -498,7 +498,7 @@ The following example shows how to convert **HTML to PDF Java/Android** applying
 
 {{< tab tabNum="10" >}}
 
-The following example demonstrates how to convert **HTML to PDF** using REST API. HTML file is located in cloud storage, converted to PDF and saved back to the cloud storage.
+The following example demonstrates how to convert **HTML to PDF** using REST API. HTML file is located in cloud storage, converted to PDF and saved back to cloud storage.
 ```bash
 curl -X POST -v \
 	"https://api.aspose.cloud/v4.0/html/conversion/html-pdf" \
