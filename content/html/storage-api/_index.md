@@ -22,8 +22,6 @@ Install Aspose.HTML Cloud SDK for .NET via [NuGet](https://www.nuget.org/package
 
 Aspose.HTML Cloud gives the API to access files and folders stored in the user associated Aspose cloud storage. 
 
-The provided storage API of version 4.0 is an alternative interface to the same functionality as in API v.3.0. 
-
 Storage API is divided into the following groups:
 
 - [Storage common information access API](/html/storage-api/getting-storage-information/)
@@ -34,30 +32,22 @@ Storage API is divided into the following groups:
 
 ## **REST API Information**
 
-The Aspose.HTML Cloud API is a REST-based API for wide usability on the web across platforms.  The REST API uses existing HTTP methods, such as: **GET** - to retrieve a resource; **PUT** - to change the state of or update a resource, which can be an object, file or block; **POST** - to create that resource; and **DELETE** - to remove it.
-
 To create a correctly constructed HTTP request, you should build URI relative to https://api.aspose.cloud/v4.0/html.
 
-| **API**                                                      | **Type** | **Description**                                              | **Swagger Link**                                             |
+| **API**                                                      | **Type** | **Description**                                              | Link**                                             |
 | :----------------------------------------------------------- | :------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | ***Storage***                                                |          |                                                              |                                                              |
-| /storage/exist/storage?storageName={**storageName**}         | GET      | Check if storage exists                                      | [StorageExists](https://apireference.aspose.cloud/html/#/StorageV4/StorageExists) |
-| /storage/exist?path={**path**}&storageName={*storageName*}   | GET      | Check if a file or folder exists                             | [ObjectExists](https://apireference.aspose.cloud/html/#/StorageV4/ObjectExists) |
-| /storage/disc?storageName={**storageName**}                  | GET      | Get disc usage in the storage                                | [GetDiscUsage](https://apireference.aspose.cloud/html/#/StorageV4/GetDiscUsage) |
-| /storage/version?path={**path**}&storageName={*storageName*} | GET      | Get list of file versions                                    | [GetFileVersions](https://apireference.aspose.cloud/html/#/StorageV4/GetFileVersions) |
-|                                                              |          |                                                              |                                                              |
+| /storage/exist/storage?storageName={**storageName**}         | GET      | Check if storage exists                                      | 
+| /storage/exist?path={**path**}&storageName={*storageName*}   | GET      | Check if a file or folder exists                             | 
+| /storage/disc/usage?storageName={**storageName**}                  | GET      | Get disc usage in the storage                                |                                                           |
 | ***Folder***                                                 |          |                                                              |                                                              |
-| /folder?path={**path**}&storageName={*storageName*}          | GET      | Return a list of files and folders in the specified folder (or in the root folder by default) of the storage | [GetFilesList](https://apireference.aspose.cloud/html/#/FolderV4/GetFilesList) |
-| /folder?path={**path**}&storageName={*storageName*}          | POST     | Create a folder                                              | [CreateFolder](https://apireference.aspose.cloud/html/#/FolderV4/CreateFolder) |
-| /folder/copy?srcpath={**srcPath**}&destpath={**destPath**}&srcstoragename={*srcStorageName*}&srcstoragename={*destStorageName*} | PUT      | Copy the folder                                              | [CopyFolder](https://apireference.aspose.cloud/html/#/FolderV4/CopyFolder) |
-| /folder/move?srcpath={**srcPath**}&destpath={*destPath*}&srcstoragename={*srcStorageName*}&srcstoragename={*destStorageName*} | PUT      | Move the folder                                              | [MoveFolder](https://apireference.aspose.cloud/html/#/FolderV4/MoveFolder) |
-| /folder?path={**path**}&storageName={*storageName*}          | DELETE   | Delete the folder                                            | [DeleteFolder](https://apireference.aspose.cloud/html/#/FolderV4/DeleteFolder) |
+| /folder?path={**path**}&storageName={*storageName*}          | GET      | Return a list of files and folders in the specified folder (or in the root folder by default) of the storage | 
+| /folder?path={**path**}&storageName={*storageName*}          | POST     | Create a folder                                              |                                             | 
+| /folder?path={**path**}&storageName={*storageName*}          | DELETE   | Delete the folder                                            | 
 |                                                              |          |                                                              |                                                              |
 | ***File***                                                   |          |                                                              |                                                              |
-| /file?path={**path**}&storageName={*storageName*}&versionId={*versionId*} | GET      | Download the file                                            | [DownloadFile](https://apireference.aspose.cloud/html/#/FileV4/DownloadFile) |
-| /file?path={**path**}&storageName={*storageName*}            | POST     | Upload the file                                              | [UploadFile](https://apireference.aspose.cloud/html/#/FileV4/UploadFile) |
-| /file/copy?srcpath={**srcPath**}&destpath={**destPath**}&srcstoragename={*srcStorageName*}&srcstoragename={*destStorageName*}&versionId={*versionId*} | PUT      | Copy the file                                                | [CopyFile](https://apireference.aspose.cloud/html/#/StorageV4/CopyFile) |
-| /file/move?srcpath={**srcPath**}&destpath={**destPath**}&srcstoragename={*srcStorageName*}&srcstoragename={*destStorageName*}&versionId={*versionId*} | PUT      | Move the file                                                | [MoveFile](https://apireference.aspose.cloud/html/#/StorageV4/MoveFile) |
+| /file?path={**path**}&storageName={*storageName*}&versionId={*versionId*} | GET      | Download the file                                            | 
+| /file?path={**path**}&storageName={*storageName*}            | POST     | Upload the file                                              |                                                | 
 | /file?path={***path***}&storageName={*storageName*}&versionId={*versionId*} | DELETE   | Delete the file                                              | [DeleteFolder](https://apireference.aspose.cloud/html/#/FolderV4/DeleteFolder) |
 
 
