@@ -12,26 +12,388 @@ weight: 30
 
 Aspose.HTML Cloud v4.0 allows you to work and manipulate folders in the cloud storage and provides the ability to use its functionality both by the REST API directly or by the set of wrappers implemented as SDKs on the various programming languages.
 
-This section provides details about how to work with folders using Aspose.HTML Cloud. Learn how to manage folders and use  Cloud API functionality for your projects or applications!
+This article provides a detailed description of SDK and REST methods to manipulate files in the cloud storage, i.e. upload, download or delete files.
 
-## **Cloud SDK family**
 
-{{% alert color="primary" %}} 
-Install Aspose.HTML Cloud SDK for .NET via [NuGet](https://www.nuget.org/packages/Aspose.HTML-Cloud/). Complete source code of Aspose.HTML SDK for .NET is freely available on [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet).
+## **Examples**
 
-{{% /alert %}}  
+### **Example 1: Check if file exists**
 
-Aspose.HTML Cloud SDKs are developed on top of true REST APIs, enabling you to perform a wide range of folder processing operations, including creating, copying, moving, manipulating, and deleting in the cloud. SDKs are available in C #, PHP, Perl, Android, Swift, Java, and other languages to help developers speed up development. 
 
-To obtain more information about SDK methods for folder operations in Aspose.HTML Cloud, click the following link:
+{{< tabs tabTotal="10" tabID="1" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" tabName10="CURL" >}}
 
- - [Folder SDK methods](/html/storage-api/working-with-folders-in-the-storage/folder-sdk-methods/)
+{{< tab tabNum="1" >}}
 
-## **REST API**
+```c#
+// Initialize 
+var api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET").StorageApi;
 
-The Aspose.HTML Cloud API is a REST-based API for wide usability on the web across platforms. A call to the REST API consists of a client's request, and a response returned by the service. In the request, you send a URL with information about which operation you want to call, the resource to act upon, query parameters, etc.
+// Check if exists
+var exists = await api.FileExistsAsync("/test.html");
+```
 
-To obtain more information about Aspose.HTML Cloud folder operations using REST API requests, click the following link:
+{{< /tab >}}
 
- - [Folder REST API operations](/html/storage-api/working-with-folders-in-the-storage/folder-rest-api/)
+{{< tab tabNum="2" >}}
+
+```java
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+```c++
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="4" >}}
+
+
+```python
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="5" >}}
+
+```php
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="6" >}}
+
+```ruby
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="7" >}}
+
+```javascript
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="8" >}}
+
+```swift
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="9" >}}
+
+```java
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="10" >}}
+
+```bash
+curl -X POST -v \
+	"https://api.aspose.cloud/v4.0/html/storage/exists?path=test.html&storageName=STORAGE_NAME" \
+    -H "Content-Type: application/json" \
+    -H "Authorization:Bearer <JWT_token>"
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}	
+
+
+### **Example 2: Upload file from local file system to the specified storage**
+
+
+{{< tabs tabTotal="10" tabID="3" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" tabName10="CURL" >}}
+
+{{< tab tabNum="1" >}}
+
+```c#
+// Initialize 
+var api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET").StorageApi;
+
+// Upload local file test.html to "files" folder in the cloud storage
+var exists = await api.UploadFileAsync("test.html", "files/test.html", "STORAGE_NAME");
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+```java
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+```c++
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="4" >}}
+
+
+```python
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="5" >}}
+
+```php
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="6" >}}
+
+```ruby
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="7" >}}
+
+```javascript
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="8" >}}
+
+```swift
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="9" >}}
+
+```java
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="10" >}}
+
+```bash
+curl -X POST \
+	-v "https://api.aspose.cloud/v4.0/html/file?path=/files/test.html&storageName=MyStorage" \
+	--data-binary test.html \
+    -H "Authorization:Bearer <JWT_token>"
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}	
+
+### **Example 3: Download file from cloud storage to local file system**
+
+
+{{< tabs tabTotal="10" tabID="4" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" tabName10="CURL" >}}
+
+{{< tab tabNum="1" >}}
+
+```c#
+// Initialize 
+var api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET").StorageApi;
+
+// Download test.html file from cloud folder "files" to local file system
+var exists = await api.DownloadFileAsync("files/test.html", "test.html", "STORAGE_NAME");
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+```java
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+```c++
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="4" >}}
+
+
+```python
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="5" >}}
+
+```php
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="6" >}}
+
+```ruby
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="7" >}}
+
+```javascript
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="8" >}}
+
+```swift
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="9" >}}
+
+```java
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="10" >}}
+
+```bash
+curl -X GET \
+	-v "https://api.aspose.cloud/v4.0/html/file?path=/files/test.html&storageName=MyStorage" \
+	--output test.html \
+    -H "Authorization:Bearer <JWT_token>"
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}	
+
+### **Example 4: Delete a storage file by its path from the specified or default storage.**
+
+
+{{< tabs tabTotal="10" tabID="5" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" tabName10="CURL" >}}
+
+{{< tab tabNum="1" >}}
+
+```c#
+// Initialize 
+var api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET").StorageApi;
+
+// Delete test.html file located in the cloud folder named "files"
+var exists = await api.DeleteFileAsync("files/test.html", "STORAGE_NAME");
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+```java
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+```c++
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="4" >}}
+
+
+```python
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="5" >}}
+
+```php
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="6" >}}
+
+```ruby
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="7" >}}
+
+```javascript
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="8" >}}
+
+```swift
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="9" >}}
+
+```java
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="10" >}}
+
+```bash
+curl -X DELETE \
+	-v "https://api.aspose.cloud/v4.0/html/file?path=/files/test.html&storageName=MyStorage" \
+    -H "Authorization:Bearer <JWT_token>"
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}	
 

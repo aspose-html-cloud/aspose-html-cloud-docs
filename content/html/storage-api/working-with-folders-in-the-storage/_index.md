@@ -14,32 +14,336 @@ Aspose.HTML Cloud allows you to work with documents saved on the cloud storage a
 
  Storage services enable developers to store data in the cloud, relying on authentication and other access features that control who can get to the data. If you need any information about getting started with Aspose.HTML Cloud, please refer to the [Create an Account and Get Credentials](/html/overview/create-an-account-and-get-credentials/) article.
 
- This chapter provides a detailed description of REST API operations to manipulate files in the cloud storage, i.e. upload, download, copy, move or delete files. If storage supports file versioning, it is an option to operate with a specified file version.
-
-
 
 ## **Cloud SDK family**
 
 Cloud storage allows world-wide storage and retrieval of data at any time. Aspose.HTML provides the [Cloud SDK Family](https://products.aspose.cloud/html/family) to access files and folders stored in the user associated Aspose Cloud Storage or any other Cloud Storage of your choice. If you need any help to get started with setting third party storage, please refer to [Aspose Cloud UI Help Topics](https://docs.aspose.cloud/total/aspose-cloud-ui-help-topics/).
 
-{{% alert color="primary" %}} 
-Install Aspose.HTML Cloud SDK for .NET via [NuGet](https://www.nuget.org/packages/Aspose.HTML-Cloud/). Complete source code of Aspose.HTML SDK for .NET is freely available on the [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet) repository.
 
-{{% /alert %}}  
+### **Examples**
 
-To obtain more information about SDK methods for file operations in Aspose.HTML Cloud, click the following link:
+### **Check if a directory specified by the path exists in the specified or default storage**
 
-- [File SDK methods](/html/storage-api/working-with-files-in-the-storage/file-sdk-methods/)
 
-## **REST API Description**
+{{< tabs tabTotal="10" tabID="1" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" tabName10="CURL" >}}
 
-REST API is one of the most common web services available today. It can be called from any platform that supports HTTP / HTTPS, and it does not depend on the software running on the server or client.
+{{< tab tabNum="1" >}}
 
-The action must be recorded by the HTTP request method that you make. The most common methods include GET, POST, PUT and DELETE. More detailed information about REST URLs’ structure and specific behavior linked to the API such as Authentication, Request Queuing, and Storage you can find in the [REST API Overview](https://docs.aspose.cloud/total/getting-started/rest-api-overview/) article.
+```c#
+// Initialize 
+var api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET").StorageApi;
 
-To obtain more information about file operations using REST API requests, click the following link:
+// Check if directory "files" exists
+var exists = await api.DirectoryExistsAsync("/files", "STORAGE_NAME");
+```
 
- - [File REST API operations](/html/storage-api/working-with-files-in-the-storage/file-rest-api/)
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+```java
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+```c++
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="4" >}}
+
+
+```python
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="5" >}}
+
+```php
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="6" >}}
+
+```ruby
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="7" >}}
+
+```javascript
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="8" >}}
+
+```swift
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="9" >}}
+
+```java
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="10" >}}
+
+```
+/storage/exists?path={path}&storageName={storageName}
+```
+
+**Parameters:**
+
+| Name        | Description                                       | Passed in | Required |
+| :---------- | :------------------------------------------------ | :-------- | :------- |
+| path        | Folder path                                       | Query     | +        |
+| storageName | Storage name or default storage if not specified. | Query     | -        |
+
+```bash
+curl -X POST -v \
+	"https://api.aspose.cloud/v4.0/html/storage/exists?path=/files&storageName=STORAGE_NAME" \
+    -H "Content-Type: application/json" \
+    -H "Authorization:Bearer <JWT_token>"
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}	
+
+
+### **Example 2: Creates a directory in the specified or default storage**
+
+All parent directories specified in the directoryUri path will be created too if they don't exist.
+
+{{< tabs tabTotal="10" tabID="3" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" tabName10="CURL" >}}
+
+{{< tab tabNum="1" >}}
+
+```c#
+// Initialize 
+var api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET").StorageApi;
+
+// Create directory "files" in the cloud storage
+var exists = await api.CreateDirectoryAsync("/files", "STORAGE_NAME");
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+```java
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+```c++
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="4" >}}
+
+
+```python
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="5" >}}
+
+```php
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="6" >}}
+
+```ruby
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="7" >}}
+
+```javascript
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="8" >}}
+
+```swift
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="9" >}}
+
+```java
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="10" >}}
+
+**cURL POST request**: create a folder.
+
+```
+/folder?path={path}&storageName={storageName}
+```
+
+**Parameters:**
+
+| Name        | Description                                       | Passed in | Required |
+| :---------- | :------------------------------------------------ | :-------- | :------- |
+| path        | Folder path to be created.                        | Query     | +        |
+| storageName | Storage name or default storage if not specified. | Query     | -        |
+```bash
+curl -X POST \
+	-v "https://api.aspose.cloud/v4.0/html/folder?path=/files" \
+	-H "Content-Length:0" \
+    -H "Authorization:Bearer <JWT_token>"
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}	
+
+### **Example 3: Delete a directory by the specified path from the specified or default storage**
+
+
+{{< tabs tabTotal="10" tabID="4" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" tabName10="CURL" >}}
+
+{{< tab tabNum="1" >}}
+
+```c#
+// Initialize 
+var api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET").StorageApi;
+
+// Delete "files" directory in the storage
+var exists = await api.DeleteDirectoryAsync("/files", "STORAGE_NAME");
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+```java
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+```c++
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="4" >}}
+
+
+```python
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="5" >}}
+
+```php
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="6" >}}
+
+```ruby
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="7" >}}
+
+```javascript
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="8" >}}
+
+```swift
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="9" >}}
+
+```java
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="10" >}}
+
+**DELETE**: delete the specified folder.
+
+```
+/folder?path={path}&storageName={storageName}
+```
+
+**Parameters:**
+
+| Name        | Description                                       | Passed in | Required |
+| :---------- | :------------------------------------------------ | :-------- | :------- |
+| path        | Folder path to be deleted.                        | Query     | +        |
+| storageName | Storage name or default storage if not specified. | Query     | -        |
+
+```bash
+curl -X DELETE \
+	-v "https://api.aspose.cloud/v4.0/html/folder?path=/files" \
+  -H "Authorization:Bearer <JWT_token>"
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}	
+
 
 
 
