@@ -2,6 +2,7 @@
 title: Convert HTML to DOCX - Cloud SDKs
 linktitle: Convert HTML to DOCX
 type: docs
+aliases: /html-to-docx-conversion/
 keywords: convert html to docx, html to docx, html to docx conversion, cloud sdks, Python, PHP, Perl, Android, Swift, C#, Java, Node.js, ruby, curl
 description: Learn how to use Cloud SDKs and REST API to convert HTML to DOCX. SDKs are available in PHP, Perl, Python, C#, Java, Android, Swift, etc.
 weight: 30

@@ -1,6 +1,7 @@
 ---
 title: Convert HTML to PDF - Cloud SDKs
 linktitle: Convert HTML to PDF
+aliases: /html-conversion-to_pdf/
 keywords: convert html to pdf, cloud sdks, html to pdf, html to pdf conversion, sdk example, sdk api, python, php, ruby, perl, android, swift, c#, java, node.js, curl
 description: Learn how to use Cloud SDKs and REST API to convert HTML to PDF. SDKs are available in PHP, Perl, Python, C#, Java, Android, Swift and more
 weight: 10

@@ -2,7 +2,7 @@
 title: Convert HTML to XPS - Cloud SDKs
 linktitle: Convert HTML to XPS
 type: docs
-aliases: /conversion-sdk-api/convert-html-to-xps/
+aliases: /html-conversion-to_xps/
 keywords: html to xps, convert html to xps, html to xps conversion, html conversion, SDK example, Python, PHP, Perl, Android, Swift, C#, Java, Node.js, curl
 description: Learn how to use Cloud SDKs and REST API to convert HTML to XPS. SDKs are available in C#, Java, Perl, Python, Android, Swift and more.
 weight: 20

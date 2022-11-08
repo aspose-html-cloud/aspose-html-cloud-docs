@@ -1,14 +1,12 @@
 ---
 title: Getting Started
 type: docs
-aliases: /getting-started/
+aliases: /html/quickstart/
 keywords: SDK, REST API, REST API call, authentication, initialize API, SDK, HTTP requests
-description: "Aspose.HTML Cloud provides two main points: the conversion
-  feature and the cloud storage access functionality. This article introduces
-  you  with Aspose.HTML Cloud v4.0 abilities to use its functionality both by
-  the REST API directly or by the set of wrappers implemented as SDKs on the
-  various programming languages."
+description: Aspose.HTML Cloud provides two main points - the conversion feature and the cloud storage access functionality. This article introduces you  with Aspose.HTML Cloud v4.0 abilities to use its functionality both by the REST API directly or by the set of wrappers implemented as SDKs on the various programming languages.
 weight: 20
+url: /getting-started/
+lastmod: 2022-11-07
 ---
 
 {{% alert color="primary" %}} 
@@ -16,7 +14,7 @@ weight: 20
 These instructions guide you through to obtain an authentication token and initialize Aspose.HTML Cloud API:
 
  - [Authentication](/html/getting-started/authentication/) 
- - [Initialize SDK API](/html/getting-started/initialize-sdk-api/) 
+ - [Initialize SDK](/html/getting-started/initialize-sdk/) 
 
 {{% /alert %}} 
 
@@ -40,8 +38,4 @@ Anyway, a developer who wants to have more flexibility and direct control on the
 
 {{% alert color="primary" %}} 
 You can download Aspose.HTML Cloud SDKs of your required platform from [GitHub](https://github.com/aspose-html-cloud/).  
-
 {{% /alert %}} 
-
-
-

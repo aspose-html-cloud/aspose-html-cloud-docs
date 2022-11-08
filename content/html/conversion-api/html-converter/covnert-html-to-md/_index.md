@@ -2,7 +2,7 @@
 title: Convert HTML to Markdown - Cloud SDKs
 linktitle: Convert HTML to Markdown
 type: docs
-aliases: /conversion-sdk-api/html-converter/convert-html-to-markdown/
+aliases: /html-conversion-to_markdown/
 keywords: html to markdown, html to md, convert html to markdown, html to markdown conversion, html conversion, cloud sdk, Python, PHP, Perl, Android, Swift, C#, Java, Node.js, curl
 description: Learn how to use Cloud SDKs and REST API to convert HTML to Markdown. SDKs are available in Perl, Python, C#, Java, Android, Swift and more.
 weight: 110

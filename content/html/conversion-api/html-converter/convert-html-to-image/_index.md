@@ -2,7 +2,7 @@
 title: Convert HTML to Image - Cloud SDKs
 linktitle: Convert HTML to Image
 type: docs
-aliases: /conversion-sdk-api/convert-html-to-jpeg/
+aliases: /html-conversion-to_image/
 keywords: convert html to image, html to image, convert html to jpeg, html to jpg, html to png, html to gif, sdk api, Python, PHP, Perl, Android, Swift, C#, Java, Node.js, curl
 description: Learn how to use Cloud SDKs and REST API to convert HTML to Image formats such as JPG, PNG, GIF, TIFF, and BMP with a set of SDK examples. 
 weight: 40

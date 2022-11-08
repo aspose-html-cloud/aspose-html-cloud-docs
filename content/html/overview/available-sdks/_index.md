@@ -1,15 +1,14 @@
 ---
 title: Available SDKs
 type: docs
-aliases: /available-sdks/
-keywords: SDK, Cloud SDKs, REST API, SDK Example, HTML to JPEG, java SDK, Python
-  SDK, python, java , .net,  c#,  android, swift, Perl, Node.js
-description: This article introduces you  with Aspose.HTML Cloud v4.0 abilities
-  to use its functionality by the set of wrappers implemented as SDKs on the
-  various programming languages such as, C#, Java, Python, Ruby, PHP, Node.js,
-  Swift, Android and Go.
+keywords: sdk, cloud sdks, python, java , .net,  c#,  android, swift, perl, node.js
+description: This article introduces you with Aspose.HTML Cloud v4.0 abilities to use its functionality by the set of wrappers implemented as SDKs on the various programming languages such as, C#, Java, Python, Ruby, PHP, Node.js, Swift, Android and Go.
 weight: 30
+url: /available-sdks/
+lastmod: 2022-11-07
 ---
+
+This article introduces you to Aspose.HTML Cloud v4.0 abilities to use SDKs on various programming languages such as C#, Java, Python, Ruby, PHP, Node.js, Swift, Android, C++, and Go.
 
 ## **Aspose.HTML Cloud SDKs**
 Aspose.HTML for Cloud is a modern REST oriented API that allows easy integration into existing systems. SDKs serve an essential purpose: they enable the creation of new software and apps; they help the developers increase the websites with more operationalities and make development more straightforward. SDKs are specifically designed to facilitate programmers the Aspose.HTML RESTFul APIs using. 
@@ -24,7 +23,7 @@ The SDKs are simple to understand and use by outside developers, contain a compr
 
 ## **Supported SDKs**
 
-Aspose.HTML Cloud provides the ability to use its functionality by the set of wrappers implemented as SDKs on the various programming languages such as C#, Java, Python, Ruby, PHP, Node.js, Swift, Android, and Go.
+Aspose.HTML Cloud provides the ability to use its functionality by the set of wrappers implemented as SDKs on various programming languages such as C#, Java, Python, Ruby, PHP, Node.js, Swift, C++ Android, and Go.
 
 {{< tabs tabTotal="10" tabID="1" tabName1=".NET" tabName2="Python" tabName3="Java" tabName4="C++" tabName5="Go" tabName6="Node.js" tabName7="Swift" tabName8="Android" tabName9="Ruby" tabName10="PHP" >}}
 
@@ -180,10 +179,10 @@ The complete source code and examples to get started using the Aspose.HTML Cloud
 As an example, let’s use the Aspose.HTML Cloud SDK to convert HTML to JPEG.
 
 ```c#
-// Initialize 
+// Initialize SDK API
 var api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET").ConvertApi;
 
-// Convert from HTML file to JPEG file
+// Convert HTML to JPEG
 var result = await api.ConvertAsync("test.html", "test.jpeg");
 ```
 

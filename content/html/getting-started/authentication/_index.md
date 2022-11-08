@@ -2,13 +2,11 @@
 title: Authentication
 type: docs
 aliases: /getting-started/authentication/
-keywords: authentication, credentials, user credentials, client id, client secret, access token,
-  JWT token, REST API, JWT authentication, curl, curl request
-description: This article explains how to obtain an authentication token and
-  apply it for REST API calls; you find out in details about how to use user's
-  Credentials for a JWT token gets.
+keywords: authentication, credentials, user credentials, client id, client secret, access token, JWT token, REST API, JWT authentication, curl, curl request
+description: Learn how to obtain an authentication token and apply it for REST API calls and how to use the user's Credentials for a JWT token gets.
 weight: 30
-
+url: /getting-started/authentication/
+lastmod: 2022-11-07
 ---
 
 ## **Summary**
@@ -110,8 +108,6 @@ response.EnsureSuccessStatusCode();
 
 ```
 
-
-
 ### **SDK** 
 
 The Cloud client application provides user Credentials (Client Id and Client Secret). Then SDK authorizes the REST API calls internally: it obtains an access token, uses it for API calls and handles the token expiration itself acquiring it again.
@@ -120,9 +116,3 @@ The Cloud client application provides user Credentials (Client Id and Client Sec
 Using SDK, you don't need to know the authentication service URL. All routine work of API call authentication is done by SDK internally.
 
 {{% /alert %}}  
-
-
-
-
-
-

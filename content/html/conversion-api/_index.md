@@ -1,13 +1,16 @@
 ---
-title: Conversion API - Convert files between file formats
+title: Conversion API - Convert files with Cloud SDKs and REST API
 linktitle: Conversion API
 type: docs
-aliases: /conversion/
+aliases: 
+  - /html-conversion-asynchronously/
+  - /html-conversion-asynchronously/html-conversion-params/
+  - /conversion/
 keywords: conversion api, converter api, convert files, convert html, convert epub, convert mhtml, REST API, SDK, Python, PHP, Perl, Android, Swift, C#, Java, Node.js
 description: Convert HTML, MHTML, EPUB, MD and SVG formats with our file conversion API. Call REST API directly by HTTP requests or using a set of SDKs.
 weight: 30
 url: /conversion-api/
-lastmod: 2022-11-03
+lastmod: 2022-11-08
 ---
 
 ## **Summary**
