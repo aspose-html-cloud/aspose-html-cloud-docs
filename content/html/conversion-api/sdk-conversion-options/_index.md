@@ -10,37 +10,111 @@ weight: 80
 
 Aspose.HTML Cloud v4.0 presents the simplest API to convert an {{%HTML%}} page to one of the fixed-layout document formats including {{%PDF%}}, {{%XPS%}}, {{%DOC%}}, {{%DOCX%}}; to {{%MD%}} and {{%MHTML%}} formats; to one of the raster image formats such as {{%JPEG%}}, {{%PNG%}}, {{%TIFF%}}, {{%BMP%}}, and {{%GIF%}}.
 
-Aspose.HTML Cloud SDK family provides a set of classes that represent the conversion options. Conversion options allow you to customize the conversion process. You can specify the file page size, margins, compression level, etc.  This article describes a set of classes that represent conversion options: PDFConversionOptions, XPSConversionOptions, DOCConversionOptions, ImageConversionOptions, and MarkdownConversionOptions.
+Aspose.HTML Cloud SDK family provides a set of classes that represent the conversion options. Conversion options allow you to customize the conversion process. You can specify the file page size, margins, etc.  This article describes a set of classes that represent conversion options for PDF, XPS and Images.
 
 
-## **PDFConversionOptions**
+## **PDF Conversion Options**
+
+{{< tabs tabTotal="9" tabID="1" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android">}}
+
+{{< tab tabNum="1" >}}
+
  ```c#
-ConversionOptions pdfOpts = new PDFConversionOptions()
-    .SetHeight(800)
-    .SetWidth(1000)
-    .SetLeftMargin(10)
-    .SetRightMargin(10)
-    .SetBottomMargin(10)
-    .SetTopMargin(10)
-    .SetQuality(95);
+var options = new PDFConversionOptions()
+    .SetHeight(80)
+    .SetWidth(100)
+    .SetLeftMargin(1)
+    .SetRightMargin(1)
+    .SetBottomMargin(1)
+    .SetTopMargin(1);
  ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Width** | **Number**| Resulting document page width in points (1/96 inch). | [optional] 
- **Height** | **Number**| Resulting document page height in points (1/96 inch). | [optional] 
- **LeftMargin** | **Number**| Left resulting document page margin in points (1/96 inch). | [optional] 
- **RightMargin** | **Number**| Right resulting document page margin in points (1/96 inch). | [optional] 
- **TopMargin** | **Number**| Top resulting document page margin in points (1/96 inch). | [optional] 
- **BottomMargin** | **Number**| Bottom resulting document page margin in points (1/96 inch). | [optional] 
- **JpegQuality** | **Number**| Quality of jpeg compression in percent. | [optional]
+ **Width** | **Number**| Resulting document page width in inches. | [optional] 
+ **Height** | **Number**| Resulting document page height in inches. | [optional] 
+ **LeftMargin** | **Number**| Left resulting document page margin in inches. | [optional] 
+ **RightMargin** | **Number**| Right resulting document page margin in inches. | [optional] 
+ **TopMargin** | **Number**| Top resulting document page margin in inches. | [optional] 
+ **BottomMargin** | **Number**| Bottom resulting document page margin inches. | [optional] 
 
-How to apply conversion options for HTML to PDF conversion is in SDK examples of the [Convert HTML to PDF](/html/conversion-api/conversion-sdk-api/html-converter/convert-html-to-pdf/) article.
+{{< /tab >}}
 
-## **XPSConversionOptions**
+{{< tab tabNum="2" >}}
+
+```java
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+```c++
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="4" >}}
+
+
+```python
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="5" >}}
+
+```php
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="6" >}}
+
+```ruby
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="7" >}}
+
+```javascript
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="8" >}}
+
+```swift
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="9" >}}
+
+```java
+
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}	
+
+
+## **XPS Conversion Options**
+{{< tabs tabTotal="9" tabID="2" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android">}}
+
+{{< tab tabNum="1" >}}
 
  ```c#
-ConversionOptions xpsOpts = new XPSConversionOptions()
+var options = new XPSConversionOptions()
     .SetHeight(800)
     .SetWidth(1000)
     .SetLeftMargin(10)
@@ -48,44 +122,92 @@ ConversionOptions xpsOpts = new XPSConversionOptions()
     .SetBottomMargin(10)
     .SetTopMargin(10);
  ```
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Width** | **Number**| Resulting document page width in points (1/96 inch). | [optional] 
- **Height** | **Number**| Resulting document page height in points (1/96 inch). | [optional] 
- **LeftMargin** | **Number**| Left resulting document page margin in points (1/96 inch). | [optional] 
- **RightMargin** | **Number**| Right resulting document page margin in points (1/96 inch). | [optional] 
- **TopMargin** | **Number**| Top resulting document page margin in points (1/96 inch). | [optional] 
- **BottomMargin** | **Number**| Bottom resulting document page margin in points (1/96 inch). | [optional] 
+ **Width** | **Number**| Resulting document page width in inches. | [optional] 
+ **Height** | **Number**| Resulting document page height in inches. | [optional] 
+ **LeftMargin** | **Number**| Left resulting document page margin in inches. | [optional] 
+ **RightMargin** | **Number**| Right resulting document page margin in inches. | [optional] 
+ **TopMargin** | **Number**| Top resulting document page margin in inches. | [optional] 
+ **BottomMargin** | **Number**| Bottom resulting document page margin inches. | [optional] 
 
-How to apply conversion options for HTML to XPS conversion is in SDK examples of the [Convert HTML to XPS](/html/conversion-api/conversion-sdk-api/html-converter/convert-html-to-xps/) article.
+{{< /tab >}}
 
-## **DOCConversionOptions**
+{{< tab tabNum="2" >}}
+
+```java
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+```c++
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="4" >}}
+
+
+```python
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="5" >}}
+
+```php
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="6" >}}
+
+```ruby
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="7" >}}
+
+```javascript
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="8" >}}
+
+```swift
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="9" >}}
+
+```java
+
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}	
+
+## **Image Conversion Options**
+{{< tabs tabTotal="9" tabID="3" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android">}}
+
+{{< tab tabNum="1" >}}
 
  ```c#
-ConversionOptions docOpts = new DOCConversionOptions()
-    .SetHeight(800)
-    .SetWidth(1000)
-    .SetLeftMargin(10)
-    .SetRightMargin(10)
-    .SetBottomMargin(10)
-    .SetTopMargin(10);
- ```
-
-| Name             | Type       | Description                                                  | Notes      |
-| ---------------- | ---------- | ------------------------------------------------------------ | ---------- |
-| **Width**        | **Number** | Resulting document page width in points (1/96 inch).         | [optional] |
-| **Height**       | **Number** | Resulting document page height in points (1/96 inch).        | [optional] |
-| **LeftMargin**   | **Number** | Left resulting document page margin in points (1/96 inch).   | [optional] |
-| **RightMargin**  | **Number** | Right resulting document page margin in points (1/96 inch).  | [optional] |
-| **TopMargin**    | **Number** | Top resulting document page margin in points (1/96 inch).    | [optional] |
-| **BottomMargin** | **Number** | Bottom resulting document page margin in points (1/96 inch). | [optional] |
-
-How to apply conversion options for HTML to DOCX/DOC conversion is in SDK examples of the [Convert HTML to DOCX](/html/conversion-api/conversion-sdk-api/html-converter/convert-html-to-docx/) article.
-
-## **ImageConversionOptions**
-
- ```c#
-ConversionOptions jpgOpts = new ImageConversionOptions()
+var options = new ImageConversionOptions()
     .SetHeight(800)
     .SetWidth(1000)
     .SetLeftMargin(10)
@@ -97,30 +219,78 @@ ConversionOptions jpgOpts = new ImageConversionOptions()
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Width** | **Number**| Resulting document page width in points (1/96 inch). | [optional] 
- **Height** | **Number**| Resulting document page height in points (1/96 inch). | [optional] 
- **LeftMargin** | **Number**| Left resulting document page margin in points (1/96 inch). | [optional] 
- **RightMargin** | **Number**| Right resulting document page margin in points (1/96 inch). | [optional] 
- **TopMargin** | **Number**| Top resulting document page margin in points (1/96 inch). | [optional] 
- **BottomMargin** | **Number**| Bottom resulting document page margin in points (1/96 inch). | [optional]
- **Resolution** | **Number**| Resolution of the resulting image. The default is 96 dpi. | [optional]
+ **Width** | **Number**| Resulting document page width in pixels. | [optional] 
+ **Height** | **Number**| Resulting document page height in pixels. | [optional] 
+ **LeftMargin** | **Number**| Left resulting document page margin in pixels. | [optional] 
+ **RightMargin** | **Number**| Right resulting document page margin in pixels. | [optional] 
+ **TopMargin** | **Number**| Top resulting document page margin in pixels. | [optional] 
+ **BottomMargin** | **Number**| Bottom resulting document page margin pixels. | [optional] 
 
-How to apply conversion options for HTML to JPEG conversion is in SDK examples of the [Convert HTML to JPEG](/html/conversion-api/conversion-sdk-api/html-converter/convert-html-to-jpeg/) article.
+{{< /tab >}}
 
-## **MarkdownConversionOptions**
+{{< tab tabNum="2" >}}
 
- ```c#
-ConversionOptions mdOpts = new MarkdownConversionOptions()
-    .SetUseGit(true);
- ```
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **UseGit** | **Boolean**| Use [Git Markdown Flavor](https://github.github.com/gfm/) to save. | [optional] [default to false]
+```java
 
-[GitLab Flavored Markdown](https://github.github.com/gfm/) is the GitHub.com version of the Markdown syntax that provides an additional set of helpful features that make it easier to work with content on GitHub.com
+```
 
-## **MHTMLConversionOptions**
+{{< /tab >}}
 
- ```c#
-ConversionOptions mhtmlOpts = new MHTMLConversionOptions();
- ```
+{{< tab tabNum="3" >}}
+
+```c++
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="4" >}}
+
+
+```python
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="5" >}}
+
+```php
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="6" >}}
+
+```ruby
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="7" >}}
+
+```javascript
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="8" >}}
+
+```swift
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="9" >}}
+
+```java
+
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}	
