@@ -28,7 +28,7 @@ If you don't already have the Credentials, to get the **Client Secret** and **Cl
 3. Get the Credentials (Client id and Client secret ) for your Application.
 4. Now, you are ready to call Aspose REST APIs.
 
-More detailed information about the Credentials obtaining you find in [Create an Account and Get Credentials](/html/overview/create-an-account-and-get-credentials/) and [Dashboard](https://docs.aspose.cloud/total/getting-started/dashboard/) articles.  
+More detailed information about the Credentials obtaining you find in [Create an Account and Get Credentials](/html/create-an-account-and-get-credentials/) and [Dashboard](https://docs.aspose.cloud/total/getting-started/dashboard/) articles.  
 
 ### **REST API**
 

@@ -19,6 +19,10 @@ Aspose.HTML Cloud v4.0 provides the simplest API to convert {{%HTML%}} files to 
 
 In this documentation chapter, also you find out in detail how to convert EPUB, XHTML, MHTML, MD and SVG files to the most popular formats by calling directly the REST API by HTTP requests or using a set of SDKs. Convert HTML, XHTML, MHTML, EPUB, MD and SVG formats with our powerful file conversion API! 
 
+ - [HTML Converter](/html/conversion-api/html-converter/) - the article provides information about various scenarios for converting HTML files to other popular formats, including PDF, XPS, DOCX, JPEG, PNG, TIFF, BMP, GIF, Markdown, and MHTML. 
+ - [EPUB Converter](/html/conversion-api/epub-converter/) you find out how to convert EPUB files to different formats including PDF, XPS, DOCX, JPEG, PNG, TIFF, BMP, and GIF.
+ - [SDK Conversion Options](/html/sdk-conversion-options/) - you will learn how to apply conversion options to convert HTML to PDF, XPS, and Images with a set of SDK examples. 
+
 {{% alert color="primary" %}} 
 The main differences from conversion API v3.0 are:
 

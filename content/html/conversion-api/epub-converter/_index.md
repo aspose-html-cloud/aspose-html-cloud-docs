@@ -14,7 +14,7 @@ The {{%EPUB%}} file type is an eBook standard or interchange format for digital 
 Aspose.HTML Cloud v4.0 provides the straightforward API for documents' conversion between formats with high quality, easy and fast. This section provides information on a description of conversion features of Aspose.HTML Cloud SDK API and the list of supported EPUB files conversion scenarios using various SDKs and REST API calls. You will learn how to convert an EPUB file to {{%PDF%}}, {{%XPS%}}, {{%DOCX%}}, {{%DOC%}}, {{%PNG%}}, {{%JPEG%}}, {{%BMP%}}, {{%TIFF%}}, and {{%GIF%}} formats. SDKs are available in PHP, Perl, Python, Android, Ruby, Swift, C#, Java and more. 
 
 {{% alert color="primary" %}} 
-Check out our [GitHub repository](https://github.com/aspose-html-cloud) for a complete list of Aspose.HTML SDKs along with working examples to get you started in no time. Please check the [Available SDKs](/html/overview/available-sdks/) article to learn how to add an SDK to your project.
+Check out our [GitHub repository](https://github.com/aspose-html-cloud) for a complete list of Aspose.HTML SDKs along with working examples to get you started in no time. Please check the [Available SDKs](/html/available-sdks/) article to learn how to add an SDK to your project.
 {{% /alert %}} 
 
 ## **SDK conversion examples**
