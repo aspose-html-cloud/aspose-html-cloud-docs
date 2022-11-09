@@ -1,34 +1,39 @@
 ---
-title: Working with Files in the Storage
+title: Working with Files in Storage - Cloud APIs
+linktitle: Working with Files in Storage
 type: docs
-aliases: /storage-api/working-with-files-in-the-storage/
-keywords: "cloud storage, cloud storage api, REST API, cloud storage folder, get folder content, create folder, delete folder, copy folder, move folder, Python, Java, .NET, C#, Android, Swift, Perl, Node.js"
-description: "The article explains how to manipulate folders in the cloud storage using Aspose.HTML Cloud API v.4.0. SDKs are also available in PHP, Perl, Android, Swift, C#, Java and more to help developers speed up their
-  development."
+aliases: /storage-file-api/
+keywords: cloud storage, sdk, storage file, REST API, file exists, upload file, download file, delete file, copy file, move file, Python, Java, .NET, C#, Android, Swift, Perl, Node.js
+description: Learn how to manipulate files in the cloud storage using Aspose.HTML Cloud API v.4.0. - how to upload files, download files, delete files.
 weight: 30
+url: /storage-api/working-with-files-in-storage/
+lastmod: 2022-11-09
 ---
 
-## **Summary**
+## **Storage Files**
 
-Aspose.HTML Cloud v4.0 allows you to work and manipulate folders in the cloud storage and provides the ability to use its functionality both by the REST API directly or by the set of wrappers implemented as SDKs on the various programming languages.
+Aspose.HTML Cloud allows you to work with storage files - documents saved on the cloud storage and use the storage for various scenarios. The most common use cases are cloud backup, disaster recovery and archiving infrequently accessed data. Having your files into cloud storage will also give you the ability to share them with friends or co-workers.
 
-This article provides a detailed description of SDK and REST methods to manipulate files in the cloud storage, i.e. upload, download or delete files.
+Storage services enable developers to store data in the cloud, relying on authentication and other access features that control who can get to the data. If you need any information about getting started with Aspose.HTML Cloud, please refer to the [Create an Account and Get Credentials](/html/create-an-account-and-get-credentials/) article.
 
+## **Examples of Working with Storage Files**
 
-## **Examples**
+This article provides a description of SDK and REST methods to manipulate files in the cloud storage, i.e. upload, download or delete files.
 
-### **Example 1: Check if file exists**
+### **Example 1: Check if a file exists in the storage**
 
+The following example demonstrates how to check if a file exists in the storage.
 
 {{< tabs tabTotal="10" tabID="1" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" tabName10="CURL" >}}
 
 {{< tab tabNum="1" >}}
+Aspose.HTML Cloud for .NET API provides the FileExistsAsync() method that checks if a file specified by the path exists in the storage.
 
 ```c#
-// Initialize 
+// Initialize an SDK API object
 var api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET").StorageApi;
 
-// Check if exists
+// Check if a file exists in the storage
 var exists = await api.FileExistsAsync("/test.html");
 ```
 
@@ -115,16 +120,16 @@ curl -X POST -v \
 
 ### **Example 2: Upload file from local file system to the specified storage**
 
-
+The following example demonstrates how to upload a file by its local file system path to the specified storage.
 {{< tabs tabTotal="10" tabID="3" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" tabName10="CURL" >}}
 
 {{< tab tabNum="1" >}}
 
 ```c#
-// Initialize 
+// Initialize an SDK API object
 var api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET").StorageApi;
 
-// Upload local file test.html to "files" folder in the cloud storage
+// Upload file test.html to "files" folder in the cloud storage
 var exists = await api.UploadFileAsync("test.html", "files/test.html", "STORAGE_NAME");
 ```
 
@@ -210,16 +215,17 @@ curl -X POST \
 
 ### **Example 3: Download file from cloud storage to local file system**
 
+The examples below show how to download a file from storage to the local file system using SDKs and REST API calls.
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" tabName10="CURL" >}}
 
 {{< tab tabNum="1" >}}
 
 ```c#
-// Initialize 
+// Initialize an SDK API object
 var api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET").StorageApi;
 
-// Download test.html file from cloud folder "files" to local file system
+// Download file test.html from cloud folder "files" to local file system
 var exists = await api.DownloadFileAsync("files/test.html", "test.html", "STORAGE_NAME");
 ```
 
@@ -311,10 +317,10 @@ curl -X GET \
 {{< tab tabNum="1" >}}
 
 ```c#
-// Initialize 
+// Initialize an SDK API object 
 var api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET").StorageApi;
 
-// Delete test.html file located in the cloud folder named "files"
+// Delete file test.html that is located in the cloud folder named "files"
 var exists = await api.DeleteFileAsync("files/test.html", "STORAGE_NAME");
 ```
 
@@ -397,3 +403,8 @@ curl -X DELETE \
 
 {{< /tabs >}}	
 
+{{% alert color="primary" %}} 
+Install Aspose.HTML Cloud SDK for .NET via [NuGet](https://www.nuget.org/packages/Aspose.HTML-Cloud/). Complete source code of Aspose.HTML SDK for .NET is freely available on the [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-dotnet) repository.
+
+Aspose.HTML provides the [Cloud SDK Family](https://products.aspose.cloud/html/family) to access files and folders stored in the user associated Aspose Cloud Storage or any other Cloud Storage of your choice. 
+{{% /alert %}} 

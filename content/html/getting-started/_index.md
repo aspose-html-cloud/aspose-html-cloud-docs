@@ -1,14 +1,12 @@
 ---
 title: Getting Started
 type: docs
-aliases: /getting-started/
+aliases: /html/quickstart/
 keywords: SDK, REST API, REST API call, authentication, initialize API, SDK, HTTP requests
-description: "Aspose.HTML Cloud provides two main points: the conversion
-  feature and the cloud storage access functionality. This article introduces
-  you  with Aspose.HTML Cloud v4.0 abilities to use its functionality both by
-  the REST API directly or by the set of wrappers implemented as SDKs on the
-  various programming languages."
+description: Aspose.HTML Cloud provides two main points - the conversion feature and the cloud storage access functionality. This article introduces you  with Aspose.HTML Cloud v4.0 abilities to use its functionality both by the REST API directly or by the set of wrappers implemented as SDKs on the various programming languages.
 weight: 20
+url: /getting-started/
+lastmod: 2022-11-07
 ---
 
 {{% alert color="primary" %}} 
@@ -16,11 +14,11 @@ weight: 20
 These instructions guide you through to obtain an authentication token and initialize Aspose.HTML Cloud API:
 
  - [Authentication](/html/getting-started/authentication/) 
- - [Initialize SDK API](/html/getting-started/initialize-sdk-api/) 
+ - [Initialize SDK](/html/getting-started/initialize-sdk/) 
 
 {{% /alert %}} 
 
-Aspose.HTML Cloud v4.0 provides the ability to use its functionality both by the REST API directly or by the set of wrappers implemented as [SDKs](/html/overview/available-sdks/) on the various programming languages.
+Aspose.HTML Cloud v4.0 provides the ability to use its functionality both by the REST API directly or by the set of wrappers implemented as [SDKs](/html/available-sdks/) on the various programming languages.
 
 REST API is a low-level interface to work directly with the Aspose.HTML Cloud product service by HTTP requests. It provides full control over the HTTP operation results, but it requires more routine work to prepare HTTP requests and handle responses. Aspose.HTML REST API offers many features to [manipulate directories](/html/storage-api/working-with-folders-in-the-storage/) and [files](/html/storage-api/working-with-files-in-the-storage/) stored in the cloud storage associated with user applications. 
 
@@ -40,8 +38,4 @@ Anyway, a developer who wants to have more flexibility and direct control on the
 
 {{% alert color="primary" %}} 
 You can download Aspose.HTML Cloud SDKs of your required platform from [GitHub](https://github.com/aspose-html-cloud/).  
-
 {{% /alert %}} 
-
-
-
