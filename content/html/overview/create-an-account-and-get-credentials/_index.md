@@ -1,14 +1,11 @@
 ---
 title: Create an Account and Get Credentials
 type: docs
-aliases: /create-an-account-and-get-credentials/
-keywords: authentication, create, account, free account, credentials, client id,
-  client secret, access token, jwt token, rest api, jwt authentication, create
-  application
-description: This article explains how to create a free account, get user
-  credentials and apply it for REST API calls; you find out details about
-  installing SDKs and making an API request from the SDK of your choice.
+keywords: authentication, create account, free account, credentials, client id, client secret, access token, jwt token, rest api, jwt authentication, create application
+description: Learn how to create a free account, get user credentials and apply them for REST API calls; how to install SDKs and make API requests.
 weight: 20
+url: /create-an-account-and-get-credentials/
+lastmod: 2022-11-07
 ---
 
 It is quite easy to use Aspose.HTML for Cloud in your projects. But before you start, you need to create an **Aspose Cloud Account** and obtain **Client Id** and **Client Secret**.
@@ -32,7 +29,6 @@ You can view and update your Account details. For this, you need to access your 
 ![The dashboard menu](setting.png)
 
 
-
 Next, in **My Profile**, you can choose **General**, **Security**, **Billing**, etc., for editing and setting. Make your settings and click the **Save Changes** button to confirm.
 
 ![The General Setting](general-setting.png)
@@ -42,7 +38,6 @@ Next, in **My Profile**, you can choose **General**, **Security**, **Billing**, 
 Aspose appoints excellent importance to security concerns. We use the JWT token for the authentication and end-to-end HTTPS encryption to secure all client-server interactions. You should use a set of unique API **Credentials** (Client Id & Client Secret) to authenticate when calling Aspose Cloud API.
 
 1. Before you can make any requests to Aspose Cloud APIs you need to create an API client application. For this, log into the [Dashboard](https://dashboard.aspose.cloud/), access the **Applications** page and click on the **Create New Application** button. For more detailed information see the [Creating and Managing Application](https://docs.aspose.cloud/total/getting-started/dashboard/creating-and-managing-application/) article.
-
 
 
 ![The Applications page](create-app.png)
@@ -63,7 +58,6 @@ Aspose appoints excellent importance to security concerns. We use the JWT token 
    The newly created storage will be pre-selected on the Default Storage field since it’s the single storage you have. 
 
 ![The Storages/Create Internal Storage Page](internal-storage-fill.png)
-
 
 
 ## **4. Get Your  Client Id and Client Secret**

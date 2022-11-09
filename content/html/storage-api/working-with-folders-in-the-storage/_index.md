@@ -1,39 +1,36 @@
 ---
-title: Working with Folders in the Storage
+title: Working with Folders in Storage - Cloud APIs
+linktitle: Working with Folders in Storage
 type: docs
-aliases: /storage-api/working-with-folders-in-the-storage/
-keywords: "cloud storage, cloud storage api, SDK, cloud storage file, upload file, download file, delete file, copy file, move file, REST API, SDK, Python, PHP, Perl, Android, Swift, C#, Java, Node.js"
-description: "The chapter explains how to manipulate files in the cloud storage using Aspose.HTML Cloud API v.4.0. SDKs are also available in PHP, Perl, Android, Swift, C#, Java and more to help developers speed up their
-  development."
+aliases: /storage-folder-api/
+keywords: cloud storage, storage folder, cloud storage folder, storage directory, delete folder, delete directory create folder, create directory, directory exist, REST API, SDK, Python, PHP, Android, Swift, C#, Java, Node.js
+description: Learn how to manipulate folders in cloud storage using Aspose.HTML Cloud API v.4.0. 
 weight: 40
+url: /storage-api/working-with-folders-in-storage/
+lastmod: 2022-11-09
 ---
 
 ## **Summary**
 
-Aspose.HTML Cloud allows you to work with documents saved on the cloud storage and use the storage for various scenarios. The most common use cases are cloud backup, disaster recovery and archiving infrequently accessed data. Having your files into cloud storage will also give you the ability to share them with friends or co-workers.
+Aspose.HTML Cloud allows you to work with files and folders in cloud storage. The most common storage use cases are cloud backup, disaster recovery and archiving infrequently accessed data. 
 
- Storage services enable developers to store data in the cloud, relying on authentication and other access features that control who can get to the data. If you need any information about getting started with Aspose.HTML Cloud, please refer to the [Create an Account and Get Credentials](/html/overview/create-an-account-and-get-credentials/) article.
+Aspose.HTML Cloud v4.0 allows you to work and manipulate folders in the cloud storage and provides the ability to use its functionality both by the REST API directly or by the set of wrappers implemented as SDKs on the various programming languages such as Python, PHP, Java/Android, Swift, C#, Node.js and Ruby.
 
+## **Examples of Working with Storage Folders**
 
-## **Cloud SDK family**
+### **Example 1. Check if a directory specified by the path exists in the specified or default storage**
 
-Cloud storage allows world-wide storage and retrieval of data at any time. Aspose.HTML provides the [Cloud SDK Family](https://products.aspose.cloud/html/family) to access files and folders stored in the user associated Aspose Cloud Storage or any other Cloud Storage of your choice. If you need any help to get started with setting third party storage, please refer to [Aspose Cloud UI Help Topics](https://docs.aspose.cloud/total/aspose-cloud-ui-help-topics/).
-
-
-### **Examples**
-
-### **Check if a directory specified by the path exists in the specified or default storage**
-
+The examples below demonstrate how to check if a directory exists in the storage. The directory is specified by a path and the storage is specified by the storage name.
 
 {{< tabs tabTotal="10" tabID="1" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" tabName10="CURL" >}}
 
 {{< tab tabNum="1" >}}
 
 ```c#
-// Initialize 
+// Initialize an SDK API object 
 var api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET").StorageApi;
 
-// Check if directory "files" exists
+// Check if "files" directory exists
 var exists = await api.DirectoryExistsAsync("/files", "STORAGE_NAME");
 ```
 
@@ -129,16 +126,16 @@ curl -X POST -v \
 {{< /tabs >}}	
 
 
-### **Example 2: Creates a directory in the specified or default storage**
+### **Example 2: Create a directory in the specified or default storage**
 
-All parent directories specified in the directoryUri path will be created too if they don't exist.
+The examples below demonstrate how to create a directory in the storage. All parent directories specified in the directoryUri path will be created too if they don't exist.
 
 {{< tabs tabTotal="10" tabID="3" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" tabName10="CURL" >}}
 
 {{< tab tabNum="1" >}}
 
 ```c#
-// Initialize 
+// Initialize an SDK API object 
 var api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET").StorageApi;
 
 // Create directory "files" in the cloud storage
@@ -245,7 +242,7 @@ curl -X POST \
 {{< tab tabNum="1" >}}
 
 ```c#
-// Initialize 
+// Initialize an SDK API object 
 var api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET").StorageApi;
 
 // Delete "files" directory in the storage
@@ -344,6 +341,8 @@ curl -X DELETE \
 
 {{< /tabs >}}	
 
+{{% alert color="primary" %}} 
+Cloud storage allows world-wide storage and retrieval of data at any time. Aspose.HTML provides the [Cloud SDK Family](https://products.aspose.cloud/html/family) to access files and folders stored in the user associated Aspose Cloud Storage or any other Cloud Storage of your choice. 
 
-
-
+The [GitHub repository for Aspose.HTML for Cloud](https://github.com/aspose-html-cloud) has a complete set of examples, demonstrating our API capabilities.
+{{% /alert %}} 

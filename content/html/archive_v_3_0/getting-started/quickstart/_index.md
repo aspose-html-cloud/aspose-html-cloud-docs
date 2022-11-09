@@ -9,7 +9,7 @@ It is quite easy to use Aspose.Html for Cloud in your projects. All you need to 
 ## **1. Create a Free Account**
 Please go to <https://dashboard.aspose.cloud/#/> to create a free account.
 ## **2. Create New App and Get App Key and SID**
-Before you can make any requests to Aspose for Cloud APIs you need to [create an API client app](https://docs.aspose.cloud/total/create-new-app-and-get-app-key-and-sid). This will give you **App SID** and **App key (secret key)** which you can use to invoke Aspose for Cloud APIs.
+Before you can make any requests to Aspose for Cloud APIs you need to create [Aspose Cloud Account ](https://docs.aspose.cloud/total/getting-started/quickstart/). This will give you **App SID** and **App key (secret key)** which you can use to invoke Aspose for Cloud APIs.
 ## **3. Install the SDK of your choice**
 Aspose Html for Cloud SDK is written in 2 different languages, all you need to get started is to add our SDK to your existing project.
 
