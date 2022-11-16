@@ -16,7 +16,7 @@ jobs:
           ls -lA
           git config --global --add safe.directory  ${{secrets.HUGO_SITE_LOCATION}}
           git fetch
-          git reset --hard origin/main
+          git reset --hard origin/master
       - name: preparing workspace npm install dependencies
         run: |
           cd ${{secrets.HUGO_SITE_LOCATION}}
