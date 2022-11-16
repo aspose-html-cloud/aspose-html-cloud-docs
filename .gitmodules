@@ -1,7 +1,0 @@
-
-[submodule "themes/lutsk-aspose-theme"]
-	path = themes/lutsk-aspose-theme
-	url = git@git.saltov.dynabic.com:zap/lutsk-aspose-theme.git
-[submodule "layouts/shortcodes"]
-	path = layouts/shortcodes
-	url = https://github.com/tpavel-aspose/hugo-module-fileformat-shortcodes.git
