@@ -5,20 +5,44 @@ on:
     paths-ignore: ".github/**"
 
 jobs:
-  job-one:
+  job-deploy:
     name: Deploy
     runs-on: [self-hosted, linux, x64, html-cloud-dev4]
     steps:
+      - name: preparing workspace git pull documentation
+        run: |
+          cd ${{secrets.HUGO_SITE_LOCATION}}
+          pwd
+          ls -lA
+          git config --global --add safe.directory  ${{secrets.HUGO_SITE_LOCATION}}
+          git fetch
+          git reset --hard origin/main
+      - name: preparing workspace npm install dependencies
+        run: |
+          cd ${{secrets.HUGO_SITE_LOCATION}}
+          pwd
+          ls -lA
+          ls -lA layouts
+          ls -lA themes
+          # sudo npm install -D --save autoprefixer
+          # sudo npm install -D --save postcss-cli
+      - name: preparing workspace clean public folder
+        run: |
+          cd ${{secrets.HUGO_SITE_LOCATION}}
+          pwd
+          ls -lA
+          sudo rm -rf public
+          ls -lA
+
       - name: hugo build
         run: |
-          cd aspose-html-cloud-docs && git stash && git pull && git submodule update && cd -
-          cd lutsk-aspose-prototype && git stash && git pull
-          cd themes/lutsk-aspose-theme && git stash && git pull && cd -
-          sudo npm install -D --save autoprefixer
-          sudo npm install -D --save postcss-cli
-          rsync --recursive --delete --force --progress ${{ secrets.PROJECTPATH }} content/
-          rm -rf public
-          hugo --minify --baseURL https://docs.aspose.cloud/html
+           cd ${{secrets.HUGO_SITE_LOCATION}}
+           ./bin/hugo mod tidy
+           ./bin/hugo mod graph
+           ./bin/hugo mod verify
+           ./bin/hugo version
+           # hugo --minify --baseURL https://docs.aspose.cloud/html
+          sudo ./bin/hugo -c content --log --minify --baseURL https://docs.aspose.cloud/html
           rsync --recursive --delete --force -e "ssh" --progress public/ ${{ secrets.TRANSFERPATH }}
       - name: hugo deploy
         uses: appleboy/ssh-action@master

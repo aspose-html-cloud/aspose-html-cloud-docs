@@ -1,12 +1,14 @@
-.hugo_build.lock
 .DS_Store
 .idea
 public
 resources
-log.txt
 node_modules
 package-lock.json
-
+go.sum
+log.txt
+_vendor
+.hugo_build.lock
+...*
 # User-specific files
 content/tests-net/**/*.rsuser
 content/tests-net/**/*.suo
