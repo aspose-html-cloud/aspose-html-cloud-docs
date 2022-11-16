@@ -20,26 +20,27 @@ jobs:
       - name: preparing workspace npm install dependencies
         run: |
           cd ${{secrets.HUGO_SITE_LOCATION}}
-          pwd
-          ls -lA
-          ls -lA layouts
-          ls -lA themes
+          # pwd
+          # ls -lA
+          # ls -lA layouts
+          # ls -lA themes
           # sudo npm install -D --save autoprefixer
           # sudo npm install -D --save postcss-cli
       - name: preparing workspace clean public folder
         run: |
           cd ${{secrets.HUGO_SITE_LOCATION}}
           pwd
-          ls -lA
+          # ls -lA
           sudo rm -rf public
-          ls -lA
+          # ls -lA
       - name: hugo build
         run: |
            cd ${{secrets.HUGO_SITE_LOCATION}}
+           chmod +x ./bin/hugo
            ./bin/hugo mod tidy
-           ./bin/hugo mod graph
+           # ./bin/hugo mod graph
            ./bin/hugo mod verify
-           ./bin/hugo version
+           # ./bin/hugo version
            sudo ./bin/hugo -c content --log --minify --baseURL https://docs.aspose.cloud/html
            rsync --recursive --delete --force -e "ssh" --progress public/ ${{ secrets.TRANSFERPATH }}
       - name: hugo deploy
