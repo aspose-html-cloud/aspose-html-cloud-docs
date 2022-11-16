@@ -1,2 +1,3 @@
 fix ci
 remove submodule
+update hugo
