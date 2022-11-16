@@ -1,4 +1,4 @@
-module github.com/aspose-html/Aspose.HTML-Documentation
+module github.com/aspose-html-cloud/aspose-html-cloud-docs
 
 //  replace git.saltov.dynabic.com/zap/lutsk-aspose-theme => \themes\lutsk-aspose-theme
 
@@ -9,5 +9,4 @@ require (
 	github.com/tpavel-aspose/hugo-module-local-editor v1.0.1 // indirect
 	github.com/tpavel-aspose/hugo-module-nginx-redirects v1.1.0 // indirect
 	git.saltov.dynabic.com/zap/lutsk-aspose-theme v1.4.12 // indirect
-
 )
