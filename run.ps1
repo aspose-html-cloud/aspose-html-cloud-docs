@@ -1,0 +1,1 @@
+.\node_modules\hugo-extended\vendor\hugo.exe server -c 'content\html' --baseURL https://docs.aspose.cloud/html
