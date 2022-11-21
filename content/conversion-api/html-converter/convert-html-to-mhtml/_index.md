@@ -60,7 +60,40 @@ ConversionResult result = api.convert(builder);
 The following example demonstrates how to convert **HTML to MHTML** C++ language applying. Local HTML converted to MHTML and saved to the local path.
 
 ```c++
+// Get current directory
+std::string cur_dir(argv[0]);
+int pos = cur_dir.find_last_of("/\\");
+cur_dir = cur_dir.substr(0, pos + 1); // Include the last slash
+std::wstring w_cur_dir(cur_dir.begin(), cur_dir.end());
 
+const utility::string_t clientId = L"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX";
+const utility::string_t clientSecret = L"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+const utility::string_t basePath = L"https://api.aspose.cloud/v4.0";
+const utility::string_t authPath = L"https://api.aspose.cloud/connect/token";
+
+// Create configuration for authorization
+std::shared_ptr<ApiConfiguration> apiConfig(new ApiConfiguration(clientId, clientSecret, basePath, authPath));
+
+// Create client from configuration
+std::shared_ptr<ApiClient> apiClient(new ApiClient(apiConfig));
+
+// Create ConversionApi
+std::shared_ptr<ConversionApi> api = std::make_shared<ConversionApi>(apiClient);
+
+// File name for conversion
+utility::string_t src = w_cur_dir + L"test.html";
+utility::string_t dst = w_cur_dir + L"result.mhtml";
+
+//Conversion
+auto result = api->convertLocalToLocal(src, dst);
+
+// Check the result file
+auto re = result->getFile();
+std::ifstream f(re.c_str());
+if(!f.good())
+{
+    throw std::runtime_error("Conversion failed");
+}
 ```
 
 {{< /tab >}}
@@ -196,7 +229,40 @@ ConversionResult result = api.convert(builder);
 The following example demonstrates how to convert **HTML to MHTML C++** language applying. HTML is taken from the Web, converted to MHTML and saved to the local file system. 
 
 ```c++
+// Get current directory
+std::string cur_dir(argv[0]);
+int pos = cur_dir.find_last_of("/\\");
+cur_dir = cur_dir.substr(0, pos + 1); // Include the last slash
+std::wstring w_cur_dir(cur_dir.begin(), cur_dir.end());
 
+const utility::string_t clientId = L"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX";
+const utility::string_t clientSecret = L"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+const utility::string_t basePath = L"https://api.aspose.cloud/v4.0";
+const utility::string_t authPath = L"https://api.aspose.cloud/connect/token";
+
+// Create configuration for authorization
+std::shared_ptr<ApiConfiguration> apiConfig(new ApiConfiguration(clientId, clientSecret, basePath, authPath));
+
+// Create client from configuration
+std::shared_ptr<ApiClient> apiClient(new ApiClient(apiConfig));
+
+// Create ConversionApi
+std::shared_ptr<ConversionApi> api = std::make_shared<ConversionApi>(apiClient);
+
+// File name for conversion
+utility::string_t src = L"https://example.com";
+utility::string_t dst = w_cur_dir + L"result.mhtml";
+
+//Conversion
+auto result = api->convertUrlToLocal(src, dst);
+
+// Check the result file
+auto re = result->getFile();
+std::ifstream f(re.c_str());
+if(!f.good())
+{
+    throw std::runtime_error("Conversion failed");
+}
 ```
 
 {{< /tab >}}
@@ -337,7 +403,26 @@ ConversionResult result = api.convert(builder);
 The following example demonstrates how to convert **HTML to MHTML C++** language applying. HTML file is in cloud storage, converted to MHTML and saved back to the cloud storage. 
 
 ```c++
+const utility::string_t clientId = L"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX";
+const utility::string_t clientSecret = L"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+const utility::string_t basePath = L"https://api.aspose.cloud/v4.0";
+const utility::string_t authPath = L"https://api.aspose.cloud/connect/token";
 
+// Create configuration for authorization
+std::shared_ptr<ApiConfiguration> apiConfig(new ApiConfiguration(clientId, clientSecret, basePath, authPath));
+
+// Create client from configuration
+std::shared_ptr<ApiClient> apiClient(new ApiClient(apiConfig));
+
+// Create ConversionApi
+std::shared_ptr<ConversionApi> api = std::make_shared<ConversionApi>(apiClient);
+
+// File name for conversion
+utility::string_t src = L"file/in/storage/index.html";
+utility::string_t dst = L"result/in/storage/result.mhtml";
+
+//Conversion
+auto result = api->convertStorageToStorage(src, dst);
 ```
 
 {{< /tab >}}

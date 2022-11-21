@@ -71,8 +71,25 @@ ConversionOptions opt_A5 = new PDFConversionOptions()
 {{< tab tabNum="3" >}}
 
 ```c++
-
+    std::shared_ptr<ConversionOptions> opts = std::make_shared<ConversionOptions>();
+    opts->setWidth(8.3)
+        ->setHeight(11.7)
+        ->setLeftMargin(0.2)
+        ->setRightMargin(0.2)
+        ->setTopMargin(0.2)
+        ->setBottomMargin(0.2)
+        ->setJpegQuality(95);
 ```
+
+| Method                                                                            | Description              | Note       |
+|-----------------------------------------------------------------------------------|--------------------------|------------|
+| **ConversionOptions\* ConversionOptions::setWidth(double value)**                 | Width in inches.         | [optional] |
+| **ConversionOptions\* ConversionOptions::setHeight(double value)**                | Height in inches.        | [optional] |
+| **ConversionOptions\* ConversionOptions::setLeftMargin(double value)**            | Left margin in inches.   | [optional] |
+| **ConversionOptions\* ConversionOptions::setRightMargin(double value)**           | Right margin in inches.  | [optional] |
+| **ConversionOptions\* ConversionOptions::setTopMargin(double value)**             | Top margin in inches.    | [optional] |
+| **ConversionOptions\* ConversionOptions::setBottomMargin(double value)**          | Bottom margin in inches. | [optional] |
+| **ConversionOptions\* ConversionOptions::setJpegQuality(int value)**              | Quality in percent.      | [optional] |
 
 {{< /tab >}}
 
@@ -199,8 +216,25 @@ ConversionOptions xpsOpts_A5 = new XPSConversionOptions()
 {{< tab tabNum="3" >}}
 
 ```c++
-
+    std::shared_ptr<ConversionOptions> opts = std::make_shared<ConversionOptions>();
+    opts->setWidth(8.3)
+        ->setHeight(11.7)
+        ->setLeftMargin(0.2)
+        ->setRightMargin(0.2)
+        ->setTopMargin(0.2)
+        ->setBottomMargin(0.2);
 ```
+
+| Method                                                                            | Description              | Note       |
+|-----------------------------------------------------------------------------------|--------------------------|------------|
+| **ConversionOptions\* ConversionOptions::setWidth(double value)**                 | Width in inches.         | [optional] |
+| **ConversionOptions\* ConversionOptions::setHeight(double value)**                | Height in inches.        | [optional] |
+| **ConversionOptions\* ConversionOptions::setLeftMargin(double value)**            | Left margin in inches.   | [optional] |
+| **ConversionOptions\* ConversionOptions::setRightMargin(double value)**           | Right margin in inches.  | [optional] |
+| **ConversionOptions\* ConversionOptions::setTopMargin(double value)**             | Top margin in inches.    | [optional] |
+| **ConversionOptions\* ConversionOptions::setBottomMargin(double value)**          | Bottom margin in inches. | [optional] |
+
+
 
 {{< /tab >}}
 
@@ -326,8 +360,24 @@ ConversionOptions opts = new ImageConversionOptions()
 {{< tab tabNum="3" >}}
 
 ```c++
-
+    std::shared_ptr<ConversionOptions> opts = std::make_shared<ConversionOptions>();
+    opts->setWidth(800)
+        ->setHeight(600)
+        ->setLeftMargin(20)
+        ->setRightMargin(20)
+        ->setTopMargin(20)
+        ->setBottomMargin(20);
 ```
+
+| Method                                                                            | Description              | Note       |
+|-----------------------------------------------------------------------------------|--------------------------|------------|
+| **ConversionOptions\* ConversionOptions::setWidth(double value)**                 | Width in pixels.         | [optional] |
+| **ConversionOptions\* ConversionOptions::setHeight(double value)**                | Height in pixels.        | [optional] |
+| **ConversionOptions\* ConversionOptions::setLeftMargin(double value)**            | Left margin in pixels.   | [optional] |
+| **ConversionOptions\* ConversionOptions::setRightMargin(double value)**           | Right margin in pixels.  | [optional] |
+| **ConversionOptions\* ConversionOptions::setTopMargin(double value)**             | Top margin in pixels.    | [optional] |
+| **ConversionOptions\* ConversionOptions::setBottomMargin(double value)**          | Bottom margin in pixels. | [optional] |
+
 
 {{< /tab >}}
 

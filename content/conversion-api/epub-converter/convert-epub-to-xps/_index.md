@@ -63,7 +63,40 @@ ConversionResult result = api.convert(builder);
 The following example demonstrates how to convert **EPUB to XPS** C++ language applying. Local EPUB converted to XPS and saved to the local path.
 
 ```c++
+// Get current directory
+std::string cur_dir(argv[0]);
+int pos = cur_dir.find_last_of("/\\");
+cur_dir = cur_dir.substr(0, pos + 1); // Include the last slash
+std::wstring w_cur_dir(cur_dir.begin(), cur_dir.end());
 
+const utility::string_t clientId = L"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX";
+const utility::string_t clientSecret = L"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+const utility::string_t basePath = L"https://api.aspose.cloud/v4.0";
+const utility::string_t authPath = L"https://api.aspose.cloud/connect/token";
+
+// Create configuration for authorization
+std::shared_ptr<ApiConfiguration> apiConfig(new ApiConfiguration(clientId, clientSecret, basePath, authPath));
+
+// Create client from configuration
+std::shared_ptr<ApiClient> apiClient(new ApiClient(apiConfig));
+
+// Create ConversionApi
+std::shared_ptr<ConversionApi> api = std::make_shared<ConversionApi>(apiClient);
+
+// File name for conversion
+utility::string_t src = w_cur_dir + L"test.epub";
+utility::string_t dst = w_cur_dir + L"result.xps";
+
+//Conversion
+auto result = api->convertLocalToLocal(src, dst);
+
+// Check the result file
+auto re = result->getFile();
+std::ifstream f(re.c_str());
+if(!f.good())
+{
+    throw std::runtime_error("Conversion failed");
+}
 ```
 
 {{< /tab >}}
@@ -224,7 +257,48 @@ ConversionResult result = api.convert(builder);
 The following example demonstrates how to convert **EPUB to XPS C++** language applying. Local EPUB converted to XPS and saved on the local drive. 
 
 ```c++
+// Get current directory
+std::string cur_dir(argv[0]);
+int pos = cur_dir.find_last_of("/\\");
+cur_dir = cur_dir.substr(0, pos + 1); // Include the last slash
+std::wstring w_cur_dir(cur_dir.begin(), cur_dir.end());
 
+const utility::string_t clientId = L"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX";
+const utility::string_t clientSecret = L"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+const utility::string_t basePath = L"https://api.aspose.cloud/v4.0";
+const utility::string_t authPath = L"https://api.aspose.cloud/connect/token";
+
+// Create configuration for authorization
+std::shared_ptr<ApiConfiguration> apiConfig(new ApiConfiguration(clientId, clientSecret, basePath, authPath));
+
+// Create client from configuration
+std::shared_ptr<ApiClient> apiClient(new ApiClient(apiConfig));
+
+// Create ConversionApi
+std::shared_ptr<ConversionApi> api = std::make_shared<ConversionApi>(apiClient);
+
+// File name for conversion
+utility::string_t src = w_cur_dir + L"test.epub";
+utility::string_t dst = w_cur_dir + L"result.xps";
+
+std::shared_ptr<ConversionOptions> opts = std::make_shared<ConversionOptions>();
+opts->setWidth(8.3)
+    ->setHeight(11.7)
+    ->setLeftMargin(0.2)
+    ->setRightMargin(0.2)
+    ->setTopMargin(0.2)
+    ->setBottomMargin(0.2);
+
+//Conversion
+auto result = api->convertLocalToLocal(src, dst, opts);
+
+// Check the result file
+auto re = result->getFile();
+std::ifstream f(re.c_str());
+if(!f.good())
+{
+    throw std::runtime_error("Conversion failed");
+}
 ```
 
 {{< /tab >}}
@@ -379,7 +453,26 @@ ConversionResult result = api.convert(builder);
 The following example demonstrates how to convert **EPUB to XPS C++** language applying. EPUB file is located in cloud storage, converted to XPS and saved back to the cloud storage. 
 
 ```c++
+const utility::string_t clientId = L"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX";
+const utility::string_t clientSecret = L"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+const utility::string_t basePath = L"https://api.aspose.cloud/v4.0";
+const utility::string_t authPath = L"https://api.aspose.cloud/connect/token";
 
+// Create configuration for authorization
+std::shared_ptr<ApiConfiguration> apiConfig(new ApiConfiguration(clientId, clientSecret, basePath, authPath));
+
+// Create client from configuration
+std::shared_ptr<ApiClient> apiClient(new ApiClient(apiConfig));
+
+// Create ConversionApi
+std::shared_ptr<ConversionApi> api = std::make_shared<ConversionApi>(apiClient);
+
+// File name for conversion
+utility::string_t src = L"file/in/storage/index.epub";
+utility::string_t dst = L"result/in/storage/result.xps";
+
+//Conversion
+auto result = api->convertStorageToStorage(src, dst);
 ```
 
 {{< /tab >}}

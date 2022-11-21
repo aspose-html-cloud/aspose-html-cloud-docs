@@ -65,7 +65,40 @@ ConversionResult result = api.convert(builder);
 The following example demonstrates how to convert **EPUB to JPG** C++ language applying. Local EPUB converted to JPG and saved to the local path.
 
 ```c++
+// Get current directory
+std::string cur_dir(argv[0]);
+int pos = cur_dir.find_last_of("/\\");
+cur_dir = cur_dir.substr(0, pos + 1); // Include the last slash
+std::wstring w_cur_dir(cur_dir.begin(), cur_dir.end());
 
+const utility::string_t clientId = L"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX";
+const utility::string_t clientSecret = L"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+const utility::string_t basePath = L"https://api.aspose.cloud/v4.0";
+const utility::string_t authPath = L"https://api.aspose.cloud/connect/token";
+
+// Create configuration for authorization
+std::shared_ptr<ApiConfiguration> apiConfig(new ApiConfiguration(clientId, clientSecret, basePath, authPath));
+
+// Create client from configuration
+std::shared_ptr<ApiClient> apiClient(new ApiClient(apiConfig));
+
+// Create ConversionApi
+std::shared_ptr<ConversionApi> api = std::make_shared<ConversionApi>(apiClient);
+
+// File name for conversion
+utility::string_t src = w_cur_dir + L"test.epub";
+utility::string_t dst = w_cur_dir + L"result.jpeg";
+
+//Conversion
+auto result = api->convertLocalToLocal(src, dst);
+
+// Check the result file
+auto re = result->getFile();
+std::ifstream f(re.c_str());
+if(!f.good())
+{
+    throw std::runtime_error("Conversion failed");
+}
 ```
 
 {{< /tab >}}
@@ -224,7 +257,48 @@ ConversionResult result = api.convert(builder);
 The following example demonstrates how to convert **EPUB to PNG C++** language applying. EPUB is taken from the local file system, converted to PNG and saved to the local file system. 
 
 ```c++
+// Get current directory
+std::string cur_dir(argv[0]);
+int pos = cur_dir.find_last_of("/\\");
+cur_dir = cur_dir.substr(0, pos + 1); // Include the last slash
+std::wstring w_cur_dir(cur_dir.begin(), cur_dir.end());
 
+const utility::string_t clientId = L"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX";
+const utility::string_t clientSecret = L"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+const utility::string_t basePath = L"https://api.aspose.cloud/v4.0";
+const utility::string_t authPath = L"https://api.aspose.cloud/connect/token";
+
+// Create configuration for authorization
+std::shared_ptr<ApiConfiguration> apiConfig(new ApiConfiguration(clientId, clientSecret, basePath, authPath));
+
+// Create client from configuration
+std::shared_ptr<ApiClient> apiClient(new ApiClient(apiConfig));
+
+// Create ConversionApi
+std::shared_ptr<ConversionApi> api = std::make_shared<ConversionApi>(apiClient);
+
+// File name for conversion
+utility::string_t src = w_cur_dir + L"test.epub";
+utility::string_t dst = w_cur_dir + L"result.png";
+
+std::shared_ptr<ConversionOptions> opts = std::make_shared<ConversionOptions>();
+opts->setWidth(800)
+    ->setHeight(600)
+    ->setLeftMargin(10)
+    ->setRightMargin(10)
+    ->setTopMargin(10)
+    ->setBottomMargin(10);
+
+//Conversion
+auto result = api->convertLocalToLocal(src, dst, opts);
+
+// Check the result file
+auto re = result->getFile();
+std::ifstream f(re.c_str());
+if(!f.good())
+{
+    throw std::runtime_error("Conversion failed");
+}
 ```
 
 {{< /tab >}}
@@ -379,7 +453,26 @@ ConversionResult result = api.convert(builder);
 The following example demonstrates how to convert **EPUB to GIF C++** language applying. EPUB file is located in cloud storage, converted to GIF and saved back to cloud storage. 
 
 ```c++
+const utility::string_t clientId = L"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX";
+const utility::string_t clientSecret = L"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+const utility::string_t basePath = L"https://api.aspose.cloud/v4.0";
+const utility::string_t authPath = L"https://api.aspose.cloud/connect/token";
 
+// Create configuration for authorization
+std::shared_ptr<ApiConfiguration> apiConfig(new ApiConfiguration(clientId, clientSecret, basePath, authPath));
+
+// Create client from configuration
+std::shared_ptr<ApiClient> apiClient(new ApiClient(apiConfig));
+
+// Create ConversionApi
+std::shared_ptr<ConversionApi> api = std::make_shared<ConversionApi>(apiClient);
+
+// File name for conversion
+utility::string_t src = L"file/in/storage/index.epub";
+utility::string_t dst = L"result/in/storage/result.gif";
+
+//Conversion
+auto result = api->convertStorageToStorage(src, dst);
 ```
 
 {{< /tab >}}
