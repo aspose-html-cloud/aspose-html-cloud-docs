@@ -41,7 +41,16 @@ var result = await api.ConvertAsync("test.html", "test.md");
 The following example demonstrates how to convert **HTML to Markdown java** language applying. Local HTML converted to Markdown and saved to the local path. You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
 
 ```java
+Configuration.setBasePath("https://api.aspose.cloud");
+Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
+HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
+
+ConverterBuilder builder = new ConverterBuilder()
+                .fromLocalFile("input.html")
+                .saveToLocal("output.md");
+
+ConversionResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -111,7 +120,16 @@ The following example demonstrates how to convert **HTML to Markdown Swift** lan
 The following example demonstrates how to convert **HTML to Markdown Java/Android** applying. Local HTML converted to Markdown and saved to the local path. You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
 
 ```java
+Configuration.setBasePath("https://api.aspose.cloud");
+Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
+HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
+
+ConverterBuilder builder = new ConverterBuilder()
+                .fromLocalFile("input.html")
+                .saveToLocal("output.md");
+
+ConversionResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -159,7 +177,16 @@ var result = await api.ConvertUrlAsync("https://example.com", "test.md");
 The following example shows how to convert **HTML to Markdown java** language applying. HTML is taken from the Web, converted to Markdown and saved to the local file system. You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
 
 ```java
+Configuration.setBasePath("https://api.aspose.cloud");
+Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
+HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
+
+ConverterBuilder builder = new ConverterBuilder()
+                .fromUrl("https://example.com")
+                .saveToLocal("output.md");
+
+ConversionResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -229,7 +256,16 @@ The following example shows how to convert **HTML to Markdown Swift** language a
 The following example shows how to convert **HTML to Markdown Java/Android** applying. HTML is taken from the Web, converted to Markdown and saved to the local file system. You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
 
 ```java
+Configuration.setBasePath("https://api.aspose.cloud");
+Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
+HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
+
+ConverterBuilder builder = new ConverterBuilder()
+                .fromUrl("https://example.com")
+                .saveToLocal("output.md");
+
+ConversionResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -283,7 +319,16 @@ var result = await api.ConvertAsync(builder);
 The following example shows how to convert **HTML to Markdown java** language applying. HTML file is in cloud storage, converted to Markdown and saved back to the cloud storage. You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
 
 ```java
+Configuration.setBasePath("https://api.aspose.cloud");
+Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
+HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
+
+ConverterBuilder builder = new ConverterBuilder()
+                .fromStorageFile("input.html")
+                .saveToStorage("output.md");
+
+ConversionResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -353,7 +398,16 @@ The following example shows how to convert **HTML to Markdown Swift** language a
 The following example shows how to convert **HTML to Markdown Java/Android** applying. HTML file is located in cloud storage, converted to Markdown and saved back to cloud storage. You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
 
 ```java
+Configuration.setBasePath("https://api.aspose.cloud");
+Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
+HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
+
+ConverterBuilder builder = new ConverterBuilder()
+                .fromStorageFile("input.html")
+                .saveToStorage("output.md");
+
+ConversionResult result = api.convert(builder);
 ```
 
 {{< /tab >}}

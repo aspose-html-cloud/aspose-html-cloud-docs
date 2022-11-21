@@ -42,7 +42,16 @@ var result = await api.ConvertAsync("test.epub", "test.doc");
 The following example demonstrates how to convert **EPUB to DOCX java** language applying. Local EPUB converted to DOCX and saved to the local path. You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
 
 ```java
+Configuration.setBasePath("https://api.aspose.cloud");
+Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
+HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
+
+ConverterBuilder builder = new ConverterBuilder()
+                .fromLocalFile("input.epub")
+                .saveToLocal("output.docx");
+
+ConversionResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -112,7 +121,16 @@ The following example demonstrates how to convert **EPUB to DOCX Swift** languag
 The following example demonstrates how to convert **EPUB to DOCX Java/Android** applying. Local EPUB converted to DOCX and saved to the local path. You can download the Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
 
 ```java
+Configuration.setBasePath("https://api.aspose.cloud");
+Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
+HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
+
+ConverterBuilder builder = new ConverterBuilder()
+                .fromLocalFile("input.epub")
+                .saveToLocal("output.docx");
+
+ConversionResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -171,7 +189,16 @@ var result = await api.ConvertAsync(builder);
 The following example shows how to convert **EPUB to DOCX java** language applying. The EPUB file is in cloud storage, convert to DOCX, and saved back to cloud storage. You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
 
 ```java
+Configuration.setBasePath("https://api.aspose.cloud");
+Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
+HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
+
+ConverterBuilder builder = new ConverterBuilder()
+                .fromStorageFile("input.epub")
+                .saveToStorage("output.docx");
+
+ConversionResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -241,7 +268,16 @@ The following example shows how to convert **EPUB to DOCX Swift** language apply
 The following example shows how to convert **EPUB to DOCX Java/Android** applying. The EPUB file is in cloud storage, convert to DOCX, and saved back to cloud storage. You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
 
 ```java
+Configuration.setBasePath("https://api.aspose.cloud");
+Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
+HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
+
+ConverterBuilder builder = new ConverterBuilder()
+                .fromStorageFile("input.epub")
+                .saveToStorage("output.docx");
+
+ConversionResult result = api.convert(builder);
 ```
 
 {{< /tab >}}

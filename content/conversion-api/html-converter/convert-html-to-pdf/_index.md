@@ -43,7 +43,16 @@ var result = await api.ConvertAsync("test.html", "test.pdf");
 The following example demonstrates how to convert **HTML to PDF java** language applying. Local HTML converted to PDF and saved to the local path. You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
 
 ```java
+Configuration.setBasePath("https://api.aspose.cloud");
+Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
+HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
+
+ConverterBuilder builder = new ConverterBuilder()
+                .fromLocalFile("input.html")
+                .saveToLocal("output.pdf");
+
+ConversionResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -113,7 +122,16 @@ The following example demonstrates how to convert **HTML to PDF Swift** language
 The following example demonstrates how to convert **HTML to PDF Java/Android** applying. Local HTML converted to PDF and saved to the local path. You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
 
 ```java
+Configuration.setBasePath("https://api.aspose.cloud");
+Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
+HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
+
+ConverterBuilder builder = new ConverterBuilder()
+                .fromLocalFile("input.html")
+                .saveToLocal("output.pdf");
+
+ConversionResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -158,12 +176,12 @@ var api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET").ConvertApi;
 
 // Create an options object and specify options for HTML to PDF conversion
 var options = new PDFConversionOptions()
-                .SetHeight(800)
-                .SetWidth(1000)
-                .SetLeftMargin(10)
-                .SetRightMargin(10)
-                .SetBottomMargin(10)
-                .SetTopMargin(10);
+                .SetHeight(11.7)        // A4 format in inches
+                .SetWidth(8.3)          // A4 format in inches
+                .SetLeftMargin(0.5)
+                .SetRightMargin(0.5)
+                .SetBottomMargin(0.5)
+                .SetTopMargin(0.5);
 
 // Convert HTML to PDF file
 var result = await api.ConvertAsync("test.html", "test.pdf", options);
@@ -176,7 +194,26 @@ var result = await api.ConvertAsync("test.html", "test.pdf", options);
 The following example demonstrates how to convert **HTML to PDF java** language applying. HTML is taken from the local file system, converted to PDF and saved to the local path. You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
 
 ```java
+Configuration.setBasePath("https://api.aspose.cloud");
+Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
+HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
+
+ConversionOptions opt_A5 = new PDFConversionOptions()
+                    .setWidth(5.8)        // A5 format in inches
+                    .setHeight(8.3)
+                    .setTopMargin(0.5)
+                    .setBottomMargin(0.5)
+                    .setLeftMargin(0.5)
+                    .setRightMargin(0.5)
+                    .setQuality(95);
+
+ConverterBuilder builder = new ConverterBuilder()
+                .fromLocalFile("input.html")
+                .useOptions(opt_A5)
+                .saveToLocal("output.pdf");
+
+ConversionResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -246,7 +283,26 @@ The following example demonstrates how to convert **HTML to PDF Swift** language
 The following example demonstrates how to convert **HTML to PDF Java/Android** applying. HTML is taken from the local file system, converted to PDF and saved to the local path. You can download the Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
 
 ```java
+Configuration.setBasePath("https://api.aspose.cloud");
+Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
+HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
+
+ConversionOptions opt_A5 = new PDFConversionOptions()
+                    .setWidth(5.8)
+                    .setHeight(8.3)
+                    .setTopMargin(0.5)
+                    .setBottomMargin(0.5)
+                    .setLeftMargin(0.5)
+                    .setRightMargin(0.5)
+                    .setQuality(95);
+
+ConverterBuilder builder = new ConverterBuilder()
+                .fromLocalFile("input.html")
+                .useOptions(opt_A5)
+                .saveToLocal("output.pdf");
+
+ConversionResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -299,7 +355,16 @@ var result = await api.ConvertUrlAsync("https://example.com", "test.pdf");
 The following example shows how to convert **HTML to PDF java** language applying. HTML is taken from the Web, converted to PDF and saved to the local file system. You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
 
 ```java
+Configuration.setBasePath("https://api.aspose.cloud");
+Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
+HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
+
+ConverterBuilder builder = new ConverterBuilder()
+                .fromUrl("https://example.com")
+                .saveToLocal("output.pdf");
+
+ConversionResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -369,7 +434,16 @@ The following example shows how to convert **HTML to PDF Swift** language applyi
 The following example shows how to convert **HTML to PDF Java/Android** applying. HTML is taken from the Web, converted to PDF and saved to the local file system. You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
 
 ```java
+Configuration.setBasePath("https://api.aspose.cloud");
+Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
+HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
+
+ConverterBuilder builder = new ConverterBuilder()
+                .fromUrl("https://example.com")
+                .saveToLocal("output.pdf");
+
+ConversionResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -422,7 +496,16 @@ var result = await api.ConvertAsync(builder);
 The following example shows how to convert **HTML to PDF java** language applying. The HTML file is in cloud storage, converted to PDF and saved back to cloud storage. You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
 
 ```java
+Configuration.setBasePath("https://api.aspose.cloud");
+Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
+HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
+
+ConverterBuilder builder = new ConverterBuilder()
+                .fromStorageFile("input.html")
+                .saveToStorage("output.pdf");
+
+ConversionResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -492,7 +575,16 @@ The following example shows how to convert **HTML to PDF Swift** language applyi
 The following example shows how to convert **HTML to PDF Java/Android** applying. The HTML file is in cloud storage, converted to PDF and saved back to cloud storage. You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
 
 ```java
+Configuration.setBasePath("https://api.aspose.cloud");
+Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
+HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
+
+ConverterBuilder builder = new ConverterBuilder()
+                .fromStorageFile("input.html")
+                .saveToStorage("output.pdf");
+
+ConversionResult result = api.convert(builder);
 ```
 
 {{< /tab >}}

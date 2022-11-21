@@ -46,7 +46,16 @@ var result = await api.ConvertAsync("test.epub", "test.pdf");
 The following example demonstrates how to convert **EPUB to PDF java** language applying. Local EPUB converted to PDF and saved to the local path. You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
 
 ```java
+Configuration.setBasePath("https://api.aspose.cloud");
+Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
+HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
+
+ConverterBuilder builder = new ConverterBuilder()
+                .fromLocalFile("input.epub")
+                .saveToLocal("output.pdf");
+
+ConversionResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -116,7 +125,16 @@ The following example demonstrates how to convert **EPUB to PDF Swift** language
 The following example demonstrates how to convert **EPUB to PDF Java/Android** applying. Local EPUB converted to PDF and saved to the local path. You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
 
 ```java
+Configuration.setBasePath("https://api.aspose.cloud");
+Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
+HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
+
+ConverterBuilder builder = new ConverterBuilder()
+                .fromLocalFile("input.epub")
+                .saveToLocal("output.pdf");
+
+ConversionResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -161,12 +179,12 @@ var api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET").ConvertApi;
 
 // Create an options object and specify options for EPUB to PDF conversion
 var options = new PDFConversionOptions()
-                .SetHeight(800)
-                .SetWidth(1000)
-                .SetLeftMargin(10)
-                .SetRightMargin(10)
-                .SetBottomMargin(10)
-                .SetTopMargin(10);
+                .SetHeight(8.3)
+                .SetWidth(11.7)
+                .SetLeftMargin(0.5)
+                .SetRightMargin(0.5)
+                .SetBottomMargin(0.5)
+                .SetTopMargin(0.5);
 
 // Convert EPUB file to PDF format
 var result = await api.ConvertAsync("test.epub", "test.pdf", options);
@@ -179,7 +197,26 @@ var result = await api.ConvertAsync("test.epub", "test.pdf", options);
 The following example demonstrates how to convert **EPUB to PDF java** language applying. EPUB is taken from the local file system, converted to PDF and saved to the local path. You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
 
 ```java
+Configuration.setBasePath("https://api.aspose.cloud");
+Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
+HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
+
+ConversionOptions opt_A5 = new PDFConversionOptions()
+                    .setWidth(5.8)        // A5 format in inches
+                    .setHeight(8.3)
+                    .setTopMargin(0.5)
+                    .setBottomMargin(0.5)
+                    .setLeftMargin(0.5)
+                    .setRightMargin(0.5)
+                    .setQuality(95);
+
+ConverterBuilder builder = new ConverterBuilder()
+                .fromLocalFile("input.epub")
+                .useOptions(opt_A5)
+                .saveToLocal("output.pdf");
+
+ConversionResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -249,7 +286,26 @@ The following example demonstrates how to convert **EPUB to PDF Swift** language
 The following example demonstrates how to convert **EPUB to PDF Java/Android** applying. EPUB is taken from the local file system, converted to PDF and saved to the local drive. You can download the Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
 
 ```java
+Configuration.setBasePath("https://api.aspose.cloud");
+Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
+HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
+
+ConversionOptions opt_A5 = new PDFConversionOptions()
+                    .setWidth(5.8)        // A5 format in inches
+                    .setHeight(8.3)
+                    .setTopMargin(0.5)
+                    .setBottomMargin(0.5)
+                    .setLeftMargin(0.5)
+                    .setRightMargin(0.5)
+                    .setQuality(95);
+
+ConverterBuilder builder = new ConverterBuilder()
+                .fromLocalFile("input.epub")
+                .useOptions(opt_A5)
+                .saveToLocal("output.pdf");
+
+ConversionResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -306,7 +362,16 @@ var result = await api.ConvertAsync(builder);
 The following example shows how to convert **EPUB to PDF java** language applying. EPUB is taken from the Web, converted to PDF and saved to cloud storage. You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
 
 ```java
+Configuration.setBasePath("https://api.aspose.cloud");
+Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
+HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
+
+ConverterBuilder builder = new ConverterBuilder()
+                .fromStorageFile("input.epub")
+                .saveToStorage("output.pdf");
+
+ConversionResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -376,7 +441,16 @@ The following example shows how to convert **EPUB to PDF Swift** language applyi
 The following example shows how to convert **EPUB to PDF Java/Android** applying. EPUB is taken from the Web, converted to PDF and saved to the cloud storage. You can download the Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
 
 ```java
+Configuration.setBasePath("https://api.aspose.cloud");
+Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
+HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
+
+ConverterBuilder builder = new ConverterBuilder()
+                .fromStorageFile("input.epub")
+                .saveToStorage("output.pdf");
+
+ConversionResult result = api.convert(builder);
 ```
 
 {{< /tab >}}

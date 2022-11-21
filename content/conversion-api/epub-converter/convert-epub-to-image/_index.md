@@ -46,7 +46,16 @@ var result = await api.ConvertAsync("test.epub", "test.jpg");
 The following example demonstrates how to convert **EPUB to JPG java** language applying. Local EPUB converted to JPG and saved to the local path. You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
 
 ```java
+Configuration.setBasePath("https://api.aspose.cloud");
+Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
+HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
+
+ConverterBuilder builder = new ConverterBuilder()
+                .fromLocalFile("input.epub")
+                .saveToLocal("output.jpeg");
+
+ConversionResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -116,7 +125,16 @@ The following example demonstrates how to convert **EPUB to JPG Swift** language
 The following example demonstrates how to convert **EPUB to JPG Java/Android** applying. Local EPUB converted to JPG and saved to the local path. You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
 
 ```java
+Configuration.setBasePath("https://api.aspose.cloud");
+Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
+HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
+
+ConverterBuilder builder = new ConverterBuilder()
+                .fromLocalFile("input.epub")
+                .saveToLocal("output.jpeg");
+
+ConversionResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -178,7 +196,25 @@ var result = await api.ConvertAsync("test.epub", "test.png", options);
 The following example demonstrates how to convert **EPUB to PNG java** language applying. EPUB is taken from the local file system, converted to PNG and saved to the local path. You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
 
 ```java
+Configuration.setBasePath("https://api.aspose.cloud");
+Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
+HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
+
+ConversionOptions opt = new ImageConversionOptions()
+                        .setWidth(600)
+                        .setHeight(900)
+                        .setTopMargin(20)
+                        .setBottomMargin(20)
+                        .setLeftMargin(20)
+                        .setRightMargin(20);
+
+ConverterBuilder builder = new ConverterBuilder()
+                .fromLocalFile("input.epub")
+                .useOptions(opt)
+                .saveToLocal("output.png");
+
+ConversionResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -248,7 +284,25 @@ The following example demonstrates how to convert **EPUB to PNG Swift** language
 The following example demonstrates how to convert **EPUB to PNG Java/Android** applying. EPUB is taken from the local file system, converted to PNG and saved to the local path. You can download the Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
 
 ```java
+Configuration.setBasePath("https://api.aspose.cloud");
+Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
+HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
+
+ConversionOptions opt = new ImageConversionOptions()
+                        .setWidth(600)
+                        .setHeight(900)
+                        .setTopMargin(20)
+                        .setBottomMargin(20)
+                        .setLeftMargin(20)
+                        .setRightMargin(20);
+
+ConverterBuilder builder = new ConverterBuilder()
+                .fromLocalFile("input.epub")
+                .useOptions(opt)
+                .saveToLocal("output.png");
+
+ConversionResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -306,7 +360,16 @@ var result = await api.ConvertAsync(builder);
 The following example shows how to convert **EPUB to GIF java** language applying. EPUB file is located in cloud storage, converted to GIF and saved back to cloud storage. You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
 
 ```java
+Configuration.setBasePath("https://api.aspose.cloud");
+Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
+HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
+
+ConverterBuilder builder = new ConverterBuilder()
+                .fromStorageFile("input.epub")
+                .saveToStorage("output.gif");
+
+ConversionResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -373,10 +436,19 @@ The following example shows how to convert **EPUB to GIF Swift** language applyi
 
 {{< tab tabNum="9" >}}
 
-The following example shows how to convert **EPUB to GIG Java/Android** applying. EPUB file is located in cloud storage, converted to GIF and saved back to cloud storage. You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
+The following example shows how to convert **EPUB to GIF Java/Android** applying. EPUB file is located in cloud storage, converted to GIF and saved back to cloud storage. You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
 
 ```java
+Configuration.setBasePath("https://api.aspose.cloud");
+Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
+HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
+
+ConverterBuilder builder = new ConverterBuilder()
+                .fromStorageFile("input.epub")
+                .saveToStorage("output.gif");
+
+ConversionResult result = api.convert(builder);
 ```
 
 {{< /tab >}}

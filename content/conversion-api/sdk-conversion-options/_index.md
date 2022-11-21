@@ -24,30 +24,47 @@ Aspose.HTML Cloud SDK family provides a set of classes that represent the conver
 
  ```c#
 var options = new PDFConversionOptions()
-    .SetHeight(80)
-    .SetWidth(100)
-    .SetLeftMargin(1)
-    .SetRightMargin(1)
-    .SetBottomMargin(1)
-    .SetTopMargin(1);
+    .SetHeight(11.7)
+    .SetWidth(8.3)
+    .SetLeftMargin(0.5)
+    .SetRightMargin(0.5)
+    .SetBottomMargin(0.5)
+    .SetTopMargin(0.5);
  ```
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **Width** | **Number**| Resulting document page width in inches. | [optional] 
- **Height** | **Number**| Resulting document page height in inches. | [optional] 
- **LeftMargin** | **Number**| Left resulting document page margin in inches. | [optional] 
- **RightMargin** | **Number**| Right resulting document page margin in inches. | [optional] 
- **TopMargin** | **Number**| Top resulting document page margin in inches. | [optional] 
- **BottomMargin** | **Number**| Bottom resulting document page margin inches. | [optional] 
+| Name             | Type      | Description                                     | Notes      |
+|------------------|-----------|-------------------------------------------------|------------|
+| **Width**        | **Number**| Resulting document page width in inches.        | [optional] |
+| **Height**       | **Number**| Resulting document page height in inches.       | [optional] |
+| **LeftMargin**   | **Number**| Left resulting document page margin in inches.  | [optional] |
+| **RightMargin**  | **Number**| Right resulting document page margin in inches. | [optional] |
+| **TopMargin**    | **Number**| Top resulting document page margin in inches.   | [optional] |
+| **BottomMargin** | **Number**| Bottom resulting document page margin inches.   | [optional] |
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
 ```java
-
+ConversionOptions opt_A5 = new PDFConversionOptions()
+    .setWidth(5.8)
+    .setHeight(8.3)
+    .setTopMargin(0.5)
+    .setBottomMargin(0.5)
+    .setLeftMargin(0.5)
+    .setRightMargin(0.5)
+    .setQuality(95);
 ```
+
+| Name             | Type                    | Description                                      | Notes      |
+|------------------|-------------------------|--------------------------------------------------|------------|
+| **width**        | **Optional\<Double\>**  | Resulting document page width in inches.         | [optional] | 
+| **height**       | **Optional\<Double\>**  | Resulting document page height in inches.        | [optional] |
+| **leftMargin**   | **Optional\<Double\>**  | Left resulting document page margin in inches.   | [optional] |
+| **rightMargin**  | **Optional\<Double\>**  | Right resulting document page margin in inches.  | [optional] |
+| **topMargin**    | **Optional\<Double\>**  | Top resulting document page margin in inches.    | [optional] |
+| **bottomMargin** | **Optional\<Double\>**  | Bottom resulting document page margin in inches. | [optional] |
+| **jpegQuality**  | **Optional\<Integer\>** | Quality of jpeg compression in percent.          | [optional] |
 
 {{< /tab >}}
 
@@ -103,8 +120,25 @@ Name | Type | Description  | Notes
 {{< tab tabNum="9" >}}
 
 ```java
-
+ConversionOptions opt_A5 = new PDFConversionOptions()
+    .setWidth(5.8)
+    .setHeight(8.3)
+    .setTopMargin(0.5)
+    .setBottomMargin(0.5)
+    .setLeftMargin(0.5)
+    .setRightMargin(0.5)
+    .setQuality(95);
 ```
+
+| Name             | Type                    | Description                                      | Notes      |
+|------------------|-------------------------|--------------------------------------------------|------------|
+| **width**        | **Optional\<Double\>**  | Resulting document page width in inches.         | [optional] | 
+| **height**       | **Optional\<Double\>**  | Resulting document page height in inches.        | [optional] |
+| **leftMargin**   | **Optional\<Double\>**  | Left resulting document page margin in inches.   | [optional] |
+| **rightMargin**  | **Optional\<Double\>**  | Right resulting document page margin in inches.  | [optional] |
+| **topMargin**    | **Optional\<Double\>**  | Top resulting document page margin in inches.    | [optional] |
+| **bottomMargin** | **Optional\<Double\>**  | Bottom resulting document page margin in inches. | [optional] |
+| **jpegQuality**  | **Optional\<Integer\>** | Quality of jpeg compression in percent.          | [optional] |
 
 {{< /tab >}}
 
@@ -119,30 +153,46 @@ How to apply conversion options for converting HTML to PDF is described in the S
 
  ```c#
 var options = new XPSConversionOptions()
-    .SetHeight(800)
-    .SetWidth(1000)
-    .SetLeftMargin(10)
-    .SetRightMargin(10)
-    .SetBottomMargin(10)
-    .SetTopMargin(10);
+    .SetHeight(8.3)
+    .SetWidth(5.8)
+    .SetLeftMargin(0.5)
+    .SetRightMargin(0.5)
+    .SetBottomMargin(0.5)
+    .SetTopMargin(0.5);
  ```
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **Width** | **Number**| Resulting document page width in inches. | [optional] 
- **Height** | **Number**| Resulting document page height in inches. | [optional] 
- **LeftMargin** | **Number**| Left resulting document page margin in inches. | [optional] 
- **RightMargin** | **Number**| Right resulting document page margin in inches. | [optional] 
- **TopMargin** | **Number**| Top resulting document page margin in inches. | [optional] 
- **BottomMargin** | **Number**| Bottom resulting document page margin inches. | [optional] 
+| Name             | Type       | Description                                     | Notes      |
+|------------------|------------|-------------------------------------------------| -----------|
+| **Width**        | **Number** | Resulting document page width in inches.        | [optional] |
+| **Height**       | **Number** | Resulting document page height in inches.       | [optional] |
+| **LeftMargin**   | **Number** | Left resulting document page margin in inches.  | [optional] |
+| **RightMargin**  | **Number** | Right resulting document page margin in inches. | [optional] |
+| **TopMargin**    | **Number** | Top resulting document page margin in inches.   | [optional] |
+| **BottomMargin** | **Number** | Bottom resulting document page margin inches.   | [optional] |
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
 ```java
-
+ConversionOptions xpsOpts_A5 = new XPSConversionOptions()
+    .setHeight(8.3)
+    .setWidth(5.8)
+    .setLeftMargin(0.5)
+    .setRightMargin(0.5)
+    .setBottomMargin(0.5)
+    .setTopMargin(0.5);
 ```
+
+| Name             | Type                   | Description                                      | Notes      |
+|------------------|------------------------|--------------------------------------------------|------------|
+| **width**        | **Optional\<Double\>** | Resulting document page width in inches.         | [optional] |
+| **height**       | **Optional\<Double\>** | Resulting document page height in inches.        | [optional] |
+| **leftMargin**   | **Optional\<Double\>** | Left resulting document page margin in inches.   | [optional] |
+| **rightMargin**  | **Optional\<Double\>** | Right resulting document page margin in inches.  | [optional] |
+| **topMargin**    | **Optional\<Double\>** | Top resulting document page margin in inches.    | [optional] |
+| **bottomMargin** | **Optional\<Double\>** | Bottom resulting document page margin in inches. | [optional] |
+
 
 {{< /tab >}}
 
@@ -198,8 +248,23 @@ Name | Type | Description  | Notes
 {{< tab tabNum="9" >}}
 
 ```java
-
+ConversionOptions xpsOpts_A5 = new XPSConversionOptions()
+    .setHeight(8.3)
+    .setWidth(5.8)
+    .setLeftMargin(0.5)
+    .setRightMargin(0.5)
+    .setBottomMargin(0.5)
+    .setTopMargin(0.5);
 ```
+
+| Name             | Type                   | Description                                      | Notes      |
+|------------------|------------------------|--------------------------------------------------|------------|
+| **width**        | **Optional\<Double\>** | Resulting document page width in inches.         | [optional] |
+| **height**       | **Optional\<Double\>** | Resulting document page height in inches.        | [optional] |
+| **leftMargin**   | **Optional\<Double\>** | Left resulting document page margin in inches.   | [optional] |
+| **rightMargin**  | **Optional\<Double\>** | Right resulting document page margin in inches.  | [optional] |
+| **topMargin**    | **Optional\<Double\>** | Top resulting document page margin in inches.    | [optional] |
+| **bottomMargin** | **Optional\<Double\>** | Bottom resulting document page margin in inches. | [optional] |
 
 {{< /tab >}}
 
@@ -219,26 +284,42 @@ var options = new ImageConversionOptions()
     .SetLeftMargin(10)
     .SetRightMargin(10)
     .SetBottomMargin(10)
-    .SetTopMargin(10)
-    .SetResolution(300);
+    .SetTopMargin(10);
  ```
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **Width** | **Number**| Resulting document page width in pixels. | [optional] 
- **Height** | **Number**| Resulting document page height in pixels. | [optional] 
- **LeftMargin** | **Number**| Left resulting document page margin in pixels. | [optional] 
- **RightMargin** | **Number**| Right resulting document page margin in pixels. | [optional] 
- **TopMargin** | **Number**| Top resulting document page margin in pixels. | [optional] 
- **BottomMargin** | **Number**| Bottom resulting document page margin pixels. | [optional] 
+| Name             | Type       | Description                                     | Notes      |
+|------------------|------------|-------------------------------------------------|------------|
+| **Width**        | **Number** | Resulting document page width in pixels.        | [optional] |
+| **Height**       | **Number** | Resulting document page height in pixels.       | [optional] |
+| **LeftMargin**   | **Number** | Left resulting document page margin in pixels.  | [optional] |
+| **RightMargin**  | **Number** | Right resulting document page margin in pixels. | [optional] |
+| **TopMargin**    | **Number** | Top resulting document page margin in pixels.   | [optional] |
+| **BottomMargin** | **Number** | Bottom resulting document page margin pixels.   | [optional] |
+
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
 ```java
-
+ConversionOptions opts = new ImageConversionOptions()
+    .setHeight(800)
+    .setWidth(1000)
+    .setLeftMargin(10)
+    .setRightMargin(10)
+    .setBottomMargin(10)
+    .setTopMargin(10);
 ```
+
+| Name             | Type                    | Description                                           | Notes      |
+|------------------|-------------------------|-------------------------------------------------------|------------|
+| **width**        | **Optional\<Integer\>** | Resulting document page width in pixels.              | [optional] | 
+| **height**       | **Optional\<Integer\>** | Resulting document page height in pixels.             | [optional] |
+| **leftMargin**   | **Optional\<Integer\>** | Left resulting document page margin in pixels.        | [optional] |
+| **rightMargin**  | **Optional\<Integer\>** | Right resulting document page margin in pixels.       | [optional] |
+| **topMargin**    | **Optional\<Integer\>** | Top resulting document page margin in pixels.         | [optional] |
+| **bottomMargin** | **Optional\<Integer\>** | Bottom resulting document page margin in pixels.      | [optional] |
+
 
 {{< /tab >}}
 
@@ -294,8 +375,23 @@ Name | Type | Description  | Notes
 {{< tab tabNum="9" >}}
 
 ```java
-
+ConversionOptions opts = new ImageConversionOptions()
+    .setHeight(800)
+    .setWidth(1000)
+    .setLeftMargin(10)
+    .setRightMargin(10)
+    .setBottomMargin(10)
+    .setTopMargin(10);
 ```
+
+| Name             | Type                    | Description                                           | Notes      |
+|------------------|-------------------------|-------------------------------------------------------|------------|
+| **width**        | **Optional\<Integer\>** | Resulting document page width in pixels.              | [optional] | 
+| **height**       | **Optional\<Integer\>** | Resulting document page height in pixels.             | [optional] |
+| **leftMargin**   | **Optional\<Integer\>** | Left resulting document page margin in pixels.        | [optional] |
+| **rightMargin**  | **Optional\<Integer\>** | Right resulting document page margin in pixels.       | [optional] |
+| **topMargin**    | **Optional\<Integer\>** | Top resulting document page margin in pixels.         | [optional] |
+| **bottomMargin** | **Optional\<Integer\>** | Bottom resulting document page margin in pixels.      | [optional] |
 
 {{< /tab >}}
 

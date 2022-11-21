@@ -45,7 +45,16 @@ var result = await api.ConvertAsync("test.html", "test.jpeg");
 The following example demonstrates how to convert **HTML to JPEG java** language applying. Local HTML converted to JPEG and saved to the local path. You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
 
 ```java
+Configuration.setBasePath("https://api.aspose.cloud");
+Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
+HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
+
+ConverterBuilder builder = new ConverterBuilder()
+                .fromLocalFile("input.html")
+                .saveToLocal("output.jpeg");
+
+ConversionResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -115,7 +124,16 @@ The following example demonstrates how to convert **HTML to JPEG Swift** languag
 The following example demonstrates how to convert **HTML to JPEG Java/Android** applying. Local HTML converted to JPEG and saved to the local path. You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
 
 ```java
+Configuration.setBasePath("https://api.aspose.cloud");
+Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
+HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
+
+ConverterBuilder builder = new ConverterBuilder()
+                .fromLocalFile("input.html")
+                .saveToLocal("output.jpeg");
+
+ConversionResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -177,7 +195,25 @@ var result = await api.ConvertAsync("test.html", "test.png", options);
 The following example demonstrates how to convert **HTML to PNG java** language applying. HTML is taken from the local file system, converted to PNG and saved to the local path. You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
 
 ```java
+Configuration.setBasePath("https://api.aspose.cloud");
+Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
+HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
+
+ConversionOptions opt = new ImageConversionOptions()
+                        .setWidth(600)
+                        .setHeight(900)
+                        .setTopMargin(20)
+                        .setBottomMargin(20)
+                        .setLeftMargin(20)
+                        .setRightMargin(20);
+
+ConverterBuilder builder = new ConverterBuilder()
+                .fromLocalFile("input.html")
+                .useOptions(opt)
+                .saveToLocal("output.png");
+
+ConversionResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -247,7 +283,25 @@ The following example demonstrates how to convert **HTML to PNG Swift** language
 The following example demonstrates how to convert **HTML to PNG Java/Android** applying. HTML is taken from the local file system, converted to PNG and saved to the local path. You can download the Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
 
 ```java
+Configuration.setBasePath("https://api.aspose.cloud");
+Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
+HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
+
+ConversionOptions opt = new ImageConversionOptions()
+                        .setWidth(600)
+                        .setHeight(900)
+                        .setTopMargin(20)
+                        .setBottomMargin(20)
+                        .setLeftMargin(20)
+                        .setRightMargin(20);
+
+ConverterBuilder builder = new ConverterBuilder()
+                .fromLocalFile("input.html")
+                .useOptions(opt)
+                .saveToLocal("output.png");
+
+ConversionResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -301,7 +355,16 @@ var result = await api.ConvertUrlAsync("https://example.com", "test.gif");
 The following example shows how to convert **HTML to GIF java** language applying. HTML is taken from the Web, converted to GIF and saved to the local file system. You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
 
 ```java
+Configuration.setBasePath("https://api.aspose.cloud");
+Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
+HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
+
+ConverterBuilder builder = new ConverterBuilder()
+                .fromUrl("https://example.com")
+                .saveToLocal("output.gif");
+
+ConversionResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -371,7 +434,16 @@ The following example shows how to convert **HTML to GIF Swift** language applyi
 The following example shows how to convert **HTML to GIF Java/Android** applying. HTML is taken from the Web, converted to GIF and saved to the local file system. You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
 
 ```java
+Configuration.setBasePath("https://api.aspose.cloud");
+Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
+HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
+
+ConverterBuilder builder = new ConverterBuilder()
+                .fromUrl("https://example.com")
+                .saveToLocal("output.gif");
+
+ConversionResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -425,7 +497,16 @@ var result = await api.ConvertAsync(builder);
 The following example shows how to convert **HTML to JPEG java** language applying. HTML file is located in cloud storage, converted to JPEG and saved back to the cloud storage. You can download the java SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-java).
 
 ```java
+Configuration.setBasePath("https://api.aspose.cloud");
+Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
+HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
+
+ConverterBuilder builder = new ConverterBuilder()
+                .fromStorageFile("input.html")
+                .saveToStorage("output.jpeg");
+
+ConversionResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -495,7 +576,16 @@ The following example shows how to convert **HTML to JPEG Swift** language apply
 The following example shows how to convert **HTML to JPEG Java/Android** applying. HTML file is located in cloud storage, converted to JPEG and saved back to the cloud storage. You can download the  Java/Android SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-android).
 
 ```java
+Configuration.setBasePath("https://api.aspose.cloud");
+Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
+HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
+
+ConverterBuilder builder = new ConverterBuilder()
+                .fromStorageFile("input.html")
+                .saveToStorage("output.jpeg");
+
+ConversionResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
