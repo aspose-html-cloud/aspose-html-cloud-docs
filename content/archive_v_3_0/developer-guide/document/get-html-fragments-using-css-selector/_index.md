@@ -1,8 +1,9 @@
 ---
 title: "Get HTML fragments using CSS Selector"
 type: docs
-aliases: /archive_v_3_0/get-html-fragments-using-css-selector/
+aliases: /archive_v_3_0/developer-guide/document/get-html-fragments-using-css-selector/
 weight: 40
+url: /get-html-fragments-using-css-selector/
 ---
 
 ## **Introduction**

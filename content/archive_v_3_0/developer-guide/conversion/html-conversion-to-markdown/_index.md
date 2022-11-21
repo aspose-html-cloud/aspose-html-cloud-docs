@@ -1,8 +1,9 @@
 ---
 title: "HTML conversion to Markdown"
 type: docs
-aliases: /archive_v_3_0/html-conversion-to-markdown/
+aliases: /archive_v_3_0/developer-guide/conversion/html-conversion-to-markdown/
 weight: 40
+url: /html-conversion-to-markdown/
 ---
 
 ## **Introduction**

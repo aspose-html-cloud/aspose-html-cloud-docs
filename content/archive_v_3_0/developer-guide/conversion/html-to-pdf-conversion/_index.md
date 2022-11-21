@@ -1,10 +1,11 @@
 ---
 title: "HTML to PDF Conversion"
 type: docs
-aliases: /archive_v_3_0/html-to-pdf-conversion/
+aliases: /archive_v_3_0/developer-guide/conversion/html-to-pdf-conversion/
 keywords: "python html to pdf conversion, java , .net,  c#,  android, swift ,Perl, Node.js"
 description: " Article explains html to pdf conversion using Aspose.HTML Cloud API. SDKs are also available in PHP, Perl, Android, Swift, C#, Java and more to help developers speed up their development."
 weight: 10
+url: /html-to-pdf-conversion/
 ---
 
 ## **Introduction**
