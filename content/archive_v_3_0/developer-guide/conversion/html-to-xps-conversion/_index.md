@@ -1,8 +1,9 @@
 ---
 title: "HTML to XPS Conversion"
 type: docs
-aliases: /archive_v_3_0/html-to-xps-conversion/
+aliases: /archive_v_3_0/developer-guide/conversion/html-to-xps-conversion/
 weight: 20
+url: /html-to-xps-conversion/
 ---
 
 ## **Introduction**

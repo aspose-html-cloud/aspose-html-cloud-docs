@@ -1,8 +1,9 @@
 ---
 title: "Supported File Formats"
 type: docs
-aliases: /archive_v_3_0/supported-file-formats/
+aliases: /archive_v_3_0/getting-started/supported-file-formats/
 weight: 40
+url: /archive_v_3_0/supported-file-formats/
 ---
 
 |**Format**|**Description**|**Load**|**Save**|**Remarks**|

@@ -1,8 +1,9 @@
 ---
 title: "Template Merge"
 type: docs
-aliases: /archive_v_3_0/template-merge/
+aliases: /archive_v_3_0/developer-guide/template-merge/
 weight: 30
+url: /archive_v_3_0/template-merge/
 ---
 
 ## **HTML Template Merge Specification**
