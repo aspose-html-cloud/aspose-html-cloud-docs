@@ -1,7 +1,7 @@
 ---
 title: "Technical Support"
 type: docs
-aliases: archive_v_3_0/getting-started/technical-support/
+aliases: /archive_v_3_0/getting-started/technical-support/
 weight: 60
 url: /archive_v_3_0/technical-support/
 ---

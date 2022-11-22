@@ -1,7 +1,7 @@
 ---
 title: "Evaluate Aspose.HTML"
 type: docs
-aliases: archive_v_3_0/getting-started/evaluate-aspose-html/
+aliases: /archive_v_3_0/getting-started/evaluate-aspose-html/
 weight: 50
 url: /archive_v_3_0/evaluate-aspose-html/
 ---

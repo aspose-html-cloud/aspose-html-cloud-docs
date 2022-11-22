@@ -1,7 +1,7 @@
 ---
 title: "QuickStart"
 type: docs
-aliases: archive_v_3_0/getting-started/quickstart/
+aliases: /archive_v_3_0/getting-started/quickstart/
 weight: 20
 url: /archive_v_3_0/quickstart/
 ---

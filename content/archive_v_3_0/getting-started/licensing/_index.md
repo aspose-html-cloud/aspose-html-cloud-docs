@@ -1,7 +1,7 @@
 ---
 title: "Licensing"
 type: docs
-aliases: archive_v_3_0/getting-started/licensing/
+aliases: /archive_v_3_0/getting-started/licensing/
 weight: 80
 url: /archive_v_3_0/licensing/
 ---
