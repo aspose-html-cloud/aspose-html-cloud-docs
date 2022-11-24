@@ -39,7 +39,14 @@ var exists = await api.DirectoryExistsAsync("/files", "STORAGE_NAME");
 {{< tab tabNum="2" >}}
 
 ```java
+Configuration.setAPI_KEY("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+Configuration.setAPP_SID("XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX");
+StorageApi storageApi = new ApiClient().createService(StorageApi.class);
 
+Call<ObjectExist> call = storageApi.objectExists("FolderInStorage/file.txt", null, null);
+
+Response<ObjectExist> res = call.execute();
+ObjectExist result = res.body();
 ```
 
 {{< /tab >}}
@@ -96,7 +103,14 @@ var exists = await api.DirectoryExistsAsync("/files", "STORAGE_NAME");
 {{< tab tabNum="9" >}}
 
 ```java
+Configuration.setAPI_KEY("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+Configuration.setAPP_SID("XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX");
+StorageApi storageApi = new ApiClient().createService(StorageApi.class);
 
+Call<ObjectExist> call = storageApi.objectExists("FolderInStorage/file.txt", null, null);
+
+Response<ObjectExist> res = call.execute();
+ObjectExist result = res.body();
 ```
 
 {{< /tab >}}
@@ -147,7 +161,14 @@ var exists = await api.CreateDirectoryAsync("/files", "STORAGE_NAME");
 {{< tab tabNum="2" >}}
 
 ```java
+Configuration.setAPI_KEY("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+Configuration.setAPP_SID("XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX");
+StorageApi storageApi = new ApiClient().createService(StorageApi.class);
 
+String folderName = "CreateTestFolder";
+Call<Void> call = storageApi.createFolder(folderName, null);
+
+Response<Void> res = call.execute();
 ```
 
 {{< /tab >}}
@@ -204,7 +225,14 @@ var exists = await api.CreateDirectoryAsync("/files", "STORAGE_NAME");
 {{< tab tabNum="9" >}}
 
 ```java
+Configuration.setAPI_KEY("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+Configuration.setAPP_SID("XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX");
+StorageApi storageApi = new ApiClient().createService(StorageApi.class);
 
+String folderName = "CreateTestFolder";
+Call<Void> call = storageApi.createFolder(folderName, null);
+
+Response<Void> res = call.execute();
 ```
 
 {{< /tab >}}
@@ -254,7 +282,15 @@ var exists = await api.DeleteDirectoryAsync("/files", "STORAGE_NAME");
 {{< tab tabNum="2" >}}
 
 ```java
+Configuration.setAPI_KEY("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+Configuration.setAPP_SID("XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX");
+StorageApi storageApi = new ApiClient().createService(StorageApi.class);
 
+String folderName = "DeletingFolder";
+
+//Create remote folder
+Call<Void> call = storageApi.deleteFolder(folderName, null, true)
+Response<Void> res = call.execute();
 ```
 
 {{< /tab >}}
@@ -311,7 +347,15 @@ var exists = await api.DeleteDirectoryAsync("/files", "STORAGE_NAME");
 {{< tab tabNum="9" >}}
 
 ```java
+Configuration.setAPI_KEY("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+Configuration.setAPP_SID("XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX");
+StorageApi storageApi = new ApiClient().createService(StorageApi.class);
 
+String folderName = "DeletingFolder";
+
+//Create remote folder
+Call<Void> call = storageApi.deleteFolder(folderName, null, true)
+Response<Void> res = call.execute();
 ```
 
 {{< /tab >}}

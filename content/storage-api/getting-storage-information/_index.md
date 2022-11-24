@@ -43,7 +43,14 @@ var exists = await api.ExistsAsync("STORAGE_NAME");
 {{< tab tabNum="2" >}}
 
 ```java
+Configuration.setAPI_KEY("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+Configuration.setAPP_SID("XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX");
+StorageApi storageApi = new ApiClient().createService(StorageApi.class);
 
+Call<StorageExist> call = storageApi.storageExists("STORAGE_NAME");
+
+Response<StorageExist> res = call.execute();
+StorageExist result = res.body();
 ```
 
 {{< /tab >}}
@@ -100,7 +107,14 @@ var exists = await api.ExistsAsync("STORAGE_NAME");
 {{< tab tabNum="9" >}}
 
 ```java
+Configuration.setAPI_KEY("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+Configuration.setAPP_SID("XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX");
+StorageApi storageApi = new ApiClient().createService(StorageApi.class);
 
+Call<StorageExist> call = storageApi.storageExists("STORAGE_NAME");
+
+Response<StorageExist> res = call.execute();
+StorageExist result = res.body();
 ```
 
 {{< /tab >}}
@@ -138,7 +152,14 @@ var exists = await api.GetStorageAsync("STORAGE_NAME");
 {{< tab tabNum="2" >}}
 
 ```java
+Configuration.setAPI_KEY("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+Configuration.setAPP_SID("XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX");
+StorageApi storageApi = new ApiClient().createService(StorageApi.class);
 
+Call<DiscUsage> call = storageApi.getDiscUsage(null);
+
+Response<DiscUsage> res = call.execute();
+DiscUsage result = res.body();
 ```
 
 {{< /tab >}}
@@ -195,7 +216,14 @@ var exists = await api.GetStorageAsync("STORAGE_NAME");
 {{< tab tabNum="9" >}}
 
 ```java
+Configuration.setAPI_KEY("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+Configuration.setAPP_SID("XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX");
+StorageApi storageApi = new ApiClient().createService(StorageApi.class);
 
+Call<DiscUsage> call = storageApi.getDiscUsage(null);
+
+Response<DiscUsage> res = call.execute();
+DiscUsage result = res.body();
 ```
 
 {{< /tab >}}

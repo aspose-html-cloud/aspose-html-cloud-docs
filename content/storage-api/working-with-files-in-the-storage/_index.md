@@ -42,7 +42,14 @@ var exists = await api.FileExistsAsync("/test.html");
 {{< tab tabNum="2" >}}
 
 ```java
+Configuration.setAPI_KEY("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+Configuration.setAPP_SID("XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX");
+StorageApi storageApi = new ApiClient().createService(StorageApi.class);
 
+Call<ObjectExist> call = storageApi.objectExists("FolderInStorage/file.txt", null, null);
+
+Response<ObjectExist> res = call.execute();
+ObjectExist result = res.body();
 ```
 
 {{< /tab >}}
@@ -99,7 +106,14 @@ var exists = await api.FileExistsAsync("/test.html");
 {{< tab tabNum="9" >}}
 
 ```java
+Configuration.setAPI_KEY("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+Configuration.setAPP_SID("XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX");
+StorageApi storageApi = new ApiClient().createService(StorageApi.class);
 
+Call<ObjectExist> call = storageApi.objectExists("FolderInStorage/file.txt", null, null);
+
+Response<ObjectExist> res = call.execute();
+ObjectExist result = res.body();
 ```
 
 {{< /tab >}}
@@ -138,7 +152,18 @@ var exists = await api.UploadFileAsync("test.html", "files/test.html", "STORAGE_
 {{< tab tabNum="2" >}}
 
 ```java
+Configuration.setAPI_KEY("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+Configuration.setAPP_SID("XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX");
+StorageApi storageApi = new ApiClient().createService(StorageApi.class);
 
+File f = new File("PathToFile", "test.txt");
+RequestBody requestBody = RequestBody.create( MediaType.parse("multipart/form-data"), f);
+MultipartBody.Part fileToUpload = MultipartBody.Part.createFormData("file", f.getName(), requestBody);
+
+Call<FilesUploadResult> call = storageApi.uploadFile(fileToUpload, "FolderInStorage", null);
+
+Response<FilesUploadResult> res = call.execute();
+FilesUploadResult result = res.body();
 ```
 
 {{< /tab >}}
@@ -195,7 +220,18 @@ var exists = await api.UploadFileAsync("test.html", "files/test.html", "STORAGE_
 {{< tab tabNum="9" >}}
 
 ```java
+Configuration.setAPI_KEY("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+Configuration.setAPP_SID("XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX");
+StorageApi storageApi = new ApiClient().createService(StorageApi.class);
 
+File f = new File("PathToFile", "test.txt");
+RequestBody requestBody = RequestBody.create( MediaType.parse("multipart/form-data"), f);
+MultipartBody.Part fileToUpload = MultipartBody.Part.createFormData("file", f.getName(), requestBody);
+
+Call<FilesUploadResult> call_create = storageApi.uploadFile(fileToUpload, "FolderInStorage", null);
+
+Response<FilesUploadResult> res = call_create.execute();
+FilesUploadResult result = res.body();
 ```
 
 {{< /tab >}}
@@ -234,7 +270,14 @@ var exists = await api.DownloadFileAsync("files/test.html", "test.html", "STORAG
 {{< tab tabNum="2" >}}
 
 ```java
+Configuration.setAPI_KEY("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+Configuration.setAPP_SID("XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX");
+StorageApi storageApi = new ApiClient().createService(StorageApi.class);
 
+Call<ResponseBody> call = storageApi.downloadFile("FolderInStorage/fileInStorage.txt", null, null);
+
+Response<ResponseBody> res = call.execute();
+ResponseBody res_download = res.body();
 ```
 
 {{< /tab >}}
@@ -291,7 +334,14 @@ var exists = await api.DownloadFileAsync("files/test.html", "test.html", "STORAG
 {{< tab tabNum="9" >}}
 
 ```java
+Configuration.setAPI_KEY("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+Configuration.setAPP_SID("XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX");
+StorageApi storageApi = new ApiClient().createService(StorageApi.class);
 
+Call<ResponseBody> call = storageApi.downloadFile("FolderInStorage/fileInStorage.txt", null, null);
+
+Response<ResponseBody> res = call.execute();
+ResponseBody res_download = res.body();
 ```
 
 {{< /tab >}}
@@ -329,7 +379,13 @@ var exists = await api.DeleteFileAsync("files/test.html", "STORAGE_NAME");
 {{< tab tabNum="2" >}}
 
 ```java
+Configuration.setAPI_KEY("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+Configuration.setAPP_SID("XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX");
+StorageApi storageApi = new ApiClient().createService(StorageApi.class);
 
+Call<ResponseBody> call = storageApi.deleteFile("FolderInStorage/fileInStorage.txt", null, null);
+
+Response<ResponseBody> res = call.execute();
 ```
 
 {{< /tab >}}
@@ -386,7 +442,13 @@ var exists = await api.DeleteFileAsync("files/test.html", "STORAGE_NAME");
 {{< tab tabNum="9" >}}
 
 ```java
+Configuration.setAPI_KEY("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+Configuration.setAPP_SID("XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX");
+StorageApi storageApi = new ApiClient().createService(StorageApi.class);
 
+Call<ResponseBody> call = storageApi.deleteFile("FolderInStorage/fileInStorage.txt", null, null);
+
+Response<ResponseBody> res = call.execute();
 ```
 
 {{< /tab >}}
