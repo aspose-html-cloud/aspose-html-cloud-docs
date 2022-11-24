@@ -106,7 +106,25 @@ if(!f.good())
 The following example demonstrates how to convert **HTML to DOCX Python** language applying. Local HTML converted to DOCX and saved to the local path. You can download the Python SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-python).
 
 ```python
+from asposehtmlcloud.configuration import Configuration
+from asposehtmlcloud.api.html_api import HtmlApi
+from asposehtmlcloud.api_client import ApiClient as Client
+from asposehtmlcloud.rest import ApiException
 
+configuration = Configuration(apiKey="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+                              appSid="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+                              basePath="https://api.aspose.cloud/v4.0",
+                              authPath="https://api.aspose.cloud/connect/token",
+                              debug=True)
+client = Client(configuration)
+html_api = HtmlApi(client)
+
+try:
+    res = html_api.convertApi.convert_local_to_local(input_file="test.html", output_file="test.docx")
+except ApiException as ex:
+    print("Exception")
+    print("Info: " + str(ex))
+    raise ex
 ```
 
 {{< /tab >}}
@@ -116,7 +134,31 @@ The following example demonstrates how to convert **HTML to DOCX Python** langua
 The following example demonstrates how to convert **HTML to DOCX PHP** language applying. Local HTML converted to DOCX and saved to the local path. You can download the PHP SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-php)
 
 ```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
 
+$conf = array(
+	"basePath" => "https://api.aspose.cloud/v4.0",
+	"authPath" => "https://api.aspose.cloud/connect/token",
+	"apiKey" => "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+	"appSID" => "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+	"defaultUserAgent" => "Webkit"
+);
+
+$api_html = new Client\Invoker\Api\HtmlApi($conf);
+
+$src = 'input.html';
+$dst = 'output.docx';
+
+try {
+    //Request to server Api
+    $result = $api_html->convertLocalToLocal($src, $dst);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling HtmlApi->convertLocalToLocal: ', $e->getMessage(), PHP_EOL;
+}
+
+?>
 ```
 
 {{< /tab >}}
@@ -126,7 +168,33 @@ The following example demonstrates how to convert **HTML to DOCX PHP** language 
 The following example demonstrates how to convert **HTML to DOCX Ruby** language applying. Local HTML converted to DOCX and saved to the local path. You can download the Ruby SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby).
 
 ```ruby
+# load the gem
+require 'aspose_html_cloud'
 
+# Get keys from aspose site.
+# There is free quota available. 
+# For more details, see https://purchase.aspose.cloud/pricing
+
+CONFIG = {
+    "basePath":"https://api.aspose.cloud/v4.0",
+    "authPath":"https://api.aspose.cloud/connect/token",
+    "apiKey":"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID":"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "debug":true
+}
+
+api_instance = AsposeHtml::HtmlApi.new CONFIG
+
+src = "test.html"  # String | Full path to the input file.
+dst = "test.docx"  # String | Full path to the result.
+
+begin
+  #Convert the document from the local file and save result to the local file.
+  result = api_instance.convert_local_to_local(src, dst)
+  p result
+rescue AsposeHtml::ApiError => e
+  puts "Exception when calling api_instance.convert_local_to_local: #{e}"
+end
 ```
 
 {{< /tab >}}
@@ -136,7 +204,36 @@ The following example demonstrates how to convert **HTML to DOCX Ruby** language
 The following example demonstrates how to convert **HTML to DOCX Node.js** language applying. Local HTML converted to DOCX and saved to the local path.
 
 ```javascript
+// Get keys from aspose site.
+// There is free quota available. 
+// For more details, see https://purchase.aspose.cloud/pricing
+	
+var conf = {
+    "basePath":"https://api.aspose.cloud/v4.0",
+    "authPath":"https://api.aspose.cloud/connect/token",
+    "apiKey":"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID":"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "defaultUserAgent":"NodeJsWebkit"
+};
 
+var api = require('@asposecloud/aspose-html-cloud');
+
+// Create Conversion Api object
+var conversionApi = new api.ConversionApi(conf);
+
+var src = "/path/to/src/test.html"; // {String} Source document.
+var dst = "/path/to/dst/test.docx"; // {String} Result document.
+var opts = null;
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log(data);  
+  }
+};
+
+conversionApi.convertLocalToLocal(src, dst, opts, callback);
 ```
 
 {{< /tab >}}
@@ -146,7 +243,48 @@ The following example demonstrates how to convert **HTML to DOCX Node.js** langu
 The following example demonstrates how to convert **HTML to DOCX Swift** language applying. Local HTML converted to DOCX and saved to the local path. You can download the Swift SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-swift).
 
 ```swift
+import Alamofire
+import Foundation
+import XCTest
+import AsposeHtmlCloud
 
+static let fm = FileManager.default
+let resourceDir = fm.homeDirectoryForCurrentUser.appendingPathComponent("Documents/Aspose.HTML.Cloud.SDK.Swift/Tests/AsposeHtmlCloudTests/Resources")
+let resultDir = fm.homeDirectoryForCurrentUser.appendingPathComponent("Documents/Aspose.HTML.Cloud.SDK.Swift/Tests/AsposeHtmlCloudTests/TestResult")
+
+func url(forResource fileName: String) -> URL {
+	return resourceDir.appendingPathComponent(fileName)
+}
+
+func fileExist(name: String) -> Bool {
+	return FileManager.default.fileExists(atPath: name)
+}
+
+ClientAPI.setConfig(
+	basePath: "https://api.aspose.cloud/v4.0", 
+	authPath: "https://api.aspose.cloud/connect/token", 
+	apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+	appSID: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX", 
+	debugging: true
+)
+
+let fileName = "test.html"
+let format = "docx"
+let src = url(forResource: fileName).absoluteString
+
+let expectation = self.expectation(description: "testConvert to \(format)")
+let dst = resultDir.appendingPathComponent("Output.\(format)").absoluteString
+HtmlAPI.convertLocalToLocal(src: src, dst: dst, options: nil) { (data, error) in
+
+	guard error == nil else {
+		XCTFail("Error convert html to \(format)). Error=\(error!.localizedDescription)")
+		return
+	}
+	let resultPath = data!.file!
+	XCTAssertTrue(fileExist(name: resultPath))
+	expectation.fulfill()
+}
+self.waitForExpectations(timeout: testTimeout, handler: nil)
 ```
 
 {{< /tab >}}
@@ -282,7 +420,33 @@ if(!f.good())
 The following example shows how to convert **HTML to DOCX Python** language applying. HTML is taken from the Web, converted to DOCX and saved to the local file system. You can download the Python SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-python).
 
 ```python
+import os
+from asposehtmlcloud.configuration import Configuration
+from asposehtmlcloud.api.html_api import HtmlApi
+from asposehtmlcloud.api_client import ApiClient as Client
+from asposehtmlcloud.rest import ApiException
 
+# Get keys from aspose site.
+# There is free quota available. 
+# For more details, see https://purchase.aspose.cloud/pricing
+
+configuration = Configuration(apiKey="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+                              appSid="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+                              basePath="https://api.aspose.cloud/v4.0",
+                              authPath="https://api.aspose.cloud/connect/token",
+                              debug=True)
+
+client = Client(configuration)
+html_api = HtmlApi(client)
+
+try:
+    res = html_api.convert_url_to_local(input_file="https://example.com", output_file="result.docx")
+    if not os.path.exists(res.file):
+        print('conversion failed')
+except ApiException as ex:
+    print("Exception")
+    print("Info: " + str(ex))
+    raise ex
 ```
 
 {{< /tab >}}
@@ -292,7 +456,39 @@ The following example shows how to convert **HTML to DOCX Python** language appl
 The following example demonstrates how to convert **HTML to DOCX PHP** language applying. HTML is taken from the Web, converted to DOCX and saved to the local file system. You can download the PHP SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-php).
 
 ```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
 
+$conf = array(
+	"basePath" => "https://api.aspose.cloud/v4.0",
+	"authPath" => "https://api.aspose.cloud/connect/token",
+	"apiKey" => "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+	"appSID" => "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+	"defaultUserAgent" => "Webkit"
+);
+
+$api_html = new Client\Invoker\Api\HtmlApi($conf);
+
+$src = 'https://example.com';
+$dst = 'output.docx';
+
+$options_a4 = [
+    'width' => 8.3,
+    'height' => 11.7,
+    'left_margin' => 0.2,
+    'right_margin' => 0.2,
+    'top_margin' => 0.2,
+    'bottom_margin' => 0.2
+];
+
+try {
+    //Request to server Api
+    $result = $api_html->convertUrlToLocal($src, $dst, $options_a4);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling HtmlApi->convertUrlToLocal: ', $e->getMessage(), PHP_EOL;
+}
+?>
 ```
 
 {{< /tab >}}
@@ -302,7 +498,34 @@ The following example demonstrates how to convert **HTML to DOCX PHP** language 
 The following example shows how to convert **HTML to DOCX Ruby** language applying. HTML is taken from the Web, converted to DOCX and saved to the local file system. You can download the Ruby SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby).
 
 ```ruby
+# load the gem
+require 'aspose_html_cloud'
 
+# Get keys from aspose site.
+# There is free quota available. 
+# For more details, see https://purchase.aspose.cloud/pricing
+
+
+CONFIG = {
+    "basePath":"https://api.aspose.cloud/v4.0",
+    "authPath":"https://api.aspose.cloud/connect/token",
+    "apiKey":"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID":"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "debug":true
+}
+
+api_instance = AsposeHtml::HtmlApi.new CONFIG
+
+src = "https://example.com" # String | Input url.
+dst = "test.docx"           # String | Result file.
+
+begin
+  #Convert the HTML file from the web and save result to the local file.
+  result = api_instance.convert_url_to_local(src, dst)
+  p result
+rescue AsposeHtml::ApiError => e
+  puts "Exception when calling api_instance.convert_url_to_local: #{e}"
+end
 ```
 
 {{< /tab >}}
@@ -312,7 +535,36 @@ The following example shows how to convert **HTML to DOCX Ruby** language applyi
 The following example shows how to convert **HTML to DOCX Node.js** language applying. HTML is taken from the Web, converted to DOCX and saved to the local file system. 
 
 ```javascript
+// Get keys from aspose site.
+// There is free quota available. 
+// For more details, see https://purchase.aspose.cloud/pricing
+	
+var conf = {
+    "basePath":"https://api.aspose.cloud/v4.0",
+    "authPath":"https://api.aspose.cloud/connect/token",
+    "apiKey":"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID":"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "defaultUserAgent":"NodeJsWebkit"
+};
 
+var api = require('@asposecloud/aspose-html-cloud');
+
+// Create Conversion Api object
+var conversionApi = new api.ConversionApi(conf);
+
+var src = "https://example.com";     // {String} Url for conversion.
+var dst = "/path/to/dst/test.docx";  // {String} Result document.
+var opts = null;
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log(data);  
+  }
+};
+
+conversionApi.convertUrlToLocal(src, dst, opts, callback);
 ```
 
 {{< /tab >}}
@@ -322,7 +574,43 @@ The following example shows how to convert **HTML to DOCX Node.js** language app
 The following example shows how to convert **HTML to DOCX Swift** language applying. HTML is taken from the Web, converted to DOCX and saved to the local file system. You can download the Swift SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-swift).
 
 ```swift
+import Alamofire
+import Foundation
+import XCTest
+import AsposeHtmlCloud
 
+static let fm = FileManager.default
+let resultDir = fm.homeDirectoryForCurrentUser.appendingPathComponent("Documents/Aspose.HTML.Cloud.SDK.Swift/Tests/AsposeHtmlCloudTests/TestResult")
+
+func fileExist(name: String) -> Bool {
+	return FileManager.default.fileExists(atPath: name)
+}
+
+ClientAPI.setConfig(
+	basePath: "https://api.aspose.cloud/v4.0", 
+	authPath: "https://api.aspose.cloud/connect/token", 
+	apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+	appSID: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX", 
+	debugging: true
+)
+
+let format = "docx"
+let src = "https://example.com"
+let dst = resultDir.appendingPathComponent("Output.\(format)").absoluteString
+
+let expectation = self.expectation(description: "testConvert to \(format)")
+
+HtmlAPI.convertUrlToLocal(src: src, dst: dst, options: nil) { (data, error) in
+
+	guard error == nil else {
+		XCTFail("Error convert web site to \(format)). Error=\(error!.localizedDescription)")
+		return
+	}
+	let resultPath = data!.file!
+	XCTAssertTrue(fileExist(name: resultPath))
+	expectation.fulfill()
+}
+self.waitForExpectations(timeout: testTimeout, handler: nil)
 ```
 
 {{< /tab >}}
@@ -443,7 +731,26 @@ auto result = api->convertStorageToStorage(src, dst);
 The following example shows how to convert **HTML to DOCX Python** language applying. The HTML file is in the cloud storage, converted to DOCX and saved back to the cloud storage. You can download the Python SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-python).
 
 ```python
+from asposehtmlcloud.configuration import Configuration
+from asposehtmlcloud.api.html_api import HtmlApi
+from asposehtmlcloud.api_client import ApiClient as Client
+from asposehtmlcloud.rest import ApiException
 
+configuration = Configuration(apiKey="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+                              appSid="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+                              basePath="https://api.aspose.cloud/v4.0",
+                              authPath="https://api.aspose.cloud/connect/token",
+                              debug=True)
+client = Client(configuration)
+html_api = HtmlApi(client)
+
+try:
+    res = html_api.convertApi.convert_storage_to_storage(input_file="test.html", output_file="test.docx",
+                                                         storage_name=None)
+except ApiException as ex:
+    print("Exception")
+    print("Info: " + str(ex))
+    raise ex
 ```
 
 {{< /tab >}}
@@ -453,7 +760,30 @@ The following example shows how to convert **HTML to DOCX Python** language appl
 The following example demonstrates how to convert **HTML to DOCX PHP** language applying. The HTML file is in the cloud storage, converted to DOCX and saved back to the cloud storage.. You can download the PHP SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-php).
 
 ```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
 
+$configuration = array(
+    "basePath" => "https://api.aspose.cloud/v4.0",
+    "authPath" => "https://api.aspose.cloud/connect/token",
+    "apiKey" => "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID" => "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "defaultUserAgent" => "Webkit"
+);
+
+$api_html = new HtmlApi($configuration);
+
+$src = "FolderInStorage/test.html";
+$dst = 'FolderInStorage/test.docx';
+$options = null;
+
+try {
+    $result = $api_html->convertStorageToStorage($src, $dst, null, $options);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling $api_html->convertStorageToStorage: ', $e->getMessage(), PHP_EOL;
+}
+?>
 ```
 
 {{< /tab >}}
@@ -463,7 +793,35 @@ The following example demonstrates how to convert **HTML to DOCX PHP** language 
 The following example shows how to convert **HTML to DOCX Ruby** language applying. The HTML file is in the cloud storage, converted to DOCX and saved back to the cloud storage. You can download the Ruby SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby).
 
 ```ruby
+# load the gem
+require 'aspose_html_cloud'
 
+# Get keys from aspose site.
+# There is free quota available. 
+# For more details, see https://purchase.aspose.cloud/pricing
+
+
+CONFIG = {
+    "basePath":"https://api.aspose.cloud/v4.0",
+    "authPath":"https://api.aspose.cloud/connect/token",
+    "apiKey":"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID":"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "debug":true
+}
+
+api_instance = AsposeHtml::HtmlApi.new CONFIG
+
+src = "FolderInStorage/test.html" # String | Source file.
+dst = "FolderInStorage/test.docx" # String | Result file.
+storage = nil
+
+begin
+  #Convert the file from the storage and save result to the storage.
+  result = api_instance.convert_storage_to_storage(src, dst, storage)
+  p result
+rescue AsposeHtml::ApiError => e
+  puts "Exception when calling api_instance.convert_storage_to_storage: #{e}"
+end
 ```
 
 {{< /tab >}}
@@ -473,7 +831,37 @@ The following example shows how to convert **HTML to DOCX Ruby** language applyi
 The following example shows how to convert **HTML to DOCX Node.js** language applying. The HTML file is in the cloud storage, converted to DOCX and saved back to the cloud storage. 
 
 ```javascript
+// Get keys from aspose site.
+// There is free quota available. 
+// For more details, see https://purchase.aspose.cloud/pricing
+	
+var conf = {
+    "basePath":"https://api.aspose.cloud/v4.0",
+    "authPath":"https://api.aspose.cloud/connect/token",
+    "apiKey":"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID":"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "defaultUserAgent":"NodeJsWebkit"
+};
 
+var api = require('@asposecloud/aspose-html-cloud');
+
+// Create Conversion Api object
+var conversionApi = new api.ConversionApi(conf);
+
+var src = "FolderInStorage/test.html"; // {String} Source document.
+var dst = "FolderInStorage/test.docx"; // {String} Result document.
+var opts = null;
+var storage = null;
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log(data);  
+  }
+};
+
+conversionApi.convertStorageToStorage(src, dst, storage, opts, callback);
 ```
 
 {{< /tab >}}
@@ -483,7 +871,45 @@ The following example shows how to convert **HTML to DOCX Node.js** language app
 The following example shows how to convert **HTML to DOCX Swift** language applying. The HTML file is in the cloud storage, converted to DOCX and saved back to the cloud storage. You can download the Swift SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-swift).
 
 ```swift
+import Alamofire
+import Foundation
+import XCTest
+import AsposeHtmlCloud
 
+ClientAPI.setConfig(
+	basePath: "https://api.aspose.cloud/v4.0", 
+	authPath: "https://api.aspose.cloud/connect/token", 
+	apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+	appSID: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX", 
+	debugging: true
+)
+
+let src = "FolderInStorage/test.html"
+let dst = "FolderInStorage/test.docx"
+
+let expectation = self.expectation(description: "testConvert to docx")
+
+HtmlAPI.convertStorageToStorage(src: src, dst: dst, storage: nil, options: nil) { (data, error) in
+
+    guard error == nil else {
+        XCTFail("Error convert html to docx. Error=\(error!.localizedDescription)")
+        return
+    }
+
+    let resultPath = data!.file!
+
+    StorageAPI.objectExists(path: resultPath, storageName: nil, versionId: nil) {(data, error) in
+        guard error == nil else {
+            XCTFail("Error objectExists exist. Error=\(error!.localizedDescription)")
+            return
+        }
+
+        XCTAssertTrue(data!.exists)
+        XCTAssertFalse(data!.isFolder)
+        expectation.fulfill()
+    }
+}
+self.waitForExpectations(timeout: testTimeout, handler: nil)
 ```
 
 {{< /tab >}}

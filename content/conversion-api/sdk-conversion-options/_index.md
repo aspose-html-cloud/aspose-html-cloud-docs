@@ -97,40 +97,127 @@ ConversionOptions opt_A5 = new PDFConversionOptions()
 
 
 ```python
-
+options = {
+    'width': 8.3,
+    'height': 11.7,
+    'topmargin': 0.2,
+    'bottommargin': 0.2,
+    'leftmargin': 0.2,
+    'rightmargin': 0.2,
+    'jpegquality': 95
+}
 ```
+
+| Field            | Type  | Description                                                  | Note     |
+|------------------|-------|--------------------------------------------------------------|----------|
+| **width**        | float | Width in inches                                              | Optional |
+| **height**       | float | Height in inches                                             | Optional |
+| **leftmargin**   | float | Left margin in inches                                        | Optional |
+| **rightmargin**  | float | Right margin in inches                                       | Optional |
+| **topmargin**    | float | Top margin in inches                                         | Optional |
+| **bottommargin** | float | Bottom margin in inches                                      | Optional |
+| **jpegquality**  | int   | Quality in percent                                           | Optional |
+| **background**   | str   | CSS background like '#FF0000'. For conversion from SVG only  | Optional |
 
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
 
 ```php
-
+$options_a4 = [
+    'width' => 8.3,
+    'height' => 11.7,
+    'left_margin' => 0.2,
+    'right_margin' => 0.2,
+    'top_margin' => 0.2,
+    'bottom_margin' => 0.2
+];
 ```
+
+| Field             | Type  | Description                                                  | Note     |
+|-------------------|-------|--------------------------------------------------------------|----------|
+| **width**         | float | Width in inches                                              | Optional |
+| **height**        | float | Height in inches                                             | Optional |
+| **left_margin**   | float | Left margin in inches                                        | Optional |
+| **right_margin**  | float | Right margin in inches                                       | Optional |
+| **top_margin**    | float | Top margin in inches                                         | Optional |
+| **bottom_margin** | float | Bottom margin in inches                                      | Optional |
+| **jpeg_quality**  | int   | Quality in percent                                           | Optional |
+| **background**    | str   | CSS background like '#FF0000'. For conversion from SVG only  | Optional |
 
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
 ```ruby
-
+opts = { 
+  width: 8.3,
+  height: 11.7,
+  left_margin: 0.2,
+  right_margin: 0.2,
+  top_margin: 0.2,
+  bottom_margin: 0.2
+}
 ```
+
+| Field             | Type    | Description                                                 | Note     |
+|-------------------|---------|-------------------------------------------------------------|----------|
+| **width**         | Float   | Width in inches                                             | Optional |
+| **height**        | Float   | Height in inches                                            | Optional |
+| **left_margin**   | Float   | Left margin in inches                                       | Optional |
+| **right_margin**  | Float   | Right margin in inches                                      | Optional |
+| **top_margin**    | Float   | Top margin in inches                                        | Optional |
+| **bottom_margin** | Float   | Bottom margin in inches                                     | Optional |
+| **jpeg_quality**  | Integer | Quality in percent                                          | Optional |
+| **background**    | String  | CSS background like '#FF0000'. For conversion from SVG only | Optional |
 
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
 
 ```javascript
-
+var opts_A4 = {
+    'width': 8.3,
+    'height': 11.7,
+    'leftMargin': 0.2,
+    'rightMargin': 0.2,
+    'topMargin': 0.2,
+    'bottomMargin': 0.2,
+    'jpegquality': 95
+};
 ```
+
+| Field            | Type   | Description                                                 | Note     |
+|------------------|--------|-------------------------------------------------------------|----------|
+| **width**        | Number | Width in inches                                             | Optional |
+| **height**       | Number | Height in inches                                            | Optional |
+| **leftmargin**   | Number | Left margin in inches                                       | Optional |
+| **rightmargin**  | Number | Right margin in inches                                      | Optional |
+| **topmargin**    | Number | Top margin in inches                                        | Optional |
+| **bottommargin** | Number | Bottom margin in inches                                     | Optional |
+| **jpegquality**  | Number | Quality in percent                                          | Optional |
+| **background**   | String | CSS background like '#FF0000'. For conversion from SVG only | Optional |
 
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
 
 ```swift
-
+let options = ConversionOptions(width: 8.3, height: 11.7, leftMargin: 0.2,
+        rightMargin: 0.2, topMargin: 0.2, bottomMargin: 0.2)
 ```
+
+| Name                | Type         | Description                                                                                                                     | Notes      |
+|---------------------|--------------|---------------------------------------------------------------------------------------------------------------------------------|------------|
+| **width**           | **Float32?** | Resulting width in pixels for images and in inches for PDF, XPS, DOCX formats.                                                  | [optional] |
+| **height**          | **Float32?** | Resulting height in pixels for images and in inches for PDF, XPS, DOCX formats.                                                 | [optional] |
+| **leftMargin**      | **Float32?** | Left margin in pixels for images and in inches for PDF, XPS, DOCX formats.                                                      | [optional] |
+| **rightMargin**     | **Float32?** | Right margin in pixels for images and in inches for PDF, XPS, DOCX formats.                                                     | [optional] |
+| **topMargin**       | **Float32?** | Top margin in pixels for images and in inches for PDF, XPS, DOCX formats.                                                       | [optional] |
+| **bottomMargin**    | **Float32?** | Bottom margin in pixels for images and in inches for PDF, XPS, DOCX formats.                                                    | [optional] |
+| **jpegquality**     | **Int32?**   | JPEG quality images in percent for PDF output format.                                                                           | [optional] |
+| **background**      | **String?**  | CSS background like '#FF0000'. For conversion from SVG only.                                                                    | [optional] |
+
 
 {{< /tab >}}
 
@@ -240,42 +327,115 @@ ConversionOptions xpsOpts_A5 = new XPSConversionOptions()
 
 {{< tab tabNum="4" >}}
 
-
 ```python
-
+options = {
+    'width': 8.3,
+    'height': 11.7,
+    'topmargin': 0.2,
+    'bottommargin': 0.2,
+    'leftmargin': 0.2,
+    'rightmargin': 0.2
+}
 ```
+
+| Field            | Type  | Description                                                  | Note     |
+|------------------|-------|--------------------------------------------------------------|----------|
+| **width**        | float | Width in inches                                              | Optional |
+| **height**       | float | Height in inches                                             | Optional |
+| **leftmargin**   | float | Left margin in inches                                        | Optional |
+| **rightmargin**  | float | Right margin in inches                                       | Optional |
+| **topmargin**    | float | Top margin in inches                                         | Optional |
+| **bottommargin** | float | Bottom margin in inches                                      | Optional |
 
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
 
 ```php
-
+$options_a4 = [
+    'width' => 8.3,
+    'height' => 11.7,
+    'left_margin' => 0.2,
+    'right_margin' => 0.2,
+    'top_margin' => 0.2,
+    'bottom_margin' => 0.2
+];
 ```
+
+| Field             | Type  | Description                                                  | Note     |
+|-------------------|-------|--------------------------------------------------------------|----------|
+| **width**         | float | Width in inches                                              | Optional |
+| **height**        | float | Height in inches                                             | Optional |
+| **left_margin**   | float | Left margin in inches                                        | Optional |
+| **right_margin**  | float | Right margin in inches                                       | Optional |
+| **top_margin**    | float | Top margin in inches                                         | Optional |
+| **bottom_margin** | float | Bottom margin in inches                                      | Optional |
 
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
 ```ruby
-
+opts = { 
+  width: 8.3,
+  height: 11.7,
+  left_margin: 0.2,
+  right_margin: 0.2,
+  top_margin: 0.2,
+  bottom_margin: 0.2
+}
 ```
+
+| Field             | Type    | Description                                                 | Note     |
+|-------------------|---------|-------------------------------------------------------------|----------|
+| **width**         | Float   | Width in inches                                             | Optional |
+| **height**        | Float   | Height in inches                                            | Optional |
+| **left_margin**   | Float   | Left margin in inches                                       | Optional |
+| **right_margin**  | Float   | Right margin in inches                                      | Optional |
+| **top_margin**    | Float   | Top margin in inches                                        | Optional |
+| **bottom_margin** | Float   | Bottom margin in inches                                     | Optional |
 
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
 
 ```javascript
-
+var opts_A4 = {
+    'width': 8.3,
+    'height': 11.7,
+    'leftMargin': 0.2,
+    'rightMargin': 0.2,
+    'topMargin': 0.2,
+    'bottomMargin': 0.2
+};
 ```
+
+| Field            | Type   | Description                                                 | Note     |
+|------------------|--------|-------------------------------------------------------------|----------|
+| **width**        | Number | Width in inches                                             | Optional |
+| **height**       | Number | Height in inches                                            | Optional |
+| **leftmargin**   | Number | Left margin in inches                                       | Optional |
+| **rightmargin**  | Number | Right margin in inches                                      | Optional |
+| **topmargin**    | Number | Top margin in inches                                        | Optional |
+| **bottommargin** | Number | Bottom margin in inches                                     | Optional |
 
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
 
 ```swift
-
+let options = ConversionOptions(width: 8.3, height: 11.7, leftMargin: 0.2,
+        rightMargin: 0.2, topMargin: 0.2, bottomMargin: 0.2)
 ```
+
+| Name                | Type         | Description                                                                                                                     | Notes      |
+|---------------------|--------------|---------------------------------------------------------------------------------------------------------------------------------|------------|
+| **width**           | **Float32?** | Resulting width in pixels for images and in inches for PDF, XPS, DOCX formats.                                                  | [optional] |
+| **height**          | **Float32?** | Resulting height in pixels for images and in inches for PDF, XPS, DOCX formats.                                                 | [optional] |
+| **leftMargin**      | **Float32?** | Left margin in pixels for images and in inches for PDF, XPS, DOCX formats.                                                      | [optional] |
+| **rightMargin**     | **Float32?** | Right margin in pixels for images and in inches for PDF, XPS, DOCX formats.                                                     | [optional] |
+| **topMargin**       | **Float32?** | Top margin in pixels for images and in inches for PDF, XPS, DOCX formats.                                                       | [optional] |
+| **bottomMargin**    | **Float32?** | Bottom margin in pixels for images and in inches for PDF, XPS, DOCX formats.                                                    | [optional] |
 
 {{< /tab >}}
 
@@ -385,40 +545,121 @@ ConversionOptions opts = new ImageConversionOptions()
 
 
 ```python
-
+options = {
+    'width': 600,
+    'height': 900,
+    'topmargin': 20,
+    'bottommargin': 20,
+    'leftmargin': 20,
+    'rightmargin': 20,
+    'jpegquality': 95
+}
 ```
+
+| Field            | Type | Description                                                 | Note     |
+|------------------|------|-------------------------------------------------------------|----------|
+| **width**        | int  | Width in pixel                                              | Optional |
+| **height**       | int  | Height in pixel                                             | Optional |
+| **leftmargin**   | int  | Left margin in pixel                                        | Optional |
+| **rightmargin**  | int  | Right margin in pixel                                       | Optional |
+| **topmargin**    | int  | Top margin in pixel                                         | Optional |
+| **bottommargin** | int  | Bottom margin in pixel                                      | Optional |
+| **background**   | str  | CSS background like '#FF0000'. For conversion from SVG only | Optional |
+
 
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
 
 ```php
-
+$options = [
+    'width' => 800,
+    'height' => 600,
+    'left_margin' => 20,
+    'right_margin' => 20,
+    'top_margin' => 20,
+    'bottom_margin' => 20
+];
 ```
+
+| Field             | Type | Description                                                 | Note     |
+|-------------------|------|-------------------------------------------------------------|----------|
+| **width**         | int  | Width in pixel                                              | Optional |
+| **height**        | int  | Height in pixel                                             | Optional |
+| **left_margin**   | int  | Left margin in pixel                                        | Optional |
+| **right_margin**  | int  | Right margin in pixel                                       | Optional |
+| **top_margin**    | int  | Top margin in pixel                                         | Optional |
+| **bottom_margin** | int  | Bottom margin in pixel                                      | Optional |
+| **background**    | str  | CSS background like '#FF0000'. For conversion from SVG only | Optional |
 
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
 ```ruby
-
+opts = { 
+  width: 700,
+  height: 1000,
+  left_margin: 40,
+  right_margin: 40,
+  top_margin: 50,
+  bottom_margin: 50
+}
 ```
+
+| Field             | Type    | Description                                                 | Note     |
+|-------------------|---------|-------------------------------------------------------------|----------|
+| **width**         | Integer | Width in pixel                                              | Optional |
+| **height**        | Integer | Height in pixel                                             | Optional |
+| **left_margin**   | Integer | Left margin in pixel                                        | Optional |
+| **right_margin**  | Integer | Right margin in pixel                                       | Optional |
+| **top_margin**    | Integer | Top margin in pixel                                         | Optional |
+| **bottom_margin** | Integer | Bottom margin in pixel                                      | Optional |
+| **background**    | String  | CSS background like '#FF0000'. For conversion from SVG only | Optional |
 
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
 
 ```javascript
-
+var opts = {
+    'width': 600,
+    'height': 800,
+    'leftMargin': 10,
+    'rightMargin': 20,
+    'topMargin': 30,
+    'bottomMargin': 40
+};
 ```
+
+| Field            | Type   | Description                                                 | Note     |
+|------------------|--------|-------------------------------------------------------------|----------|
+| **width**        | Number | Width in pixel                                              | Optional |
+| **height**       | Number | Height in pixel                                             | Optional |
+| **leftmargin**   | Number | Left margin in pixel                                        | Optional |
+| **rightmargin**  | Number | Right margin in pixel                                       | Optional |
+| **topmargin**    | Number | Top margin in pixel                                         | Optional |
+| **bottommargin** | Number | Bottom margin in pixel                                      | Optional |
+| **background**   | String | CSS background like '#FF0000'. For conversion from SVG only | Optional |
 
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
 
 ```swift
-
+let options = ConversionOptions(width: 800, height: 1200, leftMargin: 20,
+        rightMargin: 20, topMargin: 20, bottomMargin: 20)
 ```
+
+| Name                | Type         | Description                                                                                                                     | Notes      |
+|---------------------|--------------|---------------------------------------------------------------------------------------------------------------------------------|------------|
+| **width**           | **Float32?** | Resulting width in pixels for images and in inches for PDF, XPS, DOCX formats.                                                  | [optional] |
+| **height**          | **Float32?** | Resulting height in pixels for images and in inches for PDF, XPS, DOCX formats.                                                 | [optional] |
+| **leftMargin**      | **Float32?** | Left margin in pixels for images and in inches for PDF, XPS, DOCX formats.                                                      | [optional] |
+| **rightMargin**     | **Float32?** | Right margin in pixels for images and in inches for PDF, XPS, DOCX formats.                                                     | [optional] |
+| **topMargin**       | **Float32?** | Top margin in pixels for images and in inches for PDF, XPS, DOCX formats.                                                       | [optional] |
+| **bottomMargin**    | **Float32?** | Bottom margin in pixels for images and in inches for PDF, XPS, DOCX formats.                                                    | [optional] |
+| **background**      | **String?**  | CSS background like '#FF0000'. For conversion from SVG only.                                                                    | [optional] |
 
 {{< /tab >}}
 

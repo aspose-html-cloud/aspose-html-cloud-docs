@@ -40,7 +40,12 @@ var api = new HtmlApi(clientId, clientSecret);
 {{< tab tabNum="2" >}}
 
 ```java
+Configuration.setBasePath("https://api.aspose.cloud");
+Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
+Configuration.setUserAgent("WebKit");
+Configuration.setDebug(true);
 
+HtmlApi api = new HtmlApi("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX");
 ```
 
 {{< /tab >}}
@@ -48,7 +53,21 @@ var api = new HtmlApi(clientId, clientSecret);
 {{< tab tabNum="3" >}}
 
 ```c++
+#include "AsposeHtmlCloud.h"
 
+const utility::string_t clientId = L"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX";
+const utility::string_t clientSecret = L"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+const utility::string_t basePath = L"https://api.aspose.cloud/v4.0";
+const utility::string_t authPath = L"https://api.aspose.cloud/connect/token";
+
+// Create configuration for authorization
+std::shared_ptr<ApiConfiguration> apiConfig(new ApiConfiguration(clientId, clientSecret, basePath, authPath));
+
+// Create client from configuration
+std::shared_ptr<ApiClient> apiClient(new ApiClient(apiConfig));
+
+// Create ConversionApi
+std::shared_ptr<ConversionApi> api = std::make_shared<ConversionApi>(apiClient);
 ```
 
 {{< /tab >}}
@@ -57,7 +76,22 @@ var api = new HtmlApi(clientId, clientSecret);
 
 
 ```python
+from asposehtmlcloud.configuration import Configuration
+from asposehtmlcloud.api.html_api import HtmlApi
+from asposehtmlcloud.api_client import ApiClient as Client
 
+# Get keys from aspose site.
+# There is free quota available. 
+# For more details, see https://purchase.aspose.cloud/pricing
+
+configuration = Configuration(apiKey="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+                              appSid="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+                              basePath="https://api.aspose.cloud/v4.0",
+                              authPath="https://api.aspose.cloud/connect/token",
+                              debug=True)
+
+client = Client(configuration)
+html_api = HtmlApi(client)
 ```
 
 {{< /tab >}}
@@ -65,7 +99,18 @@ var api = new HtmlApi(clientId, clientSecret);
 {{< tab tabNum="5" >}}
 
 ```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
 
+$conf = array(
+	"basePath" => "https://api.aspose.cloud/v4.0",
+	"authPath" => "https://api.aspose.cloud/connect/token",
+	"apiKey" => "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+	"appSID" => "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+	"defaultUserAgent" => "Webkit"
+);
+
+$api_html = new Client\Invoker\Api\HtmlApi($conf);
 ```
 
 {{< /tab >}}
@@ -73,7 +118,23 @@ var api = new HtmlApi(clientId, clientSecret);
 {{< tab tabNum="6" >}}
 
 ```ruby
+# load the gem
+require 'aspose_html_cloud'
 
+# Get keys from aspose site.
+# There is free quota available. 
+# For more details, see https://purchase.aspose.cloud/pricing
+
+
+CONFIG = {
+    "basePath":"https://api.aspose.cloud/v4.0",
+    "authPath":"https://api.aspose.cloud/connect/token",
+    "apiKey":"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID":"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "debug":true
+}
+
+api_instance = AsposeHtml::HtmlApi.new CONFIG
 ```
 
 {{< /tab >}}
@@ -81,7 +142,18 @@ var api = new HtmlApi(clientId, clientSecret);
 {{< tab tabNum="7" >}}
 
 ```javascript
+var conf = {
+    "basePath":"https://api.aspose.cloud/v4.0",
+    "authPath":"https://api.aspose.cloud/connect/token",
+    "apiKey":"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID":"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "defaultUserAgent":"NodeJsWebkit"
+};
 
+var api = require('@asposecloud/aspose-html-cloud');
+
+// Create Conversion Api object
+var conversionApi = new api.ConversionApi(conf);
 ```
 
 {{< /tab >}}
@@ -89,7 +161,14 @@ var api = new HtmlApi(clientId, clientSecret);
 {{< tab tabNum="8" >}}
 
 ```swift
+import AsposeHtmlCloud
 
+ClientAPI.setConfig(
+            basePath: "https://api.aspose.cloud/v4.0",
+            authPath: "https://api.aspose.cloud/connect/token",
+            apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+            appSID: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+            debugging: true)
 ```
 
 {{< /tab >}}
@@ -97,7 +176,12 @@ var api = new HtmlApi(clientId, clientSecret);
 {{< tab tabNum="9" >}}
 
 ```java
+Configuration.setBasePath("https://api.aspose.cloud");
+Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
+Configuration.setUserAgent("WebKit");
+Configuration.setDebug(true);
 
+HtmlApi api = new HtmlApi("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX");
 ```
 
 {{< /tab >}}

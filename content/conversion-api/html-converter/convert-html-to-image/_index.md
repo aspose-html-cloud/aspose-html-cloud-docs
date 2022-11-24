@@ -107,7 +107,25 @@ if(!f.good())
 The following example demonstrates how to convert **HTML to JPEG Python** language applying. Local HTML converted to JPEG and saved to the local path. You can download the Python SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-python).
 
 ```python
+from asposehtmlcloud.configuration import Configuration
+from asposehtmlcloud.api.html_api import HtmlApi
+from asposehtmlcloud.api_client import ApiClient as Client
+from asposehtmlcloud.rest import ApiException
 
+configuration = Configuration(apiKey="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+                              appSid="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+                              basePath="https://api.aspose.cloud/v4.0",
+                              authPath="https://api.aspose.cloud/connect/token",
+                              debug=True)
+client = Client(configuration)
+html_api = HtmlApi(client)
+
+try:
+    res = html_api.convertApi.convert_local_to_local(input_file="test.html", output_file="test.jpeg")
+except ApiException as ex:
+    print("Exception")
+    print("Info: " + str(ex))
+    raise ex
 ```
 
 {{< /tab >}}
@@ -117,7 +135,31 @@ The following example demonstrates how to convert **HTML to JPEG Python** langua
 The following example demonstrates how to convert **HTML to JPEG PHP** language applying. Local HTML converted to JPEG and saved to the local path. You can download the PHP SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-php)
 
 ```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
 
+$conf = array(
+	"basePath" => "https://api.aspose.cloud/v4.0",
+	"authPath" => "https://api.aspose.cloud/connect/token",
+	"apiKey" => "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+	"appSID" => "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+	"defaultUserAgent" => "Webkit"
+);
+
+$api_html = new Client\Invoker\Api\HtmlApi($conf);
+
+$src = 'input.html';
+$dst = 'output.jpeg';
+
+try {
+    //Request to server Api
+    $result = $api_html->convertLocalToLocal($src, $dst);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling HtmlApi->convertLocalToLocal: ', $e->getMessage(), PHP_EOL;
+}
+
+?>
 ```
 
 {{< /tab >}}
@@ -127,7 +169,33 @@ The following example demonstrates how to convert **HTML to JPEG PHP** language 
 The following example demonstrates how to convert **HTML to JPEG Ruby** language applying. Local HTML converted to JPEG and saved to the local path. You can download the Ruby SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby).
 
 ```ruby
+# load the gem
+require 'aspose_html_cloud'
 
+# Get keys from aspose site.
+# There is free quota available. 
+# For more details, see https://purchase.aspose.cloud/pricing
+
+CONFIG = {
+    "basePath":"https://api.aspose.cloud/v4.0",
+    "authPath":"https://api.aspose.cloud/connect/token",
+    "apiKey":"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID":"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "debug":true
+}
+
+api_instance = AsposeHtml::HtmlApi.new CONFIG
+
+src = "test.html"  # String | Full path to the input file.
+dst = "test.jpeg"  # String | Full path to the result.
+
+begin
+  #Convert the document from the local file and save result to the local file.
+  result = api_instance.convert_local_to_local(src, dst)
+  p result
+rescue AsposeHtml::ApiError => e
+  puts "Exception when calling api_instance.convert_local_to_local: #{e}"
+end
 ```
 
 {{< /tab >}}
@@ -137,7 +205,36 @@ The following example demonstrates how to convert **HTML to JPEG Ruby** language
 The following example demonstrates how to convert **HTML to JPEG Node.js** language applying. Local HTML converted to JPEG and saved to the local path.
 
 ```javascript
+// Get keys from aspose site.
+// There is free quota available. 
+// For more details, see https://purchase.aspose.cloud/pricing
+	
+var conf = {
+    "basePath":"https://api.aspose.cloud/v4.0",
+    "authPath":"https://api.aspose.cloud/connect/token",
+    "apiKey":"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID":"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "defaultUserAgent":"NodeJsWebkit"
+};
 
+var api = require('@asposecloud/aspose-html-cloud');
+
+// Create Conversion Api object
+var conversionApi = new api.ConversionApi(conf);
+
+var src = "/path/to/src/test.html"; // {String} Source document.
+var dst = "/path/to/dst/test.jpeg"; // {String} Result document.
+var opts = null;
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log(data);  
+  }
+};
+
+conversionApi.convertLocalToLocal(src, dst, opts, callback);
 ```
 
 {{< /tab >}}
@@ -147,7 +244,48 @@ The following example demonstrates how to convert **HTML to JPEG Node.js** langu
 The following example demonstrates how to convert **HTML to JPEG Swift** language applying. Local HTML converted to JPEG and saved to the local path. You can download the Swift SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-swift).
 
 ```swift
+import Alamofire
+import Foundation
+import XCTest
+import AsposeHtmlCloud
 
+static let fm = FileManager.default
+let resourceDir = fm.homeDirectoryForCurrentUser.appendingPathComponent("Documents/Aspose.HTML.Cloud.SDK.Swift/Tests/AsposeHtmlCloudTests/Resources")
+let resultDir = fm.homeDirectoryForCurrentUser.appendingPathComponent("Documents/Aspose.HTML.Cloud.SDK.Swift/Tests/AsposeHtmlCloudTests/TestResult")
+
+func url(forResource fileName: String) -> URL {
+	return resourceDir.appendingPathComponent(fileName)
+}
+
+func fileExist(name: String) -> Bool {
+	return FileManager.default.fileExists(atPath: name)
+}
+
+ClientAPI.setConfig(
+	basePath: "https://api.aspose.cloud/v4.0", 
+	authPath: "https://api.aspose.cloud/connect/token", 
+	apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+	appSID: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX", 
+	debugging: true
+)
+
+let fileName = "test.html"
+let format = "jpeg"
+let src = url(forResource: fileName).absoluteString
+
+let expectation = self.expectation(description: "testConvert to \(format)")
+let dst = resultDir.appendingPathComponent("Output.\(format)").absoluteString
+HtmlAPI.convertLocalToLocal(src: src, dst: dst, options: nil) { (data, error) in
+
+	guard error == nil else {
+		XCTFail("Error convert html to \(format)). Error=\(error!.localizedDescription)")
+		return
+	}
+	let resultPath = data!.file!
+	XCTAssertTrue(fileExist(name: resultPath))
+	expectation.fulfill()
+}
+self.waitForExpectations(timeout: testTimeout, handler: nil)
 ```
 
 {{< /tab >}}
@@ -307,7 +445,34 @@ if(!f.good())
 The following example demonstrates how to convert **HTML to PNG Python** language applying. HTML is taken from the local file system, converted to PNG and saved to the local drive. You can download the Python SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-python).
 
 ```python
+from asposehtmlcloud.configuration import Configuration
+from asposehtmlcloud.api.html_api import HtmlApi
+from asposehtmlcloud.api_client import ApiClient as Client
+from asposehtmlcloud.rest import ApiException
 
+configuration = Configuration(apiKey="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+                              appSid="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+                              basePath="https://api.aspose.cloud/v4.0",
+                              authPath="https://api.aspose.cloud/connect/token",
+                              debug=True)
+client = Client(configuration)
+html_api = HtmlApi(client)
+
+options = {
+    'width': 600,
+    'height': 900,
+    'topmargin': 20,
+    'bottommargin': 20,
+    'leftmargin': 20,
+    'rightmargin': 20
+}
+
+try:
+    res = html_api.convertApi.convert_local_to_local(input_file="test.html", output_file="test.png", options=options)
+except ApiException as ex:
+    print("Exception")
+    print("Info: " + str(ex))
+    raise ex
 ```
 
 {{< /tab >}}
@@ -317,7 +482,40 @@ The following example demonstrates how to convert **HTML to PNG Python** languag
 The following example demonstrates how to convert **HTML to PNG PHP** language applying. HTML is taken from the local file system, converted to PNG and saved to the local file. You can download the PHP SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-php)
 
 ```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
 
+$conf = array(
+	"basePath" => "https://api.aspose.cloud/v4.0",
+	"authPath" => "https://api.aspose.cloud/connect/token",
+	"apiKey" => "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+	"appSID" => "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+	"defaultUserAgent" => "Webkit"
+);
+
+$api_html = new Client\Invoker\Api\HtmlApi($conf);
+
+$src = 'input.html';
+$dst = 'output.png';
+
+$options = [
+    'width' => 800,
+    'height' => 600,
+    'left_margin' => 20,
+    'right_margin' => 20,
+    'top_margin' => 20,
+    'bottom_margin' => 20
+];
+
+
+try {
+    //Request to server Api
+    $result = $api_html->convertLocalToLocal($src, $dst, $options);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling HtmlApi->convertLocalToLocal: ', $e->getMessage(), PHP_EOL;
+}
+?>
 ```
 
 {{< /tab >}}
@@ -327,7 +525,43 @@ The following example demonstrates how to convert **HTML to PNG PHP** language a
 The following example demonstrates how to convert **HTML to PNG Ruby** language applying. HTML is taken from the local file system, converted to PNG and saved to the local drive. You can download the Ruby SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby).
 
 ```ruby
+# load the gem
+require 'aspose_html_cloud'
 
+# Get keys from aspose site.
+# There is free quota available. 
+# For more details, see https://purchase.aspose.cloud/pricing
+
+
+CONFIG = {
+    "basePath":"https://api.aspose.cloud/v4.0",
+    "authPath":"https://api.aspose.cloud/connect/token",
+    "apiKey":"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID":"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "debug":true
+}
+
+api_instance = AsposeHtml::HtmlApi.new CONFIG
+
+src = "test.html" # String | Source file.
+dst = "test.png"  # String | Result file.
+
+opts = { 
+  width: 700,       # Float | Resulting image width in pixels. 
+  height: 1000,     # Float | Resulting image height in pixels. 
+  left_margin: 40,  # Float | Left resulting image margin in pixels.
+  right_margin: 40, # Float | Right resulting image margin in pixels.
+  top_margin: 50,   # Float | Top resulting image margin in pixels.
+  bottom_margin: 50 # Float | Bottom resulting image margin in pixels.
+}
+
+begin
+  #Convert the HTML file from the local file and save result to the local file.
+  result = api_instance.convert_local_to_local(src, dst, opts)
+  p result
+rescue AsposeHtml::ApiError => e
+  puts "Exception when calling api_instance.convert_local_to_local: #{e}"
+end
 ```
 
 {{< /tab >}}
@@ -337,7 +571,43 @@ The following example demonstrates how to convert **HTML to PNG Ruby** language 
 The following example demonstrates how to convert **HTML to PNG Node.js** language applying. HTML is taken from the local file system, converted to PNG and saved to the local file. 
 
 ```javascript
+// Get keys from aspose site.
+// There is free quota available. 
+// For more details, see https://purchase.aspose.cloud/pricing
+	
+var conf = {
+    "basePath":"https://api.aspose.cloud/v4.0",
+    "authPath":"https://api.aspose.cloud/connect/token",
+    "apiKey":"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID":"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "defaultUserAgent":"NodeJsWebkit"
+};
 
+var api = require('@asposecloud/aspose-html-cloud');
+
+// Create Conversion Api object
+var conversionApi = new api.ConversionApi(conf);
+
+var src = "/path/to/src/test.html"; // {String} Source document.
+var dst = "/path/to/dst/test.png";  // {String} Result document.
+var opts = {
+    'width': 600,
+    'height': 800,
+    'leftMargin': 10,
+    'rightMargin': 20,
+    'topMargin': 30,
+    'bottomMargin': 40
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log(data);  
+  }
+};
+
+conversionApi.convertLocalToLocal(src, dst, opts, callback);
 ```
 
 {{< /tab >}}
@@ -347,7 +617,51 @@ The following example demonstrates how to convert **HTML to PNG Node.js** langua
 The following example demonstrates how to convert **HTML to PNG Swift** language applying. HTML is taken from the local file system, converted to PNG and saved to the local drive. You can download the Swift SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-swift).
 
 ```swift
+import Alamofire
+import Foundation
+import XCTest
+import AsposeHtmlCloud
 
+static let fm = FileManager.default
+let resourceDir = fm.homeDirectoryForCurrentUser.appendingPathComponent("Documents/Aspose.HTML.Cloud.SDK.Swift/Tests/AsposeHtmlCloudTests/Resources")
+let resultDir = fm.homeDirectoryForCurrentUser.appendingPathComponent("Documents/Aspose.HTML.Cloud.SDK.Swift/Tests/AsposeHtmlCloudTests/TestResult")
+
+func url(forResource fileName: String) -> URL {
+	return resourceDir.appendingPathComponent(fileName)
+}
+
+func fileExist(name: String) -> Bool {
+	return FileManager.default.fileExists(atPath: name)
+}
+
+ClientAPI.setConfig(
+	basePath: "https://api.aspose.cloud/v4.0", 
+	authPath: "https://api.aspose.cloud/connect/token", 
+	apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+	appSID: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX", 
+	debugging: true
+)
+
+let fileName = "test.html"
+let format = "png"
+let src = url(forResource: fileName).absoluteString
+let options = ConversionOptions(width: 800, height: 600, leftMargin: 20,
+        rightMargin: 20, topMargin: 20, bottomMargin: 20)
+
+
+let expectation = self.expectation(description: "testConvert to \(format)")
+let dst = resultDir.appendingPathComponent("Output.\(format)").absoluteString
+HtmlAPI.convertLocalToLocal(src: src, dst: dst, options: options) { (data, error) in
+
+	guard error == nil else {
+		XCTFail("Error convert html to \(format)). Error=\(error!.localizedDescription)")
+		return
+	}
+	let resultPath = data!.file!
+	XCTAssertTrue(fileExist(name: resultPath))
+	expectation.fulfill()
+}
+self.waitForExpectations(timeout: testTimeout, handler: nil)
 ```
 
 {{< /tab >}}
@@ -491,7 +805,33 @@ if(!f.good())
 The following example shows how to convert **HTML to GIF Python** language applying. HTML is taken from the Web, converted to GIF and saved to the local file system. You can download the Python SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-python).
 
 ```python
+import os
+from asposehtmlcloud.configuration import Configuration
+from asposehtmlcloud.api.html_api import HtmlApi
+from asposehtmlcloud.api_client import ApiClient as Client
+from asposehtmlcloud.rest import ApiException
 
+# Get keys from aspose site.
+# There is free quota available. 
+# For more details, see https://purchase.aspose.cloud/pricing
+
+configuration = Configuration(apiKey="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+                              appSid="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+                              basePath="https://api.aspose.cloud/v4.0",
+                              authPath="https://api.aspose.cloud/connect/token",
+                              debug=True)
+
+client = Client(configuration)
+html_api = HtmlApi(client)
+
+try:
+    res = html_api.convert_url_to_local(input_file="https://example.com", output_file="result.gif")
+    if not os.path.exists(res.file):
+        print('conversion failed')
+except ApiException as ex:
+    print("Exception")
+    print("Info: " + str(ex))
+    raise ex
 ```
 
 {{< /tab >}}
@@ -501,7 +841,30 @@ The following example shows how to convert **HTML to GIF Python** language apply
 The following example demonstrates how to convert **HTML to GIF PHP** language applying. HTML is taken from the Web, converted to GIF and saved to the local file system. You can download the PHP SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-php).
 
 ```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
 
+$conf = array(
+	"basePath" => "https://api.aspose.cloud/v4.0",
+	"authPath" => "https://api.aspose.cloud/connect/token",
+	"apiKey" => "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+	"appSID" => "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+	"defaultUserAgent" => "Webkit"
+);
+
+$api_html = new Client\Invoker\Api\HtmlApi($conf);
+
+$src = 'https://example.com';
+$dst = 'output.gif';
+
+try {
+    //Request to server Api
+    $result = $api_html->convertUrlToLocal($src, $dst);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling HtmlApi->convertUrlToLocal: ', $e->getMessage(), PHP_EOL;
+}
+?>
 ```
 
 {{< /tab >}}
@@ -511,7 +874,34 @@ The following example demonstrates how to convert **HTML to GIF PHP** language a
 The following example shows how to convert **HTML to GIF Ruby** language applying. HTML is taken from the Web, converted to GIF and saved to the local file system. You can download the Ruby SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby).
 
 ```ruby
+# load the gem
+require 'aspose_html_cloud'
 
+# Get keys from aspose site.
+# There is free quota available. 
+# For more details, see https://purchase.aspose.cloud/pricing
+
+
+CONFIG = {
+    "basePath":"https://api.aspose.cloud/v4.0",
+    "authPath":"https://api.aspose.cloud/connect/token",
+    "apiKey":"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID":"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "debug":true
+}
+
+api_instance = AsposeHtml::HtmlApi.new CONFIG
+
+src = "https://example.com" # String | Input url.
+dst = "test.gif"            # String | Result file.
+
+begin
+  #Convert the HTML file from the web and save result to the local file.
+  result = api_instance.convert_url_to_local(src, dst)
+  p result
+rescue AsposeHtml::ApiError => e
+  puts "Exception when calling api_instance.convert_url_to_local: #{e}"
+end
 ```
 
 {{< /tab >}}
@@ -521,7 +911,36 @@ The following example shows how to convert **HTML to GIF Ruby** language applyin
 The following example shows how to convert **HTML to GIF Node.js** language applying. HTML is taken from the Web, converted to GIF and saved to the local file system. 
 
 ```javascript
+// Get keys from aspose site.
+// There is free quota available. 
+// For more details, see https://purchase.aspose.cloud/pricing
+	
+var conf = {
+    "basePath":"https://api.aspose.cloud/v4.0",
+    "authPath":"https://api.aspose.cloud/connect/token",
+    "apiKey":"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID":"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "defaultUserAgent":"NodeJsWebkit"
+};
 
+var api = require('@asposecloud/aspose-html-cloud');
+
+// Create Conversion Api object
+var conversionApi = new api.ConversionApi(conf);
+
+var src = "https://example.com";    // {String} Url for conversion.
+var dst = "/path/to/dst/test.gif";  // {String} Result document.
+var opts = null;
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log(data);  
+  }
+};
+
+conversionApi.convertUrlToLocal(src, dst, opts, callback);
 ```
 
 {{< /tab >}}
@@ -531,7 +950,43 @@ The following example shows how to convert **HTML to GIF Node.js** language appl
 The following example shows how to convert **HTML to GIF Swift** language applying. HTML is taken from the Web, converted to GIF and saved to the local file system. You can download the Swift SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-swift).
 
 ```swift
+import Alamofire
+import Foundation
+import XCTest
+import AsposeHtmlCloud
 
+static let fm = FileManager.default
+let resultDir = fm.homeDirectoryForCurrentUser.appendingPathComponent("Documents/Aspose.HTML.Cloud.SDK.Swift/Tests/AsposeHtmlCloudTests/TestResult")
+
+func fileExist(name: String) -> Bool {
+	return FileManager.default.fileExists(atPath: name)
+}
+
+ClientAPI.setConfig(
+	basePath: "https://api.aspose.cloud/v4.0", 
+	authPath: "https://api.aspose.cloud/connect/token", 
+	apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+	appSID: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX", 
+	debugging: true
+)
+
+let format = "gif"
+let src = "https://example.com"
+let dst = resultDir.appendingPathComponent("Output.\(format)").absoluteString
+
+let expectation = self.expectation(description: "testConvert to \(format)")
+
+HtmlAPI.convertUrlToLocal(src: src, dst: dst, options: nil) { (data, error) in
+
+	guard error == nil else {
+		XCTFail("Error convert web site to \(format)). Error=\(error!.localizedDescription)")
+		return
+	}
+	let resultPath = data!.file!
+	XCTAssertTrue(fileExist(name: resultPath))
+	expectation.fulfill()
+}
+self.waitForExpectations(timeout: testTimeout, handler: nil)
 ```
 
 {{< /tab >}}
@@ -652,7 +1107,26 @@ auto result = api->convertStorageToStorage(src, dst);
 The following example shows how to convert **HTML to JPEG Python** language applying. HTML file is located in cloud storage, converted to JPEG and saved back to the cloud storage. You can download the Python SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-python).
 
 ```python
+from asposehtmlcloud.configuration import Configuration
+from asposehtmlcloud.api.html_api import HtmlApi
+from asposehtmlcloud.api_client import ApiClient as Client
+from asposehtmlcloud.rest import ApiException
 
+configuration = Configuration(apiKey="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+                              appSid="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+                              basePath="https://api.aspose.cloud/v4.0",
+                              authPath="https://api.aspose.cloud/connect/token",
+                              debug=True)
+client = Client(configuration)
+html_api = HtmlApi(client)
+
+try:
+    res = html_api.convertApi.convert_storage_to_storage(input_file="test.html", output_file="test.jpeg",
+                                                         storage_name=None)
+except ApiException as ex:
+    print("Exception")
+    print("Info: " + str(ex))
+    raise ex
 ```
 
 {{< /tab >}}
@@ -662,7 +1136,30 @@ The following example shows how to convert **HTML to JPEG Python** language appl
 The following example demonstrates how to convert **HTML to JPEG PHP** language applying. HTML file is located in cloud storage, converted to JPEG and saved back to the cloud storage. You can download the PHP SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-php).
 
 ```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
 
+$configuration = array(
+    "basePath" => "https://api.aspose.cloud/v4.0",
+    "authPath" => "https://api.aspose.cloud/connect/token",
+    "apiKey" => "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID" => "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "defaultUserAgent" => "Webkit"
+);
+
+$api_html = new HtmlApi($configuration);
+
+$src = "FolderInStorage/test.html";
+$dst = 'FolderInStorage/test.jpeg';
+$options = null;
+
+try {
+    $result = $api_html->convertStorageToStorage($src, $dst, null, $options);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling $api_html->convertStorageToStorage: ', $e->getMessage(), PHP_EOL;
+}
+?>
 ```
 
 {{< /tab >}}
@@ -672,7 +1169,35 @@ The following example demonstrates how to convert **HTML to JPEG PHP** language 
 The following example shows how to convert **HTML to JPEG Ruby** language applying. HTML file is located in cloud storage, converted to JPEG and saved back to the cloud storage. You can download the Ruby SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby).
 
 ```ruby
+# load the gem
+require 'aspose_html_cloud'
 
+# Get keys from aspose site.
+# There is free quota available. 
+# For more details, see https://purchase.aspose.cloud/pricing
+
+
+CONFIG = {
+    "basePath":"https://api.aspose.cloud/v4.0",
+    "authPath":"https://api.aspose.cloud/connect/token",
+    "apiKey":"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID":"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "debug":true
+}
+
+api_instance = AsposeHtml::HtmlApi.new CONFIG
+
+src = "FolderInStorage/test.html" # String | Source file.
+dst = "FolderInStorage/test.jpeg" # String | Result file.
+storage = nil
+
+begin
+  #Convert the file from the storage and save result to the storage.
+  result = api_instance.convert_storage_to_storage(src, dst, storage)
+  p result
+rescue AsposeHtml::ApiError => e
+  puts "Exception when calling api_instance.convert_storage_to_storage: #{e}"
+end
 ```
 
 {{< /tab >}}
@@ -682,7 +1207,37 @@ The following example shows how to convert **HTML to JPEG Ruby** language applyi
 The following example shows how to convert **HTML to JPEG Node.js** language applying. HTML file is located in cloud storage, converted to JPEG and saved back to the cloud storage. 
 
 ```javascript
+// Get keys from aspose site.
+// There is free quota available. 
+// For more details, see https://purchase.aspose.cloud/pricing
+	
+var conf = {
+    "basePath":"https://api.aspose.cloud/v4.0",
+    "authPath":"https://api.aspose.cloud/connect/token",
+    "apiKey":"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID":"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "defaultUserAgent":"NodeJsWebkit"
+};
 
+var api = require('@asposecloud/aspose-html-cloud');
+
+// Create Conversion Api object
+var conversionApi = new api.ConversionApi(conf);
+
+var src = "FolderInStorage/test.html"; // {String} Source document.
+var dst = "FolderInStorage/test.jpeg"; // {String} Result document.
+var opts = null;
+var storage = null;
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log(data);  
+  }
+};
+
+conversionApi.convertStorageToStorage(src, dst, storage, opts, callback);
 ```
 
 {{< /tab >}}
@@ -692,7 +1247,45 @@ The following example shows how to convert **HTML to JPEG Node.js** language app
 The following example shows how to convert **HTML to JPEG Swift** language applying. HTML file is located in cloud storage, converted to JPEG and saved back to the cloud storage. You can download the Swift SDK from the [GitHub repository](https://github.com/aspose-html-cloud/aspose-html-cloud-swift).
 
 ```swift
+import Alamofire
+import Foundation
+import XCTest
+import AsposeHtmlCloud
 
+ClientAPI.setConfig(
+	basePath: "https://api.aspose.cloud/v4.0", 
+	authPath: "https://api.aspose.cloud/connect/token", 
+	apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+	appSID: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX", 
+	debugging: true
+)
+
+let src = "FolderInStorage/test.html"
+let dst = "FolderInStorage/test.jpeg"
+
+let expectation = self.expectation(description: "testConvert to jpeg")
+
+HtmlAPI.convertStorageToStorage(src: src, dst: dst, storage: nil, options: nil) { (data, error) in
+
+    guard error == nil else {
+        XCTFail("Error convert html to jpeg. Error=\(error!.localizedDescription)")
+        return
+    }
+
+    let resultPath = data!.file!
+
+    StorageAPI.objectExists(path: resultPath, storageName: nil, versionId: nil) {(data, error) in
+        guard error == nil else {
+            XCTFail("Error objectExists exist. Error=\(error!.localizedDescription)")
+            return
+        }
+
+        XCTAssertTrue(data!.exists)
+        XCTAssertFalse(data!.isFolder)
+        expectation.fulfill()
+    }
+}
+self.waitForExpectations(timeout: testTimeout, handler: nil)
 ```
 
 {{< /tab >}}
