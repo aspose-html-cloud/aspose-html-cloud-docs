@@ -313,9 +313,9 @@ ConversionResult result = api.convert(builder);
 {{< tab tabNum="10" >}}
 
 The following example demonstrates how to convert **EPUB to JPG** REST API applying. Local EPUB converted to JPG and saved to the local path. Take a few required steps:
-- Upload a local file to storage using [Storage API](https://docs.aspose.cloud/html/storage-api/working-with-files-in-the-storage).
+- Upload a local file to storage using [Storage API](https://docs.aspose.cloud/html/storage-api/working-with-files-in-storage).
 - Call REST API to execute conversion (in the example below).
-- Download conversion result back from storage using [Storage API](https://docs.aspose.cloud/html/storage-api/working-with-files-in-the-storage).
+- Download conversion result back from storage using [Storage API](https://docs.aspose.cloud/html/storage-api/working-with-files-in-storage).
 ```bash
 curl -X POST -v \
 	"https://api.aspose.cloud/v4.0/html/conversion/epub-jpg" \
@@ -699,9 +699,9 @@ ConversionResult result = api.convert(builder);
 
 The following example demonstrates how to convert **EPUB to PNG** using REST API. Local EPUB converted to PNG and saved to the local file system.
 Please take a few steps:
-- Upload local file to storage using [Storage API](https://docs.aspose.cloud/html/storage-api/working-with-files-in-the-storage).
+- Upload local file to storage using [Storage API](https://docs.aspose.cloud/html/storage-api/working-with-files-in-storage).
 - Call REST API to execute conversion (in the example below).
-- Download conversion result back from storage using [Storage API](https://docs.aspose.cloud/html/storage-api/working-with-files-in-the-storage).
+- Download conversion result back from storage using [Storage API](https://docs.aspose.cloud/html/storage-api/working-with-files-in-storage).
 ```bash
 curl -X POST -v \
 	"https://api.aspose.cloud/v4.0/html/conversion/epub-png" \

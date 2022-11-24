@@ -20,7 +20,7 @@ These instructions guide you through to obtain an authentication token and initi
 
 Aspose.HTML Cloud v4.0 provides the ability to use its functionality both by the REST API directly or by the set of wrappers implemented as [SDKs](/html/available-sdks/) on the various programming languages.
 
-REST API is a low-level interface to work directly with the Aspose.HTML Cloud product service by HTTP requests. It provides full control over the HTTP operation results, but it requires more routine work to prepare HTTP requests and handle responses. Aspose.HTML REST API offers many features to [manipulate directories](/html/storage-api/working-with-folders-in-the-storage/) and [files](/html/storage-api/working-with-files-in-the-storage/) stored in the cloud storage associated with user applications. 
+REST API is a low-level interface to work directly with the Aspose.HTML Cloud product service by HTTP requests. It provides full control over the HTTP operation results, but it requires more routine work to prepare HTTP requests and handle responses. Aspose.HTML REST API offers many features to [manipulate directories](/html/storage-api/working-with-folders-in-storage/) and [files](/html/storage-api/working-with-files-in-storage/) stored in the cloud storage associated with user applications. 
 
 It's more preferable to use SDKs than a direct call of REST API. The SDK usage provides the following preferences:
 

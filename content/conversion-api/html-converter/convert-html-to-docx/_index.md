@@ -311,9 +311,9 @@ ConversionResult result = api.convert(builder);
 {{< tab tabNum="10" >}}
 
 The following example demonstrates how to convert **HTML to DOCX** REST API applying. Local HTML converted to DOCX and saved to the local path. Please take a few steps:
-- Upload a local file to storage using [Storage API](https://docs.aspose.cloud/html/storage-api/working-with-files-in-the-storage).
+- Upload a local file to storage using [Storage API](https://docs.aspose.cloud/html/storage-api/working-with-files-in-storage).
 - Call REST API to execute conversion (in the example below).
-- Download conversion result back from storage using [Storage API](https://docs.aspose.cloud/html/storage-api/working-with-files-in-the-storage).
+- Download conversion result back from storage using [Storage API](https://docs.aspose.cloud/html/storage-api/working-with-files-in-storage).
 ```bash
 curl -X POST -v \
 	"https://api.aspose.cloud/v4.0/html/conversion/html-docx" \
@@ -639,7 +639,7 @@ ConversionResult result = api.convert(builder);
 The following example demonstrates how to convert **HTML to DOCX** using REST API. HTML is taken from the Web, converted to DOCX and saved to the local file system.
 2 steps:
 - Call REST API to execute conversion (in the example bellow)
-- Download conversion result back from storage using [Storage API](https://docs.aspose.cloud/html/storage-api/working-with-files-in-the-storage)
+- Download conversion result back from storage using [Storage API](https://docs.aspose.cloud/html/storage-api/working-with-files-in-storage)
 ```bash
 curl -X POST -v \
 	"https://api.aspose.cloud/v4.0/html/conversion/html-docx" \

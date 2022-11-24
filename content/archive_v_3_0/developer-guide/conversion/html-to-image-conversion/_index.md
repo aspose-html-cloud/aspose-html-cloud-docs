@@ -1,10 +1,11 @@
 ---
 title: "HTML to Image Conversion"
 type: docs
-aliases: /archive_v_3_0/html-to-image-conversion/
+aliases: /archive_v_3_0/developer-guide/conversion/html-to-image-conversion/
 keywords: "convert html to image, REST API, SDKs, java, android, Perl, swift, go, ruby"
 description: "This article explains how to convert HTML to Image using Aspose.HTML Cloud REST API. HTML can be converted into JPEG, PNG BMP and TIFF image formats."
 weight: 30
+url: /html-to-image-conversion/
 ---
 
 ## **Introduction**

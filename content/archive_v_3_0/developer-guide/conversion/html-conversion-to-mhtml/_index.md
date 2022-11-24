@@ -1,8 +1,9 @@
 ---
 title: "HTML conversion to MHTML"
 type: docs
-aliases: /archive_v_3_0/html-conversion-to-mhtml/
+aliases: /archive_v_3_0/developer-guide/conversion/html-conversion-to-mhtml/
 weight: 50
+url: /html-conversion-to-mhtml/
 ---
 
 ## **Introduction**

@@ -1,8 +1,9 @@
 ---
 title: "Working with Files and Storage using Aspose.HTML Cloud"
 type: docs
-aliases: /archive_v_3_0/working-with-files-and-storage-using-aspose-html-cloud/
+aliases: /archive_v_3_0/developer-guide/working-with-files-and-storage-using-aspose-html-cloud/
 weight: 70
+url: /working-with-files-and-storage-using-aspose-html-cloud/
 ---
 
 ## **Introduction**
