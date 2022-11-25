@@ -107,7 +107,25 @@ print(res)
 {{< tab tabNum="5" >}}
 
 ```php
+$configuration = array(
+    "basePath" => "https://api.aspose.cloud/v4.0",
+    "authPath" => "https://api.aspose.cloud/connect/token",
+    "apiKey" => "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID" => "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "defaultUserAgent" => "Webkit"
+);
 
+$api_stor = new StorageApi($configuration);
+
+//Default storage
+$storage_name = null;
+
+//Last version
+$version_id = null;
+
+$result = $api_stor->objectExists("FolderInStorage", $storage_name, $version_id);
+
+$is_exist = $result->getExists() && $result->getIsFolder();
 ```
 
 {{< /tab >}}
@@ -262,7 +280,21 @@ api.create_folder("FolderName")
 {{< tab tabNum="5" >}}
 
 ```php
+$configuration = array(
+    "basePath" => "https://api.aspose.cloud/v4.0",
+    "authPath" => "https://api.aspose.cloud/connect/token",
+    "apiKey" => "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID" => "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "defaultUserAgent" => "Webkit"
+);
 
+$api_stor = new StorageApi($configuration);
+
+// Default storage
+$storage_name = null;
+
+//If status code != 200 throw exception
+$api_stor->createFolder("TestCreateFolder", $storage_name);
 ```
 
 {{< /tab >}}
@@ -419,7 +451,25 @@ api.delete_folder("FolderName")
 {{< tab tabNum="5" >}}
 
 ```php
+$configuration = array(
+    "basePath" => "https://api.aspose.cloud/v4.0",
+    "authPath" => "https://api.aspose.cloud/connect/token",
+    "apiKey" => "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID" => "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "defaultUserAgent" => "Webkit"
+);
 
+$api_stor = new StorageApi($configuration);
+
+$path = "FolderForDeleteInTheStorage";
+
+// Default storage
+$storage_name = null;
+
+// Delete all file and subfolders
+$recursive = true;
+
+$api_stor->deleteFolder($path, $storage_name, $recursive);
 ```
 
 {{< /tab >}}

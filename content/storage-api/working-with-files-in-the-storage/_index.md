@@ -113,7 +113,29 @@ print(res)
 {{< tab tabNum="5" >}}
 
 ```php
+$configuration = array(
+    "basePath" => "https://api.aspose.cloud/v4.0",
+    "authPath" => "https://api.aspose.cloud/connect/token",
+    "apiKey" => "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID" => "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "defaultUserAgent" => "Webkit"
+);
 
+$api_stor = new StorageApi($configuration);
+
+// Path to the file
+$path = "FolderInStorage/file.txt";
+
+//Default storage
+$storage_name = null;
+
+//Last version
+$version_id = null;
+
+$result = $api_stor->objectExists($path, $storage_name, $version_id);
+
+$is_exist = $result->$result->getExists();
+$is_folder = $result->getIsFolder();
 ```
 
 {{< /tab >}}
@@ -265,7 +287,24 @@ ok = len(result.uploaded) == 1 and len(result.errors) == 0
 {{< tab tabNum="5" >}}
 
 ```php
+$configuration = array(
+    "basePath" => "https://api.aspose.cloud/v4.0",
+    "authPath" => "https://api.aspose.cloud/connect/token",
+    "apiKey" => "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID" => "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "defaultUserAgent" => "Webkit"
+);
 
+$api_stor = new StorageApi($configuration);
+
+$file = new SplFileObject("full/path/to/the/file.txt");
+
+//Default storage
+$storage_name = null;
+
+$response = $api_stor->uploadFile("FolderInStorage", $file, $storage_name);
+
+$isOK = count($response->getUploaded()) == 1 && count($response->getErrors()) == 0
 ```
 
 {{< /tab >}}
@@ -427,7 +466,25 @@ os.remove(result)
 {{< tab tabNum="5" >}}
 
 ```php
+$configuration = array(
+    "basePath" => "https://api.aspose.cloud/v4.0",
+    "authPath" => "https://api.aspose.cloud/connect/token",
+    "apiKey" => "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID" => "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "defaultUserAgent" => "Webkit"
+);
 
+$api_stor = new StorageApi($configuration);
+
+// Default storage
+$storage_name = null;
+
+// Last version
+$version_id = null;
+
+$result = $api_stor->downloadFile("/FileInStorage/file.txt", $storage_name, $version_id);
+
+copy($result->getRealPath(), "/path/to/local/file.txt");
 ```
 
 {{< /tab >}}
@@ -569,7 +626,23 @@ api.delete_file('FolderInStorage/file.txt')
 {{< tab tabNum="5" >}}
 
 ```php
+$configuration = array(
+    "basePath" => "https://api.aspose.cloud/v4.0",
+    "authPath" => "https://api.aspose.cloud/connect/token",
+    "apiKey" => "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID" => "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "defaultUserAgent" => "Webkit"
+);
 
+$api_stor = new StorageApi($configuration);
+
+// Default storage
+$storage_name = null;
+
+// Last version
+$version_id = null;
+
+$api_stor->deleteFile("FileInStorage.txt", $storage_name, $version_id);
 ```
 
 {{< /tab >}}

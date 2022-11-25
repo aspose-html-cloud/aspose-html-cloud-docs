@@ -109,7 +109,18 @@ print(res)
 {{< tab tabNum="5" >}}
 
 ```php
+$configuration = array(
+    "basePath" => "https://api.aspose.cloud/v4.0",
+    "authPath" => "https://api.aspose.cloud/connect/token",
+    "apiKey" => "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID" => "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "defaultUserAgent" => "Webkit"
+);
 
+$api_stor = new StorageApi($configuration);
+
+$result = $api_stor->storageExists("StorageName");
+$isExist = $result->getExists();
 ```
 
 {{< /tab >}}
@@ -256,7 +267,22 @@ print(res)
 {{< tab tabNum="5" >}}
 
 ```php
+$configuration = array(
+    "basePath" => "https://api.aspose.cloud/v4.0",
+    "authPath" => "https://api.aspose.cloud/connect/token",
+    "apiKey" => "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID" => "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "defaultUserAgent" => "Webkit"
+);
 
+$api_stor = new StorageApi($configuration);
+
+// Default storage
+$storage_name = null;
+$result = $api_stor->getDiscUsage($storage_name);
+
+$used = $result->getUsedSize();
+$total = $result->getTotalSize();
 ```
 
 {{< /tab >}}
