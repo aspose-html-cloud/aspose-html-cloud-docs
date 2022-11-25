@@ -87,7 +87,21 @@ delete api;
 
 
 ```python
+configuration = Configuration(
+    basePath="https://api.aspose.cloud/v4.0",
+    authPath="https://api.aspose.cloud/connect/token",
+    apiKey="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    appSid="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    debug=True)
 
+client = Client(configuration)
+api = StorageApi(client)
+
+res = api.storage_exists("StorageName")
+res = res.to_dict()
+
+exist = res['exists']
+print(res)
 ```
 
 {{< /tab >}}
@@ -219,7 +233,22 @@ delete api;
 
 
 ```python
+configuration = Configuration(
+    basePath="https://api.aspose.cloud/v4.0",
+    authPath="https://api.aspose.cloud/connect/token",
+    apiKey="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    appSid="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    debug=True)
 
+client = Client(configuration)
+api = StorageApi(client)
+
+# default storage
+res = api.get_disc_usage().to_dict()
+
+total_size = res['total_size']
+used_size = res['used_size']
+print(res)
 ```
 
 {{< /tab >}}

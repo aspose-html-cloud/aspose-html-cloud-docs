@@ -88,7 +88,18 @@ delete api;
 
 
 ```python
+configuration = Configuration(
+    basePath="https://api.aspose.cloud/v4.0",
+    authPath="https://api.aspose.cloud/connect/token",
+    apiKey="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    appSid="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    debug=True)
 
+client = Client(configuration)
+api = StorageApi(client)
+
+res = api.object_exists("FolderInStorage").to_dict()
+print(res)
 ```
 
 {{< /tab >}}
@@ -233,7 +244,17 @@ delete api;
 
 
 ```python
+configuration = Configuration(
+    basePath="https://api.aspose.cloud/v4.0",
+    authPath="https://api.aspose.cloud/connect/token",
+    apiKey="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    appSid="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    debug=True)
 
+client = Client(configuration)
+api = StorageApi(client)
+
+api.create_folder("FolderName")
 ```
 
 {{< /tab >}}
@@ -380,7 +401,17 @@ delete api;
 
 
 ```python
+configuration = Configuration(
+    basePath="https://api.aspose.cloud/v4.0",
+    authPath="https://api.aspose.cloud/connect/token",
+    apiKey="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    appSid="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    debug=True)
 
+client = Client(configuration)
+api = StorageApi(client)
+
+api.delete_folder("FolderName")
 ```
 
 {{< /tab >}}

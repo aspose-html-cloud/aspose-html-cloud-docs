@@ -91,7 +91,21 @@ delete api;
 
 
 ```python
+configuration = Configuration(
+    basePath="https://api.aspose.cloud/v4.0",
+    authPath="https://api.aspose.cloud/connect/token",
+    apiKey="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    appSid="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    debug=True)
 
+client = Client(configuration)
+api = StorageApi(client)
+
+res = api.object_exists("fileInStorage.txt").to_dict()
+
+exist = res['exists']
+is_folder = res['is_folder']
+print(res)
 ```
 
 {{< /tab >}}
@@ -232,7 +246,18 @@ delete api;
 
 
 ```python
+configuration = Configuration(
+    basePath="https://api.aspose.cloud/v4.0",
+    authPath="https://api.aspose.cloud/connect/token",
+    apiKey="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    appSid="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    debug=True)
 
+client = Client(configuration)
+api = StorageApi(client)
+
+result = api.upload_file("FolderInStorage", "full/path/to/the/file.txt")
+ok = len(result.uploaded) == 1 and len(result.errors) == 0 
 ```
 
 {{< /tab >}}
@@ -382,7 +407,19 @@ delete api;
 
 
 ```python
+configuration = Configuration(
+    basePath="https://api.aspose.cloud/v4.0",
+    authPath="https://api.aspose.cloud/connect/token",
+    apiKey="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    appSid="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    debug=True)
 
+client = Client(configuration)
+api = StorageApi(client)
+
+result = api.download_file("PathInStorage/file.txt")
+copy2(result, "path/to/save/file.txt")
+os.remove(result)
 ```
 
 {{< /tab >}}
@@ -514,7 +551,17 @@ delete api;
 
 
 ```python
+configuration = Configuration(
+    basePath="https://api.aspose.cloud/v4.0",
+    authPath="https://api.aspose.cloud/connect/token",
+    apiKey="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    appSid="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    debug=True)
 
+client = Client(configuration)
+api = StorageApi(client)
+
+api.delete_file('FolderInStorage/file.txt')
 ```
 
 {{< /tab >}}
