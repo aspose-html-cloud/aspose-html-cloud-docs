@@ -58,7 +58,27 @@ StorageExist result = res.body();
 {{< tab tabNum="3" >}}
 
 ```c++
+#include "AsposeHtmlCloud.h"
 
+const utility::string_t clientId = L"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX";
+const utility::string_t clientSecret = L"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+const utility::string_t basePath = L"https://api.aspose.cloud/v4.0";
+const utility::string_t authPath = L"https://api.aspose.cloud/connect/token";
+
+// Create configuration for authorization
+std::shared_ptr<ApiConfiguration> apiConfig(new ApiConfiguration(clientId, clientSecret, basePath, authPath));
+
+// Create client from configuration
+std::shared_ptr<ApiClient> apiClient(new ApiClient(apiConfig));
+
+// Create StorageApi
+StorageApi* api = new StorageApi(apiClient);
+utility::string_t storage = L"StorageName";
+
+auto result = api->storageExists(storage).get();
+bool exist = result->isExists();
+
+delete api;
 ```
 
 {{< /tab >}}
@@ -167,7 +187,30 @@ DiscUsage result = res.body();
 {{< tab tabNum="3" >}}
 
 ```c++
+#include "AsposeHtmlCloud.h"
 
+const utility::string_t clientId = L"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX";
+const utility::string_t clientSecret = L"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+const utility::string_t basePath = L"https://api.aspose.cloud/v4.0";
+const utility::string_t authPath = L"https://api.aspose.cloud/connect/token";
+
+// Create configuration for authorization
+std::shared_ptr<ApiConfiguration> apiConfig(new ApiConfiguration(clientId, clientSecret, basePath, authPath));
+
+// Create client from configuration
+std::shared_ptr<ApiClient> apiClient(new ApiClient(apiConfig));
+
+// Create StorageApi
+StorageApi* api = new StorageApi(apiClient);
+
+utility::string_t storage = L"StorageName";
+
+auto result = api->getDiscUsage(storage).get();
+
+int64_t total = result->getTotalSize();
+int64_t used = result->getUsedSize();
+
+delete api;
 ```
 
 {{< /tab >}}

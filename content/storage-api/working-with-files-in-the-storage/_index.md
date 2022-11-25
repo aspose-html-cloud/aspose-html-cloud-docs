@@ -57,7 +57,32 @@ ObjectExist result = res.body();
 {{< tab tabNum="3" >}}
 
 ```c++
+#include "AsposeHtmlCloud.h"
 
+const utility::string_t clientId = L"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX";
+const utility::string_t clientSecret = L"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+const utility::string_t basePath = L"https://api.aspose.cloud/v4.0";
+const utility::string_t authPath = L"https://api.aspose.cloud/connect/token";
+
+// Create configuration for authorization
+std::shared_ptr<ApiConfiguration> apiConfig(new ApiConfiguration(clientId, clientSecret, basePath, authPath));
+
+// Create client from configuration
+std::shared_ptr<ApiClient> apiClient(new ApiClient(apiConfig));
+
+// Create StorageApi
+StorageApi* api = new StorageApi(apiClient);
+
+utility::string_t file = L"FolderInStorage/file.txt";
+boost::optional<utility::string_t> versionId = L"";
+boost::optional<utility::string_t> storageName = L"";
+
+auto result_exist = api->objectExists(file, versionId, storageName).get();
+
+bool isExist = result_exist->isExists();
+bool isFolder = result_exist->isFolder();
+
+delete api;
 ```
 
 {{< /tab >}}
@@ -171,7 +196,34 @@ FilesUploadResult result = res.body();
 {{< tab tabNum="3" >}}
 
 ```c++
+#include "AsposeHtmlCloud.h"
 
+const utility::string_t clientId = L"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX";
+const utility::string_t clientSecret = L"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+const utility::string_t basePath = L"https://api.aspose.cloud/v4.0";
+const utility::string_t authPath = L"https://api.aspose.cloud/connect/token";
+
+// Create configuration for authorization
+std::shared_ptr<ApiConfiguration> apiConfig(new ApiConfiguration(clientId, clientSecret, basePath, authPath));
+
+// Create client from configuration
+std::shared_ptr<ApiClient> apiClient(new ApiClient(apiConfig));
+
+// Create StorageApi
+StorageApi* api = new StorageApi(apiClient);
+
+const utility::string_t testSource = L"C:\\WORK\\TEST\\";
+const utility::string_t name = _XPLATSTR("test.jpg");
+std::shared_ptr<HttpContent> file(new HttpContent(testSource, name));
+
+utility::string_t folder = L"FolderInStorage";
+boost::optional<utility::string_t> storageName = L"";
+
+auto result = api->uploadFile(folder, file, storageName).get();
+
+bool isError = result->errorsIsSet();
+
+delete api;
 ```
 
 {{< /tab >}}
@@ -285,7 +337,43 @@ ResponseBody res_download = res.body();
 {{< tab tabNum="3" >}}
 
 ```c++
+#include "AsposeHtmlCloud.h"
 
+const utility::string_t clientId = L"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX";
+const utility::string_t clientSecret = L"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+const utility::string_t basePath = L"https://api.aspose.cloud/v4.0";
+const utility::string_t authPath = L"https://api.aspose.cloud/connect/token";
+
+// Create configuration for authorization
+std::shared_ptr<ApiConfiguration> apiConfig(new ApiConfiguration(clientId, clientSecret, basePath, authPath));
+
+// Create client from configuration
+std::shared_ptr<ApiClient> apiClient(new ApiClient(apiConfig));
+
+// Create StorageApi
+StorageApi* api = new StorageApi(apiClient);
+
+utility::string_t file = L"FolderInStorage/file.txt";
+boost::optional<utility::string_t> versionId = L"";
+boost::optional<utility::string_t> storageName = L"";
+
+auto result_download = api->downloadFile(file, versionId, storageName).get();
+
+utility::string_t save = L"PathToSave/testDowmloadFile.txt";
+std::ofstream saved_data(save, std::ios::out | std::ios::binary);
+
+//Save file locally
+if (saved_data.is_open()) 
+{
+	result_download.writeTo(saved_data);
+	saved_data.close();
+}
+else
+{
+	std::cout << "Unable to open file";
+}
+
+delete api;
 ```
 
 {{< /tab >}}
@@ -393,7 +481,31 @@ Response<ResponseBody> res = call.execute();
 {{< tab tabNum="3" >}}
 
 ```c++
+#include "AsposeHtmlCloud.h"
 
+const utility::string_t clientId = L"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX";
+const utility::string_t clientSecret = L"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+const utility::string_t basePath = L"https://api.aspose.cloud/v4.0";
+const utility::string_t authPath = L"https://api.aspose.cloud/connect/token";
+
+// Create configuration for authorization
+std::shared_ptr<ApiConfiguration> apiConfig(new ApiConfiguration(clientId, clientSecret, basePath, authPath));
+
+// Create client from configuration
+std::shared_ptr<ApiClient> apiClient(new ApiClient(apiConfig));
+
+// Create StorageApi
+StorageApi* api = new StorageApi(apiClient);
+
+utility::string_t file = L"FolderInStorage/file.txt";
+boost::optional<utility::string_t> versionId = L"";
+boost::optional<utility::string_t> storageName = L"";
+
+auto result_delete = api->deleteFile(file, versionId, storageName).get();
+
+bool success = result_delete->getCode() == 200;
+
+delete api;
 ```
 
 {{< /tab >}}

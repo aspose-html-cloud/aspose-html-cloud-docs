@@ -54,7 +54,32 @@ ObjectExist result = res.body();
 {{< tab tabNum="3" >}}
 
 ```c++
+#include "AsposeHtmlCloud.h"
 
+const utility::string_t clientId = L"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX";
+const utility::string_t clientSecret = L"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+const utility::string_t basePath = L"https://api.aspose.cloud/v4.0";
+const utility::string_t authPath = L"https://api.aspose.cloud/connect/token";
+
+// Create configuration for authorization
+std::shared_ptr<ApiConfiguration> apiConfig(new ApiConfiguration(clientId, clientSecret, basePath, authPath));
+
+// Create client from configuration
+std::shared_ptr<ApiClient> apiClient(new ApiClient(apiConfig));
+
+// Create StorageApi
+StorageApi* api = new StorageApi(apiClient);
+
+utility::string_t file = L"/FolderInStorage";
+boost::optional<utility::string_t> versionId = L"";
+boost::optional<utility::string_t> storageName = L"";
+
+auto result_exist = api->objectExists(file, versionId, storageName).get();
+
+bool isExist = result_exist->isExists();
+bool isFolder = result_exist->isFolder();
+
+delete api;
 ```
 
 {{< /tab >}}
@@ -176,7 +201,30 @@ Response<Void> res = call.execute();
 {{< tab tabNum="3" >}}
 
 ```c++
+#include "AsposeHtmlCloud.h"
 
+const utility::string_t clientId = L"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX";
+const utility::string_t clientSecret = L"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+const utility::string_t basePath = L"https://api.aspose.cloud/v4.0";
+const utility::string_t authPath = L"https://api.aspose.cloud/connect/token";
+
+// Create configuration for authorization
+std::shared_ptr<ApiConfiguration> apiConfig(new ApiConfiguration(clientId, clientSecret, basePath, authPath));
+
+// Create client from configuration
+std::shared_ptr<ApiClient> apiClient(new ApiClient(apiConfig));
+
+// Create StorageApi
+StorageApi* api = new StorageApi(apiClient);
+
+utility::string_t path = L"HtmlTestDoc/TestFolder";
+boost::optional<utility::string_t> storageName = L"";
+
+auto result = api->createFolder(path, storageName).get();
+
+bool isOk = result->getCode() == 200;
+
+delete api;
 ```
 
 {{< /tab >}}
@@ -298,7 +346,32 @@ Response<Void> res = call.execute();
 {{< tab tabNum="3" >}}
 
 ```c++
+#include "AsposeHtmlCloud.h"
 
+const utility::string_t clientId = L"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX";
+const utility::string_t clientSecret = L"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+const utility::string_t basePath = L"https://api.aspose.cloud/v4.0";
+const utility::string_t authPath = L"https://api.aspose.cloud/connect/token";
+
+// Create configuration for authorization
+std::shared_ptr<ApiConfiguration> apiConfig(new ApiConfiguration(clientId, clientSecret, basePath, authPath));
+
+// Create client from configuration
+std::shared_ptr<ApiClient> apiClient(new ApiClient(apiConfig));
+
+// Create StorageApi
+StorageApi* api = new StorageApi(apiClient);
+
+utility::string_t folder_name = L"HtmlTestDoc/TestDeleteFolder";
+boost::optional<utility::string_t> storageName = L"";
+boost::optional<bool> recursive = true;
+
+//Delete folder
+auto result_del = api->deleteFolder(folder_name, storageName, recursive).get();
+
+bool isOk = result_del->getCode() == 200;
+
+delete api;
 ```
 
 {{< /tab >}}
