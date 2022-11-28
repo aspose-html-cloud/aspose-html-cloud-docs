@@ -133,7 +133,26 @@ $is_exist = $result->getExists() && $result->getIsFolder();
 {{< tab tabNum="6" >}}
 
 ```ruby
+# load the gem
+require 'aspose_html_cloud'
 
+CONFIG = {
+  "basePath": "https://api.aspose.cloud/v4.0",
+  "authPath": "https://api.aspose.cloud/connect/token",
+  "apiKey": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "appSID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+  "debug": true
+}
+
+api = AsposeHtml::StorageApi.new CONFIG
+
+dir = "FolderInStorage"
+
+opts = {storage_name: nil, version_id: nil}
+
+res = api.object_exists(dir, opts)
+
+exist = res.exists && res.is_folder
 ```
 
 {{< /tab >}}
@@ -141,7 +160,37 @@ $is_exist = $result->getExists() && $result->getIsFolder();
 {{< tab tabNum="7" >}}
 
 ```javascript
+// Get keys from aspose site.
+// There is free quota available. 
+// For more details, see https://purchase.aspose.cloud/pricing
+	
+var conf = {
+    "basePath":"https://api.aspose.cloud/v4.0",
+    "authPath":"https://api.aspose.cloud/connect/token",
+    "apiKey":"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID":"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "defaultUserAgent":"NodeJsWebkit"
+};
 
+var api = require('@asposecloud/aspose-html-cloud');
+
+// Create Storage Api object
+var instance = new api.StorageApi(conf);
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log(data);
+  }
+};
+
+var options = {
+'versionId' : null, // last version
+'storageName': null // default storage
+};
+
+instance.objectExists('FolderInStorage' options, callback);
 ```
 
 {{< /tab >}}
@@ -149,7 +198,35 @@ $is_exist = $result->getExists() && $result->getIsFolder();
 {{< tab tabNum="8" >}}
 
 ```swift
+import Alamofire
+import Foundation
+import XCTest
+import AsposeHtmlCloud
 
+ClientAPI.setConfig(
+	basePath: "https://api.aspose.cloud/v4.0", 
+	authPath: "https://api.aspose.cloud/connect/token", 
+	apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+	appSID: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX", 
+	debugging: true
+)
+
+let expectation = self.expectation(description: "Test is exist folder")
+
+let exist_folder = "HtmlTesting"
+
+StorageAPI.objectExists(path: exist_folder, storageName: nil, versionId: nil) {(data, error) in
+    guard error == nil else {
+        XCTFail("Error objectExists exist. Error=\(error!.localizedDescription)")
+        return
+    }
+    
+    XCTAssertTrue(data!.exists)
+    XCTAssertTrue(data!.isFolder)
+    expectation.fulfill()
+}
+    
+self.waitForExpectations(timeout: testTimeout, handler: nil)
 ```
 
 {{< /tab >}}
@@ -302,7 +379,24 @@ $api_stor->createFolder("TestCreateFolder", $storage_name);
 {{< tab tabNum="6" >}}
 
 ```ruby
+# load the gem
+require 'aspose_html_cloud'
 
+CONFIG = {
+  "basePath": "https://api.aspose.cloud/v4.0",
+  "authPath": "https://api.aspose.cloud/connect/token",
+  "apiKey": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "appSID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+  "debug": true
+}
+
+api = AsposeHtml::StorageApi.new CONFIG
+
+dir = "HtmlTestDoc/testFolder1/testFolder2/testFolder3"
+
+opts_folder = {storage_name: nil}
+
+res = api.create_folder(dir, opts_folder)
 ```
 
 {{< /tab >}}
@@ -310,7 +404,35 @@ $api_stor->createFolder("TestCreateFolder", $storage_name);
 {{< tab tabNum="7" >}}
 
 ```javascript
+// Get keys from aspose site.
+// There is free quota available. 
+// For more details, see https://purchase.aspose.cloud/pricing
+	
+var conf = {
+    "basePath":"https://api.aspose.cloud/v4.0",
+    "authPath":"https://api.aspose.cloud/connect/token",
+    "apiKey":"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID":"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "defaultUserAgent":"NodeJsWebkit"
+};
 
+var api = require('@asposecloud/aspose-html-cloud');
+
+// Create Storage Api object
+var instance = new api.StorageApi(conf);
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log(data);
+  }
+};
+
+var path = "HtmlTestDoc/New_Folder";
+var opts = { 'storageName': null };
+
+instance.createFolder(path, opts, callback);
 ```
 
 {{< /tab >}}
@@ -318,7 +440,29 @@ $api_stor->createFolder("TestCreateFolder", $storage_name);
 {{< tab tabNum="8" >}}
 
 ```swift
+import Alamofire
+import Foundation
+import XCTest
+import AsposeHtmlCloud
 
+ClientAPI.setConfig(
+	basePath: "https://api.aspose.cloud/v4.0", 
+	authPath: "https://api.aspose.cloud/connect/token", 
+	apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+	appSID: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX", 
+	debugging: true
+)
+
+let expectation = self.expectation(description: "Test create folder")
+
+StorageAPI.createFolder(path: "HtmlTesting/TestCreateFolder", storageName: nil) {(data, error) in
+    guard error == nil else {
+        XCTFail("Error create folder. Error=\(error!.localizedDescription)")
+        return
+    }
+    expectation.fulfill()
+}
+self.waitForExpectations(timeout: testTimeout, handler: nil)
 ```
 
 {{< /tab >}}
@@ -477,7 +621,24 @@ $api_stor->deleteFolder($path, $storage_name, $recursive);
 {{< tab tabNum="6" >}}
 
 ```ruby
+# load the gem
+require 'aspose_html_cloud'
 
+CONFIG = {
+  "basePath": "https://api.aspose.cloud/v4.0",
+  "authPath": "https://api.aspose.cloud/connect/token",
+  "apiKey": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "appSID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+  "debug": true
+}
+
+api = AsposeHtml::StorageApi.new CONFIG
+
+dir = "FolderInStorage"
+
+opts_folder = {storage_name: nil}
+
+res = api.delete_folder(dir, opts_folder)
 ```
 
 {{< /tab >}}
@@ -485,7 +646,35 @@ $api_stor->deleteFolder($path, $storage_name, $recursive);
 {{< tab tabNum="7" >}}
 
 ```javascript
+// Get keys from aspose site.
+// There is free quota available. 
+// For more details, see https://purchase.aspose.cloud/pricing
+	
+var conf = {
+    "basePath":"https://api.aspose.cloud/v4.0",
+    "authPath":"https://api.aspose.cloud/connect/token",
+    "apiKey":"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID":"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "defaultUserAgent":"NodeJsWebkit"
+};
 
+var api = require('@asposecloud/aspose-html-cloud');
+
+// Create Storage Api object
+var instance = new api.StorageApi(conf);
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log(data);
+  }
+};
+
+var path = "HtmlTestDoc/New_Folder";
+var opts = { 'storageName': null };
+
+instance.deleteFolder(path, opts, callback);
 ```
 
 {{< /tab >}}
@@ -493,7 +682,29 @@ $api_stor->deleteFolder($path, $storage_name, $recursive);
 {{< tab tabNum="8" >}}
 
 ```swift
+import Alamofire
+import Foundation
+import XCTest
+import AsposeHtmlCloud
 
+ClientAPI.setConfig(
+	basePath: "https://api.aspose.cloud/v4.0", 
+	authPath: "https://api.aspose.cloud/connect/token", 
+	apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+	appSID: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX", 
+	debugging: true
+)
+
+let expectation = self.expectation(description: "Test delete folder")
+
+StorageAPI.deleteFolder(path: "HtmlTesting/TestDeleteFolder", storageName: nil, recursive: true) {(data, error) in
+    guard error == nil else {
+        XCTFail("Error delete folder. Error=\(error!.localizedDescription)")
+        return
+    }
+    expectation.fulfill()
+}
+self.waitForExpectations(timeout: testTimeout, handler: nil)
 ```
 
 {{< /tab >}}

@@ -128,7 +128,22 @@ $isExist = $result->getExists();
 {{< tab tabNum="6" >}}
 
 ```ruby
+# load the gem
+require 'aspose_html_cloud'
 
+CONFIG = {
+  "basePath": "https://api.aspose.cloud/v4.0",
+  "authPath": "https://api.aspose.cloud/connect/token",
+  "apiKey": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "appSID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+  "debug": true
+}
+
+api = AsposeHtml::StorageApi.new CONFIG
+
+res = api.storage_exists('storage_name')
+
+exist = res.exists
 ```
 
 {{< /tab >}}
@@ -136,7 +151,32 @@ $isExist = $result->getExists();
 {{< tab tabNum="7" >}}
 
 ```javascript
+// Get keys from aspose site.
+// There is free quota available. 
+// For more details, see https://purchase.aspose.cloud/pricing
+	
+var conf = {
+    "basePath":"https://api.aspose.cloud/v4.0",
+    "authPath":"https://api.aspose.cloud/connect/token",
+    "apiKey":"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID":"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "defaultUserAgent":"NodeJsWebkit"
+};
 
+var api = require('@asposecloud/aspose-html-cloud');
+
+// Create Storage Api object
+var instance = new api.StorageApi(conf);
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log(data);  
+  }
+};
+
+instance.storageExists('storage_name', callback);
 ```
 
 {{< /tab >}}
@@ -144,7 +184,34 @@ $isExist = $result->getExists();
 {{< tab tabNum="8" >}}
 
 ```swift
+import Alamofire
+import Foundation
+import XCTest
+import AsposeHtmlCloud
 
+ClientAPI.setConfig(
+	basePath: "https://api.aspose.cloud/v4.0", 
+	authPath: "https://api.aspose.cloud/connect/token", 
+	apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+	appSID: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX", 
+	debugging: true
+)
+
+let expectation = self.expectation(description: "Test is exist storage")
+
+let storage = "StorageName"
+
+StorageAPI.storageExists(storageName: storage) {(data, error) in
+    guard error == nil else {
+        XCTFail("Error get is storage exist. Error=\(error!.localizedDescription)")
+        return
+    }
+    
+    XCTAssertTrue(data!.exists)
+    expectation.fulfill()
+}
+
+self.waitForExpectations(timeout: 100.0, handler: nil)
 ```
 
 {{< /tab >}}
@@ -290,7 +357,23 @@ $total = $result->getTotalSize();
 {{< tab tabNum="6" >}}
 
 ```ruby
+# load the gem
+require 'aspose_html_cloud'
 
+CONFIG = {
+  "basePath": "https://api.aspose.cloud/v4.0",
+  "authPath": "https://api.aspose.cloud/connect/token",
+  "apiKey": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "appSID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+  "debug": true
+}
+
+api = AsposeHtml::StorageApi.new CONFIG
+opts = {storage_name: nil}
+res = api.get_disc_usage(opts)
+
+used = res.used_size
+total = res.total_size
 ```
 
 {{< /tab >}}
@@ -298,7 +381,32 @@ $total = $result->getTotalSize();
 {{< tab tabNum="7" >}}
 
 ```javascript
+// Get keys from aspose site.
+// There is free quota available. 
+// For more details, see https://purchase.aspose.cloud/pricing
+	
+var conf = {
+    "basePath":"https://api.aspose.cloud/v4.0",
+    "authPath":"https://api.aspose.cloud/connect/token",
+    "apiKey":"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID":"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "defaultUserAgent":"NodeJsWebkit"
+};
 
+var api = require('@asposecloud/aspose-html-cloud');
+
+// Create Storage Api object
+var instance = new api.StorageApi(conf);
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log(data);  
+  }
+};
+var opts ={'storageName': null};
+instance.getDiscUsage(opts, callback);
 ```
 
 {{< /tab >}}
@@ -306,7 +414,32 @@ $total = $result->getTotalSize();
 {{< tab tabNum="8" >}}
 
 ```swift
+import Alamofire
+import Foundation
+import XCTest
+import AsposeHtmlCloud
 
+ClientAPI.setConfig(
+	basePath: "https://api.aspose.cloud/v4.0", 
+	authPath: "https://api.aspose.cloud/connect/token", 
+	apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+	appSID: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX", 
+	debugging: true
+)
+
+let expectation = self.expectation(description: "TestDiscUsage")
+
+StorageAPI.getDiscUsage(storageName: nil){(data, error) in
+    guard error == nil else {
+        XCTFail("Error get discUsage. Error=\(error!.localizedDescription)")
+        return
+    }
+
+    XCTAssertTrue(data!.totalSize > 0)
+    XCTAssertTrue(data!.usedSize > 0)
+    expectation.fulfill()
+}
+self.waitForExpectations(timeout: 100.0, handler: nil)
 ```
 
 {{< /tab >}}

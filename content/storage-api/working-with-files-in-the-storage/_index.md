@@ -143,7 +143,26 @@ $is_folder = $result->getIsFolder();
 {{< tab tabNum="6" >}}
 
 ```ruby
+# load the gem
+require 'aspose_html_cloud'
 
+CONFIG = {
+  "basePath": "https://api.aspose.cloud/v4.0",
+  "authPath": "https://api.aspose.cloud/connect/token",
+  "apiKey": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "appSID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+  "debug": true
+}
+
+api = AsposeHtml::StorageApi.new CONFIG
+
+name = "test.txt"
+path = "FolderInStorage/" + name
+opts = {storage_name: nil, version_id: nil}
+
+res = api.object_exists(path, opts)
+
+exist = res.exists
 ```
 
 {{< /tab >}}
@@ -151,7 +170,38 @@ $is_folder = $result->getIsFolder();
 {{< tab tabNum="7" >}}
 
 ```javascript
+// Get keys from aspose site.
+// There is free quota available. 
+// For more details, see https://purchase.aspose.cloud/pricing
+	
+var conf = {
+    "basePath":"https://api.aspose.cloud/v4.0",
+    "authPath":"https://api.aspose.cloud/connect/token",
+    "apiKey":"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID":"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "defaultUserAgent":"NodeJsWebkit"
+};
 
+var api = require('@asposecloud/aspose-html-cloud');
+
+// Create Storage Api object
+var instance = new api.StorageApi(conf);
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log(data);  
+  }
+};
+
+var file = "folderInStorage/file.txt";
+var opts = {
+    'versionId': null,
+    'storageName': null
+};
+
+instance.objectExists(file, opts, callback);
 ```
 
 {{< /tab >}}
@@ -159,7 +209,34 @@ $is_folder = $result->getIsFolder();
 {{< tab tabNum="8" >}}
 
 ```swift
+import Alamofire
+import Foundation
+import XCTest
+import AsposeHtmlCloud
 
+ClientAPI.setConfig(
+	basePath: "https://api.aspose.cloud/v4.0", 
+	authPath: "https://api.aspose.cloud/connect/token", 
+	apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+	appSID: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX", 
+	debugging: true
+)
+
+let expectation = self.expectation(description: "Test is not exist file")
+
+let not_exist_file = "non_exist.gif"
+
+StorageAPI.objectExists(path: not_exist_file, storageName: nil, versionId: nil) {(data, error) in
+    guard error == nil else {
+        XCTFail("Error objectExists not exist. Error=\(error!.localizedDescription)")
+        return
+    }
+    XCTAssertFalse(data!.exists)
+    XCTAssertFalse(data!.isFolder)
+    expectation.fulfill()
+}
+
+self.waitForExpectations(timeout: 100.0, handler: nil)
 ```
 
 {{< /tab >}}
@@ -312,7 +389,27 @@ $isOK = count($response->getUploaded()) == 1 && count($response->getErrors()) ==
 {{< tab tabNum="6" >}}
 
 ```ruby
+# load the gem
+require 'aspose_html_cloud'
 
+CONFIG = {
+  "basePath": "https://api.aspose.cloud/v4.0",
+  "authPath": "https://api.aspose.cloud/connect/token",
+  "apiKey": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "appSID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+  "debug": true
+}
+
+api = AsposeHtml::StorageApi.new CONFIG
+
+folder = "FolderInStorage"
+file = File.realpath('path/to/local/file.txt')
+
+opts = {storage_name: nil, version_id: nil}
+
+res = api.upload_file(folder, file, opts)
+
+isOk = res.uploaded.length == 1
 ```
 
 {{< /tab >}}
@@ -320,7 +417,36 @@ $isOK = count($response->getUploaded()) == 1 && count($response->getErrors()) ==
 {{< tab tabNum="7" >}}
 
 ```javascript
+// Get keys from aspose site.
+// There is free quota available. 
+// For more details, see https://purchase.aspose.cloud/pricing
+	
+var conf = {
+    "basePath":"https://api.aspose.cloud/v4.0",
+    "authPath":"https://api.aspose.cloud/connect/token",
+    "apiKey":"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID":"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "defaultUserAgent":"NodeJsWebkit"
+};
 
+var api = require('@asposecloud/aspose-html-cloud');
+
+// Create Storage Api object
+var instance = new api.StorageApi(conf);
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log(data);  
+  }
+};
+
+var folder = "FolderInStorage";
+var file = fs.createReadStream(path.normalize('path/to/loca;/file.txt'));
+var opts = { 'storageName': null };
+
+instance.uploadFile(folder, file, opts, callback);
 ```
 
 {{< /tab >}}
@@ -328,7 +454,45 @@ $isOK = count($response->getUploaded()) == 1 && count($response->getErrors()) ==
 {{< tab tabNum="8" >}}
 
 ```swift
+import Alamofire
+import Foundation
+import XCTest
+import AsposeHtmlCloud
 
+static let fm = FileManager.default
+let resourceDir = fm.homeDirectoryForCurrentUser.appendingPathComponent("Documents/Aspose.HTML.Cloud.SDK.Swift/Tests/AsposeHtmlCloudTests/Resources")
+
+func url(forResource fileName: String) -> URL {
+	return resourceDir.appendingPathComponent(fileName)
+}
+
+ClientAPI.setConfig(
+	basePath: "https://api.aspose.cloud/v4.0", 
+	authPath: "https://api.aspose.cloud/connect/token", 
+	apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+	appSID: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX", 
+	debugging: true
+)
+
+let expectation = self.expectation(description: "Test is uploadFile")
+
+let fileName = "test.jpg"
+
+let urlTest = url(forResource: fileName)
+
+StorageAPI.uploadFile(file: urlTest, path: "HtmlTesting", storageName: nil) {(data, error) in
+    guard error == nil else {
+        XCTFail("Error uploadFile. Error=\(error!.localizedDescription)")
+        return
+    }
+
+    XCTAssertEqual(data!.uploaded!.count, 1)
+    XCTAssertEqual(data!.errors!.count, 0)
+
+    expectation.fulfill()
+}
+
+self.waitForExpectations(timeout: 100.0, handler: nil)
 ```
 
 {{< /tab >}}
@@ -492,7 +656,27 @@ copy($result->getRealPath(), "/path/to/local/file.txt");
 {{< tab tabNum="6" >}}
 
 ```ruby
+# load the gem
+require 'aspose_html_cloud'
 
+CONFIG = {
+  "basePath": "https://api.aspose.cloud/v4.0",
+  "authPath": "https://api.aspose.cloud/connect/token",
+  "apiKey": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "appSID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+  "debug": true
+}
+
+api = AsposeHtml::StorageApi.new CONFIG
+
+file = "FolderInStorage/file.txt"
+
+opts = {storage_name: nil, version_id: nil}
+
+res = api.download_file(file, opts)
+
+# save to a local disk
+FileUtils.mv(res.path, '/path/to/result/file.txt')
 ```
 
 {{< /tab >}}
@@ -500,7 +684,37 @@ copy($result->getRealPath(), "/path/to/local/file.txt");
 {{< tab tabNum="7" >}}
 
 ```javascript
+// Get keys from aspose site.
+// There is free quota available. 
+// For more details, see https://purchase.aspose.cloud/pricing
+	
+var conf = {
+    "basePath":"https://api.aspose.cloud/v4.0",
+    "authPath":"https://api.aspose.cloud/connect/token",
+    "apiKey":"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID":"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "defaultUserAgent":"NodeJsWebkit"
+};
 
+var api = require('@asposecloud/aspose-html-cloud');
+
+// Create Storage Api object
+var instance = new api.StorageApi(conf);
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log(data);  
+  }
+};
+
+var options = {
+'versionId' : null, // last version
+'storageName': null // default storage
+};
+
+instance.downloadFile('path/to/file.txt' options, callback);
 ```
 
 {{< /tab >}}
@@ -508,7 +722,76 @@ copy($result->getRealPath(), "/path/to/local/file.txt");
 {{< tab tabNum="8" >}}
 
 ```swift
+import Alamofire
+import Foundation
+import XCTest
+import AsposeHtmlCloud
 
+ClientAPI.setConfig(
+	basePath: "https://api.aspose.cloud/v4.0", 
+	authPath: "https://api.aspose.cloud/connect/token", 
+	apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+	appSID: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX", 
+	debugging: true
+)
+
+static let fm = FileManager.default
+let resourceDir = fm.homeDirectoryForCurrentUser.appendingPathComponent("Documents/Aspose.HTML.Cloud.SDK.Swift/Tests/AsposeHtmlCloudTests/Resources")
+let resultDir = fm.homeDirectoryForCurrentUser.appendingPathComponent("Documents/Aspose.HTML.Cloud.SDK.Swift/Tests/AsposeHtmlCloudTests/TestResult")
+
+func url(forResource fileName: String) -> URL {
+	return resourceDir.appendingPathComponent(fileName)
+}
+
+func fileExist(name: String) -> Bool {
+	return FileManager.default.fileExists(atPath: name)
+}
+
+func saveFile(what data: Data?, fileName name: String) {
+    
+    let pathFile = resultDir.appendingPathComponent(name)
+
+    do{
+        _ = try data!.write(to: pathFile)
+    }catch{
+        print("Error save file.\(error)")
+    }
+}
+
+ClientAPI.setConfig(
+	basePath: "https://api.aspose.cloud/v4.0", 
+	authPath: "https://api.aspose.cloud/connect/token", 
+	apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+	appSID: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX", 
+	debugging: true
+)
+
+let expectation = self.expectation(description: "Test download file")
+
+let fileName = "test.jpg"
+
+let urlTest = url(forResource: fileName)
+
+StorageAPI.uploadFile(file: urlTest, path: "/", storageName: nil) {(data, error) in
+    guard error == nil else {
+        XCTFail("Error uploadFile. Error=\(error!.localizedDescription)")
+        return
+    }
+    
+    XCTAssertEqual(data!.uploaded!.count, 1)
+    XCTAssertEqual(data!.errors!.count, 0)
+
+    StorageAPI.downloadFile(path: fileName, storageName: nil, versionId: nil) {(data, error) in
+        guard error == nil else {
+            XCTFail("Error download file. Error=\(error!.localizedDescription)")
+            return
+        }
+    
+        saveFile(what: data, fileName: "downloaded_file.jpg")
+        expectation.fulfill()
+    }
+}
+self.waitForExpectations(timeout: 300.0, handler: nil)
 ```
 
 {{< /tab >}}
@@ -650,7 +933,24 @@ $api_stor->deleteFile("FileInStorage.txt", $storage_name, $version_id);
 {{< tab tabNum="6" >}}
 
 ```ruby
+# load the gem
+require 'aspose_html_cloud'
 
+CONFIG = {
+  "basePath": "https://api.aspose.cloud/v4.0",
+  "authPath": "https://api.aspose.cloud/connect/token",
+  "apiKey": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "appSID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+  "debug": true
+}
+
+api = AsposeHtml::StorageApi.new CONFIG
+
+file = "FolderInStorage/file.txt"
+
+opts = {storage_name: nil, version_id: nil}
+
+res = api.delete_file(file, opts)
 ```
 
 {{< /tab >}}
@@ -658,7 +958,37 @@ $api_stor->deleteFile("FileInStorage.txt", $storage_name, $version_id);
 {{< tab tabNum="7" >}}
 
 ```javascript
+// Get keys from aspose site.
+// There is free quota available. 
+// For more details, see https://purchase.aspose.cloud/pricing
+	
+var conf = {
+    "basePath":"https://api.aspose.cloud/v4.0",
+    "authPath":"https://api.aspose.cloud/connect/token",
+    "apiKey":"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID":"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "defaultUserAgent":"NodeJsWebkit"
+};
 
+var api = require('@asposecloud/aspose-html-cloud');
+
+// Create Storage Api object
+var instance = new api.StorageApi(conf);
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log(data);  
+  }
+};
+
+var options = {
+'versionId' : null, // last version
+'storageName': null // default storage
+};
+
+instance.deleteFile('path/to/file.txt' options, callback);
 ```
 
 {{< /tab >}}
@@ -666,7 +996,51 @@ $api_stor->deleteFile("FileInStorage.txt", $storage_name, $version_id);
 {{< tab tabNum="8" >}}
 
 ```swift
+import Alamofire
+import Foundation
+import XCTest
+import AsposeHtmlCloud
 
+ClientAPI.setConfig(
+	basePath: "https://api.aspose.cloud/v4.0", 
+	authPath: "https://api.aspose.cloud/connect/token", 
+	apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+	appSID: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX", 
+	debugging: true
+)
+
+static let fm = FileManager.default
+let resourceDir = fm.homeDirectoryForCurrentUser.appendingPathComponent("Documents/Aspose.HTML.Cloud.SDK.Swift/Tests/AsposeHtmlCloudTests/Resources")
+
+func url(forResource fileName: String) -> URL {
+	return resourceDir.appendingPathComponent(fileName)
+}
+
+let expectation = self.expectation(description: "Test delete file")
+
+let fileName = "test.jpg"
+
+let urlTest = url(forResource: fileName)
+
+    // Upload test file to storage
+StorageAPI.uploadFile(file: urlTest, path: "HtmlTesting", storageName: nil) {(data, error) in
+    guard error == nil else {
+        XCTFail("Error uploadFile. Error=\(error!.localizedDescription)")
+        return
+    }
+
+    XCTAssertEqual(data!.uploaded!.count, 1)
+    XCTAssertEqual(data!.errors!.count, 0)
+
+    StorageAPI.deleteFile(path: "HtmlTesting/\(fileName)") {(data, error) in
+        guard error == nil else {
+            XCTFail("Error delete file. Error=\(error!.localizedDescription)")
+            return
+        }
+        expectation.fulfill()
+    }
+}
+self.waitForExpectations(timeout: 100.0, handler: nil)
 ```
 
 {{< /tab >}}

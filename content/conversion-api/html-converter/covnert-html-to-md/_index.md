@@ -281,7 +281,7 @@ HtmlAPI.convertLocalToLocal(src: src, dst: dst, options: nil) { (data, error) in
 	XCTAssertTrue(fileExist(name: resultPath))
 	expectation.fulfill()
 }
-self.waitForExpectations(timeout: testTimeout, handler: nil)
+self.waitForExpectations(timeout: 100.0, handler: nil)
 ```
 
 {{< /tab >}}
@@ -591,7 +591,7 @@ HtmlAPI.convertUrlToLocal(src: src, dst: dst, options: nil) { (data, error) in
 	XCTAssertTrue(fileExist(name: resultPath))
 	expectation.fulfill()
 }
-self.waitForExpectations(timeout: testTimeout, handler: nil)
+self.waitForExpectations(timeout: 100.0, handler: nil)
 ```
 
 {{< /tab >}}
@@ -890,7 +890,7 @@ HtmlAPI.convertStorageToStorage(src: src, dst: dst, storage: nil, options: nil) 
         expectation.fulfill()
     }
 }
-self.waitForExpectations(timeout: testTimeout, handler: nil)
+self.waitForExpectations(timeout: 100.0, handler: nil)
 ```
 
 {{< /tab >}}
