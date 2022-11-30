@@ -43,7 +43,14 @@ var exists = await api.ExistsAsync("STORAGE_NAME");
 {{< tab tabNum="2" >}}
 
 ```java
+Configuration.setAPI_KEY("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+Configuration.setAPP_SID("XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX");
+StorageApi storageApi = new ApiClient().createService(StorageApi.class);
 
+Call<StorageExist> call = storageApi.storageExists("STORAGE_NAME");
+
+Response<StorageExist> res = call.execute();
+StorageExist result = res.body();
 ```
 
 {{< /tab >}}
@@ -51,7 +58,27 @@ var exists = await api.ExistsAsync("STORAGE_NAME");
 {{< tab tabNum="3" >}}
 
 ```c++
+#include "AsposeHtmlCloud.h"
 
+const utility::string_t clientId = L"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX";
+const utility::string_t clientSecret = L"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+const utility::string_t basePath = L"https://api.aspose.cloud/v4.0";
+const utility::string_t authPath = L"https://api.aspose.cloud/connect/token";
+
+// Create configuration for authorization
+std::shared_ptr<ApiConfiguration> apiConfig(new ApiConfiguration(clientId, clientSecret, basePath, authPath));
+
+// Create client from configuration
+std::shared_ptr<ApiClient> apiClient(new ApiClient(apiConfig));
+
+// Create StorageApi
+StorageApi* api = new StorageApi(apiClient);
+utility::string_t storage = L"StorageName";
+
+auto result = api->storageExists(storage).get();
+bool exist = result->isExists();
+
+delete api;
 ```
 
 {{< /tab >}}
@@ -60,7 +87,21 @@ var exists = await api.ExistsAsync("STORAGE_NAME");
 
 
 ```python
+configuration = Configuration(
+    basePath="https://api.aspose.cloud/v4.0",
+    authPath="https://api.aspose.cloud/connect/token",
+    apiKey="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    appSid="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    debug=True)
 
+client = Client(configuration)
+api = StorageApi(client)
+
+res = api.storage_exists("StorageName")
+res = res.to_dict()
+
+exist = res['exists']
+print(res)
 ```
 
 {{< /tab >}}
@@ -68,7 +109,18 @@ var exists = await api.ExistsAsync("STORAGE_NAME");
 {{< tab tabNum="5" >}}
 
 ```php
+$configuration = array(
+    "basePath" => "https://api.aspose.cloud/v4.0",
+    "authPath" => "https://api.aspose.cloud/connect/token",
+    "apiKey" => "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID" => "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "defaultUserAgent" => "Webkit"
+);
 
+$api_stor = new StorageApi($configuration);
+
+$result = $api_stor->storageExists("StorageName");
+$isExist = $result->getExists();
 ```
 
 {{< /tab >}}
@@ -76,7 +128,22 @@ var exists = await api.ExistsAsync("STORAGE_NAME");
 {{< tab tabNum="6" >}}
 
 ```ruby
+# load the gem
+require 'aspose_html_cloud'
 
+CONFIG = {
+  "basePath": "https://api.aspose.cloud/v4.0",
+  "authPath": "https://api.aspose.cloud/connect/token",
+  "apiKey": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "appSID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+  "debug": true
+}
+
+api = AsposeHtml::StorageApi.new CONFIG
+
+res = api.storage_exists('storage_name')
+
+exist = res.exists
 ```
 
 {{< /tab >}}
@@ -84,7 +151,32 @@ var exists = await api.ExistsAsync("STORAGE_NAME");
 {{< tab tabNum="7" >}}
 
 ```javascript
+// Get keys from aspose site.
+// There is free quota available. 
+// For more details, see https://purchase.aspose.cloud/pricing
+	
+var conf = {
+    "basePath":"https://api.aspose.cloud/v4.0",
+    "authPath":"https://api.aspose.cloud/connect/token",
+    "apiKey":"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID":"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "defaultUserAgent":"NodeJsWebkit"
+};
 
+var api = require('@asposecloud/aspose-html-cloud');
+
+// Create Storage Api object
+var instance = new api.StorageApi(conf);
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log(data);  
+  }
+};
+
+instance.storageExists('storage_name', callback);
 ```
 
 {{< /tab >}}
@@ -92,7 +184,34 @@ var exists = await api.ExistsAsync("STORAGE_NAME");
 {{< tab tabNum="8" >}}
 
 ```swift
+import Alamofire
+import Foundation
+import XCTest
+import AsposeHtmlCloud
 
+ClientAPI.setConfig(
+	basePath: "https://api.aspose.cloud/v4.0", 
+	authPath: "https://api.aspose.cloud/connect/token", 
+	apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+	appSID: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX", 
+	debugging: true
+)
+
+let expectation = self.expectation(description: "Test is exist storage")
+
+let storage = "StorageName"
+
+StorageAPI.storageExists(storageName: storage) {(data, error) in
+    guard error == nil else {
+        XCTFail("Error get is storage exist. Error=\(error!.localizedDescription)")
+        return
+    }
+    
+    XCTAssertTrue(data!.exists)
+    expectation.fulfill()
+}
+
+self.waitForExpectations(timeout: 100.0, handler: nil)
 ```
 
 {{< /tab >}}
@@ -100,7 +219,14 @@ var exists = await api.ExistsAsync("STORAGE_NAME");
 {{< tab tabNum="9" >}}
 
 ```java
+Configuration.setAPI_KEY("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+Configuration.setAPP_SID("XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX");
+StorageApi storageApi = new ApiClient().createService(StorageApi.class);
 
+Call<StorageExist> call = storageApi.storageExists("STORAGE_NAME");
+
+Response<StorageExist> res = call.execute();
+StorageExist result = res.body();
 ```
 
 {{< /tab >}}
@@ -138,7 +264,14 @@ var exists = await api.GetStorageAsync("STORAGE_NAME");
 {{< tab tabNum="2" >}}
 
 ```java
+Configuration.setAPI_KEY("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+Configuration.setAPP_SID("XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX");
+StorageApi storageApi = new ApiClient().createService(StorageApi.class);
 
+Call<DiscUsage> call = storageApi.getDiscUsage(null);
+
+Response<DiscUsage> res = call.execute();
+DiscUsage result = res.body();
 ```
 
 {{< /tab >}}
@@ -146,7 +279,30 @@ var exists = await api.GetStorageAsync("STORAGE_NAME");
 {{< tab tabNum="3" >}}
 
 ```c++
+#include "AsposeHtmlCloud.h"
 
+const utility::string_t clientId = L"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX";
+const utility::string_t clientSecret = L"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+const utility::string_t basePath = L"https://api.aspose.cloud/v4.0";
+const utility::string_t authPath = L"https://api.aspose.cloud/connect/token";
+
+// Create configuration for authorization
+std::shared_ptr<ApiConfiguration> apiConfig(new ApiConfiguration(clientId, clientSecret, basePath, authPath));
+
+// Create client from configuration
+std::shared_ptr<ApiClient> apiClient(new ApiClient(apiConfig));
+
+// Create StorageApi
+StorageApi* api = new StorageApi(apiClient);
+
+utility::string_t storage = L"StorageName";
+
+auto result = api->getDiscUsage(storage).get();
+
+int64_t total = result->getTotalSize();
+int64_t used = result->getUsedSize();
+
+delete api;
 ```
 
 {{< /tab >}}
@@ -155,7 +311,22 @@ var exists = await api.GetStorageAsync("STORAGE_NAME");
 
 
 ```python
+configuration = Configuration(
+    basePath="https://api.aspose.cloud/v4.0",
+    authPath="https://api.aspose.cloud/connect/token",
+    apiKey="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    appSid="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    debug=True)
 
+client = Client(configuration)
+api = StorageApi(client)
+
+# default storage
+res = api.get_disc_usage().to_dict()
+
+total_size = res['total_size']
+used_size = res['used_size']
+print(res)
 ```
 
 {{< /tab >}}
@@ -163,7 +334,22 @@ var exists = await api.GetStorageAsync("STORAGE_NAME");
 {{< tab tabNum="5" >}}
 
 ```php
+$configuration = array(
+    "basePath" => "https://api.aspose.cloud/v4.0",
+    "authPath" => "https://api.aspose.cloud/connect/token",
+    "apiKey" => "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID" => "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "defaultUserAgent" => "Webkit"
+);
 
+$api_stor = new StorageApi($configuration);
+
+// Default storage
+$storage_name = null;
+$result = $api_stor->getDiscUsage($storage_name);
+
+$used = $result->getUsedSize();
+$total = $result->getTotalSize();
 ```
 
 {{< /tab >}}
@@ -171,7 +357,23 @@ var exists = await api.GetStorageAsync("STORAGE_NAME");
 {{< tab tabNum="6" >}}
 
 ```ruby
+# load the gem
+require 'aspose_html_cloud'
 
+CONFIG = {
+  "basePath": "https://api.aspose.cloud/v4.0",
+  "authPath": "https://api.aspose.cloud/connect/token",
+  "apiKey": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "appSID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+  "debug": true
+}
+
+api = AsposeHtml::StorageApi.new CONFIG
+opts = {storage_name: nil}
+res = api.get_disc_usage(opts)
+
+used = res.used_size
+total = res.total_size
 ```
 
 {{< /tab >}}
@@ -179,7 +381,32 @@ var exists = await api.GetStorageAsync("STORAGE_NAME");
 {{< tab tabNum="7" >}}
 
 ```javascript
+// Get keys from aspose site.
+// There is free quota available. 
+// For more details, see https://purchase.aspose.cloud/pricing
+	
+var conf = {
+    "basePath":"https://api.aspose.cloud/v4.0",
+    "authPath":"https://api.aspose.cloud/connect/token",
+    "apiKey":"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID":"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "defaultUserAgent":"NodeJsWebkit"
+};
 
+var api = require('@asposecloud/aspose-html-cloud');
+
+// Create Storage Api object
+var instance = new api.StorageApi(conf);
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log(data);  
+  }
+};
+var opts ={'storageName': null};
+instance.getDiscUsage(opts, callback);
 ```
 
 {{< /tab >}}
@@ -187,7 +414,32 @@ var exists = await api.GetStorageAsync("STORAGE_NAME");
 {{< tab tabNum="8" >}}
 
 ```swift
+import Alamofire
+import Foundation
+import XCTest
+import AsposeHtmlCloud
 
+ClientAPI.setConfig(
+	basePath: "https://api.aspose.cloud/v4.0", 
+	authPath: "https://api.aspose.cloud/connect/token", 
+	apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+	appSID: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX", 
+	debugging: true
+)
+
+let expectation = self.expectation(description: "TestDiscUsage")
+
+StorageAPI.getDiscUsage(storageName: nil){(data, error) in
+    guard error == nil else {
+        XCTFail("Error get discUsage. Error=\(error!.localizedDescription)")
+        return
+    }
+
+    XCTAssertTrue(data!.totalSize > 0)
+    XCTAssertTrue(data!.usedSize > 0)
+    expectation.fulfill()
+}
+self.waitForExpectations(timeout: 100.0, handler: nil)
 ```
 
 {{< /tab >}}
@@ -195,7 +447,14 @@ var exists = await api.GetStorageAsync("STORAGE_NAME");
 {{< tab tabNum="9" >}}
 
 ```java
+Configuration.setAPI_KEY("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+Configuration.setAPP_SID("XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX");
+StorageApi storageApi = new ApiClient().createService(StorageApi.class);
 
+Call<DiscUsage> call = storageApi.getDiscUsage(null);
+
+Response<DiscUsage> res = call.execute();
+DiscUsage result = res.body();
 ```
 
 {{< /tab >}}

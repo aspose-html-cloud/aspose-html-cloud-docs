@@ -39,7 +39,14 @@ var exists = await api.DirectoryExistsAsync("/files", "STORAGE_NAME");
 {{< tab tabNum="2" >}}
 
 ```java
+Configuration.setAPI_KEY("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+Configuration.setAPP_SID("XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX");
+StorageApi storageApi = new ApiClient().createService(StorageApi.class);
 
+Call<ObjectExist> call = storageApi.objectExists("FolderInStorage/file.txt", null, null);
+
+Response<ObjectExist> res = call.execute();
+ObjectExist result = res.body();
 ```
 
 {{< /tab >}}
@@ -47,7 +54,32 @@ var exists = await api.DirectoryExistsAsync("/files", "STORAGE_NAME");
 {{< tab tabNum="3" >}}
 
 ```c++
+#include "AsposeHtmlCloud.h"
 
+const utility::string_t clientId = L"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX";
+const utility::string_t clientSecret = L"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+const utility::string_t basePath = L"https://api.aspose.cloud/v4.0";
+const utility::string_t authPath = L"https://api.aspose.cloud/connect/token";
+
+// Create configuration for authorization
+std::shared_ptr<ApiConfiguration> apiConfig(new ApiConfiguration(clientId, clientSecret, basePath, authPath));
+
+// Create client from configuration
+std::shared_ptr<ApiClient> apiClient(new ApiClient(apiConfig));
+
+// Create StorageApi
+StorageApi* api = new StorageApi(apiClient);
+
+utility::string_t file = L"/FolderInStorage";
+boost::optional<utility::string_t> versionId = L"";
+boost::optional<utility::string_t> storageName = L"";
+
+auto result_exist = api->objectExists(file, versionId, storageName).get();
+
+bool isExist = result_exist->isExists();
+bool isFolder = result_exist->isFolder();
+
+delete api;
 ```
 
 {{< /tab >}}
@@ -56,7 +88,18 @@ var exists = await api.DirectoryExistsAsync("/files", "STORAGE_NAME");
 
 
 ```python
+configuration = Configuration(
+    basePath="https://api.aspose.cloud/v4.0",
+    authPath="https://api.aspose.cloud/connect/token",
+    apiKey="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    appSid="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    debug=True)
 
+client = Client(configuration)
+api = StorageApi(client)
+
+res = api.object_exists("FolderInStorage").to_dict()
+print(res)
 ```
 
 {{< /tab >}}
@@ -64,7 +107,25 @@ var exists = await api.DirectoryExistsAsync("/files", "STORAGE_NAME");
 {{< tab tabNum="5" >}}
 
 ```php
+$configuration = array(
+    "basePath" => "https://api.aspose.cloud/v4.0",
+    "authPath" => "https://api.aspose.cloud/connect/token",
+    "apiKey" => "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID" => "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "defaultUserAgent" => "Webkit"
+);
 
+$api_stor = new StorageApi($configuration);
+
+//Default storage
+$storage_name = null;
+
+//Last version
+$version_id = null;
+
+$result = $api_stor->objectExists("FolderInStorage", $storage_name, $version_id);
+
+$is_exist = $result->getExists() && $result->getIsFolder();
 ```
 
 {{< /tab >}}
@@ -72,7 +133,26 @@ var exists = await api.DirectoryExistsAsync("/files", "STORAGE_NAME");
 {{< tab tabNum="6" >}}
 
 ```ruby
+# load the gem
+require 'aspose_html_cloud'
 
+CONFIG = {
+  "basePath": "https://api.aspose.cloud/v4.0",
+  "authPath": "https://api.aspose.cloud/connect/token",
+  "apiKey": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "appSID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+  "debug": true
+}
+
+api = AsposeHtml::StorageApi.new CONFIG
+
+dir = "FolderInStorage"
+
+opts = {storage_name: nil, version_id: nil}
+
+res = api.object_exists(dir, opts)
+
+exist = res.exists && res.is_folder
 ```
 
 {{< /tab >}}
@@ -80,7 +160,37 @@ var exists = await api.DirectoryExistsAsync("/files", "STORAGE_NAME");
 {{< tab tabNum="7" >}}
 
 ```javascript
+// Get keys from aspose site.
+// There is free quota available. 
+// For more details, see https://purchase.aspose.cloud/pricing
+	
+var conf = {
+    "basePath":"https://api.aspose.cloud/v4.0",
+    "authPath":"https://api.aspose.cloud/connect/token",
+    "apiKey":"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID":"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "defaultUserAgent":"NodeJsWebkit"
+};
 
+var api = require('@asposecloud/aspose-html-cloud');
+
+// Create Storage Api object
+var instance = new api.StorageApi(conf);
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log(data);
+  }
+};
+
+var options = {
+'versionId' : null, // last version
+'storageName': null // default storage
+};
+
+instance.objectExists('FolderInStorage' options, callback);
 ```
 
 {{< /tab >}}
@@ -88,7 +198,35 @@ var exists = await api.DirectoryExistsAsync("/files", "STORAGE_NAME");
 {{< tab tabNum="8" >}}
 
 ```swift
+import Alamofire
+import Foundation
+import XCTest
+import AsposeHtmlCloud
 
+ClientAPI.setConfig(
+	basePath: "https://api.aspose.cloud/v4.0", 
+	authPath: "https://api.aspose.cloud/connect/token", 
+	apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+	appSID: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX", 
+	debugging: true
+)
+
+let expectation = self.expectation(description: "Test is exist folder")
+
+let exist_folder = "HtmlTesting"
+
+StorageAPI.objectExists(path: exist_folder, storageName: nil, versionId: nil) {(data, error) in
+    guard error == nil else {
+        XCTFail("Error objectExists exist. Error=\(error!.localizedDescription)")
+        return
+    }
+    
+    XCTAssertTrue(data!.exists)
+    XCTAssertTrue(data!.isFolder)
+    expectation.fulfill()
+}
+    
+self.waitForExpectations(timeout: testTimeout, handler: nil)
 ```
 
 {{< /tab >}}
@@ -96,7 +234,14 @@ var exists = await api.DirectoryExistsAsync("/files", "STORAGE_NAME");
 {{< tab tabNum="9" >}}
 
 ```java
+Configuration.setAPI_KEY("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+Configuration.setAPP_SID("XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX");
+StorageApi storageApi = new ApiClient().createService(StorageApi.class);
 
+Call<ObjectExist> call = storageApi.objectExists("FolderInStorage/file.txt", null, null);
+
+Response<ObjectExist> res = call.execute();
+ObjectExist result = res.body();
 ```
 
 {{< /tab >}}
@@ -147,7 +292,14 @@ var exists = await api.CreateDirectoryAsync("/files", "STORAGE_NAME");
 {{< tab tabNum="2" >}}
 
 ```java
+Configuration.setAPI_KEY("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+Configuration.setAPP_SID("XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX");
+StorageApi storageApi = new ApiClient().createService(StorageApi.class);
 
+String folderName = "CreateTestFolder";
+Call<Void> call = storageApi.createFolder(folderName, null);
+
+Response<Void> res = call.execute();
 ```
 
 {{< /tab >}}
@@ -155,7 +307,30 @@ var exists = await api.CreateDirectoryAsync("/files", "STORAGE_NAME");
 {{< tab tabNum="3" >}}
 
 ```c++
+#include "AsposeHtmlCloud.h"
 
+const utility::string_t clientId = L"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX";
+const utility::string_t clientSecret = L"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+const utility::string_t basePath = L"https://api.aspose.cloud/v4.0";
+const utility::string_t authPath = L"https://api.aspose.cloud/connect/token";
+
+// Create configuration for authorization
+std::shared_ptr<ApiConfiguration> apiConfig(new ApiConfiguration(clientId, clientSecret, basePath, authPath));
+
+// Create client from configuration
+std::shared_ptr<ApiClient> apiClient(new ApiClient(apiConfig));
+
+// Create StorageApi
+StorageApi* api = new StorageApi(apiClient);
+
+utility::string_t path = L"HtmlTestDoc/TestFolder";
+boost::optional<utility::string_t> storageName = L"";
+
+auto result = api->createFolder(path, storageName).get();
+
+bool isOk = result->getCode() == 200;
+
+delete api;
 ```
 
 {{< /tab >}}
@@ -164,7 +339,17 @@ var exists = await api.CreateDirectoryAsync("/files", "STORAGE_NAME");
 
 
 ```python
+configuration = Configuration(
+    basePath="https://api.aspose.cloud/v4.0",
+    authPath="https://api.aspose.cloud/connect/token",
+    apiKey="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    appSid="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    debug=True)
 
+client = Client(configuration)
+api = StorageApi(client)
+
+api.create_folder("FolderName")
 ```
 
 {{< /tab >}}
@@ -172,7 +357,21 @@ var exists = await api.CreateDirectoryAsync("/files", "STORAGE_NAME");
 {{< tab tabNum="5" >}}
 
 ```php
+$configuration = array(
+    "basePath" => "https://api.aspose.cloud/v4.0",
+    "authPath" => "https://api.aspose.cloud/connect/token",
+    "apiKey" => "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID" => "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "defaultUserAgent" => "Webkit"
+);
 
+$api_stor = new StorageApi($configuration);
+
+// Default storage
+$storage_name = null;
+
+//If status code != 200 throw exception
+$api_stor->createFolder("TestCreateFolder", $storage_name);
 ```
 
 {{< /tab >}}
@@ -180,7 +379,24 @@ var exists = await api.CreateDirectoryAsync("/files", "STORAGE_NAME");
 {{< tab tabNum="6" >}}
 
 ```ruby
+# load the gem
+require 'aspose_html_cloud'
 
+CONFIG = {
+  "basePath": "https://api.aspose.cloud/v4.0",
+  "authPath": "https://api.aspose.cloud/connect/token",
+  "apiKey": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "appSID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+  "debug": true
+}
+
+api = AsposeHtml::StorageApi.new CONFIG
+
+dir = "HtmlTestDoc/testFolder1/testFolder2/testFolder3"
+
+opts_folder = {storage_name: nil}
+
+res = api.create_folder(dir, opts_folder)
 ```
 
 {{< /tab >}}
@@ -188,7 +404,35 @@ var exists = await api.CreateDirectoryAsync("/files", "STORAGE_NAME");
 {{< tab tabNum="7" >}}
 
 ```javascript
+// Get keys from aspose site.
+// There is free quota available. 
+// For more details, see https://purchase.aspose.cloud/pricing
+	
+var conf = {
+    "basePath":"https://api.aspose.cloud/v4.0",
+    "authPath":"https://api.aspose.cloud/connect/token",
+    "apiKey":"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID":"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "defaultUserAgent":"NodeJsWebkit"
+};
 
+var api = require('@asposecloud/aspose-html-cloud');
+
+// Create Storage Api object
+var instance = new api.StorageApi(conf);
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log(data);
+  }
+};
+
+var path = "HtmlTestDoc/New_Folder";
+var opts = { 'storageName': null };
+
+instance.createFolder(path, opts, callback);
 ```
 
 {{< /tab >}}
@@ -196,7 +440,29 @@ var exists = await api.CreateDirectoryAsync("/files", "STORAGE_NAME");
 {{< tab tabNum="8" >}}
 
 ```swift
+import Alamofire
+import Foundation
+import XCTest
+import AsposeHtmlCloud
 
+ClientAPI.setConfig(
+	basePath: "https://api.aspose.cloud/v4.0", 
+	authPath: "https://api.aspose.cloud/connect/token", 
+	apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+	appSID: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX", 
+	debugging: true
+)
+
+let expectation = self.expectation(description: "Test create folder")
+
+StorageAPI.createFolder(path: "HtmlTesting/TestCreateFolder", storageName: nil) {(data, error) in
+    guard error == nil else {
+        XCTFail("Error create folder. Error=\(error!.localizedDescription)")
+        return
+    }
+    expectation.fulfill()
+}
+self.waitForExpectations(timeout: testTimeout, handler: nil)
 ```
 
 {{< /tab >}}
@@ -204,7 +470,14 @@ var exists = await api.CreateDirectoryAsync("/files", "STORAGE_NAME");
 {{< tab tabNum="9" >}}
 
 ```java
+Configuration.setAPI_KEY("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+Configuration.setAPP_SID("XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX");
+StorageApi storageApi = new ApiClient().createService(StorageApi.class);
 
+String folderName = "CreateTestFolder";
+Call<Void> call = storageApi.createFolder(folderName, null);
+
+Response<Void> res = call.execute();
 ```
 
 {{< /tab >}}
@@ -254,7 +527,15 @@ var exists = await api.DeleteDirectoryAsync("/files", "STORAGE_NAME");
 {{< tab tabNum="2" >}}
 
 ```java
+Configuration.setAPI_KEY("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+Configuration.setAPP_SID("XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX");
+StorageApi storageApi = new ApiClient().createService(StorageApi.class);
 
+String folderName = "DeletingFolder";
+
+//Create remote folder
+Call<Void> call = storageApi.deleteFolder(folderName, null, true)
+Response<Void> res = call.execute();
 ```
 
 {{< /tab >}}
@@ -262,7 +543,32 @@ var exists = await api.DeleteDirectoryAsync("/files", "STORAGE_NAME");
 {{< tab tabNum="3" >}}
 
 ```c++
+#include "AsposeHtmlCloud.h"
 
+const utility::string_t clientId = L"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX";
+const utility::string_t clientSecret = L"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+const utility::string_t basePath = L"https://api.aspose.cloud/v4.0";
+const utility::string_t authPath = L"https://api.aspose.cloud/connect/token";
+
+// Create configuration for authorization
+std::shared_ptr<ApiConfiguration> apiConfig(new ApiConfiguration(clientId, clientSecret, basePath, authPath));
+
+// Create client from configuration
+std::shared_ptr<ApiClient> apiClient(new ApiClient(apiConfig));
+
+// Create StorageApi
+StorageApi* api = new StorageApi(apiClient);
+
+utility::string_t folder_name = L"HtmlTestDoc/TestDeleteFolder";
+boost::optional<utility::string_t> storageName = L"";
+boost::optional<bool> recursive = true;
+
+//Delete folder
+auto result_del = api->deleteFolder(folder_name, storageName, recursive).get();
+
+bool isOk = result_del->getCode() == 200;
+
+delete api;
 ```
 
 {{< /tab >}}
@@ -271,7 +577,17 @@ var exists = await api.DeleteDirectoryAsync("/files", "STORAGE_NAME");
 
 
 ```python
+configuration = Configuration(
+    basePath="https://api.aspose.cloud/v4.0",
+    authPath="https://api.aspose.cloud/connect/token",
+    apiKey="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    appSid="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    debug=True)
 
+client = Client(configuration)
+api = StorageApi(client)
+
+api.delete_folder("FolderName")
 ```
 
 {{< /tab >}}
@@ -279,7 +595,25 @@ var exists = await api.DeleteDirectoryAsync("/files", "STORAGE_NAME");
 {{< tab tabNum="5" >}}
 
 ```php
+$configuration = array(
+    "basePath" => "https://api.aspose.cloud/v4.0",
+    "authPath" => "https://api.aspose.cloud/connect/token",
+    "apiKey" => "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID" => "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "defaultUserAgent" => "Webkit"
+);
 
+$api_stor = new StorageApi($configuration);
+
+$path = "FolderForDeleteInTheStorage";
+
+// Default storage
+$storage_name = null;
+
+// Delete all file and subfolders
+$recursive = true;
+
+$api_stor->deleteFolder($path, $storage_name, $recursive);
 ```
 
 {{< /tab >}}
@@ -287,7 +621,24 @@ var exists = await api.DeleteDirectoryAsync("/files", "STORAGE_NAME");
 {{< tab tabNum="6" >}}
 
 ```ruby
+# load the gem
+require 'aspose_html_cloud'
 
+CONFIG = {
+  "basePath": "https://api.aspose.cloud/v4.0",
+  "authPath": "https://api.aspose.cloud/connect/token",
+  "apiKey": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "appSID": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+  "debug": true
+}
+
+api = AsposeHtml::StorageApi.new CONFIG
+
+dir = "FolderInStorage"
+
+opts_folder = {storage_name: nil}
+
+res = api.delete_folder(dir, opts_folder)
 ```
 
 {{< /tab >}}
@@ -295,7 +646,35 @@ var exists = await api.DeleteDirectoryAsync("/files", "STORAGE_NAME");
 {{< tab tabNum="7" >}}
 
 ```javascript
+// Get keys from aspose site.
+// There is free quota available. 
+// For more details, see https://purchase.aspose.cloud/pricing
+	
+var conf = {
+    "basePath":"https://api.aspose.cloud/v4.0",
+    "authPath":"https://api.aspose.cloud/connect/token",
+    "apiKey":"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "appSID":"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "defaultUserAgent":"NodeJsWebkit"
+};
 
+var api = require('@asposecloud/aspose-html-cloud');
+
+// Create Storage Api object
+var instance = new api.StorageApi(conf);
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log(data);
+  }
+};
+
+var path = "HtmlTestDoc/New_Folder";
+var opts = { 'storageName': null };
+
+instance.deleteFolder(path, opts, callback);
 ```
 
 {{< /tab >}}
@@ -303,7 +682,29 @@ var exists = await api.DeleteDirectoryAsync("/files", "STORAGE_NAME");
 {{< tab tabNum="8" >}}
 
 ```swift
+import Alamofire
+import Foundation
+import XCTest
+import AsposeHtmlCloud
 
+ClientAPI.setConfig(
+	basePath: "https://api.aspose.cloud/v4.0", 
+	authPath: "https://api.aspose.cloud/connect/token", 
+	apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+	appSID: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX", 
+	debugging: true
+)
+
+let expectation = self.expectation(description: "Test delete folder")
+
+StorageAPI.deleteFolder(path: "HtmlTesting/TestDeleteFolder", storageName: nil, recursive: true) {(data, error) in
+    guard error == nil else {
+        XCTFail("Error delete folder. Error=\(error!.localizedDescription)")
+        return
+    }
+    expectation.fulfill()
+}
+self.waitForExpectations(timeout: testTimeout, handler: nil)
 ```
 
 {{< /tab >}}
@@ -311,7 +712,15 @@ var exists = await api.DeleteDirectoryAsync("/files", "STORAGE_NAME");
 {{< tab tabNum="9" >}}
 
 ```java
+Configuration.setAPI_KEY("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+Configuration.setAPP_SID("XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX");
+StorageApi storageApi = new ApiClient().createService(StorageApi.class);
 
+String folderName = "DeletingFolder";
+
+//Create remote folder
+Call<Void> call = storageApi.deleteFolder(folderName, null, true)
+Response<Void> res = call.execute();
 ```
 
 {{< /tab >}}

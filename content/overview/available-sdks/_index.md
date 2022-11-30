@@ -25,7 +25,7 @@ The SDKs are simple to understand and use by outside developers, contain a compr
 
 Aspose.HTML Cloud provides the ability to use its functionality by the set of wrappers implemented as SDKs on various programming languages such as C#, Java, Python, Ruby, PHP, Node.js, Swift, C++ Android, and Go.
 
-{{< tabs tabTotal="10" tabID="1" tabName1=".NET" tabName2="Python" tabName3="Java" tabName4="C++" tabName5="Go" tabName6="Node.js" tabName7="Swift" tabName8="Android" tabName9="Ruby" tabName10="PHP" >}}
+{{< tabs tabTotal="10" tabID="1" tabName1=".NET" tabName2="Python" tabName3="Java" tabName4="C++" tabName5="Node.js" tabName6="Swift" tabName7="Android" tabName8="Ruby" tabName9="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -33,17 +33,11 @@ Aspose.HTML Cloud provides the ability to use its functionality by the set of wr
 
 Install Aspose.HTML Cloud SDK for .NET via [NuGet](https://www.nuget.org/packages/Aspose.HTML-Cloud).
 
-```java
-
+```code
 PM> Install-Package Aspose.HTML-Cloud
-
 ```
 
-{{% alert color="primary" %}} 
-
 The complete source code of Aspose.HTML Cloud SDK for .NET is freely available on the [GitHub](https://github.com/aspose-html-cloud) repository.
-
-{{% /alert %}}
 
 {{< /tab >}}
 
@@ -53,27 +47,19 @@ The complete source code of Aspose.HTML Cloud SDK for .NET is freely available 
 
 Aspose.HTML Cloud SDK for Python can be installed using [PyPi](https://pypi.org/project/asposehtmlcloud/) package manager.
 
-```java
-
-pip install -r Aspose.HTML-Cloud-SDK-for-Python/requirements.txt 
-
+```code
+pip install asposehtmlcloud 
 ```
 
 **Direct Method**
 
 1. Download the latest package from [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-python), and run the following command:
 
-```java
-
-python Aspose.HTML-Cloud-SDK-for-Python/setup.py install 
-
+```code
+python setup.py install
 ```
 
-{{% alert color="primary" %}} 
-
 The complete source code of Aspose.HTML Cloud SDK for Python is freely available on your favorite [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-python) repositories.
-
-{{% /alert %}} 
 
 {{< /tab >}}
 
@@ -83,92 +69,126 @@ The complete source code of Aspose.HTML Cloud SDK for Python is freely available
 
 You can add the following dependency into your existing Java application:
 
-```java
+```xml
+<repositories>
+	<repository>
+		<id>AsposeJavaCloudAPI</id>
+		<url>https://releases.aspose.cloud/java/repo/</url>
+	</repository>
+</repositories>
 
-<dependency>
-    <groupId>com.aspose</groupId>
-    <artifactId>aspose-html-cloud</artifactId>
-    <version>1.0.0</version>
-    <scope>compile</scope>
-</dependency>
-
+<dependencies>
+     ...
+	<dependency>
+		<groupId>com.aspose</groupId>
+		<artifactId>aspose-html-cloud</artifactId>
+		<version>22.11.1</version>
+		<scope>compile</scope>
+	</dependency>
+	...
+</dependencies>
 ```
 
-{{% alert color="primary" %}} 
-
 The complete source code of Aspose.HTML Cloud SDK for Java is freely available on our [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-java) repository.
-
-{{% /alert %}} 
 
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
 
-{{% alert color="primary" %}} 
+**Aspose.HTML Cloud SDK for C++** allows you to incorporate Aspose.HTML Cloud services in your C++ applications quickly and easily.
 
+Install Aspose.HTML Cloud SDK for C++ via [NuGet](https://www.nuget.org/packages/aspose.html.cloud.v143).
+
+```code
+PM> NuGet\Install-Package aspose.html.cloud.v143 -Version 22.11.1
+```
 The complete source code and examples to get started using the Aspose.HTML Cloud SDK for C++ are freely available on our [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-cpp) repository.
-
-{{% /alert %}} 
 
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
+**Aspose.HTML Cloud SDK for Node JS** allows you to incorporate Aspose.HTML Cloud services in your nodejs applications quickly and easily.
 
-{{% alert color="primary" %}} 
+```shell
+npm install @asposecloud/aspose-html-cloud --save
+```
 
-The complete source code and examples to get started using the Aspose.HTML Cloud SDK for Go are available on our [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-go) repository.
-
-{{% /alert %}} 
+The complete source code and examples to get started using the Aspose.HTML Cloud SDK for Node.JS are available on our [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-nodejs) repository.
 
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
-{{% alert color="primary" %}} 
+**Aspose.HTML Cloud SDK for Swift** allows you to incorporate Aspose.HTML Cloud services in your swift applications quickly and easily.
 
-The complete source code and examples to get started using the Aspose.HTML Cloud SDK for Node.JS are available on our [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-nodejs) repository.
-
-{{% /alert %}} 
+The complete source code and examples to get started using the Aspose.HTML Cloud SDK for Swift are available on our [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-swift) repository.
 
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
 
-{{% alert color="primary" %}} 
+**Aspose.HTML Cloud SDK for Android** allows you to incorporate Aspose.HTML Cloud services in your android applications quickly and easily.
 
-The complete source code and examples to get started using the Aspose.HTML Cloud SDK for Swift are available on our [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-swift) repository.
+```xml
+<repositories>
+    ...
+	<repository>
+		<id>AsposeJavaAPI</id>
+		<name>Aspose Java API</name>
+		<url>https://releases.aspose.cloud/java/repo/</url>
+	</repository>
+	...
+</repositories>
 
-{{% /alert %}} 
+<dependencies>
+     ...
+	<dependency>
+		<groupId>com.aspose</groupId>
+		<artifactId>aspose-html-cloud-android</artifactId>
+		<version>22.11.1</version>
+		<scope>compile</scope>
+	</dependency>
+	...
+</dependencies>
+```
+
+The complete source code and examples to get started using the Aspose.HTML Cloud SDK for Android are available on our [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-android) repository.
 
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
 
-{{% alert color="primary" %}} 
+**Aspose.HTML Cloud SDK for Ruby** allows you to incorporate Aspose.HTML Cloud services in your ruby applications quickly and easily.
 
-The complete source code and examples to get started using the Aspose.HTML Cloud SDK for Android are available on our [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-android) repository.
+```code
+gem 'aspose_html_cloud', :git => 'https://github.com/aspose-html-cloud/aspose-html-cloud-ruby.git'
+```
 
-{{% /alert %}} 
+The complete source code and examples to get started using the Aspose.HTML Cloud SDK for Ruby are available on our [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby) repository.
 
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}
 
-{{% alert color="primary" %}} 
+**Aspose.HTML Cloud SDK for PHP** allows you to incorporate Aspose.HTML Cloud services in your php applications quickly and easily.
 
-The complete source code and examples to get started using the Aspose.HTML Cloud SDK for Ruby are available on our [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-ruby) repository.
+To install the bindings via [Composer](http://getcomposer.org/), add the following to `composer.json`:
 
-{{% /alert %}} 
-
-{{< /tab >}}
-
-{{< tab tabNum="10" >}}
-
-{{% alert color="primary" %}} 
+```code
+{
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/aspose-html-cloud/aspose-html-cloud-php.git"
+    }
+  ],
+  "require": {
+    "aspose/aspose-html-cloud-php": "dev-master"
+  }
+}
+```
 
 The complete source code and examples to get started using the Aspose.HTML Cloud SDK for PHP are available on our [GitHub](https://github.com/aspose-html-cloud/aspose-html-cloud-php) repository.
-
-{{% /alert %}} 
 
 {{< /tab >}}
 
