@@ -1030,6 +1030,12 @@ curl -X POST -v \
 
 HTML to GIF conversion occurs with the **default conversion options**: the resulting GIF document’s width and height correspond to A4, all margins have zero value.
 
+#### **Test HTML to GIF conversion online** ####
+ - Insert URL to the text field.
+ - Press "Convert" button.
+
+{{<cloud/html/sdk-examples gif />}}
+
 ### **Example 4.** Convert HTML to JPEG inside cloud storage
 
 Aspose.HTML Cloud allows you to get an HTML file from your cloud storage and save conversion result back to cloud storage.

@@ -20,6 +20,7 @@ The article explains in a set of Aspose.HTML Cloud SDKs and REST API examples ho
 
 A widespread use case for Aspose.HTML Cloud functions is file processing and converting. Aspose.HTML Cloud allows you to fetch an HTML document from a storage location by its name, from a URL or a local file on your drive, convert it to a specified format and save it to the storage or a local drive. The following code examples demonstrate how to convert HTML to PDF for different cases using available SDKs and REST API. A family of SDKs is available to help developers speed up their development, including C#, Java, C++, Python, PHP, Ruby, Swift, Java/Android, Node.js, etc.
 
+
 ### **Example 1.**  Convert a local HTML file to PDF and save the result to local path
 
 {{< tabs tabTotal="10" tabID="1" tabName1="C#"  tabName2="Java" tabName3="C++"  tabName4="Python" tabName5="PHP"  tabName6="Ruby" tabName7="Node.js" tabName8="Swift"  tabName9="Java/Android" tabName10="CURL" >}}
@@ -1027,6 +1028,13 @@ curl -X POST -v \
 {{< /tabs >}}
 
 HTML to PDF conversion occurs with the **default conversion options**: the resulting PDF document’s width and height correspond to A4, all margins have zero value.
+
+#### **Test HTML to PDF conversion online** ####
+ - Insert URL to the text field.
+ - Press "Convert" button.
+
+{{<cloud/html/sdk-examples pdf />}}
+
 
 ### **Example 4.** Convert HTML to PDF inside cloud storage
 

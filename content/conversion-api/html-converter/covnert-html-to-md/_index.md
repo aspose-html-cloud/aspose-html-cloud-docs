@@ -635,6 +635,12 @@ curl -X POST -v \
 
 HTML to Markdown conversion occurs with the **default conversion options**: the resulting MD document’s width and height correspond to A4, all margins have zero value.
 
+#### **Test HTML to Markdown conversion online** ####
+ - Insert URL to the text field.
+ - Press "Convert" button.
+
+{{<cloud/html/sdk-examples md />}}
+
 ### **Example 3.** Convert HTML to Markdown inside cloud storage
 
 Aspose.HTML Cloud allows you to get an HTML file from your cloud storage and save conversion result back to cloud storage.
