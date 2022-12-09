@@ -20,12 +20,12 @@ jobs:
       - name: preparing workspace npm install dependencies
         run: |
           cd ${{secrets.HUGO_SITE_LOCATION}}
-          # pwd
-          # ls -lA
-          # ls -lA layouts
-          # ls -lA themes
-          # sudo npm install -D --save autoprefixer
-          # sudo npm install -D --save postcss-cli
+          pwd
+          ls -lA
+          ls -lA layouts
+          ls -lA themes
+          sudo npm install -D --save autoprefixer
+          sudo npm install -D --save postcss-cli
       - name: preparing workspace clean public folder
         run: |
           cd ${{secrets.HUGO_SITE_LOCATION}}
