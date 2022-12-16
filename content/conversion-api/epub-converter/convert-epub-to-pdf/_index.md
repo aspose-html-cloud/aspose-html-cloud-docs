@@ -51,11 +51,11 @@ Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
 HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
 
-ConverterBuilder builder = new ConverterBuilder()
+JobBuilder builder = new ConverterBuilder()
                 .fromLocalFile("input.epub")
                 .saveToLocal("output.pdf");
 
-ConversionResult result = api.convert(builder);
+OperationResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -301,11 +301,11 @@ Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
 HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
 
-ConverterBuilder builder = new ConverterBuilder()
+JobBuilder builder = new ConverterBuilder()
                 .fromLocalFile("input.epub")
                 .saveToLocal("output.pdf");
 
-ConversionResult result = api.convert(builder);
+OperationResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -373,7 +373,7 @@ Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
 HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
 
-ConversionOptions opt_A5 = new PDFConversionOptions()
+PDFConversionOptions opt_A5 = new PDFConversionOptions()
                     .setWidth(5.8)        // A5 format in inches
                     .setHeight(8.3)
                     .setTopMargin(0.5)
@@ -382,12 +382,12 @@ ConversionOptions opt_A5 = new PDFConversionOptions()
                     .setRightMargin(0.5)
                     .setQuality(95);
 
-ConverterBuilder builder = new ConverterBuilder()
+JobBuilder builder = new ConverterBuilder()
                 .fromLocalFile("input.epub")
                 .useOptions(opt_A5)
                 .saveToLocal("output.pdf");
 
-ConversionResult result = api.convert(builder);
+OperationResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -648,7 +648,7 @@ ClientAPI.setConfig(
 let fileName = "test.epub"
 let format = "pdf"
 let src = url(forResource: fileName).absoluteString
-let options = ConversionOptions(width: 8.3, height: 11.7, leftMargin: 0.2,
+let options = Options(width: 8.3, height: 11.7, leftMargin: 0.2,
         rightMargin: 0.2, topMargin: 0.2, bottomMargin: 0.2)
 
 
@@ -679,7 +679,7 @@ Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
 HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
 
-ConversionOptions opt_A5 = new PDFConversionOptions()
+PDFConversionOptions opt_A5 = new PDFConversionOptions()
                     .setWidth(5.8)        // A5 format in inches
                     .setHeight(8.3)
                     .setTopMargin(0.5)
@@ -688,12 +688,12 @@ ConversionOptions opt_A5 = new PDFConversionOptions()
                     .setRightMargin(0.5)
                     .setQuality(95);
 
-ConverterBuilder builder = new ConverterBuilder()
+JobBuilder builder = new ConverterBuilder()
                 .fromLocalFile("input.epub")
                 .useOptions(opt_A5)
                 .saveToLocal("output.pdf");
 
-ConversionResult result = api.convert(builder);
+OperationResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -755,11 +755,11 @@ Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
 HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
 
-ConverterBuilder builder = new ConverterBuilder()
+JobBuilder builder = new ConverterBuilder()
                 .fromStorageFile("input.epub")
                 .saveToStorage("output.pdf");
 
-ConversionResult result = api.convert(builder);
+OperationResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -991,11 +991,11 @@ Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
 HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
 
-ConverterBuilder builder = new ConverterBuilder()
+JobBuilder builder = new ConverterBuilder()
                 .fromStorageFile("input.epub")
                 .saveToStorage("output.pdf");
 
-ConversionResult result = api.convert(builder);
+OperationResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
