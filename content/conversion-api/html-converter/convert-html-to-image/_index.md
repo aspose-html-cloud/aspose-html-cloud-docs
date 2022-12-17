@@ -50,11 +50,11 @@ Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
 HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
 
-ConverterBuilder builder = new ConverterBuilder()
-                .fromLocalFile("input.html")
-                .saveToLocal("output.jpeg");
+JobBuilder builder = new ConverterBuilder()
+            .fromLocalFile("input.html")
+            .saveToLocal("output.jpeg");
 
-ConversionResult result = api.convert(builder);
+OperationResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -300,11 +300,11 @@ Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
 HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
 
-ConverterBuilder builder = new ConverterBuilder()
+JobBuilder builder = new ConverterBuilder()
                 .fromLocalFile("input.html")
                 .saveToLocal("output.jpeg");
 
-ConversionResult result = api.convert(builder);
+OperationResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -371,7 +371,7 @@ Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
 HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
 
-ConversionOptions opt = new ImageConversionOptions()
+ImageConversionOptions opt = new ImageConversionOptions()
                         .setWidth(600)
                         .setHeight(900)
                         .setTopMargin(20)
@@ -379,12 +379,12 @@ ConversionOptions opt = new ImageConversionOptions()
                         .setLeftMargin(20)
                         .setRightMargin(20);
 
-ConverterBuilder builder = new ConverterBuilder()
+JobBuilder builder = new ConverterBuilder()
                 .fromLocalFile("input.html")
                 .useOptions(opt)
                 .saveToLocal("output.png");
 
-ConversionResult result = api.convert(builder);
+OperationResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -645,7 +645,7 @@ ClientAPI.setConfig(
 let fileName = "test.html"
 let format = "png"
 let src = url(forResource: fileName).absoluteString
-let options = ConversionOptions(width: 800, height: 600, leftMargin: 20,
+let options = Options(width: 800, height: 600, leftMargin: 20,
         rightMargin: 20, topMargin: 20, bottomMargin: 20)
 
 
@@ -676,7 +676,7 @@ Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
 HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
 
-ConversionOptions opt = new ImageConversionOptions()
+ImageConversionOptions opt = new ImageConversionOptions()
                         .setWidth(600)
                         .setHeight(900)
                         .setTopMargin(20)
@@ -684,12 +684,12 @@ ConversionOptions opt = new ImageConversionOptions()
                         .setLeftMargin(20)
                         .setRightMargin(20);
 
-ConverterBuilder builder = new ConverterBuilder()
+JobBuilder builder = new ConverterBuilder()
                 .fromLocalFile("input.html")
                 .useOptions(opt)
                 .saveToLocal("output.png");
 
-ConversionResult result = api.convert(builder);
+OperationResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -748,11 +748,11 @@ Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
 HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
 
-ConverterBuilder builder = new ConverterBuilder()
+JobBuilder builder = new ConverterBuilder()
                 .fromUrl("https://example.com")
                 .saveToLocal("output.gif");
 
-ConversionResult result = api.convert(builder);
+OperationResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -1001,11 +1001,11 @@ Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
 HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
 
-ConverterBuilder builder = new ConverterBuilder()
+JobBuilder builder = new ConverterBuilder()
                 .fromUrl("https://example.com")
                 .saveToLocal("output.gif");
 
-ConversionResult result = api.convert(builder);
+OperationResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -1070,11 +1070,11 @@ Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
 HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
 
-ConverterBuilder builder = new ConverterBuilder()
+JobBuilder builder = new ConverterBuilder()
                 .fromStorageFile("input.html")
                 .saveToStorage("output.jpeg");
 
-ConversionResult result = api.convert(builder);
+OperationResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -1306,11 +1306,11 @@ Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
 HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
 
-ConverterBuilder builder = new ConverterBuilder()
+JobBuilder builder = new ConverterBuilder()
                 .fromStorageFile("input.html")
                 .saveToStorage("output.jpeg");
 
-ConversionResult result = api.convert(builder);
+OperationResult result = api.convert(builder);
 ```
 
 {{< /tab >}}

@@ -46,7 +46,7 @@ var options = new PDFConversionOptions()
 {{< tab tabNum="2" >}}
 
 ```java
-ConversionOptions opt_A5 = new PDFConversionOptions()
+PDFConversionOptions opt_A5 = new PDFConversionOptions()
     .setWidth(5.8)
     .setHeight(8.3)
     .setTopMargin(0.5)
@@ -203,7 +203,7 @@ var opts_A4 = {
 {{< tab tabNum="8" >}}
 
 ```swift
-let options = ConversionOptions(width: 8.3, height: 11.7, leftMargin: 0.2,
+let options = Options(width: 8.3, height: 11.7, leftMargin: 0.2,
         rightMargin: 0.2, topMargin: 0.2, bottomMargin: 0.2)
 ```
 
@@ -224,7 +224,7 @@ let options = ConversionOptions(width: 8.3, height: 11.7, leftMargin: 0.2,
 {{< tab tabNum="9" >}}
 
 ```java
-ConversionOptions opt_A5 = new PDFConversionOptions()
+PDFConversionOptions opt_A5 = new PDFConversionOptions()
     .setWidth(5.8)
     .setHeight(8.3)
     .setTopMargin(0.5)
@@ -279,7 +279,7 @@ var options = new XPSConversionOptions()
 {{< tab tabNum="2" >}}
 
 ```java
-ConversionOptions xpsOpts_A5 = new XPSConversionOptions()
+XPSConversionOptions xpsOpts_A5 = new XPSConversionOptions()
     .setHeight(8.3)
     .setWidth(5.8)
     .setLeftMargin(0.5)
@@ -424,7 +424,7 @@ var opts_A4 = {
 {{< tab tabNum="8" >}}
 
 ```swift
-let options = ConversionOptions(width: 8.3, height: 11.7, leftMargin: 0.2,
+let options = Options(width: 8.3, height: 11.7, leftMargin: 0.2,
         rightMargin: 0.2, topMargin: 0.2, bottomMargin: 0.2)
 ```
 
@@ -442,7 +442,7 @@ let options = ConversionOptions(width: 8.3, height: 11.7, leftMargin: 0.2,
 {{< tab tabNum="9" >}}
 
 ```java
-ConversionOptions xpsOpts_A5 = new XPSConversionOptions()
+XPSConversionOptions xpsOpts_A5 = new XPSConversionOptions()
     .setHeight(8.3)
     .setWidth(5.8)
     .setLeftMargin(0.5)
@@ -496,7 +496,7 @@ var options = new ImageConversionOptions()
 {{< tab tabNum="2" >}}
 
 ```java
-ConversionOptions opts = new ImageConversionOptions()
+ImageConversionOptions opts = new ImageConversionOptions()
     .setHeight(800)
     .setWidth(1000)
     .setLeftMargin(10)
@@ -647,7 +647,7 @@ var opts = {
 {{< tab tabNum="8" >}}
 
 ```swift
-let options = ConversionOptions(width: 800, height: 1200, leftMargin: 20,
+let options = Options(width: 800, height: 1200, leftMargin: 20,
         rightMargin: 20, topMargin: 20, bottomMargin: 20)
 ```
 
@@ -666,7 +666,7 @@ let options = ConversionOptions(width: 800, height: 1200, leftMargin: 20,
 {{< tab tabNum="9" >}}
 
 ```java
-ConversionOptions opts = new ImageConversionOptions()
+ImageConversionOptions opts = new ImageConversionOptions()
     .setHeight(800)
     .setWidth(1000)
     .setLeftMargin(10)

@@ -46,11 +46,11 @@ Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
 HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
 
-ConverterBuilder builder = new ConverterBuilder()
+JobBuilder builder = new ConverterBuilder()
                 .fromLocalFile("input.html")
                 .saveToLocal("output.mhtml");
 
-ConversionResult result = api.convert(builder);
+OperationResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -296,11 +296,11 @@ Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
 HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
 
-ConverterBuilder builder = new ConverterBuilder()
+JobBuilder builder = new ConverterBuilder()
                 .fromLocalFile("input.html")
                 .saveToLocal("output.mhtml");
 
-ConversionResult result = api.convert(builder);
+OperationResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -353,11 +353,11 @@ Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
 HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
 
-ConverterBuilder builder = new ConverterBuilder()
+JobBuilder builder = new ConverterBuilder()
                 .fromUrl("https://example.com")
                 .saveToLocal("output.mhtml");
 
-ConversionResult result = api.convert(builder);
+OperationResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -606,11 +606,11 @@ Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
 HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
 
-ConverterBuilder builder = new ConverterBuilder()
+JobBuilder builder = new ConverterBuilder()
                 .fromUrl("https://example.com")
                 .saveToLocal("output.mhtml");
 
-ConversionResult result = api.convert(builder);
+OperationResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -674,11 +674,11 @@ Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
 HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
 
-ConverterBuilder builder = new ConverterBuilder()
+JobBuilder builder = new ConverterBuilder()
                 .fromStorageFile("input.html")
                 .saveToStorage("output.mhtml");
 
-ConversionResult result = api.convert(builder);
+OperationResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -910,11 +910,11 @@ Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
 HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
 
-ConverterBuilder builder = new ConverterBuilder()
+JobBuilder builder = new ConverterBuilder()
                 .fromStorageFile("input.html")
                 .saveToStorage("output.mhtml");
 
-ConversionResult result = api.convert(builder);
+OperationResult result = api.convert(builder);
 ```
 
 {{< /tab >}}

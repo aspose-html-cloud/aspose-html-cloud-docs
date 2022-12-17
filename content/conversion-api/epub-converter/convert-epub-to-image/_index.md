@@ -51,11 +51,11 @@ Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
 HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
 
-ConverterBuilder builder = new ConverterBuilder()
+JobBuilder builder = new ConverterBuilder()
                 .fromLocalFile("input.epub")
                 .saveToLocal("output.jpeg");
 
-ConversionResult result = api.convert(builder);
+OperationResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -301,11 +301,11 @@ Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
 HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
 
-ConverterBuilder builder = new ConverterBuilder()
+JobBuilder builder = new ConverterBuilder()
                 .fromLocalFile("input.epub")
                 .saveToLocal("output.jpeg");
 
-ConversionResult result = api.convert(builder);
+OperationResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -372,7 +372,7 @@ Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
 HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
 
-ConversionOptions opt = new ImageConversionOptions()
+ImageConversionOptions opt = new ImageConversionOptions()
                         .setWidth(600)
                         .setHeight(900)
                         .setTopMargin(20)
@@ -380,12 +380,12 @@ ConversionOptions opt = new ImageConversionOptions()
                         .setLeftMargin(20)
                         .setRightMargin(20);
 
-ConverterBuilder builder = new ConverterBuilder()
+JobBuilder builder = new ConverterBuilder()
                 .fromLocalFile("input.epub")
                 .useOptions(opt)
                 .saveToLocal("output.png");
 
-ConversionResult result = api.convert(builder);
+OperationResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -646,7 +646,7 @@ ClientAPI.setConfig(
 let fileName = "test.epub"
 let format = "png"
 let src = url(forResource: fileName).absoluteString
-let options = ConversionOptions(width: 800, height: 600, leftMargin: 10,
+let options = Options(width: 800, height: 600, leftMargin: 10,
         rightMargin: 10, topMargin: 10, bottomMargin: 10)
 
 
@@ -677,7 +677,7 @@ Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
 HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
 
-ConversionOptions opt = new ImageConversionOptions()
+ImageConversionOptions opt = new ImageConversionOptions()
                         .setWidth(600)
                         .setHeight(900)
                         .setTopMargin(20)
@@ -685,12 +685,12 @@ ConversionOptions opt = new ImageConversionOptions()
                         .setLeftMargin(20)
                         .setRightMargin(20);
 
-ConverterBuilder builder = new ConverterBuilder()
+JobBuilder builder = new ConverterBuilder()
                 .fromLocalFile("input.epub")
                 .useOptions(opt)
                 .saveToLocal("output.png");
 
-ConversionResult result = api.convert(builder);
+OperationResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -753,11 +753,11 @@ Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
 HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
 
-ConverterBuilder builder = new ConverterBuilder()
+JobBuilder builder = new ConverterBuilder()
                 .fromStorageFile("input.epub")
                 .saveToStorage("output.gif");
 
-ConversionResult result = api.convert(builder);
+OperationResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
@@ -989,11 +989,11 @@ Configuration.setAuthPath("https://api.aspose.cloud/connect/token");
 
 HtmlApi api = new HtmlApi("CLIENT_ID", "CLIENT_SECRET");
 
-ConverterBuilder builder = new ConverterBuilder()
+JobBuilder builder = new ConverterBuilder()
                 .fromStorageFile("input.epub")
                 .saveToStorage("output.gif");
 
-ConversionResult result = api.convert(builder);
+OperationResult result = api.convert(builder);
 ```
 
 {{< /tab >}}
