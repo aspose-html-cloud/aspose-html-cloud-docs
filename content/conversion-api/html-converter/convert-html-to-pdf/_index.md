@@ -394,7 +394,6 @@ OperationResult result = api.convert(builder);
 
 The following example demonstrates how to convert **HTML to PDF C++** language applying. HTML is taken from the local file system, converted to PDF and saved to the local path. 
 
-
 ```c++
 // Get current directory
 std::string cur_dir(argv[0]);
