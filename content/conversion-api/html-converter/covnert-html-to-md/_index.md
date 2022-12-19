@@ -308,9 +308,9 @@ OperationResult result = api.convert(builder);
 {{< tab tabNum="10" >}}
 
 The following example demonstrates how to convert **HTML to Markdown** REST API applying. Local HTML converted to Markdown and saved to the local path. Follow a few required steps:
-- Upload local file to storage using [Storage API](https://docs.aspose.cloud/html/storage-api/working-with-files-in-storage).
+- Upload local file to storage using [Storage API](https://docs.aspose.cloud/html/storage-api/working-with-files-in-storage/).
 - Call REST API to execute conversion (in the example below).
-- Download conversion result back from storage using [Storage API](https://docs.aspose.cloud/html/storage-api/working-with-files-in-storage).
+- Download conversion result back from storage using [Storage API](https://docs.aspose.cloud/html/storage-api/working-with-files-in-storage/).
 ```bash
 curl -X POST -v \
 	"https://api.aspose.cloud/v4.0/html/conversion/html-md" \
@@ -620,7 +620,7 @@ OperationResult result = api.convert(builder);
 The following example demonstrates how to convert **HTML to Markdown** using REST API. HTML is taken from the Web, converted to Markdown and saved to the local file system.
 Follow a few required steps:
 - Call REST API to execute conversion (in the example below).
-- Download conversion result back from storage using [Storage API](https://docs.aspose.cloud/html/storage-api/working-with-files-in-storage).
+- Download conversion result back from storage using [Storage API](https://docs.aspose.cloud/html/storage-api/working-with-files-in-storage/).
 ```bash
 curl -X POST -v \
 	"https://api.aspose.cloud/v4.0/html/conversion/html-md" \

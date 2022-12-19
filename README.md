@@ -20,6 +20,8 @@ In order to make changes in the repository, you need to:
 ### 3. Start Hugo
 Run: `.\node_modules\hugo-extended\vendor\hugo.exe server -c 'content\html' --baseURL https://docs.aspose.cloud/html`
 
+New Run Command: `.\node_modules\hugo-extended\vendor\hugo.exe server -c 'content' --baseURL https://docs.aspose.cloud/html`
+
 Or run powershell script in the root: `run.ps1`
 
 
