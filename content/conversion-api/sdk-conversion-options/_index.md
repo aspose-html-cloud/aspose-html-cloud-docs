@@ -2,11 +2,13 @@
 title: SDK Conversion Options
 type: docs
 weight: 80
-aliases: /html-conversion-options/
+aliases: 
+  - /html-conversion-options/
+  - /conversion-api/sdk-conversion-options/
 keywords: conversion options, html conversion options, convert html
 description: Learn how to apply conversion options to convert HTML to PDF, XPS and Image formats such as JPG, PNG, GIF, TIFF, and BMP with a set of SDK examples. 
 url: /sdk-conversion-options/
-lastmod: 2022-11-08
+lastmod: 2023-03-02
 ---
 
 ## **Summary**

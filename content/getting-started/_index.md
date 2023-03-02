@@ -1,12 +1,12 @@
 ---
 title: Getting Started
 type: docs
-aliases: /html/quickstart/
+aliases: /how-to-run-the-examples/
 keywords: SDK, REST API, REST API call, authentication, initialize API, SDK, HTTP requests
 description: Aspose.HTML Cloud provides two main points - the conversion feature and the cloud storage access functionality. This article introduces you  with Aspose.HTML Cloud v4.0 abilities to use its functionality both by the REST API directly or by the set of wrappers implemented as SDKs on the various programming languages.
 weight: 20
 url: /getting-started/
-lastmod: 2022-11-07
+lastmod: 2023-03-02
 ---
 
 {{% alert color="primary" %}} 
