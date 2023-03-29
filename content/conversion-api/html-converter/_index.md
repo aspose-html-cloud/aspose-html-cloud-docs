@@ -31,5 +31,5 @@ These documentation articles explain in detail how to convert HTML files to the 
  - [HTML to XPS](/html/convert-html-to-xps/) - provides a general description of how to convert HTML to XPS formats using Cloud SDKs and by direct REST API calls.
  - [HTML to DOCX](/html/convert-html-to-docx/) - the article provides information on a description of supported conversion scenarios for HTML to DOCX conversion using various SDKs or REST API requests.
  - [HTML to MHTML](/html/convert-html-to-mhtml/) - you find out how to convert HTML to MHTML using the Aspose.HTML Cloud SDKs and REST API.
- - [HTML to Markdown](/html/covnert-html-to-md/) - you will learn how to convert HTML to Markdown using the Aspose.HTML Cloud SDKs and by direct REST API calls.
+ - [HTML to Markdown](/html/convert-html-to-md/) - you will learn how to convert HTML to Markdown using the Aspose.HTML Cloud SDKs and by direct REST API calls.
  - [HTML to Image](/html/convert-html-to-image/) -  this article provides information about the Aspose.HTML Cloud API conversion functions and a list of supported scenarios for converting HTML to Images.
