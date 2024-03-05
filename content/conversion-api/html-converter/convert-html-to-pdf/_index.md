@@ -699,7 +699,7 @@ OperationResult result = api.convert(builder);
 
 The following example demonstrates how to convert **HTML to PDF** using REST API. Local HTML converted to PDF and saved to the local file system. Follow a few required steps:
 - Upload a local file to storage using [Storage API](https://docs.aspose.cloud/html/storage-api/working-with-files-in-storage/).
-- Call REST API to execute conversion (in the example below).
+- Call REST API to execute conversion (in the example below)
 - Download conversion result back from storage using [Storage API](https://docs.aspose.cloud/html/storage-api/working-with-files-in-storage/).
 ```bash
 curl -X POST -v \
