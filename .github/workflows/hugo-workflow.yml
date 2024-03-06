@@ -7,7 +7,7 @@ on:
 jobs:
   job-deploy:
     name: Deploy
-    runs-on: [ubuntu-latest]
+    runs-on: [self-hosted, linux, x64, html-cloud-dev4]
     steps:
       - name: preparing workspace git pull documentation
         run: |
