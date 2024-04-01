@@ -1,0 +1,6 @@
+{{ if (isset .Scratch.Values "containerizeMenuFolderPath") }}
+
+    {{- $menuPath := .Scratch.Get "containerizeMenuFolderPath" -}}
+    {{ partial (print "containerize-menu/" $menuPath "footer.html") . }}
+    
+{{- end -}}

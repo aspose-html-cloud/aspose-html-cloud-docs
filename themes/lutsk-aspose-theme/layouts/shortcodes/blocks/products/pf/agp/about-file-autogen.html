@@ -1,0 +1,43 @@
+{{ $informat := $.Page.Params.informat }}
+{{ $outformat := $.Page.Params.outformat }}
+{{ $informatdesc := "" }}
+{{ $informatlink := "" }}
+{{ $outformatdesc := "" }}
+{{ $outformatlink := "" }}
+
+{{ $formats := site.Data.fileformats }}
+{{ range $formats }}
+  {{ if eq .format $informat  }}
+    {{ $informatdesc = .description }}
+	{{ $informatlink = .link }}
+  {{ end }}
+  {{ if eq .format $outformat  }}
+    {{ $outformatdesc = .description }}
+	{{ $outformatlink = .link }}
+  {{ end }}
+{{ end }}
+
+<div class="container-fluid agp-content bg-white aboutfile box-1 vh100 section">
+  <div class="container">
+	<div class="row">
+	  <div class="col-md-6 tl rightborder">
+		<div class="aboutagp-box">
+		<h3><em class="icofile"><b>{{ $.Page.Params.informat }}</b></em> <span>What is {{ $.Page.Params.informat }} File Format?</span></h3>
+		<div class="textbox pl-0">
+		  <p>{{ $informatdesc }}</p>
+		  <a target="_blank" rel="noopener" href="{{ $informatlink }}" class="btn btn-success btn-sm">Read More</a>
+		</div>
+		</div>
+	  </div>
+	  <div class="col-md-6 tl ">
+		<div class="aboutagp-box">
+		<h3><em class="icofile"><b>{{ $.Page.Params.outformat }}</b></em> <span>What is {{ $.Page.Params.outformat }} File Format?</span></h3>
+		<div class="textbox pl-0">
+		  <p>{{ $outformatdesc }}</p>
+		  <a target="_blank" href="{{ $outformatlink }}" class="btn btn-success btn-sm">Read More</a>
+		</div>
+	</div>
+	</div>
+	</div>
+  </div>
+</div>

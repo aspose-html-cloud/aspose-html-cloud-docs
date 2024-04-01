@@ -1,0 +1,7 @@
+<ol>
+  <li>Create an account at <a href="https://dashboard.aspose.cloud/">Aspose Cloud Dashboard</a> to get free API quota.</li>
+  <li>Initialize <em>WordsApi</em> with <em>ClientId</em> & <em>ClientSecret</em>.</li>
+  <li>Upload {{ $.Page.Params.informat }} to Cloud storage with <em>WordsApi.upload_file</em> method.</li>
+  <li>Create <em>ConvertDocumentRequest</em>. Pass input file name & output format.</li>
+  <li>Convert {{ $.Page.Params.informat }} to {{ $.Page.Params.outformat }} by calling <em>WordsApi.convert_document</em> method.</li>
+</ol>

@@ -1,0 +1,20 @@
+<!-- Favicons -->
+{{- if (in .Site.BaseURL "codeporting.com") -}}
+<link rel="shortcut icon" href="https://www.codeporting.com/templates/codeporting/favicon.ico" type="image/x-icon">
+{{- else -}}
+    {{- if (in .Site.BaseURL "conholdate.com") -}}
+<link rel="shortcut icon" href="https://www.conholdate.com/templates/conholdate/favicon.ico" type="image/x-icon">
+	{{- else if (in .Site.BaseURL "aspose")}}
+<link rel="apple-touch-icon" sizes="180x180" href="https://cms.admin.containerize.com/templates/asposecloud/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://cms.admin.containerize.com/templates/asposecloud/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://cms.admin.containerize.com/templates/asposecloud/images/favicon-16x16.png">
+<link rel="mask-icon" href="https://cms.admin.containerize.com/templates/asposecloud/images/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="https://cms.admin.containerize.com/templates/asposecloud/images/favicon.ico">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="msapplication-config" content="https://cms.admin.containerize.com/templates/asposecloud/images/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<meta name="author" content="Aspose"/>
+    {{- else -}}
+<link rel="shortcut icon" href="https://cms.admin.containerize.com/templates/aspose/favicon.ico?v2" />
+    {{- end -}}
+{{- end -}}

@@ -1,0 +1,35 @@
+<div class="container-fluid bg-white agp-content section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 tl ">
+        <h2 class="heading-border">{{ if .Get "stepsheading" }}{{ .Get "stepsheading" }}{{ else }}Convert {{ $.Page.Params.informat }} to {{ $.Page.Params.outformat }} with {{ $.Page.Params.platform }} {{ end }}</h2>
+		{{ if in $.Page.Params.platformtag "net" }}
+			{{partial "auto-gen/words/conversion/steps/net.html" . }}
+		{{ else if in $.Page.Params.platformtag "python" }}
+			{{partial "auto-gen/words/conversion/steps/python.html" . }}
+		{{ end }}
+      </div>
+      <div class="col-md-6 tl ">
+        <h2  class="heading-border">{{ if .Get "configureheading" }}{{ .Get "configureheading" }}{{ else }}Get Document Automation Library{{ end }}</h2>
+		{{ if in $.Page.Params.platformtag "net" }}
+			{{partial "auto-gen/words/conversion/configs/net.html" .}}
+		{{ else if in $.Page.Params.platformtag "python" }}
+			{{partial "auto-gen/words/conversion/configs/python.html" .}}
+		{{ end }}
+      </div>
+      <div class="col-md-12 tl ">
+        <div id="code" class="codeblock">
+          <h3>{{ if .Get "codeheading" }}{{ .Get "codeheading" }}{{ else }}Convert {{ $.Page.Params.informat }} to {{ $.Page.Params.outformat }} with {{ $.Page.Params.platform }}‎ {{ end }}</h3>
+			{{ if .Get "gistPath"}} <script type="application/javascript" src="{{ .Get "gistPath"}}"></script> 
+			{{ else }}
+				{{ if in $.Page.Params.platformtag "net" }}
+					{{partial "auto-gen/words/conversion/codes/net.html" . }}
+				{{ else if in $.Page.Params.platformtag "python" }}
+					{{partial "auto-gen/words/conversion/codes/python.html" .}}
+				{{ end }}
+			{{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

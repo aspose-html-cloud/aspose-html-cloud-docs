@@ -1,0 +1,28 @@
+{{ $outformat := $.Page.Params.outformat }}
+{{ $outformats := split $.Page.Params.otherformats " " }}
+{{ $formatdetails := site.Data.fileformats }}
+{{ $formatname := "" }}
+<div class="col-md-12 pt-5 pb-5 convertypes bg-white agp-content section" id="dvOtherSupportedConversions">
+    <div class="container">
+        <h3 id="hOtherSupportedFeatureHeading tc" class="tc d-block">Other {{ humanize $.Page.Params.feature }} Options</h3>
+        <!--<p id="pOtherSupportedFeatureSubHeading" class="tc d-block ">You can also convert {{ $.Page.Params.informat }} into many other file formats.</p>-->
+        <div class="row other-converters">
+            {{ range $outformats}}
+                {{ $format := . }}
+                {{ range $formatdetails }}
+                    {{ if eq .format $format }}
+                        {{ $formatname = .name }}
+                    {{ end }}
+                {{ end }}
+                <div class="col-md-3 other-converter">
+                    {{ if eq (lower $.Page.Params.feature) "conversion"}}
+                    <a href="/{{ lower $.Page.Params.family }}/{{ lower $.Page.Params.platformtag }}/{{ lower $.Page.Params.feature }}/{{ lower $.Page.Params.informat }}-to-{{ lower . }}/">Convert {{ $.Page.Params.informat }} TO {{ . }}</a>
+                    {{ else }}
+                    <a href="/{{ lower $.Page.Params.family }}/{{ lower $.Page.Params.platformtag }}/{{ lower $.Page.Params.feature }}/{{ lower $format }}/">{{ upper $format }} {{ humanize $.Page.Params.feature }}</a> 
+                    {{ end }}
+                    {{ if $formatname }}({{ $formatname }}){{ end }}
+                </div>
+            {{ end }}
+        </div>
+    </div>
+</div>

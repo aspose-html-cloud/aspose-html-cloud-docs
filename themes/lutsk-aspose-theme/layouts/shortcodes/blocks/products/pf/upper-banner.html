@@ -1,0 +1,52 @@
+<div class="container-fluid header1 header2 productfamilyheader minify-header">
+    <div class="container">
+        <div class="row pt-lg-5">
+            <div class="col-md-12 padding0">
+                <div class="col-lg-3 col-md-3 pull-right">
+                    {{- if or (.Get "additionalConversionTag") (.Get "fileiconsmall1")}}
+                    <div class="tr">
+                        <div class="aspose_product_img">
+                            <div class="circleiconsformat">
+                                {{- if .Get "fileiconsmall1" -}}
+                                    {{- range $paramName, $e := .Params -}}
+                                        {{- if (in $paramName "fileiconsmall")}}
+                                        <em class="fileiconsmall">{{$e}}</em>
+                                        {{- end -}}
+                                    {{- end -}}
+                                {{- else -}}
+                                    <em class="fileiconsmall">HTML</em>
+                                    <em class="fileiconsmall">JPG</em>
+                                    <em class="fileiconsmall">PDF</em>
+                                    <em class="fileiconsmall">XML</em>
+                                    <em class="fileiconsmall">{{- .Get "sourceAdditionalConversionTag" -}}</em>
+                                {{- end -}}
+
+                            </div>
+                            <img class="lazyloaded" src='{{- .Get "logoImageSrc"}}' alt='{{- .Get "pfName" -}} {{- if .Get "subTitlepfName" -}} {{.Get "subTitlepfName"}}{{- else -}} Product Family{{- end -}}'>
+                            {{- if .Get "additionalConversionTag" -}}<div class="conversiontag">{{- .Get "additionalConversionTag" -}}</div>{{end}}
+                        </div>
+                        {{- if .Get "pfName" -}}
+                        <h3 class="pr-h3">{{- .Get "pfName" -}} <em>{{- if .Get "subTitlepfName" -}} {{.Get "subTitlepfName"}}{{- else -}} On Premise APIs{{- end -}}</em></h3>
+                        {{- end -}}
+                    </div>
+                    {{- else -}}
+                        <img class='col-xs-12 totalimg mt45px lazyloaded {{if .Get "subTitlepfName"}} normalizeImg {{- end -}}' src='{{- .Get "logoImageSrc"}}' alt='{{- .Get "pfName" -}} {{- if .Get "subTitlepfName" -}} {{.Get "subTitlepfName"}}{{- else -}} Product Family{{- end -}}' width="320">
+                        <!--<h3 class="pr-h3">{{- .Get "pfName" -}} <em>{{- if .Get "subTitlepfName" -}} {{.Get "subTitlepfName"}}{{- else -}} On Premise APIs{{- end -}}</em></h3>-->
+                    {{- end -}}
+                </div>
+                <div class="padding0 col-lg-9">
+                    <h1>{{- .Get "h1" | markdownify -}}</h1>
+                    <h2 class="pr-h2">{{- .Get "h2" | markdownify -}}</h2>
+                    {{- if .Get "downloadUrl" -}}
+                    <a class="btn btn-warning btn-lg" href='{{- .Get "downloadUrl" -}}'>{{if not (.Get "additionalConversionTag") -}}<em class="fa fa-download">&nbsp;</em>{{end}}
+                        Download Free Trial</a>
+                    {{- end -}}
+                    {{- if (.Get "tryOnlineUrl") -}}
+                    <a class="btn btn-success btn-lg" style="padding: 14px 24px;" href='{{- .Get "tryOnlineUrl" -}}'> Try Online</a>
+                    {{- end -}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

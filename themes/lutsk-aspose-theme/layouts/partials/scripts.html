@@ -1,0 +1,41 @@
+<script 
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+</script>
+
+{{ if (in .Page.Permalink "/font/") }}
+  {{ $appJs := resources.Get "js/font/app-font-converter.js" }}
+  <script integrity="{{ $appJs.Data.Integrity }}" crossorigin="anonymous" src="{{$appJs.RelPermalink}}"></script>
+{{end}}
+
+{{ if (in .Page.Permalink "/tex/") }}
+  {{ $appJs := resources.Get "js/tex/app-tex-converter.js" }}
+  <script integrity="{{ $appJs.Data.Integrity }}" crossorigin="anonymous" src="{{$appJs.RelPermalink}}"></script>
+{{end}}
+
+{{- $dropdownJs := resources.Get "bootstrap/dist/js/bootstrap.min.js" -}}
+{{- $popperJs := resources.Get "js/popper.min.js" -}}
+{{- $jsAnchor := resources.Get "js/anchor.js" | resources.Minify -}}
+{{- $resizeLeftsideMenu := resources.Get "js/resize-left-side-menu.js" | resources.Minify  -}}
+{{- $splitMin := resources.Get "js/split.min.js" | minify  -}}
+{{- $mobileTopMenu := resources.Get "js/moblie-top-menu.js" | resources.Minify  -}}
+{{- $ToCHide := resources.Get "js/ToC-hide.js" | resources.Minify  -}}
+{{- $copyBtn := resources.Get "js/copy-btn.js" | resources.Minify  -}}
+{{- $focusOnCurrentPageInLeftMenu := resources.Get "js/focus-on-current-page-in-left-menu.js" | resources.Minify  -}}
+{{- $productsStickyFloatingRightMenu := resources.Get "js/products-sticky-floating-menu.js" | resources.Minify  -}}
+{{- $testimonialcarousel := resources.Get "js/testimonialcarousel.js" | resources.Minify  -}}
+{{- $diagramCarousel := resources.Get "js/diagram-carousel.js" | resources.Minify  -}}
+{{- $clipboardMin := resources.Get "js/clipboard.min.js" | resources.Minify  -}}
+{{- $productClipboardDownloadBtn := resources.Get "js/product-clipboard-download-btn.js" | resources.Minify  -}}
+{{- $highlightjs := resources.Get "js/highlight.js" | resources.Minify  -}}
+{{- $search := resources.Get "js/search.js" | resources.Minify  -}}
+
+{{- $js := "" -}}
+{{- if (and (in .Site.BaseURL "products") (in .Site.BaseURL "aspose.com")) -}}
+  {{- $js = (slice $popperJs $dropdownJs $productsStickyFloatingRightMenu $testimonialcarousel $diagramCarousel $clipboardMin $productClipboardDownloadBtn $highlightjs) | resources.Concat "js/main.js" -}}
+{{- else -}}
+  {{- $js = (slice $popperJs $dropdownJs $splitMin $jsAnchor $resizeLeftsideMenu $mobileTopMenu $ToCHide $copyBtn  $search $focusOnCurrentPageInLeftMenu $highlightjs) | resources.Concat "js/main.js" -}}
+{{- end -}}
+{{- $js := $js | resources.Minify | fingerprint -}}
+<script src="{{- $js.RelPermalink -}}" integrity="{{- $js.Data.Integrity -}}" crossorigin="anonymous"></script>

@@ -1,0 +1,18 @@
+{{ if eq (strings.Count "about-file-text" .Page.RawContent) 2 }}
+    {{ block "aboutagp-box" (dict "cont" . "additionalClass" "tc") }}{{ end }}
+{{ else }}
+    <div class="col-md-6 tl rightborder">
+        {{ block "aboutagp-box" (dict "cont" .) }}{{ end }}        
+    </div>
+{{ end }}
+
+{{ define "aboutagp-box"}}
+<div class='aboutagp-box {{ if .additionalClass }} tc top-padding-50{{ end }}'>
+    {{ with .cont }}
+    <h3><em class="icofile"><b>{{ .Get "fileFormat" }}</b></em> What is {{ .Get "fileFormat" }} File Format</h3>        
+    <p>{{ .Inner }}</p>
+    {{ if .Get "readMoreLink"}}<a class="read-more" href='{{ .Get "readMoreLink" }}' target="_blank"
+        rel="noopener noreferrer">Read More</a> {{end}}
+    {{ end }}
+</div>
+{{ end}}

@@ -1,0 +1,12 @@
+{{ $additionalTitleText := "Product Family" }}
+<h2>
+    <a id='{{ .Get "anchorName" }}' class="anchor" name='{{ .Get "anchorName" }}'></a>
+    <a href='{{ .Get "href" }}'>{{ .Get "title" | markdownify }} {{$additionalTitleText}} </a>
+</h2>
+{{ .Inner }}
+
+{{ if not (.Get "hideDelimiter") }}
+<div class="brdr-spacer">&nbsp;</div>
+{{ else}}
+<div class="spacer">&nbsp;</div>
+{{ end }}

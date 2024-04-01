@@ -1,0 +1,8 @@
+{{ $innerTextCounterSection := .Scratch.Get "nestedDemoboxCounter"}}
+<div class='container-fluid agp-content {{ if not $innerTextCounterSection }}bg-gray-lighter {{ else }}bg-white{{ end }} aboutfile box-1 vh100 section'>
+    <div class="container full-width">
+        <div class="row">
+            {{ .Inner }}            
+        </div>
+    </div>
+</div>

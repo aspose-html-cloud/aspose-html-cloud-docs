@@ -1,0 +1,9 @@
+<div class="box1 col-lg-6">
+    <div class="col-md-2"><a href='{{ .Get "href" }}'><img
+                src='{{ .Get "imgSrc" }}'
+                alt='{{ .Get "productName" }}' width="91" height="91" class=" lazyloaded"></a></div>
+    <div class="col-md-10">
+        <h4><a href='{{ .Get "href" }}'>{{ .Get "productName" }}</a></h4>
+        <p align="justify">{{ .Inner }}</p>
+    </div>
+</div>

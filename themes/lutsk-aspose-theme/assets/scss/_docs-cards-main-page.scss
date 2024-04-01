@@ -1,0 +1,158 @@
+.docs-btn {
+	color: #106eea !important;
+	font-weight: 400;
+	font-size: 13px;
+	letter-spacing: 1px;
+	display: inline-block;
+	padding: 8px;
+	border-radius: 2px;
+	transition: none;
+	line-height: 14px;
+	animation-delay: .8s;
+	margin: 3px;
+	border: 1px solid #eaeaea;
+	background-color: #fff;
+	box-shadow: 0 2px 15px rgba(0, 0, 0, 0.02);
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	&:hover {
+		box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+		background-color: #106eea;
+		color: #fff !important;
+		border-color: #fff;
+		em {
+			background-color: #106eea;
+			color: #fff !important;
+			border-color: #fff !important;
+		}
+	}
+	em {
+		padding: 2px;
+		color: #fff;
+		font-style: normal;
+		font-weight: 700;
+		border: 1px solid;
+		font-size: 10px;
+		border-radius: 3px;
+		font-size: 10px;
+		padding: 2px 4px;
+	}
+	em.docs-vianet {
+		color: purple;
+		border-color: purple;
+	}
+	em.docs-viajava {
+		color: #dd504f;
+		border-color: #dd504f;
+	}
+}
+.docs-card {
+	h3 {
+		a {
+			&:hover {
+				color: #106eea !important;
+			}
+			font-weight: 700;
+			color: #212529;
+			font-size: 18px;
+		}
+		margin: 0;
+	}
+	position: relative;
+	padding: 15px 10px;
+	background: #fff;
+	margin: 15px 0;
+	transition: .7s;
+	border: 1px solid #efefef;
+	text-align: center;
+	&:hover {
+		box-shadow: rgba(0, 0, 0, 0.08) 0 7px 22px;
+	}
+	span.docs-span {
+		font-size: 13px;
+		font-weight: 500;
+		line-height: 1.35;
+		margin-bottom: 15px;
+		color: #212529;
+		display: block;
+	}
+	pre {
+		display: none !important;
+	}
+	p {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		text-align: center!important;
+	}
+}
+.docs-template {
+	background: #f9faff;
+	padding: 35px 0;
+	.gridblock {
+		display: grid;
+	}
+	a {
+		&:hover {
+			transition: 400ms all ease;
+		}
+	}
+}
+.docs-btngroup {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: wrap;
+}
+.docs-card.min-height {
+	min-height: 220px;
+}
+.container {
+	max-width: 1364px;
+}
+em {
+	&:empty {
+		display: none !important;
+	}
+}
+.docs-vianet {
+	position: relative;
+	padding-left: 7px !important;
+	&:before {
+		content: '.';
+		position: absolute;
+		left: 2px;
+		bottom: 1px;
+	}
+}
+@media (max-width:668px) {
+	body {
+		.docs-card {
+			min-height: inherit !important;
+		}
+	}
+}
+
+.td-outer{
+	padding:0!important;
+}
+.smaller {
+	h4, h1{
+		margin-top:0!important
+	}
+}
+p:empty{
+	display: none;
+}
+.smaller.bg-primary{
+	background-color: #006bb0!important;
+}
+.docs-template {
+	.row{
+	align-items: center;
+	justify-content: center;
+	min-height: 600px;
+	flex-wrap: wrap;
+}
+}

@@ -1,0 +1,1 @@
+<p {{ if or (.Parent.Get "additionalTitle") (.Parent.Get "additionalTitleText") }} style='text-align: justify;' {{ end }}>{{ .Inner | markdownify }}</p>

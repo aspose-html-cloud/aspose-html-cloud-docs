@@ -1,0 +1,17 @@
+<nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
+	<ol class="breadcrumb spb-1">
+		{{ if ne .Site.Home.RelPermalink "/" }}
+		<li class="breadcrumb-item"><a href="/">Home</a></li>
+		{{ end }}
+		{{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
+	</ol>
+</nav>
+{{ define "breadcrumbnav" }}
+{{ if .p1.Parent }}
+{{ template "breadcrumbnav" (dict "p1" .p1.Parent "p2" .p2 ) }}
+{{ end }}
+{{ $isActive := eq .p1 .p2 }}
+<li class="breadcrumb-item{{ if $isActive }} active{{ end }}" {{ if $isActive }}aria-current="page" {{ end }}>
+	<a href="{{ .p1.RelPermalink }}">{{ .p1.LinkTitle }}</a>
+</li>
+{{ end }}

@@ -1,0 +1,19 @@
+
+{{ if .Inner }}{{ end }}
+{{ $tabTotal := .Get "tabTotal" }}
+{{ $id := .Get "tabID" }}
+{{ $group := printf "tabs-%s" $id }}
+<nav>
+  <div class="book-tabs nav nav-tabs" id="nav-tab" role="tablist">
+    {{- range $index, $tab := .Scratch.Get $group -}}
+      {{ $k:= add $index 1}}
+      <input type="radio" class="toggle" name="{{ $group }}" id="{{ printf "%s-%d" $group $k }}" {{ if eq $k 1 }}checked="checked"{{ end }} />
+      <label for="{{ printf "%s-%d" $group $k }}">
+        {{- $tab.Name -}}
+      </label>
+      <div class="book-tabs-content markdown-inner">
+        {{- .Content | markdownify -}}
+      </div>
+    {{- end -}}
+  </div>
+</nav>

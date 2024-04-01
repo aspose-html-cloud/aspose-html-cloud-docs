@@ -1,0 +1,5 @@
+{{ $image := .Page.Resources.GetMatch (printf "*%s*" (.Get "img")) }}
+{{ $alt := .Get "alt" }}
+
+<img {{if $alt }}alt="{{$alt}}"{{ end }} src="{{ $image.RelPermalink }}" 
+width="{{ $image.Width }}" height="{{ $image.Height }}">

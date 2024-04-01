@@ -1,0 +1,1 @@
+$('#testimonialcarousel').carousel()

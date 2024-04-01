@@ -1,0 +1,32 @@
+{{ $textSectionCounter := .Parent.Scratch.Get "nestedDemoboxCounter" }}
+{{ if not $textSectionCounter }}
+    {{ $textSectionCounter := 1 }}
+    {{ .Parent.Scratch.Add "nestedDemoboxCounter" $textSectionCounter }}
+{{ else }}
+    {{ $textSectionCounter := add $textSectionCounter 1 }}
+    {{ .Parent.Scratch.Delete "nestedDemoboxCounter" }}
+    {{ .Parent.Scratch.Add "nestedDemoboxCounter" $textSectionCounter }}
+{{ end }}
+
+{{ if not (in .Parent.Name "about-file-section")}}
+    <div class="container-fluid agp-content bg-white aboutfile box-1 vh100 section">
+        <div class="container">
+            <div class="spacer">&nbsp;</div>
+            <div class="row">
+                {{ block "demobox-part" . }}{{ end }}
+                <div class="margin1">&nbsp;</div>
+            </div>
+        </div>
+</div>
+{{ else }}
+    {{ block "demobox-part" . }}{{ end }}
+{{ end }}
+
+
+{{ define "demobox-part" }}
+<div class="demobox tc col-md-12">
+    <h3>{{ .Get "sectionTitle" | markdownify}}</h3>
+    {{ if .Get "sectionDescription" }} <p>{{ .Get "sectionDescription" | markdownify }}</p> {{ end }}
+    {{ .Inner }}
+</div>
+{{ end }}
