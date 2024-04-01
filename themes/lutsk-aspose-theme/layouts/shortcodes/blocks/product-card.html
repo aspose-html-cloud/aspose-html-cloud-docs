@@ -1,0 +1,13 @@
+{{ $additionalTitleText := "Product Family" }}
+{{ if .Get "additionalTitleText"  }}
+  {{ $additionalTitleText = .Get "additionalTitleText" | markdownify }}
+{{ end }}
+<div class="card-element col-lg-4 col-sm-12 col-md-6 col-xs-12">
+  <div class="card">
+    <div class="card-body" style="text-align: center;">
+      <a class="card-title" href='{{ .Get "href" }}'>{{ .Get "title" | markdownify }}</a>
+      <p style="text-align: center;">{{ if .Get "additionalTitle"}} {{ .Get "additionalTitle" | markdownify }} {{ end }}{{$additionalTitleText}}</p>
+      <div class="card-text mb-0" style='text-align: {{ if or (.Get "additionalTitle") (.Get "additionalTitleText") }} center{{ else }} left{{ end }};'>{{ .Inner }}</div>
+    </div>
+  </div>
+</div>

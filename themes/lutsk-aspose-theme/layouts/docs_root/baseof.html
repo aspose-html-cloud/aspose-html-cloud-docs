@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="{{- .Site.Language.Lang -}}" class="no-js">
+  <head>
+    {{- partialCached "head.html" . -}}
+  </head>
+  <body class="td-{{- .Kind -}}">
+    {{- partial "google-tag-manager-script.html" . -}}
+    <header>
+      <div id='DynabicMenuInnerDiv'>
+        {{- partial "create-containerize-menu.html" . -}}
+      </div>
+    </header>
+    {{- partialCached "title-header.html" . -}}
+    <div class="container-fluid td-default td-outer">
+      <main role="main" class="td-main min-height-main-content">
+        {{- block "main" . -}}{{- end -}}
+      </main>
+    </div>
+    {{- partialCached "scripts.html" . -}}
+    <div id='DynabicMenuFooter'>
+      {{- partial "create-containerize-footer.html" . -}}
+    </div>
+    
+  </body>
+</html>

@@ -1,0 +1,13 @@
+{{ if .Parent }}
+  {{ $tabNum := .Get "tabNum" }}
+  {{ $tabNameId := printf "tabName%s" $tabNum }}
+  {{ $tabName := .Parent.Get $tabNameId }}
+  {{ $group := printf "tabs-%s" (.Parent.Get "tabID") }}
+  {{ if not (.Parent.Scratch.Get $group) }}
+    {{ .Parent.Scratch.Set $group slice }}
+  {{ end }}
+
+  {{ .Parent.Scratch.Add $group (dict "Name" $tabName "Content" .Inner) }}
+{{ else }}
+  {{ errorf "%q: 'tab' shortcode must be inside 'tabs' shortcode" .Page.Path }}
+{{ end}}

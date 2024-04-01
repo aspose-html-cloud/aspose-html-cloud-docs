@@ -1,0 +1,15 @@
+{{ $CarouselCounter := .Parent.Scratch.Get "innerCarouselCounter" }}
+{{ if not $CarouselCounter }}
+    {{ $CarouselCounter := 1 }}
+    {{ .Parent.Scratch.Add "innerCarouselCounter" $CarouselCounter }}
+{{ else }}
+    {{ $CarouselCounter := add $CarouselCounter 1 }}
+    {{ .Parent.Scratch.Delete "innerCarouselCounter" }}
+    {{ .Parent.Scratch.Add "innerCarouselCounter" $CarouselCounter }}
+{{ end }}
+<div class='carousel-item {{ if eq (.Parent.Scratch.Get "innerCarouselCounter") 3 }} active {{ end }}'>
+    <h3>{{ .Get "h3" }}</h3>
+    <p>{{ .Get "description" | markdownify }}</p>
+    {{ .Inner }}
+    <!--/diagram1-->
+</div>

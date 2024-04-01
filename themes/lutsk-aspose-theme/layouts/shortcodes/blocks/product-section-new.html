@@ -1,0 +1,6 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+{{ $col_id := .Get "color" | default .Ordinal }}
+{{ $height := .Get "height" | default "auto"  }}
+{{ $type   := .Get "type" | default "" }} 
+        <div class="docs-template"><div class="container">{{ .Inner | markdownify}}</div></div>
+

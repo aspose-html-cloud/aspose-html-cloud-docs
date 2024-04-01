@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="{{- .Site.Language.Lang -}}" class="no-js">
+  <head>
+    {{- partial "head.html" . -}}
+  </head>
+  <body class="td-{{- .Kind -}}">
+    {{- partial "google-tag-manager-script.html" . -}}
+    <header>
+      <div id='DynabicMenuInnerDiv'>
+        {{- partial "create-containerize-menu.html" . -}}
+      </div>
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap min-height-main-content">
+          <div id="left-side-bar-menu" class="split td-sidebar d-print-none col-12 col-md-3 col-xl-3">
+            {{- partial "sidebar.html" . -}}
+          </div>
+          <div id="right-side" class="split col-12 col-md-9 col-xl-9">
+            <div class="row">
+              <main id="main-content" class="col-12 col-md-12 col-xl-12" role="main">
+                {{- partial "version-banner.html" . -}}
+                {{- if not .Site.Params.ui.breadcrumb_disable -}}{{- partial "breadcrumb.html" . -}}{{- end -}}
+                {{- block "main" . -}}{{- end -}}
+                {{- if eq (len .Content) 0 -}}
+                  {{- partial "list-children-pages.html" .}}
+                {{- end -}}
+                {{- partial "next-prev-buttons.html" .}}
+              </main>
+            </div>
+         </div>
+        </div>
+      </div>
+    </div>
+    {{- partialCached "scripts.html" . -}}
+    <div id='DynabicMenuFooter'>
+      {{- partial "create-containerize-footer.html" . -}}
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,113 @@
+{{ $id := substr (md5 .Inner) 0 16 }}
+{{ $input := .Get "input" }}
+{{ $output := .Get "output" }}
+<div class="app-svg-colors" id="{{ $id }}">
+    <div class="header">
+        Convert {{ $input }} to {{ $output }} - C#
+    </div>
+    <div class="parameters">
+        <div class="row">
+            <div class="col-12 region">Input</div>
+        </div>
+        <div class="row ml-4 mr-4">
+            <div class="col-5">
+                <div class="row">
+                    <div id="color_picker_{{ $id }}" class="colorPicker"></div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-6">
+                <div class="row">
+                    <div id="color_picker_input_{{ $id }}" class="colorInputContainer"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 region">Output</div>
+        </div>
+        <div class="row pb-3">
+            <div class="col-5 ml5p">
+                <div class="row">
+                    <div id="color_picker_output_1_{{ $id }}" class="colorInputContainer"></div>
+                </div>
+                <div class="row">
+                    <div id="color_picker_output_2_{{ $id }}" class="colorInputContainer"></div>
+                </div>
+                <div class="row">
+                    <div id="color_picker_output_3_{{ $id }}" class="colorInputContainer"></div>
+                </div>
+                <div class="row">
+                    <div id="color_picker_output_4_{{ $id }}" class="colorInputContainer"></div>
+                </div>
+                <div class="row">
+                    <div id="color_picker_output_9_{{ $id }}" class="colorInputContainer"></div>
+                </div>
+                <div class="row">
+                    <div id="color_picker_output_10_{{ $id }}" class="colorInputContainer"></div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-5">
+                <div class="row">
+                    <div id="color_picker_output_5_{{ $id }}" class="colorInputContainer"></div>
+                </div>
+                <div class="row">
+                    <div id="color_picker_output_6_{{ $id }}" class="colorInputContainer"></div>
+                </div>
+                <div class="row">
+                    <div id="color_picker_output_7_{{ $id }}" class="colorInputContainer"></div>
+                </div>
+                <div class="row">
+                    <div id="color_picker_output_8_{{ $id }}" class="colorInputContainer"></div>
+                </div>
+                <div class="row">
+                    <div id="color_picker_output_11_{{ $id }}" class="colorInputContainer"></div>
+                </div>
+                <div class="row">
+                    <div id="color_picker_output_12_{{ $id }}" class="colorInputContainer"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="separator"></div>
+    <div class="codeblock">
+        <template id="template_{{ $id }}" >{{ .Inner }}</template>
+        <pre class="code"><code id="snippet_{{ $id }}" class="hljs csharp"></code></pre>
+    </div>
+    <div class="footer">
+        <span class="error hidden" id="error_{{ $id }}"></span>
+		<div class="clipboard">
+        </div>
+	</div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', event => {
+        var id = {{ $id }};
+        var input = {{ $input }};
+        var c = appSvgColorPicker(document.getElementById('color_picker_' + id));
+        c.bindInputFieldContainer(document.getElementById('color_picker_input_' + id), input);
+        c.bindOutputFieldContainer(document.getElementById('color_picker_output_1_' + id), 'HEX');
+        c.bindOutputFieldContainer(document.getElementById('color_picker_output_2_' + id), 'RGB');
+        c.bindOutputFieldContainer(document.getElementById('color_picker_output_3_' + id), 'NCOL');
+        c.bindOutputFieldContainer(document.getElementById('color_picker_output_4_' + id), 'CMYK');
+        c.bindOutputFieldContainer(document.getElementById('color_picker_output_5_' + id), 'HSL');
+        c.bindOutputFieldContainer(document.getElementById('color_picker_output_6_' + id), 'HWB');
+        c.bindOutputFieldContainer(document.getElementById('color_picker_output_7_' + id), 'LAB');
+        c.bindOutputFieldContainer(document.getElementById('color_picker_output_8_' + id), 'OKLAB');
+        c.bindOutputFieldContainer(document.getElementById('color_picker_output_11_' + id), 'LCH');
+        c.bindOutputFieldContainer(document.getElementById('color_picker_output_12_' + id), 'OKLCH');
+        c.bindOutputFieldContainer(document.getElementById('color_picker_output_9_' + id), 'HSV');
+        c.bindOutputFieldContainer(document.getElementById('color_picker_output_10_' + id), 'XYZ');
+    });
+    document.addEventListener('DOMContentLoaded', event => {
+        var id = {{ $id }};
+        var t = document.getElementById('template_' + id);
+        var code = t.innerHTML;
+        if(code.trim().length != 0){
+            code = code.replaceAll("<p>", "\r\n").replaceAll("</p>", "");
+            document.getElementById('snippet_' + id).innerHTML = hljs.highlight(code, { language: 'csharp' }).value;
+        }else{
+            t.parentElement.classList.add('hidden');
+        }
+    });
+</script>

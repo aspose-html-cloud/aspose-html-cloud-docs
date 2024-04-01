@@ -1,0 +1,31 @@
+// Buttons
+
+@if $enable-rounded {
+    .btn {
+        border-radius: 1rem;
+
+        &-lg {
+            border-radius: 2rem;
+        }
+
+        &-sm {
+            border-radius: 1rem;
+        }
+    }
+}
+
+.btn-dark {
+    border-radius: .25rem !important;
+}
+
+.brn-run:hover {
+    opacity: .9;
+}
+
+.brn-run {
+    border-radius: .25rem!important;
+    background-color: #006bb0;
+    color: white;
+    display: block;
+    margin-bottom: 2rem;
+}

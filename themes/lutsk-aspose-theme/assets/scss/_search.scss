@@ -1,0 +1,75 @@
+// Search
+
+.td-search-input {
+    background: transparent;
+
+    &.form-control:focus {
+        border-color: lighten($primary, 60%);
+        box-shadow: 0 0 0 2px lighten($primary, 30%);
+    }
+
+    @if $enable-rounded {
+        border-radius: 5rem;
+    }
+
+    font-family: "Font Awesome 5 Free", $font-family-base;
+}
+
+.popover.offline-search-result {
+    // Override bootstrap default style (max-width: $popover-max-width;)
+    max-width: 90%;
+
+    .card {
+        margin-bottom: $spacer * .5;
+
+        .card-header {
+            font-weight: bold;
+        }
+    }
+}
+
+.td-search-result {
+
+    li {
+        margin-bottom: 25px!important;
+    }
+
+    .ml-4 {
+        border-bottom: 1px solid #e9e9e9;
+        padding: 5px 0 5px 0;
+    }
+
+    h2 {
+        font-size: 24px !important;
+    }
+
+    li h2 a {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 0 0 0;
+        color: #007bff;
+        display: block;
+    }
+
+    li h3 {
+        margin-bottom: 0;
+    }
+
+    .description h3 {
+        font-size: 13px;
+        font-weight: normal;
+        margin: 0;
+        line-height: 24px;
+    }
+
+    .site.text-truncate cite {
+        color: #006621;
+        font-style: normal;
+        font-size: 13px;
+    }
+
+    .btn-back {
+        color: white!important;
+        background-color: #006bb0!important;
+    }
+}
