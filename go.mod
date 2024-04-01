@@ -1,6 +1,6 @@
 module github.com/aspose-html-cloud/aspose-html-cloud-docs
 
-//  replace git.saltov.dynabic.com/zap/lutsk-aspose-theme => \themes\lutsk-aspose-theme
+replace git.saltov.dynabic.com/zap/lutsk-aspose-theme => \themes\lutsk-aspose-theme
 
 go 1.16
 
