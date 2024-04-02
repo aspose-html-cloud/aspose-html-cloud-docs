@@ -1,8 +1,0 @@
-<pre><code class="py hljs">client_id = '####-####-####-####-####'
-secret = '##################'
-words_api = WordsApi(client_id, secret) 
-
-wordsApi.upload_file(asposewordscloud.models.requests.UploadFileRequest(open("template.{{ lower $.Page.Params.informat }}", 'rb'), "", None))
-
-request = asposewordscloud.models.requests.ConvertDocumentRequest(open("template.{{ lower $.Page.Params.informat }}", 'rb'), "{{ lower $.Page.Params.outformat }}", None, None, None, None)
-result = wordsApi.convert_document(request)</code></pre>

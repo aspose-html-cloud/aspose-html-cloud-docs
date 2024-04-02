@@ -1,1 +1,0 @@
-  <a class='product-item {{ .Get "class" }}' href='{{ .Get "href" }}' {{ if or (.Parent.Get "additionalTitleText") (.Parent.Get "additionalTitle") }} style="float: none" {{ end }}>{{ .Get "title" | markdownify }} {{ if isset .Params "type" }}<em class='docs-via{{.Get "type" | markdownify }}'>{{ index .Params "type" }}</em>{{ end }}</a>

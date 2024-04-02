@@ -1,6 +1,0 @@
-<a href="{{ .Destination | safeURL }}" {{ with .Title}} title="{{ . }}"{{ end }}
-{{ if ne (urls.Parse .Destination).Host "docs.aspose.com" }} target="_blank"
-  {{ if ne (urls.Parse .Destination).Host "products.aspose.com" }} rel="nofollow"{{ end }}
-{{ end }}>
-{{ .Text | safeHTML }}
-</a>
