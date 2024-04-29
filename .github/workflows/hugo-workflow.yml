@@ -22,14 +22,14 @@ jobs:
         echo "transfer path : $TRANSFERPATH"
         echo "username : $USERNAME"
       env:
-        DEPLOYPATH: ${{ vars.DEPLOYPATH }}
-        HOST: ${{ vars.HOST }}
-        PROJECTPATH: ${{ vars.PROJECTPATH }}
-        PUBLICCONTENTPATH: ${{ vars.PUBLICCONTENTPATH }}
-        SSHKEY: ${{ vars.SSHKEY }}
-        SSHPORT: ${{ vars.SSHPORT }}
-        TRANSFERPATH: ${{ vars.TRANSFERPATH }}
-        USERNAME: ${{ vars.USERNAME }}
+        DEPLOYPATH: ${{ secrets.DEPLOYPATH }}
+        HOST: ${{ secrets.HOST }}
+        PROJECTPATH: ${{ secrets.PROJECTPATH }}
+        PUBLICCONTENTPATH: ${{ secrets.PUBLICCONTENTPATH }}
+        SSHKEY: ${{ secrets.SSHKEY }}
+        SSHPORT: ${{ secrets.SSHPORT }}
+        TRANSFERPATH: ${{ secrets.TRANSFERPATH }}
+        USERNAME: ${{ secrets.USERNAME }}
   job-deploy:
     name: Deploy
     runs-on: [self-hosted, linux, x64, html-cloud-dev4]
